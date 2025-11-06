@@ -336,6 +336,41 @@ module Base
             rotate = 0.0000 180.0000 0.0000,
         }
     }
+    model ruger1022FGS
+    {
+        mesh = Weapons/firearm/1022_model,
+        texture = Weapons/firearm/1022_fiberglass_texture,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4500 0.0160,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0510 0.0320,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment reddot
+        {
+            offset = 0.0000 0.0500 0.0380,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser
+        {
+            offset = 0.0000 0.2900 0.0028,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+    }
     model Mini14Unfolded
     {
         mesh = Weapons/firearm/Mini14UnfoldedNoMag,
@@ -985,10 +1020,92 @@ module Base
             rotate = -90.0000 180.0000 -180.0000,
         }
     }
+    model HuntingRifleFGS
+    {
+        mesh = weapons/firearm/m788nomag_model,
+        texture = weapons/firearm/m788fiberglass_texture,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5300 0.0260,
+            rotate = -90.0000 0.0000 180.0000,
+        }
+        attachment scope
+        {
+            offset = 0.0000 0.0650 0.0520,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment scope2
+        {
+            offset = 0.0000 0.1750 0.0220,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment recoilpad
+        {
+            offset = 0.0000 -0.1580 -0.0360,
+            rotate = 6.0000 0.0000 0.0000,
+        }
+        attachment bulletloops
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment world
+        {
+            offset = 0.0000 0.1500 0.0000,
+            rotate = 180.0000 0.0000 180.0000,
+        }
+        attachment bipod
+        {
+            offset = 0.0000 0.3400 -0.0030,
+            rotate = -90.0000 180.0000 -180.0000,
+        }
+    }
     model R700
     {
         mesh = weapons/firearm/m700_model,
         texture = weapons/firearm/m700_texture,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5125 0.0238,
+            rotate = -90.0000 0.0000 180.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0650 0.0520,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment recoilpad
+        {
+            offset = 0.0000 -0.1600 -0.0410,
+            rotate = 4.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = 0.0000 0.1500 0.0000,
+            rotate = 180.0000 0.0000 180.0000,
+        }
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.2900 -0.0030,
+            rotate = -90.0000 180.0000 -180.0000,
+        }
+        
+        attachment bulletloops
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model R700FGS
+    {
+        mesh = weapons/firearm/m700_model,
+        texture = weapons/firearm/m700fiberglass_texture,
         
         attachment muzzle
         {

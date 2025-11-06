@@ -652,7 +652,7 @@ module Base
         Type                         = Weapon,
         UnequipSound                 = DoubleBarrelShotgunUnEquip,
         UseEndurance                 = false,
-        WeaponReloadType             = doublebarrelshotgun,
+        WeaponReloadType             = breechloader,
         WeaponSprite                 = DoubleBarrelShotgun,
         Weight                       = 4,
     }
@@ -733,7 +733,7 @@ module Base
         Type                         = Weapon,
         UnequipSound                 = SawnOffDoubleBarrelShotgunUnEquip,
         UseEndurance                 = false,
-        WeaponReloadType             = doublebarrelshotgunsawn,
+        WeaponReloadType             = breechloader,
         WeaponSprite                 = ShotgunDoubleBarrelSawn,
         Weight                       = 3.0,
     }
@@ -1075,8 +1075,3 @@ module Base
         Weight                       = 4.6,
     }
 }
-
-// AimingPerkRangeModifier      = 0.75,
-// MuzzleFlashModelKey          = muzzle_flash_shotgun,
-// Tags                         = HasMetal;Firearm,
-// Tooltip                      = Tooltip_Shotgun,

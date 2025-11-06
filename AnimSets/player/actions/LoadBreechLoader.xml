@@ -35,7 +35,7 @@
 	<m_Events>
 		<m_EventName>changeWeaponSprite</m_EventName>
 		<m_TimePc>0.14</m_TimePc>
-		<m_ParameterValue>M2400_OPEN</m_ParameterValue>
+		<m_ParameterValue>open</m_ParameterValue>
 	</m_Events>
 	<m_Events>
 		<m_EventName>playReloadSound</m_EventName>

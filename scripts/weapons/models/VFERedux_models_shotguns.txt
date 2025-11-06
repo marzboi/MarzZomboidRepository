@@ -35,6 +35,41 @@ module Base
             rotate = 0.0000 0.0000 0.0000,
         }
     }
+    model ShotgunFGS
+    {
+        mesh = Weapons/Firearm/Shotgun,
+        texture = weapons/firearm/Shotgunfiberglass_texture,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4638 0.0255,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0741 0.0555,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = 0.0000 0.1660 0.0000,
+            rotate = -180.0000 1.0000 -180.0000,
+        }
+        
+        attachment choketube
+        {
+            offset = 0.0000 0.4640 0.0255,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment shellholder
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
     model Shotgun2
     {
         mesh = Weapons/Firearm/Shotgun2,
@@ -186,6 +221,29 @@ module Base
             rotate = 0.0000 180.0000 0.0000,
         }
     }
+    model ShotgunSawnOffFGS
+    {
+        mesh = Weapons/Firearm/ShotgunSawnOff,
+        texture = weapons/firearm/Shotgunfiberglass_texture,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3141 0.0255,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment shellholder
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = 0.0000 0.1000 0.0000,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+    }
     model ShotgunSawnoffNoStock
     {
         mesh = Weapons/firearm/ShotgunSawnoff2,
@@ -249,6 +307,46 @@ module Base
             rotate = 3.0000 0.0000 0.0000,
         }
         
+    }
+    model DoubleBarrelShotgunFGS
+    {
+        mesh = Weapons/Firearm/ShotgunDoubleBarrel,
+        texture = Weapons/Firearm/ShotgunDoubleBarrel_fiberglass,
+        
+        attachment muzzle
+        {
+            offset = 0.0090 0.5660 0.0240,
+            rotate = -90.0000 0.0000 180.0000,
+        }
+        
+        attachment world
+        {
+            offset = 0.0000 0.2000 0.0000,
+            rotate = 180.0000 0.0000 180.0000,
+        }
+        
+        attachment bulletloops
+        {
+            offset = 0.0041 -0.0112 -0.0130,
+            rotate = 3.0000 0.0000 0.0000,
+        }
+    }
+    model DoubleBarrelShotgunFGS_OPEN
+    {
+        mesh = Weapons/Firearm/ShotgunDoubleBarrel_OPEN,
+        texture = Weapons/Firearm/ShotgunDoubleBarrel_fiberglass,
+        
+        attachment sling
+        {
+            offset = 0.0000 -0.0028 -0.0644,
+            rotate = -23.0000 0.0000 0.0000,
+        }
+        
+        attachment bulletloops
+        {
+            offset = 0.0041 -0.0112 -0.0130,
+            rotate = 3.0000 0.0000 0.0000,
+        }
     }
     model ShotgunDoubleBarrelSawn
     {
