@@ -186,6 +186,7 @@ function VFEBayonet(item, index, player, bayonet)
 		local canon = item:getWeaponPart("Canon")
 		local stock = item:getWeaponPart("Stock")
 		local pad = item:getWeaponPart("RecoilPad")
+		local JungleMag = item:getWeaponPart("JungleMag")
 		if scope then
 			if scope:getFullType() == "Base.x2Scope" then
 				scope = instanceItem("Base.x2Scope_Fake")
@@ -213,6 +214,9 @@ function VFEBayonet(item, index, player, bayonet)
 		end
 		if clip then
 			result:attachWeaponPart(clip)
+		end
+		if JungleMag then
+			result:attachWeaponPart(JungleMag)
 		end
 
 		-- Load Bayonet Data
@@ -298,6 +302,7 @@ function VFEBayonet(item, index, player, bayonet)
 		local canon = item:getWeaponPart("Canon")
 		local stock = item:getWeaponPart("Stock")
 		local pad = item:getWeaponPart("RecoilPad")
+		local JungleMag = item:getWeaponPart("JungleMag")
 		if scope then
 			if scope:getFullType() == "Base.x2Scope_Fake" then
 				scope = instanceItem("Base.x2Scope")
@@ -325,6 +330,9 @@ function VFEBayonet(item, index, player, bayonet)
 		end
 		if clip then
 			result:attachWeaponPart(clip)
+		end
+		if JungleMag then
+			result:attachWeaponPart(JungleMag)
 		end
 
 		-- Load Rifle Data

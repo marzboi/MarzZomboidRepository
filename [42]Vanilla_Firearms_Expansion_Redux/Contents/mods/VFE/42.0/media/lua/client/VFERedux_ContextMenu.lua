@@ -129,6 +129,8 @@ function VFEContext:Upgrade(item, index, player, context)
                         addOption = true;
                     elseif (part:getPartType() == "RecoilPad") and not item:getWeaponPart("RecoilPad") then
                         addOption = true;
+                    elseif (part:getPartType() == "JungleMag") and not item:getWeaponPart("JungleMag") then
+                        addOption = true;
                     end
                 end
                 if addOption then
