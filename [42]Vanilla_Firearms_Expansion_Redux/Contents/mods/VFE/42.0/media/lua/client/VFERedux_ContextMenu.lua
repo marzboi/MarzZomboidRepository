@@ -50,8 +50,7 @@ VFEContext.inventoryMenu = function(playerid, context, items)
 
             VFEContext:UpgradeSling(item, player, context)
             VFEContext:UpgradeSling2(item, player, context)
-            VFEContext:UpgradeCouple556Mags(item, player, context)
-            VFEContext:UpgradeCouple762Mags(item, player, context)
+            VFEContext:UpgradeCoupleMags(item, player, context)
             VFEContext:UpgradeIrons(item, player, context)
 
 
@@ -217,7 +216,7 @@ function VFEContext:UpgradeSling2(item, player, context)
     end
 end
 
-function VFEContext:UpgradeCouple556Mags(item, player, context)
+function VFEContext:UpgradeCoupleMags(item, player, context)
     local hasScrewdriver = player:getInventory():containsTagEvalRecurse("Screwdriver", predicateNotBroken)
     if item and instanceof(item, "HandWeapon") and item:isRanged() and hasScrewdriver then
         -- add parts
@@ -225,31 +224,7 @@ function VFEContext:UpgradeCouple556Mags(item, player, context)
         if weaponParts and not weaponParts:isEmpty() then
             for i = 0, weaponParts:size() - 1 do
                 local part = weaponParts:get(i);
-                if (part:getType() == "Coupled556") and not item:getWeaponPart("JungleMag") then
-                    -- To do: Localization
-                    local listEntry = context:addOption(getText("IGUI_ContextMenu_JungleMags"), item,
-                        ISInventoryPaneContextMenu.onUpgradeWeapon, part, player);
-                    local tooltip = ISInventoryPaneContextMenu.addToolTip();
-                    tooltip.description = getText("IGUI_ContextMenu_JungleMagsDescription")
-                    tooltip:setName(part:getDisplayName())
-                    tooltip.texture = part:getTex()
-                    listEntry.toolTip = tooltip;
-                    break
-                end
-            end
-        end
-    end
-end
-
-function VFEContext:UpgradeCouple762Mags(item, player, context)
-    local hasScrewdriver = player:getInventory():containsTagEvalRecurse("Screwdriver", predicateNotBroken)
-    if item and instanceof(item, "HandWeapon") and item:isRanged() and hasScrewdriver then
-        -- add parts
-        local weaponParts = player:getInventory():getItemsFromCategory("WeaponPart");
-        if weaponParts and not weaponParts:isEmpty() then
-            for i = 0, weaponParts:size() - 1 do
-                local part = weaponParts:get(i);
-                if (part:getType() == "Coupled762") and not item:getWeaponPart("JungleMag") then
+                if (part:getType() == "Coupled762") or (part:getType() == "Coupled556") and not item:getWeaponPart("JungleMag") then
                     -- To do: Localization
                     local listEntry = context:addOption(getText("IGUI_ContextMenu_JungleMags"), item,
                         ISInventoryPaneContextMenu.onUpgradeWeapon, part, player);
