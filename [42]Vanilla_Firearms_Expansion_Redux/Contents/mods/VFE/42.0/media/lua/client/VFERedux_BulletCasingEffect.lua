@@ -31,7 +31,7 @@ function SpentCasingPhysics.update()
     local XY_STEP = 0.10           -- multiply X/Y velocity by this when adding to position (small step)
     local Z_STEP = 0.05            -- multiply Z velocity by this when adding to position (small step)
     local GRAVITY_SCALE = 1.0      -- scale for the global gravity (keeps existing constant but allows easy tweak)
-    local DRAG_XY = 0.97           -- velocity damping for horizontal movement (air resistance)
+    local DRAG_XY = 0.97           -- velocity damping for horizontal movement ("air resistance")
     local DRAG_Z = 0.995           -- velocity damping for vertical movement
     local SETTLE_THRESHOLD = 0.001 -- when velocities drop below this, consider the casing settled
 

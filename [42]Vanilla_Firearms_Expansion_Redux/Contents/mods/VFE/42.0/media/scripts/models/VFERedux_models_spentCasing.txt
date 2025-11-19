@@ -1,57 +1,51 @@
 module Base
 {
-    model Spent_RifleLong
+    model Spent_9mm_Round
     {
-        mesh = Worlditems/vfe-rifle-long,
-        texture = Worlditems/vfe_brass,
-        scale = 0.40,
+        mesh = Worlditems/Ammo/9mmRound_spent,
+        texture = WorldItems/Ammo/459mmRound,
+        scale = 0.50,
     }
-    model Spent_RifleShort
+    model Spent_45_Round
     {
-        mesh = Worlditems/vfe-rifle-short,
-        texture = Worlditems/vfe_brass,
-        scale = 0.35,
+        mesh = Worlditems/Ammo/45Round_spent,
+        texture = WorldItems/Ammo/459mmRound,
+        scale = 0.50,
     }
-    model Spent_PistolLong
+    model Spent_44_Round
     {
-        mesh = Worlditems/vfe-pistol-long,
-        texture = Worlditems/vfe_brass,
-        scale = 0.35,
+        mesh = Worlditems/Ammo/44Round_spent,
+        texture = WorldItems/Ammo/44Round,
+        scale = 0.50,
     }
-    model Spent_PistolLongSmall
+    model Spent_38_Round
     {
-        mesh = Worlditems/vfe-pistol-long,
-        texture = Worlditems/vfe_brass,
-        scale = 0.25,
+        mesh = Worlditems/Ammo/38Round_spent,
+        texture = WorldItems/Ammo/38Round,
+        scale = 0.50,
     }
-    model Spent_PistolShort
+    model Spent_223_Round
     {
-        mesh = Worlditems/vfe-pistol-short,
-        texture = Worlditems/vfe_brass,
-        scale = 0.35,
+        mesh = Worlditems/Ammo/223556Round_spent,
+        texture = WorldItems/Ammo/223Round,
+        scale = 0.50,
     }
-    model Spent_PistolShortSmall
+    model Spent_556_Round
     {
-        mesh = Worlditems/vfe-pistol-short-small,
-        texture = Worlditems/vfe_brass,
-        scale = 0.30,
+        mesh = Worlditems/Ammo/223556Round_spent,
+        texture = WorldItems/Ammo/556Round,
+        scale = 0.50,
     }
-    model Spent_Shell
+    model Spent_308_Round
     {
-        mesh = Worlditems/vfe-shotgunshell,
-        texture = Worlditems/vfe_shell_red,
-        scale = 0.45,
+        mesh = Worlditems/Ammo/308Round_spent,
+        texture = WorldItems/Ammo/308Round,
+        scale = 0.50,
     }
-    model Spent_VFE_762
+    model Spent_Shotgun_Round
     {
-        mesh = Worlditems/vfe-rifle-long,
-        texture = Worlditems/vfe_steel,
-        scale = 0.40,
-    }
-    model Spent_VFE_545
-    {
-        mesh = Worlditems/vfe-rifle-short,
-        texture = Worlditems/vfe_steel,
-        scale = 0.35,
+        mesh = Worlditems/Ammo/12GRound_spent,
+        texture = WorldItems/Ammo/12GRound,
+        scale = 0.50,
     }
 }
