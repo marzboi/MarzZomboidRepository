@@ -10,10 +10,22 @@ local DRAG_XY = 0.97           -- velocity damping for horizontal movement ("air
 local DRAG_Z = 0.995           -- velocity damping for vertical movement
 local SETTLE_THRESHOLD = 0.001 -- when velocities drop below this, consider the casing settled
 
-function SpentCasingPhysics.addCasing(square, casingType, startX, startY, startZ, velocityX, velocityY, velocityZ)
+function SpentCasingPhysics.addCasing(
+    player,
+    weapon,
+    square,
+    casingType,
+    startX,
+    startY,
+    startZ,
+    velocityX,
+    velocityY,
+    velocityZ)
     if not square then return end
 
     local casingData = {
+        player = player,
+        weapon = weapon,
         square = square,
         casingType = casingType,
         x = startX,
@@ -23,7 +35,7 @@ function SpentCasingPhysics.addCasing(square, casingType, startX, startY, startZ
         velocityY = velocityY or 0,
         velocityZ = velocityZ or 0.1,
         active = true,
-        currentWorldItem = nil
+        currentWorldItem = nil,
     }
 
     casingData.currentWorldItem = square:AddWorldInventoryItem(casingType, startX, startY, startZ)
@@ -117,6 +129,10 @@ function SpentCasingPhysics.update()
                     0.0
                 )
 
+                if casing.weapon:getShellFallSound() then
+                    casing.player:getEmitter():playSound(casing.weapon:getShellFallSound())
+                end
+
                 if math.abs(casing.velocityX) < SETTLE_THRESHOLD
                     and math.abs(casing.velocityY) < SETTLE_THRESHOLD
                     and math.abs(casing.velocityZ) < SETTLE_THRESHOLD
@@ -143,7 +159,7 @@ function SpentCasingPhysics.update()
     end
 end
 
-function SpentCasingPhysics.doSpawnCasing(player, params, racking)
+function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     local forwardOffset = params.forwardOffset or 0.0
     local sideOffset = params.sideOffset or 0.0
     local heightOffset = params.heightOffset or 0.5
@@ -182,7 +198,7 @@ function SpentCasingPhysics.doSpawnCasing(player, params, racking)
     velX = velX + rx * shellForce
     velY = velY + ry * shellForce
 
-    SpentCasingPhysics.addCasing(targetSquare, ammoToEject, startX, startY, startZ, velX, velY, velZ)
+    SpentCasingPhysics.addCasing(player, weapon, targetSquare, ammoToEject, startX, startY, startZ, velX, velY, velZ)
 end
 
 function SpentCasingPhysics.spawnCasing(player, weapon)
@@ -195,7 +211,7 @@ function SpentCasingPhysics.spawnCasing(player, weapon)
     if params.manualEjection then return end
 
     if weapon:getCurrentAmmoCount() > 0 then
-        SpentCasingPhysics.doSpawnCasing(player, params)
+        SpentCasingPhysics.doSpawnCasing(player, weapon, params, false)
     end
 end
 
@@ -208,7 +224,7 @@ function SpentCasingPhysics.rackCasing(player, weapon, racking)
     if not params then return end
 
     if weapon:getCurrentAmmoCount() > 0 then
-        SpentCasingPhysics.doSpawnCasing(player, params, racking)
+        SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     end
 end
 

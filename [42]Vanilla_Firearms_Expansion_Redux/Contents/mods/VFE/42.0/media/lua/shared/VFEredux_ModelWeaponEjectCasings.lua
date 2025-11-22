@@ -8,7 +8,7 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
         forwardOffset = 0.30,
         sideOffset = 0.10,
         heightOffset = 0.45,
-        shellForce = 0.15,
+        shellForce = 0.30,
         manualEjection = false
     },
 
@@ -18,7 +18,7 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
         forwardOffset = 0.30,
         sideOffset = 0.10,
         heightOffset = 0.45,
-        shellForce = 0.15,
+        shellForce = 0.30,
         manualEjection = false
     },
 
