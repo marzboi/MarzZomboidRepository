@@ -2,13 +2,17 @@ require "ISBaseObject"
 
 SpentCasingPhysics.activeCasings = {}
 local RANDOM = newrandom()
-local GRAVITY = 0.005
-local XY_STEP = 0.10           -- multiply X/Y velocity by this when adding to position (small step)
-local Z_STEP = 0.05            -- multiply Z velocity by this when adding to position (small step)
-local GRAVITY_SCALE = 1.0      -- scale for the global gravity (keeps existing constant but allows easy tweak)
-local DRAG_XY = 0.97           -- velocity damping for horizontal movement ("air resistance")
-local DRAG_Z = 0.995           -- velocity damping for vertical movement
-local SETTLE_THRESHOLD = 0.001 -- when velocities drop below this, consider the casing settled
+local GRAVITY = 0.020
+local XY_STEP = 0.10
+local Z_STEP = 0.05
+local GRAVITY_SCALE = 1.0
+local DRAG_XY = 0.97
+local DRAG_Z = 0.995
+local SETTLE_THRESHOLD = 0.001
+
+local gameTime
+Events.OnGameTimeLoaded.Add(function() gameTime = GameTime.getInstance() end)
+local function GT() return gameTime or GameTime.getInstance() end
 
 function SpentCasingPhysics.addCasing(
     player,
@@ -45,6 +49,8 @@ function SpentCasingPhysics.addCasing(
 end
 
 function SpentCasingPhysics.update()
+    local dt = GT():getTimeDelta() or (1 / 60)
+    local scale = dt * 60
     local i = 1
 
     while i <= #SpentCasingPhysics.activeCasings do
@@ -53,11 +59,11 @@ function SpentCasingPhysics.update()
         if not casing.square or not casing.active then
             table.remove(SpentCasingPhysics.activeCasings, i)
         else
-            casing.velocityZ = casing.velocityZ - (GRAVITY * GRAVITY_SCALE)
+            casing.velocityZ = casing.velocityZ - (GRAVITY * GRAVITY_SCALE * scale)
 
-            casing.x = casing.x + (casing.velocityX * XY_STEP)
-            casing.y = casing.y + (casing.velocityY * XY_STEP)
-            casing.z = casing.z + (casing.velocityZ * Z_STEP)
+            casing.x = casing.x + (casing.velocityX * XY_STEP * scale)
+            casing.y = casing.y + (casing.velocityY * XY_STEP * scale)
+            casing.z = casing.z + (casing.velocityZ * Z_STEP * scale)
 
             casing.z = math.max(0, casing.z)
 
@@ -96,7 +102,6 @@ function SpentCasingPhysics.update()
                 end
             end
 
-
             local localX = worldX - targetSquare:getX()
             local localY = worldY - targetSquare:getY()
 
@@ -111,9 +116,11 @@ function SpentCasingPhysics.update()
                 casing.currentWorldItem = nil
             end
 
-            casing.velocityX = casing.velocityX * DRAG_XY
-            casing.velocityY = casing.velocityY * DRAG_XY
-            casing.velocityZ = casing.velocityZ * DRAG_Z
+            local dragXY = math.pow(DRAG_XY, scale)
+            local dragZ = math.pow(DRAG_Z, scale)
+            casing.velocityX = casing.velocityX * dragXY
+            casing.velocityY = casing.velocityY * dragXY
+            casing.velocityZ = casing.velocityZ * dragZ
 
             if casing.z > 0 then
                 casing.currentWorldItem = targetSquare:AddWorldInventoryItem(
@@ -124,7 +131,7 @@ function SpentCasingPhysics.update()
                 )
                 if casing.z < 0.16 and not casing.shellSound then
                     casing.shellSound = true
-                    if casing.weapon:getShellFallSound() then
+                    if casing.weapon and casing.weapon:getShellFallSound() then
                         casing.player:getEmitter():playSound(casing.weapon:getShellFallSound())
                     end
                 end
@@ -135,8 +142,6 @@ function SpentCasingPhysics.update()
                     localY,
                     0.0
                 )
-
-
 
                 if math.abs(casing.velocityX) < SETTLE_THRESHOLD
                     and math.abs(casing.velocityY) < SETTLE_THRESHOLD
