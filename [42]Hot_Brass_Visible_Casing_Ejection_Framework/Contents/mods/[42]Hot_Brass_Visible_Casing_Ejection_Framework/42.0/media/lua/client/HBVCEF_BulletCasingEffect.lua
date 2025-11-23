@@ -36,6 +36,7 @@ function SpentCasingPhysics.addCasing(
         velocityZ = velocityZ or 0.1,
         active = true,
         currentWorldItem = nil,
+        shellSound = false
     }
 
     casingData.currentWorldItem = square:AddWorldInventoryItem(casingType, startX, startY, startZ)
@@ -121,6 +122,12 @@ function SpentCasingPhysics.update()
                     localY,
                     casing.z
                 )
+                if casing.z < 0.16 and not casing.shellSound then
+                    casing.shellSound = true
+                    if casing.weapon:getShellFallSound() then
+                        casing.player:getEmitter():playSound(casing.weapon:getShellFallSound())
+                    end
+                end
             else
                 targetSquare:AddWorldInventoryItem(
                     casing.casingType,
@@ -129,9 +136,7 @@ function SpentCasingPhysics.update()
                     0.0
                 )
 
-                -- if casing.weapon:getShellFallSound() then
-                --     casing.player:getEmitter():playSound(casing.weapon:getShellFallSound()) -- this will commented out until I figure how to stop vanilla from playing the shellsound everytime you shoot
-                -- end
+
 
                 if math.abs(casing.velocityX) < SETTLE_THRESHOLD
                     and math.abs(casing.velocityY) < SETTLE_THRESHOLD
