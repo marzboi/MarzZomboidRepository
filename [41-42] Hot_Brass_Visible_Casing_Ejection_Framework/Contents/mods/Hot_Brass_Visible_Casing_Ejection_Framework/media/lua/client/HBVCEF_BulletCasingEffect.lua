@@ -220,7 +220,7 @@ function SpentCasingPhysics.spawnCasing(player, weapon)
 
     if params.manualEjection then return end
 
-    if weapon:getCurrentAmmoCount() > 0 then
+    if weapon:getCurrentAmmoCount() > 0 and not weapon:isJammed() then
         SpentCasingPhysics.doSpawnCasing(player, weapon, params, false)
     end
 end

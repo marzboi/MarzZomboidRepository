@@ -1,0 +1,52 @@
+-- Register a Singe weapon example
+
+-- SpentCasingPhysics.registerWeapon(
+--     "Base.ExampleWeapon",          -- Item Name
+--     "Base.556Bullets_Casing",     -- Spent casing model - call the item script
+--     "Base.556Bullets",            -- Unfired ammo model - call the item script
+--     0.35,                         -- will move the spawn point casing forward towards the barrel
+--     0.10,                         -- Side to side adjustment of the spawnpoint
+--     0.45,                         -- the height of the spawnpoint. relative to the Z value of the player. 0 floor, 1 ceiling
+--     1.00,                         -- Shell force, how far it will be ejected from the weapon
+--     false                         -- Manual Racking, if the spent case will be ejected automatically (pump action/bolt action)
+-- )
+
+
+-- Register multiple weapons approach
+
+-- local multiweaponsRegisterExample = {
+--     {
+--         "Base.ExampleWeapon1",
+--         "Base.ExampleAmmoCasing1",
+--         "Base.ExampleAmmo1",
+--         0.27,
+--         0.10,
+--         0.45,
+--         0.15,
+--         true
+--     },
+--     {
+--         "Base.ExampleWeapon2",
+--         "Base.308Bullets_Casing",
+--         "Base.308Bullets",
+--         0.40,
+--         0.08,
+--         0.45,
+--         0.55,
+--         false
+--     },
+--     {
+--         "Base.ExampleWeapon3",
+--         "Base.308Bullets_Casing",
+--         "Base.308Bullets",
+--         0.40,
+--         0.08,
+--         0.45,
+--         0.55,
+--         false
+--     },
+-- }
+
+-- for i = 1, #multiweaponsRegisterExample do
+--     SpentCasingPhysics.registerWeapon(unpack(multiweaponsRegisterExample[i]))
+-- end
