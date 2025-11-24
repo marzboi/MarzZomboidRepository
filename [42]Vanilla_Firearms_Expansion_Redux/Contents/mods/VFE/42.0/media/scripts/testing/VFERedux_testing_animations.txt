@@ -1,0 +1,155 @@
+module Base
+{
+    item CZ75_animated
+    {
+        AimingPerkCritModifier       = 25,
+        AimingPerkHitChanceModifier  = 10,
+        AimingPerkMinAngleModifier   = 0.05,
+        AimingPerkRangeModifier      = 1.8,
+        Aimingtime                   = 35,
+        AimReleaseSound              = M9AimRelease,
+        AmmoBox                      = Bullets9mmBox,
+        AmmoType                     = Base.Bullets9mm,
+        AttachmentType               = Holster,
+        BreakSound                   = M9Break,
+        BringToBearSound             = M9BringToBear,
+        ClickSound                   = M9Jam,
+        ClipSize                     = 16,
+        ConditionLowerChanceOneIn    = 60,
+        ConditionMax                 = 20,
+        CritDmgMultiplier            = 4,
+        CriticalChance               = 15,
+        DisplayCategory              = Weapon,
+        DisplayName                  = CZ 75 Pistol,
+        DoorDamage                   = 5,
+        DropSound                    = M9Drop,
+        EjectAmmoSound               = M9EjectAmmo,
+        EjectAmmoStartSound          = M9EjectAmmoStart,
+        EjectAmmoStopSound           = M9EjectAmmoStop,
+        EquipSound                   = M9Equip,
+        HitChance                    = 50,
+        HitSound                     = BulletHitBody,
+        Icon                         = CZ75,
+        ImpactSound                  = null,
+        InsertAmmoSound              = M9InsertAmmo,
+        InsertAmmoStartSound         = M9InsertAmmoStart,
+        InsertAmmoStopSound          = M9InsertAmmoStop,
+        IsAimedFirearm               = true,
+        JamGunChance                 = 1.5,
+        KnockBackOnNoDeath           = true,
+        KnockdownMod                 = 0,
+        MagazineType                 = Base.9mmClip16,
+        MaxAmmo                      = 16,
+        MaxDamage                    = 1,
+        MaxHitcount                  = 1,
+        MaxRange                     = 10,
+        MaxSightRange                = 6.0,
+        MetalValue                   = 30,
+        MinAngle                     = 0.95,
+        MinDamage                    = 0.8,
+        MinimumSwingtime             = 0.5,
+        MinRange                     = 0.51,
+        MinSightRange                = 2,
+        ModelWeaponPart              = Laser Laser laser laser,
+        ModelWeaponPart              = LaserOn LaserOn laser laser,
+        ModelWeaponPart              = HammerAttachment_unfired CZ75_hammer_unfired hammer hammer,
+        ModelWeaponPart              = HammerAttachment_fired CZ75_hammer_fired hammer hammer,
+        MultipleHitConditionAffected = false,
+        MuzzleFlashModelKey          = muzzle_flash_handgun,
+        NPCSoundBoost                = 1.5,
+        Projectilecount              = 1,
+        PushBackMod                  = 0.3,
+        RackSound                    = M9Rack,
+        Ranged                       = true,
+        RecoilDelay                  = 15,
+        Reloadtime                   = 30,
+        RunAnim                      = Run_Weapon2,
+        ShellFallSound               = M9CartridgeFall,
+        SoundGain                    = 1.5,
+        SoundRadius                  = 50,
+        SoundVolume                  = 53,
+        SplatBloodOnNoDeath          = true,
+        SplatNumber                  = 3,
+        SplatSize                    = 3,
+        StopPower                    = 5,
+        SubCategory                  = Firearm,
+        SwingAmountBeforeImpact      = 0,
+        SwingAnim                    = Handgun,
+        SwingSound                   = M9Shoot,
+        Swingtime                    = 0.5,
+        Tags                         = HasMetal;Firearm,
+        ToHitModifier                = 1.2,
+        Type                         = Weapon,
+        UnequipSound                 = M9UnEquip,
+        UseEndurance                 = false,
+        WeaponReloadType             = handgun,
+        WeaponSprite                 = CZ75_frame,
+        Weight                       = 1.55,
+    }
+    
+    model CZ75_frame
+    {
+        mesh = weapons/parts/MovingPart/cz75_frame,
+        texture = weapons/firearm/cz75_texture,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1490 -0.0176,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        
+        attachment laser
+        {
+            offset = 0.0000 0.0790 -0.0090,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment hammer
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    
+    model CZ75_hammer_unfired
+    {
+        mesh = weapons/parts/MovingPart/cz75_hammer_unfired,
+        texture = weapons/firearm/cz75_texture,
+    }
+    
+    model CZ75_hammer_fired
+    {
+        mesh = weapons/parts/MovingPart/CZ75_hammer_fired,
+        texture = weapons/firearm/cz75_texture,
+    }
+    
+    item HammerAttachment_fired
+    {
+        Type             = WeaponPart,
+        DisplayName      = Magazine,
+        DisplayCategory  = WeaponPart,
+        Icon             = m16clip,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = CZ75_animated,
+        PartType         = Hammer,
+        MetalValue       = 22,
+        WorldStaticModel = 556Mag,
+        Tooltip          = Tooltip_GunMagWeaponPart,
+    }
+    
+    item HammerAttachment_unfired
+    {
+        Type             = WeaponPart,
+        DisplayName      = Magazine,
+        DisplayCategory  = WeaponPart,
+        Icon             = m16clip,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = CZ75_animated,
+        PartType         = Hammer,
+        MetalValue       = 22,
+        WorldStaticModel = 556Mag,
+        Tooltip          = Tooltip_GunMagWeaponPart,
+    }
+}

@@ -6,7 +6,7 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
         forwardOffset = 0.30,
         sideOffset = 0.10,
         heightOffset = 0.45,
-        shellForce = 0.30,
+        shellForce = 0.60,
         manualEjection = false
     },
 
@@ -21,8 +21,8 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
     },
 
     ["Base.HuntingRifle"] = {
-        casing = "Base.556Bullets_Casing",
-        ammo = "Base.556Bullets",
+        casing = "Base.308Bullets_Casing",
+        ammo = "Base.308Bullets",
         forwardOffset = 0.30,
         sideOffset = 0.10,
         heightOffset = 0.45,
@@ -58,5 +58,25 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
         heightOffset = 0.30,
         shellForce = 0.10,
         manualEjection = true
+    },
+
+    ["Base.AK47"] = {
+        casing = "Base.762Bullets_Casing",
+        ammo = "Base.762Bullets",
+        forwardOffset = 0.40,
+        sideOffset = 0.0,
+        heightOffset = 0.30,
+        shellForce = 0.10,
+        manualEjection = false
+    },
+
+    ["Base.CZ75_animated"] = {
+        casing = "Base.Bullets9mm_Casing",
+        ammo = "Base.Bullets9mm",
+        forwardOffset = 0.50,
+        sideOffset = 0.0,
+        heightOffset = 0.45,
+        shellForce = 0.25,
+        manualEjection = false
     },
 }
