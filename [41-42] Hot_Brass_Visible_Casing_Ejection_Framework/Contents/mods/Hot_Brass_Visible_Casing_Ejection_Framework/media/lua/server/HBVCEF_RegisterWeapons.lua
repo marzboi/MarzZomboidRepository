@@ -8,7 +8,9 @@
 --     0.10,                         -- Side to side adjustment of the spawnpoint
 --     0.45,                         -- the height of the spawnpoint. relative to the Z value of the player. 0 floor, 1 ceiling
 --     1.00,                         -- Shell force, how far it will be ejected from the weapon
---     false                         -- Manual Racking, if the spent case will be ejected automatically (pump action/bolt action)
+--     false,                        -- Manual Racking, if the spent case will be ejected automatically (pump action/bolt action)
+--     10,                           -- This is the sideSpreed, how spreed out will casing fly from in each other horizontally
+--     10                            -- HeightSpreed similar to sidesSpreed but regarding the vertical fly
 -- )
 
 
@@ -23,7 +25,9 @@
 --         0.10,
 --         0.45,
 --         0.15,
---         true
+--         true,
+--         10,
+--         10
 --     },
 --     {
 --         "Base.ExampleWeapon2",
@@ -33,7 +37,9 @@
 --         0.08,
 --         0.45,
 --         0.55,
---         false
+--         false,
+--         10,
+--         10
 --     },
 --     {
 --         "Base.ExampleWeapon3",
@@ -43,7 +49,9 @@
 --         0.08,
 --         0.45,
 --         0.55,
---         false
+--         false,
+--         10,
+--         10
 --     },
 -- }
 
