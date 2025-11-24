@@ -1,5 +1,6 @@
 local function Adjust(Name, Property, Value)
     local Item = ScriptManager.instance:getItem(Name)
+    if not Item then return end
     Item:DoParam(Property .. " = " .. Value)
 end
 
@@ -69,3 +70,8 @@ Adjust("Base.9mmClip", "weight", "0.1")
 Adjust("Base.45Clip", "weight", "0.1")
 Adjust("Base.44Clip", "weight", "0.1")
 Adjust("Base.308Clip", "weight", "0.1")
+
+--if Hot Brass installed
+Adjust("Base.762Bullets", "WorldStaticModel", "New_762_Round")
+Adjust("Base.22Bullets", "WorldStaticModel", "New_22_Round")
+Adjust("Base.308BulletsLinked", "WorldStaticModel", "New_Linked308_Round")

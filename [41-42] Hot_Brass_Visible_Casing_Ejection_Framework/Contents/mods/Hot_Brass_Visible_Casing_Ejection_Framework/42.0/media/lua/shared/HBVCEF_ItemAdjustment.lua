@@ -1,6 +1,7 @@
 local function doParam(Name, Property, Value)
-    local Item = ScriptManager.instance:getItem(Name)
-    Item:DoParam(Property .. " = " .. Value)
+    local item = ScriptManager.instance:getItem(Name)
+    if not item then return end
+    item:DoParam(Property .. " = " .. Value)
 end
 
 -- AMMO MODELS
@@ -23,6 +24,6 @@ doParam("Base.308Bullets", "icon", "308Bullets")
 doParam("Base.556Bullets", "icon", "556Bullets")
 doParam("Base.223Bullets", "icon", "223Bullets")
 
--- --Shotgun Modifiers
+-- Shotgun Modifiers
 doParam("Base.DoubleBarrelShotgun", "ManuallyRemoveSpentRounds", "true")
 doParam("Base.DoubleBarrelShotgunSawnoff", "ManuallyRemoveSpentRounds", "true")
