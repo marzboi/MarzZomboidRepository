@@ -96,9 +96,6 @@ module Base
         StaticModel      = Spent_Shotgun_Round,
         WorldStaticModel = Spent_Shotgun_Round,
     }
-    
-// VFE Ammo
-    
     item 22Bullets_Casing
     {
         CanStack         = true,
