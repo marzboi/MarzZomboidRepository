@@ -131,9 +131,9 @@ function SpentCasingPhysics.update()
                 )
                 if casing.z < 0.16 and not casing.shellSound then
                     casing.shellSound = true
-                    if casing.weapon and casing.weapon:getShellFallSound() then
-                        casing.player:getEmitter():playSound(casing.weapon:getShellFallSound())
-                    end
+                    -- if casing.weapon and casing.weapon:getShellFallSound() then
+                    --     casing.player:getEmitter():playSound(casing.weapon:getShellFallSound())
+                    -- end
                 end
             else
                 targetSquare:AddWorldInventoryItem(
