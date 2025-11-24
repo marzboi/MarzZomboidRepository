@@ -45,5 +45,5 @@ description=[*]Manual ejection controls whether a weapon requires racking to cyc
 description=[/list]
 description=
 description=[b]Currently the mod is only supported for Build 42. I’d love to bring it to 41 if I can optimize it properly, but no promises![/b]
-tags=Build 41;Build 42;Framework;Items;Military;Misc;Models;Realistic;Silly/Fun;QoL;Weapons
+tags=Build 41;Build 42;Framework;Items;Military;Misc;Models;Multiplayer;Realistic;Silly/Fun;QoL;Weapons
 visibility=public
