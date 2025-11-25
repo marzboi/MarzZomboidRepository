@@ -157,6 +157,35 @@ module Base
             rotate = 0.0000 0.0000 0.0000,
         }
     }
+    model Shotgun2M9FGS
+    {
+        mesh = Weapons/Firearm/Shotgun2M9,
+        texture = weapons/firearm/Shotgunfiberglass_texture,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 -0.4850 0.0255,
+            rotate = 90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = 0.0000 0.1660 0.0000,
+            rotate = -180.0000 1.0000 -180.0000,
+        }
+        
+        attachment choketube
+        {
+            offset = 0.0000 -0.4930 0.0255,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment shellholder
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
     model ShotgunSemi
     {
         mesh = Weapons/Firearm/ShotgunSemi,
@@ -192,10 +221,80 @@ module Base
             rotate = 0.0000 0.0000 0.0000,
         }
     }
+    model ShotgunSemiFGS
+    {
+        mesh = Weapons/Firearm/ShotgunSemi,
+        texture = weapons/firearm/ShotgunSemifiberglass_texture,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4638 0.0255,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0741 0.0555,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = 0.0000 0.1660 0.0000,
+            rotate = -180.0000 1.0000 -180.0000,
+        }
+        
+        attachment choketube
+        {
+            offset = 0.0000 0.4632 0.0255,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment shellholder
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
     model ShotgunSemi2
     {
         mesh = Weapons/Firearm/ShotgunSemi2,
         texture = weapons/firearm/ShotgunSemi,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4638 0.0255,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0741 0.0555,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = 0.0000 0.1660 0.0000,
+            rotate = -180.0000 1.0000 -180.0000,
+        }
+        
+        attachment choketube
+        {
+            offset = 0.0000 0.4632 0.0255,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment shellholder
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model ShotgunSemi2FGS
+    {
+        mesh = Weapons/Firearm/ShotgunSemi2,
+        texture = weapons/firearm/ShotgunSemifiberglass_texture,
         
         attachment muzzle
         {
@@ -404,6 +503,40 @@ module Base
     {
         mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn_OPEN,
         texture = Weapons/Firearm/ShotgunDoubleBarrel,
+        
+        attachment bulletloops
+        {
+            offset = 0.0041 -0.0112 -0.0130,
+            rotate = 3.0000 0.0000 0.0000,
+        }
+    }
+    model ShotgunDoubleBarrelSawnFGS
+    {
+        mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn,
+        texture = Weapons/Firearm/ShotgunDoubleBarrel_fiberglass,
+        
+        attachment muzzle
+        {
+            offset = 0.0090 0.3400 0.0240,
+            rotate = -90.0000 0.0000 180.0000,
+        }
+        
+        attachment world
+        {
+            offset = 0.0000 -0.3500 0.0000,
+            rotate = 180.0000 0.0000 180.0000,
+        }
+        
+        attachment bulletloops
+        {
+            offset = 0.0041 -0.0112 -0.0130,
+            rotate = 3.0000 0.0000 0.0000,
+        }
+    }
+    model ShotgunDoubleBarrelSawnFGS_OPEN
+    {
+        mesh = Weapons/Firearm/ShotgunDoubleBarrelSawn_OPEN,
+        texture = Weapons/Firearm/ShotgunDoubleBarrel_fiberglass,
         
         attachment bulletloops
         {
