@@ -99,7 +99,7 @@ function VFEContext:UpgradeIrons(item, player, context)
             for i = 0, weaponParts:size() - 1 do
                 local part = weaponParts:get(i);
                 local allowedWeapons = part:getMountOn();
-                if (part:getType() == "IronSight") and not item:getScope() and allowedWeapons:contains(item:getFullType()) then
+                if (part:getType() == "IronSight") and not item:getWeaponPart("Scope") and allowedWeapons:contains(item:getFullType()) then
                     -- To do: Localization
                     local listEntry = context:addOption(getText("IGUI_ContextMenu_AddSights"), item,
                         ISInventoryPaneContextMenu.onUpgradeWeapon, part, player);

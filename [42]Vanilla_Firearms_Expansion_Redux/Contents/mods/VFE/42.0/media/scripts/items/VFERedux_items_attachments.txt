@@ -261,7 +261,7 @@ module Base
         Weight             = 0.1,
         WeightModifier     = 0.0,
         AimingTimeModifier = 5,
-        MountOn            = FakeItemSights,
+        MountOn            = SniperRifle;M60MMG_Bipod;M60MMG,
         PartType           = Scope,
         Tooltip            = Tooltip_RedDot,
         MetalValue         = 15,

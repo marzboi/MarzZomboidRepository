@@ -9,6 +9,54 @@ local GRAVITY_SCALE = 1.0
 local DRAG_XY = 0.97
 local DRAG_Z = 0.995
 local SETTLE_THRESHOLD = 0.001
+local BOUNCE_RESTITUTION = 0.60
+local BOUNCE_POSITION_CORRECT = 0.12
+local BOUNCE_MIN_VELOCITY = 0.004
+
+local IsoDirections = IsoDirections or getClass("zombie.iso.IsoDirections")
+
+local LOW_WALL_KEYWORDS = {
+    "fencing",
+    "fence",
+    "railings",
+    "railing",
+    "counter",
+    "curb",
+    "curbs",
+    "low_",
+    "house_low",
+    "balcony",
+    "banister"
+}
+
+local function isVisuallyLowWall(wall)
+    if not wall then return false end
+
+    local name = nil
+
+    if wall.getSpriteName then
+        name = wall:getSpriteName()
+    end
+
+    if not name then
+        local spr = wall:getSprite()
+        if spr and spr.getName then
+            name = spr:getName()
+        end
+    end
+
+    if not name then return false end
+
+    name = string.lower(name)
+
+    for _, kw in ipairs(LOW_WALL_KEYWORDS) do
+        if string.find(name, kw, 1, true) then
+            return true
+        end
+    end
+
+    return false
+end
 
 local gameTime
 Events.OnGameTimeLoaded.Add(function() gameTime = GameTime.getInstance() end)
@@ -71,6 +119,93 @@ function SpentCasingPhysics.update()
             local worldY = casing.square:getY() + casing.y
             local worldZ = casing.square:getZ()
 
+            local dragXY = math.pow(DRAG_XY, scale)
+            local dragZ = math.pow(DRAG_Z, scale)
+            casing.velocityX = casing.velocityX * dragXY
+            casing.velocityY = casing.velocityY * dragXY
+            casing.velocityZ = casing.velocityZ * dragZ
+
+            local localX = worldX - casing.square:getX()
+            local localY = worldY - casing.square:getY()
+            local edgeX = localX
+            local edgeY = localY
+
+            local willBounce = false
+            local bounceAxis = nil
+
+            local EDGE_TOL = 0.15
+
+            if casing.square then
+                local sx = casing.square:getX()
+                local sy = casing.square:getY()
+                local sz = casing.square:getZ()
+
+                local nx, ny = nil, nil
+                local dir = nil
+
+                if math.abs(casing.velocityX) >= math.abs(casing.velocityY) then
+                    if casing.velocityX > 0 and edgeX >= 1.0 - EDGE_TOL then
+                        nx, ny = sx + 1, sy
+                        dir = IsoDirections.E
+                        bounceAxis = "x"
+                    elseif casing.velocityX < 0 and edgeX <= EDGE_TOL then
+                        nx, ny = sx - 1, sy
+                        dir = IsoDirections.W
+                        bounceAxis = "x"
+                    end
+                else
+                    if casing.velocityY > 0 and edgeY >= 1.0 - EDGE_TOL then
+                        nx, ny = sx, sy + 1
+                        dir = IsoDirections.S
+                        bounceAxis = "y"
+                    elseif casing.velocityY < 0 and edgeY <= EDGE_TOL then
+                        nx, ny = sx, sy - 1
+                        dir = IsoDirections.N
+                        bounceAxis = "y"
+                    end
+                end
+
+                if nx and ny and dir then
+                    local neighbor = getCell():getGridSquare(nx, ny, sz)
+                    if neighbor and casing.square:isWallTo(neighbor) then
+                        local wall1 = casing.square:getWall(true)
+                        local wall2 = neighbor:getWall(true)
+                        local low = (wall1 and isVisuallyLowWall(wall1)) or (wall2 and isVisuallyLowWall(wall2))
+
+                        if not low then
+                            local passable = false
+                            local obj = casing.square:getDoorOrWindowOrWindowFrame(dir, true)
+                            if obj and (instanceof(obj, "IsoDoor") or instanceof(obj, "IsoWindow")) and obj:IsOpen() then
+                                passable = true
+                            end
+
+                            if not passable then
+                                willBounce = true
+                            end
+                        end
+                    end
+                end
+            end
+
+            if willBounce and bounceAxis then
+                if bounceAxis == "x" then
+                    casing.velocityX = -casing.velocityX * BOUNCE_RESTITUTION
+                    casing.x = casing.x + (casing.velocityX * BOUNCE_POSITION_CORRECT)
+                    if math.abs(casing.velocityX) < BOUNCE_MIN_VELOCITY then
+                        casing.velocityX = 0
+                    end
+                else
+                    casing.velocityY = -casing.velocityY * BOUNCE_RESTITUTION
+                    casing.y = casing.y + (casing.velocityY * BOUNCE_POSITION_CORRECT)
+                    if math.abs(casing.velocityY) < BOUNCE_MIN_VELOCITY then
+                        casing.velocityY = 0
+                    end
+                end
+
+                worldX = casing.square:getX() + casing.x
+                worldY = casing.square:getY() + casing.y
+            end
+
             local targetTileX = math.floor(worldX)
             local targetTileY = math.floor(worldY)
 
@@ -102,11 +237,11 @@ function SpentCasingPhysics.update()
                 end
             end
 
-            local localX = worldX - targetSquare:getX()
-            local localY = worldY - targetSquare:getY()
+            local localX2 = worldX - targetSquare:getX()
+            local localY2 = worldY - targetSquare:getY()
 
-            localX = PZMath.clamp_01(localX)
-            localY = PZMath.clamp_01(localY)
+            localX2 = PZMath.clamp_01(localX2)
+            localY2 = PZMath.clamp_01(localY2)
 
             if casing.currentWorldItem then
                 local wobj = casing.currentWorldItem:getWorldItem()
@@ -116,30 +251,24 @@ function SpentCasingPhysics.update()
                 casing.currentWorldItem = nil
             end
 
-            local dragXY = math.pow(DRAG_XY, scale)
-            local dragZ = math.pow(DRAG_Z, scale)
-            casing.velocityX = casing.velocityX * dragXY
-            casing.velocityY = casing.velocityY * dragXY
-            casing.velocityZ = casing.velocityZ * dragZ
-
             if casing.z > 0 then
                 casing.currentWorldItem = targetSquare:AddWorldInventoryItem(
                     casing.casingType,
-                    localX,
-                    localY,
+                    localX2,
+                    localY2,
                     casing.z
                 )
                 if casing.z < 0.16 and not casing.shellSound then
                     casing.shellSound = true
-                    -- if casing.weapon and casing.weapon:getShellFallSound() then
-                    --     casing.player:getEmitter():playSound(casing.weapon:getShellFallSound())
-                    -- end
+                    if casing.weapon and casing.weapon:getShellFallSound() then
+                        casing.player:getEmitter():playSound(casing.weapon:getShellFallSound())
+                    end
                 end
             else
                 targetSquare:AddWorldInventoryItem(
                     casing.casingType,
-                    localX,
-                    localY,
+                    localX2,
+                    localY2,
                     0.0
                 )
 
@@ -161,8 +290,8 @@ function SpentCasingPhysics.update()
                 casing.square = targetSquare
             end
 
-            casing.x = localX
-            casing.y = localY
+            casing.x = PZMath.clamp_01(localX2)
+            casing.y = PZMath.clamp_01(localY2)
 
             i = i + 1
         end
@@ -222,7 +351,7 @@ function SpentCasingPhysics.spawnCasing(player, weapon)
 
     if params.manualEjection then return end
 
-    if weapon:getCurrentAmmoCount() > 0 and not weapon:isJammed() then
+    if weapon:getCurrentAmmoCount() > 0 and not weapon:isJammed() and weapon:haveChamber() then
         SpentCasingPhysics.doSpawnCasing(player, weapon, params, false)
     end
 end
