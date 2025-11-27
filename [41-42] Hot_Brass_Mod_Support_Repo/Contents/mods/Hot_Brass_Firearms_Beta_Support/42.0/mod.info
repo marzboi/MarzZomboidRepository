@@ -1,0 +1,7 @@
+name=Hot Brass - Firearms B42 Beta Support
+poster=HotBrassFirearms.png
+id=HBVCEFFirearms42Beta
+description=Support for Firearms B42 Beta.
+icon=miniLogo.png
+author=Marz
+require=\HBVCEF,\2256623447/firearmmodbeta

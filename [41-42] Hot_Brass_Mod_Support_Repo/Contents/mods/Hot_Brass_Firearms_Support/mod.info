@@ -1,0 +1,7 @@
+name=Hot Brass - Firearms B41 Support
+poster=HotBrassFirearms.png
+id=HBVCEFFirearms41
+description=Supports for Firearms B41 to use Hot Brass casings.
+icon=miniLogo.png
+author=Marz
+require=HBVCEF,firearmmod

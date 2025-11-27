@@ -1,0 +1,7 @@
+name=Hot Brass - Filibuster Rhymes' Acceptable Guns Support
+poster=HotBrassfilibuster.png
+id=HBVCEFFilibusterGuns
+description=Support for Filibuster Rhymes' Acceptable Guns.
+icon=miniLogo.png
+author=Marz
+require=\HBVCEF,\FRAcceptableGunsDEMO
