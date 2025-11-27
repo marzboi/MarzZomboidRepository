@@ -1,0 +1,33 @@
+Sandbox_CH = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyde的特質雜誌 - 其他雜誌"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "添加特質旨在在角色創建中提供的經驗點。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""工匠" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "禁用可以阻止Artisan雜誌在遊戲中產卵。"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""園丁" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "禁用以阻止園丁雜誌在遊戲中產卵。"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""石匠" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "禁用以阻止梅森雜誌在遊戲中產卵。 \ n \ n trait說明：\ n+2砌體。"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""腎上腺素癮君子" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "禁用以阻止腎上腺素癮君子雜誌在遊戲中產卵。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""棒球運動員" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "禁用以阻止棒球運動員雜誌在遊戲中產卵。 \ n \ n trait說明：\ n+1長鈍。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""草藥家" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "禁用以阻止Herbalist雜誌在遊戲中產卵。 \ n \ n trait描述：\ n+1覓食。能夠找到草藥，從它們中製作家具並識別有毒的野生食物。改善覓食。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""下水道" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "禁用以阻止下水道雜誌在遊戲中產卵。 \ n \ n trait描述：\ n+1裁縫。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""荒野知識" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "禁用以阻止荒野知識雜誌在遊戲中產生。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""獵人" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "禁用以阻止Hunter雜誌在遊戲中產卵。 \ n \ n trait說明：\ n +1瞄準，+1短刀片，+1偷偷摸摸，+1捕獲，改善覓食。"	
+}

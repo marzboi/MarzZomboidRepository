@@ -1,0 +1,33 @@
+Sandbox_AR = {
+
+	Sandbox_GydeTraitMagsAddon = "Revistas de rasgos de Gyde - revistas adicionales"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Agregue puntos de experiencia que el rasgo debe proporcionar en la creación de personajes."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Artesano" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Desactive evitar que la revista artesanal desoquee en el juego."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Jardinero" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Desactive evitar que la revista Gardener se desoque en el juego. \ N \ ntrait Descripción: \ Nincula la habilidad agrícola del jugador en 1 mejora la alimentación."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Masón" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Desactive evitar que la revista Mason se desoque en el juego. \ N \ ntrait Descripción: \ n+2 mampostería."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Jóvene de adrenalina" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Desactive para evitar que la revista Adrenaline Junkie se desoque en el juego. \ N \ ntrait Descripción: \ Nadds Una bonificación plana de 0.20 o 0.25 para la velocidad base del personaje a pánico fuerte o extremo, que aumenta la velocidad de caminar, correr y correr."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Jugador de béisbol" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Desactive evitar que la revista de jugadores de béisbol se desoque en el juego. \ N \ ntrait Descripción: \ n+1 largo contundente."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Herbalista" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Desactive evitar que la revista Herbalist se genere en el juego. \ N \ ntrait Descripción: \ n+1 Foraging. Capaz de encontrar medicamentos a base de hierbas, hacer cataplases e identificar alimentos salvajes venenosos. Mejora la alimentación."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Alcantarillado" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Desactive evitar que la revista de alcantarillado se desoque en el juego. \ N \ ntrait Descripción: \ n+1 sastrería."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Conocimiento del desierto" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Desactivar evitar que la revista de conocimiento de la naturaleza se desoque en el juego. \ N \ ntrait Descripción: \ n +1 Tallado, +1 Forrajing, +1 Knapping, +1 Mantenimiento, afecta la alimentación."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Cazador" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Desactive evitar que la revista Hunter se desoque en el juego. \ N \ ntrait Descripción: \ n +1 apunte, +1 cuchilla corta, +1 desapercibido, +1 captura, mejora el alimento."	
+}

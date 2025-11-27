@@ -1,0 +1,11 @@
+Recipe_UA = {
+    Recipe_GTMArtisanTrait = "Реміснича риса",
+    Recipe_GTMGardenerTrait = "Садівник",
+    Recipe_GTMMasonTrait = "Риса Мейсона",
+    Recipe_GTMAdrenalineJunkieTrait = "Риса наркоманів адреналіну",
+    Recipe_GTMBaseballPlayerTrait = "Риса бейсболіста",
+    Recipe_GTMHerbalistTrait2 = "Трав'яниста риса",
+    Recipe_GTMSewerTrait = "Каналізаційна риса",
+    Recipe_GTMWildernessKnowledgeTrait = "Риса знань пустелі",
+    Recipe_GTMHunterTrait = "Риса мисливця",
+}

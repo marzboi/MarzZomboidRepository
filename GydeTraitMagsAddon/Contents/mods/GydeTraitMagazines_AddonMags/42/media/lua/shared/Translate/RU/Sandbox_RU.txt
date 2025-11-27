@@ -1,0 +1,33 @@
+Sandbox_RU = {
+
+	Sandbox_GydeTraitMagsAddon = "Журналы Gyde's Trait - дополнительные журналы"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Добавьте точки опыта, которые призвана обеспечить в создании символов."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Ремесленник" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Отключить, чтобы остановить журнал Artisan от нереста в игре. \ N \ ntrait Описание: \ Nincreasers навыки стекла и керамики игрока на 1."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Садовник" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Отключить, чтобы остановить журнал Gardener от нереста в игре. \ N \ ntrait Описание: \ Nincrease Навыки сельского хозяйства игрока на 1 улучшает корм."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Масон" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Отключить, чтобы остановить журнал Mason от нереста в игре. \ N \ ntrait Описание: \ n+2 Масонство."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Адреналин наркоман" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Отключить, чтобы остановить журнал адреналина Junkie от нереста в игре. \ N \ ntrait Описание: \ nadds плоский бонус в 0,20 или 0,25 для базовой скорости персонажа при сильной или экстремальной панике, который увеличивает ходьбу, бег и скорость спринта."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Бейсболист" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Отключить, чтобы остановить журнал бейсболиста от нереста в игре. \ N \ ntrait Описание: \ n+1 Long тупой."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Травник" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Отключите, чтобы остановить журнал травника от нереста в игре. \ N \ ntrait Описание: \ n+1 Foraging. Способен найти травяные лекарства, делать из них припасы и выявлять ядовитую дикую пищу. Улучшает корм."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Канализация" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Отключить, чтобы остановить канализационный журнал от нереста в игре. \ N \ ntrait Описание: \ n+1 пошив."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Знание дикой природы" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Отключить, чтобы остановить журнал «Знания в дикой природе» от нереста в игре. \ N \ ntrait Описание: \ n +1 резьба, +1 пищу, +1 ловушка, +1 обслуживание, аффекты улучшает корм."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Охотник" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Отключить, чтобы остановить журнал Hunter от нереста в игре. \ N \ ntrait Описание: \ n +1 Прицеливание, +1 короткое лезвие, +1 подкрастья, +1 захват, улучшает корм."	
+}

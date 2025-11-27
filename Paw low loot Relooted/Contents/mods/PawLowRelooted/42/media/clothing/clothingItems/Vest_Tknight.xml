@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\bob_Vest_Tknight</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\kate_Vest_Tknight</m_FemaleModel>
+	<m_GUID>989f6ca1-aec8-4876-ac92-9f513d08cb79</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\bulletvest\Vest_Tknight</textureChoices>
+</clothingItem>

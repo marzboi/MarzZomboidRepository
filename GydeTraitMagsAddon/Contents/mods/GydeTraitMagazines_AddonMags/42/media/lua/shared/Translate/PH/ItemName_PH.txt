@@ -1,0 +1,11 @@
+ItemName_PH = {
+    ItemName_Base.ArtisanMag = "Ang Daan ng Artisan",
+    itemName_Base.GardenerMag = "Buhay sa paghahardin",
+    itemName_Base.MasonMag = "Gabay sa Master Masonry",
+    itemName_Base.AdrenalineJunkieMag = "Nakatira sa limitasyon",
+    itemName_Base.BaseballPlayerMag = "Gumagalaw ang MLB Pro",
+    itemName_Base.HerbalistMag2 = "Mga halamang gamot at buhay",
+    itemName_Base.SewerMag = "Patnubay sa Sewering",
+    itemName_Base.WildernessKnowledgeMag = "Paggalugad ng wildlife",
+    itemName_Base.HunterMag = "Pamumuhay ni Hunter",
+}

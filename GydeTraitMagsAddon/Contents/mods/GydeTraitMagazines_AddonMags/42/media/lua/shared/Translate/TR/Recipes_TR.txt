@@ -1,0 +1,11 @@
+Recipe_TR = {
+    Recipe_GTMArtisanTrait = "Zanaatkâr özellik",
+    Recipe_GTMGardenerTrait = "Bahçıvan özelliği",
+    Recipe_GTMMasonTrait = "Mason özelliği",
+    Recipe_GTMAdrenalineJunkieTrait = "Adrenalin Junkie özelliği",
+    Recipe_GTMBaseballPlayerTrait = "Beyzbol oyuncusu özelliği",
+    Recipe_GTMHerbalistTrait2 = "Bitkisel özellik",
+    Recipe_GTMSewerTrait = "Kanalizasyon özelliği",
+    Recipe_GTMWildernessKnowledgeTrait = "Vahşi bilgi özelliği",
+    Recipe_GTMHunterTrait = "Avcı özelliği",
+}

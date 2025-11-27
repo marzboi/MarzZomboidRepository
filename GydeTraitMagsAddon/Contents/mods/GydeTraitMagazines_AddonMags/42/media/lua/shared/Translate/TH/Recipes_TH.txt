@@ -1,0 +1,11 @@
+Recipe_TH = {
+    Recipe_GTMArtisanTrait = "ลักษณะช่าง",
+    Recipe_GTMGardenerTrait = "ลักษณะของสวน",
+    Recipe_GTMMasonTrait = "ลักษณะเมสัน",
+    Recipe_GTMAdrenalineJunkieTrait = "ลักษณะขี้ยาอะดรีนาลีน",
+    Recipe_GTMBaseballPlayerTrait = "ลักษณะผู้เล่นเบสบอล",
+    Recipe_GTMHerbalistTrait2 = "ลักษณะสมุนไพร",
+    Recipe_GTMSewerTrait = "ลักษณะท่อระบายน้ำ",
+    Recipe_GTMWildernessKnowledgeTrait = "ลักษณะความรู้ที่รกร้างว่างเปล่า",
+    Recipe_GTMHunterTrait = "ลักษณะของนักล่า",
+}

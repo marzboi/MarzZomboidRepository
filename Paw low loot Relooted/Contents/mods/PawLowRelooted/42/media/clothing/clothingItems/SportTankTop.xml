@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>df14dff5-a9e4-402a-bf4b-c37da0aaed37</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>clothes\SportCropTopBlue</m_BaseTextures>
+	<m_BaseTextures>clothes\SportCropTopGreen</m_BaseTextures>
+	<m_BaseTextures>clothes\SportCropTopRed</m_BaseTextures>
+	<m_BaseTextures>clothes\SportCropTopYellow</m_BaseTextures>
+	<m_BaseTextures>clothes\SportCropTopBlack</m_BaseTextures>
+</clothingItem>

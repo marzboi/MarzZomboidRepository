@@ -1,0 +1,11 @@
+Recipe_FR = {
+    Recipe_GTMArtisanTrait = "Trait artisanal",
+    Recipe_GTMGardenerTrait = "Trait de jardinier",
+    Recipe_GTMMasonTrait = "Trait maçon",
+    Recipe_GTMAdrenalineJunkieTrait = "Trait de drogué de l'adrénaline",
+    Recipe_GTMBaseballPlayerTrait = "Trait de joueur de baseball",
+    Recipe_GTMHerbalistTrait2 = "Trait d'herboriste",
+    Recipe_GTMSewerTrait = "Trait d'égout",
+    Recipe_GTMWildernessKnowledgeTrait = "Trait de connaissances en milieu sauvage",
+    Recipe_GTMHunterTrait = "Trait de chasseur",
+}

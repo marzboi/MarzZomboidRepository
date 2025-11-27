@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>static\clothes\M_HairRachel2</m_MaleModel>
+	<m_FemaleModel>static\clothes\F_HairRachel2</m_FemaleModel>
+	<m_GUID>71b2d6be-8784-4ead-8009-d116fdda8384</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>true</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Head</m_AttachBone>
+    <m_HatCategory>nohair</m_HatCategory>
+    <m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes\hat\Hat_HairR2</textureChoices>
+</clothingItem>

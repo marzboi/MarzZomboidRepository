@@ -1,0 +1,33 @@
+Sandbox_PL = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyde's Care Magazines - Dodatkowe czasopisma"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Dodaj punkty doświadczenia, które cecha ma zapewnić tworzenie postaci."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Rzemieślnik" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Wyłącz się, aby powstrzymać magazyn Artisan od tarła w grze. \ N \ ntrait Opis: \ Nincreass the Graczka Gracza i umiejętności ceramiki o 1."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Ogrodnik" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Wyłącz się, aby zatrzymać magazyn ogrodnika od tarła w grze. \ N \ ntrait Opis: \ NinCreases umiejętności rolnicze gracza przez 1 poprawia żerowanie."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Mason" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Wyłącz się, aby zatrzymać magazyn Mason przed odrodzeniem w grze. \ N \ ntrait Opis: \ n+2 mur."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Junki adrenaliny" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Wyłącz się, aby zatrzymać magazyn ćpuny adrenaliny przed odrodzeniem w grze. \ N \ ntrait Opis: \ Nadds płaski bonus 0,20 lub 0,25 dla prędkości podstawowej postaci przy silnej lub ekstremalnej panice, która zwiększa spacery, bieganie i sprint."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Baseballista" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Wyłącz się, aby zatrzymać magazyn z graczem baseballowym od tarła w grze. \ N \ ntrait Opis: \ n+1 Long Blunt."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Zielarz" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Wyłącz się, aby powstrzymać magazyn ziołowy od tarła w grze. \ N \ ntrait Opis: \ n+1 żerowanie. W stanie znaleźć leki ziołowe, tworzyć od nich okłady i identyfikować trujące dzikie jedzenie. Poprawia żerowanie."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Kanał ściekowy" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Wyłącz się, aby zatrzymać magazyn kanalizacyjny od tarła w grze. \ N \ ntrait Opis: \ n+1 krawiectwo."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Wiedza na dziczy" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Wyłącz się, aby powstrzymać magazyn wiedzy Wilderness przed odrodzeniem w grze. \ N \ ntrait Opis: \ n +1 rzeźbienie, +1 żerowanie, +1 knapowanie, +1 konserwacja, wpływa na poprawę żerowania."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Hunter" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Wyłącz się, aby powstrzymać magazyn Hunter przed odrodzeniem w grze. \ N \ ntrait Opis: \ n +1 celowanie, +1 krótkie ostrze, +1 Snaging, +1 Pułapki, poprawia żerowanie."	
+}

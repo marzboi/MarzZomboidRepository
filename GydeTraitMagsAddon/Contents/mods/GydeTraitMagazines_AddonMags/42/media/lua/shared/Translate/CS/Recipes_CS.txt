@@ -1,0 +1,11 @@
+Recipe_CS = {
+    Recipe_GTMArtisanTrait = "Øemeslná vlastnost",
+    Recipe_GTMGardenerTrait = "Znaèka zahradníka",
+    Recipe_GTMMasonTrait = "Masonová vlastnost",
+    Recipe_GTMAdrenalineJunkieTrait = "Adrenalin Junkie rys",
+    Recipe_GTMBaseballPlayerTrait = "Vlastnost hráèe baseballu",
+    Recipe_GTMHerbalistTrait2 = "Herbalistická vlastnost",
+    Recipe_GTMSewerTrait = "Kanalizaèní vlastnost",
+    Recipe_GTMWildernessKnowledgeTrait = "Znalostní vlastnost divoèiny",
+    Recipe_GTMHunterTrait = "Hunter rys",
+}

@@ -1,0 +1,11 @@
+ItemName_RO = {
+    ItemName_Base.ArtisanMag = "Calea artizanului",
+    itemName_Base.GardenerMag = "Viața de grădinărit",
+    itemName_Base.MasonMag = "Ghid pentru Master Masonry",
+    itemName_Base.AdrenalineJunkieMag = "Trăind până la limită",
+    itemName_Base.BaseballPlayerMag = "MLB PRO se mișcă",
+    itemName_Base.HerbalistMag2 = "Ierburi și viață",
+    itemName_Base.SewerMag = "Ghid pentru canalizare",
+    itemName_Base.WildernessKnowledgeMag = "Explorarea faunei sălbatice",
+    itemName_Base.HunterMag = "Stilul de viață al lui Hunter",
+}

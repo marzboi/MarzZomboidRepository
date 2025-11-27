@@ -1,0 +1,33 @@
+Sandbox_FI = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyden piirteet - Lisälehdet"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Lisää kokemuspisteitä, jotka ominaisuuden on tarkoitus tarjota luonteen luomisessa."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Käsityöläinen" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Poista Artisan Magazine käytöstä kutemasta pelissä. \ N \ ntrait Kuvaus: \ nincreas Player's Glassmawing and keramiikkataidot 1: llä."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Puutarhuri" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Poista puutarherilehti käytöstä kutemasta pelissä. \ N \ ntrait Kuvaus: \ nincreas Player -yrityksen maatalouden taito yhdellä parantaa ruokailua."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Muurari" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Poista käytöstä estää Mason -lehden kuteminen pelissä. \ N \ ntrait Kuvaus: \ n+2 muuraus."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenaliini -junkie" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Poista käytöstä estämään adrenaliini -junkie -aikakauslehteä kutemasta pelissä. \ N \ ntrait Kuvaus: \ NADDS Litteä bonus 0,20 tai 0,25 hahmon perustanopeudelle vahvalla tai äärimmäisellä paniikilla, mikä lisää kävelyä, juoksua ja sprinting -nopeutta."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Baseball -pelaaja" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Poista poistettava baseball -pelaaja -lehden kuteminen pelissä. \ N \ ntrait Kuvaus: \ n+1 pitkä tylppä."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Luontaistuotekauppias" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Poista käytöstä estämään Herbalist -aikakauslehteä kutemasta pelissä. \ N \ ntrait Kuvaus: \ n+1 rehu. Pystyy löytämään kasviperäisiä lääkkeitä, valmistamaan niistä hakuja ja tunnistamaan myrkylliset villiruoat. Parantaa ruokintaa."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Viemäri" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Poista käytöstä estämään viemärilehden kutumasta pelissä. \ N \ ntrait Kuvaus: \ n+1 räätälöinti."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Erämaa -tieto" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Poista erämaa -tietolehti käytöstä kutuista pelissä. \ N \ ntrait Kuvaus: \ n +1 veistäminen, +1 rehu, +1 Kaataminen, +1 ylläpito, vaikuttaa parantamiseen."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Metsästäjä" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Poista käytöstä estää Hunter Magazine kutevan pelissä. \ N \ ntrait Kuvaus: \ n +1 kohdistaminen, +1 lyhyt terä, +1 hiipiä, +1 tarttumista, parantaa rehua."	
+}

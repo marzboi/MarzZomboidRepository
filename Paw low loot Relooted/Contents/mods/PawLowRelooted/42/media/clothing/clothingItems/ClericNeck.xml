@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\ClericNeck</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\ClericNeck</m_FemaleModel>
+	<m_GUID>fa8acb6b-63b7-4af6-8568-40a6d0504c6e</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Spine1</m_AttachBone>
+	<textureChoices>clothes\ClericNeck</textureChoices>
+	<textureChoices>clothes\ClericNeck2</textureChoices>
+</clothingItem>

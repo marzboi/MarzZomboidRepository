@@ -1,0 +1,11 @@
+ItemName_ID = {
+    ItemName_Base.ArtisanMag = "Jalan Pengrajin",
+    itemName_Base.GardenerMag = "Kehidupan berkebun",
+    itemName_Base.MasonMag = "Panduan untuk Master Masonry",
+    itemName_Base.AdrenalineJunkieMag = "Hidup sampai batas",
+    itemName_Base.BaseballPlayerMag = "MLB Pro bergerak",
+    itemName_Base.HerbalistMag2 = "Herbal dan Kehidupan",
+    itemName_Base.SewerMag = "Panduan untuk Sewering",
+    itemName_Base.WildernessKnowledgeMag = "Eksplorasi Satwa Liar",
+    itemName_Base.HunterMag = "Gaya Hidup Hunter",
+}

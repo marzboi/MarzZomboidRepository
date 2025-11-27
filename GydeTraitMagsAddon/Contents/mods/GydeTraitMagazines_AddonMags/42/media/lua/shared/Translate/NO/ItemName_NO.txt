@@ -1,0 +1,11 @@
+ItemName_NO = {
+    ItemName_Base.ArtisanMag = "Håndverkerens vei",
+    itemName_Base.GardenerMag = "Hageliv",
+    itemName_Base.MasonMag = "Guide til master murverk",
+    itemName_Base.AdrenalineJunkieMag = "Å leve til grensen",
+    itemName_Base.BaseballPlayerMag = "MLB Pro Moves",
+    itemName_Base.HerbalistMag2 = "Urter og liv",
+    itemName_Base.SewerMag = "Veiledning til avløp",
+    itemName_Base.WildernessKnowledgeMag = "Dyrelivsutforskning",
+    itemName_Base.HunterMag = "Hunters livsstil",
+}

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathBack.xml</path>
+	<guid>08ff7a2f-c901-4ce6-b1a3-7f3bdf813e57</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathLeg.xml</path>
+	<guid>030af8b6-1842-4b09-b65d-a55a431802ce</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathTacticalBack.xml</path>
+	<guid>56dfac4f-1870-43d3-aa8a-fd453948bb73</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathTacticalLeg.xml</path>
+	<guid>744e91e9-ead3-41c3-a7ee-9e216d98458c</guid>
+	</files>
+	
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheath.xml</path>
+	<guid>72c2d13b-fe83-4085-818c-0eb4171c05a0</guid>
+	</files>
+	
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathBlue.xml</path>
+	<guid>91d7f10c-3032-49b5-8d8b-1394f99ba89b</guid>
+	</files>
+	
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathBlack.xml</path>
+	<guid>8a542305-66e6-419a-8a3b-7e25cb19d06e</guid>
+	</files>
+	
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathGreen.xml</path>
+	<guid>eb5e2d7a-1c36-40d1-b1e8-eb4c9da2eb1f</guid>
+	</files>
+	
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathRed.xml</path>
+	<guid>549557ac-9b5f-426c-adba-2966381c664a</guid>
+	</files>
+	
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathWhite.xml</path>
+	<guid>a204b14d-3377-431d-b5b3-d5928075e0b3</guid>
+	</files>
+	
+	<files>
+    <path>media/clothing/clothingItems/KatanaSheathHip.xml</path>
+    <guid>f3a1c2d4-5b6e-47a9-832e-9a2d4f8e5c7d</guid>
+	</files>
+
+	<files>
+    <path>media/clothing/clothingItems/KatanaSheathHipBlue.xml</path>
+    <guid>e91c3b7d-8a65-4f2d-973b-6b5d2e8c4a1f</guid>
+	</files>
+
+	<files>
+    <path>media/clothing/clothingItems/KatanaSheathHipBlack.xml</path>
+    <guid>c5d7e8f2-4a3b-6b1c-9a75-d42e5f8a7d3c</guid>
+	</files>
+
+	<files>
+    <path>media/clothing/clothingItems/KatanaSheathHipGreen.xml</path>
+    <guid>a7d2e9c5-6b3f-4d1c-8a75-5f4e9b2d3c8a</guid>
+	</files>
+
+	<files>
+    <path>media/clothing/clothingItems/KatanaSheathHipRed.xml</path>
+    <guid>9b5d4e2c-8a7d-3f6b-1c5a-75e9d2a4f8c3</guid>
+	</files>
+
+	<files>
+    <path>media/clothing/clothingItems/KatanaSheathHipWhite.xml</path>
+    <guid>4e2d9b75-3f6a-1c5d-7d8a-92e4c5f8a3b7</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathMidnightBack.xml</path>
+	<guid>5a7b2c9d-1e3f-4680-9b1a-2d4c6e8f079b</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathMidnightLeg.xml</path>
+	<guid>8e2f9d1c-5b7a-4036-8c59-a3f1e2d4b607</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathMilitaryBack.xml</path>
+	<guid>2b4c6e8f-9d1a-4703-b829-c5e3a7f1d960</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathMilitaryLeg.xml</path>
+	<guid>6f8a2c4d-1e3f-4957-8a0b-c3d5e7f91246</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathPoliceBack.xml</path>
+	<guid>9c1e7a3f-2d5b-4896-a4c7-f1e8d3b50692</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathPoliceLeg.xml</path>
+	<guid>3d5e7f9a-4c1b-4280-9b36-a5f7d91e6048</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathShusui.xml</path>
+	<guid>7e9a1c3b-5d7f-4329-b80a-e6c4a281f530</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathHipShusui.xml</path>
+	<guid>a1c3e5f7-6b8d-4409-b29c-f3a7d15e2084</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathPink.xml</path>
+	<guid>4b6d8f02-7a9c-4518-a93b-d2e0c6a4f175</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathHipPink.xml</path>
+	<guid>8f029a3e-8b2d-4627-b3c1-e7a5d4f21069</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathHearts.xml</path>
+	<guid>c2e4a68b-9d1f-4736-9e05-a8c1f3d52470</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathHipHearts.xml</path>
+	<guid>f3a5c7e9-0b2d-4847-9c1a-5e70d2b41836</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathGalaxy.xml</path>
+	<guid>1a5c9e2b-3f7d-4958-a7e1-b6d0c248953f</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathHipGalaxy.xml</path>
+	<guid>4b8d1f3a-5c9e-4a69-83f2-d0a7b9c1e524</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathEnma.xml</path>
+	<guid>7d2a6b4c-6e8f-4b7a-9d3c-a5c7b1e0f896</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KatanaSheathHipEnma.xml</path>
+	<guid>a1e3f579-8b0d-4c9a-b2f4-e9d5c1a63842</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathLeftLeg.xml</path>
+	<guid>4842f27f-fb53-4da8-8b85-4a0e64b9cf03</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathTacticalLeftLeg.xml</path>
+	<guid>9abf14ea-5f0d-4eed-ab77-699ac4f6686b</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathMidnightLeftLeg.xml</path>
+	<guid>608640b4-7d81-4bc5-8364-ae5031d259a4</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathMilitaryLeftLeg.xml</path>
+	<guid>0b85c4ac-fad8-412d-98e4-9d2478a5a928</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/KnifeSheathPoliceLeftLeg.xml</path>
+	<guid>8d85fc4f-5eba-44ac-a732-fe5874a3acd1</guid>
+	</files>
+</fileGuidTable>

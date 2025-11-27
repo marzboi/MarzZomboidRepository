@@ -1,0 +1,11 @@
+ItemName_FI = {
+    ItemName_Base.ArtisanMag = "Käsityöläisen tapa",
+    itemName_Base.GardenerMag = "Puutarhanhoitoelämä",
+    itemName_Base.MasonMag = "Opas Master -muuraukseen",
+    itemName_Base.AdrenalineJunkieMag = "RAJOITUS",
+    itemName_Base.BaseballPlayerMag = "MLB Pro liikkuu",
+    itemName_Base.HerbalistMag2 = "Yrtit ja elämä",
+    itemName_Base.SewerMag = "Opas viemäriin",
+    itemName_Base.WildernessKnowledgeMag = "Villieläinten etsintä",
+    itemName_Base.HunterMag = "Hunterin elämäntapa",
+}

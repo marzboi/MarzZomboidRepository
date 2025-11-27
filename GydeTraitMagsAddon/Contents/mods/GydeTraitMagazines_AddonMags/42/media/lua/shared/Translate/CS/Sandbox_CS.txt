@@ -1,0 +1,33 @@
+Sandbox_CS = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyde's Trait Magazines - další èasopisy"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Pøidejte body zkušeností, které má vlastnost poskytnout pøi vytváøení znakù."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Øemeslník" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Zakázat zastavit èasopis Artisan ve høe ve høe."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Zahradník" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Zakázat zastavit èasopis Gardener ve høe ve høe."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Zedník" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Zakázat zabránit Mason Magazine ve høe ve høe. \ N \ ntrait Popis: \ n+2 Masonry."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenalinovı feák" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Zakázat zastavení èasopisu Adrenalin Junkie z tøení ve høe."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Baseball hráè" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Zakázat zastavit èasopis Baseball Player v tøení ve høe. \ N \ ntrait Popis: \ n+1 dlouhı tupı."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Sbìratel" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Zakázat zabránit tomu, aby se Herbalist Magazine ve høe roztroušil. Schopnost najít bylinné léky, vyrábìt z nich obklopnosti a identifikovat jedovaté divoké jídlo. Zlepšuje hledání potravy."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Kanalizace" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Zakázat zabránit tomu, aby se èasopis kanalizace ve høe rozèilil. \ N \ ntrait Popis: \ n+1 krejèovství."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Znalosti o divoèinì" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Zakázat zastavení èasopisu Knowleness znalostí ve høe."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Lovec" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Zakázat zastavení èasopisu Hunter ve høe ve høe."	
+}

@@ -1,0 +1,33 @@
+Sandbox_UA = {
+
+	Sandbox_GydeTraitMagsAddon = "Журнали риси Gyde - додаткові журнали"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Додайте точки досвіду, які ознаки покликані забезпечити створення персонажів."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Ремісник" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Вимкніть, щоб зупинити Artisan Magazine від нересту в грі."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Садівник" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Вимкніть, щоб зупинити журнал Gardener від нересту в грі."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Масон" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Вимкніть, щоб зупинити журнал Мейсона від нересту в грі. \ N \ ntrait Опис: \ n+2 Масонство."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Адреналіновий наркоман" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Відключіть, щоб зупинити журнал Adrenaline Junkie від нересту в грі."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Бейсболіст" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Вимкніть, щоб зупинити журнал бейсболістів від нересту в грі. \ N \ ntrait Опис: \ n+1 Довгий тупий."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Травник" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Вимкніть, щоб зупинити травний журнал від нересту в грі. Здатний знайти рослинні лікарські засоби, робити притулки у них та визначити отруйну дику їжу. Покращує корм."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Каналізація" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Вимкніть, щоб зупинити журнал каналізації від нересту в грі. \ N \ ntrait Опис: \ n+1 Посилання."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Пустеля знання" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Вимкніть, щоб зупинити журнал Wilderness знання від нересту в грі."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Мисливець" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Вимкніть, щоб зупинити журнал Hunter від нересту в грі."	
+}

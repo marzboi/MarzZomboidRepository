@@ -1,0 +1,11 @@
+Recipe_CH = {
+    Recipe_GTMArtisanTrait = "工匠特徵",
+    Recipe_GTMGardenerTrait = "園丁特徵",
+    Recipe_GTMMasonTrait = "梅森特徵",
+    Recipe_GTMAdrenalineJunkieTrait = "腎上腺素的癮君子",
+    Recipe_GTMBaseballPlayerTrait = "棒球運動員特徵",
+    Recipe_GTMHerbalistTrait2 = "草藥主義特徵",
+    Recipe_GTMSewerTrait = "下水道特徵",
+    Recipe_GTMWildernessKnowledgeTrait = "荒野知識特徵",
+    Recipe_GTMHunterTrait = "獵人特質",
+}

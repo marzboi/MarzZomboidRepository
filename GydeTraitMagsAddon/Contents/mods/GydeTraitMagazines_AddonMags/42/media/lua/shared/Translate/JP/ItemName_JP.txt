@@ -1,0 +1,11 @@
+ItemName_JP = {
+    ItemName_Base.ArtisanMag = "職人の道",
+    itemName_Base.GardenerMag = "ガーデニングライフ",
+    itemName_Base.MasonMag = "マスターメイソンリーのガイド",
+    itemName_Base.AdrenalineJunkieMag = "限界まで生きる",
+    itemName_Base.BaseballPlayerMag = "MLB Proの移動",
+    itemName_Base.HerbalistMag2 = "ハーブと人生",
+    itemName_Base.SewerMag = "下水ガイド",
+    itemName_Base.WildernessKnowledgeMag = "野生生物探査",
+    itemName_Base.HunterMag = "ハンターのライフスタイル",
+}

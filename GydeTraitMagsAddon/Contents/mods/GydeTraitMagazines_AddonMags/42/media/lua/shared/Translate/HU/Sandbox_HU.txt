@@ -1,0 +1,33 @@
+Sandbox_HU = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyde's Dric Magazins - További folyóiratok"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Adjon hozzá olyan tapasztalati pontokat, amelyeket a tulajdonság a karakterkészítésben nyújt."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Kézműves" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Tiltsa le, hogy megakadályozza az Artisan magazin ívását a játékban."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Kertész" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Tiltsa le, hogy megakadályozza a Gardener magazin ívását a játékban."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Kőműves" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Tiltsa le, hogy megakadályozza a Mason magazin ívását a játékban. \ N \ ntrait Leírás: \ n+2 kőműves."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenalin drogos" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Tiltsa le, hogy megakadályozza az Adrenaline Junkie magazin ívását a játékban."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Baseballjátékos" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Tiltsa le, hogy megakadályozza a Baseball Player magazin ívását a játékban. \ N \ ntrait Leírás: \ n+1 hosszú tompa."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Növénygyűjtő" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Tiltsa le, hogy megakadályozza a Herbalist magazin ívását a játékban. \ N \ ntrait Leírás: \ n+1 takarmányozás. Képes gyógynövényes gyógyszereket találni, belőlük készíteni és azonosítani a mérgező vad ételeket. Javítja a takarmányozást."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Szennyvízcsatorna" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Tiltsa le, hogy megakadályozza, hogy a Cearer magazin ívjon a játékban. \ N \ ntrait Leírás: \ n+1 szabás."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Vadon tudás" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Tiltsa le, hogy megakadályozza a Wilderness Tudásmagazin ívását a játékban."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Vadász" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Tiltsa le, hogy megakadályozza a Hunter magazin ívását a játékban."	
+}

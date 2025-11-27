@@ -1,0 +1,11 @@
+ItemName_HU = {
+    ItemName_Base.ArtisanMag = "A kézműves útja",
+    itemName_Base.GardenerMag = "Kertészeti élet",
+    itemName_Base.MasonMag = "Útmutató a kőműves mesterhez",
+    itemName_Base.AdrenalineJunkieMag = "A határig élni",
+    itemName_Base.BaseballPlayerMag = "Az MLB Pro mozog",
+    itemName_Base.HerbalistMag2 = "Gyógynövények és élet",
+    itemName_Base.SewerMag = "Útmutató a varráshoz",
+    itemName_Base.WildernessKnowledgeMag = "Vadon élő állatok feltárása",
+    itemName_Base.HunterMag = "Hunter életmódja",
+}

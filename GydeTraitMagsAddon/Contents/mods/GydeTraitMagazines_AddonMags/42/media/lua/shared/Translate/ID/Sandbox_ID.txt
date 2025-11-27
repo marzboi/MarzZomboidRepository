@@ -1,0 +1,33 @@
+Sandbox_ID = {
+
+	Sandbox_GydeTraitMagsAddon = "Majalah Sifat Gyde - Majalah Tambahan"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Tambahkan poin pengalaman bahwa sifat tersebut dimaksudkan untuk menyediakan dalam penciptaan karakter."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Tukang" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Nonaktifkan untuk Menghentikan Majalah Artisan dari pemijahan dalam game. \ N \ ntrait Deskripsi: \ Snecreases Keterampilan Pembuatan Kaca dan Tembikar Pemain dengan 1."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Tukang kebun" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Nonaktifkan untuk Menghentikan Majalah Gardener dari pemijahan dalam game. \ N \ ntrait Deskripsi: \ Snecreases keterampilan pertanian pemain dengan 1 meningkatkan mencari makan."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Tukang batu" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Nonaktifkan untuk Menghentikan Majalah Mason dari pemijahan dalam game. \ N \ ntrait Deskripsi: \ n+2 Masonry."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Pecandu adrenalin" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Nonaktifkan untuk menghentikan majalah adrenalin pecandu dari pemijahan dalam permainan. \ N \ nTrait Deskripsi: \ nadds bonus datar 0,20 atau 0,25 untuk kecepatan dasar karakter pada kepanikan yang kuat atau ekstrem, yang meningkatkan kecepatan berjalan, berjalan, dan berlari."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Pemain baseball" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Nonaktifkan untuk Menghentikan Majalah Pemain Baseball dari pemijahan dalam game. \ N \ ntrait Deskripsi: \ n+1 tumpul panjang."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Penjual jamu" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Nonaktifkan untuk menghentikan majalah Herbalist dari pemijahan dalam game. \ N \ ntrait Deskripsi: \ n+1 mencari makan. Mampu menemukan obat -obatan herbal, membuat tapal dari mereka, dan mengidentifikasi makanan liar beracun. Meningkatkan mencari makan."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Selokan" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Nonaktifkan untuk Menghentikan Sewer Magazine dari Spawning in Game. \ N \ ntrait Deskripsi: \ n+1 menjahit."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Pengetahuan hutan belantara" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Nonaktifkan untuk Menghentikan Majalah Pengetahuan Wilderness dari pemijahan dalam game. \ N \ ntrait Deskripsi: \ n +1 ukiran, +1 mencari makan, +1 knapping, +1 pemeliharaan, mempengaruhi peningkatan mencari makan."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Pemburu" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Nonaktifkan untuk menghentikan majalah Hunter dari pemijahan dalam game. \ N \ ntrait Deskripsi: \ n +1 Aiming, +1 blade pendek, +1 snaking, +1 trapping, meningkatkan mencari makan."	
+}

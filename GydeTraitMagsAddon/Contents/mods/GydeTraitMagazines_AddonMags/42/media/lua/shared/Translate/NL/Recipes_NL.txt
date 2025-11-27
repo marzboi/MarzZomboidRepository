@@ -1,0 +1,11 @@
+Recipe_NL = {
+    Recipe_GTMArtisanTrait = "Ambachtelijke eigenschap",
+    Recipe_GTMGardenerTrait = "Tuinman eigenschap",
+    Recipe_GTMMasonTrait = "Mason Trait",
+    Recipe_GTMAdrenalineJunkieTrait = "Adrenaline Junkie Trait",
+    Recipe_GTMBaseballPlayerTrait = "Honkbalspeler eigenschap",
+    Recipe_GTMHerbalistTrait2 = "Kruidkundige eigenschap",
+    Recipe_GTMSewerTrait = "Riooltrek",
+    Recipe_GTMWildernessKnowledgeTrait = "Wilderness Knowledge Trait",
+    Recipe_GTMHunterTrait = "Hunter Trait",
+}

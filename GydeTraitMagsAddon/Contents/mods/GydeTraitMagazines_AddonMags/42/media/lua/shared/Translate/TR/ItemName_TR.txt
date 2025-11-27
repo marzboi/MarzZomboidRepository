@@ -1,0 +1,11 @@
+ItemName_TR = {
+    ItemName_Base.ArtisanMag = "Esnafın yolu",
+    itemName_Base.GardenerMag = "Bahçe hayatı",
+    itemName_Base.MasonMag = "Usta Masonry Rehberi",
+    itemName_Base.AdrenalineJunkieMag = "Sınıra Yaşamak",
+    itemName_Base.BaseballPlayerMag = "MLB Pro Moves",
+    itemName_Base.HerbalistMag2 = "Otlar ve Hayat",
+    itemName_Base.SewerMag = "Dikiş Rehberi",
+    itemName_Base.WildernessKnowledgeMag = "Yaban Hayatı Keşfi",
+    itemName_Base.HunterMag = "Hunter'ın yaşam tarzı",
+}

@@ -1,0 +1,11 @@
+ItemName_RU = {
+    ItemName_Base.ArtisanMag = "Путь ремесленника",
+    itemName_Base.GardenerMag = "Садоводство",
+    itemName_Base.MasonMag = "Руководство по мастеру масонства",
+    itemName_Base.AdrenalineJunkieMag = "Жизнь до предела",
+    itemName_Base.BaseballPlayerMag = "MLB Pro движется",
+    itemName_Base.HerbalistMag2 = "Травы и жизнь",
+    itemName_Base.SewerMag = "Руководство по канализации",
+    itemName_Base.WildernessKnowledgeMag = "Исследование дикой природы",
+    itemName_Base.HunterMag = "Охотник на образ жизни",
+}

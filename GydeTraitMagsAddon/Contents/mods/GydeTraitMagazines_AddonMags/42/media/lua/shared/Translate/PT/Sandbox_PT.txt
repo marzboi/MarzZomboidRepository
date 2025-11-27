@@ -1,0 +1,33 @@
+Sandbox_PT = {
+
+	Sandbox_GydeTraitMagsAddon = "Revistas de características de Gyde - revistas adicionais"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Adicione pontos de experiência que a característica visa fornecer a criação de personagens."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Artesão" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Desative para impedir que a revista Artisan seja desovada no jogo."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Jardineiro" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Desative para impedir que a revista Gardener seja gerada no jogo."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Pedreiro" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Desative para impedir que a revista Mason seja gerada no jogo. \ N \ ntrait Descrição: \ n+2 alvenaria."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Viciado em adrenalina" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Desative a revista Adrenaline Junkie de adrenalina de desova no jogo."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Jogador de beisebol" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Desative para impedir que a revista de jogadores de beisebol seja desovada no jogo. \ N \ ntrait Descrição: \ n+1 Long Blunt."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Herbalista" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Desative para impedir que a revista herbalista seja desovada no jogo. Capaz de encontrar medicamentos à base de plantas, fazer avices deles e identificar alimentos selvagens venenosos. Melhora a forrageamento."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Esgoto" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Desative para impedir que a revista de esgoto seja desovada no jogo. \ N \ ntrait Descrição: \ n+1 alfaiataria."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Conhecimento do deserto" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Desative a revista para impedir que a revista de conhecimento do deserto seja desovada no jogo."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Caçador" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Desative para impedir que a revista Hunter seja desovada no jogo."	
+}

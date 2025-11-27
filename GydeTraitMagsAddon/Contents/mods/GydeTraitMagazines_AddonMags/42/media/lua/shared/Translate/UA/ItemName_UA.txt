@@ -1,0 +1,11 @@
+ItemName_UA = {
+    ItemName_Base.ArtisanMag = "Шлях ремісника",
+    itemName_Base.GardenerMag = "Садівництво",
+    itemName_Base.MasonMag = "Посібник з майстерної кладки",
+    itemName_Base.AdrenalineJunkieMag = "Життя до межі",
+    itemName_Base.BaseballPlayerMag = "MLB Pro рухається",
+    itemName_Base.HerbalistMag2 = "Трави та життя",
+    itemName_Base.SewerMag = "Посібник з каналізації",
+    itemName_Base.WildernessKnowledgeMag = "Дослідження дикої природи",
+    itemName_Base.HunterMag = "Спосіб життя мисливця",
+}

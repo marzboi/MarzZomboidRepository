@@ -1,0 +1,11 @@
+ItemName_TH = {
+    ItemName_Base.ArtisanMag = "วิถีของช่างฝีมือ",
+    itemName_Base.GardenerMag = "ชีวิตในการทำสวน",
+    itemName_Base.MasonMag = "คู่มือการก่ออิฐหลัก",
+    itemName_Base.AdrenalineJunkieMag = "อยู่จนถึงขีด จำกัด",
+    itemName_Base.BaseballPlayerMag = "MLB Pro เคลื่อนไหว",
+    itemName_Base.HerbalistMag2 = "สมุนไพรและชีวิต",
+    itemName_Base.SewerMag = "คำแนะนำเกี่ยวกับการเย็บผ้า",
+    itemName_Base.WildernessKnowledgeMag = "การสำรวจสัตว์ป่า",
+    itemName_Base.HunterMag = "วิถีชีวิตของฮันเตอร์",
+}

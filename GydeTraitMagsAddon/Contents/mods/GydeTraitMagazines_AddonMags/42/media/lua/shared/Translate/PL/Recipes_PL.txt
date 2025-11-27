@@ -1,0 +1,11 @@
+Recipe_PL = {
+    Recipe_GTMArtisanTrait = "Cecha rzemieślnicza",
+    Recipe_GTMGardenerTrait = "Cecha ogrodnika",
+    Recipe_GTMMasonTrait = "Cecha masona",
+    Recipe_GTMAdrenalineJunkieTrait = "Cecha ćpuna adrenaliny",
+    Recipe_GTMBaseballPlayerTrait = "Cecha baseballistka",
+    Recipe_GTMHerbalistTrait2 = "Cecha ziołowa",
+    Recipe_GTMSewerTrait = "Cecha kanalizacyjna",
+    Recipe_GTMWildernessKnowledgeTrait = "Cecha wiedzy na dziczy",
+    Recipe_GTMHunterTrait = "Cecha myśliwskiego",
+}

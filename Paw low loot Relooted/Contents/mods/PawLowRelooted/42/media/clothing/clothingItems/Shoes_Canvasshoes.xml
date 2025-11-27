@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel></m_MaleModel>
+	<m_FemaleModel></m_FemaleModel>
+	<m_GUID>3e8d9cba-c46b-40c4-9e50-36117ca30532</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_BaseTextures>clothes\Shoes_Canvasshoes</m_BaseTextures>
+	<m_BaseTextures>clothes\Shoes_CanvasshoesBlue</m_BaseTextures>
+	<m_BaseTextures>clothes\Shoes_CanvasshoesGreen</m_BaseTextures>
+	<m_BaseTextures>clothes\Shoes_CanvasshoesRed</m_BaseTextures>
+	<m_BaseTextures>clothes\Shoes_CanvasshoesYellow</m_BaseTextures>
+	<m_BaseTextures>clothes\Shoes_CanvasshoesWhite</m_BaseTextures>
+</clothingItem>

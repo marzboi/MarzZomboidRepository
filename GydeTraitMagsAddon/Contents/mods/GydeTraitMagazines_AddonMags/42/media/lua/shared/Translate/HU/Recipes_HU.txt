@@ -1,0 +1,11 @@
+Recipe_HU = {
+    Recipe_GTMArtisanTrait = "Kézműves tulajdonság",
+    Recipe_GTMGardenerTrait = "Kertészi vonás",
+    Recipe_GTMMasonTrait = "Kőműves tulajdonság",
+    Recipe_GTMAdrenalineJunkieTrait = "Adrenalin drogos tulajdonság",
+    Recipe_GTMBaseballPlayerTrait = "Baseball lejátszó vonása",
+    Recipe_GTMHerbalistTrait2 = "Gyógynövényes vonás",
+    Recipe_GTMSewerTrait = "Szennyvízcsatorna",
+    Recipe_GTMWildernessKnowledgeTrait = "Wilderness tudás tulajdonsága",
+    Recipe_GTMHunterTrait = "Vadászjegy",
+}

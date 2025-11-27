@@ -1,0 +1,11 @@
+Recipe_ID = {
+    Recipe_GTMArtisanTrait = "Sifat pengrajin",
+    Recipe_GTMGardenerTrait = "Sifat tukang kebun",
+    Recipe_GTMMasonTrait = "Sifat tukang batu",
+    Recipe_GTMAdrenalineJunkieTrait = "Sifat pecandu adrenalin",
+    Recipe_GTMBaseballPlayerTrait = "Sifat pemain baseball",
+    Recipe_GTMHerbalistTrait2 = "Sifat herbalist",
+    Recipe_GTMSewerTrait = "Sifat selokan",
+    Recipe_GTMWildernessKnowledgeTrait = "Sifat pengetahuan hutan belantara",
+    Recipe_GTMHunterTrait = "Sifat pemburu",
+}

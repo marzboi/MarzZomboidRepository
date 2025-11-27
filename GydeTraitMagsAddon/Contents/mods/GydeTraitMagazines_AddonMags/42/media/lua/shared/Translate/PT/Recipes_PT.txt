@@ -1,0 +1,11 @@
+Recipe_PT = {
+    Recipe_GTMArtisanTrait = "Traço artesanal",
+    Recipe_GTMGardenerTrait = "Traço de jardineiro",
+    Recipe_GTMMasonTrait = "Traço de pedreiro",
+    Recipe_GTMAdrenalineJunkieTrait = "Traço de viciado em adrenalina",
+    Recipe_GTMBaseballPlayerTrait = "Traço de jogador de beisebol",
+    Recipe_GTMHerbalistTrait2 = "Traço herbalista",
+    Recipe_GTMSewerTrait = "Traço de esgoto",
+    Recipe_GTMWildernessKnowledgeTrait = "Traço de conhecimento da região selvagem",
+    Recipe_GTMHunterTrait = "Traço de caçador",
+}

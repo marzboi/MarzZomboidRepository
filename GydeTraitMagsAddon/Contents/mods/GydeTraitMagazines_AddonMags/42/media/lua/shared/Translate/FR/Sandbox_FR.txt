@@ -1,0 +1,33 @@
+Sandbox_FR = {
+
+	Sandbox_GydeTraitMagsAddon = "Magazines de traits de Gyde - Magazines supplémentaires"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Ajoutez des points d'expérience que le trait est destiné à fournir dans la création de personnages."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Artisan" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Désactiver pour empêcher le magazine Artisan de se reproduire dans le jeu. \ N \ ntrait Description: \ Ninage les compétences en verre et en poterie du joueur par 1."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Jardinier" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Désactiver pour empêcher Gardener Magazine de se reproduire dans le jeu. \ N \ ntrait Description: \ Nincrède la compétence agricole du joueur par 1 améliore la recherche de nourriture."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Maçon" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Désactiver le magazine Mason de Spawning dans le jeu. \ N \ ntrait Description: \ n + 2 Masonry."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Accro à l'adrénaline" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Désactiver pour arrêter le magazine Junkie d'adrénaline de la frai dans le jeu. \ N \ ntrait Description: \ Nadds un bonus plat de 0,20 ou 0,25 pour la vitesse de base du personnage à une panique forte ou extrême, ce qui augmente la marche, la course et la vitesse de sprint."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Joueur de baseball" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Désactiver pour empêcher le magazine de joueur de baseball de reproduire dans le jeu. \ N \ ntrait Description: \ n + 1 long émoussé."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Herboriste" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Désactiver le magazine Herbalist de la frai dans le jeu. \ N \ ntrait Description: \ n + 1 Fermer. Capable de trouver des plantes à base de plantes, de faire des cataplasmes et d'identifier les aliments sauvages toxiques. Améliore la recherche de nourriture."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Égout" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Désactiver pour empêcher le magazine d'égout de la frai dans le jeu. \ N \ ntrait Description: \ n + 1 couture."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Connaissances de la nature" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Désactiver le magazine Wilderness Knowledge de reproduire dans le jeu. \ N \ ntrait Description: \ n + 1 sculpture, +1 nourriture, knapping +1, maintenance +1, affecte la recherche de nourriture."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Chasseur" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Désactiver pour empêcher Hunter Magazine de se répandre dans le jeu. \ N \ ntrait Description: \ n + 1 visée, +1 lame courte, +1 fuite, piégeage +1, améliore la recherche de nourriture."	
+}

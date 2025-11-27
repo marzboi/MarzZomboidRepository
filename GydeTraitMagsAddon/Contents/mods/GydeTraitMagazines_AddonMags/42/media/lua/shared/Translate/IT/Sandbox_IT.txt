@@ -1,0 +1,33 @@
+Sandbox_IT = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyde's TRAIT MOVEGINE - Magazine aggiuntive"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Aggiungi punti di esperienza che il tratto ha lo scopo di fornire nella creazione di personaggi."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Artigiano" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Disabilita di impedire a Artisan Magazine di spawing in Game. \ N \ ntrait Descrizione: \ nincreass le abilità di fabbricazione del vetro e ceramica del giocatore di 1."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Giardiniere" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Disabilita di impedire alla rivista Gardener di spawing in Game. \ N \ ntrait Descrizione: \ nincrass l'abilità agricola del giocatore per 1 migliora il foraggiamento."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Muratore" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Disabilita di impedire a Mason Magazine di spawing in Game. \ N \ ntrait Descrizione: \ n+2 Masonry."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenalina drogato" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Disabilita di impedire al caricatore di adrenalina drogato di spawing nel gioco. \ N \ ntrait Descrizione: \ nadds un bonus piatto di 0,20 o 0,25 per la velocità di base del personaggio a un panico forte o estremo, che aumenta la camminata, la corsa e la velocità di sprint."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Giocatore di baseball" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Disabilita di impedire alla rivista Baseball Player di spawing in Game. \ N \ ntrait Descrizione: \ n+1 lungo lungo."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Erborista" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Disabilita di impedire alla rivista Herbalist di spawing in Game. \ N \ ntrait Descrizione: \ n+1 foraggiamento. In grado di trovare medicine a base di erbe, farne impronti e identificare cibo selvaggio velenoso. Migliora il foraggiamento."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Fogna" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Disabilita di impedire al caricatore fognario di spawing nel gioco. \ N \ ntrait Descrizione: \ n+1 sartoria."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Conoscenza della natura selvaggia" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Disabilita di impedire a Wilderness Knowledge Magazine di spawing in Game. \ N \ ntrait Descrizione: \ n +1 intaglio, +1 foraggiamento, +1 knapping, +1 manutenzione, influisce migliora il foraggiamento."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Cacciatore" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Disabilita di impedire a Hunter Magazine di spawing in Game. \ N \ ntrait Descrizione: \ n +1 mirando, +1 lama corta, +1 intrufolamento, +1 intrappola, migliora il foraggiamento."	
+}

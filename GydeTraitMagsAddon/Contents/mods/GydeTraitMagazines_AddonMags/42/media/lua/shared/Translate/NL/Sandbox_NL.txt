@@ -1,0 +1,33 @@
+Sandbox_NL = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyde's Trait -tijdschriften - Extra tijdschriften"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Voeg ervaringspunten toe die de eigenschap bedoeld is om te bieden bij het maken van karakter."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Ambachtsman" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Schakel het Artisan Magazine uit om in het spel te paaien. \ N \ ntrait Beschrijving: \ Nincreases de glazen en aardewerkvaardigheden van de speler met 1."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Tuinman" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Uitschakelen om te voorkomen dat Gardener Magazine niet in het spel paait."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Metselaar" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Schakel Mason Magazine uit om in het spel te paaien. \ N \ ntrait Beschrijving: \ n+2 metselwerk."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenaline junkie" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Schakel het adrenaline -junkie -magazine uit om te paaien in het spel. \ N \ ntrait Beschrijving: \ Nadds een platte bonus van 0,20 of 0,25 voor de basissnelheid van het personage bij sterke of extreme paniek, die het lopen, hardlopen en sprintsnelheid verhoogt."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Honkbalspeler" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Schakel het tijdschrift van honkbalspeler uit om in het spel te paaien. \ N \ ntrait Beschrijving: \ n+1 lange botte."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Kruidkundige" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Schakel het tijdschrift Herbalist uit om in het spel te paaien. \ N \ ntrait Beschrijving: \ n+1 foerageren. In staat om kruidengeneesmiddelen te vinden, kompels van hen te maken en giftig wild voedsel te identificeren. Verbetert foerageren."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Riool" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Schakel uit om te voorkomen dat rioolmagazine niet in het spel paait. \ N \ ntrait Beschrijving: \ n+1 maatwerk."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Wilderniskennis" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Schakel uit om te voorkomen dat het tijdschrift Wilderness Knowledge in het spel paait."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Jager" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Schakel uit om te voorkomen dat Hunter Magazine niet in het spel paait."	
+}

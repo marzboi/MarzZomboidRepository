@@ -1,0 +1,11 @@
+Recipe_JP = {
+    Recipe_GTMArtisanTrait = "職人の特徴",
+    Recipe_GTMGardenerTrait = "庭師の特徴",
+    Recipe_GTMMasonTrait = "メイソンの特性",
+    Recipe_GTMAdrenalineJunkieTrait = "アドレナリンジャンキー特性",
+    Recipe_GTMBaseballPlayerTrait = "野球選手の特性",
+    Recipe_GTMHerbalistTrait2 = "薬草師の特徴",
+    Recipe_GTMSewerTrait = "下水道",
+    Recipe_GTMWildernessKnowledgeTrait = "荒野の知識の特性",
+    Recipe_GTMHunterTrait = "ハンターの特性",
+}

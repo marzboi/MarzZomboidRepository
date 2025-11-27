@@ -1,0 +1,11 @@
+Recipe_CA = {
+    Recipe_GTMArtisanTrait = "Trait artesà",
+    Recipe_GTMGardenerTrait = "Trait de jardiner",
+    Recipe_GTMMasonTrait = "Trait de maçó",
+    Recipe_GTMAdrenalineJunkieTrait = "Trait de Junkie d?adrenalina",
+    Recipe_GTMBaseballPlayerTrait = "Trait del jugador de beisbol",
+    Recipe_GTMHerbalistTrait2 = "Trait herbolari",
+    Recipe_GTMSewerTrait = "Tret de clavegueram",
+    Recipe_GTMWildernessKnowledgeTrait = "Trait de coneixement del desert",
+    Recipe_GTMHunterTrait = "Tret de caçador",
+}

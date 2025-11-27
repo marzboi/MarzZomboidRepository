@@ -1,0 +1,33 @@
+Sandbox_TH = {
+
+	Sandbox_GydeTraitMagsAddon = "นิตยสาร Trait ของ Gyde - นิตยสารเพิ่มเติม"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "เพิ่มคะแนนประสบการณ์ที่ลักษณะมีความหมายในการสร้างตัวละคร"
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""ช่าง" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "ปิดการใช้งานเพื่อหยุดนิตยสาร Artisan จากการวางไข่ในเกม \ n \ ntrait คำอธิบาย: \ nincreases ทักษะการทำแก้วและเครื่องปั้นดินเผาของผู้เล่น 1"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""คนทำสวน" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "ปิดการใช้งานเพื่อหยุดนิตยสาร Gardener จากการวางไข่ในเกม \ n \ ntrait คำอธิบาย: \ nincreases ทักษะการเกษตรของผู้เล่นโดย 1 ปรับปรุงการหาอาหาร"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""เมสัน" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "ปิดการใช้งานเพื่อหยุดนิตยสาร Mason จากการวางไข่ในเกม \ n \ ntrait คำอธิบาย: \ n+2 ก่ออิฐ"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""อะดรีนาลีนขี้ยา" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "ปิดการใช้งานเพื่อหยุดนิตยสาร adrenaline Junkie จากการวางไข่ในเกม \ n \ ntrait คำอธิบาย: \ nadds โบนัสแบน 0.20 หรือ 0.25 สำหรับความเร็วพื้นฐานของตัวละครที่ความตื่นตระหนกหรือรุนแรงซึ่งเพิ่มการเดินวิ่งและวิ่งความเร็ว"
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""นักเบสบอล" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "ปิดการใช้งานเพื่อหยุดนิตยสาร Baseball Player จากการวางไข่ในเกม \ n \ ntrait คำอธิบาย: \ n+1 ทื่อยาว"
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""นักสมุนไพร" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "ปิดการใช้งานเพื่อหยุดนิตยสาร Herbalist จากการวางไข่ในเกม \ n \ ntrait คำอธิบาย: \ n+1 การหาอาหาร สามารถหายาสมุนไพรทำพอกจากพวกเขาและระบุอาหารป่าที่มีพิษ ปรับปรุงการหาอาหาร"
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""ท่อระบายน้ำ" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "ปิดการใช้งานเพื่อหยุดนิตยสารท่อระบายน้ำจากการวางไข่ในเกม \ n \ ntrait คำอธิบาย: \ n+1 การตัดเย็บ"
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""ความรู้ที่รกร้างว่างเปล่า" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "ปิดการใช้งานเพื่อหยุดนิตยสาร Wilderness Knowledge จากการวางไข่ในเกม \ n \ ntrait คำอธิบาย: \ n +1 แกะสลัก, +1 การหาอาหาร, +1 knapping, การบำรุงรักษา +1, ส่งผลกระทบต่อการปรับปรุงการหาอาหาร"
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""นักล่า" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "ปิดการใช้งานเพื่อหยุดนิตยสารฮันเตอร์จากการวางไข่ในเกม \ n \ ntrait คำอธิบาย: \ n +1 เล็ง, +1 ใบมีดสั้น, +1, +1, +1 ดักจับ, ปรับปรุงการหาอาหาร"	
+}

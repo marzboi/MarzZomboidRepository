@@ -1,0 +1,11 @@
+ItemName_CA = {
+    ItemName_Base.ArtisanMag = "La manera de l?artesà",
+    itemName_Base.GardenerMag = "Vida de jardineria",
+    itemName_Base.MasonMag = "Guia del mestre maçoneria",
+    itemName_Base.AdrenalineJunkieMag = "Viure al límit",
+    itemName_Base.BaseballPlayerMag = "MLB Pro es mou",
+    itemName_Base.HerbalistMag2 = "Herbes i la vida",
+    itemName_Base.SewerMag = "Guia de clavegueram",
+    itemName_Base.WildernessKnowledgeMag = "Exploració de la vida salvatge",
+    itemName_Base.HunterMag = "L?estil de vida del caçador",
+}

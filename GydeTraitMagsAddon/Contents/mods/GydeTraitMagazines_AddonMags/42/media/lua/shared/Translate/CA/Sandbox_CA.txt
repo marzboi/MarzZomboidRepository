@@ -1,0 +1,33 @@
+Sandbox_CA = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyde's Trait Revistes: revistes addicionals"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Afegiu punts d?experiència que el tret té com a objectiu proporcionar en la creació de personatges."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Artesan" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Desactiveu aturar la revista Artisan de la generació del joc. \ N \ ntrait"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Jardiner" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Desactivar aturar la revista Gardener que es produeixi en joc."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Maçó" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Desactiveu aturar la revista Mason de la generació del joc. \ N \ ntrait Descripció: \ n+2 maçoneria."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Junkie adrenalina" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Desactiveu aturar la revista Junkie d?adrenalina que es produeixi en joc."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Jugador de beisbol" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Desactiveu aturar la revista Player Baseball que es desprèn del joc. \ N \ ntrait"
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Herbolari" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Desactiveu aturar la revista Herbalist que es produeixi en el joc. \ N \ ntrait És capaç de trobar medicaments a base d?herbes, fer -hi cataplasmes i identificar aliments salvatges verinosos. Millora la farratge."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Cloaca" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Desactiveu aturar la revista de clavegueram de la generació del joc. \ N \ ntrait Descripció: \ n+1"
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Coneixement del desert" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Desactiveu aturar la revista Wilderness Knowledge de la generació del joc. \ N \ ntrait"
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Caçadora" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Desactiveu aturar la revista Hunter que es produeixi en el joc. \ N \ ntrait"	
+}

@@ -1,0 +1,11 @@
+ItemName_NL = {
+    ItemName_Base.ArtisanMag = "De weg van de ambachtsman",
+    itemName_Base.GardenerMag = "Tuinieren leven",
+    itemName_Base.MasonMag = "Gids voor master metselwerk",
+    itemName_Base.AdrenalineJunkieMag = "Tot het limiet leven",
+    itemName_Base.BaseballPlayerMag = "MLB PRO MOVES",
+    itemName_Base.HerbalistMag2 = "Kruiden en leven",
+    itemName_Base.SewerMag = "Gids voor riolering",
+    itemName_Base.WildernessKnowledgeMag = "Wildlife exploratie",
+    itemName_Base.HunterMag = "Hunter's levensstijl",
+}

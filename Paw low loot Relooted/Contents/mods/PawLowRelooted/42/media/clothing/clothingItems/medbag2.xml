@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\Clothes\medbagM</m_MaleModel>
+	<m_FemaleModel>Skinned\Clothes\medbag</m_FemaleModel>
+	<m_GUID>8c949c49-4336-465a-8a3f-1ee1496cedef</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Pelvis</m_AttachBone>
+	<textureChoices>medbag2</textureChoices>
+</clothingItem>

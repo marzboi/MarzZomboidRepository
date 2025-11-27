@@ -1,0 +1,11 @@
+Recipe_RO = {
+    Recipe_GTMArtisanTrait = "Trăsătură artizanală",
+    Recipe_GTMGardenerTrait = "Trăsătură de grădinar",
+    Recipe_GTMMasonTrait = "Trăsătură mason",
+    Recipe_GTMAdrenalineJunkieTrait = "Trăsătură de adrenalină",
+    Recipe_GTMBaseballPlayerTrait = "Trăsătura jucătorului de baseball",
+    Recipe_GTMHerbalistTrait2 = "Trăsătură pe bază de plante",
+    Recipe_GTMSewerTrait = "Trăsătură de canalizare",
+    Recipe_GTMWildernessKnowledgeTrait = "Trăsătură de cunoștințe în sălbăticie",
+    Recipe_GTMHunterTrait = "Trăsătură vânător",
+}

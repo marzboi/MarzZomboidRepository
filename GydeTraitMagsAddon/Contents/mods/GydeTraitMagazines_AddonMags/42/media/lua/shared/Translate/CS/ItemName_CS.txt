@@ -1,0 +1,11 @@
+ItemName_CS = {
+    ItemName_Base.ArtisanMag = "Cesta øemeslníka",
+    itemName_Base.GardenerMag = "Zahradnický život",
+    itemName_Base.MasonMag = "Prùvodce Master Masonry",
+    itemName_Base.AdrenalineJunkieMag = "Život na limitu",
+    itemName_Base.BaseballPlayerMag = "MLB Pro se pohybuje",
+    itemName_Base.HerbalistMag2 = "Byliny a život",
+    itemName_Base.SewerMag = "Prùvodce po šlaèení",
+    itemName_Base.WildernessKnowledgeMag = "Prùzkum volnì žijících živoèichù",
+    itemName_Base.HunterMag = "Hunterùv životní styl",
+}

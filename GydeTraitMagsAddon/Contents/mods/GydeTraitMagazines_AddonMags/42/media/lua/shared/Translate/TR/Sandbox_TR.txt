@@ -1,0 +1,33 @@
+Sandbox_TR = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyde's Trait Dergileri - Ek Dergiler"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Özelliğin karakter yaratmada sağladığı deneyim noktaları ekleyin."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Zanaatkâr" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Artisan dergisinin oyundaki yumurtlamasını durdurmak için devre dışı bırakın."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Bahçıvan" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Gardener Magazine'in oyunda yumurtlamasını durdurmak için devre dışı bırakın."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Mason" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Mason dergisinin oyundaki yumurtlamasını durdurmak için devre dışı bırakın. \ N \ ntrait Açıklama: \ n+2 duvar."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenalin" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Adrenalin Junkie dergisinin oyundaki yumurtlamasını durdurmak için devre dışı bırakın."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Beyzbol oyuncusu" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Beyzbol Oyuncu Dergisi'nin Game in Pawning'i durdurmak için devre dışı bırakın."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Bitki uzmanı" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Bitkisel derginin oyundaki yumurtlamasını durdurmak için devre dışı bırakın. Bitkisel ilaçlar bulabilir, onlardan kümes hayvanları yapabilir ve zehirli vahşi yiyecekleri tanımlayabilir. Yemlemeyi geliştirir."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Kanalizasyon" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Kanalizasyon dergisinin oyundaki yumurtlamasını durdurmak için devre dışı bırakın."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Vahşi bilgi" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Wilderness Bilgi Dergisi'nin oyunda yumurtlamasını durdurmak için devre dışı bırakın."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Avcı" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Hunter dergisinin oyundaki yumurtlamasını durdurmak için devre dışı bırakın."	
+}

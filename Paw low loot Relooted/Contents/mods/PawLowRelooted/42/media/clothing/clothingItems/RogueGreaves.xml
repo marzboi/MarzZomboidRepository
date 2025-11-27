@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\bob_Greaves</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\kate_Greaves</m_FemaleModel>
+	<m_GUID>67956493-8324-4303-9d5c-c344d4225f8f</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<m_MasksFolder>media\textures\Body\Masks</m_MasksFolder>
+	<textureChoices>clothes\RogueGreaves</textureChoices>
+	<textureChoices>clothes\RogueGreaves2</textureChoices>
+</clothingItem>

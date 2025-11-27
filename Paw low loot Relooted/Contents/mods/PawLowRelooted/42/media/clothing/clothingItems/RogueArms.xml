@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>hazmatbkp\bob_hazmat</m_MaleModel>
+	<m_FemaleModel>hazmatbkp\kate_hazmat</m_FemaleModel>
+	<m_GUID>bfbb2ecb-958b-442c-ae13-3fc647717127</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+
+	<m_MasksFolder>media\textures\Body\Masks</m_MasksFolder>
+	<textureChoices>clothes\RogueArms</textureChoices>
+	<textureChoices>clothes\RogueArms2</textureChoices>
+</clothingItem>

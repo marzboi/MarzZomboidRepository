@@ -1,0 +1,11 @@
+Recipe_AR = {
+    Recipe_GTMArtisanTrait = "Rasgo artesanal",
+    Recipe_GTMGardenerTrait = "Rasgo de jardinero",
+    Recipe_GTMMasonTrait = "Rasgo de masón",
+    Recipe_GTMAdrenalineJunkieTrait = "Rasgo de adicto a la adrenalina",
+    Recipe_GTMBaseballPlayerTrait = "Rasgo de jugador de béisbol",
+    Recipe_GTMHerbalistTrait2 = "Rasgo herbalista",
+    Recipe_GTMSewerTrait = "Rasgo de alcantarillado",
+    Recipe_GTMWildernessKnowledgeTrait = "Rasgo de conocimiento del desierto",
+    Recipe_GTMHunterTrait = "Rasgo de cazador",
+}

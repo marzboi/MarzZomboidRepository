@@ -1,0 +1,33 @@
+Sandbox_JP = {
+
+	Sandbox_GydeTraitMagsAddon = "Gydeの特性雑誌 - 追加の雑誌"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "特性がキャラクター作成で提供することを意図している経験ポイントを追加します。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""職人" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Artisan Magazineがゲームに出現するのを止めるために無効にします。"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""庭師" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Gardener Magazineがゲームで生成されるのを防ぐために無効になります。"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""石工" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Mason Magazineがゲームで生成されるのを防ぐために無効になります。\ n \ ntrait説明：\ n+2石積み。"
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""アドレナリン中毒者" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Adrenaline Junkie Magazineがゲームに出現するのを防ぐことを無効にします。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""野球選手" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "野球選手の雑誌がゲームに出現するのを防ぐために無効になります。\ n \ ntrait説明：\ n+1長い鈍い。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""薬草師" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "ハーブリストの雑誌がゲームで生成されるのを止めるために無効になります。\ n \ ntrait説明：\ n+1採餌。漢方薬を見つけることができ、それらから湿布を作り、有毒な野生の食物を特定します。採餌を改善します。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""下水道" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "下水道雑誌がゲームで生成されるのを止めることを無効にします。\ n \ ntrait説明：\ n+1仕立て。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""荒野の知識" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Wilderness Knowledge Magazineがゲームで生成されるのを止めることを無効にします。"
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""ハンター" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "ハンターマガジンがゲームで産卵するのを防ぐために無効になります。"	
+}

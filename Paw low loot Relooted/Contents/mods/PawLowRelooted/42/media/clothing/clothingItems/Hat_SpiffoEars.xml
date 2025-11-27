@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>static\clothes\M_SpiffoEars</m_MaleModel>
+	<m_FemaleModel>static\clothes\F_SpiffoEars</m_FemaleModel>
+	<m_GUID>1fa7a38a-24d7-492b-bac7-e0e2bd0ec001</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Head</m_AttachBone>
+	<m_HatCategory>group05</m_HatCategory>
+	<m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes\hat\Hat_SpiffoEars</textureChoices>
+	<textureChoices>clothes\hat\Hat_SpiffoEars2</textureChoices>
+	<textureChoices>clothes\hat\Hat_SpiffoEars3</textureChoices>
+</clothingItem>

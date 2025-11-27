@@ -1,0 +1,11 @@
+ItemName_AR = {
+    ItemName_Base.ArtisanMag = "El camino del artesano",
+    itemName_Base.GardenerMag = "Vida de jardinería",
+    itemName_Base.MasonMag = "Guía de Master Masonry",
+    itemName_Base.AdrenalineJunkieMag = "Viviendo hasta el límite",
+    itemName_Base.BaseballPlayerMag = "MLB PRO MOVES",
+    itemName_Base.HerbalistMag2 = "Hierbas y vida",
+    itemName_Base.SewerMag = "Guía de costura",
+    itemName_Base.WildernessKnowledgeMag = "Exploración de la vida silvestre",
+    itemName_Base.HunterMag = "Estilo de vida de Hunter",
+}

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\bob_trousers</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\kate_trousers</m_FemaleModel>
+	<m_GUID>dad58094-64b4-4ba9-aad8-0164f356bae4</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>true</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\PFKnee</textureChoices>
+</clothingItem>

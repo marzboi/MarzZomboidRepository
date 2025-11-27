@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\HolsterPLL</m_MaleModel>
+	<m_FemaleModel>Skinned\HolsterPLLF</m_FemaleModel>
+	<m_GUID>d007656b-2800-42b1-835a-864336a8317f</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_R_Thigh</m_AttachBone>
+	<textureChoices>clothes\HolsterPLL2</textureChoices>
+</clothingItem>

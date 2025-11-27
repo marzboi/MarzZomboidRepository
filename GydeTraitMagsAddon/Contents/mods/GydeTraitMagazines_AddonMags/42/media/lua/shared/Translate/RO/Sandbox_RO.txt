@@ -1,0 +1,33 @@
+Sandbox_RO = {
+
+	Sandbox_GydeTraitMagsAddon = "Revistele de trăsături ale lui Gyde - reviste suplimentare"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Adăugați puncte de experiență pe care trăsătura este menită să le ofere în crearea de personaje."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Artizan" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Dezactivează să oprești revista Artisan să -și dea naștere în joc. \ N \ ntrait Descriere: \ nincreades the Glassmaking și abilitățile de ceramică până la 1."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Grădinar" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Dezactivați să opriți revista Gardener să -și dea naștere în joc. \ N \ ntrait Descriere: \ nincreade Abilitatea agricolă a jucătorului cu 1 îmbunătățește hrănirea."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Zidar" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Dezactivați să opriți revista Mason de la Spewning in Game. \ N \ ntrait Descriere: \ n+2 Masonry."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenalină junkie" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Dezactivează să oprești revista adrenalină junkie de la nădejde în joc. \ N \ ntrait Descriere: \ nadds Un bonus plat de 0,20 sau 0,25 pentru viteza de bază a personajului la o panică puternică sau extremă, care crește mersul, alergarea și viteza de sprint."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Jucător de baseball" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Dezactivați să opriți revista Baseball Player de la a face naștere în joc. \ N \ ntrait Descriere: \ n+1 lung."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Erborizator" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Dezactivați să opriți revista Herbalist să nu -și dea naștere în joc. \ N \ ntrait Descriere: \ n+1 Foraging. Capabil să găsească medicamente pe bază de plante, să facă păsări de la ei și să identifice alimente sălbatice otrăvitoare. Îmbunătățește hrănirea."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Canalizare" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Dezactivați să opriți revista de canalizare de la reproducerea în joc. \ N \ ntrait Descriere: \ n+1 croitorie."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Cunoștințe despre sălbăticie" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Dezactivați să opriți revista Wilderness Knowledge să dea naștere în joc. \ N \ ntrait Descriere: \ n +1 sculptură, +1 hrănire, +1 twapping, +1 întreținere, afectează îmbunătățirea hrănirii."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Vânător" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Dezactivați să opriți revista Hunter să -și dea naștere în joc. \ N \ ntrait Descriere: \ n +1 Afișare, +1 lamă scurtă, +1 streaking, +1 captare, îmbunătățește hrănirea."	
+}

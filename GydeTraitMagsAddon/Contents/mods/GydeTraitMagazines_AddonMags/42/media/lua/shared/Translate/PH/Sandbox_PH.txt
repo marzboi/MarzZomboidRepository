@@ -1,0 +1,33 @@
+Sandbox_PH = {
+
+	Sandbox_GydeTraitMagsAddon = "Gyde's Trait Magazine - Karagdagang magasin"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Magdagdag ng mga puntos ng karanasan na ang katangian ay inilaan upang maibigay sa paglikha ng character."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Artisan" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Huwag paganahin upang ihinto ang artisan magazine mula sa spawning sa laro."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Hardinero" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Huwag paganahin upang ihinto ang magazine ng hardinero mula sa spawning sa laro."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Mason" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Huwag paganahin upang ihinto ang Mason Magazine mula sa spawning sa laro. \ N \ ntrait Paglalarawan: \ n+2 Masonry."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenaline junkie" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Huwag paganahin upang ihinto ang adrenaline junkie magazine mula sa spawning sa laro."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Baseball player" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Huwag paganahin upang ihinto ang magazine ng baseball player mula sa spawning sa laro. \ N \ ntrait Paglalarawan: \ n+1 mahabang blunt."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Herbalist" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Huwag paganahin upang pigilan ang magazine ng herbalist mula sa spawning sa laro. \ N \ ntrait Paglalarawan: \ n+1 foraging. Nakahanap ng mga halamang gamot, gumawa ng mga manok mula sa kanila, at makilala ang nakakalason na ligaw na pagkain. Nagpapabuti ng foraging."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Sewer" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Huwag paganahin upang ihinto ang magazine ng sewer mula sa spawning sa laro. \ N \ ntrait Paglalarawan: \ n+1 Pag -aayos."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Kaalaman ng ilang" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Huwag paganahin upang ihinto ang magazine ng Kamakailan lamang na Pag -spawning sa laro."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Mangangaso" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Huwag paganahin upang ihinto ang Hunter Magazine mula sa spawning sa laro."	
+}

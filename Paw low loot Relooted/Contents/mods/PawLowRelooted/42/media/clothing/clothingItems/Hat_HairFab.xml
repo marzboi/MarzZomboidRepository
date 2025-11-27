@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\hair\bob_hair_fabian</m_MaleModel>
+	<m_FemaleModel>skinned\hair\kate_hair_long2</m_FemaleModel>
+	<m_GUID>660205de-1b0c-4166-b6c5-19946d9de5ab</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>true</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+    <m_HatCategory>nohair</m_HatCategory>
+    <m_MasksFolder>media/textures/Clothes/Hat/Masks</m_MasksFolder>
+	<textureChoices>clothes\hat\Hat_HairP</textureChoices>
+</clothingItem>

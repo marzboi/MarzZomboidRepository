@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\Clothes\Bob_RogueVest</m_MaleModel>
+	<m_FemaleModel>Skinned\Clothes\Kate_RogueVest</m_FemaleModel>
+	<m_GUID>463aa975-ffe3-4375-97b5-c847fa263077</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\Bulletvest\Vest_RogueVest</textureChoices>
+	<textureChoices>clothes\Bulletvest\Vest_RogueVest2</textureChoices>
+</clothingItem>

@@ -1,0 +1,11 @@
+Recipe_DA = {
+    Recipe_GTMArtisanTrait = "Artisan Trait",
+    Recipe_GTMGardenerTrait = "Gartneregenskab",
+    Recipe_GTMMasonTrait = "Mason -træk",
+    Recipe_GTMAdrenalineJunkieTrait = "Adrenalin -junkie -egenskab",
+    Recipe_GTMBaseballPlayerTrait = "Baseballspiller -træk",
+    Recipe_GTMHerbalistTrait2 = "Herbalist -træk",
+    Recipe_GTMSewerTrait = "Kloaktræk",
+    Recipe_GTMWildernessKnowledgeTrait = "Vidnerens videnegenskab",
+    Recipe_GTMHunterTrait = "Hunter egenskab",
+}

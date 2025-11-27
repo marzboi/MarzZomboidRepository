@@ -1,0 +1,33 @@
+Sandbox_DE = {
+
+	Sandbox_GydeTraitMagsAddon = "Gydes Merkmalsmagazine - zusätzliche Magazine"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Fügen Sie Erfahrungspunkte hinzu, die das Merkmal in der Charaktererstellung liefern soll."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Handwerker" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Deaktivieren Sie, dass das Artisan -Magazin das Laichen im Spiel verhindern kann."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Gärtner" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Deaktivieren Sie, dass das Gärtnermagazin das Laichen im Spiel verhindern kann."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Mason" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Deaktivieren Sie, dass das Mason Magazine in Spiel laichen. \ N \ ntrait Beschreibung: \ n+2 Mauerwerk."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenalin -Junkie" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Deaktivieren Sie, dass das Adrenalin -Junkie -Magazin im Spiel laichen."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Baseballspieler" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Deaktivieren Sie, um das Baseball -Spielermagazin vom Laichen im Spiel zu verhindern."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Kräuterkenner" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Deaktivieren Sie, um das Herbalist -Magazin davon abzuhalten, im Spiel zu laichen. In der Lage, Kräutermedikamente zu finden, um Poultices aus ihnen herzustellen und giftige Wildfutter zu identifizieren. Verbessert die Futtersuche."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Kanal" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Deaktivieren Sie, dass das Abwassermagazin im Spiel laichen."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Wildniswissen" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Deaktivieren Sie, dass das Wilderness Knowledge Magazine im Spiel laichen."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Jäger" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Deaktivieren Sie, dass das Hunter Magazine das Laichen im Spiel verhindern kann."	
+}

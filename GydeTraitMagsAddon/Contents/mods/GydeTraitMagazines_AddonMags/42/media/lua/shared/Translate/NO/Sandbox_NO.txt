@@ -1,0 +1,33 @@
+Sandbox_NO = {
+
+	Sandbox_GydeTraitMagsAddon = "Gydes trekkmagasiner - Flere magasiner"
+
+	Sandbox_GydeTraitMagsAddon_AddExpPoints = "Legg til opplevelsespoeng som egenskapen er ment å gi i karakterskaping."
+
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan = ""Håndverker" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnArtisan_tooltip = "Deaktiver for å stoppe Artisan Magazine fra å gyte i spillet. \ N \ ntrait Beskrivelse: \ Nincase the Player's Glassmaking and Pottery Skills by 1."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnGardener = ""Gartner" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnGardener_tooltip = "Deaktiver for å stoppe Gardener Magazine fra å gyte i spillet. \ N \ ntrait Beskrivelse: \ Nince spillerens landbruksevne med 1 forbedrer fôr."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnMason = ""Mason" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnMason_tooltip = "Deaktiver for å stoppe Mason Magazine fra å gyte i spillet. \ N \ ntrait Beskrivelse: \ n+2 murverk."
+	
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie = ""Adrenalin Junkie" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnAdrenalineJunkie_tooltip = "Deaktiver for å stoppe adrenalin Junkie Magazine fra å gyte i spillet. \ N \ ntrait Beskrivelse: \ nadds En flat bonus på 0,20 eller 0,25 for karakterens basishastighet ved sterk eller ekstrem panikk, noe som øker gåing, løping og sprinthastighet."
+
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer = ""Baseballspiller" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnBaseballPlayer_tooltip = "Deaktiver for å stoppe Baseball Player Magazine fra gyting i spillet. \ N \ ntrait Beskrivelse: \ n+1 lang stump."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist = ""Herbalist" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHerbalist_tooltip = "Deaktiver for å stoppe Herbalist Magazine fra å gyte i spillet. \ N \ ntrait Beskrivelse: \ n+1 foraging. Kunne finne urtemedisiner, lage fjærkre fra dem og identifisere giftig vill mat. Forbedrer fôring."
+
+	Sandbox_GydeTraitMagsAddon_SpawnSewer = ""Kloakkrør" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnSewer_tooltip = "Deaktiver for å stoppe kloakkmagasinet fra gyting i spillet. \ N \ ntrait Beskrivelse: \ n+1 skreddersøm."
+
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge = ""Villmarkskunnskap" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnWildernessKnowledge_tooltip = "Deaktiver for å stoppe Wilderness Knowledge Magazine fra å gyte i spillet. \ N \ ntrait Beskrivelse: \ n +1 utskjæring, +1 fôring, +1 Knapping, +1 Vedlikehold, påvirker forbedrer fôring."
+
+	Sandbox_GydeTraitMagsAddon_SpawnHunter = ""Jeger" Magazine Spawns"
+	Sandbox_GydeTraitMagsAddon_SpawnHunter_tooltip = "Deaktiver for å stoppe Hunter Magazine fra å gyte i spillet. \ N \ ntrait Beskrivelse: \ n +1 sikt, +1 kort blad, +1 snike, +1 fangst, forbedrer fôr."	
+}

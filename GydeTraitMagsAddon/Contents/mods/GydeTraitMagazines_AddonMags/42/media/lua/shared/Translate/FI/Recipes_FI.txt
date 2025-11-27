@@ -1,0 +1,11 @@
+Recipe_FI = {
+    Recipe_GTMArtisanTrait = "Käsityöläinen piirre",
+    Recipe_GTMGardenerTrait = "Puutarhurin piirre",
+    Recipe_GTMMasonTrait = "Muurausominaisuus",
+    Recipe_GTMAdrenalineJunkieTrait = "Adrenaliinin junkie -ominaisuus",
+    Recipe_GTMBaseballPlayerTrait = "Baseball -pelaajan ominaisuus",
+    Recipe_GTMHerbalistTrait2 = "Yrttivalo",
+    Recipe_GTMSewerTrait = "Viemäriominaisuus",
+    Recipe_GTMWildernessKnowledgeTrait = "Erämaa -tietoominaisuus",
+    Recipe_GTMHunterTrait = "Metsästäjäpiirre",
+}

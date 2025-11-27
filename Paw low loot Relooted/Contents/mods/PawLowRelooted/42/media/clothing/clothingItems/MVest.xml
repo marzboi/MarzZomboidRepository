@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\Clothes\M_MVest</m_MaleModel>
+	<m_FemaleModel>Skinned\Clothes\F_MVest</m_FemaleModel>
+	<m_GUID>66f8e34d-cb58-4b2a-8943-7ee5a7ccd72e</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Spine1</m_AttachBone>
+	<textureChoices>clothes\bulletvest\MVest</textureChoices>
+	<textureChoices>clothes\bulletvest\MVest2</textureChoices>
+	<textureChoices>clothes\bulletvest\MVest3</textureChoices>
+</clothingItem>

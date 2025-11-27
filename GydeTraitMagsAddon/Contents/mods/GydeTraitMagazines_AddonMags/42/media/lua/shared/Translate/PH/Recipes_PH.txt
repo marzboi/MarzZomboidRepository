@@ -1,0 +1,11 @@
+Recipe_PH = {
+    Recipe_GTMArtisanTrait = "Artisan trait",
+    Recipe_GTMGardenerTrait = "Traim ng hardinero",
+    Recipe_GTMMasonTrait = "Mason trait",
+    Recipe_GTMAdrenalineJunkieTrait = "Adrenaline junkie trait",
+    Recipe_GTMBaseballPlayerTrait = "Baseball player trait",
+    Recipe_GTMHerbalistTrait2 = "Herbalist trait",
+    Recipe_GTMSewerTrait = "Trait ng alkantarilya",
+    Recipe_GTMWildernessKnowledgeTrait = "Trait ng Kaalaman sa Kagandahan",
+    Recipe_GTMHunterTrait = "Trait ng Hunter",
+}

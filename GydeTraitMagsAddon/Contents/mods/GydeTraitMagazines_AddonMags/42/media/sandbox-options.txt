@@ -1,0 +1,100 @@
+VERSION = 1,
+
+option GydeTraitMagsAddon.AddExpPoints
+{
+	type = boolean,
+	default = false,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_AddExpPoints,
+}
+
+option GydeTraitMagsAddon.SpawnArtisan
+{
+	type = boolean,
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnArtisan,
+}
+
+option GydeTraitMagsAddon.SpawnArtisan
+{
+	type = boolean,
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnArtisan,
+}
+
+option GydeTraitMagsAddon.SpawnGardener
+{
+	type = boolean,s
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnGardener,
+}
+
+option GydeTraitMagsAddon.SpawnMason
+{
+	type = boolean,
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnMason,
+}
+
+option GydeTraitMagsAddon.SpawnAdrenalineJunkie
+{
+	type = boolean,
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnAdrenalineJunkie,
+}
+
+option GydeTraitMagsAddon.SpawnBaseballPlayer
+{
+	type = boolean,
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnBaseballPlayer,
+}
+
+option GydeTraitMagsAddon.SpawnHerbalist
+{
+	type = boolean,
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnHerbalist,
+}
+
+option GydeTraitMagsAddon.SpawnSewer
+{
+	type = boolean,
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnSewer,
+}
+
+option GydeTraitMagsAddon.SpawnWildernessKnowledge
+{
+	type = boolean,
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnWildernessKnowledge,
+}
+
+option GydeTraitMagsAddon.SpawnHunter
+{
+	type = boolean,
+	default = true,
+	
+	page = GydeTraitMagsAddon,
+	translation = GydeTraitMagsAddon_SpawnHunter,
+}

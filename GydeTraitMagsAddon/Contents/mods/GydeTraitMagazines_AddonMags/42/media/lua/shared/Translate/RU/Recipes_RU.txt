@@ -1,0 +1,11 @@
+Recipe_RU = {
+    Recipe_GTMArtisanTrait = "Ремесленная черта",
+    Recipe_GTMGardenerTrait = "Черта садовника",
+    Recipe_GTMMasonTrait = "Черта масона",
+    Recipe_GTMAdrenalineJunkieTrait = "Адреналиновая наркомана",
+    Recipe_GTMBaseballPlayerTrait = "Черта бейсболиста",
+    Recipe_GTMHerbalistTrait2 = "Травническая черта",
+    Recipe_GTMSewerTrait = "Канализационная черта",
+    Recipe_GTMWildernessKnowledgeTrait = "Черта знания дикой природы",
+    Recipe_GTMHunterTrait = "Черта охотника",
+}

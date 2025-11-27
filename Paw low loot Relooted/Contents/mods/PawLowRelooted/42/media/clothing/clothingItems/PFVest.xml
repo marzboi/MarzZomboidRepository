@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>skinned\clothes\bob_jumper</m_MaleModel>
+	<m_FemaleModel>skinned\clothes\kate_jumper</m_FemaleModel>
+	<m_GUID>c0112e8a-ea7b-45d3-ac8e-e5d7ed858f8f</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>true</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\PFVest</textureChoices>
+</clothingItem>
