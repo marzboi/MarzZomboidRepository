@@ -89,6 +89,7 @@ module Base
         WeaponReloadType             = shotgun,
         WeaponSprite                 = Shotgun,
         Weight                       = 4,
+        ProjectileSpread             = 1.0,
     }
     
     item Shotgun2
@@ -174,6 +175,7 @@ module Base
         WeaponReloadType             = shotgun,
         WeaponSprite                 = Shotgun2,
         Weight                       = 4.2,
+        ProjectileSpread             = 1.0,
     }
     
     item Shotgun2Bayonet
@@ -312,6 +314,7 @@ module Base
         WeaponReloadType             = shotgunsemi,
         WeaponSprite                 = ShotgunSemi,
         Weight                       = 4.4,
+        ProjectileSpread             = 1.0,
     }
     
     item ShotgunSemi2
@@ -396,6 +399,7 @@ module Base
         WeaponReloadType             = shotgunsemi,
         WeaponSprite                 = ShotgunSemi2,
         Weight                       = 4.6,
+        ProjectileSpread             = 1.0,
     }
     
     item ShotgunSawnoff
@@ -479,6 +483,7 @@ module Base
         WeaponReloadType             = shotgun,
         WeaponSprite                 = ShotgunSawnOff,
         Weight                       = 3.5,
+        ProjectileSpread             = 1.5,
     }
     
     item ShotgunSawnoffNoStock
@@ -558,6 +563,7 @@ module Base
         WeaponReloadType             = shotgun,
         WeaponSprite                 = ShotgunSawnoffNoStock,
         Weight                       = 2.5,
+        ProjectileSpread             = 1.5,
     }
     
     item DoubleBarrelShotgun
@@ -647,6 +653,7 @@ module Base
         WeaponSprite                 = DoubleBarrelShotgun,
         Weight                       = 4,
         needtobeclosedoncereload     = true,
+        ProjectileSpread             = 1.2,
     }
     
     item DoubleBarrelShotgunSawnoff
@@ -727,6 +734,7 @@ module Base
         WeaponSprite                 = ShotgunDoubleBarrelSawn,
         Weight                       = 3.0,
         needtobeclosedoncereload     = true,
+        ProjectileSpread             = 2.0,
     }
     
     item DoubleBarrelShotgunSawnoffNoStock
@@ -806,6 +814,7 @@ module Base
         WeaponSprite                 = ShotgunDoubleBarrelSawnNoStock,
         Weight                       = 2.5,
         needtobeclosedoncereload     = true,
+        ProjectileSpread             = 2.0,
     }
     
     item Spas12
@@ -892,6 +901,7 @@ module Base
         WeaponReloadType             = shotgunsemi,
         WeaponSprite                 = Spas12,
         Weight                       = 4.6,
+        ProjectileSpread             = 0.7,
     }
     
     item Spas12Folded
@@ -978,6 +988,7 @@ module Base
         WeaponReloadType             = shotgunsemi,
         WeaponSprite                 = Spas12Folded,
         Weight                       = 3.8,
+        ProjectileSpread             = 0.7,
     }
     
     item ShotgunSilent
@@ -1060,5 +1071,6 @@ module Base
         WeaponReloadType             = shotgunsemi,
         WeaponSprite                 = ShotgunSilent,
         Weight                       = 4.6,
+        ProjectileSpread             = 0.8,
     }
 }
