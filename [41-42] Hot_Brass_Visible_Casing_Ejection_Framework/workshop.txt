@@ -44,6 +44,10 @@ description=[*]Shell force determines how far the casing is ejected. Negative va
 description=[*]Manual ejection controls whether a weapon requires racking to cycle the ammo.
 description=[/list]
 description=
-description=[b]Currently the mod also supports B41. but I have not test it extensively. so if you encounter a bug report it.[/b]
+description=[b]Currently the mod also supports B41. but I have not test it extensively. so if you encounter a bug report it.[/b]
+description=
+description=Mod Patches here:
+description=
+description=https://steamcommunity.com/sharedfiles/filedetails/?id=3612830296
 tags=Build 41;Build 42;Framework;Items;Military;Misc;Models;Multiplayer;Realistic;Silly/Fun;QoL;Weapons
 visibility=public
