@@ -1,7 +1,7 @@
 version=1
 id=3612830296
 title=Hot Brass - Mod Patch Repository
-description=[h1]Mod Patch Repository — Hot Brass[/h1]
+description=[h1]Mod Patch Repository - Hot Brass[/h1]
 description=
 description=[b]This mods collects all official compatibility patches for Hot Brass, created upon request for popular weapon and firearm mods.[/b]
 description=
