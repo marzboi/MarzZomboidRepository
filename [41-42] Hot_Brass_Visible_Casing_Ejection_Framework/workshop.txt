@@ -1,6 +1,8 @@
 version=1
 id=3610677934
 title=[41/42] Hot Brass - Visible Casing Ejection Framework
+description=[h1] Hot Brass – Visible Casing Ejection Framework [/h1]
+description=
 description=[h1] Hot Brass – Visible Casing Ejection Framework [/h1]
 description=
 description=For a long time, I wondered how cool Project Zomboid would look if we could actually see spent casings flying out of our weapons. That curiosity eventually turned into a desire to learn how to mod and now here we are.
@@ -46,8 +48,16 @@ description=[/list]
 description=
 description=[b]Currently the mod also supports B41. but I have not test it extensively. so if you encounter a bug report it.[/b]
 description=
-description=Mod Patches here:
+description=Mod Patches in the link below:
 description=
-description=https://steamcommunity.com/sharedfiles/filedetails/?id=3612830296
+description=https://steamcommunity.com/sharedfiles/filedetails/?id=3612830296
+description=
+description=Currently covered Mods
+description=[list]
+description=[*] Firearms B41 and B42
+description=[*] VFE 41 and Unofficial 42
+description=[*] Filibuster Rhymes's Acceptable Guns
+description=[*] Rain's Firearms & Gun Parts [B42]
+description=[/list]
 tags=Build 41;Build 42;Framework;Items;Military;Misc;Models;Multiplayer;Realistic;Silly/Fun;QoL;Weapons
 visibility=public
