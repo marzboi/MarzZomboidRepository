@@ -28,26 +28,31 @@ local function isVisuallyLowWall(wall)
     then
         return true
     end
-
     return false
 end
 
-local function squareIsWater(sq)
-    if not sq then return false end
+local function isWaterFloor(floor)
+    if not floor then return false end
+    local props = floor.getProperties and floor:getProperties() or nil
+    if not props then return false end
 
-    local objects = sq:getObjects()
-    if not objects then return false end
+    if props:Is(IsoFlagType.water) then
+        return true
+    end
+    return false
+end
 
-    for i = 0, objects:size() - 1 do
-        local obj = objects:get(i)
-        if obj then
-            local props = obj:getProperties()
-            if props and props:Is(IsoFlagType.water) then
-                return true
-            end
+local function isGrassFloor(floor)
+    if not floor then return false end
+    local props = floor.getProperties and floor:getProperties() or nil
+    if not props then return false end
+
+    if props then
+        local mat = props:Val("FootstepMaterial")
+        if mat == "Grass" then
+            return true
         end
     end
-
     return false
 end
 
@@ -278,14 +283,16 @@ function SpentCasingPhysics.update()
                     end
                 end
             else
-                if squareIsWater(targetSquare) then
+                local floor = targetSquare and targetSquare:getFloor() or nil
+                if isWaterFloor(floor) then
                     casing.active = false
                     table.remove(SpentCasingPhysics.activeCasings, i)
                     removed = true
                 else
                     local speedXY = math.sqrt(casing.velocityX * casing.velocityX + casing.velocityY * casing.velocityY)
 
-                    if casing.floorBounces and casing.floorBounces > 0 and speedXY > SETTLE_THRESHOLD then
+                    local floor = targetSquare and targetSquare:getFloor() or nil
+                    if casing.floorBounces and casing.floorBounces > 0 and speedXY > SETTLE_THRESHOLD and not isGrassFloor(floor) then
                         casing.floorBounces = casing.floorBounces - 1
 
                         casing.z = 0.05

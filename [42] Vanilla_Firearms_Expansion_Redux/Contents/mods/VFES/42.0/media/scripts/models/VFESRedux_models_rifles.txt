@@ -1,9 +1,62 @@
 module Base
 {
 	model HK416
+    {
+        mesh = Weapons/firearm/416_model_NoMag,
+        texture = Weapons/firearm/416_texture,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3378 0.0219,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        
+        attachment reddot
+        {
+            offset = 0.0000 0.0490 0.0570,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment laser
+        {
+            offset = 0.0000 0.1890 0.0440,
+            rotate = 0.0000 -90.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0340 0.0580,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment recoilpad
+        {
+            offset = 0.0000 -0.1770 -0.0360,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment bipod
+        {
+            offset = 0.0000 0.2332 0.0015,
+            rotate = -90.0000 180.0000 -180.0000,
+        }
+        
+        attachment coupled556
+        {
+            offset = 0.0000 -0.0230 0.0170,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model Galil
 	{
-		mesh = Weapons/firearm/416_model_NoMag,
-		texture = Weapons/firearm/416_texture,
+		mesh = Weapons/firearm/galil_model_NoMag,
+		texture = Weapons/firearm/galil_texture,
 
 		attachment world
 		{
@@ -13,25 +66,25 @@ module Base
 
 		attachment muzzle
 		{
-			offset = 0.0000 0.3378 0.0219,
+			offset = 0.0000 0.4610 0.0250,
 			rotate = -90.0000 0.0000 0.0000,
 		}
 
 		attachment reddot
 		{
-			offset = 0.0000 0.0490 0.0570,
+			offset = 0.0000 0.0350 0.0660,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
 		attachment laser
 		{
-			offset = 0.0000 0.1890 0.0440,
-			rotate = 0.0000 -90.0000 0.0000,
+			offset = 0.0200 0.1890 0.0200,
+			rotate = 180.0000 180.0000 180.0000,
 		}
 
 		attachment scope
 		{
-			offset = 0.0000 0.0340 0.0580,
+			offset = 0.0000 0.1500 0.0420,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -43,14 +96,8 @@ module Base
 
 		attachment bipod
 		{
-			offset = 0.0000 0.2332 0.0015,
+			offset = 0.0000 0.3370 0.0220,
 			rotate = -90.0000 180.0000 -180.0000,
-		}
-
-		attachment coupled556
-		{
-			offset = 0.0000 -0.0230 0.0170,
-			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
 }

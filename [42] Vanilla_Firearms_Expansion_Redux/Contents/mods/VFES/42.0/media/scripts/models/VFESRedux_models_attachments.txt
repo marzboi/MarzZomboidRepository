@@ -5,4 +5,10 @@ module Base
         mesh = weapons/magazines/416_magazine,
         texture = Weapons/Firearm/416_texture,
     }
+    
+    model galil_Magazine
+    {
+        mesh = weapons/magazines/galil_magazine,
+        texture = Weapons/firearm/galil_texture,
+    }
 }
