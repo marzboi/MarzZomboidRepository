@@ -16,7 +16,7 @@ Events.OnGameBoot.Add(function()
 
         if params.manualEjection then return end
 
-        if weapon:getCurrentAmmoCount() > 0
+        if weapon:isRoundChambered()
             and not weapon:isJammed()
             and weapon:haveChamber()
             and firemode ~= "Safe" then
