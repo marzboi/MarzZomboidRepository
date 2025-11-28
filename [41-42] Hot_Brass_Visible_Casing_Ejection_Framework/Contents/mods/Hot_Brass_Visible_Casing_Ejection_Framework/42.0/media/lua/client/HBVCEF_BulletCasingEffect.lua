@@ -16,43 +16,35 @@ local LOW_WALL_Z_THRESHOLD = 0.25
 
 local IsoDirections = IsoDirections or getClass("zombie.iso.IsoDirections")
 
-local LOW_WALL_KEYWORDS = {
-    "fencing",
-    "fence",
-    "railings",
-    "railing",
-    "counter",
-    "curb",
-    "curbs",
-    "low_",
-    "house_low",
-    "balcony",
-    "banister"
-}
-
 local function isVisuallyLowWall(wall)
     if not wall then return false end
+    local props = wall.getProperties and wall:getProperties() or nil
+    if not props then return false end
 
-    local name = nil
-
-    if wall.getSpriteName then
-        name = wall:getSpriteName()
+    if props:Is(IsoFlagType.transparentW)
+        or props:Is(IsoFlagType.transparentN)
+        or props:Is(IsoFlagType.HoppableW)
+        or props:Is(IsoFlagType.HoppableN)
+    then
+        return true
     end
 
-    if not name then
-        local spr = wall:getSprite()
-        if spr and spr.getName then
-            name = spr:getName()
-        end
-    end
+    return false
+end
 
-    if not name then return false end
+local function squareIsWater(sq)
+    if not sq then return false end
 
-    name = string.lower(name)
+    local objects = sq:getObjects()
+    if not objects then return false end
 
-    for _, kw in ipairs(LOW_WALL_KEYWORDS) do
-        if string.find(name, kw, 1, true) then
-            return true
+    for i = 0, objects:size() - 1 do
+        local obj = objects:get(i)
+        if obj then
+            local props = obj:getProperties()
+            if props and props:Is(IsoFlagType.water) then
+                return true
+            end
         end
     end
 
@@ -286,33 +278,39 @@ function SpentCasingPhysics.update()
                     end
                 end
             else
-                local speedXY = math.sqrt(casing.velocityX * casing.velocityX + casing.velocityY * casing.velocityY)
-
-                if casing.floorBounces and casing.floorBounces > 0 and speedXY > SETTLE_THRESHOLD then
-                    casing.floorBounces = casing.floorBounces - 1
-
-                    casing.z = 0.05
-                    casing.velocityZ = math.abs(casing.velocityZ) * BOUNCE_RESTITUTION
-                    casing.velocityX = casing.velocityX * 0.5
-                    casing.velocityY = casing.velocityY * 0.5
-
-                    casing.currentWorldItem = targetSquare:AddWorldInventoryItem(
-                        casing.casingType,
-                        localX2,
-                        localY2,
-                        casing.z
-                    )
-                else
-                    targetSquare:AddWorldInventoryItem(
-                        casing.casingType,
-                        localX2,
-                        localY2,
-                        0.0
-                    )
-
+                if squareIsWater(targetSquare) then
                     casing.active = false
                     table.remove(SpentCasingPhysics.activeCasings, i)
                     removed = true
+                else
+                    local speedXY = math.sqrt(casing.velocityX * casing.velocityX + casing.velocityY * casing.velocityY)
+
+                    if casing.floorBounces and casing.floorBounces > 0 and speedXY > SETTLE_THRESHOLD then
+                        casing.floorBounces = casing.floorBounces - 1
+
+                        casing.z = 0.05
+                        casing.velocityZ = math.abs(casing.velocityZ) * BOUNCE_RESTITUTION
+                        casing.velocityX = casing.velocityX * 0.5
+                        casing.velocityY = casing.velocityY * 0.5
+
+                        casing.currentWorldItem = targetSquare:AddWorldInventoryItem(
+                            casing.casingType,
+                            localX2,
+                            localY2,
+                            casing.z
+                        )
+                    else
+                        targetSquare:AddWorldInventoryItem(
+                            casing.casingType,
+                            localX2,
+                            localY2,
+                            0.0
+                        )
+
+                        casing.active = false
+                        table.remove(SpentCasingPhysics.activeCasings, i)
+                        removed = true
+                    end
                 end
             end
 
@@ -385,8 +383,8 @@ function SpentCasingPhysics.spawnCasing(player, weapon)
 
     if params.manualEjection then return end
 
-    if weapon:getCurrentAmmoCount() > 0 and not weapon:isJammed() and weapon:haveChamber() then
-        SpentCasingPhysics.doSpawnCasing(player, weapon, params, false)
+    if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
+        SpentCasingPhysics.doSpawnCasing(player, weapon, params)
     end
 end
 
