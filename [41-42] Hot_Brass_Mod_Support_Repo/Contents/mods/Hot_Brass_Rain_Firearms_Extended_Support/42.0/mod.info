@@ -1,0 +1,7 @@
+name=Hot Brass - B42 Rain's Firearms & Gun Parts Expanded Support
+poster=HotBrassRainFirearms.png
+id=HBVCEFRainFirearmsExpanded
+description=Support for B42 Rain's Firearms & Gun Parts Expanded.
+icon=miniLogo.png
+author=Marz
+require=\HBVCEF,\B42RainsFirearmsAndGunPartsExpanded

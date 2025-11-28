@@ -1,0 +1,15 @@
+module Base
+{
+    item 762x51Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        Type             = Normal,
+        DisplayName      = 762x39mm Casing,
+        DisplayCategory  = Casings,
+        Icon             = 762_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_308_Round,
+        WorldStaticModel = Spent_308_Round,
+    }
+}

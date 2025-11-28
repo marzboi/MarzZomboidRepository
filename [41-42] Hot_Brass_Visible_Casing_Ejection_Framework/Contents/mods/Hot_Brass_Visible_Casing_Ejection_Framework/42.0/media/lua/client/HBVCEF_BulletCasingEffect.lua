@@ -12,6 +12,7 @@ local SETTLE_THRESHOLD = 0.001
 local BOUNCE_RESTITUTION = 0.60
 local BOUNCE_POSITION_CORRECT = 0.12
 local BOUNCE_MIN_VELOCITY = 0.004
+local LOW_WALL_Z_THRESHOLD = 0.25
 
 local IsoDirections = IsoDirections or getClass("zombie.iso.IsoDirections")
 
@@ -88,7 +89,8 @@ function SpentCasingPhysics.addCasing(
         velocityZ = velocityZ or 0.1,
         active = true,
         currentWorldItem = nil,
-        shellSound = false
+        shellSound = false,
+        floorBounces = RANDOM:random(0, 2)
     }
 
     casingData.currentWorldItem = square:AddWorldInventoryItem(casingType, startX, startY, startZ)
@@ -103,9 +105,11 @@ function SpentCasingPhysics.update()
 
     while i <= #SpentCasingPhysics.activeCasings do
         local casing = SpentCasingPhysics.activeCasings[i]
+        local removed = false
 
-        if not casing.square or not casing.active then
+        if not casing or not casing.square or not casing.active then
             table.remove(SpentCasingPhysics.activeCasings, i)
+            removed = true
         else
             casing.velocityZ = casing.velocityZ - (GRAVITY * GRAVITY_SCALE * scale)
 
@@ -167,21 +171,38 @@ function SpentCasingPhysics.update()
 
                 if nx and ny and dir then
                     local neighbor = getCell():getGridSquare(nx, ny, sz)
-                    if neighbor and casing.square:isWallTo(neighbor) then
-                        local wall1 = casing.square:getWall()
-                        local wall2 = neighbor:getWall()
-                        local low = (wall1 and isVisuallyLowWall(wall1)) or (wall2 and isVisuallyLowWall(wall2))
+                    if neighbor then
+                        local block = false
 
-                        if not low then
-                            local passable = false
-                            local obj = casing.square:getDoorOrWindowOrWindowFrame(dir, true)
-                            if obj and (instanceof(obj, "IsoDoor") or instanceof(obj, "IsoWindow")) and obj:IsOpen() then
-                                passable = true
-                            end
+                        local barrier = casing.square:getDoorOrWindowOrWindowFrame(dir, true)
+                        if not barrier then
+                            local revDir = IsoDirections.reverse(dir)
+                            barrier = neighbor:getDoorOrWindowOrWindowFrame(revDir, true)
+                        end
 
-                            if not passable then
-                                willBounce = true
+                        if barrier and (instanceof(barrier, "IsoDoor") or instanceof(barrier, "IsoWindow")) then
+                            local destroyed = barrier.isDestroyed and barrier:isDestroyed() or false
+                            if not barrier:IsOpen() and not destroyed then
+                                block = true
                             end
+                        else
+                            if casing.square:isWallTo(neighbor) then
+                                local wall1 = casing.square:getWall()
+                                local wall2 = neighbor:getWall()
+                                local isLow = (wall1 and isVisuallyLowWall(wall1)) or
+                                    (wall2 and isVisuallyLowWall(wall2))
+                                if isLow then
+                                    if casing.z < LOW_WALL_Z_THRESHOLD then
+                                        block = true
+                                    end
+                                else
+                                    block = true
+                                end
+                            end
+                        end
+
+                        if block then
+                            willBounce = true
                         end
                     end
                 end
@@ -265,34 +286,47 @@ function SpentCasingPhysics.update()
                     end
                 end
             else
-                targetSquare:AddWorldInventoryItem(
-                    casing.casingType,
-                    localX2,
-                    localY2,
-                    0.0
-                )
+                local speedXY = math.sqrt(casing.velocityX * casing.velocityX + casing.velocityY * casing.velocityY)
 
-                if math.abs(casing.velocityX) < SETTLE_THRESHOLD
-                    and math.abs(casing.velocityY) < SETTLE_THRESHOLD
-                    and math.abs(casing.velocityZ) < SETTLE_THRESHOLD
-                then
-                    casing.active = false
-                    table.remove(SpentCasingPhysics.activeCasings, i)
-                    i = i - 1
+                if casing.floorBounces and casing.floorBounces > 0 and speedXY > SETTLE_THRESHOLD then
+                    casing.floorBounces = casing.floorBounces - 1
+
+                    casing.z = 0.05
+                    casing.velocityZ = math.abs(casing.velocityZ) * BOUNCE_RESTITUTION
+                    casing.velocityX = casing.velocityX * 0.5
+                    casing.velocityY = casing.velocityY * 0.5
+
+                    casing.currentWorldItem = targetSquare:AddWorldInventoryItem(
+                        casing.casingType,
+                        localX2,
+                        localY2,
+                        casing.z
+                    )
                 else
+                    targetSquare:AddWorldInventoryItem(
+                        casing.casingType,
+                        localX2,
+                        localY2,
+                        0.0
+                    )
+
                     casing.active = false
                     table.remove(SpentCasingPhysics.activeCasings, i)
-                    i = i - 1
+                    removed = true
                 end
             end
 
-            if targetSquare ~= casing.square then
-                casing.square = targetSquare
+            if not removed then
+                if targetSquare ~= casing.square then
+                    casing.square = targetSquare
+                end
+
+                casing.x = PZMath.clamp_01(localX2)
+                casing.y = PZMath.clamp_01(localY2)
             end
+        end
 
-            casing.x = PZMath.clamp_01(localX2)
-            casing.y = PZMath.clamp_01(localY2)
-
+        if not removed then
             i = i + 1
         end
     end

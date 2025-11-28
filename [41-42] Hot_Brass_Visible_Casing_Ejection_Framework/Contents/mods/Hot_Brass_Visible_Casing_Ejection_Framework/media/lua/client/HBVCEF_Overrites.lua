@@ -35,6 +35,6 @@ function ISReloadWeaponAction:ejectSpentRounds()
         return
     end
     -- if self.gun:getShellFallSound() then
-    -- 	self.character:getEmitter():playSound(self.gun:getShellFallSound())
+    --     self.character:getEmitter():playSound(self.gun:getShellFallSound())
     -- end
 end

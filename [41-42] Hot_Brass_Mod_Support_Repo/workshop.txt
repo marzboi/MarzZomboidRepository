@@ -13,8 +13,8 @@ description=[list]
 description=[*] Firearms B41 and B42
 description=[*] Firearms B42 Beta
 description=[*] [b](NEW)[/b]Filibuster Rhymes' Acceptable Guns [B42]
+description=[*] [b](NEW)[/b]Rain's Firearms & Gun Parts and Expanded [B42]
 description=[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3613229627] For VFE and addons on B41 here! [/url]
-description=[*] [b](NEW)[/b]Rain's Firearms & Gun Parts [B42]
 description=[/list]
 description=
 description=[h2]More Coming Soon[/h2]

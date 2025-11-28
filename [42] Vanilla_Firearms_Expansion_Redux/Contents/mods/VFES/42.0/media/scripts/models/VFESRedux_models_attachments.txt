@@ -1,0 +1,8 @@
+module Base
+{
+    model 416_Magazine
+    {
+        mesh = weapons/magazines/416_magazine,
+        texture = Weapons/Firearm/416_texture,
+    }
+}
