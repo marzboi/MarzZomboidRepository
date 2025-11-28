@@ -1,6 +1,6 @@
 ------- Racking ---------------
 function ISRackFirearm:removeBullet()
-    SpentCasingPhysics.rackCasing(self.character, self.gun, true)
+    SpentCasingAnimSync.scheduleRack(self.character, self.gun, true)
 end
 
 function ISRackFirearm:ejectSpentRounds()
@@ -11,7 +11,7 @@ function ISRackFirearm:ejectSpentRounds()
         self.gun:setSpentRoundCount(0)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+        SpentCasingAnimSync.scheduleRack(self.character, self.gun, false)
     else
         return
     end
@@ -21,7 +21,6 @@ function ISRackFirearm:ejectSpentRounds()
 end
 
 ------- Reloading -------------
-
 function ISReloadWeaponAction:ejectSpentRounds()
     if self.gun:getSpentRoundCount() > 0 then
         for i = 1, self.gun:getSpentRoundCount() do
@@ -30,7 +29,7 @@ function ISReloadWeaponAction:ejectSpentRounds()
         self.gun:setSpentRoundCount(0)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+        SpentCasingAnimSync.scheduleRack(self.character, self.gun, false)
     else
         return
     end

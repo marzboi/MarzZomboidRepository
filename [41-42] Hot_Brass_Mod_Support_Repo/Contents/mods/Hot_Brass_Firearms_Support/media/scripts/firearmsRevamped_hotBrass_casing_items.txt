@@ -1,0 +1,87 @@
+module Base
+{
+    item 762x51Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        Type             = Normal,k
+        DisplayName      = 762x51mm Casing,
+        DisplayCategory  = Casings,
+        Icon             = 308_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_308_Round,
+        WorldStaticModel = Spent_308_Round,
+    }
+    item 762x39Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        Type             = Normal,
+        DisplayName      = 762x39mm Casing,
+        DisplayCategory  = Casings,
+        Icon             = 762_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_762_Round,
+        WorldStaticModel = Spent_762_Round,
+    }
+    item Bullets22_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        Type             = Normal,
+        DisplayName      = 9mm Casing,
+        DisplayCategory  = Casings,
+        Icon             = 9mm_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_22_Round,
+        WorldStaticModel = Spent_22_Round,
+    }
+    item Bullets3006_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        Type             = Normal,
+        DisplayName      = 30-06 Casing,
+        DisplayCategory  = Casings,
+        Icon             = 308_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_308_Round,
+        WorldStaticModel = Spent_308_Round,
+    }
+    item Bullets10mm_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        Type             = Normal,
+        DisplayName      = 10mm Casing,
+        DisplayCategory  = Casings,
+        Icon             = 45_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_45_Round,
+        WorldStaticModel = Spent_45_Round,
+    }
+    item Bullets4440_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        Type             = Normal,
+        DisplayName      = .44-40 WCF Casing,
+        DisplayCategory  = Casings,
+        Icon             = 44_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_44_Round,
+        WorldStaticModel = Spent_44_Round,
+    }
+    item Bullets357_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        Type             = Normal,
+        DisplayName      = .357 WCF Casing,
+        DisplayCategory  = Casings,
+        Icon             = 44_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_44_Round,
+        WorldStaticModel = Spent_44_Round,
+    }
+}
