@@ -6,7 +6,7 @@ local rackTimeParams = {
     ["boltactionnomag"] = { aiming = 20, notAiming = 45 },
     ["boltaction"]      = { aiming = 20, notAiming = 45 },
     ["shotgunsemi"]     = { aiming = 20, notAiming = 45 },
-    ["handgun"]         = { aiming = 05, notAiming = 05 },
+    ["handgun"]         = { aiming = 10, notAiming = 10 },
     ["default"]         = { aiming = 20, notAiming = 20 },
     ["fal"]             = { aiming = 60, notAiming = 60 },
     ["mp5"]             = { aiming = 50, notAiming = 40 },
