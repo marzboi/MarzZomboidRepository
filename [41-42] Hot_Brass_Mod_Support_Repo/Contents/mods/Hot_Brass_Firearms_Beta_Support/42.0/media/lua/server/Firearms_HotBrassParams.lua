@@ -63,8 +63,8 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
     },
 
     ["Base.ColtAce"] = {
-        casing = "Base.22Bullets_Casing",
-        ammo = "Base.22Bullets",
+        casing = "Base.Bullets22_Casing",
+        ammo = "Base.Bullets22",
         forwardOffset = 0.50,
         sideOffset = 0.0,
         heightOffset = 0.45,

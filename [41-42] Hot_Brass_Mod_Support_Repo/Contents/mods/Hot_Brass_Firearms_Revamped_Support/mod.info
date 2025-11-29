@@ -1,0 +1,7 @@
+name=Hot Brass - Firearms B41 Revamped Support
+poster=HotBrassFirearmsRevamped.png
+id=HBVCEFFirearmsRevamped41
+description=Supports for Firearms B41 Revamped to use Hot Brass casings.
+icon=miniLogo.png
+author=Marz
+require=HBVCEF,firearmmodRevamp

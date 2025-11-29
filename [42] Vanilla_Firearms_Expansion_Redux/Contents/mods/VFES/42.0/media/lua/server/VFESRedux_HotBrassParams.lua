@@ -1,784 +1,784 @@
 local vfesParams = {
-    -- -- VFE
-    -- ["Base.Shotgun"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.Shotgun2"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.ShotgunSemi"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.ShotgunSemi2"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.ShotgunSawnoff"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.ShotgunSawnoffNoStock"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.DoubleBarrelShotgun"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.DoubleBarrelShotgunSawnoff"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.DoubleBarrelShotgunSawnoffNoStock"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.Spas12"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Spas12Folded"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.27,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.ShotgunSilent"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.AK47Unfolded"] = {
-    --     casing         = "Base.762Bullets_Casing",
-    --     ammo           = "Base.762Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.AK47Folded"] = {
-    --     casing         = "Base.762Bullets_Casing",
-    --     ammo           = "Base.762Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.AK47"] = {
-    --     casing         = "Base.762Bullets_Casing",
-    --     ammo           = "Base.762Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.MAK90"] = {
-    --     casing         = "Base.762Bullets_Casing",
-    --     ammo           = "Base.762Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.SKS"] = {
-    --     casing         = "Base.762Bullets_Casing",
-    --     ammo           = "Base.762Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 90,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.SKSSpiker"] = {
-    --     casing         = "Base.762Bullets_Casing",
-    --     ammo           = "Base.762Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 90,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.1022"] = {
-    --     casing         = "Base.22Bullets_Casing",
-    --     ammo           = "Base.22Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Mini14Unfolded"] = {
-    --     casing         = "Base.223Bullets_Casing",
-    --     ammo           = "Base.223Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Mini14Folded"] = {
-    --     casing         = "Base.223Bullets_Casing",
-    --     ammo           = "Base.223Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Mini14"] = {
-    --     casing         = "Base.223Bullets_Casing",
-    --     ammo           = "Base.223Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.FAL"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.FALClassic"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.CAR15"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.CAR15Folded"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.CAR15D"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.CAR15DFolded"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.AssaultRifle2"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.AssaultRifleM1"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.AssaultRifle"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.AssaultRifleMasterkeyShotgun"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.50,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.AssaultRifleMasterkey"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.M60MMG"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.M60MMG_Bipod"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.HuntingRifle"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.VarmintRifle"] = {
-    --     casing         = "Base.223Bullets_Casing",
-    --     ammo           = "Base.223Bullets",
-    --     forwardOffset  = 0.15,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.SniperRifle"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.15,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.CampCarbine"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 45,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.LeverRifle"] = {
-    --     casing         = "Base.Bullets38_Casing",
-    --     ammo           = "Base.Bullets38",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.LeverRifle2"] = {
-    --     casing         = "Base.Bullets44_Casing",
-    --     ammo           = "Base.Bullets44",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.MP5"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.MP5SD"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.MP5Unfolded"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.MP5Folded"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.MAC10Unfolded"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.45,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.MAC10Folded"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.45,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.UziUnfolded"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.UziFolded"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Tec9"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.45,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 45,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Pistol"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 45,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Pistol2"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 45,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Pistol3"] = {
-    --     casing         = "Base.Bullets44_Casing",
-    --     ammo           = "Base.Bullets44",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.MK23SOCOM"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 50,
-    --     heightSpreed   = 45,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Glock"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.45,
-    --     sideSpread     = 45,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Glock18"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.45,
-    --     sideSpread     = 45,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.P229"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 45,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.CZ75"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.79,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.MK2"] = {
-    --     casing         = "Base.22Bullets_Casing",
-    --     ammo           = "Base.22Bullets",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.MK2SD"] = {
-    --     casing         = "Base.22Bullets_Casing",
-    --     ammo           = "Base.22Bullets",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
-
-    -- ["Base.Revolver"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.10,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.30,
-    --     shellForce     = 0.10,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.Revolver_Short"] = {
-    --     casing         = "Base.Bullets38_Casing",
-    --     ammo           = "Base.Bullets38",
-    --     forwardOffset  = 0.10,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.30,
-    --     shellForce     = 0.10,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.Revolver_Long"] = {
-    --     casing         = "Base.Bullets44_Casing",
-    --     ammo           = "Base.Bullets44",
-    --     forwardOffset  = 0.10,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.30,
-    --     shellForce     = 0.10,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.M2400_Shotgun"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.40,
-    --     shellForce     = 0.05,
-    --     sideSpread     = 10,
-    --     heightSpreed   = 10,
-    --     manualEjection = true
-    -- },
-
-    -- ["Base.M2400_Rifle"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.40,
-    --     shellForce     = 0.05,
-    --     sideSpread     = 10,
-    --     heightSpreed   = 10,
-    --     manualEjection = true
-    -- },
+    -- VFE
+    ["Base.Shotgun"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.Shotgun2"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.ShotgunSemi"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.ShotgunSemi2"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.ShotgunSawnoff"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.ShotgunSawnoffNoStock"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.DoubleBarrelShotgun"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.0,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.DoubleBarrelShotgunSawnoff"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.0,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.DoubleBarrelShotgunSawnoffNoStock"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.0,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.Spas12"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.Spas12Folded"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.27,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.ShotgunSilent"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.AK47Unfolded"] = {
+        casing         = "Base.762Bullets_Casing",
+        ammo           = "Base.762Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.AK47Folded"] = {
+        casing         = "Base.762Bullets_Casing",
+        ammo           = "Base.762Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.AK47"] = {
+        casing         = "Base.762Bullets_Casing",
+        ammo           = "Base.762Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.MAK90"] = {
+        casing         = "Base.762Bullets_Casing",
+        ammo           = "Base.762Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.SKS"] = {
+        casing         = "Base.762Bullets_Casing",
+        ammo           = "Base.762Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 90,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.SKSSpiker"] = {
+        casing         = "Base.762Bullets_Casing",
+        ammo           = "Base.762Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 90,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.1022"] = {
+        casing         = "Base.22Bullets_Casing",
+        ammo           = "Base.22Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.Mini14Unfolded"] = {
+        casing         = "Base.223Bullets_Casing",
+        ammo           = "Base.223Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.Mini14Folded"] = {
+        casing         = "Base.223Bullets_Casing",
+        ammo           = "Base.223Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.Mini14"] = {
+        casing         = "Base.223Bullets_Casing",
+        ammo           = "Base.223Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.FAL"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.FALClassic"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.CAR15"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.CAR15Folded"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.CAR15D"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.CAR15DFolded"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.AssaultRifle2"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.AssaultRifleM1"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.AssaultRifle"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.AssaultRifleMasterkeyShotgun"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.50,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.AssaultRifleMasterkey"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.M60MMG"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.M60MMG_Bipod"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
+
+    ["Base.HuntingRifle"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.VarmintRifle"] = {
+        casing         = "Base.223Bullets_Casing",
+        ammo           = "Base.223Bullets",
+        forwardOffset  = 0.15,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.SniperRifle"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.15,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.CampCarbine"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.0,
+        heightOffset   = 0.45,
+        shellForce     = 0.60,
+        sideSpread     = 45,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.LeverRifle"] = {
+        casing         = "Base.Bullets38_Casing",
+        ammo           = "Base.Bullets38",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.15,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.LeverRifle2"] = {
+        casing         = "Base.Bullets44_Casing",
+        ammo           = "Base.Bullets44",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = true
+    },
+
+    ["Base.MP5"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.MP5SD"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.MP5Unfolded"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.MP5Folded"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.MAC10Unfolded"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.45,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.MAC10Folded"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.45,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.UziUnfolded"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.UziFolded"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.Tec9"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.45,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 45,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.Pistol"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 45,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.Pistol2"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 45,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.Pistol3"] = {
+        casing         = "Base.Bullets44_Casing",
+        ammo           = "Base.Bullets44",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.MK23SOCOM"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 50,
+        heightSpreed   = 45,
+        manualEjection = false
+    },
+
+    ["Base.Glock"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.45,
+        sideSpread     = 45,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.Glock18"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.45,
+        sideSpread     = 45,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.P229"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 45,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.CZ75"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.79,
+        sideSpread     = 30,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
+
+    ["Base.MK2"] = {
+        casing         = "Base.22Bullets_Casing",
+        ammo           = "Base.22Bullets",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.MK2SD"] = {
+        casing         = "Base.22Bullets_Casing",
+        ammo           = "Base.22Bullets",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
+
+    ["Base.Revolver"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.10,
+        sideOffset     = 0.0,
+        heightOffset   = 0.30,
+        shellForce     = 0.10,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.Revolver_Short"] = {
+        casing         = "Base.Bullets38_Casing",
+        ammo           = "Base.Bullets38",
+        forwardOffset  = 0.10,
+        sideOffset     = 0.0,
+        heightOffset   = 0.30,
+        shellForce     = 0.10,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.Revolver_Long"] = {
+        casing         = "Base.Bullets44_Casing",
+        ammo           = "Base.Bullets44",
+        forwardOffset  = 0.10,
+        sideOffset     = 0.0,
+        heightOffset   = 0.30,
+        shellForce     = 0.10,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
+
+    ["Base.M2400_Shotgun"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.0,
+        heightOffset   = 0.40,
+        shellForce     = 0.05,
+        sideSpread     = 10,
+        heightSpreed   = 10,
+        manualEjection = true
+    },
+
+    ["Base.M2400_Rifle"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.0,
+        heightOffset   = 0.40,
+        shellForce     = 0.05,
+        sideSpread     = 10,
+        heightSpreed   = 10,
+        manualEjection = true
+    },
 
     --VFE STALKER pack
     ["Base.HK416"] = {
@@ -1045,463 +1045,463 @@ local vfesParams = {
         manualEjection = false
     },
 
-    --VFE Post '93
-    -- ["Base.scar17"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    -- VFE Post '93
+    ["Base.scar17"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.M4A1"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.M4A1"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.Block2"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.Block2"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.SPR"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.SPR"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.SPRSD"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.SPRSD"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.Vector45"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.50,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
+    ["Base.Vector45"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.50,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
 
-    -- ["Base.Vector9"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.50,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
+    ["Base.Vector9"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.50,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
 
-    -- ["Base.P90"] = {
-    --     casing         = "Base.57Bullets_Casing",
-    --     ammo           = "Base.57Bullets",
-    --     forwardOffset  = 0.15,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.40,
-    --     shellForce     = 0.0,
-    --     sideSpread     = 10,
-    --     heightSpreed   = 10,
-    --     manualEjection = false
-    -- },
+    ["Base.P90"] = {
+        casing         = "Base.57Bullets_Casing",
+        ammo           = "Base.57Bullets",
+        forwardOffset  = 0.15,
+        sideOffset     = 0.10,
+        heightOffset   = 0.40,
+        shellForce     = 0.0,
+        sideSpread     = 10,
+        heightSpreed   = 10,
+        manualEjection = false
+    },
 
-    -- ["Base.MP7"] = {
-    --     casing         = "Base.46Bullets_Casing",
-    --     ammo           = "Base.46Bullets",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.MP7"] = {
+        casing         = "Base.46Bullets_Casing",
+        ammo           = "Base.46Bullets",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.45,
+        shellForce     = 0.60,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.FN57"] = {
-    --     casing         = "Base.57Bullets_Casing",
-    --     ammo           = "Base.57Bullets",
-    --     forwardOffset  = 0.45,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.75,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
+    ["Base.FN57"] = {
+        casing         = "Base.57Bullets_Casing",
+        ammo           = "Base.57Bullets",
+        forwardOffset  = 0.45,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.75,
+        sideSpread     = 30,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
 
-    -- ["Base.CP33"] = {
-    --     casing         = "Base.22Bullets_Casing",
-    --     ammo           = "Base.22Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.70,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
+    ["Base.CP33"] = {
+        casing         = "Base.22Bullets_Casing",
+        ammo           = "Base.22Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.70,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
 
-    -- ["Base.1522"] = {
-    --     casing         = "Base.22Bullets_Casing",
-    --     ammo           = "Base.22Bullets",
-    --     forwardOffset  = 0.25,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.75,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
+    ["Base.1522"] = {
+        casing         = "Base.22Bullets_Casing",
+        ammo           = "Base.22Bullets",
+        forwardOffset  = 0.25,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.75,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
 
-    -- ["Base.n418sd"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.n418sd"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.n418"] = {
-    --     casing         = "Base.556Bullets_Casing",
-    --     ammo           = "Base.556Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.n418"] = {
+        casing         = "Base.556Bullets_Casing",
+        ammo           = "Base.556Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.AA12"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.AA12"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- --Gunrunner's Weapon Pack
-    -- ["Base.ColtPeacemaker"] = {
-    --     casing         = "Base.Bullets44_Casing",
-    --     ammo           = "Base.Bullets44",
-    --     forwardOffset  = 0.10,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.30,
-    --     shellForce     = 0.10,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
+    --Gunrunner's Weapon Pack
+    ["Base.ColtPeacemaker"] = {
+        casing         = "Base.Bullets44_Casing",
+        ammo           = "Base.Bullets44",
+        forwardOffset  = 0.10,
+        sideOffset     = 0.0,
+        heightOffset   = 0.30,
+        shellForce     = 0.10,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
 
-    -- ["Base.Heritage22Revolver"] = {
-    --     casing         = "Base.22Bullets_Casing",
-    --     ammo           = "Base.22Bullets",
-    --     forwardOffset  = 0.10,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.30,
-    --     shellForce     = 0.10,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
+    ["Base.Heritage22Revolver"] = {
+        casing         = "Base.22Bullets_Casing",
+        ammo           = "Base.22Bullets",
+        forwardOffset  = 0.10,
+        sideOffset     = 0.0,
+        heightOffset   = 0.30,
+        shellForce     = 0.10,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
 
-    -- ["Base.RugerMarkII"] = {
-    --     casing         = "Base.22Bullets_Casing",
-    --     ammo           = "Base.22Bullets",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
+    ["Base.RugerMarkII"] = {
+        casing         = "Base.22Bullets_Casing",
+        ammo           = "Base.22Bullets",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
 
-    -- ["Base.ColtPython357"] = {
-    --     casing         = "Base.357Bullets_Casing",
-    --     ammo           = "Base.357Bullets",
-    --     forwardOffset  = 0.10,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.30,
-    --     shellForce     = 0.10,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
+    ["Base.ColtPython357"] = {
+        casing         = "Base.357Bullets_Casing",
+        ammo           = "Base.357Bullets",
+        forwardOffset  = 0.10,
+        sideOffset     = 0.0,
+        heightOffset   = 0.30,
+        shellForce     = 0.10,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
 
-    -- ["Base.ColtPython38"] = {
-    --     casing         = "Base.Bullets38_Casing",
-    --     ammo           = "Base.Bullets38",
-    --     forwardOffset  = 0.10,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.30,
-    --     shellForce     = 0.10,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
+    ["Base.ColtPython38"] = {
+        casing         = "Base.Bullets38_Casing",
+        ammo           = "Base.Bullets38",
+        forwardOffset  = 0.10,
+        sideOffset     = 0.0,
+        heightOffset   = 0.30,
+        shellForce     = 0.10,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
 
-    -- ["Base.Glock21"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.45,
-    --     sideSpread     = 45,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
+    ["Base.Glock21"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.45,
+        sideSpread     = 45,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
 
-    -- ["Base.ThompsonM1A1"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
+    ["Base.ThompsonM1A1"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
 
-    -- ["Base.Mac10SD"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.10,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
+    ["Base.Mac10SD"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.10,
+        sideOffset     = 0.10,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 60,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
 
-    -- ["Base.MiniUzi"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.50,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = false
-    -- },
+    ["Base.MiniUzi"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.0,
+        heightOffset   = 0.50,
+        shellForce     = 0.60,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = false
+    },
 
-    -- ["Base.DeLisleCarbine"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.15,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.35,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
+    ["Base.DeLisleCarbine"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.15,
+        sideOffset     = 0.10,
+        heightOffset   = 0.35,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
 
-    -- ["Base.Winchester1894"] = {
-    --     casing         = "Base.Bullets44_Casing",
-    --     ammo           = "Base.Bullets44",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 60,
-    --     manualEjection = true
-    -- },
+    ["Base.Winchester1894"] = {
+        casing         = "Base.Bullets44_Casing",
+        ammo           = "Base.Bullets44",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 60,
+        manualEjection = true
+    },
 
-    -- ["Base.BigBoy45ACP"] = {
-    --     casing         = "Base.Bullets45_Casing",
-    --     ammo           = "Base.Bullets45",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.40,
-    --     shellForce     = 0.15,
-    --     sideSpread     = 15,
-    --     heightSpreed   = 15,
-    --     manualEjection = true
-    -- },
+    ["Base.BigBoy45ACP"] = {
+        casing         = "Base.Bullets45_Casing",
+        ammo           = "Base.Bullets45",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.40,
+        shellForce     = 0.15,
+        sideSpread     = 15,
+        heightSpreed   = 15,
+        manualEjection = true
+    },
 
-    -- ["Base.Model44"] = {
-    --     casing         = "Base.Bullets44_Casing",
-    --     ammo           = "Base.Bullets44",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.60,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.Model44"] = {
+        casing         = "Base.Bullets44_Casing",
+        ammo           = "Base.Bullets44",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.60,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.Marlin1894Custom357"] = {
-    --     casing         = "Base.357Bullets_Casing",
-    --     ammo           = "Base.357Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.40,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
+    ["Base.Marlin1894Custom357"] = {
+        casing         = "Base.357Bullets_Casing",
+        ammo           = "Base.357Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.40,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
 
-    -- ["Base.Marlin1894Custom38"] = {
-    --     casing         = "Base.Bullets38_Casing",
-    --     ammo           = "Base.Bullets38",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.40,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = true
-    -- },
+    ["Base.Marlin1894Custom38"] = {
+        casing         = "Base.Bullets38_Casing",
+        ammo           = "Base.Bullets38",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.40,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = true
+    },
 
-    -- ["Base.M1carbine9mm"] = {
-    --     casing         = "Base.Bullets9mm_Casing",
-    --     ammo           = "Base.Bullets9mm",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.M1carbine9mm"] = {
+        casing         = "Base.Bullets9mm_Casing",
+        ammo           = "Base.Bullets9mm",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
-    -- ["Base.PSG1"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
+    ["Base.PSG1"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
 
-    -- ["Base.HKG3"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.40,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
+    ["Base.HKG3"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.40,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
 
-    -- ["Base.Mini30"] = {
-    --     casing         = "Base.762Bullets_Casing",
-    --     ammo           = "Base.762Bullets",
-    --     forwardOffset  = 0.35,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
+    ["Base.Mini30"] = {
+        casing         = "Base.762Bullets_Casing",
+        ammo           = "Base.762Bullets",
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
 
-    -- ["Base.NorincoMak90"] = {
-    --     casing         = "Base.762Bullets_Casing",
-    --     ammo           = "Base.762Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 90,
-    --     manualEjection = false
-    -- },
+    ["Base.NorincoMak90"] = {
+        casing         = "Base.762Bullets_Casing",
+        ammo           = "Base.762Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 90,
+        manualEjection = false
+    },
 
-    -- ["Base.R870Police"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.30,
-    --     sideSpread     = 30,
-    --     heightSpreed   = 10,
-    --     manualEjection = true
-    -- },
+    ["Base.R870Police"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.30,
+        sideSpread     = 30,
+        heightSpreed   = 10,
+        manualEjection = true
+    },
 
-    -- ["Base.Winchester1887"] = {
-    --     casing         = "Base.ShotgunShells_Casing",
-    --     ammo           = "Base.ShotgunShells",
-    --     forwardOffset  = 0.17,
-    --     sideOffset     = 0.0,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 0.23,
-    --     sideSpread     = 10,
-    --     heightSpreed   = 10,
-    --     manualEjection = true
-    -- },
+    ["Base.Winchester1887"] = {
+        casing         = "Base.ShotgunShells_Casing",
+        ammo           = "Base.ShotgunShells",
+        forwardOffset  = 0.17,
+        sideOffset     = 0.0,
+        heightOffset   = 0.45,
+        shellForce     = 0.23,
+        sideSpread     = 10,
+        heightSpreed   = 10,
+        manualEjection = true
+    },
 
-    -- ["Base.M60"] = {
-    --     casing         = "Base.308Bullets_Casing",
-    --     ammo           = "Base.308Bullets",
-    --     forwardOffset  = 0.30,
-    --     sideOffset     = 0.10,
-    --     heightOffset   = 0.45,
-    --     shellForce     = 1.20,
-    --     sideSpread     = 60,
-    --     heightSpreed   = 30,
-    --     manualEjection = false
-    -- },
+    ["Base.M60"] = {
+        casing         = "Base.308Bullets_Casing",
+        ammo           = "Base.308Bullets",
+        forwardOffset  = 0.30,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 1.20,
+        sideSpread     = 60,
+        heightSpreed   = 30,
+        manualEjection = false
+    },
 
 }
 
