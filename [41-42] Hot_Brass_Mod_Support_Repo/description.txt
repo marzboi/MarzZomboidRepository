@@ -9,10 +9,12 @@ More patches will be added over time.
 [list]
 [*] Firearms B41 and B42
 [*] Firearms B42 Beta
-[*] [b](NEW)[/b] Firearms 41 Revamped
+[*] Firearms 41 Revamped
 [*] Filibuster Rhymes' Acceptable Guns [B42]
 [*] Rain's Firearms & Gun Parts and Expanded [B42]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3613229627] For VFE and addons on B41 here! [/url]
+[*] [b](NEW)[/b] Vanilla Firearms Expanded
+[*] [b](NEW)[/b] Vanilla Firearms Expanded - Stalker Edition
+[*] For VFE and addons on B41 with custom casings check Sven upload it includes VFE93 and Gunrunner's.
 [/list]
 
 [h2]More Coming Soon[/h2]

@@ -1,0 +1,7 @@
+name=Hot Brass - VFE Stalker Support
+poster=HotBrassVFES.png
+id=HBVCEFVFES
+description=Supports for VFE Stalker to use Hot Brass casings.
+icon=miniLogo.png
+author=Marz
+require=HBVCEF,HBVCEFVFE,VFExpansion2

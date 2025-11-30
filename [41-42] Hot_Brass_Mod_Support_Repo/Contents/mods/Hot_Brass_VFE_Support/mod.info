@@ -1,0 +1,7 @@
+name=Hot Brass - VFE Support
+poster=HotBrassVFE.png
+id=HBVCEFVFE
+description=Supports for VFE to use Hot Brass casings.
+icon=miniLogo.png
+author=Marz
+require=HBVCEF,VFExpansion1
