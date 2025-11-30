@@ -56,6 +56,42 @@ local function isGrassFloor(floor)
     return false
 end
 
+local function getTileTopZ(square)
+    if not square then return nil end
+
+    local objects = square:getObjects()
+    if not objects then return nil end
+
+    local topZ = nil
+
+    for i = 0, objects:size() - 1 do
+        local obj = objects:get(i)
+        if obj then
+            local surfOff = nil
+
+            if obj.getSurfaceOffsetNoTable then
+                surfOff = obj:getSurfaceOffsetNoTable()
+            end
+
+            if (not surfOff or surfOff <= 0) and obj.getSurfaceOffset then
+                local so = obj:getSurfaceOffset()
+                if so and so > 0 then
+                    surfOff = so
+                end
+            end
+
+            if surfOff and surfOff > 0 then
+                local z = surfOff / 96.0
+                if not topZ or z > topZ then
+                    topZ = z
+                end
+            end
+        end
+    end
+
+    return topZ
+end
+
 local gameTime
 Events.OnGameTimeLoaded.Add(function() gameTime = GameTime.getInstance() end)
 local function GT() return gameTime or GameTime.getInstance() end
@@ -87,7 +123,8 @@ function SpentCasingPhysics.addCasing(
         active = true,
         currentWorldItem = nil,
         shellSound = false,
-        floorBounces = RANDOM:random(0, 2)
+        floorBounces = RANDOM:random(0, 2),
+        hasHitFloor = false,
     }
 
     casingData.currentWorldItem = square:AddWorldInventoryItem(casingType, startX, startY, startZ)
@@ -108,6 +145,7 @@ function SpentCasingPhysics.update()
             table.remove(SpentCasingPhysics.activeCasings, i)
             removed = true
         else
+            local prevZ = casing.z or 0
             casing.velocityZ = casing.velocityZ - (GRAVITY * GRAVITY_SCALE * scale)
 
             casing.x = casing.x + (casing.velocityX * XY_STEP * scale)
@@ -269,14 +307,30 @@ function SpentCasingPhysics.update()
                 casing.currentWorldItem = nil
             end
 
-            if casing.z > 0 then
+            local falling = (casing.velocityZ <= 0)
+
+            local tileTopZ = nil
+            if not casing.hasHitFloor and falling then
+                tileTopZ = getTileTopZ(targetSquare)
+            end
+
+            local surfaceZ = 0.0
+
+            if tileTopZ then
+                if prevZ >= tileTopZ and casing.z <= tileTopZ then
+                    surfaceZ = tileTopZ
+                end
+            end
+
+            if casing.z > surfaceZ then
                 casing.currentWorldItem = targetSquare:AddWorldInventoryItem(
                     casing.casingType,
                     localX2,
                     localY2,
                     casing.z
                 )
-                if casing.z < 0.16 and not casing.shellSound then
+
+                if casing.z < surfaceZ + 0.16 and not casing.shellSound then
                     casing.shellSound = true
                     if casing.weapon and casing.weapon:getShellFallSound() then
                         casing.player:getEmitter():playSound(casing.weapon:getShellFallSound())
@@ -284,21 +338,34 @@ function SpentCasingPhysics.update()
                 end
             else
                 local floor = targetSquare and targetSquare:getFloor() or nil
-                if isWaterFloor(floor) then
+
+                if surfaceZ == 0.0 then
+                    casing.hasHitFloor = true
+                end
+
+                if surfaceZ == 0.0 and isWaterFloor(floor) then
                     casing.active = false
                     table.remove(SpentCasingPhysics.activeCasings, i)
                     removed = true
                 else
-                    local speedXY = math.sqrt(casing.velocityX * casing.velocityX + casing.velocityY * casing.velocityY)
+                    local speedXY = math.sqrt(
+                        casing.velocityX * casing.velocityX +
+                        casing.velocityY * casing.velocityY
+                    )
 
-                    local floor = targetSquare and targetSquare:getFloor() or nil
-                    if casing.floorBounces and casing.floorBounces > 0 and speedXY > SETTLE_THRESHOLD and not isGrassFloor(floor) then
-                        casing.floorBounces = casing.floorBounces - 1
+                    local canBounceHere =
+                        casing.floorBounces and casing.floorBounces > 0 and
+                        speedXY > SETTLE_THRESHOLD
+                    if surfaceZ == 0.0 and floor and isGrassFloor(floor) then
+                        canBounceHere = false
+                    end
 
-                        casing.z = 0.05
-                        casing.velocityZ = math.abs(casing.velocityZ) * BOUNCE_RESTITUTION
-                        casing.velocityX = casing.velocityX * 0.5
-                        casing.velocityY = casing.velocityY * 0.5
+                    if canBounceHere then
+                        casing.floorBounces     = casing.floorBounces - 1
+                        casing.z                = surfaceZ + 0.05
+                        casing.velocityZ        = math.abs(casing.velocityZ) * BOUNCE_RESTITUTION
+                        casing.velocityX        = casing.velocityX * 0.5
+                        casing.velocityY        = casing.velocityY * 0.5
 
                         casing.currentWorldItem = targetSquare:AddWorldInventoryItem(
                             casing.casingType,
@@ -311,7 +378,7 @@ function SpentCasingPhysics.update()
                             casing.casingType,
                             localX2,
                             localY2,
-                            0.0
+                            surfaceZ
                         )
 
                         casing.active = false

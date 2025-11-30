@@ -1,0 +1,55 @@
+[h1] Hot Brass - Visible Casing Ejection Framework [/h1]
+For a long time, I wondered how cool Project Zomboid would look if we could actually see spent casings flying out of our weapons. That curiosity eventually turned into a desire to learn how to mod and now here we are.
+
+This is both a mod and a framework that other weapon mods can use to add visible casing ejection
+
+[h2] Changes to Gameplay [/h2]
+
+Racking has been reworked so that when you rack a round, it won t magically appear in your pocket anymore it will realistically fall to the ground. Don t forget to pick them up!
+
+Unloading is now more practical and prevents you from accidentally dropping ammo all over the floor.
+
+Spent casings can be collected, and in a future update they ll be used for ammo crafting.
+
+[h2] Mod is still a Work in Progress! [/h2]
+
+To Do:
+[list]
+[*][strike]Move the sound of casings hitting the floor to the casings themselves. Unfortunately this is handled on Zomboid s Java side, so for now the sound will behave the traditional way. [/strike]
+[*]Add randomized bounces when casings hit the ground for extra visual flair.
+[*]As per request, I will be adding support to popular mods.
+[/list]
+
+[b] If you find a bug please report it in the thread for it, not the comments [/b]
+
+[h3] Huge Thanks! [/h3]
+
+Thank you to everyone in the PZ Modding Discord for the support on my first mod.
+Special thanks to Vilespring and Sven for allowing me to use VFE ammo icons.
+
+[h2] For Modders [/h2]
+
+I ve included an easy-to-use function that lets you register your weapons with this system.
+You can safely overwrite the existing table it's designed to handle custom parameters without issues.
+
+[b]Key parameters to know: [/b]
+
+[list]
+[*]Forward, side, and height offsets let you calibrate exactly where the casing appears relative to the player.
+[*]Shell force determines how far the casing is ejected. Negative values will launch it in the opposite direction useful if you want something unusual.
+[*]Manual ejection controls whether a weapon requires racking to cycle the ammo.
+[/list]
+
+[b]Currently the mod also supports B41. but I have not test it extensively. so if you encounter a bug report it.[/b]
+
+Mod Patches in the link below:
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=3612830296
+
+Currently covered Mods
+[list]
+[*] Firearms B41 and B42
+[*] VFE 41 and Unofficial 42
+[*] Filibuster Rhymes's Acceptable Guns
+[*] Rain's Firearms & Gun Parts [B42]
+[/list]

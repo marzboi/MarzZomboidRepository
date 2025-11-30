@@ -1,0 +1,32 @@
+[h1]Unofficial Port of VFE and Addons[/h1]
+
+With approval from Vilespring, and after months of work, I have ported VFE, one of the greatest addons in the community, to Build 42 (Unofficially).
+
+This version serves as a temporary port while Vilespring works on officially updating VFE for Build 42, taking full advantage of all the new systems with skills far beyond mine.
+
+Consider this a tribute to the great VFE and its Devs while official development continues.
+
+[h2]About This Port[/h2]
+
+I have taken the time to faithfully port all the core functionalities from the original Build 41 version, while also incorporating some of the new systems introduced in Build 42.
+
+[b]Still a work in progress:[/b]
+• Professions included in the original mod
+
+[h2]Additional Integration[/h2]
+
+Support for my mod Hot Brass has been added if you wish to see visible shell casings ejecting from firearms. [b]While is marked as required, its not.[/b]
+
+[h2]Development Intent[/h2]
+
+I will continue refining what I can, focusing on accuracy to Build 41 rather than adding new features.
+If you encounter any bugs, please report them in a proper discussion thread, not in the comments.
+And please, do not contact Vilespring regarding issues with this unofficial port.
+
+I’m continuing to learn the inner workings of this game to give back to the creators who gave us such great experiences with their work.
+
+[h2]Availability[/h2]
+
+This mod will remain available until the official VFE update is released. Once that happens, it will be set to Unlisted.
+
+[b]Enjoy![/b]

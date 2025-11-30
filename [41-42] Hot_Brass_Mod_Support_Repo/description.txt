@@ -1,0 +1,20 @@
+[h1]Mod Patch Repository - Hot Brass[/h1]
+
+[b]This mods collects all official compatibility patches for Hot Brass, created upon request for popular weapon and firearm mods.[/b]
+
+More patches will be added over time.
+
+[h2]Currently Supported Mods[/h2]
+
+[list]
+[*] Firearms B41 and B42
+[*] Firearms B42 Beta
+[*] [b](NEW)[/b] Firearms 41 Revamped
+[*] Filibuster Rhymes' Acceptable Guns [B42]
+[*] Rain's Firearms & Gun Parts and Expanded [B42]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3613229627] For VFE and addons on B41 here! [/url]
+[/list]
+
+[h2]More Coming Soon[/h2]
+Additional mod integrations are planned.
+If you have a request, feel free to leave a comment!
