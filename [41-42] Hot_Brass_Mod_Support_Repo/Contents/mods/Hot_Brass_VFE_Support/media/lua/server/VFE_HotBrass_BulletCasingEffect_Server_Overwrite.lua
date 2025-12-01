@@ -1,6 +1,4 @@
-require "HBVCEF_BulletCasingEffect"
-
-local orig_SpentCasingPhysics_spawnCasing = SpentCasingPhysics.spawnCasing
+require "HBVCEF_BulletCasingEffect_Server"
 
 local m60LinkParam = {
     casing         = "Base.M60_Link",
@@ -13,15 +11,13 @@ local m60LinkParam = {
     heightSpreed   = 60
 }
 
-Events.OnWeaponSwing.Remove(orig_SpentCasingPhysics_spawnCasing)
-
 function SpentCasingPhysics.spawnCasing(player, weapon)
     if not player or player:isDead() then return end
     if not weapon then return end
 
-    local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
+    local params = SpentCasingPhysics.WeaponEjectionPortParams
+        and SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
     if not params then return end
-
     if params.manualEjection then return end
 
     if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
@@ -39,5 +35,3 @@ function SpentCasingPhysics.spawnCasing(player, weapon)
         end
     end
 end
-
-Events.OnWeaponSwing.Add(SpentCasingPhysics.spawnCasing)

@@ -13,11 +13,13 @@ Spent casings can be collected, and in a future update they ll be used for ammo 
 
 [h2] Mod is still a Work in Progress! [/h2]
 
+[h2]VERSION 41 MULTIPLAYER FIXED[/h2]
+[B]But keep in mind, the mod is best designed for singleplayer. I am not a networking expert but I manage to solve an issue with multiple duplications of the casings in MP, while sacrificing "frames" of the casing flying[/b]
+
 To Do:
 [list]
-[*][strike]Move the sound of casings hitting the floor to the casings themselves. Unfortunately this is handled on Zomboid s Java side, so for now the sound will behave the traditional way. [/strike]
-[*]Add randomized bounces when casings hit the ground for extra visual flair.
-[*]As per request, I will be adding support to popular mods.
+[*]Keep covering popular mods, check the repo addon for them.
+[*]Improve MP performance.
 [/list]
 
 [b] If you find a bug please report it in the thread for it, not the comments [/b]

@@ -63,8 +63,19 @@ function SpentCasingAnimSync.onTick()
             local playerNum = tonumber(pid) or 0
             local player = getSpecificPlayer(playerNum)
 
-            if player and data.weapon and SpentCasingPhysics and SpentCasingPhysics.rackCasing then
-                SpentCasingPhysics.rackCasing(player, data.weapon, data.racking)
+            if player and data.weapon then
+                if isClient() then
+                    if not player.isLocalPlayer or player:isLocalPlayer() then
+                        sendClientCommand("HBVCEF", "rackCasing", {
+                            weaponId = data.weapon:getID(),
+                            racking  = data.racking,
+                        })
+                    end
+                else
+                    if SpentCasingPhysics and SpentCasingPhysics.rackCasing then
+                        SpentCasingPhysics.rackCasing(player, data.weapon, data.racking)
+                    end
+                end
             end
 
             SpentCasingAnimSync.pending[pid] = nil

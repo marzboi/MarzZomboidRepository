@@ -1,4 +1,4 @@
-SpentCasingPhysics = {}
+SpentCasingPhysics = SpentCasingPhysics or {}
 
 ---Vanilla Weapons
 SpentCasingPhysics.WeaponEjectionPortParams = {
