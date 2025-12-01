@@ -64,6 +64,7 @@ module Base
         ModelWeaponPart              = x8Scope x8Scope scope scope,
         ModelWeaponPart              = MagazineAttachment 416_Magazine magazine magazine,
         MultipleHitConditionAffected = false,
+        MuzzleFlashModelKey          = muzzle_flash_assault_rifle,
         NPCSoundBoost                = 1.5,
         PiercingBullets              = true,
         Projectilecount              = 1,
