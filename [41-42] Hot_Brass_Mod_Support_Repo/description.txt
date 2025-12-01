@@ -14,7 +14,8 @@ More patches will be added over time.
 [*] Rain's Firearms & Gun Parts and Expanded [B42]
 [*] [b](NEW)[/b] Vanilla Firearms Expanded
 [*] [b](NEW)[/b] Vanilla Firearms Expanded - Stalker Edition
-[*] For VFE and addons on B41 with custom casings check Sven upload it includes VFE93 and Gunrunner's.
+[*] [b](NEW)[/b] New Patch for AmmoMaker, makes my casing be visual effects only
+[*] For VFE and addons on B41 with custom casings check Sven upload it includes VFE93 and Gunrunner's
 [/list]
 
 [h2]More Coming Soon[/h2]

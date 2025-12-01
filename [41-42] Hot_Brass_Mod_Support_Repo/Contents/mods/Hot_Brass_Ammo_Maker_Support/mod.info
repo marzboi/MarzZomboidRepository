@@ -1,0 +1,7 @@
+name=Hot Brass - Ammo Maker Compatibility Patch
+poster=HotBrassAmmoMaker.png
+id=HBVCEFAmmoMaker
+description=Casing Ejection will be visible when you shoot but will not leave casings on the ground for compatibility.
+icon=miniLogo.png
+author=Marz
+require=HBVCEF,ammomaker
