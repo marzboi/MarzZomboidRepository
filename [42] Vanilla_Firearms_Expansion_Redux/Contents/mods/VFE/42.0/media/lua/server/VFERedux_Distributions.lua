@@ -1195,7 +1195,7 @@ local function BulkRemoveVanillaFirearms(distroTable)
 end
 
 local function VFEGenerateLongFirearmsDistro(distroTable)
-    -- BulkRemoveVanillaFirearms(distroTable)
+    BulkRemoveVanillaFirearms(distroTable)
     table.insert(distroTable.items, "RifleCase1");
     table.insert(distroTable.items, 0.0025 * SandboxVars.VFE.HouseWeaponsMulti);
     table.insert(distroTable.items, "RifleCase2");
@@ -1254,7 +1254,7 @@ local function VFEGenerateLongFirearmsDistro(distroTable)
 end
 
 local function VFEGenerateShortFirearmsDistro(distroTable)
-    -- BulkRemoveVanillaFirearms(distroTable)
+    BulkRemoveVanillaFirearms(distroTable)
     table.insert(distroTable.items, "PistolCase1");
     table.insert(distroTable.items, 0.01 * SandboxVars.VFE.HouseWeaponsMulti);
     table.insert(distroTable.items, "PistolCase2");

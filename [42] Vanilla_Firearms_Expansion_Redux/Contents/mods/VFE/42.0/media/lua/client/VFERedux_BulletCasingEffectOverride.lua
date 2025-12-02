@@ -1,5 +1,7 @@
+require "HBVCEF_BulletCasingEffect"
+
 if SpentCasingPhysics then
-    local orig_SpentCasingPhysics_spawnCasing = SpentCasingPhysics.spawnCasing
+    Events.OnWeaponSwing.Remove(SpentCasingPhysics.spawnCasing)
 
     local m60LinkParam = {
         casing = "Base.M60_Link",
@@ -12,36 +14,58 @@ if SpentCasingPhysics then
         heightSpreed = 60
     }
 
-    Events.OnGameBoot.Add(function()
-        if Events.OnWeaponSwing and Events.OnWeaponSwing.Remove and orig_SpentCasingPhysics_spawnCasing then
-            Events.OnWeaponSwing.Remove(orig_SpentCasingPhysics_spawnCasing)
+    function SpentCasingPhysics.playCasingImpactSound(casing, square)
+        if not casing or not casing.player then return end
+        if not casing.repeatCasingSound then return end
+
+        if casing.casingType == "Base.M60_Link" then
+            casing.player:getEmitter():playSound("M1PingDrop")
+            casing.repeatCasingSound = false
         end
 
-        function SpentCasingPhysics.spawnCasing(player, weapon)
-            if not player or player:isDead() then return end
-            if not weapon then return end
+        local family = SpentCasingPhysics.getCasingSoundFamily(casing)
+        local surfaceTypeName = SpentCasingPhysics.getSurfaceTypeFromSquare(square)
 
-            local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
-            if not params then return end
+        local familyParams = SpentCasingPhysics.CasingImpactSoundParams[family]
+        if not familyParams then return end
 
-            if params.manualEjection then return end
+        local params = familyParams[surfaceTypeName] or familyParams.Concrete
+        if not params then return end
 
-            if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-                if weapon:hasTag("M60_Link") then
-                    local brassCatcher = weapon:getWeaponPart('RecoilPad')
-                    if brassCatcher then
-                        player:getInventory():AddItem("Base.308Bullets_Casing")
-                        player:getInventory():AddItem("Base.M60_Link")
-                    else
-                        SpentCasingPhysics.doSpawnCasing(player, weapon, params)
-                        SpentCasingPhysics.doSpawnCasing(player, weapon, m60LinkParam)
-                    end
+        local count = params.variations or 1
+        local idx = 1
+        if count > 1 then
+            idx = SpentCasingPhysics.RANDOM:random(1, count)
+        end
+
+        local soundName = params.prefix .. tostring(idx)
+        casing.player:getEmitter():playSound(soundName)
+    end
+
+    function SpentCasingPhysics.spawnCasing(player, weapon)
+        if not player or player:isDead() then return end
+        if not weapon then return end
+
+        local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
+        if not params then return end
+
+        if params.manualEjection then return end
+
+        if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
+            if weapon:hasTag("M60_Link") then
+                local brassCatcher = weapon:getWeaponPart('RecoilPad')
+                if brassCatcher then
+                    player:getInventory():AddItem("Base.308Bullets_Casing")
+                    player:getInventory():AddItem("Base.M60_Link")
                 else
                     SpentCasingPhysics.doSpawnCasing(player, weapon, params)
+                    SpentCasingPhysics.doSpawnCasing(player, weapon, m60LinkParam)
                 end
+            else
+                SpentCasingPhysics.doSpawnCasing(player, weapon, params)
             end
         end
+    end
 
-        Events.OnWeaponSwing.Add(SpentCasingPhysics.spawnCasing)
-    end)
+    Events.OnWeaponSwing.Add(SpentCasingPhysics.spawnCasing)
 end
