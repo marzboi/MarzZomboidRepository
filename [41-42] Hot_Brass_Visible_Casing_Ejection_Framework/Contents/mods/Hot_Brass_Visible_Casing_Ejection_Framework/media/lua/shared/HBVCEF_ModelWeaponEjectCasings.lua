@@ -146,7 +146,7 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
     },
 }
 
-SpentCasingPhysics.registerWeapon = function(
+function SpentCasingPhysics.registerWeapon(
     weapon,
     casing,
     ammo,

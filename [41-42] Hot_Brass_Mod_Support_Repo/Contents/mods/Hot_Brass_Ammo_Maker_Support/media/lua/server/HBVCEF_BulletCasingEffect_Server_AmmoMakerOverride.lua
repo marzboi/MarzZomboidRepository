@@ -5,9 +5,9 @@ if AMMO_MAKER then
     Events.OnTick.Remove(SpentCasingPhysics.update)
 
     function SpentCasingPhysics.update()
-        local dt = GT():getTimeDelta() or (1 / 60)
+        local dt    = SpentCasingPhysics.GT():getTimeDelta() or (1 / 60)
         local scale = dt * 60
-        local i = 1
+        local i     = 1
 
         while i <= #SpentCasingPhysics.activeCasings do
             local casing = SpentCasingPhysics.activeCasings[i]
@@ -17,61 +17,62 @@ if AMMO_MAKER then
                 table.remove(SpentCasingPhysics.activeCasings, i)
                 removed = true
             else
-                local prevZ = casing.z or 0
-                casing.velocityZ = casing.velocityZ - (GRAVITY * GRAVITY_SCALE * scale)
+                local prevZ      = casing.z or 0
+                casing.velocityZ = casing.velocityZ -
+                    (SpentCasingPhysics.GRAVITY * SpentCasingPhysics.GRAVITY_SCALE * scale)
 
-                casing.x = casing.x + (casing.velocityX * XY_STEP * scale)
-                casing.y = casing.y + (casing.velocityY * XY_STEP * scale)
-                casing.z = casing.z + (casing.velocityZ * Z_STEP * scale)
+                casing.x         = casing.x + (casing.velocityX * SpentCasingPhysics.XY_STEP * scale)
+                casing.y         = casing.y + (casing.velocityY * SpentCasingPhysics.XY_STEP * scale)
+                casing.z         = casing.z + (casing.velocityZ * SpentCasingPhysics.Z_STEP * scale)
 
-                casing.z = math.max(0, casing.z)
+                casing.z         = math.max(0, casing.z)
 
-                local worldX = casing.square:getX() + casing.x
-                local worldY = casing.square:getY() + casing.y
-                local worldZ = casing.square:getZ()
+                local worldX     = casing.square:getX() + casing.x
+                local worldY     = casing.square:getY() + casing.y
+                local worldZ     = casing.square:getZ()
 
-                local dragXY = math.pow(DRAG_XY, scale)
-                local dragZ = math.pow(DRAG_Z, scale)
+                local dragXY     = math.pow(SpentCasingPhysics.DRAG_XY, scale)
+                local dragZ      = math.pow(SpentCasingPhysics.DRAG_Z, scale)
                 casing.velocityX = casing.velocityX * dragXY
                 casing.velocityY = casing.velocityY * dragXY
                 casing.velocityZ = casing.velocityZ * dragZ
 
-                local localX = worldX - casing.square:getX()
-                local localY = worldY - casing.square:getY()
-                local edgeX = localX
-                local edgeY = localY
+                local localX     = worldX - casing.square:getX()
+                local localY     = worldY - casing.square:getY()
+                local edgeX      = localX
+                local edgeY      = localY
 
                 local willBounce = false
                 local bounceAxis = nil
 
-                local EDGE_TOL = 0.15
+                local EDGE_TOL   = 0.15
 
                 if casing.square then
-                    local sx = casing.square:getX()
-                    local sy = casing.square:getY()
-                    local sz = casing.square:getZ()
+                    local sx     = casing.square:getX()
+                    local sy     = casing.square:getY()
+                    local sz     = casing.square:getZ()
 
                     local nx, ny = nil, nil
-                    local dir = nil
+                    local dir    = nil
 
                     if math.abs(casing.velocityX) >= math.abs(casing.velocityY) then
                         if casing.velocityX > 0 and edgeX >= 1.0 - EDGE_TOL then
                             nx, ny = sx + 1, sy
-                            dir = IsoDirections.E
+                            dir = SpentCasingPhysics.IsoDirections.E
                             bounceAxis = "x"
                         elseif casing.velocityX < 0 and edgeX <= EDGE_TOL then
                             nx, ny = sx - 1, sy
-                            dir = IsoDirections.W
+                            dir = SpentCasingPhysics.IsoDirections.W
                             bounceAxis = "x"
                         end
                     else
                         if casing.velocityY > 0 and edgeY >= 1.0 - EDGE_TOL then
                             nx, ny = sx, sy + 1
-                            dir = IsoDirections.S
+                            dir = SpentCasingPhysics.IsoDirections.S
                             bounceAxis = "y"
                         elseif casing.velocityY < 0 and edgeY <= EDGE_TOL then
                             nx, ny = sx, sy - 1
-                            dir = IsoDirections.N
+                            dir = SpentCasingPhysics.IsoDirections.N
                             bounceAxis = "y"
                         end
                     end
@@ -83,7 +84,7 @@ if AMMO_MAKER then
 
                             local barrier = casing.square:getDoorOrWindowOrWindowFrame(dir, true)
                             if not barrier then
-                                local revDir = IsoDirections.reverse(dir)
+                                local revDir = SpentCasingPhysics.IsoDirections.reverse(dir)
                                 barrier = neighbor:getDoorOrWindowOrWindowFrame(revDir, true)
                             end
 
@@ -96,10 +97,10 @@ if AMMO_MAKER then
                                 if casing.square:isWallTo(neighbor) then
                                     local wall1 = casing.square:getWall(true)
                                     local wall2 = neighbor:getWall(true)
-                                    local isLow = (wall1 and isVisuallyLowWall(wall1)) or
-                                        (wall2 and isVisuallyLowWall(wall2))
+                                    local isLow = (wall1 and SpentCasingPhysics.isVisuallyLowWall(wall1)) or
+                                        (wall2 and SpentCasingPhysics.isVisuallyLowWall(wall2))
                                     if isLow then
-                                        if casing.z < LOW_WALL_Z_THRESHOLD then
+                                        if casing.z < SpentCasingPhysics.LOW_WALL_Z_THRESHOLD then
                                             block = true
                                         end
                                     else
@@ -117,15 +118,15 @@ if AMMO_MAKER then
 
                 if willBounce and bounceAxis then
                     if bounceAxis == "x" then
-                        casing.velocityX = -casing.velocityX * BOUNCE_RESTITUTION
-                        casing.x = casing.x + (casing.velocityX * BOUNCE_POSITION_CORRECT)
-                        if math.abs(casing.velocityX) < BOUNCE_MIN_VELOCITY then
+                        casing.velocityX = -casing.velocityX * SpentCasingPhysics.BOUNCE_RESTITUTION
+                        casing.x = casing.x + (casing.velocityX * SpentCasingPhysics.BOUNCE_POSITION_CORRECT)
+                        if math.abs(casing.velocityX) < SpentCasingPhysics.BOUNCE_MIN_VELOCITY then
                             casing.velocityX = 0
                         end
                     else
-                        casing.velocityY = -casing.velocityY * BOUNCE_RESTITUTION
-                        casing.y = casing.y + (casing.velocityY * BOUNCE_POSITION_CORRECT)
-                        if math.abs(casing.velocityY) < BOUNCE_MIN_VELOCITY then
+                        casing.velocityY = -casing.velocityY * SpentCasingPhysics.BOUNCE_RESTITUTION
+                        casing.y = casing.y + (casing.velocityY * SpentCasingPhysics.BOUNCE_POSITION_CORRECT)
+                        if math.abs(casing.velocityY) < SpentCasingPhysics.BOUNCE_MIN_VELOCITY then
                             casing.velocityY = 0
                         end
                     end
@@ -134,12 +135,12 @@ if AMMO_MAKER then
                     worldY = casing.square:getY() + casing.y
                 end
 
-                local targetTileX = math.floor(worldX)
-                local targetTileY = math.floor(worldY)
+                local targetTileX  = math.floor(worldX)
+                local targetTileY  = math.floor(worldY)
 
-                local checkZ = worldZ
+                local checkZ       = worldZ
                 local targetSquare = nil
-                local drops = 0
+                local drops        = 0
 
                 while checkZ >= 0 do
                     local sq = getCell():getGridSquare(targetTileX, targetTileY, checkZ)
@@ -154,7 +155,7 @@ if AMMO_MAKER then
                     end
 
                     checkZ = checkZ - 1
-                    drops = drops + 1
+                    drops  = drops + 1
                 end
 
                 if not targetSquare then
@@ -186,7 +187,7 @@ if AMMO_MAKER then
 
                 local tileTopZ = nil
                 if not casing.hasHitFloor and falling then
-                    tileTopZ = getTileTopZ(targetSquare)
+                    tileTopZ = SpentCasingPhysics.getTileTopZ(targetSquare)
                 end
 
                 local surfaceZ = 0.0
@@ -211,10 +212,11 @@ if AMMO_MAKER then
                         casing.hasHitFloor = true
                     end
 
-                    if surfaceZ == 0.0 and isWaterFloor(floor) then
+                    if surfaceZ == 0.0 and SpentCasingPhysics.isWaterFloor(floor) then
                         casing.active = false
                         table.remove(SpentCasingPhysics.activeCasings, i)
                         removed = true
+                        SpentCasingPhysics.playCasingImpactSound(casing, targetSquare)
                     else
                         local speedXY = math.sqrt(
                             casing.velocityX * casing.velocityX +
@@ -223,15 +225,15 @@ if AMMO_MAKER then
 
                         local canBounceHere =
                             casing.floorBounces and casing.floorBounces > 0 and
-                            speedXY > SETTLE_THRESHOLD
-                        if surfaceZ == 0.0 and floor and isGrassFloor(floor) then
+                            speedXY > SpentCasingPhysics.SETTLE_THRESHOLD
+                        if surfaceZ == 0.0 and floor and SpentCasingPhysics.isGrassFloor(floor) then
                             canBounceHere = false
                         end
 
                         if canBounceHere then
                             casing.floorBounces     = casing.floorBounces - 1
                             casing.z                = surfaceZ + 0.05
-                            casing.velocityZ        = math.abs(casing.velocityZ) * BOUNCE_RESTITUTION
+                            casing.velocityZ        = math.abs(casing.velocityZ) * SpentCasingPhysics.BOUNCE_RESTITUTION
                             casing.velocityX        = casing.velocityX * 0.5
                             casing.velocityY        = casing.velocityY * 0.5
 
@@ -241,7 +243,10 @@ if AMMO_MAKER then
                                 localY2,
                                 casing.z
                             )
+                            SpentCasingPhysics.playCasingImpactSound(casing, targetSquare)
                         else
+                            SpentCasingPhysics.playCasingImpactSound(casing, targetSquare)
+
                             casing.active = false
                             table.remove(SpentCasingPhysics.activeCasings, i)
                             removed = true

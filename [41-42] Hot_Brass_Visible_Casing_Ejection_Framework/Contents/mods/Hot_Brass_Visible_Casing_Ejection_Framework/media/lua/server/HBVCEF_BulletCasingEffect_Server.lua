@@ -14,6 +14,58 @@ SpentCasingPhysics.LOW_WALL_Z_THRESHOLD    = 0.25
 
 SpentCasingPhysics.IsoDirections           = IsoDirections
 
+SpentCasingPhysics.SurfaceType             = {
+    Concrete = "Concrete",
+    Dirt     = "Dirt",
+    Grass    = "Grass",
+    Puddles  = "Puddles",
+    Snow     = "Snow",
+    Wood     = "Wood",
+}
+
+SpentCasingPhysics.FOOTSTEP_TO_SURFACE     = {
+    Asphalt    = SpentCasingPhysics.SurfaceType.Concrete,
+    Concrete   = SpentCasingPhysics.SurfaceType.Concrete,
+    Tile       = SpentCasingPhysics.SurfaceType.Concrete,
+    Linoleum   = SpentCasingPhysics.SurfaceType.Concrete,
+
+    Dirt       = SpentCasingPhysics.SurfaceType.Dirt,
+    Gravel     = SpentCasingPhysics.SurfaceType.Dirt,
+    Sand       = SpentCasingPhysics.SurfaceType.Dirt,
+    Carpet     = SpentCasingPhysics.SurfaceType.Dirt,
+
+    Grass      = SpentCasingPhysics.SurfaceType.Grass,
+    Leaves     = SpentCasingPhysics.SurfaceType.Grass,
+
+    Puddle     = SpentCasingPhysics.SurfaceType.Puddles,
+    Water      = SpentCasingPhysics.SurfaceType.Puddles,
+
+    Snow       = SpentCasingPhysics.SurfaceType.Snow,
+    Ice        = SpentCasingPhysics.SurfaceType.Snow,
+
+    Wood       = SpentCasingPhysics.SurfaceType.Wood,
+    FloorBoard = SpentCasingPhysics.SurfaceType.Wood,
+}
+
+SpentCasingPhysics.CasingImpactSoundParams = {
+    Bullet = {
+        Concrete = { prefix = "Bullet_Concrete_", variations = 6 },
+        Dirt     = { prefix = "Bullet_Dirt_", variations = 6 },
+        Grass    = { prefix = "Bullet_Grass_", variations = 6 },
+        Puddles  = { prefix = "Bullet_Puddles_", variations = 6 },
+        Snow     = { prefix = "Bullet_Snow_", variations = 6 },
+        Wood     = { prefix = "Bullet_Wood_", variations = 6 },
+    },
+    Shells = {
+        Concrete = { prefix = "Shells_Concrete_", variations = 6 },
+        Dirt     = { prefix = "Shells_Dirt_", variations = 6 },
+        Grass    = { prefix = "Shells_Grass_", variations = 6 },
+        Puddles  = { prefix = "Shells_Puddles_", variations = 6 },
+        Snow     = { prefix = "Shells_Snow_", variations = 6 },
+        Wood     = { prefix = "Shells_Wood_", variations = 6 },
+    }
+}
+
 function SpentCasingPhysics.isVisuallyLowWall(wall)
     if not wall then return false end
     local props = wall.getProperties and wall:getProperties() or nil
@@ -90,6 +142,76 @@ function SpentCasingPhysics.getTileTopZ(square)
     return topZ
 end
 
+function SpentCasingPhysics.getSurfaceTypeFromSquare(square)
+    if not square then
+        return SpentCasingPhysics.SurfaceType.Concrete
+    end
+
+    local floor = square:getFloor()
+    if not floor then
+        return SpentCasingPhysics.SurfaceType.Concrete
+    end
+
+    if SpentCasingPhysics.isWaterFloor(floor) then
+        return SpentCasingPhysics.SurfaceType.Puddles
+    end
+
+    local props = floor.getProperties and floor:getProperties() or nil
+    if not props then
+        return SpentCasingPhysics.SurfaceType.Concrete
+    end
+
+    local mat = props:Val("FootstepMaterial")
+    local surface = SpentCasingPhysics.FOOTSTEP_TO_SURFACE[mat]
+
+    return surface or SpentCasingPhysics.SurfaceType.Concrete
+end
+
+function SpentCasingPhysics.getCasingSoundFamily(casing)
+    if not casing then
+        return "Bullet"
+    end
+
+    local weapon = casing.weapon
+
+    if weapon and weapon.getAmmoType then
+        local ammoType = weapon:getAmmoType()
+        if ammoType and (ammoType == "Base.ShotgunShells"
+                or string.find(ammoType, "ShotgunShells", 1, true)) then
+            return "Shells"
+        end
+    end
+
+    local ctype = casing.casingType or ""
+    if string.find(ctype, "ShotgunShells", 1, true) then
+        return "Shells"
+    end
+
+    return "Bullet"
+end
+
+function SpentCasingPhysics.playCasingImpactSound(casing, square)
+    if not casing or not casing.player then return end
+
+    local family          = SpentCasingPhysics.getCasingSoundFamily(casing)
+    local surfaceTypeName = SpentCasingPhysics.getSurfaceTypeFromSquare(square)
+
+    local familyParams    = SpentCasingPhysics.CasingImpactSoundParams[family]
+    if not familyParams then return end
+
+    local params = familyParams[surfaceTypeName] or familyParams.Concrete
+    if not params then return end
+
+    local count = params.variations or 1
+    local idx = 1
+    if count > 1 then
+        idx = SpentCasingPhysics.RANDOM:random(1, count)
+    end
+
+    local soundName = params.prefix .. tostring(idx)
+    casing.player:getEmitter():playSound(soundName)
+end
+
 function SpentCasingPhysics.GT()
     return GameTime.getInstance()
 end
@@ -108,21 +230,20 @@ function SpentCasingPhysics.addCasing(
     if not square then return end
 
     local casingData = {
-        player = player,
-        weapon = weapon,
-        square = square,
-        casingType = casingType,
-        x = startX,
-        y = startY,
-        z = startZ,
-        velocityX = velocityX or 0,
-        velocityY = velocityY or 0,
-        velocityZ = velocityZ or 0.1,
-        active = true,
+        player           = player,
+        weapon           = weapon,
+        square           = square,
+        casingType       = casingType,
+        x                = startX,
+        y                = startY,
+        z                = startZ,
+        velocityX        = velocityX or 0,
+        velocityY        = velocityY or 0,
+        velocityZ        = velocityZ or 0.1,
+        active           = true,
         currentWorldItem = nil,
-        shellSound = false,
-        floorBounces = SpentCasingPhysics.RANDOM:random(0, 2),
-        hasHitFloor = false,
+        floorBounces     = SpentCasingPhysics.RANDOM:random(0, 2),
+        hasHitFloor      = false,
     }
 
     casingData.currentWorldItem = square:AddWorldInventoryItem(casingType, startX, startY, startZ)
@@ -131,9 +252,9 @@ function SpentCasingPhysics.addCasing(
 end
 
 function SpentCasingPhysics.update()
-    local dt = SpentCasingPhysics.GT():getTimeDelta() or (1 / 60)
+    local dt    = SpentCasingPhysics.GT():getTimeDelta() or (1 / 60)
     local scale = dt * 60
-    local i = 1
+    local i     = 1
 
     while i <= #SpentCasingPhysics.activeCasings do
         local casing = SpentCasingPhysics.activeCasings[i]
@@ -143,42 +264,42 @@ function SpentCasingPhysics.update()
             table.remove(SpentCasingPhysics.activeCasings, i)
             removed = true
         else
-            local prevZ = casing.z or 0
+            local prevZ      = casing.z or 0
             casing.velocityZ = casing.velocityZ - (SpentCasingPhysics.GRAVITY * SpentCasingPhysics.GRAVITY_SCALE * scale)
 
-            casing.x = casing.x + (casing.velocityX * SpentCasingPhysics.XY_STEP * scale)
-            casing.y = casing.y + (casing.velocityY * SpentCasingPhysics.XY_STEP * scale)
-            casing.z = casing.z + (casing.velocityZ * SpentCasingPhysics.Z_STEP * scale)
+            casing.x         = casing.x + (casing.velocityX * SpentCasingPhysics.XY_STEP * scale)
+            casing.y         = casing.y + (casing.velocityY * SpentCasingPhysics.XY_STEP * scale)
+            casing.z         = casing.z + (casing.velocityZ * SpentCasingPhysics.Z_STEP * scale)
 
-            casing.z = math.max(0, casing.z)
+            casing.z         = math.max(0, casing.z)
 
-            local worldX = casing.square:getX() + casing.x
-            local worldY = casing.square:getY() + casing.y
-            local worldZ = casing.square:getZ()
+            local worldX     = casing.square:getX() + casing.x
+            local worldY     = casing.square:getY() + casing.y
+            local worldZ     = casing.square:getZ()
 
-            local dragXY = math.pow(SpentCasingPhysics.DRAG_XY, scale)
-            local dragZ = math.pow(SpentCasingPhysics.DRAG_Z, scale)
+            local dragXY     = math.pow(SpentCasingPhysics.DRAG_XY, scale)
+            local dragZ      = math.pow(SpentCasingPhysics.DRAG_Z, scale)
             casing.velocityX = casing.velocityX * dragXY
             casing.velocityY = casing.velocityY * dragXY
             casing.velocityZ = casing.velocityZ * dragZ
 
-            local localX = worldX - casing.square:getX()
-            local localY = worldY - casing.square:getY()
-            local edgeX = localX
-            local edgeY = localY
+            local localX     = worldX - casing.square:getX()
+            local localY     = worldY - casing.square:getY()
+            local edgeX      = localX
+            local edgeY      = localY
 
             local willBounce = false
             local bounceAxis = nil
 
-            local EDGE_TOL = 0.15
+            local EDGE_TOL   = 0.15
 
             if casing.square then
-                local sx = casing.square:getX()
-                local sy = casing.square:getY()
-                local sz = casing.square:getZ()
+                local sx     = casing.square:getX()
+                local sy     = casing.square:getY()
+                local sz     = casing.square:getZ()
 
                 local nx, ny = nil, nil
-                local dir = nil
+                local dir    = nil
 
                 if math.abs(casing.velocityX) >= math.abs(casing.velocityY) then
                     if casing.velocityX > 0 and edgeX >= 1.0 - EDGE_TOL then
@@ -260,12 +381,12 @@ function SpentCasingPhysics.update()
                 worldY = casing.square:getY() + casing.y
             end
 
-            local targetTileX = math.floor(worldX)
-            local targetTileY = math.floor(worldY)
+            local targetTileX  = math.floor(worldX)
+            local targetTileY  = math.floor(worldY)
 
-            local checkZ = worldZ
+            local checkZ       = worldZ
             local targetSquare = nil
-            local drops = 0
+            local drops        = 0
 
             while checkZ >= 0 do
                 local sq = getCell():getGridSquare(targetTileX, targetTileY, checkZ)
@@ -280,7 +401,7 @@ function SpentCasingPhysics.update()
                 end
 
                 checkZ = checkZ - 1
-                drops = drops + 1
+                drops  = drops + 1
             end
 
             if not targetSquare then
@@ -341,6 +462,7 @@ function SpentCasingPhysics.update()
                     casing.active = false
                     table.remove(SpentCasingPhysics.activeCasings, i)
                     removed = true
+                    SpentCasingPhysics.playCasingImpactSound(casing, targetSquare)
                 else
                     local speedXY = math.sqrt(
                         casing.velocityX * casing.velocityX +
@@ -367,6 +489,7 @@ function SpentCasingPhysics.update()
                             localY2,
                             casing.z
                         )
+                        SpentCasingPhysics.playCasingImpactSound(casing, targetSquare)
                     else
                         targetSquare:AddWorldInventoryItem(
                             casing.casingType,
@@ -374,6 +497,7 @@ function SpentCasingPhysics.update()
                             localY2,
                             surfaceZ
                         )
+                        SpentCasingPhysics.playCasingImpactSound(casing, targetSquare)
 
                         casing.active = false
                         table.remove(SpentCasingPhysics.activeCasings, i)
@@ -412,35 +536,45 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
 
     if not ammoToEject then return end
 
-    local px, py, pz = player:getX(), player:getY(), player:getZ()
+    local px, py, pz   = player:getX(), player:getY(), player:getZ()
 
-    local angleDeg = player:getDirectionAngle() or 0
-    local angle = math.rad(angleDeg)
+    local angleDeg     = player:getDirectionAngle() or 0
+    local angle        = math.rad(angleDeg)
 
-    local fx = math.cos(angle)
-    local fy = math.sin(angle)
-    local rx = math.cos(angle + math.pi / 2)
-    local ry = math.sin(angle + math.pi / 2)
+    local fx           = math.cos(angle)
+    local fy           = math.sin(angle)
+    local rx           = math.cos(angle + math.pi / 2)
+    local ry           = math.sin(angle + math.pi / 2)
 
-    local spawnWorldX = px + fx * forwardOffset + rx * sideOffset
-    local spawnWorldY = py + fy * forwardOffset + ry * sideOffset
+    local spawnWorldX  = px + fx * forwardOffset + rx * sideOffset
+    local spawnWorldY  = py + fy * forwardOffset + ry * sideOffset
     local targetSquare = player:getCurrentSquare()
 
-    local startX = spawnWorldX - targetSquare:getX()
-    local startY = spawnWorldY - targetSquare:getY()
+    local startX       = spawnWorldX - targetSquare:getX()
+    local startY       = spawnWorldY - targetSquare:getY()
 
-    local stairFrac = pz - targetSquare:getZ()
-    local startZ = stairFrac + heightOffset
+    local stairFrac    = pz - targetSquare:getZ()
+    local startZ       = stairFrac + heightOffset
 
-    local velX = (SpentCasingPhysics.RANDOM:random(sideSpreed) - 5) / 200
-    local velY = (SpentCasingPhysics.RANDOM:random(sideSpreed) - 5) / 200
-    local velZ = (SpentCasingPhysics.RANDOM:random(heightSpreed) + 25) / 200
+    local velX         = (SpentCasingPhysics.RANDOM:random(sideSpreed) - 5) / 200
+    local velY         = (SpentCasingPhysics.RANDOM:random(sideSpreed) - 5) / 200
+    local velZ         = (SpentCasingPhysics.RANDOM:random(heightSpreed) + 25) / 200
 
-    velX = velX + rx * shellForce
-    velY = velY + ry * shellForce
+    velX               = velX + rx * shellForce
+    velY               = velY + ry * shellForce
 
-    SpentCasingPhysics.addCasing(player, weapon, targetSquare,
-        ammoToEject, startX, startY, startZ, velX, velY, velZ)
+    SpentCasingPhysics.addCasing(
+        player,
+        weapon,
+        targetSquare,
+        ammoToEject,
+        startX,
+        startY,
+        startZ,
+        velX,
+        velY,
+        velZ
+    )
 end
 
 function SpentCasingPhysics.spawnCasing(player, weapon)

@@ -29,12 +29,6 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
             weapon:setSpentRoundChambered(true);
         end
     else
-        -- automatic weapons eject the bullet cartridge
-        if not weapon:isManuallyRemoveSpentRounds() then
-            if weapon:getShellFallSound() then
-                player:getEmitter():playSound(weapon:getShellFallSound())
-            end
-        end
         if weapon:getCurrentAmmoCount() >= weapon:getAmmoPerShoot() then
             -- remove ammo, add one to chamber if we still have some
             if weapon:haveChamber() then

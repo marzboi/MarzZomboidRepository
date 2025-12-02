@@ -14,6 +14,42 @@ if SpentCasingPhysics then
         heightSpreed = 60
     }
 
+    function SpentCasingPhysics.addCasing(
+        player,
+        weapon,
+        square,
+        casingType,
+        startX,
+        startY,
+        startZ,
+        velocityX,
+        velocityY,
+        velocityZ)
+        if not square then return end
+
+        local casingData = {
+            player = player,
+            weapon = weapon,
+            square = square,
+            casingType = casingType,
+            x = startX,
+            y = startY,
+            z = startZ,
+            velocityX = velocityX or 0,
+            velocityY = velocityY or 0,
+            velocityZ = velocityZ or 0.1,
+            active = true,
+            currentWorldItem = nil,
+            floorBounces = SpentCasingPhysics.RANDOM:random(0, 2),
+            hasHitFloor = false,
+            repeatCasingSound = true,
+        }
+
+        casingData.currentWorldItem = square:AddWorldInventoryItem(casingType, startX, startY, startZ)
+
+        table.insert(SpentCasingPhysics.activeCasings, casingData)
+    end
+
     function SpentCasingPhysics.playCasingImpactSound(casing, square)
         if not casing or not casing.player then return end
         if not casing.repeatCasingSound then return end

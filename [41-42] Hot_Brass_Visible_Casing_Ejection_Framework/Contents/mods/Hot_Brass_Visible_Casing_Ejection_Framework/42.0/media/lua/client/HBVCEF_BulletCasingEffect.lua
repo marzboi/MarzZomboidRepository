@@ -244,7 +244,6 @@ function SpentCasingPhysics.addCasing(
         currentWorldItem = nil,
         floorBounces = SpentCasingPhysics.RANDOM:random(0, 2),
         hasHitFloor = false,
-        repeatCasingSound = true,
     }
 
     casingData.currentWorldItem = square:AddWorldInventoryItem(casingType, startX, startY, startZ)

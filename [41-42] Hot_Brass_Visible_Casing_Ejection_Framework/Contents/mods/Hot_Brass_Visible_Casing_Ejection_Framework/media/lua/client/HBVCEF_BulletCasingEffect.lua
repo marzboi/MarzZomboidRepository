@@ -1,5 +1,3 @@
-SpentCasingPhysics = SpentCasingPhysics or {}
-
 function SpentCasingPhysics.HBVCEF_onWeaponSwing(player, weapon)
     if not player or not weapon then return end
 

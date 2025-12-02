@@ -1,7 +1,7 @@
-SpentCasingAnimSync = SpentCasingAnimSync or {}
-SpentCasingAnimSync.pending = SpentCasingAnimSync.pending or {}
-SpentCasingAnimSync.BASELINE_TICKS_PER_SECOND = SpentCasingAnimSync.BASELINE_TICKS_PER_SECOND or 60
-SpentCasingAnimSync.rackTimeParams = SpentCasingAnimSync.rackTimeParams or {
+SpentCasingAnimSync = {}
+SpentCasingAnimSync.pending = {}
+SpentCasingAnimSync.BASELINE_TICKS_PER_SECOND = 60
+SpentCasingAnimSync.rackTimeParams = {
     ["boltactionnomag"] = { aiming = 20, notAiming = 45 },
     ["boltaction"]      = { aiming = 20, notAiming = 45 },
     ["shotgunsemi"]     = { aiming = 20, notAiming = 45 },
