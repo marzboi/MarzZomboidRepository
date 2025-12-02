@@ -1,8 +1,7 @@
-SpentCasingAnimSync = {}
-SpentCasingAnimSync.pending = {}
-local BASELINE_TICKS_PER_SECOND = 60
-
-local rackTimeParams = {
+SpentCasingAnimSync = SpentCasingAnimSync or {}
+SpentCasingAnimSync.pending = SpentCasingAnimSync.pending or {}
+SpentCasingAnimSync.BASELINE_TICKS_PER_SECOND = SpentCasingAnimSync.BASELINE_TICKS_PER_SECOND or 60
+SpentCasingAnimSync.rackTimeParams = SpentCasingAnimSync.rackTimeParams or {
     ["boltactionnomag"] = { aiming = 20, notAiming = 45 },
     ["boltaction"]      = { aiming = 20, notAiming = 45 },
     ["shotgunsemi"]     = { aiming = 20, notAiming = 45 },
@@ -12,11 +11,13 @@ local rackTimeParams = {
     ["mp5"]             = { aiming = 50, notAiming = 40 },
 }
 
-local gameTime
-Events.OnGameTimeLoaded.Add(function() gameTime = GameTime.getInstance() end)
-local function GT() return gameTime or GameTime.getInstance() end
+function SpentCasingAnimSync.GT()
+    return GameTime.getInstance()
+end
 
-local function getRackTicksFor(player, weapon)
+function SpentCasingAnimSync.getRackTicksFor(player, weapon)
+    local rackTimeParams = SpentCasingAnimSync.rackTimeParams
+
     if not player or not weapon then
         return rackTimeParams["default"].notAiming
     end
@@ -42,9 +43,10 @@ end
 function SpentCasingAnimSync.scheduleRack(player, weapon, racking)
     if not player or not weapon then return end
 
-    local ticks = getRackTicksFor(player, weapon)
+    local ticks = SpentCasingAnimSync.getRackTicksFor(player, weapon)
     local pid = tostring(player:getPlayerNum() or 0)
-    local seconds = math.max(1, math.floor(ticks or 1)) / BASELINE_TICKS_PER_SECOND
+    local baseline = SpentCasingAnimSync.BASELINE_TICKS_PER_SECOND
+    local seconds = math.max(1, math.floor(ticks or 1)) / baseline
 
     SpentCasingAnimSync.pending[pid] = {
         timeRemaining = seconds,
@@ -54,7 +56,8 @@ function SpentCasingAnimSync.scheduleRack(player, weapon, racking)
 end
 
 function SpentCasingAnimSync.onTick()
-    local dt = GT():getRealworldSecondsSinceLastUpdate() or (1 / BASELINE_TICKS_PER_SECOND)
+    local baseline = SpentCasingAnimSync.BASELINE_TICKS_PER_SECOND
+    local dt = SpentCasingAnimSync.GT():getRealworldSecondsSinceLastUpdate() or (1 / baseline)
 
     for pid, data in pairs(SpentCasingAnimSync.pending) do
         data.timeRemaining = data.timeRemaining - dt

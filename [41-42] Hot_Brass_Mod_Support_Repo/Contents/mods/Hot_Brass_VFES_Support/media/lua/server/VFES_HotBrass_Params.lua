@@ -265,7 +265,6 @@ local vfesParams = {
     },
 }
 
-
 for weapon, data in pairs(vfesParams) do
     SpentCasingPhysics.registerWeapon(
         weapon,

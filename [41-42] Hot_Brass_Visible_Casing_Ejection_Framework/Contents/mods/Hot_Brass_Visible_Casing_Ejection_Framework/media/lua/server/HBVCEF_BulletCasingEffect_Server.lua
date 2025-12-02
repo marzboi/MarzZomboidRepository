@@ -1,24 +1,20 @@
-require "ISBaseObject"
+SpentCasingPhysics.activeCasings           = {}
+SpentCasingPhysics.RANDOM                  = newrandom()
+SpentCasingPhysics.GRAVITY                 = 0.020
+SpentCasingPhysics.XY_STEP                 = 0.10
+SpentCasingPhysics.Z_STEP                  = 0.05
+SpentCasingPhysics.GRAVITY_SCALE           = 1.0
+SpentCasingPhysics.DRAG_XY                 = 0.97
+SpentCasingPhysics.DRAG_Z                  = 0.995
+SpentCasingPhysics.SETTLE_THRESHOLD        = 0.001
+SpentCasingPhysics.BOUNCE_RESTITUTION      = 0.60
+SpentCasingPhysics.BOUNCE_POSITION_CORRECT = 0.12
+SpentCasingPhysics.BOUNCE_MIN_VELOCITY     = 0.004
+SpentCasingPhysics.LOW_WALL_Z_THRESHOLD    = 0.25
 
-SpentCasingPhysics = SpentCasingPhysics or {}
-SpentCasingPhysics.activeCasings = SpentCasingPhysics.activeCasings or {}
+SpentCasingPhysics.IsoDirections           = IsoDirections
 
-local RANDOM = newrandom()
-local GRAVITY = 0.020
-local XY_STEP = 0.10
-local Z_STEP = 0.05
-local GRAVITY_SCALE = 1.0
-local DRAG_XY = 0.97
-local DRAG_Z = 0.995
-local SETTLE_THRESHOLD = 0.001
-local BOUNCE_RESTITUTION = 0.60
-local BOUNCE_POSITION_CORRECT = 0.12
-local BOUNCE_MIN_VELOCITY = 0.004
-local LOW_WALL_Z_THRESHOLD = 0.25
-
-local IsoDirections = IsoDirections or getClass("zombie.iso.IsoDirections")
-
-local function isVisuallyLowWall(wall)
+function SpentCasingPhysics.isVisuallyLowWall(wall)
     if not wall then return false end
     local props = wall.getProperties and wall:getProperties() or nil
     if not props then return false end
@@ -33,7 +29,7 @@ local function isVisuallyLowWall(wall)
     return false
 end
 
-local function isWaterFloor(floor)
+function SpentCasingPhysics.isWaterFloor(floor)
     if not floor then return false end
     local props = floor.getProperties and floor:getProperties() or nil
     if not props then return false end
@@ -44,7 +40,7 @@ local function isWaterFloor(floor)
     return false
 end
 
-local function isGrassFloor(floor)
+function SpentCasingPhysics.isGrassFloor(floor)
     if not floor then return false end
     local props = floor.getProperties and floor:getProperties() or nil
     if not props then return false end
@@ -58,7 +54,7 @@ local function isGrassFloor(floor)
     return false
 end
 
-local function getTileTopZ(square)
+function SpentCasingPhysics.getTileTopZ(square)
     if not square then return nil end
 
     local objects = square:getObjects()
@@ -94,9 +90,9 @@ local function getTileTopZ(square)
     return topZ
 end
 
-local gameTime
-Events.OnGameTimeLoaded.Add(function() gameTime = GameTime.getInstance() end)
-local function GT() return gameTime or GameTime.getInstance() end
+function SpentCasingPhysics.GT()
+    return GameTime.getInstance()
+end
 
 function SpentCasingPhysics.addCasing(
     player,
@@ -125,7 +121,7 @@ function SpentCasingPhysics.addCasing(
         active = true,
         currentWorldItem = nil,
         shellSound = false,
-        floorBounces = RANDOM:random(0, 2),
+        floorBounces = SpentCasingPhysics.RANDOM:random(0, 2),
         hasHitFloor = false,
     }
 
@@ -135,7 +131,7 @@ function SpentCasingPhysics.addCasing(
 end
 
 function SpentCasingPhysics.update()
-    local dt = GT():getTimeDelta() or (1 / 60)
+    local dt = SpentCasingPhysics.GT():getTimeDelta() or (1 / 60)
     local scale = dt * 60
     local i = 1
 
@@ -148,11 +144,11 @@ function SpentCasingPhysics.update()
             removed = true
         else
             local prevZ = casing.z or 0
-            casing.velocityZ = casing.velocityZ - (GRAVITY * GRAVITY_SCALE * scale)
+            casing.velocityZ = casing.velocityZ - (SpentCasingPhysics.GRAVITY * SpentCasingPhysics.GRAVITY_SCALE * scale)
 
-            casing.x = casing.x + (casing.velocityX * XY_STEP * scale)
-            casing.y = casing.y + (casing.velocityY * XY_STEP * scale)
-            casing.z = casing.z + (casing.velocityZ * Z_STEP * scale)
+            casing.x = casing.x + (casing.velocityX * SpentCasingPhysics.XY_STEP * scale)
+            casing.y = casing.y + (casing.velocityY * SpentCasingPhysics.XY_STEP * scale)
+            casing.z = casing.z + (casing.velocityZ * SpentCasingPhysics.Z_STEP * scale)
 
             casing.z = math.max(0, casing.z)
 
@@ -160,8 +156,8 @@ function SpentCasingPhysics.update()
             local worldY = casing.square:getY() + casing.y
             local worldZ = casing.square:getZ()
 
-            local dragXY = math.pow(DRAG_XY, scale)
-            local dragZ = math.pow(DRAG_Z, scale)
+            local dragXY = math.pow(SpentCasingPhysics.DRAG_XY, scale)
+            local dragZ = math.pow(SpentCasingPhysics.DRAG_Z, scale)
             casing.velocityX = casing.velocityX * dragXY
             casing.velocityY = casing.velocityY * dragXY
             casing.velocityZ = casing.velocityZ * dragZ
@@ -187,21 +183,21 @@ function SpentCasingPhysics.update()
                 if math.abs(casing.velocityX) >= math.abs(casing.velocityY) then
                     if casing.velocityX > 0 and edgeX >= 1.0 - EDGE_TOL then
                         nx, ny = sx + 1, sy
-                        dir = IsoDirections.E
+                        dir = SpentCasingPhysics.IsoDirections.E
                         bounceAxis = "x"
                     elseif casing.velocityX < 0 and edgeX <= EDGE_TOL then
                         nx, ny = sx - 1, sy
-                        dir = IsoDirections.W
+                        dir = SpentCasingPhysics.IsoDirections.W
                         bounceAxis = "x"
                     end
                 else
                     if casing.velocityY > 0 and edgeY >= 1.0 - EDGE_TOL then
                         nx, ny = sx, sy + 1
-                        dir = IsoDirections.S
+                        dir = SpentCasingPhysics.IsoDirections.S
                         bounceAxis = "y"
                     elseif casing.velocityY < 0 and edgeY <= EDGE_TOL then
                         nx, ny = sx, sy - 1
-                        dir = IsoDirections.N
+                        dir = SpentCasingPhysics.IsoDirections.N
                         bounceAxis = "y"
                     end
                 end
@@ -213,7 +209,7 @@ function SpentCasingPhysics.update()
 
                         local barrier = casing.square:getDoorOrWindowOrWindowFrame(dir, true)
                         if not barrier then
-                            local revDir = IsoDirections.reverse(dir)
+                            local revDir = SpentCasingPhysics.IsoDirections.reverse(dir)
                             barrier = neighbor:getDoorOrWindowOrWindowFrame(revDir, true)
                         end
 
@@ -226,10 +222,10 @@ function SpentCasingPhysics.update()
                             if casing.square:isWallTo(neighbor) then
                                 local wall1 = casing.square:getWall(true)
                                 local wall2 = neighbor:getWall(true)
-                                local isLow = (wall1 and isVisuallyLowWall(wall1)) or
-                                    (wall2 and isVisuallyLowWall(wall2))
+                                local isLow = (wall1 and SpentCasingPhysics.isVisuallyLowWall(wall1)) or
+                                    (wall2 and SpentCasingPhysics.isVisuallyLowWall(wall2))
                                 if isLow then
-                                    if casing.z < LOW_WALL_Z_THRESHOLD then
+                                    if casing.z < SpentCasingPhysics.LOW_WALL_Z_THRESHOLD then
                                         block = true
                                     end
                                 else
@@ -247,15 +243,15 @@ function SpentCasingPhysics.update()
 
             if willBounce and bounceAxis then
                 if bounceAxis == "x" then
-                    casing.velocityX = -casing.velocityX * BOUNCE_RESTITUTION
-                    casing.x = casing.x + (casing.velocityX * BOUNCE_POSITION_CORRECT)
-                    if math.abs(casing.velocityX) < BOUNCE_MIN_VELOCITY then
+                    casing.velocityX = -casing.velocityX * SpentCasingPhysics.BOUNCE_RESTITUTION
+                    casing.x = casing.x + (casing.velocityX * SpentCasingPhysics.BOUNCE_POSITION_CORRECT)
+                    if math.abs(casing.velocityX) < SpentCasingPhysics.BOUNCE_MIN_VELOCITY then
                         casing.velocityX = 0
                     end
                 else
-                    casing.velocityY = -casing.velocityY * BOUNCE_RESTITUTION
-                    casing.y = casing.y + (casing.velocityY * BOUNCE_POSITION_CORRECT)
-                    if math.abs(casing.velocityY) < BOUNCE_MIN_VELOCITY then
+                    casing.velocityY = -casing.velocityY * SpentCasingPhysics.BOUNCE_RESTITUTION
+                    casing.y = casing.y + (casing.velocityY * SpentCasingPhysics.BOUNCE_POSITION_CORRECT)
+                    if math.abs(casing.velocityY) < SpentCasingPhysics.BOUNCE_MIN_VELOCITY then
                         casing.velocityY = 0
                     end
                 end
@@ -301,7 +297,6 @@ function SpentCasingPhysics.update()
             localX2 = PZMath.clamp_01(localX2)
             localY2 = PZMath.clamp_01(localY2)
 
-            -- REMOVE old world object (network-aware)
             if casing.currentWorldItem then
                 local wobj = casing.currentWorldItem:getWorldItem()
                 if wobj then
@@ -317,7 +312,7 @@ function SpentCasingPhysics.update()
 
             local tileTopZ = nil
             if not casing.hasHitFloor and falling then
-                tileTopZ = getTileTopZ(targetSquare)
+                tileTopZ = SpentCasingPhysics.getTileTopZ(targetSquare)
             end
 
             local surfaceZ = 0.0
@@ -342,7 +337,7 @@ function SpentCasingPhysics.update()
                     casing.hasHitFloor = true
                 end
 
-                if surfaceZ == 0.0 and isWaterFloor(floor) then
+                if surfaceZ == 0.0 and SpentCasingPhysics.isWaterFloor(floor) then
                     casing.active = false
                     table.remove(SpentCasingPhysics.activeCasings, i)
                     removed = true
@@ -354,15 +349,15 @@ function SpentCasingPhysics.update()
 
                     local canBounceHere =
                         casing.floorBounces and casing.floorBounces > 0 and
-                        speedXY > SETTLE_THRESHOLD
-                    if surfaceZ == 0.0 and floor and isGrassFloor(floor) then
+                        speedXY > SpentCasingPhysics.SETTLE_THRESHOLD
+                    if surfaceZ == 0.0 and floor and SpentCasingPhysics.isGrassFloor(floor) then
                         canBounceHere = false
                     end
 
                     if canBounceHere then
                         casing.floorBounces     = casing.floorBounces - 1
                         casing.z                = surfaceZ + 0.05
-                        casing.velocityZ        = math.abs(casing.velocityZ) * BOUNCE_RESTITUTION
+                        casing.velocityZ        = math.abs(casing.velocityZ) * SpentCasingPhysics.BOUNCE_RESTITUTION
                         casing.velocityX        = casing.velocityX * 0.5
                         casing.velocityY        = casing.velocityY * 0.5
 
@@ -405,12 +400,12 @@ end
 
 function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     local forwardOffset = params.forwardOffset or 0.0
-    local sideOffset = params.sideOffset or 0.0
-    local heightOffset = params.heightOffset or 0.5
-    local shellForce = params.shellForce or 0.0
-    local sideSpreed = params.sideSpread or 10
-    local heightSpreed = params.heightSpreed or 10
-    local ammoToEject = params.casing
+    local sideOffset    = params.sideOffset or 0.0
+    local heightOffset  = params.heightOffset or 0.5
+    local shellForce    = params.shellForce or 0.0
+    local sideSpreed    = params.sideSpread or 10
+    local heightSpreed  = params.heightSpreed or 10
+    local ammoToEject   = params.casing
     if racking then
         ammoToEject = params.ammo
     end
@@ -437,9 +432,9 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     local stairFrac = pz - targetSquare:getZ()
     local startZ = stairFrac + heightOffset
 
-    local velX = (RANDOM:random(sideSpreed) - 5) / 200
-    local velY = (RANDOM:random(sideSpreed) - 5) / 200
-    local velZ = (RANDOM:random(heightSpreed) + 25) / 200
+    local velX = (SpentCasingPhysics.RANDOM:random(sideSpreed) - 5) / 200
+    local velY = (SpentCasingPhysics.RANDOM:random(sideSpreed) - 5) / 200
+    local velZ = (SpentCasingPhysics.RANDOM:random(heightSpreed) + 25) / 200
 
     velX = velX + rx * shellForce
     velY = velY + ry * shellForce
@@ -477,7 +472,7 @@ function SpentCasingPhysics.rackCasing(player, weapon, racking)
     end
 end
 
-local function getWeaponFromArgs(player, args)
+function SpentCasingPhysics.getWeaponFromArgs(player, args)
     if not player or not args then return nil end
     if args.weaponId and player:getInventory() and player:getInventory().getItemById then
         local item = player:getInventory():getItemById(args.weaponId)
@@ -487,22 +482,22 @@ local function getWeaponFromArgs(player, args)
     return player:getPrimaryHandItem()
 end
 
-local function onClientCommand(module, command, player, args)
+function SpentCasingPhysics.onClientCommand(module, command, player, args)
     if module ~= "HBVCEF" then return end
     if not player then return end
 
     if command == "spawnCasing" then
-        local weapon = getWeaponFromArgs(player, args)
+        local weapon = SpentCasingPhysics.getWeaponFromArgs(player, args)
         if weapon then
             SpentCasingPhysics.spawnCasing(player, weapon)
         end
     elseif command == "rackCasing" then
-        local weapon = getWeaponFromArgs(player, args)
+        local weapon = SpentCasingPhysics.getWeaponFromArgs(player, args)
         if weapon then
             SpentCasingPhysics.rackCasing(player, weapon, args and args.racking)
         end
     end
 end
 
-Events.OnClientCommand.Add(onClientCommand)
+Events.OnClientCommand.Add(SpentCasingPhysics.onClientCommand)
 Events.OnTick.Add(SpentCasingPhysics.update)

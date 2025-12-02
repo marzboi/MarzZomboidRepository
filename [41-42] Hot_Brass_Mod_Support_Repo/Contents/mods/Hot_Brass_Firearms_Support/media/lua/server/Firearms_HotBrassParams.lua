@@ -1,4 +1,4 @@
-SpentCasingPhysics.WeaponEjectionPortParams = {
+local firearmsParams = {
 
     -- Pistols
 
@@ -680,3 +680,18 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
         heightSpreed = 40
     },
 }
+
+for weapon, data in pairs(firearmsParams) do
+    SpentCasingPhysics.registerWeapon(
+        weapon,
+        data.casing,
+        data.ammo,
+        data.forwardOffset,
+        data.sideOffset,
+        data.heightOffset,
+        data.shellForce,
+        data.manualEjection,
+        data.sideSpread,
+        data.heightSpreed
+    )
+end

@@ -1,8 +1,6 @@
-require "ISBaseObject"
-
 SpentCasingPhysics = SpentCasingPhysics or {}
 
-local function HBVCEF_onWeaponSwing(player, weapon)
+function SpentCasingPhysics.HBVCEF_onWeaponSwing(player, weapon)
     if not player or not weapon then return end
 
     if isClient() and player.isLocalPlayer and not player:isLocalPlayer() then
@@ -25,4 +23,4 @@ local function HBVCEF_onWeaponSwing(player, weapon)
     end
 end
 
-Events.OnWeaponSwing.Add(HBVCEF_onWeaponSwing)
+Events.OnWeaponSwing.Add(SpentCasingPhysics.HBVCEF_onWeaponSwing)

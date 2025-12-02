@@ -12,7 +12,7 @@ SpentCasingPhysics.BOUNCE_POSITION_CORRECT = 0.12
 SpentCasingPhysics.BOUNCE_MIN_VELOCITY     = 0.004
 SpentCasingPhysics.LOW_WALL_Z_THRESHOLD    = 0.25
 
-SpentCasingPhysics.IsoDirections           = IsoDirections or getClass("zombie.iso.IsoDirections")
+SpentCasingPhysics.IsoDirections           = IsoDirections
 
 SpentCasingPhysics.SurfaceType             = {
     Concrete = "Concrete",
@@ -45,6 +45,25 @@ SpentCasingPhysics.FOOTSTEP_TO_SURFACE     = {
 
     Wood       = SpentCasingPhysics.SurfaceType.Wood,
     FloorBoard = SpentCasingPhysics.SurfaceType.Wood,
+}
+
+SpentCasingPhysics.CasingImpactSoundParams = {
+    Bullet = {
+        Concrete = { prefix = "Bullet_Concrete_", variations = 6 },
+        Dirt     = { prefix = "Bullet_Dirt_", variations = 6 },
+        Grass    = { prefix = "Bullet_Grass_", variations = 6 },
+        Puddles  = { prefix = "Bullet_Puddles_", variations = 6 },
+        Snow     = { prefix = "Bullet_Snow_", variations = 6 },
+        Wood     = { prefix = "Bullet_Wood_", variations = 6 },
+    },
+    Shells = {
+        Concrete = { prefix = "Shells_Concrete_", variations = 6 },
+        Dirt     = { prefix = "Shells_Dirt_", variations = 6 },
+        Grass    = { prefix = "Shells_Grass_", variations = 6 },
+        Puddles  = { prefix = "Shells_Puddles_", variations = 6 },
+        Snow     = { prefix = "Shells_Snow_", variations = 6 },
+        Wood     = { prefix = "Shells_Wood_", variations = 6 },
+    }
 }
 
 function SpentCasingPhysics.isVisuallyLowWall(wall)
@@ -196,25 +215,6 @@ end
 function SpentCasingPhysics.GT()
     return GameTime.getInstance()
 end
-
-SpentCasingPhysics.CasingImpactSoundParams = {
-    Bullet = {
-        Concrete = { prefix = "Bullet_Concrete_", variations = 6 },
-        Dirt     = { prefix = "Bullet_Dirt_", variations = 6 },
-        Grass    = { prefix = "Bullet_Grass_", variations = 6 },
-        Puddles  = { prefix = "Bullet_Puddles_", variations = 6 },
-        Snow     = { prefix = "Bullet_Snow_", variations = 6 },
-        Wood     = { prefix = "Bullet_Wood_", variations = 6 },
-    },
-    Shells = {
-        Concrete = { prefix = "Shells_Concrete_", variations = 6 },
-        Dirt     = { prefix = "Shells_Dirt_", variations = 6 },
-        Grass    = { prefix = "Shells_Grass_", variations = 6 },
-        Puddles  = { prefix = "Shells_Puddles_", variations = 6 },
-        Snow     = { prefix = "Shells_Snow_", variations = 6 },
-        Wood     = { prefix = "Shells_Wood_", variations = 6 },
-    }
-}
 
 function SpentCasingPhysics.addCasing(
     player,

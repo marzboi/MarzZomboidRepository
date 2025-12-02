@@ -1,4 +1,4 @@
-SpentCasingPhysics.WeaponEjectionPortParams = {
+local vfeParams = {
 
     -- Combination Guns
     ["Base.M2400_Shotgun"] = {
@@ -785,3 +785,18 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
         heightSpreed = 25
     },
 }
+
+for weapon, data in pairs(vfeParams) do
+    SpentCasingPhysics.registerWeapon(
+        weapon,
+        data.casing,
+        data.ammo,
+        data.forwardOffset,
+        data.sideOffset,
+        data.heightOffset,
+        data.shellForce,
+        data.manualEjection,
+        data.sideSpread,
+        data.heightSpreed
+    )
+end

@@ -1,4 +1,4 @@
-SpentCasingPhysics.WeaponEjectionPortParams = {
+local firearmsRevampedParams = {
     ---AssaultRifle
 
     ["Base.AssaultRifle"] = {
@@ -1071,3 +1071,18 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
         manualEjection = true
     },
 }
+
+for weapon, data in pairs(firearmsRevampedParams) do
+    SpentCasingPhysics.registerWeapon(
+        weapon,
+        data.casing,
+        data.ammo,
+        data.forwardOffset,
+        data.sideOffset,
+        data.heightOffset,
+        data.shellForce,
+        data.manualEjection,
+        data.sideSpread,
+        data.heightSpreed
+    )
+end
