@@ -8,7 +8,7 @@ local vfesParams = {
         heightOffset   = 0.50,
         shellForce     = 0.55,
         sideSpread     = 45,
-        heightSpreed   = 35,
+        heightSpread   = 35,
         manualEjection = false
     },
 
@@ -20,7 +20,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 40,
-        heightSpreed   = 40,
+        heightSpread   = 40,
         manualEjection = false
     },
 
@@ -32,7 +32,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.75,
         sideSpread     = 45,
-        heightSpreed   = 75,
+        heightSpread   = 75,
         manualEjection = false
     },
 
@@ -44,7 +44,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.65,
         sideSpread     = 45,
-        heightSpreed   = 75,
+        heightSpread   = 75,
         manualEjection = false
     },
 
@@ -56,7 +56,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.65,
         sideSpread     = 45,
-        heightSpreed   = 75,
+        heightSpread   = 75,
         manualEjection = false
     },
 
@@ -68,7 +68,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.65,
         sideSpread     = 45,
-        heightSpreed   = 75,
+        heightSpread   = 75,
         manualEjection = false
     },
 
@@ -80,7 +80,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.45,
         sideSpread     = 15,
-        heightSpreed   = 15,
+        heightSpread   = 15,
         manualEjection = false
     },
 
@@ -92,7 +92,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.30,
         sideSpread     = 10,
-        heightSpreed   = 10,
+        heightSpread   = 10,
         manualEjection = false
     },
 
@@ -104,7 +104,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.30,
         sideSpread     = 10,
-        heightSpreed   = 10,
+        heightSpread   = 10,
         manualEjection = false
     },
 
@@ -116,7 +116,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.45,
         sideSpread     = 20,
-        heightSpreed   = 20,
+        heightSpread   = 20,
         manualEjection = true
     },
 
@@ -128,7 +128,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.70,
         sideSpread     = 10,
-        heightSpreed   = 70,
+        heightSpread   = 70,
         manualEjection = false
     },
 
@@ -140,7 +140,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.45,
         sideSpread     = 20,
-        heightSpreed   = 20,
+        heightSpread   = 20,
         manualEjection = true
     },
 
@@ -152,7 +152,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.40,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -164,7 +164,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.90,
         sideSpread     = 20,
-        heightSpreed   = 75,
+        heightSpread   = 75,
         manualEjection = false
     },
 
@@ -176,7 +176,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.60,
         sideSpread     = 30,
-        heightSpreed   = 10,
+        heightSpread   = 10,
         manualEjection = false
     },
 
@@ -188,7 +188,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.60,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -200,7 +200,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.60,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -212,7 +212,7 @@ local vfesParams = {
         heightOffset   = 0.50,
         shellForce     = 0.20,
         sideSpread     = 70,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -224,7 +224,7 @@ local vfesParams = {
         heightOffset   = 0.50,
         shellForce     = 0.30,
         sideSpread     = 15,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -236,7 +236,7 @@ local vfesParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -248,7 +248,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.70,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -260,7 +260,7 @@ local vfesParams = {
         heightOffset   = 0.45,
         shellForce     = 0.75,
         sideSpread     = 50,
-        heightSpreed   = 50,
+        heightSpread   = 50,
         manualEjection = false
     },
 }
@@ -276,6 +276,6 @@ for weapon, data in pairs(vfesParams) do
         data.shellForce,
         data.manualEjection,
         data.sideSpread,
-        data.heightSpreed
+        data.heightSpread
     )
 end

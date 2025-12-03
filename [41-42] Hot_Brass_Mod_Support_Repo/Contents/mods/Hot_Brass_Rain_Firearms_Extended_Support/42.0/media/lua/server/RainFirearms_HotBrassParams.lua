@@ -7,7 +7,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.75,
         sideSpread     = 40,
-        heightSpreed   = 45,
+        heightSpread   = 45,
         manualEjection = false
     },
 
@@ -19,7 +19,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.85,
         sideSpread     = 35,
-        heightSpreed   = 45,
+        heightSpread   = 45,
         manualEjection = false
     },
 
@@ -31,7 +31,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.35,
         shellForce     = -0.65,
         sideSpread     = 90,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -43,7 +43,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.65,
         sideSpread     = 45,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -55,7 +55,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 45,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -67,7 +67,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.65,
         sideSpread     = 45,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -79,7 +79,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.85,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -91,7 +91,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.85,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -103,7 +103,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.85,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -115,7 +115,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.55,
         shellForce     = 0.10,
         sideSpread     = 12,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = true
     },
 
@@ -127,7 +127,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.65,
         sideSpread     = 30,
-        heightSpreed   = 42,
+        heightSpread   = 42,
         manualEjection = false
     },
 
@@ -139,7 +139,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.65,
         sideSpread     = 30,
-        heightSpreed   = 40,
+        heightSpread   = 40,
         manualEjection = false
     },
 
@@ -151,7 +151,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.35,
         shellForce     = 0,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -163,7 +163,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.35,
         shellForce     = 0,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -175,7 +175,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.35,
         shellForce     = 0,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -187,7 +187,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.35,
         shellForce     = 0,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -199,7 +199,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -211,7 +211,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.80,
         sideSpread     = 90,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -223,7 +223,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.80,
         sideSpread     = 80,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -235,7 +235,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.80,
         sideSpread     = 80,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -247,7 +247,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.80,
         sideSpread     = 80,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -259,7 +259,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.80,
         sideSpread     = 80,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -271,7 +271,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.80,
         sideSpread     = 80,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -283,7 +283,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.80,
         sideSpread     = 80,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -295,7 +295,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 1.00,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -307,7 +307,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.30,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -319,7 +319,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 1.00,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -331,7 +331,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 1.00,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -343,7 +343,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 1.00,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -355,7 +355,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 1.00,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -367,7 +367,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 1.20,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -379,7 +379,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 1.20,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -391,7 +391,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 1.00,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -403,7 +403,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.30,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -415,7 +415,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.75,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -427,7 +427,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.30,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -439,7 +439,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.75,
         sideSpread     = 60,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -451,7 +451,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.75,
         sideSpread     = 60,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -463,7 +463,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -475,7 +475,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -487,7 +487,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -499,7 +499,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -511,7 +511,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -523,7 +523,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -535,7 +535,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -547,7 +547,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -559,7 +559,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -571,7 +571,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -583,7 +583,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -595,7 +595,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -607,7 +607,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -619,7 +619,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -631,7 +631,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -643,7 +643,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -655,7 +655,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -667,7 +667,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -679,7 +679,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -691,7 +691,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -703,7 +703,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -715,7 +715,7 @@ local rainsFirearmsParams = {
         heightOffset   = 0.45,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 }
@@ -731,6 +731,6 @@ for weapon, data in pairs(rainsFirearmsParams) do
         data.shellForce,
         data.manualEjection,
         data.sideSpread,
-        data.heightSpreed
+        data.heightSpread
     )
 end

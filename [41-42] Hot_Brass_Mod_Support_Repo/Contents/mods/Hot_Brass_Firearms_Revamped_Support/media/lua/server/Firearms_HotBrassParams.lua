@@ -9,7 +9,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.65,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -21,7 +21,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 1.20,
         sideSpread     = 60,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -33,7 +33,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.65,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -46,7 +46,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.65,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.Mini14"] = {
@@ -57,7 +57,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 40,
-        heightSpreed   = 70,
+        heightSpread   = 70,
         manualEjection = false
     },
 
@@ -70,7 +70,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.65,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.M60M"] = {
@@ -81,7 +81,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.76,
         sideSpread     = 40,
-        heightSpreed   = 50,
+        heightSpread   = 50,
         manualEjection = false
     },
 
@@ -93,7 +93,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.76,
         sideSpread     = 40,
-        heightSpreed   = 50,
+        heightSpread   = 50,
         manualEjection = false
     },
 
@@ -105,7 +105,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.80,
         sideSpread     = 90,
-        heightSpreed   = 95,
+        heightSpread   = 95,
         manualEjection = false
     },
 
@@ -119,7 +119,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.30,
         sideSpread     = 45,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -131,7 +131,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.60,
         sideSpread     = 45,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -143,7 +143,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.30,
         sideSpread     = 45,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -155,7 +155,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.30,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -167,7 +167,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.45,
         sideSpread     = 45,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -180,7 +180,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.45,
         manualEjection = false,
         sideSpread     = 25,
-        heightSpreed   = 25
+        heightSpread   = 25
     },
 
     ["Base.Pistol_Compact"] = {
@@ -191,7 +191,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.45,
         sideSpread     = 45,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -206,7 +206,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 34,
+        heightSpread   = 34,
     },
 
     ["Base.Winchester73"] = {
@@ -218,7 +218,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 34,
+        heightSpread   = 34,
     },
 
     ["Base.Rossi92"] = {
@@ -230,7 +230,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 34,
+        heightSpread   = 34,
     },
 
     ["Base.Winchester94Sawn"] = {
@@ -242,7 +242,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 34,
+        heightSpread   = 34,
     },
 
     ["Base.Winchester73Sawn"] = {
@@ -254,7 +254,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 34,
+        heightSpread   = 34,
     },
 
     ["Base.Rossi92Sawn"] = {
@@ -266,7 +266,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 34,
+        heightSpread   = 34,
     },
 
     ["Base.M1887"] = {
@@ -278,7 +278,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 34,
+        heightSpread   = 34,
     },
 
     ["Base.M1887Short"] = {
@@ -290,7 +290,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 34,
+        heightSpread   = 34,
     },
 
     ["Base.M1887Sawn"] = {
@@ -302,7 +302,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 34,
+        heightSpread   = 34,
     },
 
     --- Revolvers
@@ -316,7 +316,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.10,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.Revolver_Long"] = {
@@ -328,7 +328,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.0,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.Revolver_Short"] = {
@@ -340,7 +340,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.10,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.Revolver_M29"] = {
@@ -352,7 +352,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.10,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.ColtPython"] = {
@@ -364,7 +364,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.0,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.ColtPythonStubby"] = {
@@ -376,7 +376,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.0,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.ColtPythonHunter"] = {
@@ -388,7 +388,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.0,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.ColtAnaconda"] = {
@@ -400,7 +400,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.0,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.ColtPeacemaker"] = {
@@ -412,7 +412,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.0,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.ColtSingleAction22"] = {
@@ -424,7 +424,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.0,
         manualEjection = true,
         sideSpread     = 40,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ---Bolt Actions Rifles
@@ -438,7 +438,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.HuntingRifle_Sawn"] = {
@@ -450,7 +450,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.Rugerm7722_Sawn"] = {
@@ -462,7 +462,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.VarmintRifle"] = {
@@ -474,7 +474,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.HuntingRifle"] = {
@@ -486,7 +486,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.Rugerm7722"] = {
@@ -498,7 +498,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.M24Rifle"] = {
@@ -509,7 +509,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.30,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -522,7 +522,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.M1903Springfield"] = {
@@ -534,7 +534,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.SKS"] = {
@@ -545,7 +545,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 90,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -557,7 +557,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 90,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -570,7 +570,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.M14A1"] = {
@@ -582,7 +582,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.M1Garand"] = {
@@ -594,7 +594,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.Winchester77"] = {
@@ -606,7 +606,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.Winchester77_Sawn"] = {
@@ -618,7 +618,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     --- short
@@ -631,7 +631,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.65,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -643,7 +643,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.65,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -655,7 +655,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.65,
         sideSpread     = 60,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = false
     },
 
@@ -667,7 +667,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 1.20,
         sideSpread     = 60,
-        heightSpreed   = 90,
+        heightSpread   = 90,
         manualEjection = false
     },
 
@@ -679,7 +679,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 40,
-        heightSpreed   = 70,
+        heightSpread   = 70,
         manualEjection = false
     },
 
@@ -692,7 +692,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.65,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.Mini14Sawn"] = {
@@ -703,7 +703,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 40,
-        heightSpreed   = 70,
+        heightSpread   = 70,
         manualEjection = false
     },
 
@@ -715,7 +715,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.76,
         sideSpread     = 40,
-        heightSpreed   = 50,
+        heightSpread   = 50,
         manualEjection = false
     },
 
@@ -728,7 +728,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.HuntingRifleShort"] = {
@@ -740,7 +740,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     ["Base.SKSShort"] = {
@@ -751,7 +751,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 90,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -763,7 +763,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 90,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -775,7 +775,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 90,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -787,7 +787,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.55,
         sideSpread     = 90,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -800,7 +800,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.M14A1Short"] = {
@@ -812,7 +812,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = false,
         sideSpread     = 45,
-        heightSpreed   = 60
+        heightSpread   = 60
     },
 
     ["Base.M1903SpringfieldShort"] = {
@@ -824,7 +824,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.30,
         manualEjection = true,
         sideSpread     = 45,
-        heightSpreed   = 75
+        heightSpread   = 75
     },
 
     --- SMG
@@ -837,7 +837,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -849,7 +849,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -861,7 +861,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 30,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -873,7 +873,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -885,7 +885,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.50,
         shellForce     = 0.60,
         sideSpread     = 60,
-        heightSpreed   = 60,
+        heightSpread   = 60,
         manualEjection = false
     },
 
@@ -899,7 +899,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -911,7 +911,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -923,7 +923,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -935,7 +935,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -948,7 +948,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 60,
-        heightSpreed   = 50
+        heightSpread   = 50
     },
 
     ["Base.Mossberg500Tactical"] = {
@@ -960,7 +960,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 65,
-        heightSpreed   = 50
+        heightSpread   = 50
     },
 
     ["Base.Remington870Wood"] = {
@@ -972,7 +972,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 65,
-        heightSpreed   = 50
+        heightSpread   = 50
     },
 
     ["Base.Remington870Sawnoff"] = {
@@ -984,7 +984,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 65,
-        heightSpreed   = 50
+        heightSpread   = 50
     },
 
     ["Base.SPAS12"] = {
@@ -996,7 +996,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 65,
-        heightSpreed   = 50
+        heightSpread   = 50
     },
 
     ["Base.LAW12"] = {
@@ -1008,7 +1008,7 @@ local firearmsRevampedParams = {
         shellForce     = 0.25,
         manualEjection = true,
         sideSpread     = 65,
-        heightSpreed   = 50
+        heightSpread   = 50
     },
 
     ["Base.ShotgunShort"] = {
@@ -1019,7 +1019,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -1031,7 +1031,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -1043,7 +1043,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -1055,7 +1055,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 
@@ -1067,7 +1067,7 @@ local firearmsRevampedParams = {
         heightOffset   = 0.45,
         shellForce     = 0.15,
         sideSpread     = 30,
-        heightSpreed   = 30,
+        heightSpread   = 30,
         manualEjection = true
     },
 }
@@ -1083,6 +1083,6 @@ for weapon, data in pairs(firearmsRevampedParams) do
         data.shellForce,
         data.manualEjection,
         data.sideSpread,
-        data.heightSpreed
+        data.heightSpread
     )
 end

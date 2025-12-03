@@ -125,7 +125,7 @@ local m1BlocParam = {
     shellForce = 0.20,
     manualEjection = false,
     sideSpread = 45,
-    heightSpreed = 60
+    heightSpread = 60
 }
 
 ISReloadWeaponAction.onShoot = function(player, weapon)

@@ -10,7 +10,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 40,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.2400_Rifle"] = {
@@ -22,7 +22,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 40,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     -- Carbines
@@ -68,7 +68,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.Pistol"] = {
@@ -80,7 +80,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.Pistol2"] = {
@@ -92,7 +92,7 @@ local vfeParams = {
         shellForce = 0.65,
         manualEjection = false,
         sideSpread = 30,
-        heightSpreed = 30
+        heightSpread = 30
     },
 
     ["Base.Pistol3"] = {
@@ -104,7 +104,7 @@ local vfeParams = {
         shellForce = 0.85,
         manualEjection = false,
         sideSpread = 55,
-        heightSpreed = 55
+        heightSpread = 55
     },
 
     ["Base.MK23SOCOM"] = {
@@ -116,7 +116,7 @@ local vfeParams = {
         shellForce = 0.75,
         manualEjection = false,
         sideSpread = 50,
-        heightSpreed = 55
+        heightSpread = 55
     },
 
     ["Base.Glock"] = {
@@ -128,7 +128,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.Glock18"] = {
@@ -140,7 +140,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.P229"] = {
@@ -152,7 +152,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.CZ75"] = {
@@ -164,7 +164,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.MK2"] = {
@@ -176,7 +176,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.MK2SD"] = {
@@ -188,7 +188,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.Revolver"] = {
@@ -200,7 +200,7 @@ local vfeParams = {
         shellForce = 0.10,
         manualEjection = true,
         sideSpread = 40,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.Revolver_Short"] = {
@@ -212,7 +212,7 @@ local vfeParams = {
         shellForce = 0.10,
         manualEjection = true,
         sideSpread = 40,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.Revolver_Long"] = {
@@ -224,7 +224,7 @@ local vfeParams = {
         shellForce = 0.0,
         manualEjection = true,
         sideSpread = 40,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     -- Rifles
@@ -238,7 +238,7 @@ local vfeParams = {
         shellForce = 0.85,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.AK47Folded"] = {
@@ -250,7 +250,7 @@ local vfeParams = {
         shellForce = 0.85,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.AK47"] = {
@@ -262,7 +262,7 @@ local vfeParams = {
         shellForce = 0.85,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.MAK90"] = {
@@ -274,7 +274,7 @@ local vfeParams = {
         shellForce = 0.85,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.SKS"] = {
@@ -286,7 +286,7 @@ local vfeParams = {
         shellForce = 0.85,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.SKSSpiker"] = {
@@ -298,7 +298,7 @@ local vfeParams = {
         shellForce = 0.85,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.1022"] = {
@@ -310,7 +310,7 @@ local vfeParams = {
         shellForce = 0.85,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.Mini14Unfolded"] = {
@@ -322,7 +322,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.Mini14Folded"] = {
@@ -334,7 +334,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.Mini14"] = {
@@ -346,7 +346,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.FAL"] = {
@@ -358,7 +358,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.FALClassic"] = {
@@ -370,7 +370,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.CAR15"] = {
@@ -382,7 +382,7 @@ local vfeParams = {
         shellForce = 0.65,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.CAR15Folded"] = {
@@ -394,7 +394,7 @@ local vfeParams = {
         shellForce = 0.65,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.CAR15D"] = {
@@ -406,7 +406,7 @@ local vfeParams = {
         shellForce = 0.55,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.CAR15DFolded"] = {
@@ -418,7 +418,7 @@ local vfeParams = {
         shellForce = 0.55,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.AssaultRifle2"] = {
@@ -430,7 +430,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.AssaultRifleM1"] = {
@@ -442,7 +442,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.AssaultRifle"] = {
@@ -454,7 +454,7 @@ local vfeParams = {
         shellForce = 0.71,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.AssaultRifleMasterkey"] = {
@@ -466,7 +466,7 @@ local vfeParams = {
         shellForce = 0.71,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.M60MMG"] = {
@@ -478,7 +478,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.M60MMG_Bipod"] = {
@@ -490,7 +490,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 60
+        heightSpread = 60
     },
 
     ["Base.HuntingRifle"] = {
@@ -502,7 +502,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = true,
         sideSpread = 45,
-        heightSpreed = 75
+        heightSpread = 75
     },
 
     ["Base.VarmintRifle"] = {
@@ -514,7 +514,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = true,
         sideSpread = 45,
-        heightSpreed = 75
+        heightSpread = 75
     },
 
     ["Base.SniperRifle"] = {
@@ -526,7 +526,7 @@ local vfeParams = {
         shellForce = 0.30,
         manualEjection = true,
         sideSpread = 45,
-        heightSpreed = 75
+        heightSpread = 75
     },
 
     -- Shotguns
@@ -540,7 +540,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.Shotgun"] = {
@@ -552,7 +552,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.Shotgun2"] = {
@@ -564,7 +564,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.ShotgunSemi"] = {
@@ -576,7 +576,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.ShotgunSemi2"] = {
@@ -588,7 +588,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.ShotgunSawnoff"] = {
@@ -600,7 +600,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.ShotgunSawnoffNoStock"] = {
@@ -612,7 +612,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.DoubleBarrelShotgun"] = {
@@ -624,7 +624,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 40,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.DoubleBarrelShotgunSawnoff"] = {
@@ -636,7 +636,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 40,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.DoubleBarrelShotgunSawnoffNoStock"] = {
@@ -648,7 +648,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = true,
         sideSpread = 40,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.Spas12"] = {
@@ -660,7 +660,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.Spas12Folded"] = {
@@ -672,7 +672,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     ["Base.ShotgunSilent"] = {
@@ -684,7 +684,7 @@ local vfeParams = {
         shellForce = 0.15,
         manualEjection = false,
         sideSpread = 45,
-        heightSpreed = 40
+        heightSpread = 40
     },
 
     --SMGs
@@ -698,7 +698,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.MP5SD"] = {
@@ -710,7 +710,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.MP5Unfolded"] = {
@@ -722,7 +722,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.MP5Folded"] = {
@@ -734,7 +734,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.MAC10Unfolded"] = {
@@ -746,7 +746,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.MAC10Folded"] = {
@@ -758,7 +758,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.UziUnfolded"] = {
@@ -770,7 +770,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 
     ["Base.UziFolded"] = {
@@ -782,7 +782,7 @@ local vfeParams = {
         shellForce = 0.45,
         manualEjection = false,
         sideSpread = 25,
-        heightSpreed = 25
+        heightSpread = 25
     },
 }
 
@@ -797,6 +797,6 @@ for weapon, data in pairs(vfeParams) do
         data.shellForce,
         data.manualEjection,
         data.sideSpread,
-        data.heightSpreed
+        data.heightSpread
     )
 end

@@ -8,7 +8,7 @@ local m60LinkParam = {
     shellForce     = 0.35,
     manualEjection = false,
     sideSpread     = 45,
-    heightSpreed   = 60
+    heightSpread   = 60
 }
 
 function SpentCasingPhysics.spawnCasing(player, weapon)

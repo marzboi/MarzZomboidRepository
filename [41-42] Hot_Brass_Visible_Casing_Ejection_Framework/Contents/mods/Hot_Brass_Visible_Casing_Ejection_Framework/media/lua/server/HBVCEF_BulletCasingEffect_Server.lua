@@ -527,8 +527,8 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     local sideOffset    = params.sideOffset or 0.0
     local heightOffset  = params.heightOffset or 0.5
     local shellForce    = params.shellForce or 0.0
-    local sideSpreed    = params.sideSpread or 10
-    local heightSpreed  = params.heightSpreed or 10
+    local sideSpread    = params.sideSpread or 10
+    local heightSpread  = params.heightSpread or 10
     local ammoToEject   = params.casing
     if racking then
         ammoToEject = params.ammo
@@ -556,9 +556,9 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     local stairFrac    = pz - targetSquare:getZ()
     local startZ       = stairFrac + heightOffset
 
-    local velX         = (SpentCasingPhysics.RANDOM:random(sideSpreed) - 5) / 200
-    local velY         = (SpentCasingPhysics.RANDOM:random(sideSpreed) - 5) / 200
-    local velZ         = (SpentCasingPhysics.RANDOM:random(heightSpreed) + 25) / 200
+    local velX         = (SpentCasingPhysics.RANDOM:random(sideSpread) - 5) / 200
+    local velY         = (SpentCasingPhysics.RANDOM:random(sideSpread) - 5) / 200
+    local velZ         = (SpentCasingPhysics.RANDOM:random(heightSpread) + 25) / 200
 
     velX               = velX + rx * shellForce
     velY               = velY + ry * shellForce
