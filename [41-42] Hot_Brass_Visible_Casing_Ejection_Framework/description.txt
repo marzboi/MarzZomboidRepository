@@ -1,28 +1,37 @@
 [h1] Hot Brass - Visible Casing Ejection Framework [/h1]
-For a long time, I wondered how cool Project Zomboid would look if we could actually see spent casings flying out of our weapons. That curiosity eventually turned into a desire to learn how to mod and now here we are.
+I personally love small details, and even on games with graphic styles that are meant to be retro, having those little details make it so cool. For a long time, I wondered how cool Project Zomboid would look if we could actually see spent casings flying out of our weapons. kinda inspired like the classic Resident Evil games. From that curiosity I dive into the PZ modding discord (amazing place btw).
 
-This is both a mod and a framework that other weapon mods can use to add visible casing ejection
+This is both a mod and a framework that other weapon mods can use to add visible casing ejection.
 
 [h2] Changes to Gameplay [/h2]
 
-Racking has been reworked so that when you rack a round, it won t magically appear in your pocket anymore it will realistically fall to the ground. Don t forget to pick them up!
+Racking has been reworked so that when you rack a round, it won’t magically appear in your pocket anymore; it will realistically fall to the ground. Don’t forget to pick them up!
 
 Unloading is now more practical and prevents you from accidentally dropping ammo all over the floor.
 
-Spent casings can be collected, and in a future update they ll be used for ammo crafting.
+Spent casings can be collected, and in a future update they’ll be used for ammo crafting.
 
 [h2] Mod is still a Work in Progress! [/h2]
 
+Some of the things casings will do
+[list]
+[*] React to the world around, fall to different levels, react against walls, land on objects (tables, chairs, counters, etc...), open or close windows or doors
+[*] Bounce around
+[*] Play appropiate casing sounds to the tile they are landing open
+[*] be cool looking :D
+[/list]
+
 [h2]VERSION 41 MULTIPLAYER FIXED[/h2]
-[B]But keep in mind, the mod is best designed for singleplayer. I am not a networking expert but I manage to solve an issue with multiple duplications of the casings in MP, while sacrificing "frames" of the casing flying[/b]
+[b]Mod is better experience in SP due to the way I had to achieve the visual effect.[/b] MP in 41 is supported, but I have not tested the extend to which it will impact performance on large servers.
 
 To Do:
 [list]
-[*]Keep covering popular mods, check the repo addon for them.
+[*]Keep covering popular mods; check the repo addon for them.
 [*]Improve MP performance.
+[*]Ammo crafting. It will come, I promise.
 [/list]
 
-[b] If you find a bug please report it in the thread for it, not the comments [/b]
+[b]If you find a bug, please report it in the thread for it, not the comments.[/b]
 
 [h3] Huge Thanks! [/h3]
 
@@ -31,27 +40,34 @@ Special thanks to Vilespring and Sven for allowing me to use VFE ammo icons.
 
 [h2] For Modders [/h2]
 
-I ve included an easy-to-use function that lets you register your weapons with this system.
-You can safely overwrite the existing table it's designed to handle custom parameters without issues.
+I have redone the structure of the mod, so if you wish to implement it or want to change the functionality of a function, you can patch it by calling the main object and the desired function.
+I have left a commented-out file that gives you an example of how you can easily register your params table with the mod.
+
+I am working on making it so that if a gun is not registered, it will pick some random params based on the model, but only if this uses ammo or casings I have within the mod. Custom ammo will require registering.
 
 [b]Key parameters to know: [/b]
 
 [list]
 [*]Forward, side, and height offsets let you calibrate exactly where the casing appears relative to the player.
-[*]Shell force determines how far the casing is ejected. Negative values will launch it in the opposite direction useful if you want something unusual.
+[*]Shell force determines how far the casing is ejected. Negative values will launch it in the opposite direction, useful if you want something unusual.
 [*]Manual ejection controls whether a weapon requires racking to cycle the ammo.
+[*]verticalForce can apply more force to the shell or send it downwards, for those weapons where the spent casings go straight to the floor (MG42 comes to mind).
+[*]ejectionAngle lets you determine if the casing comes forward, left, right, or back, full control to make it authentic.
 [/list]
 
-[b]Currently the mod also supports B41. but I have not test it extensively. so if you encounter a bug report it.[/b]
+[b]Currently the mod also supports B41, but I have not tested it extensively, so if you encounter a bug, report it.[/b]
 
 Mod Patches in the link below:
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=3612830296
 
-Currently covered Mods
+Currently covered Mods:
 [list]
 [*] Firearms B41 and B42
 [*] VFE 41 and Unofficial 42
 [*] Filibuster Rhymes's Acceptable Guns
 [*] Rain's Firearms & Gun Parts [B42]
+[*] WIP Guns of 93
 [/list]
+
+I will not be covering Brita’s Gun anytime soon. While that mod already has casing ejection, 300+ guns, and tons of custom ammo, it fundamentally changes some of the functions I modify to achieve the racking and reloading effects.

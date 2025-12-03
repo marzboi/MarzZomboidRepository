@@ -23,6 +23,13 @@ I will continue refining what I can, focusing on accuracy to Build 41 rather tha
 If you encounter any bugs, please report them in a proper discussion thread, not in the comments.
 And please, do not contact Vilespring regarding issues with this unofficial port.
 
+[h2]List of Changes[/h2]
+- Couple magazines can be attach along slings due to 42 allowing further attachments.
+- I will add silencers at some point, after work with VFES and VFE93 is done.
+- Addons will be integrated into one subscription.
+- Optional usage of my visual casing mod.
+- B42 bullet cartons are part of the options for packing ammo boxes.
+
 I’m continuing to learn the inner workings of this game to give back to the creators who gave us such great experiences with their work.
 
 [h2]Availability[/h2]

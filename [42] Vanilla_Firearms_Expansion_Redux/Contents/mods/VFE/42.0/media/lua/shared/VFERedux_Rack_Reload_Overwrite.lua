@@ -118,7 +118,7 @@ end
 Events.OnWeaponSwingHitPoint.Remove(ISReloadWeaponAction.onShoot)
 
 local m1BlocParam = {
-    casing = "Base.M60_Link",
+    casing = "Base.m1Bloc", --to be done
     forwardOffset = 0.30,
     sideOffset = 0.10,
     heightOffset = 0.45,
@@ -160,7 +160,7 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
             end
             player:getEmitter():playSound("M1Ping")
             if SpentCasingPhysics then
-                SpentCasingPhysics.doSpawnCasing(player, weapon, m1BlocParam)
+                -- SpentCasingPhysics.doSpawnCasing(player, weapon, m1BlocParam) -- If you are looking at this, why? ;)
             end
         end
     end
