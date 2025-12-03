@@ -156,7 +156,9 @@ function SpentCasingPhysics.registerWeapon(
     shellForce,
     manualEjection,
     sideSpread,
-    heightSpread)
+    heightSpread,
+    ejectAngle,
+    verticalForce)
     SpentCasingPhysics.WeaponEjectionPortParams[weapon] = {
         casing         = casing,
         ammo           = ammo,
@@ -167,5 +169,7 @@ function SpentCasingPhysics.registerWeapon(
         manualEjection = manualEjection or false,
         sideSpread     = sideSpread or 10,
         heightSpread   = heightSpread or 10,
+        ejectAngle     = ejectAngle,
+        verticalForce  = verticalForce,
     }
 end

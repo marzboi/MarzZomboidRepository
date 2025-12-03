@@ -276,6 +276,8 @@ for weapon, data in pairs(vfesParams) do
         data.shellForce,
         data.manualEjection,
         data.sideSpread,
-        data.heightSpread
+        data.heightSpread,
+        data.ejectAngle,
+        data.verticalForce
     )
 end

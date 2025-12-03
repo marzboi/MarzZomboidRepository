@@ -1083,6 +1083,8 @@ for weapon, data in pairs(firearmsRevampedParams) do
         data.shellForce,
         data.manualEjection,
         data.sideSpread,
-        data.heightSpread
+        data.heightSpread,
+        data.ejectAngle,
+        data.verticalForce
     )
 end
