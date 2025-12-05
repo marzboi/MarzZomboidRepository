@@ -1,3 +1,6 @@
+require 'TimedActions/ISReloadWeaponAction'
+require 'TimedActions/ISRackFirearm'
+
 ------- Racking ---------------
 function ISRackFirearm:removeBullet()
     SpentCasingAnimSync.scheduleRack(self.character, self.gun, true)
@@ -17,9 +20,6 @@ function ISRackFirearm:ejectSpentRounds()
     else
         return
     end
-    -- if self.gun:getShellFallSound() then
-    --     self.character:getEmitter():playSound(self.gun:getShellFallSound())
-    -- end
 end
 
 ------- Reloading -------------
@@ -37,9 +37,6 @@ function ISReloadWeaponAction:ejectSpentRounds()
     else
         return
     end
-    -- if self.gun:getShellFallSound() then
-    --     self.character:getEmitter():playSound(self.gun:getShellFallSound())
-    -- end
 end
 
 ------- OnShoot -------------
@@ -76,9 +73,6 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
         if not weapon:isManuallyRemoveSpentRounds() then
             -- TODO: check for extraction jam
             weapon:setSpentRoundChambered(false)
-            -- if weapon:getShellFallSound() then
-            --     player:getEmitter():playSound(weapon:getShellFallSound())
-            -- end
         end
         if weapon:getCurrentAmmoCount() >= weapon:getAmmoPerShoot() then
             if weapon:haveChamber() then

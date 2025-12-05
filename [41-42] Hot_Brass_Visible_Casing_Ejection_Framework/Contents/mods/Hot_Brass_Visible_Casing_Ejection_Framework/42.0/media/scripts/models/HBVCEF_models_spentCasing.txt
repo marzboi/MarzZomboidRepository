@@ -122,14 +122,38 @@ module Base
     }
     model New_545_Round
     {
-        mesh = Worlditems/Ammo/223556Round,
+        mesh = Worlditems/Ammo/545Round,
         texture = WorldItems/Ammo/762Round,
         scale = 0.50,
     }
     model Spent_545_Round
     {
-        mesh = Worlditems/Ammo/223556Round_Spent,
+        mesh = Worlditems/Ammo/545Round_Spent,
         texture = WorldItems/Ammo/762Round,
+        scale = 0.50,
+    }
+    model New_762x54_Round
+    {
+        mesh = Worlditems/Ammo/762x54Round,
+        texture = WorldItems/Ammo/762Round,
+        scale = 0.50,
+    }
+    model Spent_762x54_Round
+    {
+        mesh = Worlditems/Ammo/762x54Round_Spent,
+        texture = WorldItems/Ammo/762Round,
+        scale = 0.50,
+    }
+    model New_3006_Round
+    {
+        mesh = Worlditems/Ammo/3006Round,
+        texture = WorldItems/Ammo/3006Round,
+        scale = 0.50,
+    }
+    model Spent_3006_Round
+    {
+        mesh = Worlditems/Ammo/3006Round_Spent,
+        texture = WorldItems/Ammo/3006Round,
         scale = 0.50,
     }
     model New_Linked308_Round

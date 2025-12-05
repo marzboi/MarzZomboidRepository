@@ -1,6 +1,5 @@
 module Base
 {
-    
     item 762Clip10
     {
         CanStack         = FALSE,
@@ -26,7 +25,6 @@ module Base
         GunType          = SVD,
         WorldStaticModel = Magazine_SVD,
     }
-    
     
     item 545Clip
     {
@@ -157,6 +155,7 @@ module Base
         GunType          = UMP45,
         WorldStaticModel = Magazine_UMP,
     }
+    
     item 9mmClip302
     {
         CanStack         = FALSE,

@@ -11,4 +11,10 @@ module Base
         mesh = weapons/magazines/galil_magazine,
         texture = Weapons/firearm/galil_texture,
     }
+    
+    model ak104_Magazine
+    {
+        mesh = weapons/magazines/ak104_magazine,
+        texture = Weapons/firearm/ak104_texture,
+    }
 }

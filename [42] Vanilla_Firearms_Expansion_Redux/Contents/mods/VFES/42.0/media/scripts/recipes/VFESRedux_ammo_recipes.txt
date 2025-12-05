@@ -1,0 +1,34 @@
+module Base
+{
+    craftRecipe Open Box of 5.45 Ammo
+    {
+        timedAction = OpenAmmoBox,
+        Time        = 15,
+        category    = Ammunition,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 1 [Base.545Box] flags[Prop2],
+        }
+        outputs
+        {
+            item 20 Base.545Bullets,
+        }
+    }
+    
+    craftRecipe Place 5.45 Rounds In Box
+    {
+        timedAction = PlaceAmmoInBox,
+        Time        = 15,
+        category    = Ammunition,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 20 [Base.545Bullets] flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Base.545Box,
+        }
+    }
+}

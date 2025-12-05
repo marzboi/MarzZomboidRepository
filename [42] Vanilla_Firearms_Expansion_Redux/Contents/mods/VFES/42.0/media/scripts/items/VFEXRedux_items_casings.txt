@@ -1,0 +1,15 @@
+module Base
+{
+    item 545Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.02,
+        Type             = Normal,
+        DisplayName      = 5.45 Casing,
+        DisplayCategory  = Casings,
+        Icon             = 545_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_545_Round,
+        WorldStaticModel = Spent_545_Round,
+    }
+}
