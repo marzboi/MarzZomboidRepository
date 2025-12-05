@@ -150,10 +150,16 @@ module Base
         texture = WorldItems/Ammo/3006Round,
         scale = 0.50,
     }
-    model Spent_3006_Round
+    model Spent_57_Round
     {
-        mesh = Worlditems/Ammo/3006Round_Spent,
-        texture = WorldItems/Ammo/3006Round,
+        mesh = Worlditems/Ammo/57Round_Spent,
+        texture = WorldItems/Ammo/57Round,
+        scale = 0.50,
+    }
+    model Spent_57_Round
+    {
+        mesh = Worlditems/Ammo/57Round_Spent,
+        texture = WorldItems/Ammo/57Round,
         scale = 0.50,
     }
     model New_Linked308_Round
