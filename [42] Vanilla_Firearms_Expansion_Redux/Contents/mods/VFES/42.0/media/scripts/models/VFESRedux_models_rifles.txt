@@ -1,6 +1,6 @@
 module Base
 {
-	model HK416
+    model HK416
     {
         mesh = Weapons/firearm/416_model_NoMag,
         texture = Weapons/firearm/416_texture,
@@ -53,7 +53,7 @@ module Base
             rotate = 0.0000 0.0000 0.0000,
         }
     }
-	model GALIL
+    model Galil
     {
         mesh = Weapons/firearm/galil_model_NoMag,
         texture = Weapons/firearm/galil_texture,
@@ -100,27 +100,96 @@ module Base
             rotate = -90.0000 180.0000 -180.0000,
         }
     }
-	model AK104
-	{
-		mesh = Weapons/firearm/ak104_model_NoMag,
-		texture = Weapons/firearm/ak104_texture,
-
-		attachment world
-		{
-			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 180.0000 0.0000,
-		}
-
-		attachment muzzle
-		{
-			offset = 0.0000 0.3752 0.0106,
-			rotate = -90.0000 0.0000 0.0000,
-		}
-
-		attachment scope
-		{
-			offset = 0.0000 0.0330 0.0430,
-			rotate = 0.0000 0.0000 0.0000,
-		}
-	}
+    model AK104
+    {
+        mesh = Weapons/firearm/ak104_model_NoMag,
+        texture = Weapons/firearm/ak104_texture,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3752 0.0106,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0330 0.0430,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model AK74
+    {
+        mesh = Weapons/firearm/ak74_model_NoMag,
+        texture = Weapons/firearm/ak74_wood_texture,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment muzzle
+        {
+            offset = 0.0004 0.4381 0.0108,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0330 0.0488,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model AKS74U
+    {
+        mesh = Weapons/firearm/aks74u_model_NoMag,
+        texture = Weapons/firearm/ak74_wood_texture,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3251 0.0115,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0330 0.0488,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model AK105
+    {
+        mesh = Weapons/firearm/ak105_model_NoMag,
+        texture = Weapons/firearm/ak105_texture,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.3633 0.0098,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0330 0.0488,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
 }

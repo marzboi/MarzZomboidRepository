@@ -1,5 +1,5 @@
 local vfesParams = {
-    --VFE STALKER pack
+
     ["Base.HK416"] = {
         casing         = "Base.556Bullets_Casing",
         ammo           = "Base.556Bullets",
@@ -75,12 +75,13 @@ local vfesParams = {
     ["Base.Saiga12"] = {
         casing         = "Base.ShotgunShells_Casing",
         ammo           = "Base.ShotgunShells",
-        forwardOffset  = 0.15,
+        forwardOffset  = 0.35,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 0.30,
+        shellForce     = 0.70,
         sideSpread     = 10,
         heightSpread   = 10,
+        ejectAngle     = 45,
         manualEjection = false
     },
 
@@ -736,7 +737,9 @@ if SpentCasingPhysics then
             data.shellForce,
             data.manualEjection,
             data.sideSpread,
-            data.heightSpread
+            data.heightSpread,
+            data.ejectAngle,
+            data.verticalForce
         )
     end
 end
