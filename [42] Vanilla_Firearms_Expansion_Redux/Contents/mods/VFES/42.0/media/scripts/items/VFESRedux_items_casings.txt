@@ -12,4 +12,17 @@ module Base
         StaticModel      = Spent_545_Round,
         WorldStaticModel = Spent_545_Round,
     }
+    
+// item 9x39Bullets_Casing
+// {
+//     CanStack         = true,
+//     Weight           = 0.02,
+//     Type             = Normal,
+//     DisplayName      = 9x39 Casing,
+//     DisplayCategory  = Casings,
+//     Icon             = 762_Casing,
+//     MetalValue       = 1,
+//     StaticModel      = Spent_9x39_Round,
+//     WorldStaticModel = Spent_9x39_Round,
+// }
 }

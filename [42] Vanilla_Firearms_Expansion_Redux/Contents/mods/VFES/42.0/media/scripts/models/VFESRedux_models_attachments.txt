@@ -65,4 +65,14 @@ module Base
         mesh = weapons/magazines/pkm_magazine,
         texture = Weapons/firearm/pkm_texture,
     }
+    model svd_Magazine
+    {
+        mesh = weapons/magazines/svd_magazine,
+        texture = Weapons/firearm/svd_texture,
+    }
+    model vss_Magazine
+    {
+        mesh = weapons/magazines/vss_magazine,
+        texture = Weapons/firearm/vss_texture,
+    }
 }
