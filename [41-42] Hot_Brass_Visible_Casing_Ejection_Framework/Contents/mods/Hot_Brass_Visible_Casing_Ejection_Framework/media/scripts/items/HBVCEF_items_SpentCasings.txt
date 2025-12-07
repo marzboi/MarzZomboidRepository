@@ -91,7 +91,7 @@ module Base
         Type             = Normal,
         DisplayName      = Empty Shotgun Shell,
         DisplayCategory  = Casings,
-        Icon             = ShotgunShells_Casing,
+        Icon             = Shotgun_Casing,
         MetalValue       = 1,
         StaticModel      = Spent_Shotgun_Round,
         WorldStaticModel = Spent_Shotgun_Round,
