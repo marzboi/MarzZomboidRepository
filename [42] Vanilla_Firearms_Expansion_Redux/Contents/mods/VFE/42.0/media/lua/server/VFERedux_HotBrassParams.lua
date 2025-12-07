@@ -470,12 +470,13 @@ local vfeParams = {
     ["Base.SniperRifle"] = {
         casing         = "Base.308Bullets_Casing",
         ammo           = "Base.308Bullets",
-        forwardOffset  = 0.15,
+        forwardOffset  = 0.25,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 0.45,
+        shellForce     = 0.65,
         sideSpread     = 30,
-        heightSpread   = 30,
+        ejectAngle     = 45,
+        heightSpread   = { 70, 100 },
         manualEjection = true
     },
 

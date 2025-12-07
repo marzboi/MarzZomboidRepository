@@ -31,4 +31,133 @@ module Base
             item 1 Base.545Box,
         }
     }
+    
+    craftRecipe Open Carton of 5.45 Ammo
+    {
+        timedAction = UnPackBox,
+        time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.545Carton] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 12 Base.545Box,
+        }
+    }
+    
+    craftRecipe Pack Carton of 5.45 Ammo
+    {
+        timedAction = PackingBox,
+        time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 12 [Base.545Box] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.545Carton,
+        }
+    }
+    
+    craftRecipe Open Pack of 5.45 Boxes
+    {
+        timedAction = UnPackBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.545Pack] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 4 Base.545Box,
+        }
+    }
+    
+    craftRecipe Pack 5.45 Boxes
+    {
+        timedAction = PackingBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 4 [Base.545Box] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.545Pack,
+        }
+    }
+    
+    craftRecipe Open Case of 5.45 Boxes
+    {
+        timedAction = UnPackBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.545Case] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 4 Base.545Pack,
+        }
+    }
+    
+    craftRecipe Case 5.45 Packs
+    {
+        timedAction = PackingBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 4 [Base.545Pack] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.545Case,
+        }
+    }
+    
+    craftRecipe Open Crate of 5.45 Boxes
+    {
+        timedAction = UnPackBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        inputs
+        {
+            item 1 [Base.545Crate] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 4 Base.545Case,
+        }
+    }
+    
+    craftRecipe Crate 5.45 Cases
+    {
+        timedAction = PackingBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        inputs
+        {
+            item 4 [Base.545Case] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.545Crate,
+        }
+    }
+    
 }

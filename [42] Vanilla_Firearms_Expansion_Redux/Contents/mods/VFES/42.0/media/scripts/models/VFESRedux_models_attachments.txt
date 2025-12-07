@@ -30,4 +30,39 @@ module Base
         mesh = weapons/magazines/saiga12_magazine,
         texture = Weapons/firearm/saiga12_texture,
     }
+    model svt40_Magazine
+    {
+        mesh = weapons/magazines/svt40_magazine,
+        texture = Weapons/firearm/svt40_texture,
+    }
+    model ump_Magazine
+    {
+        mesh = weapons/magazines/ump_magazine,
+        texture = Weapons/firearm/ump_texture,
+    }
+    model vityaz_Magazine
+    {
+        mesh = weapons/magazines/vityaz_magazine,
+        texture = Weapons/firearm/vityaz_texture,
+    }
+    model bizon_Magazine
+    {
+        mesh = weapons/magazines/bizon_magazine,
+        texture = Weapons/firearm/vityaz_texture,
+    }
+    model ppsh_Magazine
+    {
+        mesh = weapons/magazines/ppsh_magazine,
+        texture = Weapons/firearm/ppsh_texture,
+    }
+    model M249_Magazine
+    {
+        mesh = weapons/magazines/m249_magazine,
+        texture = Weapons/firearm/m249_texture,
+    }
+    model PKM_Magazine
+    {
+        mesh = weapons/magazines/pkm_magazine,
+        texture = Weapons/firearm/pkm_texture,
+    }
 }

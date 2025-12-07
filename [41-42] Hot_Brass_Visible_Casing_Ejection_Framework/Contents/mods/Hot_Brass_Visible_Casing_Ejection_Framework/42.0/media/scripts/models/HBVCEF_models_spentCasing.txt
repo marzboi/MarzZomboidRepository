@@ -4,49 +4,61 @@ module Base
     {
         mesh = Worlditems/Ammo/9mmRound,
         texture = WorldItems/Ammo/38-9Round,
-        scale = 0.50,
+        scale = 0.35,
     }
     model Spent_9mm_Round
     {
         mesh = Worlditems/Ammo/9mmRound_Spent,
         texture = WorldItems/Ammo/38-9Round,
-        scale = 0.50,
+        scale = 0.35,
     }
     model New_45_Round
     {
         mesh = Worlditems/Ammo/45Round,
         texture = WorldItems/Ammo/38-9Round,
-        scale = 0.50,
+        scale = 0.35,
     }
     model Spent_45_Round
     {
         mesh = Worlditems/Ammo/45Round_Spent,
         texture = WorldItems/Ammo/38-9Round,
-        scale = 0.50,
+        scale = 0.35,
     }
     model New_44_Round
     {
         mesh = Worlditems/Ammo/44Round,
         texture = WorldItems/Ammo/44Round,
-        scale = 0.50,
+        scale = 0.35,
     }
     model Spent_44_Round
     {
         mesh = Worlditems/Ammo/44Round_Spent,
         texture = WorldItems/Ammo/44Round,
-        scale = 0.50,
+        scale = 0.35,
     }
     model New_38_Round
     {
         mesh = Worlditems/Ammo/38Round,
         texture = WorldItems/Ammo/38-9Round,
-        scale = 0.50,
+        scale = 0.35,
     }
     model Spent_38_Round
     {
         mesh = Worlditems/Ammo/38Round_Spent,
         texture = WorldItems/Ammo/38-9Round,
-        scale = 0.50,
+        scale = 0.35,
+    }
+    model New_22_Round
+    {
+        mesh = Worlditems/Ammo/22Round,
+        texture = WorldItems/Ammo/22Round,
+        scale = 0.35,
+    }
+    model Spent_22_Round
+    {
+        mesh = Worlditems/Ammo/22Round_Spent,
+        texture = WorldItems/Ammo/22Round,
+        scale = 0.35,
     }
     model New_223_Round
     {
@@ -94,18 +106,6 @@ module Base
     {
         mesh = Worlditems/Ammo/12GRound_Spent,
         texture = WorldItems/Ammo/12GRound,
-        scale = 0.50,
-    }
-    model New_22_Round
-    {
-        mesh = Worlditems/Ammo/22Round,
-        texture = WorldItems/Ammo/22Round,
-        scale = 0.50,
-    }
-    model Spent_22_Round
-    {
-        mesh = Worlditems/Ammo/22Round_Spent,
-        texture = WorldItems/Ammo/22Round,
         scale = 0.50,
     }
     model New_762_Round

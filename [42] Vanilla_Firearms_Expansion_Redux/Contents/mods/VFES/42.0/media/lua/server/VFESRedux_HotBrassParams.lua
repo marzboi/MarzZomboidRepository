@@ -112,12 +112,13 @@ local vfesParams = {
     ["Base.Mosin"] = {
         casing         = "Base.762Bullets_Casing",
         ammo           = "Base.762Bullets",
-        forwardOffset  = 0.15,
+        forwardOffset  = 0.25,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 0.30,
+        shellForce     = 0.65,
         sideSpread     = 30,
-        heightSpread   = 30,
+        ejectAngle     = 45,
+        heightSpread   = { 70, 100 },
         manualEjection = true
     },
 
@@ -160,12 +161,13 @@ local vfesParams = {
     ["Base.SVT40"] = {
         casing         = "Base.762Bullets_Casing",
         ammo           = "Base.762Bullets",
-        forwardOffset  = 0.30,
+        forwardOffset  = 0.35,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.60,
         sideSpread     = 30,
-        heightSpread   = 60,
+        heightSpread   = { 90, 110 },
+        ejectAngle     = 10,
         manualEjection = false
     },
 
@@ -208,12 +210,13 @@ local vfesParams = {
     ["Base.PPSH"] = {
         casing         = "Base.Bullets9mm_Casing",
         ammo           = "Base.Bullets9mm",
-        forwardOffset  = 0.40,
-        sideOffset     = 0.0,
-        heightOffset   = 0.50,
-        shellForce     = 0.60,
+        forwardOffset  = 0.35,
+        sideOffset     = 0.10,
+        heightOffset   = 0.45,
+        shellForce     = 0.10,
         sideSpread     = 60,
-        heightSpread   = 60,
+        heightSpread   = { 60, 80 },
+        ejectAngle     = 0,
         manualEjection = false
     },
 
@@ -259,9 +262,11 @@ local vfesParams = {
         forwardOffset  = 0.30,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.10,
         sideSpread     = 60,
-        heightSpread   = 30,
+        heightSpread   = { 0, 1 },
+        ejectAngle     = 340,
+        verticalForce  = -0.2,
         manualEjection = false
     },
 

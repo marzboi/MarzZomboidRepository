@@ -45,5 +45,29 @@ module Base
         mesh = Weapons/ammo/Magazine_Bizon,
         texture = Weapons/firearm/vityaz_texture,
     }
+    model 545Box
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoBox,
+        texture = WorldItems/545AmmoBox,
+        scale = 0.7,
+        
+    }
+    model 545Pack
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoPack,
+        texture = WorldItems/545AmmoBox,
+        scale = 0.7,
+    }
+    model 545Case
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCase,
+        texture = worldItems/CaseRifle545,
+        scale = 0.9,
+    }
+    model 545Crate
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCrate,
+        texture = worldItems/CrateRifle545,
+    }
 }
 

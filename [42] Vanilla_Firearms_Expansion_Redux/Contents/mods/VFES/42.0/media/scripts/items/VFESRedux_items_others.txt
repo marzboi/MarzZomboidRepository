@@ -40,18 +40,6 @@ module Base
         WorldStaticModel = Magazine_AK74,
     }
     
-    item 545Box
-    {
-        Weight            = 0.8,
-        AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
-        DisplayName       = Box of 5.45 Rounds,
-        DisplayCategory   = Ammo,
-        Icon              = 545AmmoBox,
-        MetalValue        = 40,
-        WorldStaticModel  = 762Box,
-    }
-    
     item 545Bullets
     {
         Count             = 5,
@@ -63,6 +51,69 @@ module Base
         Icon              = 545Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 762Bullets,
+    }
+    
+    item 545Box
+    {
+        Weight            = 0.8,
+        AlwaysWelcomeGift = TRUE,
+        Type              = Normal,
+        DisplayName       = Box of 5.45 Rounds,
+        DisplayCategory   = Ammo,
+        Icon              = 545AmmoBox,
+        MetalValue        = 40,
+        WorldStaticModel  = 545Box,
+    }
+    
+    item 545Crate
+    {
+        Weight            = 40.0,
+        AlwaysWelcomeGift = TRUE,
+        Type              = Normal,
+        DisplayName       = Crate of 5.45 Boxes,
+        DisplayCategory   = Ammo,
+        Icon              = 545AmmoCrate,
+        MetalValue        = 2560,
+        WorldStaticModel  = 545Crate,
+    }
+    
+    item 545Case
+    {
+        Weight            = 11.4,
+        AlwaysWelcomeGift = TRUE,
+        Type              = Normal,
+        DisplayName       = Case of 5.45 Boxes,
+        DisplayCategory   = Ammo,
+        Icon              = 545AmmoCase,
+        MetalValue        = 640,
+        WorldStaticModel  = 545Case,
+    }
+    
+    item 545Pack
+    {
+        Weight            = 3.0,
+        AlwaysWelcomeGift = TRUE,
+        Type              = Normal,
+        DisplayName       = Pack of 5.45 Boxes,
+        DisplayCategory   = Ammo,
+        Icon              = 545AmmoPack,
+        MetalValue        = 160,
+        WorldStaticModel  = 545Pack,
+    }
+    
+    item 545Carton
+    {
+        DisplayCategory    = Ammo,
+        Type               = Normal,
+        Weight             = 6.0,
+        Icon               = Parcel_Medium_Military,
+        AlwaysWelcomeGift  = true,
+        MetalValue         = 400.0,
+        DisplayName        = Carton of 5.45 Ammo Boxes,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        PlaceOneSound      = BoxOfRoundsPlaceOne,
+        WorldStaticModel   = Parcel_Military_Medium,
+        Tags               = HasMetal;IgnoreZombieDensity,
     }
     
     item 556box100

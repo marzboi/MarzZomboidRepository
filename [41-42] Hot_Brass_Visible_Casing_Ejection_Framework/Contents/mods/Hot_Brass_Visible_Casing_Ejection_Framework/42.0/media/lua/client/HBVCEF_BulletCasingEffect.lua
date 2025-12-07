@@ -291,7 +291,7 @@ function SpentCasingPhysics.update()
             local willBounce = false
             local bounceAxis = nil
 
-            local EDGE_TOL = 0.15
+            local EDGE_TOL = 0.05
 
             if casing.square then
                 local sx = casing.square:getX()
