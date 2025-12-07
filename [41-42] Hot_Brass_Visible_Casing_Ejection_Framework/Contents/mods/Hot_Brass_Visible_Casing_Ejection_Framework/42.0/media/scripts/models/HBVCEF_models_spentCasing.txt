@@ -132,25 +132,25 @@ module Base
         texture = WorldItems/Ammo/762Round,
         scale = 0.50,
     }
-    model New_762x54_Round
+    model New_76254_Round
     {
         mesh = Worlditems/Ammo/762x54Round,
         texture = WorldItems/Ammo/762Round,
         scale = 0.50,
     }
-    model Spent_762x54_Round
+    model Spent_76254_Round
     {
         mesh = Worlditems/Ammo/762x54Round_Spent,
         texture = WorldItems/Ammo/762Round,
         scale = 0.50,
     }
-    model New_9x39_Round
+    model New_939_Round
     {
         mesh = Worlditems/Ammo/9x39Round,
         texture = WorldItems/Ammo/762Round,
         scale = 0.50,
     }
-    model Spent_9x39_Round
+    model Spent_939_Round
     {
         mesh = Worlditems/Ammo/9x39Round_Spent,
         texture = WorldItems/Ammo/762Round,

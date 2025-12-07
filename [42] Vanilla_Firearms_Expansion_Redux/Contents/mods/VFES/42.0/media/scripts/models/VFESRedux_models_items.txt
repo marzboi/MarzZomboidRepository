@@ -69,5 +69,29 @@ module Base
         mesh = weapons/ammo/762-556-308-223AmmoCrate,
         texture = worldItems/CrateRifle545,
     }
+    model 939Box
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoBox,
+        texture = WorldItems/939AmmoBox,
+        scale = 0.7,
+        
+    }
+    model 939Pack
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoPack,
+        texture = WorldItems/939AmmoBox,
+        scale = 0.7,
+    }
+    model 939Case
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCase,
+        texture = worldItems/CaseRifle939,
+        scale = 0.9,
+    }
+    model 939Crate
+    {
+        mesh = weapons/ammo/762-556-308-223AmmoCrate,
+        texture = worldItems/CrateRifle939,
+    }
 }
 

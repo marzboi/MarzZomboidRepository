@@ -7,3 +7,6 @@ end
 -- Hot Brass Bullets --
 Adjust("Base.545Bullets", "icon", "545_Round")
 Adjust("Base.545Bullets", "WorldStaticModel", "New_545_Round")
+
+Adjust("Base.939Bullets", "icon", "939_Round")
+Adjust("Base.939Bullets", "WorldStaticModel", "New_939_Round")

@@ -147,8 +147,8 @@ local vfesParams = {
     },
 
     ["Base.VSS"] = {
-        casing         = "Base.Bullets9mm_Casing",
-        ammo           = "Base.Bullets9mm",
+        casing         = "Base.939Bullets_Casing",
+        ammo           = "Base.939Bullets",
         forwardOffset  = 0.30,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
