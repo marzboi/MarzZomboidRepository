@@ -307,7 +307,7 @@ module Base
         WorldStaticModel  = 939Pack,
     }
     
-    item 9x39Carton
+    item 939Carton
     {
         DisplayCategory    = Ammo,
         Type               = Normal,
