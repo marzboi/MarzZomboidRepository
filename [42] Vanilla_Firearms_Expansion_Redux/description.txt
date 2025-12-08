@@ -1,5 +1,8 @@
 [h1]Unofficial Port of VFE and Addons[/h1]
 
+[h2]VFE Stalker Edition Out now![/h2]
+Ported version of Stalker included in the back.
+
 With approval from Vilespring, and after months of work, I have ported VFE, one of the greatest addons in the community, to Build 42 (Unofficially).
 
 This version serves as a temporary port while Vilespring works on officially updating VFE for Build 42, taking full advantage of all the new systems with skills far beyond mine.
