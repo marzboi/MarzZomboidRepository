@@ -37,3 +37,8 @@ I’m continuing to learn the inner workings of this game to give back to the cr
 This mod will remain available until the official VFE update is released. Once that happens, it will be set to Unlisted.
 
 [b]Enjoy![/b]
+
+Workshop ID: 3611718925
+Mod ID: VFExpansionRedux
+Mod ID: VFExpansion3Redux
+Mod ID: VFExpansion2Redux

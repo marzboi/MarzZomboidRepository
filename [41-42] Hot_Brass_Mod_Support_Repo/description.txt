@@ -21,3 +21,15 @@ More patches will be added over time.
 [h2]More Coming Soon[/h2]
 Additional mod integrations are planned.
 If you have a request, feel free to leave a comment!
+
+Workshop ID: 3612830296
+Mod ID: HBVCEFAmmoMaker
+Mod ID: HBVCEFFilibusterGuns
+Mod ID: HBVCEFFirearms42Beta
+Mod ID: HBVCEFFirearmsRevamped41
+Mod ID: HBVCEFFirearms41
+Mod ID: HBVCEFFirearms42
+Mod ID: HBVCEFRainFirearmsExpanded
+Mod ID: HBVCEFRainFirearms
+Mod ID: HBVCEFVFE
+Mod ID: HBVCEFVFES

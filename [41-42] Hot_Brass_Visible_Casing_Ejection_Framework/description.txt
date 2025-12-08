@@ -71,3 +71,7 @@ Currently covered Mods:
 [/list]
 
 I will not be covering Brita’s Gun anytime soon. While that mod already has casing ejection, 300+ guns, and tons of custom ammo, it fundamentally changes some of the functions I modify to achieve the racking and reloading effects.
+
+
+Workshop ID: 3610677934
+Mod ID: HBVCEF
