@@ -8,7 +8,7 @@ module Base
         DisplayName      = Dragunov Magazine,
         Icon             = SVDClip,
         MaxAmmo          = 10,
-        AmmoType         = 762Bullets,
+        AmmoType         = 76254Bullets,
         GunType          = SVD,
         WorldStaticModel = Magazine_SVD,
     }
@@ -61,7 +61,7 @@ module Base
         DisplayName      = PKM Box,
         Icon             = pkmbox,
         MaxAmmo          = 100,
-        AmmoType         = 762Bullets,
+        AmmoType         = 76254Bullets,
         GunType          = PKM,
         WorldStaticModel = Magazine_PKM,
     }
@@ -87,7 +87,7 @@ module Base
         DisplayName      = SV98 Magazine,
         Icon             = SVTClip,
         MaxAmmo          = 10,
-        AmmoType         = 762Bullets,
+        AmmoType         = 76254Bullets,
         GunType          = sv98,
         WorldStaticModel = Magazine_SV98,
     }
@@ -100,7 +100,7 @@ module Base
         DisplayName      = SVT-40 Magazine,
         Icon             = SVTClip,
         MaxAmmo          = 10,
-        AmmoType         = 762Bullets,
+        AmmoType         = 76254Bullets,
         GunType          = SVT40,
         WorldStaticModel = Magazine_SVD,
     }
@@ -316,6 +316,82 @@ module Base
         AlwaysWelcomeGift  = true,
         MetalValue         = 400.0,
         DisplayName        = Carton of 9x39 Ammo Boxes,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        PlaceOneSound      = BoxOfRoundsPlaceOne,
+        WorldStaticModel   = Parcel_Military_Medium,
+        Tags               = HasMetal;IgnoreZombieDensity,
+    }
+    
+    item 76254Bullets
+    {
+        Count             = 5,
+        Weight            = 0.025,
+        AlwaysWelcomeGift = TRUE,
+        Type              = Normal,
+        DisplayName       = 7.62x54 Rounds,
+        DisplayCategory   = Ammo,
+        Icon              = 76254Bullets,
+        MetalValue        = 1,
+        WorldStaticModel  = 762Bullets,
+    }
+    
+    item 76254Box
+    {
+        Weight            = 0.8,
+        AlwaysWelcomeGift = TRUE,
+        Type              = Normal,
+        DisplayName       = Box of 7.62x54 Rounds,
+        DisplayCategory   = Ammo,
+        Icon              = 76254AmmoBox,
+        MetalValue        = 40,
+        WorldStaticModel  = 76254Box,
+    }
+    
+    item 76254Crate
+    {
+        Weight            = 40.0,
+        AlwaysWelcomeGift = TRUE,
+        Type              = Normal,
+        DisplayName       = Crate of 7.62x54 Boxes,
+        DisplayCategory   = Ammo,
+        Icon              = 76254AmmoCrate,
+        MetalValue        = 2560,
+        WorldStaticModel  = 76254Crate,
+    }
+    
+    item 76254Case
+    {
+        Weight            = 11.4,
+        AlwaysWelcomeGift = TRUE,
+        Type              = Normal,
+        DisplayName       = Case of 7.62x54 Boxes,
+        DisplayCategory   = Ammo,
+        Icon              = 76254AmmoCase,
+        MetalValue        = 640,
+        WorldStaticModel  = 76254Case,
+    }
+    
+    item 76254Pack
+    {
+        Weight            = 3.0,
+        AlwaysWelcomeGift = TRUE,
+        Type              = Normal,
+        DisplayName       = Pack of 7.62x54 Boxes,
+        DisplayCategory   = Ammo,
+        Icon              = 76254AmmoPack,
+        MetalValue        = 160,
+        WorldStaticModel  = 76254Pack,
+    }
+    
+    item 76254Carton
+    {
+        DisplayCategory    = Ammo,
+        Type               = Normal,
+        Weight             = 6.0,
+        Icon               = Parcel_Medium_Military,
+        AlwaysWelcomeGift  = true,
+        MetalValue         = 400.0,
+        DisplayName        = Carton of 7.62x54 Ammo Boxes,
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Military_Medium,

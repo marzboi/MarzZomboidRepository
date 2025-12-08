@@ -10,3 +10,6 @@ Adjust("Base.545Bullets", "WorldStaticModel", "New_545_Round")
 
 Adjust("Base.939Bullets", "icon", "939_Round")
 Adjust("Base.939Bullets", "WorldStaticModel", "New_939_Round")
+
+Adjust("Base.76254Bullets", "icon", "76254_Round")
+Adjust("Base.76254Bullets", "WorldStaticModel", "New_76254_Round")

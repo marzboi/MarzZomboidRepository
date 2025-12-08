@@ -160,7 +160,7 @@ module Base
         }
     }
     
-    craftRecipe Open Box of 9 x 39 Ammo
+    craftRecipe Open Box of 9x39 Ammo
     {
         timedAction = OpenAmmoBox,
         Time        = 15,
@@ -176,7 +176,7 @@ module Base
         }
     }
     
-    craftRecipe Place 9 x 39 Rounds In Box
+    craftRecipe Place 9x39 Rounds In Box
     {
         timedAction = PlaceAmmoInBox,
         Time        = 15,
@@ -192,7 +192,7 @@ module Base
         }
     }
     
-    craftRecipe Open Carton of 9 x 39 Ammo
+    craftRecipe Open Carton of 9x39 Ammo
     {
         timedAction = UnPackBox,
         time        = 50,
@@ -208,7 +208,7 @@ module Base
         }
     }
     
-    craftRecipe Pack Carton of 9 x 39 Ammo
+    craftRecipe Pack Carton of 9x39 Ammo
     {
         timedAction = PackingBox,
         time        = 50,
@@ -224,7 +224,7 @@ module Base
         }
     }
     
-    craftRecipe Open Pack of 9 x 39 Boxes
+    craftRecipe Open Pack of 9x39 Boxes
     {
         timedAction = UnPackBox,
         Time        = 50,
@@ -240,7 +240,7 @@ module Base
         }
     }
     
-    craftRecipe Pack 9 x 39 Boxes
+    craftRecipe Pack 9x39 Boxes
     {
         timedAction = PackingBox,
         Time        = 50,
@@ -256,7 +256,7 @@ module Base
         }
     }
     
-    craftRecipe Open Case of 9 x 39 Boxes
+    craftRecipe Open Case of 9x39 Boxes
     {
         timedAction = UnPackBox,
         Time        = 50,
@@ -272,7 +272,7 @@ module Base
         }
     }
     
-    craftRecipe Case 9 x 39 Packs
+    craftRecipe Case 9x39 Packs
     {
         timedAction = PackingBox,
         Time        = 50,
@@ -288,7 +288,7 @@ module Base
         }
     }
     
-    craftRecipe Open Crate of 9 x 39 Boxes
+    craftRecipe Open Crate of 9x39 Boxes
     {
         timedAction = UnPackBox,
         Time        = 50,
@@ -304,7 +304,7 @@ module Base
         }
     }
     
-    craftRecipe Crate 9 x 39 Cases
+    craftRecipe Crate 9x39 Cases
     {
         timedAction = PackingBox,
         Time        = 50,
@@ -317,6 +317,166 @@ module Base
         outputs
         {
             item 1 Base.939Crate,
+        }
+    }
+    
+    craftRecipe Open Box of 7.62x54 Ammo
+    {
+        timedAction = OpenAmmoBox,
+        Time        = 15,
+        category    = Ammunition,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 1 [Base.76254Box] flags[Prop2],
+        }
+        outputs
+        {
+            item 20 Base.76254Bullets,
+        }
+    }
+    
+    craftRecipe Place 7.62x54 Rounds In Box
+    {
+        timedAction = PlaceAmmoInBox,
+        Time        = 15,
+        category    = Ammunition,
+        Tags        = InHandCraft,
+        inputs
+        {
+            item 20 [Base.76254Bullets] flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Base.76254Box,
+        }
+    }
+    
+    craftRecipe Open Carton of 7.62x54 Ammo
+    {
+        timedAction = UnPackBox,
+        time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.76254Carton] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 12 Base.76254Box,
+        }
+    }
+    
+    craftRecipe Pack Carton of 7.62x54 Ammo
+    {
+        timedAction = PackingBox,
+        time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 12 [Base.76254Box] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.76254Carton,
+        }
+    }
+    
+    craftRecipe Open Pack of 7.62x54 Boxes
+    {
+        timedAction = UnPackBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.76254Pack] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 4 Base.76254Box,
+        }
+    }
+    
+    craftRecipe Pack 7.62x54 Boxes
+    {
+        timedAction = PackingBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 4 [Base.76254Box] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.76254Pack,
+        }
+    }
+    
+    craftRecipe Open Case of 7.62x54 Boxes
+    {
+        timedAction = UnPackBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.76254Case] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 4 Base.76254Pack,
+        }
+    }
+    
+    craftRecipe Case 7.62x54 Packs
+    {
+        timedAction = PackingBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 4 [Base.76254Pack] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.76254Case,
+        }
+    }
+    
+    craftRecipe Open Crate of 7.62x54 Boxes
+    {
+        timedAction = UnPackBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        inputs
+        {
+            item 1 [Base.76254Crate] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 4 Base.76254Case,
+        }
+    }
+    
+    craftRecipe Crate 7.62x54 Cases
+    {
+        timedAction = PackingBox,
+        Time        = 50,
+        category    = Packing,
+        Tags        = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        inputs
+        {
+            item 4 [Base.76254Case] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.76254Crate,
         }
     }
 }

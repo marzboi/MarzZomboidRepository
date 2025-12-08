@@ -11,6 +11,12 @@ table.insert(ProceduralDistributions.list.GunStoreCounter.items, 2);
 table.insert(ProceduralDistributions.list.GunStoreCounter.items, "Base.545Box");
 table.insert(ProceduralDistributions.list.GunStoreCounter.items, 5);
 
+table.insert(ProceduralDistributions.list.GunStoreCounter.items, "Base.76254Box");
+table.insert(ProceduralDistributions.list.GunStoreCounter.items, 10);
+
+table.insert(ProceduralDistributions.list.GunStoreCounter.items, "Base.939Box");
+table.insert(ProceduralDistributions.list.GunStoreCounter.items, 5);
+
 table.insert(ProceduralDistributions.list.GunStoreCounter.items, "Base.762Clip102");
 table.insert(ProceduralDistributions.list.GunStoreCounter.items, 2.5);
 
@@ -82,11 +88,14 @@ table.insert(ProceduralDistributions.list.GunStoreShelf.items, 2.5);
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.545Box");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 10);
 
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.76254Box");
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 10);
+
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.939Box");
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 10);
+
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.BizonClip");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 1);
-
-
-
 
 
 table.insert(ProceduralDistributions.list.PoliceStorageGuns.items, "Base.USP45");
