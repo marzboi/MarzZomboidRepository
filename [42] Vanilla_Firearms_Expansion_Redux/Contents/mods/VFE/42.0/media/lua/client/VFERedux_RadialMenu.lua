@@ -382,6 +382,75 @@ end
 
 -----
 
+local CVFESuppressor = BaseCommand:derive("CVFESuppressor")
+
+function CVFESuppressor:new(frm)
+	local o = BaseCommand.new(self, frm)
+	return o
+end
+
+function CVFESuppressor:fillMenu(menu, weapon, index)
+	local suppressor = nil
+	local suppressorFound = false
+	local itemName = weapon:getFullType()
+	local sd = string.find(itemName, "sd") or string.find(itemName, "SD")
+	self.index = index
+
+	if index % 3 == 1 then
+		if VFESuppressorSet[index + 2] ~= "NULL" then
+			local playerItems = self.character:getInventory():getItems()
+			for i = 1, playerItems:size() do
+				suppressor = playerItems:get(i - 1)
+				if suppressor:getFullType() == VFESuppressorSet[index + 2] and not suppressor:isBroken() then
+					suppressorFound = true
+					break
+				end
+			end
+			if not suppressorFound then return end
+		end
+	end
+
+	if weapon:getSubCategory() == "Firearm" and not sd then
+		local text = getText("IGUI_FirearmRadial_UseSuppressor")
+		menu:addSlice(text, getTexture("media/ui/RadialMenu_useSuppressor.png"), self.invoke, self)
+	else
+		local text = getText("IGUI_FirearmRadial_RemoveSuppressor")
+		menu:addSlice(text, getTexture("media/ui/RadialMenu_removeSuppressor.png"), self.invoke, self)
+	end
+end
+
+function CVFESuppressor:invoke()
+	local weapon = self.character:getPrimaryHandItem()
+	if not weapon then return end
+	local suppressor = nil
+	local suppressorFound = false
+	if self.index % 3 == 1 then
+		if VFESuppressorSet[self.index + 2] ~= "NULL" then
+			suppressorScript = getScriptManager():getItem(VFESuppressorSet[self.index + 2])
+			local playerItems = self.character:getInventory():getItems()
+			for i = 1, playerItems:size() do
+				suppressor = playerItems:get(i - 1)
+				if suppressor:getFullType() == VFESuppressorSet[self.index + 2] and not suppressor:isBroken() then
+					suppressorFound = true
+					break
+				end
+			end
+		else
+			suppressorFound = true
+		end
+	else
+		if VFESuppressorSet[self.index + 1] ~= "NULL" then
+			suppressorScript = getScriptManager():getItem(VFESuppressorSet[self.index + 1])
+		end
+		suppressorFound = true
+	end
+
+	ISTimedActionQueue.add(VFESuppressorContextAction:new(weapon, self.index, self.character, suppressor,
+		CharacterActionAnims.Craft, 15));
+end
+
+-----
+
 local ISFirearmRadialMenu_fillMenu_old = ISFirearmRadialMenu.fillMenu
 function ISFirearmRadialMenu:fillMenu(submenu)
 	local weapon = self.character:getPrimaryHandItem()
@@ -465,6 +534,42 @@ function ISFirearmRadialMenu:fillMenu(submenu)
 			return
 		end
 	end
+
+	for index, preset in ipairs(VFESuppressorSet) do
+		if preset == weapon:getFullType() then
+			local weapInd = index
+			local menu = getPlayerRadialMenu(self.playerNum)
+			menu:clear()
+			local commands = {}
+
+			-- Standard firearm reload logic
+			if weapon:getMagazineType() then
+				if weapon:isContainsClip() then
+					table.insert(commands, CEjectMagazine:new(self))
+				else
+					table.insert(commands, CInsertMagazine:new(self))
+				end
+				table.insert(commands, CLoadBulletsInMagazine:new(self))
+			else
+				table.insert(commands, CLoadRounds:new(self))
+				table.insert(commands, CUnloadRounds:new(self))
+			end
+			table.insert(commands, CRack:new(self))
+
+			-- Suppressor toggle (attach/remove)
+			table.insert(commands, CVFESuppressor:new(self))
+
+			for _, command in ipairs(commands) do
+				local count = #menu.slices
+				command:fillMenu(menu, weapon, weapInd)
+				if count == #menu.slices then
+					menu:addSlice(nil, nil, nil)
+				end
+			end
+			return
+		end
+	end
+
 	local altOperationList = VFEAltOperationSetCheck(weapon)
 	if #altOperationList > 0 then
 		local menu = getPlayerRadialMenu(self.playerNum)
