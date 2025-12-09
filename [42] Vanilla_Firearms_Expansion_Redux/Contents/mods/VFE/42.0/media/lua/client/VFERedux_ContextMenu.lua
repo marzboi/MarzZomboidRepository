@@ -22,6 +22,12 @@ VFEContext.inventoryMenu = function(playerid, context, items)
                     VFEContext:Bayonet(item, index, player, context, isInInventory)
                 end
             end
+            -- Suppressor weapons
+            for index, preset in ipairs(VFESuppressorSet) do
+                if index % 3 > 0 and preset == item:getFullType() then
+                    VFEContext:Suppressor(item, index, player, context, isInInventory)
+                end
+            end
             -- Folding weapon stock and upgrade actions
             for index, preset in ipairs(VFEFoldingWeaponPair) do
                 if preset == item:getFullType() then
@@ -272,6 +278,72 @@ function VFEContext:Bayonet(item, index, player, context, enabled)
             tooltip.description = tooltip.description ..
                 getText("IGUI_ContextMenu_BayonetBlockedArg", bayonetBlocked:getDisplayName())
         end
+    end
+
+    listEntry.toolTip = tooltip;
+end
+
+function VFEContext:Suppressor(item, index, player, context, enabled)
+    local suppressorFound
+    local suppressor = nil
+    local suppressorScript = nil
+    local itemName = item:getFullType()
+    local sd = string.find(itemName, "sd") or string.find(itemName, "SD")
+
+    if index % 3 == 1 then
+        if VFESuppressorSet[index + 2] ~= "NULL" then
+            suppressorScript = getScriptManager():getItem(VFESuppressorSet[index + 2])
+            local playerItems = player:getInventory():getItems()
+            for i = 1, playerItems:size() do
+                suppressor = playerItems:get(i - 1)
+                if suppressor:getFullType() == VFESuppressorSet[index + 2] and not suppressor:isBroken() then
+                    suppressorFound = true
+                    break
+                end
+            end
+        else
+            suppressorFound = true
+        end
+    else
+        if VFESuppressorSet[index + 1] ~= "NULL" then
+            suppressorScript = getScriptManager():getItem(VFESuppressorSet[index + 1])
+        end
+        suppressorFound = true
+    end
+
+    local actionString = ""
+    if item:getSubCategory() == "Firearm" and not sd then
+        actionString = getText("IGUI_FirearmRadial_UseSuppressor")
+    else
+        actionString = getText("IGUI_FirearmRadial_RemoveSuppressor")
+    end
+
+    local listEntry = context:addOption(actionString, item, VFESuppressorContext.callAction, index, player, suppressor)
+
+    local tooltip = ISInventoryPaneContextMenu.addToolTip();
+    tooltip.description = ""
+    tooltip:setName(actionString)
+    if suppressorScript then
+        tooltip.texture = getTexture("media/textures/Item_" .. suppressorScript:getIcon() .. ".png")
+    else
+        tooltip.texture = item:getTex()
+    end
+
+    if enabled then
+        if suppressorFound then
+            if item:getSubCategory() == "Firearm" and not sd then
+                tooltip.description = tooltip.description .. getText("IGUI_ContextMenu_AttackSuppressor")
+            else
+                tooltip.description = tooltip.description .. getText("IGUI_ContextMenu_RemoveSuppressor")
+            end
+        else
+            listEntry.notAvailable = true
+            tooltip.description = tooltip.description ..
+                getText("IGUI_ContextMenu_RequiresSuppressor", suppressorScript:getDisplayName())
+        end
+    else
+        listEntry.notAvailable = true
+        tooltip.description = tooltip.description .. getText("IGUI_ContextMenu_MoveToInv")
     end
 
     listEntry.toolTip = tooltip;

@@ -126,6 +126,22 @@ module Base
         WorldStaticModel = Magazine_AA12,
     }
     
+    item SuppressorSPR
+    {
+        Type             = WeaponPart,
+        DisplayName      = SPR Suppressor,
+        Icon             = SuppressorSPR,
+        Weight           = 0.3,
+        WeightModifier   = 0.3,
+        MaxRangeModifier = 7,
+        MinRangeModifier = 6,
+        MountOn          = FakeMount,
+        PartType         = Suppressor,
+        Tooltip          = weapon_SuppressorSPR,
+        MetalValue       = 22,
+        WorldStaticModel = SuppressorSPR,
+    }
+    
     item 46Bullets
     {
         Count             = 5,

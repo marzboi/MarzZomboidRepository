@@ -29,5 +29,11 @@ module Base
         mesh = Weapons/ammo/Magazine_AA12,
         texture = Weapons/firearm/AA12_texture,
     }
+    
+    model SuppressorSPR
+    {
+        mesh = Weapons/Parts/suppressorRifle,
+        texture = Weapons/Firearm/m4a1_texture,
+    }
 }
 

@@ -6,7 +6,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_concrete_01.ogg,
         }
     }
@@ -17,7 +17,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_concrete_02.ogg,
         }
     }
@@ -28,7 +28,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_concrete_03.ogg,
         }
     }
@@ -39,7 +39,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_concrete_04.ogg,
         }
     }
@@ -50,7 +50,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_concrete_05.ogg,
         }
     }
@@ -61,7 +61,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_concrete_06.ogg,
         }
     }
@@ -72,7 +72,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_dirt_01.ogg,
         }
     }
@@ -83,7 +83,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_dirt_02.ogg,
         }
     }
@@ -94,7 +94,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_dirt_03.ogg,
         }
     }
@@ -105,7 +105,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_dirt_04.ogg,
         }
     }
@@ -116,7 +116,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_dirt_05.ogg,
         }
     }
@@ -127,7 +127,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_dirt_06.ogg,
         }
     }
@@ -138,7 +138,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_grass_01.ogg,
         }
     }
@@ -149,7 +149,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_grass_02.ogg,
         }
     }
@@ -160,7 +160,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_grass_03.ogg,
         }
     }
@@ -171,7 +171,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_grass_04.ogg,
         }
     }
@@ -182,7 +182,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_grass_05.ogg,
         }
     }
@@ -193,7 +193,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_grass_06.ogg,
         }
     }
@@ -204,7 +204,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_puddles_01.ogg,
         }
     }
@@ -215,7 +215,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_puddles_02.ogg,
         }
     }
@@ -226,7 +226,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_puddles_03.ogg,
         }
     }
@@ -237,7 +237,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_puddles_04.ogg,
         }
     }
@@ -248,7 +248,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_puddles_05.ogg,
         }
     }
@@ -259,7 +259,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_puddles_06.ogg,
         }
     }
@@ -270,7 +270,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_snow_01.ogg,
         }
     }
@@ -281,7 +281,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_snow_02.ogg,
         }
     }
@@ -292,7 +292,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_snow_03.ogg,
         }
     }
@@ -303,7 +303,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_snow_04.ogg,
         }
     }
@@ -314,7 +314,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_snow_05.ogg,
         }
     }
@@ -325,7 +325,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_snow_06.ogg,
         }
     }
@@ -336,7 +336,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_wood_01.ogg,
         }
     }
@@ -347,7 +347,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_wood_02.ogg,
         }
     }
@@ -358,7 +358,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_wood_03.ogg,
         }
     }
@@ -369,7 +369,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_wood_04.ogg,
         }
     }
@@ -380,7 +380,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_wood_05.ogg,
         }
     }
@@ -391,7 +391,7 @@ module Base
         clip
         {
             distanceMax = 10,
-            volume = 0.7,
+            volume = 0.3,
             file = media/sounds/bullet_wood_06.ogg,
         }
     }
