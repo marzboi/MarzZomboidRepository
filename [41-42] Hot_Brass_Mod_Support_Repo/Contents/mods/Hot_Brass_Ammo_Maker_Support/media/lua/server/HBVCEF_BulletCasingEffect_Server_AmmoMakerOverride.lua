@@ -138,11 +138,12 @@ if AMMO_MAKER then
                 local targetTileX  = math.floor(worldX)
                 local targetTileY  = math.floor(worldY)
 
+                local MIN_Z        = -1
                 local checkZ       = worldZ
                 local targetSquare = nil
                 local drops        = 0
 
-                while checkZ >= 0 do
+                while checkZ >= MIN_Z do
                     local sq = getCell():getGridSquare(targetTileX, targetTileY, checkZ)
 
                     if not sq then
@@ -226,7 +227,7 @@ if AMMO_MAKER then
                         local canBounceHere =
                             casing.floorBounces and casing.floorBounces > 0 and
                             speedXY > SpentCasingPhysics.SETTLE_THRESHOLD
-                        if surfaceZ == 0.0 and floor and SpentCasingPhysics.isGrassFloor(floor) then
+                        if surfaceZ == 0.0 and floor and SpentCasingPhysics.isSoftFloor(floor) then
                             canBounceHere = false
                         end
 

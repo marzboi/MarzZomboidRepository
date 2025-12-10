@@ -1,0 +1,39 @@
+module Base
+{
+    item FakeItemSlide
+    {
+        Weight          = 20,
+        Type            = Normal,
+        DisplayName     = all guns,
+        DisplayCategory = Junk,
+        Icon            = IntentionallyInvalid,
+    }
+    
+    item SlideAttachment_Fired
+    {
+        Type             = WeaponPart,
+        DisplayName      = Magazine,
+        DisplayCategory  = WeaponPart,
+        Icon             = m16clip,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = FakeItemSlide,
+        PartType         = Slide,
+        MetalValue       = 22,
+        WorldStaticModel = 556Mag,
+    }
+    
+    item SlideAttachment_Unfired
+    {
+        Type             = WeaponPart,
+        DisplayName      = Magazine,
+        DisplayCategory  = WeaponPart,
+        Icon             = m16clip,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = FakeItemSlide,
+        PartType         = Slide,
+        MetalValue       = 22,
+        WorldStaticModel = 556Mag,
+    }
+}

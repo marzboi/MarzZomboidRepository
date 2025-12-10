@@ -1,0 +1,80 @@
+module Base
+{
+    model CZ75_frame
+    {
+        mesh = weapons/frames/cz75_frame,
+        texture = weapons/firearm/cz75_texture,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1490 -0.0176,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        
+        attachment laser
+        {
+            offset = 0.0000 0.0790 -0.0090,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment slide
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    
+    model CZ75_unfired
+    {
+        mesh = weapons/firearmsAnimated/slides/cz75_unfired,
+        texture = weapons/firearm/cz75_texture,
+    }
+    
+    model CZ75_fired
+    {
+        mesh = weapons/firearmsAnimated/slides/CZ75_fired,
+        texture = weapons/firearm/cz75_texture,
+    }
+    
+    model DE_frame
+    {
+        mesh = weapons/frames/DE_frame,
+        texture = Weapons/Firearm/Handgun,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.1650 -0.0273,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        
+        attachment laser
+        {
+            offset = 0.0000 0.0900 -0.0080,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment reddot
+        {
+            offset = -0.0050 0.0440 0.0520,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment slide
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    
+    model DE_unfired
+    {
+        mesh = weapons/slides/DE_unfired,
+        texture = Weapons/Firearm/Handgun,
+    }
+    
+    model DE_fired
+    {
+        mesh = weapons/slides/DE_fired,
+        texture = Weapons/Firearm/Handgun,
+    }
+}

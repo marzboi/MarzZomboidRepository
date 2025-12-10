@@ -1,5 +1,8 @@
 [h1]Unofficial Port of VFE and Addons[/h1]
 
+[h1]VFE Post 93 weapons Out![/h1]
+Ported VFE93 weapons and added some new features missing from it. ammos will have packs, cases and crates. SD variants are more rare than nonSD, but suppressors have made it into the game. if you find one for the gun. this one can be attach or remove like a Bayonet.
+
 [h2]VFE Stalker Edition Out now![/h2]
 Ported version of Stalker included in the back.
 
@@ -13,25 +16,35 @@ Consider this a tribute to the great VFE and its Devs while official development
 
 I have taken the time to faithfully port all the core functionalities from the original Build 41 version, while also incorporating some of the new systems introduced in Build 42.
 
-[b]Still a work in progress:[/b]
-• Professions included in the original mod
+[b]Changes[/b]
+[b]VFE[/b]
+[list]
+[*] JungleMags (Couple Mags) can be equipt with slings, due to new attachment categories introduce in B42.
+[*] Ammo Cartons are introduced along with Packs, Cases and Crates as a cheaper alternative.
+[/list]
+
+[b]VFES[/b]
+[list]
+[*] New Caliber types for Rifles and the VSS, 7.62x54mm and 9x39mm can be found along the already existing 5.45mm
+[*] Introduce same ammo packing logic to all new VFES calibers. they can now be condense into packs, cases, crates or cartons
+[/list]
+
+[b]VFE94[/b]
+[list]
+[*] Added Suppressors as an item that can be found. allowing you to alternate between the SD and NON SD variant of certain guns.
+[*] Allowed ammo packing of new ammunitions as well. 
+[/list]
 
 [h2]Additional Integration[/h2]
 
 Support for my mod Hot Brass has been added if you wish to see visible shell casings ejecting from firearms. [b]While is marked as required, its not.[/b]
+All VFE weapon addons support my framework, all ammo and casings have custom models.
 
 [h2]Development Intent[/h2]
 
 I will continue refining what I can, focusing on accuracy to Build 41 rather than adding new features.
 If you encounter any bugs, please report them in a proper discussion thread, not in the comments.
 And please, do not contact Vilespring regarding issues with this unofficial port.
-
-[h2]List of Changes[/h2]
-- Couple magazines can be attach along slings due to 42 allowing further attachments.
-- I will add silencers at some point, after work with VFES and VFE93 is done.
-- Addons will be integrated into one subscription.
-- Optional usage of my visual casing mod.
-- B42 bullet cartons are part of the options for packing ammo boxes.
 
 I’m continuing to learn the inner workings of this game to give back to the creators who gave us such great experiences with their work.
 
