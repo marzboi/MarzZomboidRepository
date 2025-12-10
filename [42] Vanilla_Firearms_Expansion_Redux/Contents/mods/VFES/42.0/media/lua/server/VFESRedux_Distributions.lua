@@ -88,11 +88,20 @@ table.insert(ProceduralDistributions.list.GunStoreShelf.items, 2.5);
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.545Box");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 10);
 
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.939Box");
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 5);
+
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.76254Box");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 10);
 
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.76254Case");
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 5);
+
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.939Box");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 10);
+
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.939Case");
+table.insert(ProceduralDistributions.list.GunStoreShelf.items, 5);
 
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, "Base.BizonClip");
 table.insert(ProceduralDistributions.list.GunStoreShelf.items, 1);

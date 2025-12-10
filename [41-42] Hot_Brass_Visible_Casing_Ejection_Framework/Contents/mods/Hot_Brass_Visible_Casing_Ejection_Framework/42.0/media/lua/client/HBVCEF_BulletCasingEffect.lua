@@ -384,11 +384,12 @@ function SpentCasingPhysics.update()
             local targetTileX = math.floor(worldX)
             local targetTileY = math.floor(worldY)
 
+            local MIN_Z = -1
             local checkZ = worldZ
             local targetSquare = nil
             local drops = 0
 
-            while checkZ >= 0 do
+            while checkZ >= MIN_Z do
                 local sq = getCell():getGridSquare(targetTileX, targetTileY, checkZ)
 
                 if not sq then

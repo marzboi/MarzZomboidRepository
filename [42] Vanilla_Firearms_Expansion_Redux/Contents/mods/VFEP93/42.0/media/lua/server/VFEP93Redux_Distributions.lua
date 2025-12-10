@@ -148,6 +148,12 @@ table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 1.7);
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "Base.57Clip50");
 table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.8);
 
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "Base.56Crate");
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.8);
+
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, "Base.46Crate");
+table.insert(ProceduralDistributions.list.ArmyStorageGuns.items, 0.8);
+
 
 
 table.insert(ProceduralDistributions.list.PlankStashGun.items, "Base.n418");
@@ -158,3 +164,9 @@ table.insert(ProceduralDistributions.list.PlankStashGun.items, 0.3);
 
 table.insert(ProceduralDistributions.list.PlankStashGun.items, "Base.SuppressorN418");
 table.insert(ProceduralDistributions.list.PlankStashGun.items, 0.3);
+
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "56Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.2);
+
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, "46Case");
+table.insert(ProceduralDistributions.list.FirearmWeapons.items, 0.2);

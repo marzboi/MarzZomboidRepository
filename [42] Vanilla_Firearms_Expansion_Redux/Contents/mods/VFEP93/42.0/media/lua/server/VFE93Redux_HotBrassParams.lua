@@ -6,9 +6,10 @@ local vfe93Params = {
         forwardOffset  = 0.35,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.85,
         sideSpread     = 60,
         heightSpreed   = 30,
+        ejectAngle     = 75,
         manualEjection = false
     },
 
@@ -18,9 +19,10 @@ local vfe93Params = {
         forwardOffset  = 0.30,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.75,
         sideSpread     = 60,
         heightSpreed   = 30,
+        ejectAngle     = 60,
         manualEjection = false
     },
 
@@ -30,9 +32,10 @@ local vfe93Params = {
         forwardOffset  = 0.30,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.75,
         sideSpread     = 60,
         heightSpreed   = 30,
+        ejectAngle     = 60,
         manualEjection = false
     },
 
@@ -42,9 +45,10 @@ local vfe93Params = {
         forwardOffset  = 0.30,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.75,
         sideSpread     = 60,
         heightSpreed   = 30,
+        ejectAngle     = 60,
         manualEjection = false
     },
 
@@ -54,9 +58,10 @@ local vfe93Params = {
         forwardOffset  = 0.30,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.75,
         sideSpread     = 60,
         heightSpreed   = 30,
+        ejectAngle     = 60,
         manualEjection = false
     },
 
@@ -90,9 +95,11 @@ local vfe93Params = {
         forwardOffset  = 0.15,
         sideOffset     = 0.10,
         heightOffset   = 0.40,
-        shellForce     = 0.0,
+        shellForce     = 0.50,
         sideSpread     = 10,
-        heightSpreed   = 10,
+        heightSpreed   = { 0, 1 },
+        ejectAngle     = 0,
+        verticalForce  = -0.2,
         manualEjection = false
     },
 
@@ -150,9 +157,10 @@ local vfe93Params = {
         forwardOffset  = 0.30,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.75,
         sideSpread     = 60,
         heightSpreed   = 30,
+        ejectAngle     = 60,
         manualEjection = false
     },
 
@@ -162,9 +170,10 @@ local vfe93Params = {
         forwardOffset  = 0.30,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.75,
         sideSpread     = 60,
         heightSpreed   = 30,
+        ejectAngle     = 60,
         manualEjection = false
     },
 

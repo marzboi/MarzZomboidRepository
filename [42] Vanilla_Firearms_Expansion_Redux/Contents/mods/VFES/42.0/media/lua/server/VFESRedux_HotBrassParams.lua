@@ -6,9 +6,10 @@ local vfesParams = {
         forwardOffset  = 0.30,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.80,
         sideSpread     = 60,
         heightSpread   = 30,
+        ejectAngle     = 65,
         manualEjection = false
     },
 
@@ -18,9 +19,10 @@ local vfesParams = {
         forwardOffset  = 0.35,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.90,
         sideSpread     = 60,
         heightSpread   = 60,
+        ejectAngle     = 45,
         manualEjection = false
     },
 
@@ -30,9 +32,10 @@ local vfesParams = {
         forwardOffset  = 0.35,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.85,
         sideSpread     = 60,
         heightSpread   = 90,
+        ejectAngle     = 65,
         manualEjection = false
     },
 
@@ -42,9 +45,10 @@ local vfesParams = {
         forwardOffset  = 0.35,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.85,
         sideSpread     = 60,
         heightSpread   = 90,
+        ejectAngle     = 65,
         manualEjection = false
     },
 
@@ -54,9 +58,10 @@ local vfesParams = {
         forwardOffset  = 0.35,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.85,
         sideSpread     = 60,
         heightSpread   = 90,
+        ejectAngle     = 65,
         manualEjection = false
     },
 
@@ -66,9 +71,10 @@ local vfesParams = {
         forwardOffset  = 0.35,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.85,
         sideSpread     = 60,
         heightSpread   = 90,
+        ejectAngle     = 65,
         manualEjection = false
     },
 
@@ -94,6 +100,7 @@ local vfesParams = {
         shellForce     = 0.30,
         sideSpread     = 10,
         heightSpread   = 10,
+        ejectAngle     = 65,
         manualEjection = false
     },
 
@@ -106,6 +113,7 @@ local vfesParams = {
         shellForce     = 0.30,
         sideSpread     = 10,
         heightSpread   = 10,
+        ejectAngle     = 65,
         manualEjection = false
     },
 
@@ -128,21 +136,23 @@ local vfesParams = {
         forwardOffset  = 0.35,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 1.20,
+        shellForce     = 0.90,
         sideSpread     = 30,
         heightSpread   = 60,
+        ejectAngle     = 35,
         manualEjection = false
     },
 
     ["Base.SV98"] = {
         casing         = "Base.76254Bullets_Casing",
         ammo           = "Base.76254Bullets",
-        forwardOffset  = 0.15,
+        forwardOffset  = 0.25,
         sideOffset     = 0.10,
         heightOffset   = 0.45,
-        shellForce     = 0.30,
+        shellForce     = 0.65,
         sideSpread     = 30,
-        heightSpread   = 30,
+        ejectAngle     = 45,
+        heightSpread   = { 70, 100 },
         manualEjection = true
     },
 
@@ -155,6 +165,7 @@ local vfesParams = {
         shellForce     = 0.90,
         sideSpread     = 30,
         heightSpread   = 60,
+        ejectAngle     = 45,
         manualEjection = false
     },
 
