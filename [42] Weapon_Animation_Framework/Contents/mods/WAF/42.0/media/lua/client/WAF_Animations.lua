@@ -1,70 +1,128 @@
-AnimationWeaponAction = {}
 AnimationWeaponAction.pending = {}
 AnimationWeaponAction.BASELINE_TICKS_PER_SECOND = 60
 
-function AnimationWeaponAction.GT()
+function AnimationWeaponAction.getGameTime()
     return GameTime.getInstance()
 end
 
-function AnimationWeaponAction.update(player, weapon)
+function AnimationWeaponAction.isWeaponReadyToFire(weapon)
+    return weapon:isRoundChambered()
+        and not weapon:isJammed()
+        and weapon:haveChamber()
+end
+
+function AnimationWeaponAction.updateWeaponVisuals(player, weapon, attachmentType)
+    weapon:attachWeaponPart(instanceItem(attachmentType), true)
+    player:resetEquippedHandsModels()
+end
+
+function AnimationWeaponAction.restoreUnfiredState(player, weapon)
     if not weapon or not player then return end
-    if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-        weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
-        player:resetEquippedHandsModels()
+
+    if AnimationWeaponAction.isWeaponReadyToFire(weapon) then
+        AnimationWeaponAction.updateWeaponVisuals(player, weapon, "SlideAttachment_Unfired")
     end
 end
 
-function AnimationWeaponAction.scheduleUpdate(player, weapon, ticks)
+function AnimationWeaponAction.scheduleRestore(player, weapon, ticks)
     if not player or not weapon then return end
-    local pid = tostring(player:getPlayerNum() or 0)
-    local t = math.max(1, math.floor(ticks or 1))
-    local seconds = t / AnimationWeaponAction.BASELINE_TICKS_PER_SECOND
-    AnimationWeaponAction.pending[pid] = {
+
+    local playerId = tostring(player:getPlayerNum() or 0)
+    local validTicks = math.max(1, math.floor(ticks or 1))
+    local seconds = validTicks / AnimationWeaponAction.BASELINE_TICKS_PER_SECOND
+
+    AnimationWeaponAction.pending[playerId] = {
         timeRemaining = seconds,
-        weapon = weapon
+        weapon = weapon,
+        action = function()
+            AnimationWeaponAction.restoreUnfiredState(player, weapon)
+        end
     }
 end
 
-function AnimationWeaponAction.animateWeaponFiring(player, weapon, ticks)
+function AnimationWeaponAction.scheduleAction(player, weapon, delayTicks, action)
+    if not player or not weapon then return end
+
+    local playerId = tostring(player:getPlayerNum() or 0) .. "_delayed"
+    local validTicks = math.max(1, math.floor(delayTicks or 1))
+    local seconds = validTicks / AnimationWeaponAction.BASELINE_TICKS_PER_SECOND
+
+    AnimationWeaponAction.pending[playerId] = {
+        timeRemaining = seconds,
+        weapon = weapon,
+        action = action
+    }
+end
+
+function AnimationWeaponAction.animateFiring(player, weapon, ticks)
     if not weapon or not player then return end
-    if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-        weapon:attachWeaponPart(instanceItem("SlideAttachment_Fired"), true)
-        player:resetEquippedHandsModels()
-        AnimationWeaponAction.scheduleUpdate(player, weapon, ticks or 3)
+
+    if AnimationWeaponAction.isWeaponReadyToFire(weapon) then
+        AnimationWeaponAction.updateWeaponVisuals(player, weapon, "SlideAttachment_Fired")
+        AnimationWeaponAction.scheduleRestore(player, weapon, ticks)
     end
 end
 
-function AnimationWeaponAction.attachPart(player, weapon)
+function AnimationWeaponAction.animateRack(player, weapon, restoreTicks, delayTicks)
     if not weapon or not player then return end
-    local slide = weapon:getWeaponPart('Slide')
 
-    if slide then return end
+    AnimationWeaponAction.scheduleAction(player, weapon, delayTicks, function()
+        AnimationWeaponAction.animateFiring(player, weapon, restoreTicks)
+    end)
+end
 
+function AnimationWeaponAction.hasSlideAttached(weapon)
+    return weapon:getWeaponPart('Slide') ~= nil
+end
+
+function AnimationWeaponAction.findSlideAttachmentPoint(weapon)
     local weaponModel = ScriptManager.instance:getModelScript(weapon:getOriginalWeaponSprite())
+
     for i = 0, weaponModel:getAttachmentCount() - 1 do
         local partList = weaponModel:getAttachment(i)
         if partList:getId() == "slide" then
-            weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
+            return true
         end
+    end
+
+    return false
+end
+
+function AnimationWeaponAction.initializeSlide(player, weapon)
+    if not weapon or not player then return end
+    if AnimationWeaponAction.hasSlideAttached(weapon) then return end
+
+    if AnimationWeaponAction.findSlideAttachmentPoint(weapon) then
+        weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
     end
 end
 
-function AnimationWeaponAction.onTick()
-    local dt = AnimationWeaponAction.GT():getRealworldSecondsSinceLastUpdate() or
-    (1 / AnimationWeaponAction.BASELINE_TICKS_PER_SECOND)
-    for pid, data in pairs(AnimationWeaponAction.pending) do
-        data.timeRemaining = data.timeRemaining - dt
+function AnimationWeaponAction.processPendingUpdates()
+    local deltaTime = AnimationWeaponAction.getGameTime():getRealworldSecondsSinceLastUpdate()
+        or (1 / AnimationWeaponAction.BASELINE_TICKS_PER_SECOND)
+
+    for playerId, data in pairs(AnimationWeaponAction.pending) do
+        data.timeRemaining = data.timeRemaining - deltaTime
+
         if data.timeRemaining <= 0 then
-            local playerNum = tonumber(pid) or 0
-            local player = getSpecificPlayer(playerNum)
-            if player and data.weapon then
-                AnimationWeaponAction.update(player, data.weapon)
+            if data.action then
+                data.action()
+            else
+                local playerNum = tonumber(playerId) or 0
+                local player = getSpecificPlayer(playerNum)
+
+                if player and data.weapon then
+                    AnimationWeaponAction.restoreUnfiredState(player, data.weapon)
+                end
             end
-            AnimationWeaponAction.pending[pid] = nil
+
+            AnimationWeaponAction.pending[playerId] = nil
         end
     end
 end
 
-Events.OnEquipPrimary.Add(AnimationWeaponAction.attachPart)
-Events.OnWeaponSwing.Add(function(player, weapon) AnimationWeaponAction.animateWeaponFiring(player, weapon, 10) end)
-Events.OnTick.Add(AnimationWeaponAction.onTick)
+Events.OnEquipPrimary.Add(AnimationWeaponAction.initializeSlide)
+Events.OnWeaponSwing.Add(function(player, weapon)
+    AnimationWeaponAction.animateFiring(player, weapon, 10)
+end)
+Events.OnTick.Add(AnimationWeaponAction.processPendingUpdates)
