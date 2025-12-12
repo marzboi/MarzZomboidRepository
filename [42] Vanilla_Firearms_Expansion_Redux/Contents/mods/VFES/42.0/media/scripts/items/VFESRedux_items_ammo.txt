@@ -5,19 +5,20 @@ module Base
         Count             = 5,
         Weight            = 0.025,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = 5.45mm Round,
         DisplayCategory   = Ammo,
         Icon              = 545Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 762Bullets,
+        Tags              = base:ammo,
     }
     
     item 545Box
     {
         Weight            = 0.8,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Box of 5.45mm Rounds,
         DisplayCategory   = Ammo,
         Icon              = 545AmmoBox,
@@ -29,7 +30,7 @@ module Base
     {
         Weight            = 40.0,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Crate of 5.45mm Boxes,
         DisplayCategory   = Ammo,
         Icon              = 545AmmoCrate,
@@ -41,7 +42,7 @@ module Base
     {
         Weight            = 11.4,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Case of 5.45mm Boxes,
         DisplayCategory   = Ammo,
         Icon              = 545AmmoCase,
@@ -53,7 +54,7 @@ module Base
     {
         Weight            = 3.0,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Pack of 5.45mm Boxes,
         DisplayCategory   = Ammo,
         Icon              = 545AmmoPack,
@@ -64,7 +65,7 @@ module Base
     item 545Carton
     {
         DisplayCategory    = Ammo,
-        Type               = Normal,
+        ItemType           = base:normal,
         Weight             = 6.0,
         Icon               = Parcel_Medium_Military,
         AlwaysWelcomeGift  = true,
@@ -81,19 +82,20 @@ module Base
         Count             = 5,
         Weight            = 0.025,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = 9x39mm Round,
         DisplayCategory   = Ammo,
         Icon              = 939Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 762Bullets,
+        Tags              = base:ammo,
     }
     
     item 939Box
     {
         Weight            = 0.8,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Box of 9x39mm Rounds,
         DisplayCategory   = Ammo,
         Icon              = 939AmmoBox,
@@ -105,7 +107,7 @@ module Base
     {
         Weight            = 40.0,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Crate of 9x39mm Boxes,
         DisplayCategory   = Ammo,
         Icon              = 939AmmoCrate,
@@ -117,7 +119,7 @@ module Base
     {
         Weight            = 11.4,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Case of 9x39mm Boxes,
         DisplayCategory   = Ammo,
         Icon              = 939AmmoCase,
@@ -129,7 +131,7 @@ module Base
     {
         Weight            = 3.0,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Pack of 9x39mm Boxes,
         DisplayCategory   = Ammo,
         Icon              = 939AmmoPack,
@@ -140,7 +142,7 @@ module Base
     item 939Carton
     {
         DisplayCategory    = Ammo,
-        Type               = Normal,
+        ItemType           = base:normal,
         Weight             = 6.0,
         Icon               = Parcel_Medium_Military,
         AlwaysWelcomeGift  = true,
@@ -157,19 +159,20 @@ module Base
         Count             = 5,
         Weight            = 0.025,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = 7.62x54mm Round,
         DisplayCategory   = Ammo,
         Icon              = 76254Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 762Bullets,
+        Tags              = base:ammo,
     }
     
     item 76254Box
     {
         Weight            = 0.8,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Box of 7.62x54mm Rounds,
         DisplayCategory   = Ammo,
         Icon              = 76254AmmoBox,
@@ -181,7 +184,7 @@ module Base
     {
         Weight            = 40.0,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Crate of 7.62x54mm Boxes,
         DisplayCategory   = Ammo,
         Icon              = 76254AmmoCrate,
@@ -193,7 +196,7 @@ module Base
     {
         Weight            = 11.4,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Case of 7.62x54mm Boxes,
         DisplayCategory   = Ammo,
         Icon              = 76254AmmoCase,
@@ -205,7 +208,7 @@ module Base
     {
         Weight            = 3.0,
         AlwaysWelcomeGift = TRUE,
-        Type              = Normal,
+        ItemType          = base:normal,
         DisplayName       = Pack of 7.62x54mm Boxes,
         DisplayCategory   = Ammo,
         Icon              = 76254AmmoPack,
@@ -216,7 +219,7 @@ module Base
     item 76254Carton
     {
         DisplayCategory    = Ammo,
-        Type               = Normal,
+        ItemType           = base:normal,
         Weight             = 6.0,
         Icon               = Parcel_Medium_Military,
         AlwaysWelcomeGift  = true,

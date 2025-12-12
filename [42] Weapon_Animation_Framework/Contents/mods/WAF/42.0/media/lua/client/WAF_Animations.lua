@@ -42,9 +42,9 @@ function AnimationWeaponAction.attachPart(player, weapon)
     if slide then return end
 
     local weaponModel = ScriptManager.instance:getModelScript(weapon:getOriginalWeaponSprite())
-    for i = 1, weaponModel:getAttachmentCount() do
+    for i = 0, weaponModel:getAttachmentCount() - 1 do
         local partList = weaponModel:getAttachment(i)
-        if partList:getId() == "slide" then
+        if partList and partList:getId() == "slide" then
             weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
         end
     end
@@ -62,6 +62,18 @@ function AnimationWeaponAction.onTick()
             AnimationWeaponAction.pending[pid] = nil
         end
     end
+end
+
+function AnimationWeaponAction.rackStart(player, weapon)
+    if not weapon or not player then return end
+    weapon:attachWeaponPart(instanceItem("SlideAttachment_Fired"), true)
+    player:resetEquippedHandsModels()
+end
+
+function AnimationWeaponAction.rackEnd(player, weapon)
+    if not weapon or not player then return end
+    weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
+    player:resetEquippedHandsModels()
 end
 
 Events.OnEquipPrimary.Add(AnimationWeaponAction.attachPart)

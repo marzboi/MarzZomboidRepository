@@ -4,7 +4,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = 762x39mm Casing,
         DisplayCategory  = Casings,
         Icon             = 762_Casing,

@@ -77,4 +77,58 @@ module Base
         mesh = weapons/slides/DE_fired,
         texture = Weapons/Firearm/Handgun,
     }
+    
+    model shotgun_frame
+    {
+        mesh = weapons/frames/shotgun_frame,
+        texture = weapons/firearm/Shotgun,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4638 0.0255,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0741 0.0555,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = 0.0000 0.1660 0.0000,
+            rotate = -180.0000 1.0000 -180.0000,
+        }
+        
+        attachment choketube
+        {
+            offset = 0.0000 0.4640 0.0255,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment shellholder
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment slide
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    
+    model shotgun_unfired
+    {
+        mesh = weapons/slides/shotgun_unfired,
+        texture = weapons/firearm/Shotgun,
+    }
+    
+    model shotgun_fired
+    {
+        mesh = weapons/slides/shotgun_fired,
+        texture = weapons/firearm/Shotgun,
+    }
 }

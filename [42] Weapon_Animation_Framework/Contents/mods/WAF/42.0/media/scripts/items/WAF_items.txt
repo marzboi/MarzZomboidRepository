@@ -3,7 +3,7 @@ module Base
     item FakeItemSlide
     {
         Weight          = 20,
-        Type            = Normal,
+        ItemType        = base:normal,
         DisplayName     = all guns,
         DisplayCategory = Junk,
         Icon            = IntentionallyInvalid,
@@ -11,7 +11,7 @@ module Base
     
     item SlideAttachment_Fired
     {
-        Type             = WeaponPart,
+        ItemType         = base:weaponpart,
         DisplayName      = Magazine,
         DisplayCategory  = WeaponPart,
         Icon             = m16clip,
@@ -25,7 +25,7 @@ module Base
     
     item SlideAttachment_Unfired
     {
-        Type             = WeaponPart,
+        ItemType         = base:weaponpart,
         DisplayName      = Magazine,
         DisplayCategory  = WeaponPart,
         Icon             = m16clip,

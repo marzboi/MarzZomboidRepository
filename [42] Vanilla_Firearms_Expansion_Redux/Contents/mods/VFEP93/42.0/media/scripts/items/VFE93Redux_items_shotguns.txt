@@ -87,7 +87,7 @@ module Base
         Tags                         = HasMetal;Firearm,
         ToHitModifier                = 1.5,
         TwoHandWeapon                = true,
-        Type                         = Weapon,
+        ItemType                     = base:weapon,
         UnequipSound                 = M16UnEquip,
         UseEndurance                 = false,
         WeaponReloadType             = boltaction,

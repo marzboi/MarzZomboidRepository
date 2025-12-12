@@ -4,7 +4,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.02,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = 5.45mm Casing,
         DisplayCategory  = Casings,
         Icon             = 545_Casing,
@@ -17,7 +17,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.02,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = 9x39mm Casing,
         DisplayCategory  = Casings,
         Icon             = 939_Casing,
@@ -30,7 +30,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.02,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = 7.62x54mm Casing,
         DisplayCategory  = Casings,
         Icon             = 76254_Casing,

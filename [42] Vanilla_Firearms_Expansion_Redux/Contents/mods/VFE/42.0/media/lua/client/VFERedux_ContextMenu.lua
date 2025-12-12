@@ -97,7 +97,7 @@ function VFEContext:Stock(item, index, indexMod, player, context, enabled)
 end
 
 function VFEContext:UpgradeIrons(item, player, context)
-    local hasScrewdriver = player:getInventory():containsTagEvalRecurse("Screwdriver", predicateNotBroken)
+    local hasScrewdriver = player:getInventory():contains("Screwdriver")
     if item and instanceof(item, "HandWeapon") and item:isRanged() and hasScrewdriver then
         -- add parts
         local weaponParts = player:getInventory():getItemsFromCategory("WeaponPart");
@@ -122,7 +122,7 @@ function VFEContext:UpgradeIrons(item, player, context)
 end
 
 function VFEContext:UpgradeSling(item, player, context)
-    local hasScrewdriver = player:getInventory():containsTagEvalRecurse("Screwdriver", predicateNotBroken)
+    local hasScrewdriver = player:getInventory():contains("Screwdriver")
     if item and instanceof(item, "HandWeapon") and item:isRanged() and hasScrewdriver then
         -- add parts
         local weaponParts = player:getInventory():getItemsFromCategory("WeaponPart");
@@ -146,7 +146,7 @@ function VFEContext:UpgradeSling(item, player, context)
 end
 
 function VFEContext:UpgradeSling2(item, player, context)
-    local hasScrewdriver = player:getInventory():containsTagEvalRecurse("Screwdriver", predicateNotBroken)
+    local hasScrewdriver = player:getInventory():contains("Screwdriver")
     if item and instanceof(item, "HandWeapon") and item:isRanged() and hasScrewdriver then
         -- add parts
         local weaponParts = player:getInventory():getItemsFromCategory("WeaponPart");
@@ -171,7 +171,7 @@ function VFEContext:UpgradeSling2(item, player, context)
 end
 
 function VFEContext:UpgradeCoupleMags(item, player, context)
-    local hasScrewdriver = player:getInventory():containsTagEvalRecurse("Screwdriver", predicateNotBroken)
+    local hasScrewdriver = player:getInventory():contains("Screwdriver")
     if item and instanceof(item, "HandWeapon") and item:isRanged() and hasScrewdriver then
         -- add parts
         local weaponParts = player:getInventory():getItemsFromCategory("WeaponPart");

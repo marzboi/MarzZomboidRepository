@@ -133,6 +133,14 @@ ItemName_EN = {
     ItemName_Base.44Crate = "Crate of .44 Magnum Boxes",
     ItemName_Base.45Crate = "Crate of .45 Auto Boxes",
     
+    ItemName_Base.762Carton = "Carton of 7.62mm Boxes"
+    ItemName_Base.22Carton = "Carton of .22 Boxes"
+    
+    /*Casings*/
+    ItemName_Base.22Bullets_Casing = ".22 Casing"
+    ItemName_Base.308BulletsLinked_Casing = ".308 Linked Casing"
+    ItemName_Base.762Bullets_Casing = "7.62mm Casing"
+    
     /*Magazines*/
     ItemName_Base.762Clip = "AK-47 Magazine",
     ItemName_Base.223Clip20 = "Mini-14 Magazine",

@@ -97,8 +97,8 @@ if AMMO_MAKER then
                                 if casing.square:isWallTo(neighbor) then
                                     local wall1 = casing.square:getWall()
                                     local wall2 = neighbor:getWall()
-                                    local isLow = (wall1 and SpentCasingPhysics.isVisuallyLowWall(wall1)) or
-                                        (wall2 and SpentCasingPhysics.isVisuallyLowWall(wall2))
+                                    local isLow = (wall1 and SpentCasingPhysics.isLowWall(wall1)) or
+                                        (wall2 and SpentCasingPhysics.isLowWall(wall2))
                                     if isLow then
                                         if casing.z < SpentCasingPhysics.LOW_WALL_Z_THRESHOLD then
                                             block = true
