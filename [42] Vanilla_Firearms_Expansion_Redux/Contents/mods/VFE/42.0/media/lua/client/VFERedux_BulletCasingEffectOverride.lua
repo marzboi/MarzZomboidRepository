@@ -88,18 +88,18 @@ if SpentCasingPhysics then
         if params.manualEjection then return end
 
         if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-            if weapon:hasTag("M60_Link") then
-                local brassCatcher = weapon:getWeaponPart('RecoilPad')
-                if brassCatcher then
-                    player:getInventory():AddItem("Base.308Bullets_Casing")
-                    player:getInventory():AddItem("Base.M60_Link")
-                else
-                    SpentCasingPhysics.doSpawnCasing(player, weapon, params)
-                    SpentCasingPhysics.doSpawnCasing(player, weapon, m60LinkParam)
-                end
-            else
-                SpentCasingPhysics.doSpawnCasing(player, weapon, params)
-            end
+            -- if weapon:hasTag("vfe:m60_link") then
+            --     local brassCatcher = weapon:getWeaponPart('RecoilPad')
+            --     if brassCatcher then
+            --         player:getInventory():AddItem("Base.308Bullets_Casing")
+            --         player:getInventory():AddItem("Base.M60_Link")
+            --     else
+            --         SpentCasingPhysics.doSpawnCasing(player, weapon, params)
+            --         SpentCasingPhysics.doSpawnCasing(player, weapon, m60LinkParam)
+            --     end
+            -- else
+            SpentCasingPhysics.doSpawnCasing(player, weapon, params)
+            -- end
         end
     end
 

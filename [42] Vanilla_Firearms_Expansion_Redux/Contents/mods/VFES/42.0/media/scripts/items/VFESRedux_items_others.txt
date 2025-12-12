@@ -8,7 +8,7 @@ module Base
         DisplayName      = Dragunov Magazine,
         Icon             = SVDClip,
         MaxAmmo          = 10,
-        AmmoType         = 76254Bullets,
+        AmmoType         = vfes:bullets_76254,
         GunType          = SVD,
         WorldStaticModel = Magazine_SVD,
     }
@@ -21,7 +21,7 @@ module Base
         DisplayName      = VSS Magazine,
         Icon             = VSSclip,
         MaxAmmo          = 10,
-        AmmoType         = 939Bullets,
+        AmmoType         = vfes:bullets_939,
         GunType          = SVD,
         WorldStaticModel = Magazine_SVD,
     }
@@ -34,7 +34,7 @@ module Base
         DisplayName      = 5.45 Magazine,
         Icon             = 545Clip,
         MaxAmmo          = 30,
-        AmmoType         = 545Bullets,
+        AmmoType         = vfes:bullets_545,
         StaticModel      = Magazine_AK74,
         GunType          = AK74,
         WorldStaticModel = Magazine_AK74,
@@ -48,7 +48,7 @@ module Base
         DisplayName      = M249 Box,
         Icon             = m249box,
         MaxAmmo          = 100,
-        AmmoType         = 556Bullets,
+        AmmoType         = base:bullets_556,
         GunType          = M249,
         WorldStaticModel = Magazine_249,
     }
@@ -61,7 +61,7 @@ module Base
         DisplayName      = PKM Box,
         Icon             = pkmbox,
         MaxAmmo          = 100,
-        AmmoType         = 76254Bullets,
+        AmmoType         = vfes:bullets_76254,
         GunType          = PKM,
         WorldStaticModel = Magazine_PKM,
     }
@@ -74,7 +74,7 @@ module Base
         DisplayName      = Saiga-12 Magazine,
         Icon             = saigaclip,
         MaxAmmo          = 5,
-        AmmoType         = ShotgunShells,
+        AmmoType         = base:shotgun_shells,
         GunType          = Saiga12,
         WorldStaticModel = Magazine_SVD,
     }
@@ -87,7 +87,7 @@ module Base
         DisplayName      = SV98 Magazine,
         Icon             = SVTClip,
         MaxAmmo          = 10,
-        AmmoType         = 76254Bullets,
+        AmmoType         = vfes:bullets_76254,
         GunType          = sv98,
         WorldStaticModel = Magazine_SV98,
     }
@@ -100,7 +100,7 @@ module Base
         DisplayName      = SVT-40 Magazine,
         Icon             = SVTClip,
         MaxAmmo          = 10,
-        AmmoType         = 76254Bullets,
+        AmmoType         = vfes:bullets_76254,
         GunType          = SVT40,
         WorldStaticModel = Magazine_SVD,
     }
@@ -113,7 +113,7 @@ module Base
         DisplayName      = Makarov Magazine,
         Icon             = makarovclip,
         MaxAmmo          = 8,
-        AmmoType         = Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         GunType          = Makarov,
         WorldStaticModel = Magazine_SVD,
     }
@@ -126,7 +126,7 @@ module Base
         DisplayName      = UMP-45 Magazine,
         Icon             = UMPclip,
         MaxAmmo          = 25,
-        AmmoType         = Bullets45,
+        AmmoType         = base:bullets_45,
         GunType          = UMP45,
         WorldStaticModel = Magazine_UMP,
     }
@@ -139,7 +139,7 @@ module Base
         DisplayName      = Vityaz Magazine,
         Icon             = 762Clip,
         MaxAmmo          = 30,
-        AmmoType         = Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         GunType          = Vityaz,
         WorldStaticModel = Magazine_Vityaz,
     }
@@ -152,7 +152,7 @@ module Base
         DisplayName      = PPSH-41 Drum,
         Icon             = PPSHDrum,
         MaxAmmo          = 71,
-        AmmoType         = Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         GunType          = PPSH,
         WorldStaticModel = Magazine_PPSH,
     }
@@ -165,7 +165,7 @@ module Base
         DisplayName      = Bizon Magazine,
         Icon             = BizonClip,
         MaxAmmo          = 64,
-        AmmoType         = Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         GunType          = Bizon,
         WorldStaticModel = Magazine_Bizon,
     }

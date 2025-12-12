@@ -61,7 +61,7 @@ function VFEOnCreate.KeepAmmoMagazines(craftRecipeData, character)
     local ammo
     local item
     item = craftRecipeData:getAllConsumedItems():get(0)
-    ammo = item:getAmmoType()
+    ammo = item:getAmmoType():getItemKey()
     bullets = bullets + item:getCurrentAmmoCount()
 
     item = craftRecipeData:getAllConsumedItems():get(2)

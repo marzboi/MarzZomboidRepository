@@ -9,7 +9,7 @@ module Base
         AimingTime                   = 18,
         AimReleaseSound              = M14AimRelease,
         AmmoBox                      = ShotgunShellsBox,
-        AmmoType                     = Base.ShotgunShells,
+        AmmoType                     = base:shotgun_shells,
         AttachmentType               = Rifle,
         BreakSound                   = M14Break,
         BringToBearSound             = JS2000ShotgunBringToBear,

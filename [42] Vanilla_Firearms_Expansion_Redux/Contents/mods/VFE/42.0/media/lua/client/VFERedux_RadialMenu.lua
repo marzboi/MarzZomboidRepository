@@ -251,7 +251,7 @@ end
 
 function CLoadBulletsInMagazine:hasBulletsForMagazine(magazine)
 	local inventory = self.character:getInventory()
-	return inventory:getCountTypeRecurse(magazine:getAmmoType()) > 0
+	return inventory:getCountTypeRecurse(magazine:getAmmoType():getItemKey()) > 0
 end
 
 function CLoadBulletsInMagazine:fillMenu(menu, weapon, index)
@@ -273,7 +273,7 @@ function CLoadBulletsInMagazine:invoke()
 	if not magazine then return end
 	if not self:hasBulletsForMagazine(magazine) then return end
 	ISInventoryPaneContextMenu.transferIfNeeded(self.character, magazine)
-	local ammoCount = ISInventoryPaneContextMenu.transferBullets(self.character, magazine:getAmmoType(),
+	local ammoCount = ISInventoryPaneContextMenu.transferBullets(self.character, magazine:getAmmoType():getItemKey(),
 		magazine:getCurrentAmmoCount(), magazine:getMaxAmmo())
 	if ammoCount == 0 then return end
 	ISTimedActionQueue.add(ISLoadBulletsInMagazine:new(self.character, magazine, ammoCount))
@@ -290,7 +290,7 @@ end
 
 function CLoadRounds:hasBullets(weapon)
 	local inventory = self.character:getInventory()
-	return inventory:getCountTypeRecurse(weapon:getAmmoType()) > 0
+	return inventory:getCountTypeRecurse(weapon:getAmmoType():getItemKey()) > 0
 end
 
 function CLoadRounds:fillMenu(menu, weapon, index)
@@ -311,7 +311,8 @@ function CLoadRounds:invoke()
 	if weapon:getMagazineType() then return end
 	if weapon:getCurrentAmmoCount() >= weapon:getMaxAmmo() then return end
 	if not self:hasBullets(weapon) then return end
-	ISInventoryPaneContextMenu.transferBullets(self.character, weapon:getAmmoType(), weapon:getCurrentAmmoCount(),
+	ISInventoryPaneContextMenu.transferBullets(self.character, weapon:getAmmoType():getItemKey(),
+		weapon:getCurrentAmmoCount(),
 		weapon:getMaxAmmo())
 	ISTimedActionQueue.add(ISReloadWeaponAction:new(self.character, weapon))
 end

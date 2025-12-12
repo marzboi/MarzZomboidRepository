@@ -51,7 +51,7 @@ module Base
     
     item 223Clip20
     {
-        AmmoType         = 223Bullets,
+        AmmoType         = base:bullets_223,
         CanStack         = FALSE,
         DisplayName      = .223 Magazine,
         GunType          = Mini14,
@@ -65,7 +65,7 @@ module Base
     
     item 22ClipRifle
     {
-        AmmoType         = Base.22Bullets,
+        AmmoType         = vfe:bullets_22,
         CanStack         = FALSE,
         DisplayName      = 1022 Magazine,
         GunType          = Base.1022,
@@ -79,7 +79,7 @@ module Base
     
     item 22ClipPistol
     {
-        AmmoType         = Base.22Bullets,
+        AmmoType         = vfe:bullets_22,
         CanStack         = FALSE,
         DisplayName      = Mk2 Magazine,
         GunType          = Base.MK2,
@@ -93,7 +93,7 @@ module Base
     
     item 308Clip
     {
-        AmmoType         = Base.308Bullets,
+        AmmoType         = base:bullets_308,
         CanStack         = FALSE,
         DisplayName      = .308 Magazine,
         GunType          = Base.HuntingRifle,
@@ -107,7 +107,7 @@ module Base
     
     item 45Clip12
     {
-        AmmoType         = Bullets45,
+        AmmoType         = base:bullets_45,
         CanStack         = FALSE,
         DisplayName      = MK23 Magazine,
         GunType          = MK23,
@@ -120,7 +120,7 @@ module Base
     
     item 45Clip32
     {
-        AmmoType         = Base.Bullets45,
+        AmmoType         = base:bullets_45,
         CanStack         = FALSE,
         DisplayName      = MAC-10 Magazine,
         GunType          = Base.MAC10Unfolded,
@@ -134,7 +134,7 @@ module Base
     
     item 9mmClip32
     {
-        AmmoType         = Base.Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
         DisplayName      = Uzi Magazine,
         GunType          = Base.UziUnfolded,
@@ -148,7 +148,7 @@ module Base
     
     item 9mmClip20
     {
-        AmmoType         = Base.Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
         DisplayName      = TEC-9 Magazine,
         GunType          = Base.Tec9,
@@ -162,7 +162,7 @@ module Base
     
     item 9mmClip13
     {
-        AmmoType         = Base.Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
         DisplayName      = P229 Magazine,
         GunType          = Base.P229,
@@ -176,7 +176,7 @@ module Base
     
     item 9mmClip16
     {
-        AmmoType         = Base.Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
         DisplayName      = CZ 75 Magazine,
         GunType          = Base.CZ75,
@@ -190,7 +190,7 @@ module Base
     
     item 9mmClip17
     {
-        AmmoType         = Base.Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
         DisplayName      = G17 Magazine,
         GunType          = Base.Glock,
@@ -204,7 +204,7 @@ module Base
     
     item 9mmClip30
     {
-        AmmoType         = Base.Bullets9mm,
+        AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
         DisplayName      = MP5 Magazine,
         GunType          = Base.MP5,
@@ -218,7 +218,7 @@ module Base
     
     item FALClip
     {
-        AmmoType         = Base.308Bullets,
+        AmmoType         = base:bullets_308,
         CanStack         = FALSE,
         DisplayCategory  = Ammo,
         DisplayName      = FAL Magazine,
@@ -233,7 +233,7 @@ module Base
     
     item M60Belt
     {
-        AmmoType         = Base.308BulletsLinked,
+        AmmoType         = vfe:bullets_308_linked,
         CanStack         = FALSE,
         DisplayName      = M60 Belt,
         GunType          = Base.M60MMG,

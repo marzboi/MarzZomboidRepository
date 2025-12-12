@@ -1,10 +1,5 @@
-ItemTag.register("vfe:m60_link")
-ItemTag.register("vfe:jamresistant")
-ItemTag.register("vfe:blockbayonet")
-
-AmmoType.register("vfe:bullets_762", "Base.762Bullets")
-AmmoType.register("vfe:bullets_22", "Base.Bullets22")
-AmmoType.register("vfe:bullets_308_linked", "Base.308BulletsLinked")
+AmmoType.register("vfe93:bullets_57", "Base.57Bullets")
+AmmoType.register("vfe93:bullets_46", "Base.46Bullets")
 
 -- base:shotgun_shells
 -- base:bullets_556

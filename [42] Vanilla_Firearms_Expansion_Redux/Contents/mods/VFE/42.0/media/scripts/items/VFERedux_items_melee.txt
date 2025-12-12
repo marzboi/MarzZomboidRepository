@@ -52,6 +52,7 @@ module Base
         ItemType                  = base:weapon,
         WeaponSprite              = SKSSpikerBayonet,
         Weight                    = 4.8,
+        
     }
     
     item AssaultRifleBayonet
