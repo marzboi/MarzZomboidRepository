@@ -24,27 +24,21 @@ SpentCasingPhysics.SurfaceType             = {
 }
 
 SpentCasingPhysics.FOOTSTEP_TO_SURFACE     = {
-    Asphalt    = SpentCasingPhysics.SurfaceType.Concrete,
-    Concrete   = SpentCasingPhysics.SurfaceType.Concrete,
-    Tile       = SpentCasingPhysics.SurfaceType.Concrete,
-    Linoleum   = SpentCasingPhysics.SurfaceType.Concrete,
+    Concrete = SpentCasingPhysics.SurfaceType.Concrete,
+    Brick    = SpentCasingPhysics.SurfaceType.Concrete,
 
-    Dirt       = SpentCasingPhysics.SurfaceType.Dirt,
-    Gravel     = SpentCasingPhysics.SurfaceType.Dirt,
-    Sand       = SpentCasingPhysics.SurfaceType.Dirt,
-    Carpet     = SpentCasingPhysics.SurfaceType.Dirt,
+    Dirt     = SpentCasingPhysics.SurfaceType.Dirt,
+    Gravel   = SpentCasingPhysics.SurfaceType.Dirt,
+    Sand     = SpentCasingPhysics.SurfaceType.Dirt,
+    Carpet   = SpentCasingPhysics.SurfaceType.Dirt,
 
-    Grass      = SpentCasingPhysics.SurfaceType.Grass,
-    Leaves     = SpentCasingPhysics.SurfaceType.Grass,
+    Grass    = SpentCasingPhysics.SurfaceType.Grass,
 
-    Puddle     = SpentCasingPhysics.SurfaceType.Puddles,
-    Water      = SpentCasingPhysics.SurfaceType.Puddles,
+    Water    = SpentCasingPhysics.SurfaceType.Puddles,
 
-    Snow       = SpentCasingPhysics.SurfaceType.Snow,
-    Ice        = SpentCasingPhysics.SurfaceType.Snow,
+    Snow     = SpentCasingPhysics.SurfaceType.Snow,
 
-    Wood       = SpentCasingPhysics.SurfaceType.Wood,
-    FloorBoard = SpentCasingPhysics.SurfaceType.Wood,
+    Wood     = SpentCasingPhysics.SurfaceType.Wood,
 }
 
 SpentCasingPhysics.CasingImpactSoundParams = {
@@ -71,10 +65,10 @@ function SpentCasingPhysics.isLowWall(wall)
     local props = wall.getProperties and wall:getProperties() or nil
     if not props then return false end
 
-    if props:Is(IsoFlagType.transparentW)
-        or props:Is(IsoFlagType.transparentN)
-        or props:Is(IsoFlagType.HoppableW)
-        or props:Is(IsoFlagType.HoppableN)
+    if props:has(IsoFlagType.transparentW)
+        or props:has(IsoFlagType.transparentN)
+        or props:has(IsoFlagType.HoppableW)
+        or props:has(IsoFlagType.HoppableN)
     then
         return true
     end
@@ -86,7 +80,7 @@ function SpentCasingPhysics.isWaterFloor(floor)
     local props = floor.getProperties and floor:getProperties() or nil
     if not props then return false end
 
-    if props:Is(IsoFlagType.water) then
+    if props:has(IsoFlagType.water) then
         return true
     end
     return false
@@ -98,8 +92,8 @@ function SpentCasingPhysics.isSoftFloor(floor)
     if not props then return false end
 
     if props then
-        local mat = props:Val("FootstepMaterial")
-        if mat == "Grass" then
+        local mat = props:get("FootstepMaterial")
+        if mat == "Grass" or mat == "Sand" then
             return true
         end
     end
@@ -161,7 +155,7 @@ function SpentCasingPhysics.getSurfaceTypeFromSquare(square)
         return SpentCasingPhysics.SurfaceType.Concrete
     end
 
-    local mat = props:Val("FootstepMaterial")
+    local mat = props:get("FootstepMaterial")
     local surface = SpentCasingPhysics.FOOTSTEP_TO_SURFACE[mat]
 
     return surface or SpentCasingPhysics.SurfaceType.Concrete
@@ -175,16 +169,10 @@ function SpentCasingPhysics.getCasingSoundFamily(casing)
     local weapon = casing.weapon
 
     if weapon and weapon.getAmmoType then
-        local ammoType = weapon:getAmmoType()
-        if ammoType and (ammoType == "Base.ShotgunShells"
-                or string.find(ammoType, "ShotgunShells", 1, true)) then
+        local ammoType = weapon:getAmmoType():getItemKey()
+        if ammoType and ammoType == "Base.ShotgunShells" then
             return "Shells"
         end
-    end
-
-    local ctype = casing.casingType or ""
-    if string.find(ctype, "ShotgunShells", 1, true) then
-        return "Shells"
     end
 
     return "Bullet"
@@ -265,7 +253,8 @@ function SpentCasingPhysics.update()
             removed = true
         else
             local prevZ = casing.z or 0
-            casing.velocityZ = casing.velocityZ - (SpentCasingPhysics.GRAVITY * SpentCasingPhysics.GRAVITY_SCALE * scale)
+            casing.velocityZ = casing.velocityZ -
+                (SpentCasingPhysics.GRAVITY * SpentCasingPhysics.GRAVITY_SCALE * scale)
 
             casing.x = casing.x + (casing.velocityX * SpentCasingPhysics.XY_STEP * scale)
             casing.y = casing.y + (casing.velocityY * SpentCasingPhysics.XY_STEP * scale)
