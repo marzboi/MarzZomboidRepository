@@ -43,18 +43,15 @@ recipe:Load(recipe:getName(), [[
             mappers[ammoTypes]
             flags[Prop2;AllowFavorite;InheritFavorite],
         }
-    }
-    ]]
-)
-recipe:Load(recipe:getName(), [[
-    {
     itemMapper ammoTypes
         {
             Base.762Bullets = Base.762Box,
             Base.22Bullets  = Base.22Box,
         }
     }
-    ]])
+    ]]
+)
+
 
 -- Add new ammotypes to open cartons of boxes scripts
 local recipe = getScriptManager():getCraftRecipe("OpenCartonOfBullets")
@@ -68,12 +65,7 @@ recipe:Load(recipe:getName(), [[
             mappers[ammoTypes]
             flags[AllowFavorite;InheritFavorite],
         }
-    }
-    ]]
-)
-recipe:Load(recipe:getName(), [[
-    {
-        itemMapper ammoTypes
+    itemMapper ammoTypes
         {
             Base.762Box           = Base.762Carton,
             Base.22Box            = Base.22Carton,
@@ -94,12 +86,7 @@ recipe:Load(recipe:getName(), [[
             mappers[ammoType]
             flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
-    }
-    ]]
-)
-recipe:Load(recipe:getName(), [[
-    {
-        itemMapper ammoType
+    itemMapper ammoType
         {
             Base.762Box           = Base.762Bullets,
             Base.22Box            = Base.22Bullets,
