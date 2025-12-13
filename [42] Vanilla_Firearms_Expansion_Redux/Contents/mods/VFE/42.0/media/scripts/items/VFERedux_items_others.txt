@@ -295,4 +295,13 @@ module Base
         ItemType        = base:normal,
         Weight          = 20,
     }
+    
+    item FakeItem
+    {
+        DisplayCategory = Junk,
+        DisplayName     = all guns,
+        Icon            = IntentionallyInvalid,
+        ItemType        = base:normal,
+        Weight          = 20,
+    }
 }
