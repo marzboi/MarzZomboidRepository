@@ -15,10 +15,17 @@ for i = 1, #recipesToRemove do
     local recipe = getScriptManager():getCraftRecipe(recipesToRemove[i])
     if recipe then
         recipe:getInputs():clear()
+        recipe:getOutputs():clear()
         recipe:Load(recipe:getName(), [[
         {
-            inputs {
+            inputs
+            {
                 item 1 [Base.FakeItem],
+            }
+            outputs
+            {
+                item 1 Base.FakeItem,
+            }
         }
         ]])
     end
