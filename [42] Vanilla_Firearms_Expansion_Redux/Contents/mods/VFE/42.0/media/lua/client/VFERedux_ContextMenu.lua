@@ -202,7 +202,7 @@ function VFEContext:Bayonet(item, index, player, context, enabled)
     local parts = item:getAllWeaponParts()
     local bayonetBlocked = nil
     for i = 1, parts:size() do
-        if parts:get(i - 1):hasTag("BlockBayonet") then
+        if parts:get(i - 1):hasTag(blockbayonet) then
             bayonetBlocked = parts:get(i - 1)
             break
         end

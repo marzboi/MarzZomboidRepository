@@ -65,7 +65,7 @@ function CVFEBayonet:fillMenu(menu, weapon, index)
 	self.index = index
 	local parts = weapon:getAllWeaponParts()
 	for i = 1, parts:size() do
-		if parts:get(i - 1):hasTag("BlockBayonet") then
+		if parts:get(i - 1):hasTag(blockbayonet) then
 			return
 		end
 	end

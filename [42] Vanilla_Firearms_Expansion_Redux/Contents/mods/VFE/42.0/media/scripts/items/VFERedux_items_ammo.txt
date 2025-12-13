@@ -25,6 +25,7 @@ module Base
         StaticModel        = RifleAmmoBox,
         Weight             = 1.3,
         WorldStaticModel   = 762Box,
+        Tags               = base:hasmetal;base:ignorezombiedensity,
     }
     
     item 762Pack
@@ -36,6 +37,7 @@ module Base
         MetalValue        = 160,
         Weight            = 3.0,
         WorldStaticModel  = 762Pack,
+        Tags              = base:hasmetal;base:ignorezombiedensity,
     }
     
     item 762Case
@@ -47,6 +49,7 @@ module Base
         MetalValue        = 640,
         Weight            = 11.4,
         WorldStaticModel  = 762Case,
+        Tags              = base:hasmetal;base:ignorezombiedensity,
     }
     
     item 762Crate
@@ -58,6 +61,7 @@ module Base
         Icon              = 762AmmoCrate,
         MetalValue        = 2560,
         WorldStaticModel  = 762Crate,
+        Tags              = base:hasmetal;base:ignorezombiedensity,
     }
     
     item 762Carton
@@ -71,7 +75,7 @@ module Base
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Military_Medium,
-        Tags               = HasMetal;IgnoreZombieDensity,
+        Tags               = base:hasmetal;base:ignorezombiedensity,
     }
     
     item 22Bullets
@@ -142,7 +146,7 @@ module Base
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Ammo_Medium,
-        Tags               = HasMetal;IgnoreZombieDensity,
+        Tags               = base:hasmetal;base:ignorezombiedensity,
     }
     
     item 308Pack
