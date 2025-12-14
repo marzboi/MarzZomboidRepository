@@ -247,7 +247,7 @@ function VFEContext:Bayonet(item, index, player, context, enabled)
             tooltip.texture = item:getTex()
         end
     else
-        blockedScript = getScriptManager():getItem(bayonetBlocked:getFullType())
+        local blockedScript = getScriptManager():getItem(bayonetBlocked:getFullType())
         tooltip:setName(getText("IGUI_ContextMenu_BayonetBlocked"))
         tooltip.texture = getTexture("media/textures/Item_" .. blockedScript:getIcon() .. ".png")
     end
