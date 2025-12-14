@@ -24,6 +24,7 @@ module Base
         Icon              = 46AmmoBox,
         MetalValue        = 40,
         WorldStaticModel  = 46Box,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 46Pack
@@ -36,6 +37,7 @@ module Base
         Icon              = 46AmmoPack,
         MetalValue        = 160,
         WorldStaticModel  = 46Pack,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 46Case
@@ -48,6 +50,7 @@ module Base
         Icon              = 46AmmoCase,
         MetalValue        = 640,
         WorldStaticModel  = 46Case,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 46Crate
@@ -60,6 +63,7 @@ module Base
         Icon              = 46AmmoCrate,
         MetalValue        = 1920,
         WorldStaticModel  = 46Crate,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 46Carton
@@ -74,7 +78,7 @@ module Base
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Ammo_Medium,
-        Tags               = HasMetal;IgnoreZombieDensity,
+        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 57Bullets
@@ -101,6 +105,7 @@ module Base
         Icon              = 57AmmoBox,
         MetalValue        = 40,
         WorldStaticModel  = 57Box,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 57Pack
@@ -113,6 +118,7 @@ module Base
         Icon              = 57AmmoPack,
         MetalValue        = 160,
         WorldStaticModel  = 57Pack,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 57Case
@@ -125,6 +131,7 @@ module Base
         Icon              = 57AmmoCase,
         MetalValue        = 640,
         WorldStaticModel  = 57Case,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 57Crate
@@ -137,6 +144,7 @@ module Base
         Icon              = 57AmmoCrate,
         MetalValue        = 1920,
         WorldStaticModel  = 57Crate,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 57Carton
@@ -151,6 +159,6 @@ module Base
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Ammo_Medium,
-        Tags               = HasMetal;IgnoreZombieDensity,
+        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
 }

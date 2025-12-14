@@ -39,6 +39,7 @@ module Base
         Weight            = 3.0,
         WorldStaticModel  = 762Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 762Case
@@ -51,6 +52,7 @@ module Base
         Weight            = 11.4,
         WorldStaticModel  = 762Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 762Crate
@@ -63,6 +65,7 @@ module Base
         MetalValue        = 2560,
         WorldStaticModel  = 762Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item 762Carton
@@ -77,6 +80,7 @@ module Base
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Military_Medium,
         Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe  = OpenCartonOfBullets,
     }
     
     item 22Bullets
@@ -115,6 +119,7 @@ module Base
         MetalValue        = 160,
         WorldStaticModel  = 22Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 22Case
@@ -127,6 +132,7 @@ module Base
         MetalValue        = 640,
         WorldStaticModel  = 22Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 22Crate
@@ -139,6 +145,7 @@ module Base
         MetalValue        = 2560,
         WorldStaticModel  = 22Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item 22Carton
@@ -153,6 +160,7 @@ module Base
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Ammo_Medium,
         Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe  = OpenCartonOfBullets,
     }
     
     item 308Box
@@ -171,6 +179,7 @@ module Base
         MetalValue        = 160,
         WorldStaticModel  = 308Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 308Case
@@ -183,6 +192,7 @@ module Base
         MetalValue        = 640,
         WorldStaticModel  = 308Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 308Crate
@@ -195,11 +205,13 @@ module Base
         MetalValue        = 2560,
         WorldStaticModel  = 308Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item 308Carton
     {
-        Tags = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCartonOfBullets,
     }
     
     item 556Box
@@ -217,6 +229,7 @@ module Base
         MetalValue        = 160,
         WorldStaticModel  = 556Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 556Case
@@ -229,6 +242,7 @@ module Base
         MetalValue        = 640,
         WorldStaticModel  = 556Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 556Crate
@@ -241,11 +255,13 @@ module Base
         MetalValue        = 2560,
         WorldStaticModel  = 556Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item 556Carton
     {
-        Tags = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCartonOfBullets,
     }
     
     item 223Box
@@ -263,6 +279,7 @@ module Base
         MetalValue        = 160,
         WorldStaticModel  = 223Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 223Case
@@ -275,6 +292,7 @@ module Base
         MetalValue        = 640,
         WorldStaticModel  = 223Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 223Crate
@@ -287,11 +305,13 @@ module Base
         MetalValue        = 2560,
         WorldStaticModel  = 223Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item 223Carton
     {
-        Tags = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCartonOfBullets,
     }
     
     item ShotgunShellsBox
@@ -310,6 +330,7 @@ module Base
         MetalValue        = 96,
         WorldStaticModel  = ShotgunShellPack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item ShotgunShellsCase
@@ -322,6 +343,7 @@ module Base
         MetalValue        = 384,
         WorldStaticModel  = ShotgunShellCase,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item ShotgunShellsCrate
@@ -334,11 +356,13 @@ module Base
         MetalValue        = 1536,
         WorldStaticModel  = ShotgunShellCrate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item ShotgunShellsCarton
     {
-        Tags = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCartonOfBullets,
     }
     
     item Bullets9mmBox
@@ -356,6 +380,7 @@ module Base
         MetalValue        = 120,
         WorldStaticModel  = 9mmPack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 9mmCase
@@ -368,6 +393,7 @@ module Base
         MetalValue        = 480,
         WorldStaticModel  = 9mmCase,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 9mmCrate
@@ -380,11 +406,13 @@ module Base
         MetalValue        = 1920,
         WorldStaticModel  = 9mmCrate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item Bullets9mmCarton
     {
-        Tags = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCartonOfBullets,
     }
     
     item Bullets38Box
@@ -402,6 +430,7 @@ module Base
         MetalValue        = 120,
         WorldStaticModel  = 38Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 38Case
@@ -414,6 +443,7 @@ module Base
         MetalValue        = 480,
         WorldStaticModel  = 38Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 38Crate
@@ -426,11 +456,13 @@ module Base
         MetalValue        = 1920,
         WorldStaticModel  = 38Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item Bullets38Carton
     {
-        Tags = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCartonOfBullets,
     }
     
     item Bullets44Box
@@ -449,6 +481,7 @@ module Base
         MetalValue        = 120,
         WorldStaticModel  = 44Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 44Case
@@ -461,6 +494,7 @@ module Base
         MetalValue        = 480,
         WorldStaticModel  = 44Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 44Crate
@@ -473,11 +507,13 @@ module Base
         MetalValue        = 1920,
         WorldStaticModel  = 44Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item Bullets44Carton
     {
-        Tags = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCartonOfBullets,
     }
     
     item Bullets45Box
@@ -495,6 +531,7 @@ module Base
         MetalValue        = 120,
         WorldStaticModel  = 45Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 45Case
@@ -507,6 +544,7 @@ module Base
         MetalValue        = 480,
         WorldStaticModel  = 45Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 45Crate
@@ -519,11 +557,13 @@ module Base
         MetalValue        = 1920,
         WorldStaticModel  = 45Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item Bullets45Carton
     {
-        Tags = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCartonOfBullets,
     }
     
     item 308BulletsLinked

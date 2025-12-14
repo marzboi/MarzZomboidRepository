@@ -24,6 +24,7 @@ module Base
         Icon              = 545AmmoBox,
         MetalValue        = 40,
         WorldStaticModel  = 545Box,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 545Crate
@@ -36,6 +37,7 @@ module Base
         Icon              = 545AmmoCrate,
         MetalValue        = 2560,
         WorldStaticModel  = 545Crate,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 545Case
@@ -48,6 +50,7 @@ module Base
         Icon              = 545AmmoCase,
         MetalValue        = 640,
         WorldStaticModel  = 545Case,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 545Pack
@@ -60,6 +63,7 @@ module Base
         Icon              = 545AmmoPack,
         MetalValue        = 160,
         WorldStaticModel  = 545Pack,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 545Carton
@@ -74,7 +78,7 @@ module Base
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Military_Medium,
-        Tags               = HasMetal;IgnoreZombieDensity,
+        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 939Bullets
@@ -101,6 +105,7 @@ module Base
         Icon              = 939AmmoBox,
         MetalValue        = 40,
         WorldStaticModel  = 939Box,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 939Crate
@@ -113,6 +118,7 @@ module Base
         Icon              = 939AmmoCrate,
         MetalValue        = 2560,
         WorldStaticModel  = 939Crate,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 939Case
@@ -125,6 +131,7 @@ module Base
         Icon              = 939AmmoCase,
         MetalValue        = 640,
         WorldStaticModel  = 939Case,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 939Pack
@@ -137,6 +144,7 @@ module Base
         Icon              = 939AmmoPack,
         MetalValue        = 160,
         WorldStaticModel  = 939Pack,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 939Carton
@@ -151,7 +159,7 @@ module Base
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Military_Medium,
-        Tags               = HasMetal;IgnoreZombieDensity,
+        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 76254Bullets
@@ -178,6 +186,7 @@ module Base
         Icon              = 76254AmmoBox,
         MetalValue        = 40,
         WorldStaticModel  = 76254Box,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 76254Crate
@@ -190,6 +199,7 @@ module Base
         Icon              = 76254AmmoCrate,
         MetalValue        = 2560,
         WorldStaticModel  = 76254Crate,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 76254Case
@@ -202,6 +212,7 @@ module Base
         Icon              = 76254AmmoCase,
         MetalValue        = 640,
         WorldStaticModel  = 76254Case,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 76254Pack
@@ -214,6 +225,7 @@ module Base
         Icon              = 76254AmmoPack,
         MetalValue        = 160,
         WorldStaticModel  = 76254Pack,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 76254Carton
@@ -228,6 +240,6 @@ module Base
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Military_Medium,
-        Tags               = HasMetal;IgnoreZombieDensity,
+        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
 }

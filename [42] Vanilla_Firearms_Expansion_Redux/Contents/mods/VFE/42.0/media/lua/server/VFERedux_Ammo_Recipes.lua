@@ -45,11 +45,11 @@ recipe:Load(recipe:getName(), [[
         }
     itemMapper ammoTypes
         {
-            Base.Bullets44  = Base.Bullets44Box,
+            Base.Bullets44 = Base.Bullets44Box,
             Base.308Bullets = Base.308Box,
             Base.ShotgunShells = Base.ShotgunShellsBox,
             Base.762Bullets = Base.762Box,
-            Base.22Bullets  = Base.22Box,
+            Base.22Bullets = Base.22Box,
         }
     }
     ]]
@@ -86,8 +86,8 @@ recipe:Load(recipe:getName(), [[
         }
     itemMapper ammoType
         {
-            Base.762Box           = Base.762Bullets,
-            Base.22Box            = Base.22Bullets,
+            Base.762Box = Base.762Bullets,
+            Base.22Box = Base.22Bullets,
         }
     }
     ]]
