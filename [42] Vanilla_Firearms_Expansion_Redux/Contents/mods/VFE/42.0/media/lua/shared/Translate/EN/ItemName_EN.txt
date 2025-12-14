@@ -100,6 +100,8 @@ ItemName_EN = {
     ItemName_Base.22Box = "Box of .22 Rounds",
     ItemName_Base.22Bullets = ".22 Round",
     
+    ItemName_Base.308BulletsLinked = ".308 Linked Round"
+    
     ItemName_Base.762Pack = "Pack of 7.62mm Boxes",
     ItemName_Base.308Pack = "Pack of .308 Boxes",
     ItemName_Base.556Pack = "Pack of 5.56mm Boxes",

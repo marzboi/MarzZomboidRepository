@@ -7,7 +7,9 @@ local recipesToRemove = {
     "PlaceBoxesOf45AutoBulletsInCarton",
     "PlaceBoxesOf38SpecialBulletsInCarton",
     "PlaceBoxesOf44MagnumBulletsInCarton",
-    "PlaceBoxesOfShotgunShellsInCarton"
+    "PlaceBoxesOfShotgunShellsInCarton",
+    "OpenBoxOfBullets20",
+    "OpenBoxOfShotgunShells"
 }
 
 -- Remove Individual Carton CraftRecipes
@@ -39,19 +41,19 @@ recipe:Load(recipe:getName(), [[
     {
     inputs
         {
-            item 1 [Base.Bullets9mmBox;Base.Bullets45Box;Base.Bullets38Box;Base.223Box;Base.556Box;Base.762Box;Base.22Box]
-            mappers[ammoTypes]
-            flags[Prop2;AllowFavorite;InheritFavorite],
+            item 1 tags[base:ammo] mappers[ammoTypes] flags[Prop2;AllowFavorite;InheritFavorite],
         }
     itemMapper ammoTypes
         {
+            Base.Bullets44  = Base.Bullets44Box,
+            Base.308Bullets = Base.308Box,
+            Base.ShotgunShells = Base.ShotgunShellsBox,
             Base.762Bullets = Base.762Box,
             Base.22Bullets  = Base.22Box,
         }
     }
     ]]
 )
-
 
 -- Add new ammotypes to open cartons of boxes scripts
 local recipe = getScriptManager():getCraftRecipe("OpenCartonOfBullets")
@@ -61,14 +63,12 @@ recipe:Load(recipe:getName(), [[
     {
     inputs
         {
-            item 1 [Base.Bullets9mmCarton;Base.Bullets45Carton;Base.Bullets38Carton;Base.Bullets44Carton;Base.223Carton;Base.308Carton;Base.ShotgunShellsCarton;Base.556Carton;Base.762Carton;Base.22Carton]
-            mappers[ammoTypes]
-            flags[AllowFavorite;InheritFavorite],
+            item 1 tags[base:ammo] mappers[ammoTypes] flags[AllowFavorite;InheritFavorite],
         }
     itemMapper ammoTypes
         {
-            Base.762Box           = Base.762Carton,
-            Base.22Box            = Base.22Carton,
+            Base.762Box = Base.762Carton,
+            Base.22Box = Base.22Carton,
         }
     }
     ]]
@@ -82,9 +82,7 @@ recipe:Load(recipe:getName(), [[
     {
     inputs
         {
-            item 20 [Base.Bullets44;Base.308Bullets;25:Base.ShotgunShells;50:Base.223Bullets;50:Base.556Bullets;50:Base.Bullets9mm;50:Base.Bullets45;50:Base.Bullets38;50:Base.762Bullets;50:Base.22Bullets]
-            mappers[ammoType]
-            flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 50 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
     itemMapper ammoType
         {

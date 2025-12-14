@@ -1,6 +1,7 @@
-ItemTag.register("vfe:m60_link")
-ItemTag.register("vfe:jamresistant")
-ItemTag.register("vfe:blockbayonet")
+VFETags = {}
+VFETags.m60_link = ItemTag.register("vfe:m60_link")
+VFETags.jamresistant = ItemTag.register("vfe:jamresistant")
+VFETags.blockbayonet = ItemTag.register("vfe:blockbayonet")
 
 AmmoType.register("vfe:bullets_762", "Base.762Bullets")
 AmmoType.register("vfe:bullets_22", "Base.Bullets22")

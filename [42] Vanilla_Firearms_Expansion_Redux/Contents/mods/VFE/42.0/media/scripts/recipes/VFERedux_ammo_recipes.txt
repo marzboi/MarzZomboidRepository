@@ -8,13 +8,13 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 [Base.762Pack;Base.22Pack;Base.308Pack;Base.556Pack;Base.223Pack;Base.ShotgunShellsPack;Base.9mmPack;Base.38Pack;Base.44Pack;Base.45Pack] mappers[boxTypes] flags[AllowFavorite;InheritFavorite],
+            item 1 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
         }
         outputs
         {
-            item 4 mapper:boxTypes,
+            item 4 mapper:ammoType,
         }
-        itemMapper boxTypes
+        itemMapper ammoType
         {
             Base.762Box           = Base.762Pack,
             Base.22Box            = Base.22Pack,
@@ -37,13 +37,13 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 4 [Base.762Box;Base.22Box;Base.308Box;Base.556Box;Base.223Box;Base.ShotgunShellsBox;Base.Bullets9mmBox;Base.Bullets38Box;Base.Bullets44Box;Base.Bullets45Box] mappers[packTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 4 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
-            item 1 mapper:packTypes,
+            item 1 mapper:ammoType,
         }
-        itemMapper packTypes
+        itemMapper ammoType
         {
             Base.762Pack                = Base.762Box,
             Base.22Pack                 = Base.22Box,
@@ -66,13 +66,13 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 [Base.762Case;Base.22Case;Base.308Case;Base.556Case;Base.223Case;Base.ShotgunShellsCase;Base.9mmCase;Base.38Case;Base.44Case;Base.45Case] mappers[packTypes] flags[AllowFavorite;InheritFavorite],
+            item 1 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
         }
         outputs
         {
-            item 4 mapper:packTypes,
+            item 4 mapper:ammoType,
         }
-        itemMapper packTypes
+        itemMapper ammoType
         {
             Base.762Pack           = Base.762Case,
             Base.22Pack            = Base.22Case,
@@ -95,13 +95,13 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 4 [Base.762Pack;Base.22Pack;Base.308Pack;Base.556Pack;Base.223Pack;Base.ShotgunShellsPack;Base.9mmPack;Base.38Pack;Base.44Pack;Base.45Pack] mappers[caseTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 4 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
-            item 1 mapper:caseTypes,
+            item 1 mapper:ammoType,
         }
-        itemMapper caseTypes
+        itemMapper ammoType
         {
             Base.762Case           = Base.762Pack,
             Base.22Case            = Base.22Pack,
@@ -124,13 +124,13 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 [Base.762Crate;Base.22Crate;Base.308Crate;Base.556Crate;Base.223Crate;Base.ShotgunShellsCrate;Base.9mmCrate;Base.38Crate;Base.44Crate;Base.45Crate] mappers[caseTypes] flags[AllowFavorite;InheritFavorite],
+            item 1 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
         }
         outputs
         {
-            item 4 mapper:caseTypes,
+            item 4 mapper:ammoType,
         }
-        itemMapper caseTypes
+        itemMapper ammoType
         {
             Base.762Case           = Base.762Crate,
             Base.22Case            = Base.22Crate,
@@ -153,13 +153,13 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 4 [Base.762Case;Base.22Case;Base.308Case;Base.556Case;Base.223Case;Base.ShotgunShellsCase;Base.9mmCase;Base.38Case;Base.44Case;Base.45Case] mappers[crateTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 4 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
-            item 1 mapper:crateTypes,
+            item 1 mapper:ammoType,
         }
-        itemMapper crateTypes
+        itemMapper ammoType
         {
             Base.762Crate           = Base.762Case,
             Base.22Crate            = Base.22Case,
@@ -182,13 +182,13 @@ module Base
         Tags        = InHandCraft,
         inputs
         {
-            item 12 [Base.Bullets9mmBox;Base.Bullets45Box;Base.Bullets38Box;Base.Bullets44Box;Base.223Box;Base.308Box;Base.ShotgunShellsBox;Base.556Box;Base.762Box;Base.22Box] mappers[cartonTypes] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 12 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
-            item 1 mapper:cartonTypes,
+            item 1 mapper:ammoType,
         }
-        itemMapper cartonTypes
+        itemMapper ammoType
         {
             Base.Bullets9mmCarton    = Base.Bullets9mmBox,
             Base.Bullets45Carton     = Base.Bullets45Box,
