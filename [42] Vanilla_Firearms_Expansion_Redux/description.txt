@@ -1,5 +1,8 @@
 [h1]Unofficial Port of VFE and Addons[/h1]
 
+[h1]Update for 42.13[/h1]
+[b]I have updated to 42.13, somethings feel experimental so mostly test it in SP. if you find a bug PLEASE REPORTED IT IN THE THREAD FOR IT, no not use comments[/b]
+
 [h1]VFE Post 93 weapons Out![/h1]
 Ported VFE93 weapons and added some new features missing from it. ammos will have packs, cases and crates. SD variants are more rare than nonSD, but suppressors have made it into the game. if you find one for the gun. this one can be attach or remove like a Bayonet.
 
