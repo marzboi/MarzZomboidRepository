@@ -1,70 +1,70 @@
 module PawLowRelooted
 {
-	model HolsterPLL_Ground
+    model HolsterPLL_Ground
     {
         mesh = WorldItems/Clothing/HolsterPLL,
         scale = 1
     }
-	model HolsterPLLF_Ground
+    model HolsterPLLF_Ground
     {
         mesh = WorldItems/Clothing/HolsterPLLF,
         scale = 1
     }
-	model M_RogueMask_Ground
+    model M_RogueMask_Ground
     {
         mesh = WorldItems/Clothing/M_RogueMask,
         scale = 1
     }
-	model Bob_TacBag_Ground
+    model Bob_TacBag_Ground
     {
         mesh = WorldItems/Clothing/Bob_TacBag,
         scale = 1
     }
-	model smallback_Ground
+    model smallback_Ground
     {
         mesh = WorldItems/Clothing/smallback,
         scale = 1
     }
-	model Bob_RogueWaistBag_Ground
-	{
-		mesh = Skinned\Clothes\Bob_RogueWaistBag,
-	}
-	model medbag_Ground
+    model Bob_RogueWaistBag_Ground
+    {
+        mesh = Skinned\Clothes\Bob_RogueWaistBag,
+    }
+    model medbag_Ground
     {
         mesh = WorldItems/Clothing/medbag,
         scale = 0.01
     }
-	model medbagM_Ground
+    model medbagM_Ground
     {
         mesh = WorldItems/Clothing/medbagM,
         scale = 0.01
     }
-	model Beltrig_Ground
+    model Beltrig_Ground
     {
         mesh = WorldItems/Clothing/Bob_TacBag,
         scale = 0.01
     }
-	model MVest_Ground
+    model MVest_Ground
     {
         mesh = WorldItems/Clothing/M_MVest,
         scale = 0.01
     }
-	model MVest2_Ground
+    model MVest2_Ground
     {
         mesh = WorldItems/Clothing/M_MVest2,
         scale = 0.01
     }
-	model strapchest_Ground
+    model strapchest_Ground
     {
-         mesh = Static\strapchestM,
-         scale = 0.01
+        mesh = Static\strapchestM,
+        scale = 0.01
     }
-	model GlassesPLL_Ground
+    model GlassesPLL_Ground
     {
         mesh = Static\clothes\glassesPLLM,
         scale = 0.01
     }
-	model GlassesPLLR_Ground
+    model GlassesPLLR_Ground
     {
         mesh = static\clothes\glassesPLLR,
         scale = 0.01
