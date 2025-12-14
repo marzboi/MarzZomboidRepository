@@ -37,15 +37,17 @@ end
 
 function AnimationWeaponAction.attachPart(player, weapon)
     if not weapon or not player then return end
-    local slide = weapon:getWeaponPart('Slide')
+    if weapon:getSubCategory() == "Firearm" then
+        local slide = weapon:getWeaponPart('Slide')
 
-    if slide then return end
+        if slide then return end
 
-    local weaponModel = ScriptManager.instance:getModelScript(weapon:getOriginalWeaponSprite())
-    for i = 0, weaponModel:getAttachmentCount() - 1 do
-        local partList = weaponModel:getAttachment(i)
-        if partList and partList:getId() == "slide" then
-            weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
+        local weaponModel = ScriptManager.instance:getModelScript(weapon:getOriginalWeaponSprite())
+        for i = 0, weaponModel:getAttachmentCount() - 1 do
+            local partList = weaponModel:getAttachment(i)
+            if partList and partList:getId() == "slide" then
+                weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
+            end
         end
     end
 end

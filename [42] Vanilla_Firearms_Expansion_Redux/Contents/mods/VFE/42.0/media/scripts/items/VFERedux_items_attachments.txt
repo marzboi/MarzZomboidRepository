@@ -3,7 +3,6 @@ module Base
     item x2Scope
     {
         ItemType         = base:weaponpart,
-        DisplayName      = x2 Scope,
         Icon             = x2Scope,
         Weight           = 0.3,
         WeightModifier   = 0.3,
@@ -19,7 +18,6 @@ module Base
     item x2Scope_Fake
     {
         ItemType         = base:weaponpart,
-        DisplayName      = x2 Scope,
         Icon             = x2Scope,
         Weight           = 0.3,
         WeightModifier   = 0.3,
@@ -35,7 +33,6 @@ module Base
     item x4Scope
     {
         ItemType         = base:weaponpart,
-        DisplayName      = x4 Scope,
         Icon             = x4Scope,
         Weight           = 0.4,
         WeightModifier   = 0.4,
@@ -51,7 +48,6 @@ module Base
     item x4Scope_Fake
     {
         ItemType         = base:weaponpart,
-        DisplayName      = x4 Scope,
         Icon             = x4Scope,
         Weight           = 0.4,
         WeightModifier   = 0.4,
@@ -67,7 +63,6 @@ module Base
     item x8Scope
     {
         ItemType         = base:weaponpart,
-        DisplayName      = x8 Scope,
         Icon             = x8Scope,
         Weight           = 0.8,
         WeightModifier   = 0.8,
@@ -83,7 +78,6 @@ module Base
     item x8Scope_Fake
     {
         ItemType         = base:weaponpart,
-        DisplayName      = x8 Scope,
         Icon             = x8Scope,
         Weight           = 0.8,
         WeightModifier   = 0.8,
@@ -99,7 +93,6 @@ module Base
     item Sling
     {
         ItemType         = base:weaponpart,
-        DisplayName      = Leather Sling,
         Icon             = GunSling,
         Weight           = 0.5,
         WeightModifier   = -1.0,
@@ -112,7 +105,6 @@ module Base
     item Sling2
     {
         ItemType         = base:weaponpart,
-        DisplayName      = Nylon Sling,
         Icon             = GunSling2,
         Weight           = 0.5,
         WeightModifier   = -1.0,
@@ -125,7 +117,6 @@ module Base
     item RecoilPad
     {
         ItemType            = base:weaponpart,
-        DisplayName         = Recoil Pad,
         Icon                = RifleRecoilPad,
         Weight              = 0.1,
         WeightModifier      = 0.1,
@@ -140,7 +131,6 @@ module Base
     item Bipod
     {
         ItemType            = base:weaponpart,
-        DisplayName         = Bipod,
         Icon                = bipod,
         Weight              = 0.3,
         WeightModifier      = 0.7,
@@ -158,7 +148,6 @@ module Base
     item RedDot
     {
         ItemType           = base:weaponpart,
-        DisplayName        = Red Dot,
         Icon               = RedDotVFE,
         Weight             = 0.2,
         WeightModifier     = 0.2,
@@ -175,7 +164,6 @@ module Base
     {
         DisplayCategory    = WeaponPart,
         ItemType           = base:weaponpart,
-        DisplayName        = Shotgun Shellholder,
         Icon               = shellholder,
         Weight             = 0.4,
         WeightModifier     = 0.4,
@@ -190,7 +178,6 @@ module Base
     item Laser
     {
         ItemType           = base:weaponpart,
-        DisplayName        = Laser,
         Icon               = HandgunLaser,
         Weight             = 0.2,
         WeightModifier     = 0.2,
@@ -206,7 +193,6 @@ module Base
     item LaserOn
     {
         ItemType           = base:weaponpart,
-        DisplayName        = Laser,
         Icon               = HandgunLaser,
         Weight             = 0.2,
         WeightModifier     = 0.2,
@@ -222,7 +208,6 @@ module Base
     item ChokeTubeFull
     {
         ItemType         = base:weaponpart,
-        DisplayName      = Choke Tube Full,
         Icon             = ShotgunChoke,
         Weight           = 0.1,
         WeightModifier   = 0.1,
