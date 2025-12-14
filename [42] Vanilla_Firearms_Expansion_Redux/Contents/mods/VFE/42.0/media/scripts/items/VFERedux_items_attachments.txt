@@ -224,7 +224,6 @@ module Base
     item ChokeTubeImproved
     {
         ItemType         = base:weaponpart,
-        DisplayName      = Choke Tube Improved,
         Icon             = ShotgunChoke,
         Weight           = 0.1,
         WeightModifier   = 0.1,
@@ -241,7 +240,6 @@ module Base
     item IronSight
     {
         ItemType           = base:weaponpart,
-        DisplayName        = Iron Sight,
         Icon               = ScopeIronSight,
         Weight             = 0.1,
         WeightModifier     = 0.0,
@@ -256,7 +254,6 @@ module Base
     item FiberglassStock
     {
         ItemType         = base:weaponpart,
-        DisplayName      = Fiberglass Stock,
         Icon             = RifleFibreglassStock,
         Weight           = 1,
         WeightModifier   = -0.4,
@@ -269,7 +266,6 @@ module Base
     item LightenedStock
     {
         ItemType         = base:weaponpart,
-        DisplayName      = Lightened Stock,
         Icon             = RifleLightenedStock,
         Weight           = 1,
         WeightModifier   = -0.4,
@@ -283,7 +279,6 @@ module Base
     {
         DisplayCategory    = WeaponPart,
         ItemType           = base:weaponpart,
-        DisplayName        = Bullet loops,
         Icon               = bulletloops,
         Weight             = 0.4,
         WeightModifier     = 0.4,
@@ -299,7 +294,6 @@ module Base
     {
         DisplayCategory    = WeaponPart,
         ItemType           = base:weaponpart,
-        DisplayName        = Shell loops,
         Icon               = shellloops,
         Weight             = 0.4,
         WeightModifier     = 0.4,
@@ -314,7 +308,6 @@ module Base
     item M60BrassCatcher
     {
         ItemType         = base:weaponpart,
-        DisplayName      = Brass Catcher,
         Icon             = M60_BrassCatcher,
         Weight           = 0.6,
         WeightModifier   = 0.6,
@@ -328,7 +321,6 @@ module Base
     item MagazineAttachment
     {
         ItemType         = base:weaponpart,
-        DisplayName      = Magazine,
         DisplayCategory  = WeaponPart,
         Icon             = m16clip,
         Weight           = 0.1,
@@ -343,7 +335,6 @@ module Base
     {
         DisplayCategory    = WeaponPart,
         ItemType           = base:weaponpart,
-        DisplayName        = Coupled 5.56 Magazines,
         Icon               = coupled556,
         Weight             = 0.5,
         WeightModifier     = 0.5,
@@ -359,7 +350,6 @@ module Base
     {
         DisplayCategory    = WeaponPart,
         ItemType           = base:weaponpart,
-        DisplayName        = Coupled 5.56 Magazines,
         Icon               = coupled556,
         Weight             = 0.5,
         WeightModifier     = 0.5,
@@ -375,7 +365,6 @@ module Base
     {
         DisplayCategory    = WeaponPart,
         ItemType           = base:weaponpart,
-        DisplayName        = Coupled 7.62 Magazines,
         Icon               = coupled762,
         Weight             = 0.5,
         WeightModifier     = 0.5,
@@ -391,7 +380,6 @@ module Base
     {
         DisplayCategory    = WeaponPart,
         ItemType           = base:weaponpart,
-        DisplayName        = Coupled 7.62 Magazines,
         Icon               = coupled762,
         Weight             = 0.5,
         WeightModifier     = 0.5,

@@ -2,7 +2,6 @@ module Base
 {
     item FireKlean
     {
-        DisplayName      = FireKlean gun lube,
         Icon             = fireklean,
         ItemType         = base:drainable,
         UseDelta         = 0.5,
@@ -13,7 +12,6 @@ module Base
     
     item CleaningKit
     {
-        DisplayName      = Gun cleaning kit,
         Icon             = cleaningkit,
         ItemType         = base:drainable,
         UseDelta         = 0.25,
@@ -26,7 +24,6 @@ module Base
     {
         AlwaysWelcomeGift = TRUE,
         DisplayCategory   = Ammo,
-        DisplayName       = 5.56 Battle Pack,
         Icon              = 556BattlePack,
         ItemType          = base:normal,
         MetalValue        = 130,
@@ -38,7 +35,6 @@ module Base
     {
         AmmoType         = vfe:bullets_762,
         CanStack         = FALSE,
-        DisplayName      = 7.62 Magazine,
         GunType          = AK47,
         Icon             = 762Clip,
         ItemType         = base:normal,
@@ -53,7 +49,6 @@ module Base
     {
         AmmoType         = base:bullets_223,
         CanStack         = FALSE,
-        DisplayName      = .223 Magazine,
         GunType          = Mini14,
         Icon             = 223Clip20,
         ItemType         = base:normal,
@@ -67,7 +62,6 @@ module Base
     {
         AmmoType         = vfe:bullets_22,
         CanStack         = FALSE,
-        DisplayName      = 1022 Magazine,
         GunType          = Base.1022,
         Icon             = 1022Clip,
         ItemType         = base:normal,
@@ -81,7 +75,6 @@ module Base
     {
         AmmoType         = vfe:bullets_22,
         CanStack         = FALSE,
-        DisplayName      = Mk2 Magazine,
         GunType          = Base.MK2,
         Icon             = MK2Clip,
         ItemType         = base:normal,
@@ -95,7 +88,6 @@ module Base
     {
         AmmoType         = base:bullets_308,
         CanStack         = FALSE,
-        DisplayName      = .308 Magazine,
         GunType          = Base.HuntingRifle,
         Icon             = BerettaClip,
         ItemType         = base:normal,
@@ -109,7 +101,6 @@ module Base
     {
         AmmoType         = base:bullets_45,
         CanStack         = FALSE,
-        DisplayName      = MK23 Magazine,
         GunType          = MK23,
         Icon             = mk23clip,
         ItemType         = base:normal,
@@ -122,7 +113,6 @@ module Base
     {
         AmmoType         = base:bullets_45,
         CanStack         = FALSE,
-        DisplayName      = MAC-10 Magazine,
         GunType          = Base.MAC10Unfolded,
         Icon             = MAC10mag,
         ItemType         = base:normal,
@@ -136,7 +126,6 @@ module Base
     {
         AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
-        DisplayName      = Uzi Magazine,
         GunType          = Base.UziUnfolded,
         Icon             = Uzimag,
         ItemType         = base:normal,
@@ -150,7 +139,6 @@ module Base
     {
         AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
-        DisplayName      = TEC-9 Magazine,
         GunType          = Base.Tec9,
         Icon             = tec9mag,
         ItemType         = base:normal,
@@ -164,7 +152,6 @@ module Base
     {
         AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
-        DisplayName      = P229 Magazine,
         GunType          = Base.P229,
         Icon             = p229clip,
         ItemType         = base:normal,
@@ -178,7 +165,6 @@ module Base
     {
         AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
-        DisplayName      = CZ 75 Magazine,
         GunType          = Base.CZ75,
         Icon             = cz75clip,
         ItemType         = base:normal,
@@ -192,7 +178,6 @@ module Base
     {
         AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
-        DisplayName      = G17 Magazine,
         GunType          = Base.Glock,
         Icon             = GlockClip,
         ItemType         = base:normal,
@@ -206,7 +191,6 @@ module Base
     {
         AmmoType         = base:bullets_9mm,
         CanStack         = FALSE,
-        DisplayName      = MP5 Magazine,
         GunType          = Base.MP5,
         Icon             = mp5mag,
         ItemType         = base:normal,
@@ -221,7 +205,6 @@ module Base
         AmmoType         = base:bullets_308,
         CanStack         = FALSE,
         DisplayCategory  = Ammo,
-        DisplayName      = FAL Magazine,
         GunType          = Base.FAL,
         Icon             = FALClip,
         ItemType         = base:normal,
@@ -235,7 +218,6 @@ module Base
     {
         AmmoType         = vfe:bullets_308_linked,
         CanStack         = FALSE,
-        DisplayName      = M60 Belt,
         GunType          = Base.M60MMG,
         Icon             = M60_Belt,
         ItemType         = base:normal,
@@ -248,7 +230,6 @@ module Base
     item M60_Link
     {
         DisplayCategory  = Ammo,
-        DisplayName      = M13 Ammunition Link,
         Icon             = M60_Link,
         ItemType         = base:normal,
         Weight           = 0.01,
@@ -259,7 +240,6 @@ module Base
     {
         AlwaysWelcomeGift = TRUE,
         DisplayCategory   = Ammo,
-        DisplayName       = Box of M13 Ammunition Links,
         Icon              = M60_Links_Box,
         ItemType          = base:normal,
         MetalValue        = 40,
@@ -270,7 +250,6 @@ module Base
     item M60_Link_Die
     {
         DisplayCategory  = Ammo,
-        DisplayName      = M13 Link Die,
         Icon             = M60_LinkDie,
         ItemType         = base:normal,
         MetalValue       = 150,
@@ -281,7 +260,6 @@ module Base
     item FakeItemSling
     {
         DisplayCategory = Junk,
-        DisplayName     = all long guns,
         Icon            = IntentionallyInvalid,
         ItemType        = base:normal,
         Weight          = 20,
@@ -290,7 +268,6 @@ module Base
     item FakeItemSights
     {
         DisplayCategory = Junk,
-        DisplayName     = all guns,
         Icon            = IntentionallyInvalid,
         ItemType        = base:normal,
         Weight          = 20,
@@ -299,7 +276,6 @@ module Base
     item FakeItem
     {
         DisplayCategory = Junk,
-        DisplayName     = all guns,
         Icon            = IntentionallyInvalid,
         ItemType        = base:normal,
         Weight          = 20,

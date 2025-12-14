@@ -20,7 +20,6 @@ module Base
         CriticalChance               = 60,
         CyclicRateMultiplier         = 0.6,
         DisplayCategory              = Weapon,
-        DisplayName                  = AA12 Shotgun,
         DoorDamage                   = 20,
         DropSound                    = M14Drop,
         EjectAmmoSound               = JS2000ShotgunEjectAmmo,

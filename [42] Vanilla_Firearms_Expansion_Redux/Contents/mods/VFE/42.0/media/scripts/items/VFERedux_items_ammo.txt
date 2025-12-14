@@ -17,201 +17,201 @@ module Base
     {
         AlwaysWelcomeGift  = true,
         DisplayCategory    = Ammo,
+        DoubleClickRecipe  = OpenBoxOfBullets50,
         Icon               = 762AmmoBox,
         ItemType           = base:normal,
         MetalValue         = 40,
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         StaticModel        = RifleAmmoBox,
+        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
         Weight             = 1.3,
         WorldStaticModel   = 762Box,
-        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        DoubleClickRecipe  = OpenBoxOfBullets50,
     }
     
     item 762Pack
     {
         AlwaysWelcomeGift = true,
         DisplayCategory   = Ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
         Icon              = 762AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 160,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         Weight            = 3.0,
         WorldStaticModel  = 762Pack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 762Case
     {
         AlwaysWelcomeGift = true,
         DisplayCategory   = Ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
         Icon              = 762AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 640,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         Weight            = 11.4,
         WorldStaticModel  = 762Case,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 762Crate
     {
-        Weight            = 40.0,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
         DisplayCategory   = Ammo,
-        Icon              = 762AmmoCrate,
-        MetalValue        = 2560,
-        WorldStaticModel  = 762Crate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = 762AmmoCrate,
+        ItemType          = base:normal,
+        MetalValue        = 2560,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 40.0,
+        WorldStaticModel  = 762Crate,
     }
     
     item 762Carton
     {
-        DisplayCategory    = Ammo,
-        ItemType           = base:normal,
-        Weight             = 6.0,
-        Icon               = Parcel_Medium_Military,
         AlwaysWelcomeGift  = true,
+        DisplayCategory    = Ammo,
+        DoubleClickRecipe  = OpenCartonOfBullets,
+        Icon               = Parcel_Medium_Military,
+        ItemType           = base:normal,
         MetalValue         = 400.0,
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
-        WorldStaticModel   = Parcel_Military_Medium,
         Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        DoubleClickRecipe  = OpenCartonOfBullets,
+        Weight             = 6.0,
+        WorldStaticModel   = Parcel_Military_Medium,
     }
     
     item 22Bullets
     {
-        Count             = 10,
-        Weight            = 0.005,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
+        Count             = 10,
         DisplayCategory   = Ammo,
         Icon              = 22bullets,
+        ItemType          = base:normal,
         MetalValue        = 1,
-        WorldStaticModel  = Bullets22lr,
         Tags              = base:ammo,
+        Weight            = 0.005,
+        WorldStaticModel  = Bullets22lr,
     }
     
     item 22Box
     {
-        Weight            = 0.4,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
         DisplayCategory   = Ammo,
-        Icon              = 22AmmoBox,
-        MetalValue        = 40,
-        WorldStaticModel  = BoxOfRounds22LR,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenBoxOfBullets50,
+        Icon              = 22AmmoBox,
+        ItemType          = base:normal,
+        MetalValue        = 40,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 0.4,
+        WorldStaticModel  = BoxOfRounds22LR,
     }
     
     item 22Pack
     {
-        DisplayCategory   = Ammo,
-        Weight            = 1.5,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 22AmmoPack,
-        MetalValue        = 160,
-        WorldStaticModel  = 22Pack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenPackOfAmmo,
+        Icon              = 22AmmoPack,
+        ItemType          = base:normal,
+        MetalValue        = 160,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 1.5,
+        WorldStaticModel  = 22Pack,
     }
     
     item 22Case
     {
-        DisplayCategory   = Ammo,
-        Weight            = 5.7,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 22AmmoCase,
-        MetalValue        = 640,
-        WorldStaticModel  = 22Case,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCaseOfAmmo,
+        Icon              = 22AmmoCase,
+        ItemType          = base:normal,
+        MetalValue        = 640,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 5.7,
+        WorldStaticModel  = 22Case,
     }
     
     item 22Crate
     {
-        DisplayCategory   = Ammo,
-        Weight            = 21.7,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 22AmmoCrate,
-        MetalValue        = 2560,
-        WorldStaticModel  = 22Crate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = 22AmmoCrate,
+        ItemType          = base:normal,
+        MetalValue        = 2560,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 21.7,
+        WorldStaticModel  = 22Crate,
     }
     
     item 22Carton
     {
-        DisplayCategory    = Ammo,
-        ItemType           = base:normal,
-        Weight             = 6.0,
-        Icon               = Parcel_Medium_Ammo,
         AlwaysWelcomeGift  = true,
+        DisplayCategory    = Ammo,
+        DoubleClickRecipe  = OpenCartonOfBullets,
+        Icon               = Parcel_Medium_Ammo,
+        ItemType           = base:normal,
         MetalValue         = 400.0,
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
-        WorldStaticModel   = Parcel_Ammo_Medium,
         Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        DoubleClickRecipe  = OpenCartonOfBullets,
+        Weight             = 6.0,
+        WorldStaticModel   = Parcel_Ammo_Medium,
     }
     
     item 308Box
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenBoxOfBullets50,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 308Pack
     {
-        DisplayCategory   = Ammo,
-        Weight            = 3.8,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 308AmmoPack,
-        MetalValue        = 160,
-        WorldStaticModel  = 308Pack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenPackOfAmmo,
+        Icon              = 308AmmoPack,
+        ItemType          = base:normal,
+        MetalValue        = 160,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 3.8,
+        WorldStaticModel  = 308Pack,
     }
     
     item 308Case
     {
-        DisplayCategory   = Ammo,
-        Weight            = 14.4,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 308AmmoCase,
-        MetalValue        = 640,
-        WorldStaticModel  = 308Case,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCaseOfAmmo,
+        Icon              = 308AmmoCase,
+        ItemType          = base:normal,
+        MetalValue        = 640,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 14.4,
+        WorldStaticModel  = 308Case,
     }
     
     item 308Crate
     {
-        DisplayCategory   = Ammo,
-        Weight            = 40.0,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 308AmmoCrate,
-        MetalValue        = 2560,
-        WorldStaticModel  = 308Crate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = 308AmmoCrate,
+        ItemType          = base:normal,
+        MetalValue        = 2560,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 40.0,
+        WorldStaticModel  = 308Crate,
     }
     
     item 308Carton
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCartonOfBullets,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 556Box
@@ -221,47 +221,47 @@ module Base
     
     item 556Pack
     {
-        DisplayCategory   = Ammo,
-        Weight            = 3.8,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 556AmmoPack,
-        MetalValue        = 160,
-        WorldStaticModel  = 556Pack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenPackOfAmmo,
+        Icon              = 556AmmoPack,
+        ItemType          = base:normal,
+        MetalValue        = 160,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 3.8,
+        WorldStaticModel  = 556Pack,
     }
     
     item 556Case
     {
-        DisplayCategory   = Ammo,
-        Weight            = 14.4,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 556AmmoCase,
-        MetalValue        = 640,
-        WorldStaticModel  = 556Case,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCaseOfAmmo,
+        Icon              = 556AmmoCase,
+        ItemType          = base:normal,
+        MetalValue        = 640,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 14.4,
+        WorldStaticModel  = 556Case,
     }
     
     item 556Crate
     {
-        DisplayCategory   = Ammo,
-        Weight            = 40.0,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 556AmmoCrate,
-        MetalValue        = 2560,
-        WorldStaticModel  = 556Crate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = 556AmmoCrate,
+        ItemType          = base:normal,
+        MetalValue        = 2560,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 40.0,
+        WorldStaticModel  = 556Crate,
     }
     
     item 556Carton
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCartonOfBullets,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 223Box
@@ -271,98 +271,98 @@ module Base
     
     item 223Pack
     {
-        DisplayCategory   = Ammo,
-        Weight            = 2.3,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 223AmmoPack,
-        MetalValue        = 160,
-        WorldStaticModel  = 223Pack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenPackOfAmmo,
+        Icon              = 223AmmoPack,
+        ItemType          = base:normal,
+        MetalValue        = 160,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 2.3,
+        WorldStaticModel  = 223Pack,
     }
     
     item 223Case
     {
-        DisplayCategory   = Ammo,
-        Weight            = 8.7,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 223AmmoCase,
-        MetalValue        = 640,
-        WorldStaticModel  = 223Case,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCaseOfAmmo,
+        Icon              = 223AmmoCase,
+        ItemType          = base:normal,
+        MetalValue        = 640,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 8.7,
+        WorldStaticModel  = 223Case,
     }
     
     item 223Crate
     {
-        DisplayCategory   = Ammo,
-        Weight            = 33.0,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 223AmmoCrate,
-        MetalValue        = 2560,
-        WorldStaticModel  = 223Crate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = 223AmmoCrate,
+        ItemType          = base:normal,
+        MetalValue        = 2560,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 33.0,
+        WorldStaticModel  = 223Crate,
     }
     
     item 223Carton
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCartonOfBullets,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item ShotgunShellsBox
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenBoxOfBullets50,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item ShotgunShellsPack
     {
-        DisplayCategory   = Ammo,
-        Weight            = 3.4,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = ShotgunShellsPack,
-        MetalValue        = 96,
-        WorldStaticModel  = ShotgunShellPack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenPackOfAmmo,
+        Icon              = ShotgunShellsPack,
+        ItemType          = base:normal,
+        MetalValue        = 96,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 3.4,
+        WorldStaticModel  = ShotgunShellPack,
     }
     
     item ShotgunShellsCase
     {
-        DisplayCategory   = Ammo,
-        Weight            = 13.0,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = ShotgunShellsCase,
-        MetalValue        = 384,
-        WorldStaticModel  = ShotgunShellCase,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCaseOfAmmo,
+        Icon              = ShotgunShellsCase,
+        ItemType          = base:normal,
+        MetalValue        = 384,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 13.0,
+        WorldStaticModel  = ShotgunShellCase,
     }
     
     item ShotgunShellsCrate
     {
-        DisplayCategory   = Ammo,
-        Weight            = 40.0,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = ShotgunShellsCrate,
-        MetalValue        = 1536,
-        WorldStaticModel  = ShotgunShellCrate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = ShotgunShellsCrate,
+        ItemType          = base:normal,
+        MetalValue        = 1536,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 40.0,
+        WorldStaticModel  = ShotgunShellCrate,
     }
     
     item ShotgunShellsCarton
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCartonOfBullets,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item Bullets9mmBox
@@ -372,47 +372,47 @@ module Base
     
     item 9mmPack
     {
-        Weight            = 0.8,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
         DisplayCategory   = Ammo,
-        Icon              = 9AmmoPack,
-        MetalValue        = 120,
-        WorldStaticModel  = 9mmPack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenPackOfAmmo,
+        Icon              = 9AmmoPack,
+        ItemType          = base:normal,
+        MetalValue        = 120,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 0.8,
+        WorldStaticModel  = 9mmPack,
     }
     
     item 9mmCase
     {
-        Weight            = 3.0,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
         DisplayCategory   = Ammo,
-        Icon              = 9AmmoCase,
-        MetalValue        = 480,
-        WorldStaticModel  = 9mmCase,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCaseOfAmmo,
+        Icon              = 9AmmoCase,
+        ItemType          = base:normal,
+        MetalValue        = 480,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 3.0,
+        WorldStaticModel  = 9mmCase,
     }
     
     item 9mmCrate
     {
-        Weight            = 11.4,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
         DisplayCategory   = Ammo,
-        Icon              = 9AmmoCrate,
-        MetalValue        = 1920,
-        WorldStaticModel  = 9mmCrate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = 9AmmoCrate,
+        ItemType          = base:normal,
+        MetalValue        = 1920,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 11.4,
+        WorldStaticModel  = 9mmCrate,
     }
     
     item Bullets9mmCarton
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCartonOfBullets,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item Bullets38Box
@@ -422,98 +422,98 @@ module Base
     
     item 38Pack
     {
-        DisplayCategory   = Ammo,
-        Weight            = 1.3,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 38AmmoPack,
-        MetalValue        = 120,
-        WorldStaticModel  = 38Pack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenPackOfAmmo,
+        Icon              = 38AmmoPack,
+        ItemType          = base:normal,
+        MetalValue        = 120,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 1.3,
+        WorldStaticModel  = 38Pack,
     }
     
     item 38Case
     {
-        DisplayCategory   = Ammo,
-        Weight            = 4.9,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 38AmmoCase,
-        MetalValue        = 480,
-        WorldStaticModel  = 38Case,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCaseOfAmmo,
+        Icon              = 38AmmoCase,
+        ItemType          = base:normal,
+        MetalValue        = 480,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 4.9,
+        WorldStaticModel  = 38Case,
     }
     
     item 38Crate
     {
-        DisplayCategory   = Ammo,
-        Weight            = 18.6,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 38AmmoCrate,
-        MetalValue        = 1920,
-        WorldStaticModel  = 38Crate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = 38AmmoCrate,
+        ItemType          = base:normal,
+        MetalValue        = 1920,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 18.6,
+        WorldStaticModel  = 38Crate,
     }
     
     item Bullets38Carton
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCartonOfBullets,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item Bullets44Box
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenBoxOfBullets50,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 44Pack
     {
-        DisplayCategory   = Ammo,
-        Weight            = 2.3,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 44AmmoPack,
-        MetalValue        = 120,
-        WorldStaticModel  = 44Pack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenPackOfAmmo,
+        Icon              = 44AmmoPack,
+        ItemType          = base:normal,
+        MetalValue        = 120,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 2.3,
+        WorldStaticModel  = 44Pack,
     }
     
     item 44Case
     {
-        DisplayCategory   = Ammo,
-        Weight            = 8.7,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 44AmmoCase,
-        MetalValue        = 480,
-        WorldStaticModel  = 44Case,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCaseOfAmmo,
+        Icon              = 44AmmoCase,
+        ItemType          = base:normal,
+        MetalValue        = 480,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 8.7,
+        WorldStaticModel  = 44Case,
     }
     
     item 44Crate
     {
-        DisplayCategory   = Ammo,
-        Weight            = 33.0,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 44AmmoCrate,
-        MetalValue        = 1920,
-        WorldStaticModel  = 44Crate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = 44AmmoCrate,
+        ItemType          = base:normal,
+        MetalValue        = 1920,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 33.0,
+        WorldStaticModel  = 44Crate,
     }
     
     item Bullets44Carton
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCartonOfBullets,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item Bullets45Box
@@ -523,47 +523,47 @@ module Base
     
     item 45Pack
     {
-        DisplayCategory   = Ammo,
-        Weight            = 1.9,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 45AmmoPack,
-        MetalValue        = 120,
-        WorldStaticModel  = 45Pack,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenPackOfAmmo,
+        Icon              = 45AmmoPack,
+        ItemType          = base:normal,
+        MetalValue        = 120,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 1.9,
+        WorldStaticModel  = 45Pack,
     }
     
     item 45Case
     {
-        DisplayCategory   = Ammo,
-        Weight            = 7.2,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 45AmmoCase,
-        MetalValue        = 480,
-        WorldStaticModel  = 45Case,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCaseOfAmmo,
+        Icon              = 45AmmoCase,
+        ItemType          = base:normal,
+        MetalValue        = 480,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 7.2,
+        WorldStaticModel  = 45Case,
     }
     
     item 45Crate
     {
-        DisplayCategory   = Ammo,
-        Weight            = 27.4,
         AlwaysWelcomeGift = true,
-        ItemType          = base:normal,
-        Icon              = 45AmmoCrate,
-        MetalValue        = 1920,
-        WorldStaticModel  = 45Crate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DisplayCategory   = Ammo,
         DoubleClickRecipe = OpenCrateOfAmmo,
+        Icon              = 45AmmoCrate,
+        ItemType          = base:normal,
+        MetalValue        = 1920,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 27.4,
+        WorldStaticModel  = 45Crate,
     }
     
     item Bullets45Carton
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         DoubleClickRecipe = OpenCartonOfBullets,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
     }
     
     item 308BulletsLinked
@@ -574,8 +574,8 @@ module Base
         Icon              = 308Bullets_Linked,
         ItemType          = base:normal,
         MetalValue        = 1,
+        Tags              = base:ammo,
         Weight            = 0.04,
         WorldStaticModel  = 308BulletsLinked,
-        Tags              = base:ammo,
     }
 }

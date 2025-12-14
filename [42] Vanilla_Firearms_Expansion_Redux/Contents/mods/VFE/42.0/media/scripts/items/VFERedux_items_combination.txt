@@ -33,6 +33,7 @@ module Base
         InsertAmmoStopSound          = DoubleBarrelShotgunInsertAmmoStop,
         IsAimedFirearm               = true,
         IsAimedHandWeapon            = true,
+        ItemType                     = base:weapon,
         JamGunChance                 = 0,
         KnockBackOnNoDeath           = true,
         KnockdownMod                 = 8,
@@ -51,6 +52,7 @@ module Base
         ModelWeaponPart              = Sling2 Sling2_M2400 sling sling,
         MultipleHitConditionAffected = false,
         MuzzleFlashModelKey          = muzzle_flash_shotgun,
+        needtobeclosedoncereload     = true,
         ProjectileCount              = 5,
         PushBackMod                  = 0.8,
         RackAfterShoot               = false,
@@ -73,13 +75,11 @@ module Base
         SwingTime                    = 2,
         Tags                         = base:hasmetal;base:firearm,
         TwoHandWeapon                = true,
-        ItemType                     = base:weapon,
         UnequipSound                 = DoubleBarrelShotgunUnEquip,
         UseEndurance                 = false,
         WeaponReloadType             = doublebarrelshotgunv2,
         WeaponSprite                 = M2400_Shotgun,
         Weight                       = 4,
-        needtobeclosedoncereload     = true,
     }
     
     item M2400_Rifle
@@ -117,6 +117,7 @@ module Base
         InsertAmmoStopSound          = DoubleBarrelShotgunInsertAmmoStop,
         IsAimedFirearm               = true,
         IsAimedHandWeapon            = true,
+        ItemType                     = base:weapon,
         JamGunChance                 = 0,
         KnockBackOnNoDeath           = true,
         KnockdownMod                 = 1,
@@ -135,6 +136,7 @@ module Base
         ModelWeaponPart              = Sling2 Sling2_M2400 sling sling,
         MultipleHitConditionAffected = false,
         MuzzleFlashModelKey          = muzzle_flash_shotgun,
+        needtobeclosedoncereload     = true,
         PiercingBullets              = true,
         ProjectileCount              = 5,
         PushBackMod                  = 0.8,
@@ -158,12 +160,10 @@ module Base
         SwingTime                    = 2,
         Tags                         = base:hasmetal;base:firearm,
         TwoHandWeapon                = true,
-        ItemType                     = base:weapon,
         UnequipSound                 = DoubleBarrelShotgunUnEquip,
         UseEndurance                 = false,
         WeaponReloadType             = doublebarrelshotgunv2,
         WeaponSprite                 = M2400_Rifle,
         Weight                       = 4,
-        needtobeclosedoncereload     = true,
     }
 }
