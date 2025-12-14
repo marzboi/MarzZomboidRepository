@@ -4,7 +4,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        Type             = Normal,k
+        ItemType         = base:normal,
         DisplayName      = 762x51mm Casing,
         DisplayCategory  = Casings,
         Icon             = 308_Casing,
@@ -16,7 +16,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = 762x39mm Casing,
         DisplayCategory  = Casings,
         Icon             = 762_Casing,
@@ -28,7 +28,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = 9mm Casing,
         DisplayCategory  = Casings,
         Icon             = 9mm_Casing,
@@ -40,7 +40,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = 30-06 Casing,
         DisplayCategory  = Casings,
         Icon             = 308_Casing,
@@ -52,7 +52,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = 10mm Casing,
         DisplayCategory  = Casings,
         Icon             = 45_Casing,
@@ -64,7 +64,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = .44-40 WCF Casing,
         DisplayCategory  = Casings,
         Icon             = 44_Casing,
@@ -76,7 +76,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        Type             = Normal,
+        ItemType         = base:normal,
         DisplayName      = .357 WCF Casing,
         DisplayCategory  = Casings,
         Icon             = 44_Casing,

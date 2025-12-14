@@ -54,7 +54,7 @@ if SpentCasingPhysics then
         if not casing or not casing.player then return end
         if not casing.repeatCasingSound then return end
 
-        if casing.casingType == "Base.M60_Link" then
+        if casing.casingType == "Base.M1Bloc" then
             casing.player:getEmitter():playSound("M1PingDrop")
             casing.repeatCasingSound = false
         end
@@ -88,7 +88,7 @@ if SpentCasingPhysics then
         if params.manualEjection then return end
 
         if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-            if weapon:hasTag("M60_Link") then
+            if weapon:hasTag(VFETags.m60_link) then
                 local brassCatcher = weapon:getWeaponPart('RecoilPad')
                 if brassCatcher then
                     player:getInventory():AddItem("Base.308Bullets_Casing")
