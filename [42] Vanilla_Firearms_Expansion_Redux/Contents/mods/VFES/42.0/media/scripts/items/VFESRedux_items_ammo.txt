@@ -25,6 +25,7 @@ module Base
         MetalValue        = 40,
         WorldStaticModel  = 545Box,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenBoxOfBullets50,
     }
     
     item 545Crate
@@ -38,6 +39,7 @@ module Base
         MetalValue        = 2560,
         WorldStaticModel  = 545Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item 545Case
@@ -51,6 +53,7 @@ module Base
         MetalValue        = 640,
         WorldStaticModel  = 545Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 545Pack
@@ -64,6 +67,7 @@ module Base
         MetalValue        = 160,
         WorldStaticModel  = 545Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 545Carton
@@ -79,6 +83,7 @@ module Base
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Military_Medium,
         Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe  = OpenCartonOfBullets,
     }
     
     item 939Bullets
@@ -106,32 +111,7 @@ module Base
         MetalValue        = 40,
         WorldStaticModel  = 939Box,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
-    }
-    
-    item 939Crate
-    {
-        Weight            = 40.0,
-        AlwaysWelcomeGift = TRUE,
-        ItemType          = base:normal,
-        DisplayName       = Crate of 9x39mm Boxes,
-        DisplayCategory   = Ammo,
-        Icon              = 939AmmoCrate,
-        MetalValue        = 2560,
-        WorldStaticModel  = 939Crate,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
-    }
-    
-    item 939Case
-    {
-        Weight            = 11.4,
-        AlwaysWelcomeGift = TRUE,
-        ItemType          = base:normal,
-        DisplayName       = Case of 9x39mm Boxes,
-        DisplayCategory   = Ammo,
-        Icon              = 939AmmoCase,
-        MetalValue        = 640,
-        WorldStaticModel  = 939Case,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenBoxOfBullets50,
     }
     
     item 939Pack
@@ -145,6 +125,35 @@ module Base
         MetalValue        = 160,
         WorldStaticModel  = 939Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
+    }
+    
+    item 939Crate
+    {
+        Weight            = 40.0,
+        AlwaysWelcomeGift = TRUE,
+        ItemType          = base:normal,
+        DisplayName       = Crate of 9x39mm Boxes,
+        DisplayCategory   = Ammo,
+        Icon              = 939AmmoCrate,
+        MetalValue        = 2560,
+        WorldStaticModel  = 939Crate,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
+    }
+    
+    item 939Case
+    {
+        Weight            = 11.4,
+        AlwaysWelcomeGift = TRUE,
+        ItemType          = base:normal,
+        DisplayName       = Case of 9x39mm Boxes,
+        DisplayCategory   = Ammo,
+        Icon              = 939AmmoCase,
+        MetalValue        = 640,
+        WorldStaticModel  = 939Case,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 939Carton
@@ -160,6 +169,7 @@ module Base
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Military_Medium,
         Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe  = OpenCartonOfBullets,
     }
     
     item 76254Bullets
@@ -187,6 +197,7 @@ module Base
         MetalValue        = 40,
         WorldStaticModel  = 76254Box,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenBoxOfBullets50,
     }
     
     item 76254Crate
@@ -200,6 +211,7 @@ module Base
         MetalValue        = 2560,
         WorldStaticModel  = 76254Crate,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCrateOfAmmo,
     }
     
     item 76254Case
@@ -213,6 +225,7 @@ module Base
         MetalValue        = 640,
         WorldStaticModel  = 76254Case,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenCaseOfAmmo,
     }
     
     item 76254Pack
@@ -226,6 +239,7 @@ module Base
         MetalValue        = 160,
         WorldStaticModel  = 76254Pack,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe = OpenPackOfAmmo,
     }
     
     item 76254Carton
@@ -241,5 +255,6 @@ module Base
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         WorldStaticModel   = Parcel_Military_Medium,
         Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        DoubleClickRecipe  = OpenCartonOfBullets,
     }
 }
