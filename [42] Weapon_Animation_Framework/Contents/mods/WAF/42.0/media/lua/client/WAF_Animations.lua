@@ -67,16 +67,15 @@ function AnimationWeaponAction.onTick()
     end
 end
 
-function AnimationWeaponAction.rackStart(player, weapon)
+function AnimationWeaponAction.rackAction(player, weapon, starting)
     if not weapon or not player then return end
-    weapon:attachWeaponPart(instanceItem("SlideAttachment_Fired"), true)
-    player:resetEquippedHandsModels()
-end
-
-function AnimationWeaponAction.rackEnd(player, weapon)
-    if not weapon or not player then return end
-    weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
-    player:resetEquippedHandsModels()
+    if starting then
+        weapon:attachWeaponPart(instanceItem("SlideAttachment_Fired"), true)
+        player:resetEquippedHandsModels()
+    else
+        weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
+        player:resetEquippedHandsModels()
+    end
 end
 
 Events.OnEquipPrimary.Add(AnimationWeaponAction.attachPart)
