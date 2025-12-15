@@ -1,0 +1,277 @@
+local vfesParams = {
+
+    ["Base.HK416"] = {
+        casing        = "Base.556Bullets_Casing",
+        ammo          = "Base.556Bullets",
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.80,
+        sideSpread    = 60,
+        heightSpread  = 30,
+        ejectAngle    = 65,
+    },
+
+    ["Base.Galil"] = {
+        casing        = "Base.556Bullets_Casing",
+        ammo          = "Base.556Bullets",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.90,
+        sideSpread    = 60,
+        heightSpread  = 60,
+        ejectAngle    = 45,
+    },
+
+    ["Base.AK104"] = {
+        casing        = "Base.762Bullets_Casing",
+        ammo          = "Base.762Bullets",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.85,
+        sideSpread    = 60,
+        heightSpread  = 90,
+        ejectAngle    = 65,
+    },
+
+    ["Base.AK74"] = {
+        casing        = "Base.545Bullets_Casing",
+        ammo          = "Base.545Bullets",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.85,
+        sideSpread    = 60,
+        heightSpread  = 90,
+        ejectAngle    = 65,
+    },
+
+    ["Base.AKS74U"] = {
+        casing        = "Base.545Bullets_Casing",
+        ammo          = "Base.545Bullets",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.85,
+        sideSpread    = 60,
+        heightSpread  = 90,
+        ejectAngle    = 65,
+    },
+
+    ["Base.AK105"] = {
+        casing        = "Base.545Bullets_Casing",
+        ammo          = "Base.545Bullets",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.85,
+        sideSpread    = 60,
+        heightSpread  = 90,
+        ejectAngle    = 65,
+    },
+
+    ["Base.Saiga12"] = {
+        casing        = "Base.ShotgunShells_Casing",
+        ammo          = "Base.ShotgunShells",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.70,
+        sideSpread    = 10,
+        heightSpread  = 10,
+        ejectAngle    = 45,
+    },
+
+    ["Base.MP153"] = {
+        casing        = "Base.ShotgunShells_Casing",
+        ammo          = "Base.ShotgunShells",
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.30,
+        sideSpread    = 10,
+        heightSpread  = 10,
+        ejectAngle    = 65,
+    },
+
+    ["Base.MP153sawn"] = {
+        casing        = "Base.ShotgunShells_Casing",
+        ammo          = "Base.ShotgunShells",
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.30,
+        sideSpread    = 10,
+        heightSpread  = 10,
+        ejectAngle    = 65,
+    },
+
+    ["Base.Mosin"] = {
+        casing        = "Base.76254Bullets_Casing",
+        ammo          = "Base.76254Bullets",
+        forwardOffset = 0.25,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.65,
+        sideSpread    = 30,
+        ejectAngle    = 45,
+        heightSpread  = { 70, 100 },
+    },
+
+    ["Base.SVD"] = {
+        casing        = "Base.76254Bullets_Casing",
+        ammo          = "Base.76254Bullets",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.90,
+        sideSpread    = 30,
+        heightSpread  = 60,
+        ejectAngle    = 35,
+    },
+
+    ["Base.SV98"] = {
+        casing        = "Base.76254Bullets_Casing",
+        ammo          = "Base.76254Bullets",
+        forwardOffset = 0.25,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.65,
+        sideSpread    = 30,
+        ejectAngle    = 45,
+        heightSpread  = { 70, 100 },
+    },
+
+    ["Base.VSS"] = {
+        casing        = "Base.939Bullets_Casing",
+        ammo          = "Base.939Bullets",
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.90,
+        sideSpread    = 30,
+        heightSpread  = 60,
+        ejectAngle    = 45,
+    },
+
+    ["Base.SVT40"] = {
+        casing        = "Base.76254Bullets_Casing",
+        ammo          = "Base.76254Bullets",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.60,
+        sideSpread    = 30,
+        heightSpread  = { 90, 110 },
+        ejectAngle    = 10,
+    },
+
+    ["Base.UMP45"] = {
+        casing        = "Base.Bullets45_Casing",
+        ammo          = "Base.Bullets45",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.60,
+        sideSpread    = 30,
+        heightSpread  = 10,
+    },
+
+    ["Base.Vityaz"] = {
+        casing        = "Base.Bullets9mm_Casing",
+        ammo          = "Base.Bullets9mm",
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.60,
+        sideSpread    = 30,
+        heightSpread  = 60,
+    },
+
+    ["Base.Bizon"] = {
+        casing        = "Base.Bullets9mm_Casing",
+        ammo          = "Base.Bullets9mm",
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.60,
+        sideSpread    = 30,
+        heightSpread  = 60,
+    },
+
+    ["Base.PPSH"] = {
+        casing        = "Base.Bullets9mm_Casing",
+        ammo          = "Base.Bullets9mm",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.10,
+        sideSpread    = 60,
+        heightSpread  = { 60, 80 },
+        ejectAngle    = 0,
+    },
+
+    ["Base.Makarov"] = {
+        casing        = "Base.Bullets9mm_Casing",
+        ammo          = "Base.Bullets9mm",
+        forwardOffset = 0.40,
+        sideOffset    = 0.0,
+        heightOffset  = 0.50,
+        shellForce    = 0.60,
+        sideSpread    = 30,
+        heightSpread  = 60,
+    },
+
+    ["Base.USP45"] = {
+        casing        = "Base.Bullets45_Casing",
+        ammo          = "Base.Bullets45",
+        forwardOffset = 0.40,
+        sideOffset    = 0.0,
+        heightOffset  = 0.50,
+        shellForce    = 0.60,
+        sideSpread    = 50,
+        heightSpread  = 45,
+    },
+
+    ["Base.M249"] = {
+        casing        = "Base.556Bullets_Casing",
+        ammo          = "Base.556Bullets",
+        forwardOffset = 0.35,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 1.20,
+        sideSpread    = 60,
+        heightSpread  = 30,
+    },
+
+    ["Base.PKM"] = {
+        casing        = "Base.76254Bullets_Casing",
+        ammo          = "Base.76254Bullets",
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.10,
+        sideSpread    = 60,
+        heightSpread  = { 0, 1 },
+        ejectAngle    = 340,
+        verticalForce = -0.2,
+    },
+}
+
+if SpentCasingPhysics then
+    for weapon, data in pairs(vfesParams) do
+        SpentCasingPhysics.registerWeapon(
+            weapon,
+            data.forwardOffset,
+            data.sideOffset,
+            data.heightOffset,
+            data.shellForce,
+            data.sideSpread,
+            data.heightSpread,
+            data.ejectAngle,
+            data.verticalForce
+        )
+    end
+end

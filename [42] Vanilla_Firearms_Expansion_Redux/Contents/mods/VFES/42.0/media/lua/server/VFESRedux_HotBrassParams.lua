@@ -10,6 +10,7 @@ local vfesParams = {
         sideSpread     = 60,
         heightSpread   = 30,
         ejectAngle     = 65,
+        manualEjection = false
     },
 
     ["Base.Galil"] = {
@@ -22,6 +23,7 @@ local vfesParams = {
         sideSpread     = 60,
         heightSpread   = 60,
         ejectAngle     = 45,
+        manualEjection = false
     },
 
     ["Base.AK104"] = {
@@ -34,6 +36,7 @@ local vfesParams = {
         sideSpread     = 60,
         heightSpread   = 90,
         ejectAngle     = 65,
+        manualEjection = false
     },
 
     ["Base.AK74"] = {
@@ -46,6 +49,7 @@ local vfesParams = {
         sideSpread     = 60,
         heightSpread   = 90,
         ejectAngle     = 65,
+        manualEjection = false
     },
 
     ["Base.AKS74U"] = {
@@ -58,6 +62,7 @@ local vfesParams = {
         sideSpread     = 60,
         heightSpread   = 90,
         ejectAngle     = 65,
+        manualEjection = false
     },
 
     ["Base.AK105"] = {
@@ -70,6 +75,7 @@ local vfesParams = {
         sideSpread     = 60,
         heightSpread   = 90,
         ejectAngle     = 65,
+        manualEjection = false
     },
 
     ["Base.Saiga12"] = {
@@ -82,6 +88,7 @@ local vfesParams = {
         sideSpread     = 10,
         heightSpread   = 10,
         ejectAngle     = 45,
+        manualEjection = false
     },
 
     ["Base.MP153"] = {
@@ -94,6 +101,7 @@ local vfesParams = {
         sideSpread     = 10,
         heightSpread   = 10,
         ejectAngle     = 65,
+        manualEjection = false
     },
 
     ["Base.MP153sawn"] = {
@@ -106,6 +114,7 @@ local vfesParams = {
         sideSpread     = 10,
         heightSpread   = 10,
         ejectAngle     = 65,
+        manualEjection = false
     },
 
     ["Base.Mosin"] = {
@@ -118,6 +127,7 @@ local vfesParams = {
         sideSpread     = 30,
         ejectAngle     = 45,
         heightSpread   = { 70, 100 },
+        manualEjection = true
     },
 
     ["Base.SVD"] = {
@@ -130,6 +140,7 @@ local vfesParams = {
         sideSpread     = 30,
         heightSpread   = 60,
         ejectAngle     = 35,
+        manualEjection = false
     },
 
     ["Base.SV98"] = {
@@ -142,6 +153,7 @@ local vfesParams = {
         sideSpread     = 30,
         ejectAngle     = 45,
         heightSpread   = { 70, 100 },
+        manualEjection = true
     },
 
     ["Base.VSS"] = {
@@ -154,6 +166,7 @@ local vfesParams = {
         sideSpread     = 30,
         heightSpread   = 60,
         ejectAngle     = 45,
+        manualEjection = false
     },
 
     ["Base.SVT40"] = {
@@ -166,6 +179,7 @@ local vfesParams = {
         sideSpread     = 30,
         heightSpread   = { 90, 110 },
         ejectAngle     = 10,
+        manualEjection = false
     },
 
     ["Base.UMP45"] = {
@@ -177,6 +191,7 @@ local vfesParams = {
         shellForce     = 0.60,
         sideSpread     = 30,
         heightSpread   = 10,
+        manualEjection = false
     },
 
     ["Base.Vityaz"] = {
@@ -188,6 +203,7 @@ local vfesParams = {
         shellForce     = 0.60,
         sideSpread     = 30,
         heightSpread   = 60,
+        manualEjection = false
     },
 
     ["Base.Bizon"] = {
@@ -199,6 +215,7 @@ local vfesParams = {
         shellForce     = 0.60,
         sideSpread     = 30,
         heightSpread   = 60,
+        manualEjection = false
     },
 
     ["Base.PPSH"] = {
@@ -211,6 +228,7 @@ local vfesParams = {
         sideSpread     = 60,
         heightSpread   = { 60, 80 },
         ejectAngle     = 0,
+        manualEjection = false
     },
 
     ["Base.Makarov"] = {
@@ -222,6 +240,7 @@ local vfesParams = {
         shellForce     = 0.60,
         sideSpread     = 30,
         heightSpread   = 60,
+        manualEjection = false
     },
 
     ["Base.USP45"] = {
@@ -233,6 +252,7 @@ local vfesParams = {
         shellForce     = 0.60,
         sideSpread     = 50,
         heightSpread   = 45,
+        manualEjection = false
     },
 
     ["Base.M249"] = {
@@ -244,6 +264,7 @@ local vfesParams = {
         shellForce     = 1.20,
         sideSpread     = 60,
         heightSpread   = 30,
+        manualEjection = false
     },
 
     ["Base.PKM"] = {
@@ -257,6 +278,7 @@ local vfesParams = {
         heightSpread   = { 0, 1 },
         ejectAngle     = 340,
         verticalForce  = -0.2,
+        manualEjection = false
     },
 }
 
@@ -270,6 +292,7 @@ if SpentCasingPhysics then
             data.sideOffset,
             data.heightOffset,
             data.shellForce,
+            data.manualEjection,
             data.sideSpread,
             data.heightSpread,
             data.ejectAngle,

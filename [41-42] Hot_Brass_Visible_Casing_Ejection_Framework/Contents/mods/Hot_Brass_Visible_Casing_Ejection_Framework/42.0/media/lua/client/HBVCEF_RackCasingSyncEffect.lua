@@ -1,5 +1,3 @@
----Decided to leave this file for anyone that wants to use this approach for scheduleRacking spawns with ticks rather than animsets
-
 SpentCasingAnimSync = {}
 SpentCasingAnimSync.pending = {}
 SpentCasingAnimSync.BASELINE_TICKS_PER_SECOND = 60

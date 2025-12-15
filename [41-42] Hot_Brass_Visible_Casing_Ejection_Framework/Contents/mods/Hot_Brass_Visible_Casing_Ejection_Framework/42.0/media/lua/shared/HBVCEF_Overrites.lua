@@ -2,13 +2,8 @@ require 'TimedActions/ISReloadWeaponAction'
 require 'TimedActions/ISRackFirearm'
 
 ------- Racking ---------------
-local ISRackFirearm_removeBullets = ISRackFirearm.removeBullet
 function ISRackFirearm:removeBullet()
-    if self.gun:isManuallyRemoveSpentRounds() then
-        ISRackFirearm_removeBullets(self)
-    else
-        self.emptyRack = false
-    end
+    SpentCasingAnimSync.scheduleRack(self.character, self.gun, true)
 end
 
 function ISRackFirearm:ejectSpentRounds()
@@ -20,36 +15,11 @@ function ISRackFirearm:ejectSpentRounds()
         syncHandWeaponFields(self.character, self.gun)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        self.ejectingSpentRound = true
-        self.racking = false
+        SpentCasingAnimSync.scheduleRack(self.character, self.gun, false)
         syncHandWeaponFields(self.character, self.gun)
     else
         return
     end
-end
-
-local ISRackFirearm_animEvent = ISRackFirearm.animEvent
-function ISRackFirearm:animEvent(event, parameter)
-    if self.ejectingSpentRound then
-        if event == 'ejectCasing' then
-            SpentCasingPhysics.rackCasing(self.character, self.gun, false)
-        end
-    end
-    if self.racking and not self.emptyRack then
-        if event == 'ejectCasing' then
-            SpentCasingPhysics.rackCasing(self.character, self.gun, true)
-        end
-    end
-    return ISRackFirearm_animEvent(self, event, parameter)
-end
-
-local old_new = ISRackFirearm.new
-function ISRackFirearm:new(character, gun)
-    local o = old_new(self, character, gun)
-    o.ejectingSpentRound = false
-    o.racking = true
-    o.emptyRack = true
-    return o
 end
 
 ------- Reloading -------------
@@ -62,7 +32,7 @@ function ISReloadWeaponAction:ejectSpentRounds()
         syncHandWeaponFields(self.character, self.gun)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+        SpentCasingAnimSync.scheduleRack(self.character, self.gun, false)
         syncHandWeaponFields(self.character, self.gun)
     else
         return
@@ -71,19 +41,20 @@ end
 
 ------- OnShoot -------------
 Events.OnWeaponSwingHitPoint.Remove(ISReloadWeaponAction.onShoot)
+
 ISReloadWeaponAction.onShoot = function(player, weapon)
     if not weapon:isRanged() then return; end
 
     if MoodlesUI.getInstance() then
-        MoodlesUI.getInstance():wiggle(MoodleType.PANIC);
-        MoodlesUI.getInstance():wiggle(MoodleType.STRESS);
-        MoodlesUI.getInstance():wiggle(MoodleType.DRUNK);
-        MoodlesUI.getInstance():wiggle(MoodleType.TIRED);
-        MoodlesUI.getInstance():wiggle(MoodleType.ENDURANCE);
+        MoodlesUI.getInstance():wiggle(MoodleType.Panic);
+        MoodlesUI.getInstance():wiggle(MoodleType.Stress);
+        MoodlesUI.getInstance():wiggle(MoodleType.Drunk);
+        MoodlesUI.getInstance():wiggle(MoodleType.Tired);
+        MoodlesUI.getInstance():wiggle(MoodleType.Endurance);
         local body = player:getBodyDamage():getBodyParts()
         for x = BodyPartType.ToIndex(BodyPartType.Hand_L), BodyPartType.ToIndex(BodyPartType.UpperArm_R), 1 do
             if body:get(x):getPain() then
-                MoodlesUI.getInstance():wiggle(MoodleType.PAIN);
+                MoodlesUI.getInstance():wiggle(MoodleType.Pain);
                 break
             end
         end
@@ -97,6 +68,7 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
         weapon:setRoundChambered(false);
         weapon:setSpentRoundChambered(true)
     end
+
     if not weapon:isRackAfterShoot() then
         if not weapon:isManuallyRemoveSpentRounds() then
             -- TODO: check for extraction jam

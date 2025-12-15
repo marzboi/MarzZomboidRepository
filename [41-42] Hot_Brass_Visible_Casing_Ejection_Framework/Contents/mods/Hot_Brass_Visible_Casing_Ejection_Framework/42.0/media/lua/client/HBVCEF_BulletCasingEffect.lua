@@ -24,21 +24,27 @@ SpentCasingPhysics.SurfaceType             = {
 }
 
 SpentCasingPhysics.FOOTSTEP_TO_SURFACE     = {
-    Concrete = SpentCasingPhysics.SurfaceType.Concrete,
-    Brick    = SpentCasingPhysics.SurfaceType.Concrete,
+    Asphalt    = SpentCasingPhysics.SurfaceType.Concrete,
+    Concrete   = SpentCasingPhysics.SurfaceType.Concrete,
+    Tile       = SpentCasingPhysics.SurfaceType.Concrete,
+    Linoleum   = SpentCasingPhysics.SurfaceType.Concrete,
 
-    Dirt     = SpentCasingPhysics.SurfaceType.Dirt,
-    Gravel   = SpentCasingPhysics.SurfaceType.Dirt,
-    Sand     = SpentCasingPhysics.SurfaceType.Dirt,
-    Carpet   = SpentCasingPhysics.SurfaceType.Dirt,
+    Dirt       = SpentCasingPhysics.SurfaceType.Dirt,
+    Gravel     = SpentCasingPhysics.SurfaceType.Dirt,
+    Sand       = SpentCasingPhysics.SurfaceType.Dirt,
+    Carpet     = SpentCasingPhysics.SurfaceType.Dirt,
 
-    Grass    = SpentCasingPhysics.SurfaceType.Grass,
+    Grass      = SpentCasingPhysics.SurfaceType.Grass,
+    Leaves     = SpentCasingPhysics.SurfaceType.Grass,
 
-    Water    = SpentCasingPhysics.SurfaceType.Puddles,
+    Puddle     = SpentCasingPhysics.SurfaceType.Puddles,
+    Water      = SpentCasingPhysics.SurfaceType.Puddles,
 
-    Snow     = SpentCasingPhysics.SurfaceType.Snow,
+    Snow       = SpentCasingPhysics.SurfaceType.Snow,
+    Ice        = SpentCasingPhysics.SurfaceType.Snow,
 
-    Wood     = SpentCasingPhysics.SurfaceType.Wood,
+    Wood       = SpentCasingPhysics.SurfaceType.Wood,
+    FloorBoard = SpentCasingPhysics.SurfaceType.Wood,
 }
 
 SpentCasingPhysics.CasingImpactSoundParams = {
@@ -65,10 +71,10 @@ function SpentCasingPhysics.isLowWall(wall)
     local props = wall.getProperties and wall:getProperties() or nil
     if not props then return false end
 
-    if props:has(IsoFlagType.transparentW)
-        or props:has(IsoFlagType.transparentN)
-        or props:has(IsoFlagType.HoppableW)
-        or props:has(IsoFlagType.HoppableN)
+    if props:Is(IsoFlagType.transparentW)
+        or props:Is(IsoFlagType.transparentN)
+        or props:Is(IsoFlagType.HoppableW)
+        or props:Is(IsoFlagType.HoppableN)
     then
         return true
     end
@@ -80,7 +86,7 @@ function SpentCasingPhysics.isWaterFloor(floor)
     local props = floor.getProperties and floor:getProperties() or nil
     if not props then return false end
 
-    if props:has(IsoFlagType.water) then
+    if props:Is(IsoFlagType.water) then
         return true
     end
     return false
@@ -88,23 +94,15 @@ end
 
 function SpentCasingPhysics.isSoftFloor(floor)
     if not floor then return false end
-
-    local sq = floor.getSquare and floor:getSquare() or nil
-    if sq then
-        local cell = getCell()
-        if cell and cell:gridSquareIsSnow(sq:getX(), sq:getY(), sq:getZ()) then
-            return true
-        end
-    end
-
     local props = floor.getProperties and floor:getProperties() or nil
     if not props then return false end
 
-    local mat = props:get("FootstepMaterial")
-    if mat == "Grass" or mat == "Sand" or mat == "Snow" then
-        return true
+    if props then
+        local mat = props:Val("FootstepMaterial")
+        if mat == "Grass" then
+            return true
+        end
     end
-
     return false
 end
 
@@ -158,17 +156,12 @@ function SpentCasingPhysics.getSurfaceTypeFromSquare(square)
         return SpentCasingPhysics.SurfaceType.Puddles
     end
 
-    local cell = getCell()
-    if cell and cell.gridSquareIsSnow and cell:gridSquareIsSnow(square:getX(), square:getY(), square:getZ()) then
-        return SpentCasingPhysics.SurfaceType.Snow
-    end
-
     local props = floor.getProperties and floor:getProperties() or nil
     if not props then
         return SpentCasingPhysics.SurfaceType.Concrete
     end
 
-    local mat = props:get("FootstepMaterial")
+    local mat = props:Val("FootstepMaterial")
     local surface = SpentCasingPhysics.FOOTSTEP_TO_SURFACE[mat]
 
     return surface or SpentCasingPhysics.SurfaceType.Concrete
@@ -182,10 +175,16 @@ function SpentCasingPhysics.getCasingSoundFamily(casing)
     local weapon = casing.weapon
 
     if weapon and weapon.getAmmoType then
-        local ammoType = weapon:getAmmoType():getItemKey()
-        if ammoType and ammoType == "Base.ShotgunShells" then
+        local ammoType = weapon:getAmmoType()
+        if ammoType and (ammoType == "Base.ShotgunShells"
+                or string.find(ammoType, "ShotgunShells", 1, true)) then
             return "Shells"
         end
+    end
+
+    local ctype = casing.casingType or ""
+    if string.find(ctype, "ShotgunShells", 1, true) then
+        return "Shells"
     end
 
     return "Bullet"
@@ -266,8 +265,7 @@ function SpentCasingPhysics.update()
             removed = true
         else
             local prevZ = casing.z or 0
-            casing.velocityZ = casing.velocityZ -
-                (SpentCasingPhysics.GRAVITY * SpentCasingPhysics.GRAVITY_SCALE * scale)
+            casing.velocityZ = casing.velocityZ - (SpentCasingPhysics.GRAVITY * SpentCasingPhysics.GRAVITY_SCALE * scale)
 
             casing.x = casing.x + (casing.velocityX * SpentCasingPhysics.XY_STEP * scale)
             casing.y = casing.y + (casing.velocityY * SpentCasingPhysics.XY_STEP * scale)
@@ -530,13 +528,12 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     local heightSpread  = params.heightSpread or 10
     local ejectAngle    = params.ejectAngle
     local verticalForce = params.verticalForce or 0
-    local ammoType      = tostring(weapon:getAmmoType():getItemKey())
 
-    local itemToEject   = ammoType .. "_Casing"
+    local ammoToEject   = params.casing
     if racking then
-        itemToEject = ammoType
+        ammoToEject = params.ammo
     end
-    if not itemToEject then return end
+    if not ammoToEject then return end
 
     local px, py, pz = player:getX(), player:getY(), player:getZ()
 
@@ -597,7 +594,7 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
         player,
         weapon,
         targetSquare,
-        itemToEject,
+        ammoToEject,
         startX,
         startY,
         startZ,
@@ -610,9 +607,11 @@ end
 function SpentCasingPhysics.spawnCasing(player, weapon)
     if not player or player:isDead() then return end
     if not weapon then return end
-    if weapon:isRackAfterShoot() or weapon:isManuallyRemoveSpentRounds() then return end
 
     local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
+    if not params then return end
+
+    if params.manualEjection then return end
 
     if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
         SpentCasingPhysics.doSpawnCasing(player, weapon, params)
@@ -624,6 +623,7 @@ function SpentCasingPhysics.rackCasing(player, weapon, racking)
     if not weapon then return end
 
     local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
+    if not params then return end
 
     if racking then
         SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)

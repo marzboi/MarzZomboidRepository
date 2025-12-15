@@ -4,7 +4,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        ItemType         = base:normal,
+        Type             = Normal,
         DisplayName      = 9mm Casing,
         DisplayCategory  = Casings,
         Icon             = 9mm_Casing,
@@ -16,7 +16,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.015,
-        ItemType         = base:normal,
+        Type             = Normal,
         DisplayName      = .45 Auto Casing,
         DisplayCategory  = Casings,
         Icon             = 45_Casing,
@@ -28,7 +28,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.015,
-        ItemType         = base:normal,
+        Type             = Normal,
         DisplayName      = .44 Magnum Casing,
         DisplayCategory  = Casings,
         Icon             = 44_Casing,
@@ -40,7 +40,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.01,
-        ItemType         = base:normal,
+        Type             = Normal,
         DisplayName      = .38 Special Casing,
         DisplayCategory  = Casings,
         Icon             = 38_Casing,
@@ -52,7 +52,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.015,
-        ItemType         = base:normal,
+        Type             = Normal,
         DisplayName      = .308 Casing,
         DisplayCategory  = Casings,
         Icon             = 308_Casing,
@@ -64,7 +64,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.015,
-        ItemType         = base:normal,
+        Type             = Normal,
         DisplayName      = .223 Casing,
         DisplayCategory  = Casings,
         Icon             = 223_Casing,
@@ -76,7 +76,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.02,
-        ItemType         = base:normal,
+        Type             = Normal,
         DisplayName      = 5.56mm Casing,
         DisplayCategory  = Casings,
         Icon             = 556_Casing,
@@ -88,7 +88,7 @@ module Base
     {
         CanStack         = true,
         Weight           = 0.05,
-        ItemType         = base:normal,
+        Type             = Normal,
         DisplayName      = Empty Shotgun Shell,
         DisplayCategory  = Casings,
         Icon             = Shotgun_Casing,
