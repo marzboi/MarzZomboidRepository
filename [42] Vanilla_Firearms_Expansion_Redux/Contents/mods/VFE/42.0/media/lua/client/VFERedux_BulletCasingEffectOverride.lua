@@ -40,7 +40,7 @@ if SpentCasingPhysics then
             velocityZ = velocityZ or 0.1,
             active = true,
             currentWorldItem = nil,
-            floorBounces = SpentCasingPhysics.RANDOM:random(1, 2),
+            floorBounces = SpentCasingPhysics.RANDOM:random(0, 2),
             hasHitFloor = false,
             repeatCasingSound = true,
         }
@@ -81,13 +81,14 @@ if SpentCasingPhysics then
     function SpentCasingPhysics.spawnCasing(player, weapon)
         if not player or player:isDead() then return end
         if not weapon then return end
-        if weapon:isRackAfterShoot() or weapon:isManuallyRemoveSpentRounds() then return end
 
         local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
         if not params then return end
 
+        if params.manualEjection then return end
+
         if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-            if weapon:hasTag(VFETags.m60_link) then
+            if weapon:hasTag("M60_Link") then
                 local brassCatcher = weapon:getWeaponPart('RecoilPad')
                 if brassCatcher then
                     player:getInventory():AddItem("Base.308Bullets_Casing")
