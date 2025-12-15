@@ -1,5 +1,7 @@
 [h1]Update for 42.13[/h1]
-[b]I have updated to 42.13, somethings feel experimental so mostly test it in SP. if you find a bug PLEASE REPORTED IT IN THE THREAD FOR IT, no not use comments[/b]
+[b]I have updated to 42.13, somethings feel experimental so mostly test it in SP. if you find a bug PLEASE REPORTED IT IN THE THREAD FOR IT, no not use comments. Please do not use this in Multiplayer until I release a proper version for it.[/b]
+
+[h1]Legacy version for 42.12 is left for those not migrating to 42.13, no new features will be added to this version[/h1]
 
 [h1] Hot Brass - Visible Casing Ejection Framework [/h1]
 I personally love small details, and even on games with graphic styles that are meant to be retro, having those little details make it so cool. For a long time, I wondered how cool Project Zomboid would look if we could actually see spent casings flying out of our weapons. kinda inspired like the classic Resident Evil games. From that curiosity I dive into the PZ modding discord (amazing place btw).
