@@ -2,8 +2,13 @@ require 'TimedActions/ISReloadWeaponAction'
 require 'TimedActions/ISRackFirearm'
 
 ------- Racking ---------------
+local ISRackFirearm_removeBullets = ISRackFirearm.removeBullet
 function ISRackFirearm:removeBullet()
-    SpentCasingAnimSync.scheduleRack(self.character, self.gun, true)
+    if self.gun:isManuallyRemoveSpentRounds() then
+        ISRackFirearm_removeBullets(self)
+    else
+        self.emptyRack = false
+    end
 end
 
 function ISRackFirearm:ejectSpentRounds()
@@ -15,20 +20,37 @@ function ISRackFirearm:ejectSpentRounds()
         syncHandWeaponFields(self.character, self.gun)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        SpentCasingAnimSync.scheduleRack(self.character, self.gun, false)
+        self.ejectingSpentRound = true
+        self.racking = false
         syncHandWeaponFields(self.character, self.gun)
     else
         return
     end
 end
 
--- local ISRackFirearm_animEvent_old = ISRackFirearm.animEvent
--- function ISRackFirearm:animEvent(event, parameter)
---     if event == 'ejectCasing' then
---         SpentCasingPhysics.rackCasing(self.character, self.gun, false)
---     end
---     return ISRackFirearm_animEvent_old(self, event, parameter)
--- end
+local ISRackFirearm_animEvent = ISRackFirearm.animEvent
+function ISRackFirearm:animEvent(event, parameter)
+    if self.ejectingSpentRound then
+        if event == 'ejectCasing' then
+            SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+        end
+    end
+    if self.racking and not self.emptyRack then
+        if event == 'ejectCasing' then
+            SpentCasingPhysics.rackCasing(self.character, self.gun, true)
+        end
+    end
+    return ISRackFirearm_animEvent(self, event, parameter)
+end
+
+local old_new = ISRackFirearm.new
+function ISRackFirearm:new(character, gun)
+    local o = old_new(self, character, gun)
+    o.ejectingSpentRound = false
+    o.racking = true
+    o.emptyRack = true
+    return o
+end
 
 ------- Reloading -------------
 function ISReloadWeaponAction:ejectSpentRounds()
@@ -49,7 +71,6 @@ end
 
 ------- OnShoot -------------
 Events.OnWeaponSwingHitPoint.Remove(ISReloadWeaponAction.onShoot)
-
 ISReloadWeaponAction.onShoot = function(player, weapon)
     if not weapon:isRanged() then return; end
 

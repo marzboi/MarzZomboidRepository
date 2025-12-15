@@ -88,15 +88,23 @@ end
 
 function SpentCasingPhysics.isSoftFloor(floor)
     if not floor then return false end
-    local props = floor.getProperties and floor:getProperties() or nil
-    if not props then return false end
 
-    if props then
-        local mat = props:get("FootstepMaterial")
-        if mat == "Grass" or mat == "Sand" then
+    local sq = floor.getSquare and floor:getSquare() or nil
+    if sq then
+        local cell = getCell()
+        if cell and cell:gridSquareIsSnow(sq:getX(), sq:getY(), sq:getZ()) then
             return true
         end
     end
+
+    local props = floor.getProperties and floor:getProperties() or nil
+    if not props then return false end
+
+    local mat = props:get("FootstepMaterial")
+    if mat == "Grass" or mat == "Sand" or mat == "Snow" then
+        return true
+    end
+
     return false
 end
 
@@ -148,6 +156,11 @@ function SpentCasingPhysics.getSurfaceTypeFromSquare(square)
 
     if SpentCasingPhysics.isWaterFloor(floor) then
         return SpentCasingPhysics.SurfaceType.Puddles
+    end
+
+    local cell = getCell()
+    if cell and cell.gridSquareIsSnow and cell:gridSquareIsSnow(square:getX(), square:getY(), square:getZ()) then
+        return SpentCasingPhysics.SurfaceType.Snow
     end
 
     local props = floor.getProperties and floor:getProperties() or nil

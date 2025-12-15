@@ -40,7 +40,7 @@ if SpentCasingPhysics then
             velocityZ = velocityZ or 0.1,
             active = true,
             currentWorldItem = nil,
-            floorBounces = SpentCasingPhysics.RANDOM:random(0, 2),
+            floorBounces = SpentCasingPhysics.RANDOM:random(1, 2),
             hasHitFloor = false,
             repeatCasingSound = true,
         }
