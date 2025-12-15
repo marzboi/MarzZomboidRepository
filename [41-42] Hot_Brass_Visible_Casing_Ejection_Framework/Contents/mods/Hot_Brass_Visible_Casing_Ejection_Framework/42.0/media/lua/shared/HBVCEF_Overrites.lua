@@ -62,7 +62,7 @@ function ISReloadWeaponAction:ejectSpentRounds()
         syncHandWeaponFields(self.character, self.gun)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        SpentCasingAnimSync.scheduleRack(self.character, self.gun, false)
+        SpentCasingPhysics.rackCasing(self.character, self.gun, false)
         syncHandWeaponFields(self.character, self.gun)
     else
         return

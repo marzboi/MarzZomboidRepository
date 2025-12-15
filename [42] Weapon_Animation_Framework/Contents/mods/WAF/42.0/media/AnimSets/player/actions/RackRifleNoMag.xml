@@ -22,7 +22,7 @@
 	</m_Events>
 	<m_Events>
 		<m_EventName>ejectCasing</m_EventName>
-		<m_TimePc>0.51</m_TimePc>
+		<m_TimePc>0.50</m_TimePc>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackStart</m_EventName>

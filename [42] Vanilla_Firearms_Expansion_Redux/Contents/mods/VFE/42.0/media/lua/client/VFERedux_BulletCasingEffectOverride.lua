@@ -81,11 +81,10 @@ if SpentCasingPhysics then
     function SpentCasingPhysics.spawnCasing(player, weapon)
         if not player or player:isDead() then return end
         if not weapon then return end
+        if weapon:isRackAfterShoot() or weapon:isManuallyRemoveSpentRounds() then return end
 
         local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
         if not params then return end
-
-        if params.manualEjection then return end
 
         if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
             if weapon:hasTag(VFETags.m60_link) then

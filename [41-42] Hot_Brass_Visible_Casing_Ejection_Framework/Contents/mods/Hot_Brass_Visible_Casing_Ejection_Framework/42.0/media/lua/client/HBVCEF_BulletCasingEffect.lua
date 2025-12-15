@@ -530,12 +530,13 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     local heightSpread  = params.heightSpread or 10
     local ejectAngle    = params.ejectAngle
     local verticalForce = params.verticalForce or 0
+    local ammoType      = tostring(weapon:getAmmoType():getItemKey())
 
-    local ammoToEject   = params.casing
+    local itemToEject   = ammoType .. "_Casing"
     if racking then
-        ammoToEject = params.ammo
+        itemToEject = ammoType
     end
-    if not ammoToEject then return end
+    if not itemToEject then return end
 
     local px, py, pz = player:getX(), player:getY(), player:getZ()
 
@@ -596,7 +597,7 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
         player,
         weapon,
         targetSquare,
-        ammoToEject,
+        itemToEject,
         startX,
         startY,
         startZ,
@@ -609,11 +610,9 @@ end
 function SpentCasingPhysics.spawnCasing(player, weapon)
     if not player or player:isDead() then return end
     if not weapon then return end
+    if weapon:isRackAfterShoot() or weapon:isManuallyRemoveSpentRounds() then return end
 
     local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
-    if not params then return end
-
-    if params.manualEjection then return end
 
     if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
         SpentCasingPhysics.doSpawnCasing(player, weapon, params)
@@ -625,7 +624,6 @@ function SpentCasingPhysics.rackCasing(player, weapon, racking)
     if not weapon then return end
 
     local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
-    if not params then return end
 
     if racking then
         SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)

@@ -10,7 +10,6 @@ local vfe93Params = {
         sideSpread     = 60,
         heightSpreed   = 30,
         ejectAngle     = 75,
-        manualEjection = false
     },
 
     ["Base.M4A1"] = {
@@ -23,7 +22,6 @@ local vfe93Params = {
         sideSpread     = 60,
         heightSpreed   = 30,
         ejectAngle     = 60,
-        manualEjection = false
     },
 
     ["Base.Block2"] = {
@@ -36,7 +34,6 @@ local vfe93Params = {
         sideSpread     = 60,
         heightSpreed   = 30,
         ejectAngle     = 60,
-        manualEjection = false
     },
 
     ["Base.SPR"] = {
@@ -49,7 +46,6 @@ local vfe93Params = {
         sideSpread     = 60,
         heightSpreed   = 30,
         ejectAngle     = 60,
-        manualEjection = false
     },
 
     ["Base.SPRSD"] = {
@@ -62,7 +58,6 @@ local vfe93Params = {
         sideSpread     = 60,
         heightSpreed   = 30,
         ejectAngle     = 60,
-        manualEjection = false
     },
 
     ["Base.Vector45"] = {
@@ -74,7 +69,6 @@ local vfe93Params = {
         shellForce     = 0.60,
         sideSpread     = 60,
         heightSpreed   = 60,
-        manualEjection = false
     },
 
     ["Base.Vector9"] = {
@@ -86,7 +80,6 @@ local vfe93Params = {
         shellForce     = 0.60,
         sideSpread     = 60,
         heightSpreed   = 60,
-        manualEjection = false
     },
 
     ["Base.P90"] = {
@@ -100,7 +93,6 @@ local vfe93Params = {
         heightSpreed   = { 0, 1 },
         ejectAngle     = 0,
         verticalForce  = -0.2,
-        manualEjection = false
     },
 
     ["Base.MP7"] = {
@@ -112,7 +104,6 @@ local vfe93Params = {
         shellForce     = 0.60,
         sideSpread     = 30,
         heightSpreed   = 30,
-        manualEjection = false
     },
 
     ["Base.FN57"] = {
@@ -124,7 +115,6 @@ local vfe93Params = {
         shellForce     = 0.75,
         sideSpread     = 30,
         heightSpreed   = 90,
-        manualEjection = false
     },
 
     ["Base.CP33"] = {
@@ -136,7 +126,6 @@ local vfe93Params = {
         shellForce     = 0.70,
         sideSpread     = 30,
         heightSpreed   = 60,
-        manualEjection = false
     },
 
     ["Base.1522"] = {
@@ -148,7 +137,6 @@ local vfe93Params = {
         shellForce     = 0.75,
         sideSpread     = 30,
         heightSpreed   = 60,
-        manualEjection = false
     },
 
     ["Base.n418sd"] = {
@@ -161,7 +149,6 @@ local vfe93Params = {
         sideSpread     = 60,
         heightSpreed   = 30,
         ejectAngle     = 60,
-        manualEjection = false
     },
 
     ["Base.n418"] = {
@@ -174,7 +161,6 @@ local vfe93Params = {
         sideSpread     = 60,
         heightSpreed   = 30,
         ejectAngle     = 60,
-        manualEjection = false
     },
 
     ["Base.AA12"] = {
@@ -186,7 +172,6 @@ local vfe93Params = {
         shellForce     = 0.60,
         sideSpread     = 60,
         heightSpreed   = 30,
-        manualEjection = false
     },
 }
 
@@ -200,7 +185,6 @@ if SpentCasingPhysics then
             data.sideOffset,
             data.heightOffset,
             data.shellForce,
-            data.manualEjection,
             data.sideSpread,
             data.heightSpread,
             data.ejectAngle,

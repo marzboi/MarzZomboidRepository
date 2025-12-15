@@ -27,6 +27,7 @@ end
 
 function AnimationWeaponAction.animateWeaponFiring(player, weapon, ticks)
     if not weapon or not player then return end
+    if weapon:isRackAfterShoot() then return end
 
     if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
         weapon:attachWeaponPart(instanceItem("SlideAttachment_Fired"), true)
