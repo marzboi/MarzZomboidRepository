@@ -1,6 +1,6 @@
-name=Hot Brass - Visible Casing Ejection Framework
+name=Hot Brass - Visible Casing Ejection Framework (Legacy)
 poster=HotBrassPoster.png
-id=HBVCEF
+id=HBVCEFlegacy
 description=Casing Ejection will be visible when you shoot.
 icon=miniLogo.png
 author=Marz

@@ -7,7 +7,7 @@ end
 function AnimationWeaponAction.update(player, weapon)
     if not weapon or not player then return end
     if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-        weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
+        weapon:attachWeaponPart(instanceItem("SlideAttachment"), true)
         player:resetEquippedHandsModels()
     end
 end
@@ -27,9 +27,10 @@ end
 
 function AnimationWeaponAction.animateWeaponFiring(player, weapon, ticks)
     if not weapon or not player then return end
+    if weapon:isRackAfterShoot() then return end
 
     if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-        weapon:attachWeaponPart(instanceItem("SlideAttachment_Fired"), true)
+        weapon:attachWeaponPart(instanceItem("SlideAttachment50"), true)
         player:resetEquippedHandsModels()
         AnimationWeaponAction.scheduleUpdate(player, weapon, ticks)
     end
@@ -46,7 +47,7 @@ function AnimationWeaponAction.attachPart(player, weapon)
         for i = 0, weaponModel:getAttachmentCount() - 1 do
             local partList = weaponModel:getAttachment(i)
             if partList and partList:getId() == "slide" then
-                weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
+                weapon:attachWeaponPart(instanceItem("SlideAttachment"), true)
             end
         end
     end
@@ -66,16 +67,49 @@ function AnimationWeaponAction.onTick()
     end
 end
 
-function AnimationWeaponAction.rackStart(player, weapon)
-    if not weapon or not player then return end
-    weapon:attachWeaponPart(instanceItem("SlideAttachment_Fired"), true)
-    player:resetEquippedHandsModels()
-end
+-- function AnimationWeaponAction.rackAction(player, weapon, percentage)
+--     if not (player and weapon) then return end
 
-function AnimationWeaponAction.rackEnd(player, weapon)
+--     local slide = weapon:getWeaponPart("Slide")
+--     if not slide then return end
+
+--     local pctToStep = {
+--         [0] = 0,
+--         [10] = 1,
+--         [20] = 2,
+--         [30] = 3,
+--         [40] = 4,
+--         [50] = 5,
+--         [60] = 4,
+--         [70] = 3,
+--         [80] = 2,
+--         [90] = 1,
+--         [100] = 0
+--     }
+--     local step = pctToStep[percentage]
+
+--     local slideType = slide:getFullType()
+--     local targetType = "SlideAttachment"
+
+--     if step ~= nil then
+--         targetType = ("SlideAttachment%02d"):format(step * 10)
+--         if slideType == "SlideAttachment50" and step < 5 and percentage <= 50 then return end
+--         if slideType == targetType then return end
+--     end
+
+--     weapon:attachWeaponPart(instanceItem(targetType), true)
+--     player:resetEquippedHandsModels()
+-- end
+
+function AnimationWeaponAction.rackAction(player, weapon, starting)
     if not weapon or not player then return end
-    weapon:attachWeaponPart(instanceItem("SlideAttachment_Unfired"), true)
-    player:resetEquippedHandsModels()
+    if starting then
+        weapon:attachWeaponPart(instanceItem("SlideAttachment50"), true)
+        player:resetEquippedHandsModels()
+    else
+        weapon:attachWeaponPart(instanceItem("SlideAttachment"), true)
+        player:resetEquippedHandsModels()
+    end
 end
 
 Events.OnEquipPrimary.Add(AnimationWeaponAction.attachPart)

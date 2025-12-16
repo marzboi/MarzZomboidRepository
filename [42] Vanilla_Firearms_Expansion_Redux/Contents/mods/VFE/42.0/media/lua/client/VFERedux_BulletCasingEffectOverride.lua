@@ -88,7 +88,7 @@ if SpentCasingPhysics then
         if params.manualEjection then return end
 
         if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-            if weapon:hasTag(VFETags.m60_link) then
+            if weapon:hasTag("M60_Link") then
                 local brassCatcher = weapon:getWeaponPart('RecoilPad')
                 if brassCatcher then
                     player:getInventory():AddItem("Base.308Bullets_Casing")

@@ -22,14 +22,6 @@ function ISRackFirearm:ejectSpentRounds()
     end
 end
 
--- local ISRackFirearm_animEvent_old = ISRackFirearm.animEvent
--- function ISRackFirearm:animEvent(event, parameter)
---     if event == 'ejectCasing' then
---         SpentCasingPhysics.rackCasing(self.character, self.gun, false)
---     end
---     return ISRackFirearm_animEvent_old(self, event, parameter)
--- end
-
 ------- Reloading -------------
 function ISReloadWeaponAction:ejectSpentRounds()
     if self.gun:getSpentRoundCount() > 0 then
@@ -54,15 +46,15 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
     if not weapon:isRanged() then return; end
 
     if MoodlesUI.getInstance() then
-        MoodlesUI.getInstance():wiggle(MoodleType.PANIC);
-        MoodlesUI.getInstance():wiggle(MoodleType.STRESS);
-        MoodlesUI.getInstance():wiggle(MoodleType.DRUNK);
-        MoodlesUI.getInstance():wiggle(MoodleType.TIRED);
-        MoodlesUI.getInstance():wiggle(MoodleType.ENDURANCE);
+        MoodlesUI.getInstance():wiggle(MoodleType.Panic);
+        MoodlesUI.getInstance():wiggle(MoodleType.Stress);
+        MoodlesUI.getInstance():wiggle(MoodleType.Drunk);
+        MoodlesUI.getInstance():wiggle(MoodleType.Tired);
+        MoodlesUI.getInstance():wiggle(MoodleType.Endurance);
         local body = player:getBodyDamage():getBodyParts()
         for x = BodyPartType.ToIndex(BodyPartType.Hand_L), BodyPartType.ToIndex(BodyPartType.UpperArm_R), 1 do
             if body:get(x):getPain() then
-                MoodlesUI.getInstance():wiggle(MoodleType.PAIN);
+                MoodlesUI.getInstance():wiggle(MoodleType.Pain);
                 break
             end
         end
@@ -76,6 +68,7 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
         weapon:setRoundChambered(false);
         weapon:setSpentRoundChambered(true)
     end
+
     if not weapon:isRackAfterShoot() then
         if not weapon:isManuallyRemoveSpentRounds() then
             -- TODO: check for extraction jam

@@ -33,7 +33,7 @@ function VFESurvivorAmmo(zombie)
 		for i = 0, weaponsNum - 1 do
 			local item = attachedWeapons:getItemByIndex(i)
 			if item:isRanged() then
-				local bullet = item:getAmmoType():getItemKey()
+				local bullet = item:getAmmoType()
 				local box = item:getAmmoBox()
 				local mag = item:getMagazineType()
 				table.insert(bulletList, bullet)

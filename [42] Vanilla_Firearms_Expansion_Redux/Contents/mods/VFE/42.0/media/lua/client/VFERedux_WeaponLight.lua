@@ -11,6 +11,7 @@ local function toggleLaserState(weapon, character)
 		newPart = instanceItem("Base.Laser")
 	end
 
+
 	if newPart then
 		weapon:detachWeaponPart(canon)
 		weapon:attachWeaponPart(newPart)
