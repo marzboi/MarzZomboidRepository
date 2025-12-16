@@ -14,7 +14,14 @@ end
 function ISRackFirearm:ejectSpentRounds()
     if self.gun:getSpentRoundCount() > 0 then
         for i = 1, self.gun:getSpentRoundCount() do
-            SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+            if isClient() then
+                sendClientCommand("HBVCEF", "rackCasing", {
+                    weaponId = self.gun:getID(),
+                    racking  = false,
+                })
+            else
+                SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+            end
         end
         self.gun:setSpentRoundCount(0)
         syncHandWeaponFields(self.character, self.gun)
@@ -32,12 +39,26 @@ local ISRackFirearm_animEvent = ISRackFirearm.animEvent
 function ISRackFirearm:animEvent(event, parameter)
     if self.ejectingSpentRound then
         if event == 'ejectCasing' then
-            SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+            if isClient() then
+                sendClientCommand("HBVCEF", "rackCasing", {
+                    weaponId = self.gun:getID(),
+                    racking  = false,
+                })
+            else
+                SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+            end
         end
     end
     if self.racking and not self.emptyRack then
         if event == 'ejectCasing' then
-            SpentCasingPhysics.rackCasing(self.character, self.gun, true)
+            if isClient() then
+                sendClientCommand("HBVCEF", "rackCasing", {
+                    weaponId = self.gun:getID(),
+                    racking  = true,
+                })
+            else
+                SpentCasingPhysics.rackCasing(self.character, self.gun, true)
+            end
         end
     end
     return ISRackFirearm_animEvent(self, event, parameter)
@@ -56,13 +77,27 @@ end
 function ISReloadWeaponAction:ejectSpentRounds()
     if self.gun:getSpentRoundCount() > 0 then
         for i = 1, self.gun:getSpentRoundCount() do
-            SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+            if isClient() then
+                sendClientCommand("HBVCEF", "rackCasing", {
+                    weaponId = self.gun:getID(),
+                    racking  = false,
+                })
+            else
+                SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+            end
         end
         self.gun:setSpentRoundCount(0)
         syncHandWeaponFields(self.character, self.gun)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+        if isClient() then
+            sendClientCommand("HBVCEF", "rackCasing", {
+                weaponId = self.gun:getID(),
+                racking  = false,
+            })
+        else
+            SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+        end
         syncHandWeaponFields(self.character, self.gun)
     else
         return

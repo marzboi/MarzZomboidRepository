@@ -1,8 +1,6 @@
-require "HBVCEF_BulletCasingEffect"
+require "HBVCEF_BulletCasingEffect_Server"
 
 if SpentCasingPhysics then
-    Events.OnWeaponSwing.Remove(SpentCasingPhysics.spawnCasing)
-
     local m60LinkParam = {
         casing = "Base.M60_Link",
         forwardOffset = 0.30,
@@ -101,6 +99,4 @@ if SpentCasingPhysics then
             end
         end
     end
-
-    Events.OnWeaponSwing.Add(SpentCasingPhysics.spawnCasing)
 end
