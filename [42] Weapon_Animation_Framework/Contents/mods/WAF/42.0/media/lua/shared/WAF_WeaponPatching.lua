@@ -1,22 +1,15 @@
 require "WAF_Main"
 
 local DEParts = {
-    { "SlideAttachment_Unfired", "DE_unfired", "slide", "slide" },
-    { "SlideAttachment_Fired",   "DE_fired",   "slide", "slide" }
+    { "SlideAttachment",   "DE_slide", "slide",   "slide" },
+    { "SlideAttachment00", "DE_slide", "slide00", "slide00" },
+    { "SlideAttachment10", "DE_slide", "slide10", "slide10" },
+    { "SlideAttachment20", "DE_slide", "slide20", "slide20" },
+    { "SlideAttachment30", "DE_slide", "slide30", "slide30" },
+    { "SlideAttachment40", "DE_slide", "slide40", "slide40" },
+    { "SlideAttachment50", "DE_slide", "slide50", "slide50" },
 }
+
 AnimationWeaponAction.Adjust("Base.Pistol3", "WeaponSprite", "DE_frame")
 AnimationWeaponAction.addToModelWeaponPart("Base.Pistol3", DEParts)
-
-local ShotgunParts = {
-    { "SlideAttachment_Unfired", "shotgun_unfired", "slide", "slide" },
-    { "SlideAttachment_Fired",   "shotgun_fired",   "slide", "slide" }
-}
-AnimationWeaponAction.Adjust("Base.Shotgun", "WeaponSprite", "shotgun_frame")
-AnimationWeaponAction.addToModelWeaponPart("Base.Shotgun", ShotgunParts)
-
-local m788Parts = {
-    { "SlideAttachment_Unfired", "m788_unfired", "slide", "slide" },
-    { "SlideAttachment_Fired",   "m788_fired",   "slide", "slide" }
-}
-AnimationWeaponAction.Adjust("Base.HuntingRifle", "WeaponSprite", "m788_frame")
-AnimationWeaponAction.addToModelWeaponPart("Base.HuntingRifle", m788Parts)
+AnimationWeaponAction.addAttachmentPoint("Base.DE_frame", -0.033)

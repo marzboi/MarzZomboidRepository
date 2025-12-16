@@ -1,3 +1,6 @@
+require "TimedActions/ISRemoveWeaponUpgrade"
+require "TimedActions/ISUpgradeWeapon"
+
 local function modelSetter(weapon)
     VFESetWeaponModel(weapon, false)
     VFESetWeaponIcon(weapon)

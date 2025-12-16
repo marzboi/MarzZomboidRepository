@@ -1,41 +1,5 @@
 module Base
 {
-    model CZ75_frame
-    {
-        mesh = weapons/frames/cz75_frame,
-        texture = weapons/firearm/cz75_texture,
-        
-        attachment muzzle
-        {
-            offset = 0.0000 0.1490 -0.0176,
-            rotate = -90.0000 0.0000 0.0000,
-        }
-        
-        attachment laser
-        {
-            offset = 0.0000 0.0790 -0.0090,
-            rotate = 0.0000 180.0000 0.0000,
-        }
-        
-        attachment slide
-        {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 0.0000 0.0000,
-        }
-    }
-    
-    model CZ75_unfired
-    {
-        mesh = weapons/firearmsAnimated/slides/cz75_unfired,
-        texture = weapons/firearm/cz75_texture,
-    }
-    
-    model CZ75_fired
-    {
-        mesh = weapons/firearmsAnimated/slides/CZ75_fired,
-        texture = weapons/firearm/cz75_texture,
-    }
-    
     model DE_frame
     {
         mesh = weapons/frames/DE_frame,
@@ -59,25 +23,13 @@ module Base
             rotate = 0.0000 0.0000 0.0000,
         }
         
-        attachment slide
-        {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 0.0000 0.0000,
-        }
+        
     }
-    
-    model DE_unfired
+    model DE_slide
     {
         mesh = weapons/slides/DE_unfired,
         texture = Weapons/Firearm/Handgun,
     }
-    
-    model DE_fired
-    {
-        mesh = weapons/slides/DE_fired,
-        texture = Weapons/Firearm/Handgun,
-    }
-    
     model shotgun_frame
     {
         mesh = weapons/frames/shotgun_frame,
@@ -119,19 +71,11 @@ module Base
             rotate = 0.0000 0.0000 0.0000,
         }
     }
-    
-    model shotgun_unfired
+    model shotgun_slide
     {
         mesh = weapons/slides/shotgun_unfired,
         texture = weapons/firearm/Shotgun,
     }
-    
-    model shotgun_fired
-    {
-        mesh = weapons/slides/shotgun_fired,
-        texture = weapons/firearm/Shotgun,
-    }
-    
     model m788_frame
     {
         mesh = weapons/frames/m788_frame,
@@ -178,16 +122,45 @@ module Base
             rotate = 0.0000 0.0000 0.0000,
         }
     }
-    
-    model m788_unfired
+    model m788_slide
     {
         mesh = weapons/slides/m788_unfired,
         texture = weapons/firearm/m788_texture,
     }
-    
-    model m788_fired
+    model AK47Solid_frame
     {
-        mesh = weapons/slides/m788_fired,
-        texture = weapons/firearm/m788_texture,
+        mesh = weapons/frames/ak47_frame,
+        texture = Weapons/firearm/ak47_solid_texture,
+        
+        attachment world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 180.0000 0.0000,
+        }
+        attachment muzzle
+        {
+            offset = 0.0000 0.4100 0.0092,
+            rotate = -90.0000 0.0000 0.0000,
+        }
+        attachment scope
+        {
+            offset = 0.0000 0.0316 0.0500,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment magazine
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment slide
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+    model AK47Solid_slide
+    {
+        mesh = weapons/slides/ak47_unfired,
+        texture = Weapons/firearm/ak47_solid_texture,
     }
 }

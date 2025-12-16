@@ -4,7 +4,7 @@ VFETags.jamresistant = ItemTag.register("vfe:jamresistant")
 VFETags.blockbayonet = ItemTag.register("vfe:blockbayonet")
 
 AmmoType.register("vfe:bullets_762", "Base.762Bullets")
-AmmoType.register("vfe:bullets_22", "Base.Bullets22")
+AmmoType.register("vfe:bullets_22", "Base.22Bullets")
 AmmoType.register("vfe:bullets_308_linked", "Base.308BulletsLinked")
 
 -- base:shotgun_shells

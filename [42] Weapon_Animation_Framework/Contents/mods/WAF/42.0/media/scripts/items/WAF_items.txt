@@ -8,8 +8,7 @@ module Base
         DisplayCategory = Junk,
         Icon            = IntentionallyInvalid,
     }
-    
-    item SlideAttachment_Fired
+    item SlideAttachment
     {
         ItemType         = base:weaponpart,
         DisplayName      = Magazine,
@@ -22,8 +21,7 @@ module Base
         MetalValue       = 22,
         WorldStaticModel = 556Mag,
     }
-    
-    item SlideAttachment_Unfired
+    item SlideAttachment00
     {
         ItemType         = base:weaponpart,
         DisplayName      = Magazine,
@@ -35,5 +33,108 @@ module Base
         PartType         = Slide,
         MetalValue       = 22,
         WorldStaticModel = 556Mag,
+    }
+    item SlideAttachment10
+    {
+        ItemType         = base:weaponpart,
+        DisplayName      = Magazine,
+        DisplayCategory  = WeaponPart,
+        Icon             = m16clip,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = FakeItemSlide,
+        PartType         = Slide,
+        MetalValue       = 22,
+        WorldStaticModel = 556Mag,
+    }
+    item SlideAttachment20
+    {
+        ItemType         = base:weaponpart,
+        DisplayName      = Magazine,
+        DisplayCategory  = WeaponPart,
+        Icon             = m16clip,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = FakeItemSlide,
+        PartType         = Slide,
+        MetalValue       = 22,
+        WorldStaticModel = 556Mag,
+    }
+    item SlideAttachment30
+    {
+        ItemType         = base:weaponpart,
+        DisplayName      = Magazine,
+        DisplayCategory  = WeaponPart,
+        Icon             = m16clip,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = FakeItemSlide,
+        PartType         = Slide,
+        MetalValue       = 22,
+        WorldStaticModel = 556Mag,
+    }
+    item SlideAttachment40
+    {
+        ItemType         = base:weaponpart,
+        DisplayName      = Magazine,
+        DisplayCategory  = WeaponPart,
+        Icon             = m16clip,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = FakeItemSlide,
+        PartType         = Slide,
+        MetalValue       = 22,
+        WorldStaticModel = 556Mag,
+    }
+    item SlideAttachment50
+    {
+        ItemType         = base:weaponpart,
+        DisplayName      = Magazine,
+        DisplayCategory  = WeaponPart,
+        Icon             = m16clip,
+        Weight           = 0.1,
+        WeightModifier   = 0.1,
+        MountOn          = FakeItemSlide,
+        PartType         = Slide,
+        MetalValue       = 22,
+        WorldStaticModel = 556Mag,
+    }
+    model SlideHolder
+    {
+        attachment slide
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment slide00
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment slide10
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment slide20
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment slide30
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment slide40
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        attachment slide50
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
     }
 }
