@@ -67,6 +67,21 @@ function AnimationWeaponAction.onTick()
     end
 end
 
+function AnimationWeaponAction.rackAction(player, weapon, starting)
+    if not weapon or not player then return end
+    if starting then
+        weapon:attachWeaponPart(instanceItem("SlideAttachment50"), true)
+        player:resetEquippedHandsModels()
+    else
+        weapon:attachWeaponPart(instanceItem("SlideAttachment"), true)
+        player:resetEquippedHandsModels()
+    end
+end
+
+Events.OnEquipPrimary.Add(AnimationWeaponAction.attachPart)
+Events.OnWeaponSwing.Add(function(player, weapon) AnimationWeaponAction.animateWeaponFiring(player, weapon, 10) end)
+Events.OnTick.Add(AnimationWeaponAction.onTick)
+
 -- function AnimationWeaponAction.rackAction(player, weapon, percentage)
 --     if not (player and weapon) then return end
 
@@ -100,18 +115,3 @@ end
 --     weapon:attachWeaponPart(instanceItem(targetType), true)
 --     player:resetEquippedHandsModels()
 -- end
-
-function AnimationWeaponAction.rackAction(player, weapon, starting)
-    if not weapon or not player then return end
-    if starting then
-        weapon:attachWeaponPart(instanceItem("SlideAttachment50"), true)
-        player:resetEquippedHandsModels()
-    else
-        weapon:attachWeaponPart(instanceItem("SlideAttachment"), true)
-        player:resetEquippedHandsModels()
-    end
-end
-
-Events.OnEquipPrimary.Add(AnimationWeaponAction.attachPart)
-Events.OnWeaponSwing.Add(function(player, weapon) AnimationWeaponAction.animateWeaponFiring(player, weapon, 10) end)
-Events.OnTick.Add(AnimationWeaponAction.onTick)
