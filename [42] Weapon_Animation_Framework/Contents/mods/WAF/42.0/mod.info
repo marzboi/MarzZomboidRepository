@@ -1,4 +1,4 @@
 name=Weapon Animation Framework
 id=WAF
 description=Adds moving animations to firearms
-require=\VFExpansionRedux
+require=\VFExpansionReduxb42

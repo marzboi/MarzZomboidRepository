@@ -1,0 +1,16 @@
+VERSION = 1,
+option HB.serverMult {
+    type = double,
+    min = 0.5,
+    max = 5.0,
+    default = 1.00,
+    page = HB,
+}
+
+option HB.MaxSubSteps {
+    type = double,
+    min = 1,
+    max = 24,
+    default = 8,
+    page = HB,
+}
