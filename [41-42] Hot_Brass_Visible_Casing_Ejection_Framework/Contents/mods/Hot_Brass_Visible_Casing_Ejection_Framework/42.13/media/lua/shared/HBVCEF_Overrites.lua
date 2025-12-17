@@ -37,8 +37,9 @@ end
 
 local ISRackFirearm_animEvent = ISRackFirearm.animEvent
 function ISRackFirearm:animEvent(event, parameter)
-    if self.ejectingSpentRound then
-        if event == 'ejectCasing' then
+    if event == 'ejectCasing' then
+        print('ejectCasing')
+        if self.ejectingSpentRound then
             if isClient() then
                 sendClientCommand("HBVCEF", "rackCasing", {
                     weaponId = self.gun:getID(),
@@ -48,9 +49,7 @@ function ISRackFirearm:animEvent(event, parameter)
                 SpentCasingPhysics.rackCasing(self.character, self.gun, false)
             end
         end
-    end
-    if self.racking and not self.emptyRack then
-        if event == 'ejectCasing' then
+        if self.racking and not self.emptyRack then
             if isClient() then
                 sendClientCommand("HBVCEF", "rackCasing", {
                     weaponId = self.gun:getID(),

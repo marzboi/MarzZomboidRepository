@@ -1,7 +1,7 @@
 [h1]Unofficial Port of VFE and Addons[/h1]
 
 [h1]Update for 42.13[/h1]
-[b]I have updated to 42.13, somethings feel experimental so mostly test it in SP. if you find a bug PLEASE REPORTED IT IN THE THREAD FOR IT, no not use comments[/b]
+[b]I have marked version 42.13 as B42. A patch for Hot Brass is inclded as well. the issue with opening boxes of ammo is not cause by this mod.[/b]
 
 [h1]Legacy version for 42.12 is left for those not migrating to 42.13, no new features will be added to this version[/h1]
 

@@ -75,6 +75,40 @@ function SpentCasingPhysics.isLowWall(wall)
     return false
 end
 
+function SpentCasingPhysics.isBlockedBetweenSquares(fromSq, toSq, dir, casingZ)
+    if not fromSq or not toSq or not dir then return false end
+
+    local barrier = fromSq:getDoorOrWindowOrWindowFrame(dir, true)
+    if not barrier then
+        local revDir = SpentCasingPhysics.IsoDirections.reverse(dir)
+        barrier = toSq:getDoorOrWindowOrWindowFrame(revDir, true)
+    end
+
+    if barrier and (instanceof(barrier, "IsoDoor") or instanceof(barrier, "IsoWindow")) then
+        local destroyed = barrier.isDestroyed and barrier:isDestroyed() or false
+        if not barrier:IsOpen() and not destroyed then
+            return true
+        end
+        return false
+    end
+
+    if fromSq:isWallTo(toSq) then
+        local wall1 = fromSq:getWall()
+        local wall2 = toSq:getWall()
+
+        local isLow = (wall1 and SpentCasingPhysics.isLowWall(wall1)) or
+            (wall2 and SpentCasingPhysics.isLowWall(wall2))
+
+        if isLow then
+            return (casingZ or 0) < SpentCasingPhysics.LOW_WALL_Z_THRESHOLD
+        end
+
+        return true
+    end
+
+    return false
+end
+
 function SpentCasingPhysics.isWaterFloor(floor)
     if not floor then return false end
     local props = floor.getProperties and floor:getProperties() or nil
@@ -243,7 +277,7 @@ function SpentCasingPhysics.addCasing(
         velocityZ = velocityZ or 0.1,
         active = true,
         currentWorldItem = nil,
-        floorBounces = SpentCasingPhysics.RANDOM:random(0, 2),
+        floorBounces = SpentCasingPhysics.RANDOM:random(1, 2),
         hasHitFloor = false,
     }
 
@@ -253,7 +287,7 @@ function SpentCasingPhysics.addCasing(
 end
 
 function SpentCasingPhysics.update()
-    local dt = SpentCasingPhysics.GT():getTimeDelta() or (1 / 60)
+    local dt = SpentCasingPhysics.GT():getTimeDelta()
     local scale = dt * 60
     local i = 1
 
@@ -266,6 +300,8 @@ function SpentCasingPhysics.update()
             removed = true
         else
             local prevZ = casing.z or 0
+            local oldEdgeX = casing.x
+            local oldEdgeY = casing.y
             casing.velocityZ = casing.velocityZ -
                 (SpentCasingPhysics.GRAVITY * SpentCasingPhysics.GRAVITY_SCALE * scale)
 
@@ -290,95 +326,56 @@ function SpentCasingPhysics.update()
             local edgeX = localX
             local edgeY = localY
 
-            local willBounce = false
-            local bounceAxis = nil
-
             local EDGE_TOL = 0.15
 
-            if casing.square then
-                local sx = casing.square:getX()
-                local sy = casing.square:getY()
-                local sz = casing.square:getZ()
+            local sx = casing.square:getX()
+            local sy = casing.square:getY()
+            local sz = casing.square:getZ()
 
-                local nx, ny = nil, nil
-                local dir = nil
+            local blockX = false
+            local blockY = false
 
-                if math.abs(casing.velocityX) >= math.abs(casing.velocityY) then
-                    if casing.velocityX > 0 and edgeX >= 1.0 - EDGE_TOL then
-                        nx, ny = sx + 1, sy
-                        dir = SpentCasingPhysics.IsoDirections.E
-                        bounceAxis = "x"
-                    elseif casing.velocityX < 0 and edgeX <= EDGE_TOL then
-                        nx, ny = sx - 1, sy
-                        dir = SpentCasingPhysics.IsoDirections.W
-                        bounceAxis = "x"
-                    end
-                else
-                    if casing.velocityY > 0 and edgeY >= 1.0 - EDGE_TOL then
-                        nx, ny = sx, sy + 1
-                        dir = SpentCasingPhysics.IsoDirections.S
-                        bounceAxis = "y"
-                    elseif casing.velocityY < 0 and edgeY <= EDGE_TOL then
-                        nx, ny = sx, sy - 1
-                        dir = SpentCasingPhysics.IsoDirections.N
-                        bounceAxis = "y"
-                    end
+            if casing.velocityX > 0 and oldEdgeX < (1.0 - EDGE_TOL) and edgeX >= (1.0 - EDGE_TOL) then
+                local neighbor = getCell():getGridSquare(sx + 1, sy, sz)
+                if neighbor and SpentCasingPhysics.isBlockedBetweenSquares(casing.square, neighbor, SpentCasingPhysics.IsoDirections.E, casing.z) then
+                    blockX = true
                 end
-
-                if nx and ny and dir then
-                    local neighbor = getCell():getGridSquare(nx, ny, sz)
-                    if neighbor then
-                        local block = false
-
-                        local barrier = casing.square:getDoorOrWindowOrWindowFrame(dir, true)
-                        if not barrier then
-                            local revDir = SpentCasingPhysics.IsoDirections.reverse(dir)
-                            barrier = neighbor:getDoorOrWindowOrWindowFrame(revDir, true)
-                        end
-
-                        if barrier and (instanceof(barrier, "IsoDoor") or instanceof(barrier, "IsoWindow")) then
-                            local destroyed = barrier.isDestroyed and barrier:isDestroyed() or false
-                            if not barrier:IsOpen() and not destroyed then
-                                block = true
-                            end
-                        else
-                            if casing.square:isWallTo(neighbor) then
-                                local wall1 = casing.square:getWall()
-                                local wall2 = neighbor:getWall()
-                                local isLow = (wall1 and SpentCasingPhysics.isLowWall(wall1)) or
-                                    (wall2 and SpentCasingPhysics.isLowWall(wall2))
-                                if isLow then
-                                    if casing.z < SpentCasingPhysics.LOW_WALL_Z_THRESHOLD then
-                                        block = true
-                                    end
-                                else
-                                    block = true
-                                end
-                            end
-                        end
-
-                        if block then
-                            willBounce = true
-                        end
-                    end
+            elseif casing.velocityX < 0 and oldEdgeX > EDGE_TOL and edgeX <= EDGE_TOL then
+                local neighbor = getCell():getGridSquare(sx - 1, sy, sz)
+                if neighbor and SpentCasingPhysics.isBlockedBetweenSquares(casing.square, neighbor, SpentCasingPhysics.IsoDirections.W, casing.z) then
+                    blockX = true
                 end
             end
 
-            if willBounce and bounceAxis then
-                if bounceAxis == "x" then
-                    casing.velocityX = -casing.velocityX * SpentCasingPhysics.BOUNCE_RESTITUTION
-                    casing.x = casing.x + (casing.velocityX * SpentCasingPhysics.BOUNCE_POSITION_CORRECT)
-                    if math.abs(casing.velocityX) < SpentCasingPhysics.BOUNCE_MIN_VELOCITY then
-                        casing.velocityX = 0
-                    end
-                else
-                    casing.velocityY = -casing.velocityY * SpentCasingPhysics.BOUNCE_RESTITUTION
-                    casing.y = casing.y + (casing.velocityY * SpentCasingPhysics.BOUNCE_POSITION_CORRECT)
-                    if math.abs(casing.velocityY) < SpentCasingPhysics.BOUNCE_MIN_VELOCITY then
-                        casing.velocityY = 0
-                    end
+            if casing.velocityY > 0 and oldEdgeY < (1.0 - EDGE_TOL) and edgeY >= (1.0 - EDGE_TOL) then
+                local neighbor = getCell():getGridSquare(sx, sy + 1, sz)
+                if neighbor and SpentCasingPhysics.isBlockedBetweenSquares(casing.square, neighbor, SpentCasingPhysics.IsoDirections.S, casing.z) then
+                    blockY = true
                 end
+            elseif casing.velocityY < 0 and oldEdgeY > EDGE_TOL and edgeY <= EDGE_TOL then
+                local neighbor = getCell():getGridSquare(sx, sy - 1, sz)
+                if neighbor and SpentCasingPhysics.isBlockedBetweenSquares(casing.square, neighbor, SpentCasingPhysics.IsoDirections.N, casing.z) then
+                    blockY = true
+                end
+            end
 
+            if blockX then
+                casing.velocityX = -casing.velocityX * SpentCasingPhysics.BOUNCE_RESTITUTION
+                casing.x = casing.x + (casing.velocityX * SpentCasingPhysics.BOUNCE_POSITION_CORRECT)
+                if math.abs(casing.velocityX) < SpentCasingPhysics.BOUNCE_MIN_VELOCITY then
+                    casing.velocityX = 0
+                end
+            end
+
+            if blockY then
+                casing.velocityY = -casing.velocityY * SpentCasingPhysics.BOUNCE_RESTITUTION
+                casing.y = casing.y + (casing.velocityY * SpentCasingPhysics.BOUNCE_POSITION_CORRECT)
+                if math.abs(casing.velocityY) < SpentCasingPhysics.BOUNCE_MIN_VELOCITY then
+                    casing.velocityY = 0
+                end
+            end
+
+            if blockX or blockY then
                 worldX = casing.square:getX() + casing.x
                 worldY = casing.square:getY() + casing.y
             end

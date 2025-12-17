@@ -1,7 +1,6 @@
 [h1]Update for 42.13[/h1]
-[b]I have updated to 42.13, somethings feel experimental so mostly test it in SP. if you find a bug PLEASE REPORTED IT IN THE THREAD FOR IT, no not use comments. Please do not use this in Multiplayer until I release a proper version for it.[/b]
+[b]Version 42.13 has can be use in MP the duplication issue should not occur, The animations will not be as fluid as in SP, but you will see casings. the Server will handle that logic. No extensive test was done for it.[/b]
 
-[h1]An independent version for MP testing is included along the originals. This is meant to be use with Vanilla Weapons. as I have not yet tested custom packs, and other guns have errors online. so Just stick to vanilla guns for now.[/h1]
 [h1]Legacy version for 42.12 is left for those not migrating to 42.13, no new features will be added to this version[/h1]
 
 [h1] Hot Brass - Visible Casing Ejection Framework [/h1]
