@@ -38,7 +38,6 @@ end
 local ISRackFirearm_animEvent = ISRackFirearm.animEvent
 function ISRackFirearm:animEvent(event, parameter)
     if event == 'ejectCasing' then
-        print('ejectCasing')
         if self.ejectingSpentRound then
             if isClient() then
                 sendClientCommand("HBVCEF", "rackCasing", {
