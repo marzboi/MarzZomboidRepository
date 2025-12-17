@@ -1,5 +1,5 @@
 [h1]Update for 42.13[/h1]
-[b]Version 42.13 has can be use in MP the duplication issue should not occur, The animations will not be as fluid as in SP, but you will see casings. the Server will handle that logic. No extensive test was done for it.[/b]
+[b]Version 42.13 has can be use in MP the duplication issue should not occur, The animations will not be as fluid as in SP, this is due to tickrate in which servers run. so casings will move at 10fps. I am currently working on address racking and reloading spent casings not coming out. as well as casings sounds when hitting the floor.[/b]
 
 [h1]Legacy version for 42.12 is left for those not migrating to 42.13, no new features will be added to this version[/h1]
 
