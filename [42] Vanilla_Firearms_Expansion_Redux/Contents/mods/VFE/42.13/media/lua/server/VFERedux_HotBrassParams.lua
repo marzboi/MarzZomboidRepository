@@ -3,8 +3,6 @@ local vfeParams = {
     --- Shotguns
 
     ["Base.Shotgun"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -15,8 +13,6 @@ local vfeParams = {
     },
 
     ["Base.Shotgun2"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -27,8 +23,6 @@ local vfeParams = {
     },
 
     ["Base.ShotgunSemi"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -38,8 +32,6 @@ local vfeParams = {
     },
 
     ["Base.ShotgunSemi2"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -49,8 +41,6 @@ local vfeParams = {
     },
 
     ["Base.ShotgunSawnoff"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -61,8 +51,6 @@ local vfeParams = {
     },
 
     ["Base.ShotgunSawnoffNoStock"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -73,8 +61,6 @@ local vfeParams = {
     },
 
     ["Base.DoubleBarrelShotgun"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.0,
         heightOffset  = 0.45,
@@ -85,8 +71,6 @@ local vfeParams = {
     },
 
     ["Base.DoubleBarrelShotgunSawnoff"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.0,
         heightOffset  = 0.45,
@@ -97,8 +81,6 @@ local vfeParams = {
     },
 
     ["Base.DoubleBarrelShotgunSawnoffNoStock"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.0,
         heightOffset  = 0.45,
@@ -109,8 +91,6 @@ local vfeParams = {
     },
 
     ["Base.Spas12"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -121,8 +101,6 @@ local vfeParams = {
     },
 
     ["Base.Spas12Folded"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -133,8 +111,6 @@ local vfeParams = {
     },
 
     ["Base.ShotgunSilent"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -147,8 +123,6 @@ local vfeParams = {
     --- Rifles
 
     ["Base.AK47Unfolded"] = {
-        casing        = "Base.762Bullets_Casing",
-        ammo          = "Base.762Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -159,8 +133,6 @@ local vfeParams = {
     },
 
     ["Base.AK47Folded"] = {
-        casing        = "Base.762Bullets_Casing",
-        ammo          = "Base.762Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -171,8 +143,6 @@ local vfeParams = {
     },
 
     ["Base.AK47"] = {
-        casing        = "Base.762Bullets_Casing",
-        ammo          = "Base.762Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -183,8 +153,6 @@ local vfeParams = {
     },
 
     ["Base.MAK90"] = {
-        casing        = "Base.762Bullets_Casing",
-        ammo          = "Base.762Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -195,8 +163,6 @@ local vfeParams = {
     },
 
     ["Base.SKS"] = {
-        casing        = "Base.762Bullets_Casing",
-        ammo          = "Base.762Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -207,8 +173,6 @@ local vfeParams = {
     },
 
     ["Base.SKSSpiker"] = {
-        casing        = "Base.762Bullets_Casing",
-        ammo          = "Base.762Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -219,8 +183,6 @@ local vfeParams = {
     },
 
     ["Base.1022"] = {
-        casing        = "Base.22Bullets_Casing",
-        ammo          = "Base.22Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -230,8 +192,6 @@ local vfeParams = {
     },
 
     ["Base.Mini14Unfolded"] = {
-        casing        = "Base.223Bullets_Casing",
-        ammo          = "Base.223Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -242,8 +202,6 @@ local vfeParams = {
     },
 
     ["Base.Mini14Folded"] = {
-        casing        = "Base.223Bullets_Casing",
-        ammo          = "Base.223Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -254,8 +212,6 @@ local vfeParams = {
     },
 
     ["Base.Mini14"] = {
-        casing        = "Base.223Bullets_Casing",
-        ammo          = "Base.223Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -266,8 +222,6 @@ local vfeParams = {
     },
 
     ["Base.FAL"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.40,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -278,8 +232,6 @@ local vfeParams = {
     },
 
     ["Base.FALClassic"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.40,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -290,8 +242,6 @@ local vfeParams = {
     },
 
     ["Base.CAR15"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -302,8 +252,6 @@ local vfeParams = {
     },
 
     ["Base.CAR15Folded"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -314,8 +262,6 @@ local vfeParams = {
     },
 
     ["Base.CAR15D"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -326,8 +272,6 @@ local vfeParams = {
     },
 
     ["Base.CAR15DFolded"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -338,8 +282,6 @@ local vfeParams = {
     },
 
     ["Base.AssaultRifle2"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -350,8 +292,6 @@ local vfeParams = {
     },
 
     ["Base.AssaultRifleM1"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -363,8 +303,6 @@ local vfeParams = {
     },
 
     ["Base.AssaultRifle"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -375,8 +313,6 @@ local vfeParams = {
     },
 
     ["Base.AssaultRifleMasterkeyShotgun"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.50,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -386,8 +322,6 @@ local vfeParams = {
     },
 
     ["Base.AssaultRifleMasterkey"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -398,8 +332,6 @@ local vfeParams = {
     },
 
     ["Base.M60MMG"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -409,8 +341,6 @@ local vfeParams = {
     },
 
     ["Base.M60MMG_Bipod"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -420,8 +350,6 @@ local vfeParams = {
     },
 
     ["Base.HuntingRifle"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -431,8 +359,6 @@ local vfeParams = {
     },
 
     ["Base.VarmintRifle"] = {
-        casing        = "Base.223Bullets_Casing",
-        ammo          = "Base.223Bullets",
         forwardOffset = 0.15,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -442,8 +368,6 @@ local vfeParams = {
     },
 
     ["Base.SniperRifle"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.25,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -454,8 +378,6 @@ local vfeParams = {
     },
 
     ["Base.CampCarbine"] = {
-        casing        = "Base.Bullets45_Casing",
-        ammo          = "Base.Bullets45",
         forwardOffset = 0.35,
         sideOffset    = 0.0,
         heightOffset  = 0.45,
@@ -465,8 +387,6 @@ local vfeParams = {
     },
 
     ["Base.LeverRifle"] = {
-        casing        = "Base.Bullets38_Casing",
-        ammo          = "Base.Bullets38",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -476,8 +396,6 @@ local vfeParams = {
     },
 
     ["Base.LeverRifle2"] = {
-        casing        = "Base.Bullets44_Casing",
-        ammo          = "Base.Bullets44",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -489,8 +407,6 @@ local vfeParams = {
     --- Smgs
 
     ["Base.MP5"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.30,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -500,8 +416,6 @@ local vfeParams = {
     },
 
     ["Base.MP5SD"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.30,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -511,8 +425,6 @@ local vfeParams = {
     },
 
     ["Base.MP5Unfolded"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.30,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -522,8 +434,6 @@ local vfeParams = {
     },
 
     ["Base.MP5Folded"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.30,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -533,8 +443,6 @@ local vfeParams = {
     },
 
     ["Base.MAC10Unfolded"] = {
-        casing        = "Base.Bullets45_Casing",
-        ammo          = "Base.Bullets45",
         forwardOffset = 0.45,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -544,8 +452,6 @@ local vfeParams = {
     },
 
     ["Base.MAC10Folded"] = {
-        casing        = "Base.Bullets45_Casing",
-        ammo          = "Base.Bullets45",
         forwardOffset = 0.45,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -555,8 +461,6 @@ local vfeParams = {
     },
 
     ["Base.UziUnfolded"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -566,8 +470,6 @@ local vfeParams = {
     },
 
     ["Base.UziFolded"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -579,8 +481,6 @@ local vfeParams = {
     --- Pistols
 
     ["Base.Tec9"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.45,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -590,8 +490,6 @@ local vfeParams = {
     },
 
     ["Base.Pistol"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -601,8 +499,6 @@ local vfeParams = {
     },
 
     ["Base.Pistol2"] = {
-        casing        = "Base.Bullets45_Casing",
-        ammo          = "Base.Bullets45",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -612,8 +508,6 @@ local vfeParams = {
     },
 
     ["Base.Pistol3"] = {
-        casing        = "Base.Bullets44_Casing",
-        ammo          = "Base.Bullets44",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -623,8 +517,6 @@ local vfeParams = {
     },
 
     ["Base.MK23SOCOM"] = {
-        casing        = "Base.Bullets45_Casing",
-        ammo          = "Base.Bullets45",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -634,8 +526,6 @@ local vfeParams = {
     },
 
     ["Base.Glock"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -645,8 +535,6 @@ local vfeParams = {
     },
 
     ["Base.Glock18"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -656,8 +544,6 @@ local vfeParams = {
     },
 
     ["Base.P229"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -667,8 +553,6 @@ local vfeParams = {
     },
 
     ["Base.CZ75"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -678,8 +562,6 @@ local vfeParams = {
     },
 
     ["Base.MK2"] = {
-        casing        = "Base.22Bullets_Casing",
-        ammo          = "Base.22Bullets",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -689,8 +571,6 @@ local vfeParams = {
     },
 
     ["Base.MK2SD"] = {
-        casing        = "Base.22Bullets_Casing",
-        ammo          = "Base.22Bullets",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -700,8 +580,6 @@ local vfeParams = {
     },
 
     ["Base.Revolver"] = {
-        casing        = "Base.Bullets45_Casing",
-        ammo          = "Base.Bullets45",
         forwardOffset = 0.10,
         sideOffset    = 0.0,
         heightOffset  = 0.30,
@@ -711,8 +589,6 @@ local vfeParams = {
     },
 
     ["Base.Revolver_Short"] = {
-        casing        = "Base.Bullets38_Casing",
-        ammo          = "Base.Bullets38",
         forwardOffset = 0.10,
         sideOffset    = 0.0,
         heightOffset  = 0.30,
@@ -722,8 +598,6 @@ local vfeParams = {
     },
 
     ["Base.Revolver_Long"] = {
-        casing        = "Base.Bullets44_Casing",
-        ammo          = "Base.Bullets44",
         forwardOffset = 0.10,
         sideOffset    = 0.0,
         heightOffset  = 0.30,
@@ -735,8 +609,6 @@ local vfeParams = {
     --- Combination Gun
 
     ["Base.M2400_Shotgun"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.30,
         sideOffset    = 0.0,
         heightOffset  = 0.40,
@@ -747,8 +619,6 @@ local vfeParams = {
     },
 
     ["Base.M2400_Rifle"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.0,
         heightOffset  = 0.40,

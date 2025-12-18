@@ -2,8 +2,13 @@ require "TimedActions/ISReloadWeaponAction"
 require "TimedActions/ISRackFirearm"
 
 ------- Racking ---------------
+local ISRackFirearm_removeBullets = ISRackFirearm.removeBullet
 function ISRackFirearm:removeBullet()
-    SpentCasingAnimSync.scheduleRack(self.character, self.gun, true)
+    if self.gun:isManuallyRemoveSpentRounds() then
+        ISRackFirearm_removeBullets(self)
+    else
+        self.emptyRack = false
+    end
 end
 
 function ISRackFirearm:ejectSpentRounds()
@@ -21,10 +26,47 @@ function ISRackFirearm:ejectSpentRounds()
         self.gun:setSpentRoundCount(0)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        SpentCasingAnimSync.scheduleRack(self.character, self.gun, false)
+        self.ejectingSpentRound = true
+        self.racking = false
     else
         return
     end
+end
+
+local ISRackFirearm_animEvent = ISRackFirearm.animEvent
+function ISRackFirearm:animEvent(event, parameter)
+    if event == 'ejectCasing' then
+        if self.ejectingSpentRound then
+            if isClient() then
+                sendClientCommand("HBVCEF", "rackCasing", {
+                    weaponId = self.gun:getID(),
+                    racking  = false,
+                })
+            else
+                SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+            end
+        end
+        if self.racking and not self.emptyRack then
+            if isClient() then
+                sendClientCommand("HBVCEF", "rackCasing", {
+                    weaponId = self.gun:getID(),
+                    racking  = true,
+                })
+            else
+                SpentCasingPhysics.rackCasing(self.character, self.gun, true)
+            end
+        end
+    end
+    return ISRackFirearm_animEvent(self, event, parameter)
+end
+
+local old_new = ISRackFirearm.new
+function ISRackFirearm:new(character, gun)
+    local o = old_new(self, character, gun)
+    o.ejectingSpentRound = false
+    o.racking = true
+    o.emptyRack = true
+    return o
 end
 
 ------- Reloading -------------
@@ -43,7 +85,14 @@ function ISReloadWeaponAction:ejectSpentRounds()
         self.gun:setSpentRoundCount(0)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        SpentCasingAnimSync.scheduleRack(self.character, self.gun, false)
+        if isClient() then
+            sendClientCommand("HBVCEF", "rackCasing", {
+                weaponId = self.gun:getID(),
+                racking  = false,
+            })
+        else
+            SpentCasingPhysics.rackCasing(self.character, self.gun, false)
+        end
     else
         return
     end

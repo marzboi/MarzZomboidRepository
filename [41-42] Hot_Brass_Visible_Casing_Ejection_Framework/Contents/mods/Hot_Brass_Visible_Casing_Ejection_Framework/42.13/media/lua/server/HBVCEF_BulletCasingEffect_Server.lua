@@ -529,7 +529,7 @@ function SpentCasingPhysics.update()
     end
 end
 
-function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
+function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, optionalItem)
     local forwardOffset = params.forwardOffset or 0.0
     local sideOffset    = params.sideOffset or 0.0
     local heightOffset  = params.heightOffset or 0.5
@@ -543,6 +543,9 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     local itemToEject   = ammoType .. "_Casing"
     if racking then
         itemToEject = ammoType
+    end
+    if optionalItem then
+        itemToEject = optionalItem
     end
     if not itemToEject then return end
 

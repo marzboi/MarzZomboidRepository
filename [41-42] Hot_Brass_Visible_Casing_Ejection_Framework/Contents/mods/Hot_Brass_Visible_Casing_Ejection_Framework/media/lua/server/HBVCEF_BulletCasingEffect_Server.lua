@@ -93,8 +93,8 @@ function SpentCasingPhysics.isBlockedBetweenSquares(fromSq, toSq, dir, casingZ)
     end
 
     if fromSq:isWallTo(toSq) then
-        local wall1 = fromSq:getWall()
-        local wall2 = toSq:getWall()
+        local wall1 = fromSq:getWall(true)
+        local wall2 = toSq:getWall(true)
 
         local isLow = (wall1 and SpentCasingPhysics.isLowWall(wall1)) or
             (wall2 and SpentCasingPhysics.isLowWall(wall2))
@@ -534,7 +534,7 @@ function SpentCasingPhysics.update()
     end
 end
 
-function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
+function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, optionalItem)
     local forwardOffset = params.forwardOffset or 0.0
     local sideOffset    = params.sideOffset or 0.0
     local heightOffset  = params.heightOffset or 0.5
@@ -548,6 +548,9 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
     local itemToEject   = ammoType .. "_Casing"
     if racking then
         itemToEject = ammoType
+    end
+    if optionalItem then
+        itemToEject = optionalItem
     end
     if not itemToEject then return end
 

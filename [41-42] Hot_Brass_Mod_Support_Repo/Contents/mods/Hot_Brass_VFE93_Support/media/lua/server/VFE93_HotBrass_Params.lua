@@ -145,18 +145,16 @@ local vfe93Params = {
     },
 }
 
-if SpentCasingPhysics then
-    for weapon, data in pairs(vfe93Params) do
-        SpentCasingPhysics.registerWeapon(
-            weapon,
-            data.forwardOffset,
-            data.sideOffset,
-            data.heightOffset,
-            data.shellForce,
-            data.sideSpread,
-            data.heightSpread,
-            data.ejectAngle,
-            data.verticalForce
-        )
-    end
+for weapon, data in pairs(vfe93Params) do
+    SpentCasingPhysics.registerWeapon(
+        weapon,
+        data.forwardOffset,
+        data.sideOffset,
+        data.heightOffset,
+        data.shellForce,
+        data.sideSpread,
+        data.heightSpread,
+        data.ejectAngle,
+        data.verticalForce
+    )
 end

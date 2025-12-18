@@ -1075,13 +1075,10 @@ local firearmsRevampedParams = {
 for weapon, data in pairs(firearmsRevampedParams) do
     SpentCasingPhysics.registerWeapon(
         weapon,
-        data.casing,
-        data.ammo,
         data.forwardOffset,
         data.sideOffset,
         data.heightOffset,
         data.shellForce,
-        data.manualEjection,
         data.sideSpread,
         data.heightSpread,
         data.ejectAngle,
