@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="LoadBreechLoader.xml">
-	<m_Name>LoadBreechLoader</m_Name>
+<animNode x_extends="LoadRifleNoMag.xml">
+	<m_Name>UnloadRifleNoMag</m_Name>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>
@@ -10,10 +10,8 @@
 		<m_EventName>unloadFinished</m_EventName>
 	</m_Events>
 	<m_Events>
-		<m_TimePc>0.1</m_TimePc>
 		<m_ParameterValue>unload</m_ParameterValue>
 	</m_Events>
-	<m_Events />
 	<m_Events>
 		<m_ParameterValue>ejectAmmoStart</m_ParameterValue>
 	</m_Events>
