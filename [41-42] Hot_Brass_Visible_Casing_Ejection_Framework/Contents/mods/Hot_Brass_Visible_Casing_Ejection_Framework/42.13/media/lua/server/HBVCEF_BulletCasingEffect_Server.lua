@@ -226,7 +226,7 @@ function SpentCasingPhysics.getCasingSoundFamily(casing)
 end
 
 function SpentCasingPhysics.playCasingImpactSound(casing, square)
-    if not casing or not casing.player then return end
+    if not casing then return end
 
     local family = SpentCasingPhysics.getCasingSoundFamily(casing)
     local surfaceTypeName = SpentCasingPhysics.getSurfaceTypeFromSquare(square)
@@ -238,13 +238,21 @@ function SpentCasingPhysics.playCasingImpactSound(casing, square)
     if not params then return end
 
     local count = params.variations or 1
-    local idx = 1
-    if count > 1 then
-        idx = SpentCasingPhysics.RANDOM:random(1, count)
+    local idx = (count > 1) and SpentCasingPhysics.RANDOM:random(1, count) or 1
+    local soundName = params.prefix .. tostring(idx)
+
+    if isServer() then
+        if casing.player then
+            sendServerCommand(casing.player, "HBVCEF", "playCasingImpactSound", { sound = soundName })
+        else
+            sendServerCommand("HBVCEF", "playCasingImpactSound", { sound = soundName })
+        end
+        return
     end
 
-    local soundName = params.prefix .. tostring(idx)
-    casing.player:getEmitter():playSound(soundName)
+    if casing.player then
+        casing.player:getEmitter():playSound(soundName)
+    end
 end
 
 function SpentCasingPhysics.GT()

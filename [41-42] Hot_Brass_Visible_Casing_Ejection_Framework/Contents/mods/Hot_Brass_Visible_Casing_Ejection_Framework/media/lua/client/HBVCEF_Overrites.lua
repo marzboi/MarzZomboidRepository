@@ -60,14 +60,11 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
         weapon:setRoundChambered(false);
     end
     if weapon:isRackAfterShoot() then
-        -- shotgun need to be rack after each shot to rechamber round
-        -- See ISReloadWeaponAction.OnPlayerAttackFinished()
         if weapon:haveChamber() then
             weapon:setSpentRoundChambered(true);
         end
     else
         if weapon:getCurrentAmmoCount() >= weapon:getAmmoPerShoot() then
-            -- remove ammo, add one to chamber if we still have some
             if weapon:haveChamber() then
                 weapon:setRoundChambered(true);
             end
@@ -82,7 +79,6 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
         if baseJamChance == 0 then
             return;
         end
-        -- every condition loss increase the chance of jamming the gun
         baseJamChance = baseJamChance + ((weapon:getConditionMax() - weapon:getCondition()) / 4)
         if baseJamChance > 7 then
             baseJamChance = 7;

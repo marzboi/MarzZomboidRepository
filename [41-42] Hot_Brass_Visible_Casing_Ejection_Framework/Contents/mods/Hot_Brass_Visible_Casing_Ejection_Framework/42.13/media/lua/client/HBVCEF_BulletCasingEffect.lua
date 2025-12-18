@@ -17,4 +17,16 @@ function SpentCasingPhysics.HBVCEF_onWeaponSwing(player, weapon)
     end
 end
 
+function SpentCasingPhysics.onServerCommand(module, command, args)
+    if module ~= "HBVCEF" then return end
+    if command ~= "playCasingImpactSound" then return end
+    if not args or not args.sound then return end
+
+    local player = getPlayer()
+    if not player then return end
+
+    player:getEmitter():playSound(args.sound)
+end
+
 Events.OnWeaponSwing.Add(SpentCasingPhysics.HBVCEF_onWeaponSwing)
+Events.OnServerCommand.Add(SpentCasingPhysics.onServerCommand)
