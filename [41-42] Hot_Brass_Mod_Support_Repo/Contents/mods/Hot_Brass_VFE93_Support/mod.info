@@ -1,0 +1,7 @@
+name=Hot Brass - VFE 93 Support
+poster=HotBrassVFES.png
+id=HBVCEFVFE93
+description=Supports for VFE Post 93 to use Hot Brass casings.
+icon=miniLogo.png
+author=Marz
+require=HBVCEF,HBVCEFVFE,VFExpansion3

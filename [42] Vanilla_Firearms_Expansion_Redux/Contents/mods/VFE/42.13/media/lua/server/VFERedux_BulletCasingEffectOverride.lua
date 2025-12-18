@@ -1,17 +1,6 @@
 require "HBVCEF_BulletCasingEffect_Server"
 
 if SpentCasingPhysics then
-    local m60LinkParam = {
-        casing = "Base.M60_Link",
-        forwardOffset = 0.30,
-        sideOffset = 0.10,
-        heightOffset = 0.45,
-        shellForce = 0.20,
-        manualEjection = false,
-        sideSpread = 45,
-        heightSpread = 60
-    }
-
     function SpentCasingPhysics.addCasing(
         player,
         weapon,
@@ -49,8 +38,7 @@ if SpentCasingPhysics then
     end
 
     function SpentCasingPhysics.playCasingImpactSound(casing, square)
-        if not casing or not casing.player then return end
-        if not casing.repeatCasingSound then return end
+        if not casing then return end
 
         if casing.casingType == "Base.M1Bloc" then
             casing.player:getEmitter():playSound("M1PingDrop")
@@ -67,13 +55,21 @@ if SpentCasingPhysics then
         if not params then return end
 
         local count = params.variations or 1
-        local idx = 1
-        if count > 1 then
-            idx = SpentCasingPhysics.RANDOM:random(1, count)
+        local idx = (count > 1) and SpentCasingPhysics.RANDOM:random(1, count) or 1
+        local soundName = params.prefix .. tostring(idx)
+
+        if isServer() then
+            if casing.player then
+                sendServerCommand(casing.player, "HBVCEF", "playCasingImpactSound", { sound = soundName })
+            else
+                sendServerCommand("HBVCEF", "playCasingImpactSound", { sound = soundName })
+            end
+            return
         end
 
-        local soundName = params.prefix .. tostring(idx)
-        casing.player:getEmitter():playSound(soundName)
+        if casing.player then
+            casing.player:getEmitter():playSound(soundName)
+        end
     end
 
     function SpentCasingPhysics.spawnCasing(player, weapon)
@@ -91,8 +87,8 @@ if SpentCasingPhysics then
                     player:getInventory():AddItem("Base.308Bullets_Casing")
                     player:getInventory():AddItem("Base.M60_Link")
                 else
-                    SpentCasingPhysics.doSpawnCasing(player, weapon, params)
-                    SpentCasingPhysics.doSpawnCasing(player, weapon, m60LinkParam)
+                    SpentCasingPhysics.doSpawnCasing(player, weapon, params, false, "Base.308Bullets_Casing")
+                    SpentCasingPhysics.doSpawnCasing(player, weapon, params, false, "Base.M60_Link")
                 end
             else
                 SpentCasingPhysics.doSpawnCasing(player, weapon, params)

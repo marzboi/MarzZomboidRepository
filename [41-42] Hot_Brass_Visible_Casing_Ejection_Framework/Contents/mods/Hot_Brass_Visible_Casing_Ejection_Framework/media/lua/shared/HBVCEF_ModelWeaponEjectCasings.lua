@@ -4,172 +4,124 @@ SpentCasingPhysics = {}
 SpentCasingPhysics.WeaponEjectionPortParams = {
     --Pistols
     ["Base.Pistol3"] = {
-        casing = "Base.Bullets44_Casing",
-        ammo = "Base.Bullets44",
         forwardOffset = 0.50,
         sideOffset = 0.0,
         heightOffset = 0.45,
         shellForce = 0.30,
-        manualEjection = false
     },
 
     ["Base.Pistol2"] = {
-        casing = "Base.Bullets45_Casing",
-        ammo = "Base.Bullets45",
         forwardOffset = 0.50,
         sideOffset = 0.0,
         heightOffset = 0.45,
         shellForce = 0.25,
-        manualEjection = false
     },
 
     ["Base.Revolver_Short"] = {
-        casing = "Base.Bullets38_Casing",
-        ammo = "Base.Bullets38",
         forwardOffset = 0.15,
         sideOffset = 0.0,
         heightOffset = 0.35,
         shellForce = 0.10,
-        manualEjection = true
     },
 
     ["Base.Revolver"] = {
-        casing = "Base.Bullets45_Casing",
-        ammo = "Base.Bullets45",
         forwardOffset = 0.15,
         sideOffset = 0.0,
         heightOffset = 0.35,
         shellForce = 0.10,
-        manualEjection = true
     },
 
     ["Base.Pistol"] = {
-        casing = "Base.Bullets9mm_Casing",
-        ammo = "Base.Bullets9mm",
         forwardOffset = 0.50,
         sideOffset = 0.0,
         heightOffset = 0.45,
         shellForce = 0.25,
-        manualEjection = false
     },
 
     ["Base.Revolver_Long"] = {
-        casing = "Base.Bullets44_Casing",
-        ammo = "Base.Bullets44",
         forwardOffset = 0.15,
         sideOffset = 0.0,
         heightOffset = 0.35,
         shellForce = 0.10,
-        manualEjection = true
     },
 
     --Shotguns
     ["Base.DoubleBarrelShotgun"] = {
-        casing = "Base.ShotgunShells_Casing",
-        ammo = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset = 0.10,
         heightOffset = 0.45,
         shellForce = 0.15,
-        manualEjection = true
     },
 
     ["Base.DoubleBarrelShotgunSawnoff"] = {
-        casing = "Base.ShotgunShells_Casing",
-        ammo = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset = 0.10,
         heightOffset = 0.45,
         shellForce = 0.15,
-        manualEjection = true
     },
 
     ["Base.Shotgun"] = {
-        casing = "Base.ShotgunShells_Casing",
-        ammo = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset = 0.10,
         heightOffset = 0.45,
         shellForce = 0.15,
-        manualEjection = true
     },
 
     ["Base.ShotgunSawnoff"] = {
-        casing = "Base.ShotgunShells_Casing",
-        ammo = "Base.ShotgunShells",
         forwardOffset = 0.27,
         sideOffset = 0.10,
         heightOffset = 0.45,
         shellForce = 0.15,
-        manualEjection = true
     },
 
     --Rifles
     ["Base.AssaultRifle2"] = {
-        casing = "Base.308Bullets_Casing",
-        ammo = "Base.308Bullets",
         forwardOffset = 0.40,
         sideOffset = 0.08,
         heightOffset = 0.45,
         shellForce = 0.55,
-        manualEjection = false
     },
 
     ["Base.AssaultRifle"] = {
-        casing = "Base.556Bullets_Casing",
-        ammo = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset = 0.10,
         heightOffset = 0.45,
         shellForce = 0.45,
-        manualEjection = false
     },
 
     ["Base.VarmintRifle"] = {
-        casing = "Base.223Bullets_Casing",
-        ammo = "Base.223Bullets",
         forwardOffset = 0.30,
         sideOffset = 0.10,
         heightOffset = 0.45,
         shellForce = 0.30,
-        manualEjection = true
     },
 
     ["Base.HuntingRifle"] = {
-        casing = "Base.308Bullets_Casing",
-        ammo = "Base.308Bullets",
         forwardOffset = 0.30,
         sideOffset = 0.10,
         heightOffset = 0.45,
         shellForce = 0.30,
-        manualEjection = true
     },
 }
 
 function SpentCasingPhysics.registerWeapon(
     weapon,
-    casing,
-    ammo,
     forwardOffset,
     sideOffset,
     heightOffset,
     shellForce,
-    manualEjection,
     sideSpread,
     heightSpread,
     ejectAngle,
     verticalForce)
     SpentCasingPhysics.WeaponEjectionPortParams[weapon] = {
-        casing         = casing,
-        ammo           = ammo,
-        forwardOffset  = forwardOffset or 0,
-        sideOffset     = sideOffset or 0,
-        heightOffset   = heightOffset or 0,
-        shellForce     = shellForce or 0,
-        manualEjection = manualEjection or false,
-        sideSpread     = sideSpread or 10,
-        heightSpread   = heightSpread or 10,
-        ejectAngle     = ejectAngle,
-        verticalForce  = verticalForce,
+        forwardOffset = forwardOffset or 0,
+        sideOffset    = sideOffset or 0,
+        heightOffset  = heightOffset or 0,
+        shellForce    = shellForce or 0,
+        sideSpread    = sideSpread or 10,
+        heightSpread  = heightSpread or 10,
+        ejectAngle    = ejectAngle,
+        verticalForce = verticalForce,
     }
 end

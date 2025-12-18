@@ -1,8 +1,6 @@
 local vfe93Params = {
 
     ["Base.scar17"] = {
-        casing        = "Base.308Bullets_Casing",
-        ammo          = "Base.308Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -13,8 +11,6 @@ local vfe93Params = {
     },
 
     ["Base.M4A1"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -25,8 +21,6 @@ local vfe93Params = {
     },
 
     ["Base.Block2"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -37,8 +31,6 @@ local vfe93Params = {
     },
 
     ["Base.SPR"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -49,8 +41,6 @@ local vfe93Params = {
     },
 
     ["Base.SPRSD"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -61,8 +51,6 @@ local vfe93Params = {
     },
 
     ["Base.Vector45"] = {
-        casing        = "Base.Bullets45_Casing",
-        ammo          = "Base.Bullets45",
         forwardOffset = 0.50,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -72,8 +60,6 @@ local vfe93Params = {
     },
 
     ["Base.Vector9"] = {
-        casing        = "Base.Bullets9mm_Casing",
-        ammo          = "Base.Bullets9mm",
         forwardOffset = 0.50,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -83,8 +69,6 @@ local vfe93Params = {
     },
 
     ["Base.P90"] = {
-        casing        = "Base.57Bullets_Casing",
-        ammo          = "Base.57Bullets",
         forwardOffset = 0.15,
         sideOffset    = 0.10,
         heightOffset  = 0.40,
@@ -96,8 +80,6 @@ local vfe93Params = {
     },
 
     ["Base.MP7"] = {
-        casing        = "Base.46Bullets_Casing",
-        ammo          = "Base.46Bullets",
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.45,
@@ -107,8 +89,6 @@ local vfe93Params = {
     },
 
     ["Base.FN57"] = {
-        casing        = "Base.57Bullets_Casing",
-        ammo          = "Base.57Bullets",
         forwardOffset = 0.45,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -118,8 +98,6 @@ local vfe93Params = {
     },
 
     ["Base.CP33"] = {
-        casing        = "Base.22Bullets_Casing",
-        ammo          = "Base.22Bullets",
         forwardOffset = 0.35,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
@@ -129,8 +107,6 @@ local vfe93Params = {
     },
 
     ["Base.1522"] = {
-        casing        = "Base.22Bullets_Casing",
-        ammo          = "Base.22Bullets",
         forwardOffset = 0.25,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -140,8 +116,6 @@ local vfe93Params = {
     },
 
     ["Base.n418sd"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -152,8 +126,6 @@ local vfe93Params = {
     },
 
     ["Base.n418"] = {
-        casing        = "Base.556Bullets_Casing",
-        ammo          = "Base.556Bullets",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,
@@ -164,8 +136,6 @@ local vfe93Params = {
     },
 
     ["Base.AA12"] = {
-        casing        = "Base.ShotgunShells_Casing",
-        ammo          = "Base.ShotgunShells",
         forwardOffset = 0.30,
         sideOffset    = 0.10,
         heightOffset  = 0.45,

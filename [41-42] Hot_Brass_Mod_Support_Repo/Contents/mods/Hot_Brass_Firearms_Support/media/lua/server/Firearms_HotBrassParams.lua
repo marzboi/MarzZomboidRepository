@@ -684,13 +684,10 @@ local firearmsParams = {
 for weapon, data in pairs(firearmsParams) do
     SpentCasingPhysics.registerWeapon(
         weapon,
-        data.casing,
-        data.ammo,
         data.forwardOffset,
         data.sideOffset,
         data.heightOffset,
         data.shellForce,
-        data.manualEjection,
         data.sideSpread,
         data.heightSpread,
         data.ejectAngle,
