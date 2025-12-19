@@ -37,11 +37,16 @@ end
 local recipe = getScriptManager():getCraftRecipe("OpenBoxOfBullets50")
 if not recipe then return end
 recipe:getInputs():clear()
+recipe:getOutputs():clear()
 recipe:Load(recipe:getName(), [[
     {
     inputs
         {
             item 1 tags[base:ammo] mappers[ammoTypes] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+    outputs
+        {
+            item 25 mapper:ammoTypes,
         }
     itemMapper ammoTypes
         {
@@ -82,7 +87,7 @@ recipe:Load(recipe:getName(), [[
     {
     inputs
         {
-            item 50 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 25 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
     itemMapper ammoType
         {
