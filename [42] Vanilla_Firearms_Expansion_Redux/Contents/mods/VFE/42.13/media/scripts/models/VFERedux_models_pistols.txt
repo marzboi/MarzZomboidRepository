@@ -13,7 +13,7 @@ module Base
         
         attachment reddot
         {
-            offset = -0.0050 0.0440 -0.0620,
+            offset = 0.0000 0.0440 -0.0620,
             rotate = 0.0000 180.0000 0.0000,
         }
     }

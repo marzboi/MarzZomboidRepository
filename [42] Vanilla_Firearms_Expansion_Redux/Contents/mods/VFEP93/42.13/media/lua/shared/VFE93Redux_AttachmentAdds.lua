@@ -41,5 +41,9 @@ VFETweaks:addToMountOn("Base.RedDot", "Base.MP7");
 VFETweaks:addToMountOn("Base.x2Scope", "Base.MP7");
 VFETweaks:addToMountOn("Base.Laser", "Base.MP7");
 
+VFETweaks:addToMountOn("Base.RedDot", "Base.MP7Folded");
+VFETweaks:addToMountOn("Base.x2Scope", "Base.MP7Folded");
+VFETweaks:addToMountOn("Base.Laser", "Base.MP7Folded");
+
 
 VFETweaks:addToMountOn("Base.Laser", "Base.FN57");
