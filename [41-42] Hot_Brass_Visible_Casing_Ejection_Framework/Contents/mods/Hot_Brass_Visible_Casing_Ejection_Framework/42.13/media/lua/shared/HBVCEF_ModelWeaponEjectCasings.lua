@@ -104,6 +104,74 @@ SpentCasingPhysics.WeaponEjectionPortParams = {
     },
 }
 
+SpentCasingPhysics.DefaultEjectionPortParams = {
+    ["boltactionnomag"] = {
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.45,
+        sideSpread    = 30,
+        heightSpread  = 30,
+    },
+
+    ["boltaction"] = {
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.75,
+        sideSpread    = 60,
+        heightSpread  = 30,
+        ejectAngle    = 75,
+    },
+
+    ["shotgun"] = {
+        forwardOffset = 0.27,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.25,
+        sideSpread    = 30,
+        heightSpread  = 30,
+        ejectAngle    = 75,
+    },
+
+    ["doublebarrelshotgun"] = {
+        forwardOffset = 0.27,
+        sideOffset    = 0.0,
+        heightOffset  = 0.45,
+        shellForce    = 0.15,
+        sideSpread    = 30,
+        heightSpread  = { 80, 100 },
+        ejectAngle    = 180,
+    },
+
+    ["doublebarrelshotgunsawn"] = {
+        forwardOffset = 0.27,
+        sideOffset    = 0.0,
+        heightOffset  = 0.45,
+        shellForce    = 0.15,
+        sideSpread    = 30,
+        heightSpread  = { 80, 100 },
+        ejectAngle    = 180,
+    },
+
+    ["handgun"] = {
+        forwardOffset = 0.40,
+        sideOffset    = 0.0,
+        heightOffset  = 0.50,
+        shellForce    = 0.60,
+        sideSpread    = 45,
+        heightSpread  = 90,
+    },
+
+    ["revolver"] = {
+        forwardOffset = 0.10,
+        sideOffset    = 0.0,
+        heightOffset  = 0.30,
+        shellForce    = 0.10,
+        sideSpread    = 30,
+        heightSpread  = 30,
+    },
+}
 function SpentCasingPhysics.registerWeapon(
     weapon,
     forwardOffset,

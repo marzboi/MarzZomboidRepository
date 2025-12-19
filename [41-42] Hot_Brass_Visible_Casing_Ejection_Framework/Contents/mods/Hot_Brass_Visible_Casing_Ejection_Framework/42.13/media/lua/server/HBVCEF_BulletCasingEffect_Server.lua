@@ -530,14 +530,18 @@ function SpentCasingPhysics.update()
 end
 
 function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, optionalItem)
-    local forwardOffset = params.forwardOffset or 0.0
-    local sideOffset    = params.sideOffset or 0.0
-    local heightOffset  = params.heightOffset or 0.5
-    local shellForce    = params.shellForce or 0.0
-    local sideSpread    = params.sideSpread or 10
-    local heightSpread  = params.heightSpread or 10
+    if not params then
+        local default = weapon:getWeaponReloadType()
+        params = SpentCasingPhysics.DefaultEjectionPortParams[default]
+    end
+    local forwardOffset = params.forwardOffset
+    local sideOffset    = params.sideOffset
+    local heightOffset  = params.heightOffset
+    local shellForce    = params.shellForce
+    local sideSpread    = params.sideSpread
+    local heightSpread  = params.heightSpread
     local ejectAngle    = params.ejectAngle
-    local verticalForce = params.verticalForce or 0
+    local verticalForce = params.verticalForce
     local ammoType      = tostring(weapon:getAmmoType():getItemKey())
 
     local itemToEject   = ammoType .. "_Casing"

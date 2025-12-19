@@ -1,7 +1,8 @@
--- Add new ammotypes to open box of 50 bullets
-local recipe = getScriptManager():getCraftRecipe("OpenBoxOfBullets50")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+Events.OnInitWorld.Add(function()
+    -- Add new ammotypes to open box of 50 bullets
+    local recipe = getScriptManager():getCraftRecipe("OpenBoxOfBullets50")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoTypes
         {
@@ -10,12 +11,12 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to open cartons of boxes scripts
-local recipe = getScriptManager():getCraftRecipe("OpenCartonOfBullets")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to open cartons of boxes scripts
+    local recipe = getScriptManager():getCraftRecipe("OpenCartonOfBullets")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoTypes
         {
@@ -24,12 +25,12 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to putting boxes in cartons
-local recipe = getScriptManager():getCraftRecipe("PlaceBoxesOfAmmoInCarton")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to putting boxes in cartons
+    local recipe = getScriptManager():getCraftRecipe("PlaceBoxesOfAmmoInCarton")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoTypes
         {
@@ -38,12 +39,12 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to put bullets in boxes scripts
-local recipe = getScriptManager():getCraftRecipe("place_ammo_in_box")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to put bullets in boxes scripts
+    local recipe = getScriptManager():getCraftRecipe("place_ammo_in_box")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoType
         {
@@ -52,12 +53,12 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to open pack of bullets
-local recipe = getScriptManager():getCraftRecipe("OpenPackOfAmmo")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to open pack of bullets
+    local recipe = getScriptManager():getCraftRecipe("OpenPackOfAmmo")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoType
         {
@@ -66,12 +67,12 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to packing of ammo
-local recipe = getScriptManager():getCraftRecipe("PackBoxesAmmo")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to packing of ammo
+    local recipe = getScriptManager():getCraftRecipe("PackBoxesAmmo")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoType
         {
@@ -80,12 +81,12 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to open case of bullets
-local recipe = getScriptManager():getCraftRecipe("OpenCaseOfAmmo")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to open case of bullets
+    local recipe = getScriptManager():getCraftRecipe("OpenCaseOfAmmo")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoType
         {
@@ -94,12 +95,12 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to casing of ammo
-local recipe = getScriptManager():getCraftRecipe("CaseBoxesAmmo")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to casing of ammo
+    local recipe = getScriptManager():getCraftRecipe("CaseBoxesAmmo")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoType
         {
@@ -108,12 +109,12 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to open crate of bullets
-local recipe = getScriptManager():getCraftRecipe("OpenCrateOfAmmo")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to open crate of bullets
+    local recipe = getScriptManager():getCraftRecipe("OpenCrateOfAmmo")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoType
         {
@@ -122,12 +123,12 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to crating of ammo
-local recipe = getScriptManager():getCraftRecipe("CrateBoxesAmmo")
-if not recipe then return end
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to crating of ammo
+    local recipe = getScriptManager():getCraftRecipe("CrateBoxesAmmo")
+    if not recipe then return end
+    recipe:Load(recipe:getName(), [[
     {
     itemMapper ammoType
         {
@@ -136,4 +137,5 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
+end)
