@@ -31,8 +31,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model m4a1
@@ -66,8 +66,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0200 0.1300 0.0000,
-            rotate = -180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model block2
@@ -101,8 +101,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model mk12spr
@@ -142,8 +142,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model mk12sprsd
@@ -183,8 +183,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model 1522
@@ -218,8 +218,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model n418sd
@@ -253,8 +253,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model n418
@@ -288,8 +288,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
 }

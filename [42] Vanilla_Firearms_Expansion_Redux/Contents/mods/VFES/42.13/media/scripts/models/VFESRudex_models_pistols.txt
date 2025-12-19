@@ -7,7 +7,7 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
             rotate = 0.0000 0.0000 0.0000,
         }
         
@@ -15,12 +15,6 @@ module Base
         {
             offset = 0.0070 0.1306 -0.0266,
             rotate = -90.0000 0.0000 0.0000,
-        }
-        
-        attachment world
-        {
-            offset = -0.0250 -0.0000 -0.0000,
-            rotate = 0.0000 0.0000 0.0000,
         }
     }
     model usp45
@@ -30,7 +24,7 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
             rotate = 0.0000 0.0000 0.0000,
         }
         
@@ -44,12 +38,6 @@ module Base
         {
             offset = 0.0010 0.1480 -0.0258,
             rotate = -90.0000 0.0000 0.0000,
-        }
-        
-        attachment world
-        {
-            offset = -0.0250 -0.0000 -0.0000,
-            rotate = 0.0000 0.0000 0.0000,
         }
     }
 }
