@@ -22,6 +22,12 @@ module Base
             offset = 0.0000 0.0440 -0.0590,
             rotate = 0.0000 180.0000 0.0000,
         }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
     }
     model vector9
     {
@@ -44,6 +50,12 @@ module Base
         {
             offset = 0.0000 0.0440 -0.0590,
             rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
         }
     }
     model p90
@@ -68,6 +80,12 @@ module Base
             offset = 0.0000 0.0300 -0.0920,
             rotate = 0.0000 180.0000 0.0000,
         }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
     }
     model MP7
     {
@@ -91,6 +109,12 @@ module Base
             offset = 0.0000 -0.0210 -0.0590,
             rotate = 0.0000 180.0000 0.0000,
         }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
     }
     model MP7Folded
     {
@@ -113,6 +137,12 @@ module Base
         {
             offset = 0.0000 -0.0210 -0.0590,
             rotate = 0.0000 180.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
         }
     }
 }

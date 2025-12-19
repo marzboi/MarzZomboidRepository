@@ -7,8 +7,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment muzzle
         {
@@ -28,8 +28,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment muzzle
         {
@@ -49,14 +49,16 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
+        
         attachment muzzle
         {
             offset = 0.0000 0.4100 0.0092,
             rotate = -90.0000 0.0000 0.0000,
         }
+        
         attachment scope
         {
             offset = 0.0000 0.0316 0.0500,
@@ -70,8 +72,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment muzzle
         {
@@ -91,8 +93,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment muzzle
         {
@@ -112,8 +114,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment muzzle
         {
@@ -133,8 +135,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment muzzle
@@ -175,8 +177,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment muzzle
@@ -217,8 +219,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment muzzle
@@ -253,8 +255,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment muzzle
@@ -288,8 +290,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment muzzle
@@ -323,8 +325,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment muzzle
@@ -358,8 +360,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment muzzle
@@ -387,8 +389,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment muzzle
         {
@@ -413,8 +415,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment muzzle
         {
@@ -439,8 +441,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.0000 0.0000,
-            rotate = 0.0000 180.0000 0.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment muzzle
         {
@@ -485,8 +487,8 @@ module Base
         }
         attachment world
         {
-            offset = 0.0000 0.1660 0.0000,
-            rotate = -180.0000 0.0000 -180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model FALClassic
@@ -516,8 +518,8 @@ module Base
         }
         attachment world
         {
-            offset = 0.0000 0.1660 0.0000,
-            rotate = -180.0000 1.0000 -180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model CAR15
@@ -551,8 +553,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model CAR15Folded
@@ -586,8 +588,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model CAR15D
@@ -621,8 +623,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model CAR15DFolded
@@ -652,8 +654,8 @@ module Base
         }
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model M14
@@ -668,8 +670,8 @@ module Base
         }
         attachment world
         {
-            offset = 0.0000 0.1800 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment scope
         {
@@ -704,8 +706,8 @@ module Base
         }
         attachment world
         {
-            offset = 0.0000 0.1800 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment scope
         {
@@ -741,8 +743,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1800 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment bulletloops
@@ -764,8 +766,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1800 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment bulletloops
@@ -805,8 +807,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model AssaultRifleM9
@@ -840,8 +842,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
     }
@@ -882,8 +884,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model AssaultRifleMasterkey_Shotgun
@@ -918,8 +920,8 @@ module Base
         }
         attachment world
         {
-            offset = 0.0000 0.1300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model M60MMG
@@ -953,8 +955,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.2300 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model M60MMG_BP
@@ -988,8 +990,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.2300 0.0000,
-            rotate = 0.0000 -90.0000 11.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
     }
     model HuntingRifle
@@ -1024,8 +1026,8 @@ module Base
         }
         attachment world
         {
-            offset = 0.0000 0.1500 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment bipod
         {
@@ -1065,8 +1067,8 @@ module Base
         }
         attachment world
         {
-            offset = 0.0000 0.1500 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         attachment bipod
         {
@@ -1099,8 +1101,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1500 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment bipod
@@ -1140,8 +1142,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1500 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment bipod
@@ -1181,8 +1183,8 @@ module Base
         
         attachment world
         {
-            offset = 0.0000 0.1500 0.0000,
-            rotate = 180.0000 0.0000 180.0000,
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
         }
         
         attachment bipod
