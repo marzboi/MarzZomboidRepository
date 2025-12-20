@@ -300,4 +300,16 @@ module Base
         texture = WorldItems/Ammo/12GSlugRound,
         scale = 0.55,
     }
+    model New_40_Round
+    {
+        mesh = Worlditems/Ammo/40Round,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model Spent_40_Round
+    {
+        mesh = Worlditems/Ammo/40Round_Spent,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
 }

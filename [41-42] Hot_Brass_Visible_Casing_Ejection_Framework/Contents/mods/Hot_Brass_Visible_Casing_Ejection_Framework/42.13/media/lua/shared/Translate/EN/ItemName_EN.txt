@@ -32,4 +32,5 @@ ItemName_EN = {
     ItemName_Base.357Bullets_Casing = ".357 Magnum Casing",
     ItemName_Base.10mBullets_Casing = "10mm Casing",
     ItemName_Base.SlugBullets_Casing = "Empty 12ga Slug",
+    ItemName_Base.40Bullets_Casing = ".40 S&W Casing",
 }
