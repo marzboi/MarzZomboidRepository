@@ -205,4 +205,26 @@ module Base
         StaticModel      = Spent_792_Round,
         WorldStaticModel = Spent_792_Round,
     }
+    item 30CarBullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.02,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 30_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_30_Round,
+        WorldStaticModel = Spent_30_Round,
+    }
+    item 76239Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.02,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 762_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_762_Round,
+        WorldStaticModel = Spent_762_Round,
+    }
 }

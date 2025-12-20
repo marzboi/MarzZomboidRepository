@@ -53,7 +53,11 @@ Events.OnInitWorld.Add(function()
     -- WorldStaticModel
     Adjust("Base.3006Bullets", "WorldStaticModel", "New_3006_Round")
     Adjust("Base.792Bullets", "WorldStaticModel", "New_792_Round")
+    Adjust("Base.30CarBullets", "WorldStaticModel", "New_30_Round")
+    Adjust("Base.76239Bullets", "WorldStaticModel", "New_762_Round")
     -- Ammo icons
     Adjust("Base.3006Bullets", "icon", "3006_Round")
     Adjust("Base.792Bullets", "icon", "792_Round")
+    Adjust("Base.30CarBullets", "icon", "30_Round")
+    Adjust("Base.76239Bullets", "icon", "762_Round")
 end)

@@ -23,4 +23,6 @@ ItemName_EN = {
     
     ItemName_Base.3006Bullets_Casing = ".30-06 Casing",
     ItemName_Base.792Bullets_Casing = "7.92x57 Casing",
+    ItemName_Base.30CarBullets_Casing = ".30 Carbine Casing",
+    ItemName_Base.76239Bullets_Casing = "7.62x39 Casing",
 }
