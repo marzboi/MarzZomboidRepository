@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <animNode>
-	<m_Name>LoadHandgun_HB</m_Name>
-	<m_AnimName>Bob_Reload_Handgun_Load</m_AnimName>
+	<m_Name>LoadShotgun_HB</m_Name>
+	<m_AnimName>Bob_Reload_Shotgun_Load</m_AnimName>
 	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
-	<m_Looped>false</m_Looped>
 	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
 	<m_EarlyTransitionOut>true</m_EarlyTransitionOut>
 	<m_SpeedScale>ReloadSpeed</m_SpeedScale>
@@ -16,7 +15,7 @@
 	<m_Conditions>
 		<m_Name>WeaponReloadType</m_Name>
 		<m_Type>STRING</m_Type>
-		<m_StringValue>handgun</m_StringValue>
+		<m_StringValue>shotgun</m_StringValue>
 	</m_Conditions>
 	<m_Conditions>
 		<m_Name>isLoading</m_Name>

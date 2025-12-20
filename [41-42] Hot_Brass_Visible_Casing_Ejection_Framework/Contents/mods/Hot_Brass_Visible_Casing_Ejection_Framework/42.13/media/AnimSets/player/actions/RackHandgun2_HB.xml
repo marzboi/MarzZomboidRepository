@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadHandgun_HB.xml">
-	<m_Name>RackHandgun_HB</m_Name>
-	<m_AnimName>Bob_Reload_Handgun_Rack</m_AnimName>
+<animNode x_extends="LoadHandgun2_HB.xml">
+	<m_Name>RackHandgun2_HB</m_Name>
+	<m_AnimName>Bob_Reload_Handgun2_Rack</m_AnimName>
 	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
 	<m_Conditions />
 	<m_Conditions />
@@ -22,14 +22,14 @@
 	</m_Events>
 	<m_Events>
 		<m_EventName>ejectCasing</m_EventName>
-		<m_TimePc>0.50</m_TimePc>
+		<m_TimePc>0.53</m_TimePc>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackStart</m_EventName>
-		<m_TimePc>0.37</m_TimePc>
+		<m_TimePc>0.40</m_TimePc>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackEnd</m_EventName>
-		<m_TimePc>0.57</m_TimePc>
+		<m_TimePc>0.60</m_TimePc>
 	</m_Events>
 </animNode>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadHandgun_HB.xml">
-	<m_Name>RackHandgun_HB</m_Name>
-	<m_AnimName>Bob_Reload_Handgun_Rack</m_AnimName>
-	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+<animNode x_extends="LoadLever_HB.xml">
+	<m_Name>RackLever_HB</m_Name>
+	<m_AnimName>Lever_Rack</m_AnimName>
+	<m_Looped>false</m_Looped>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>
@@ -12,24 +12,24 @@
 		<m_EventName>rackingFinished</m_EventName>
 	</m_Events>
 	<m_Events>
-		<m_TimePc>0.18</m_TimePc>
+		<m_TimePc>0.15</m_TimePc>
 		<m_ParameterValue>rack</m_ParameterValue>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackBullet</m_EventName>
-		<m_TimePc>0.5</m_TimePc>
+		<m_TimePc>0.3</m_TimePc>
 		<m_ParameterValue></m_ParameterValue>
 	</m_Events>
 	<m_Events>
 		<m_EventName>ejectCasing</m_EventName>
-		<m_TimePc>0.50</m_TimePc>
+		<m_TimePc>0.53</m_TimePc>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackStart</m_EventName>
-		<m_TimePc>0.37</m_TimePc>
+		<m_TimePc>0.46</m_TimePc>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackEnd</m_EventName>
-		<m_TimePc>0.57</m_TimePc>
+		<m_TimePc>0.59</m_TimePc>
 	</m_Events>
 </animNode>

@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadHandgun_HB.xml">
-	<m_Name>UnloadHandgun_HB</m_Name>
+<animNode x_extends="loadRifle_HB.xml">
+	<m_Name>UnloadRifle_HB</m_Name>
 	<m_AnimReverse>true</m_AnimReverse>
-	<m_BlendTime>0.10</m_BlendTime>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>
@@ -12,7 +11,7 @@
 		<m_EventName>unloadFinished</m_EventName>
 	</m_Events>
 	<m_Events>
-		<m_Time>Start</m_Time>
+		<m_TimePc>0.1</m_TimePc>
 		<m_ParameterValue>unload</m_ParameterValue>
 	</m_Events>
 	<m_Events>
