@@ -283,4 +283,26 @@ module Base
         StaticModel      = Spent_357_Round,
         WorldStaticModel = Spent_357_Round,
     }
+    item 10mmBullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.015,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 10mm_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_10mm_Round,
+        WorldStaticModel = Spent_10mm_Round,
+    }
+    item SlugBullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.015,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = ShotgunSlug_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_ShotgunSlug_Round,
+        WorldStaticModel = Spent_ShotgunSlug_Round,
+    }
 }
