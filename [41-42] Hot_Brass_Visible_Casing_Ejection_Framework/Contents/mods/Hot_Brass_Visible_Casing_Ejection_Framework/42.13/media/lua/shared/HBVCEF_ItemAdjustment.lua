@@ -8,6 +8,7 @@ local VFE = getActivatedMods():contains('\\VFExpansionReduxb42')
 local VFES = getActivatedMods():contains('\\VFExpansion2Reduxb42')
 local VFE93 = getActivatedMods():contains('\\VFExpansion3Reduxb42')
 local G93 = getActivatedMods():contains('\\guns93')
+local FIREARMS = getActivatedMods():contains('\\2256623447/firearmmod')
 local FIREARMS_BETA = getActivatedMods():contains('\\2256623447/firearmmodbeta')
 
 if not G93 then
@@ -64,7 +65,7 @@ if not G93 then
             Adjust("Base.57Bullets", "icon", "57_Round")
         end
 
-        if FIREARMS_BETA then
+        if FIREARMS or FIREARMS_BETA then
             Adjust("Base.Bullets10mm", "WorldStaticModel", "New_10mm_Round")
             Adjust("Base.Bullets22", "WorldStaticModel", "New_22_Round")
             Adjust("Base.762x51Bullets", "WorldStaticModel", "New_308_Round")

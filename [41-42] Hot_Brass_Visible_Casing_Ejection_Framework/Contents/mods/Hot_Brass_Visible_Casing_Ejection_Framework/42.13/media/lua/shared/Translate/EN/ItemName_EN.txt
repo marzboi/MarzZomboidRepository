@@ -18,4 +18,14 @@ ItemName_EN = {
     ItemName_Base.545Bullets_Casing = "5.45mm Casing",
     ItemName_Base.76254Bullets_Casing = "7.62x54mm Casing",
     ItemName_Base.939Bullets_Casing = "9x39mm Casing",
+    
+    -- Firearms
+    
+    ItemName_Base.Bullets22_Casing = ".22 LR Casing",
+    ItemName_Base.Bullets10mm_Casing= "10mm Auto Casing",
+    ItemName_Base.762x51Bullets_Casing = "7.62x51mm Casing",
+    ItemName_Base.762x39Bullets_Casing = "7.62x39mm Casing",
+    ItemName_Base.Bullets4440_Casing = ".44-40 WCF Casing",
+    ItemName_Base.Bullets357_Casing = ".357 Casing",
+    ItemName_Base.Bullets3006_Casing = ".30-06 Casing",
 }
