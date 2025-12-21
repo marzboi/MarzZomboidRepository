@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="LoadShotgunSemi.xml">
-	<m_Name>RackShotgunSemi</m_Name>
-	<m_AnimName>Bob_Reload_Bolt_Rack</m_AnimName>
-	<m_Looped>false</m_Looped>
+<animNode x_extends="LoadFAL_HB.xml">
+	<m_Name>RackFAL</m_Name>
+	<m_AnimName>Bob_Reload_FAL_Rack</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>
@@ -12,24 +12,24 @@
 		<m_EventName>rackingFinished</m_EventName>
 	</m_Events>
 	<m_Events>
-		<m_TimePc>0.15</m_TimePc>
+		<m_Time>Start</m_Time>
 		<m_ParameterValue>rack</m_ParameterValue>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackBullet</m_EventName>
-		<m_TimePc>0.3</m_TimePc>
+		<m_TimePc>0.6</m_TimePc>
 		<m_ParameterValue></m_ParameterValue>
 	</m_Events>
 	<m_Events>
 		<m_EventName>ejectCasing</m_EventName>
-		<m_TimePc>0.50</m_TimePc>
+		<m_TimePc>0.69</m_TimePc>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackStart</m_EventName>
-		<m_TimePc>0.49</m_TimePc>
+		<m_TimePc>0.67</m_TimePc>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackEnd</m_EventName>
-		<m_TimePc>0.68</m_TimePc>
+		<m_TimePc>0.73</m_TimePc>
 	</m_Events>
 </animNode>

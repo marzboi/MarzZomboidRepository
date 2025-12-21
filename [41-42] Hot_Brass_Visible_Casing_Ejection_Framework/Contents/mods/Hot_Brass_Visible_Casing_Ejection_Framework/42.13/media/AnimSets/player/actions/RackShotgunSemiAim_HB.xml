@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="RackMP5.xml">
-	<m_Name>RackMP5Aim</m_Name>
-	<m_AnimName>MP5_Aim_Rack</m_AnimName>
+<animNode x_extends="RackShotgunSemi_HB.xml">
+	<m_Name>RackShotgunSemiAim</m_Name>
+	<m_AnimName>Bob_AttackRifle_AimBoltRack</m_AnimName>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions />

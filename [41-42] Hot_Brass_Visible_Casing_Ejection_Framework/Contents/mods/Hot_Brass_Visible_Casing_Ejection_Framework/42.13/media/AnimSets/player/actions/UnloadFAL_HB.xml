@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="LoadShotgunSemi.xml">
-	<m_Name>UnloadShotgunSemi</m_Name>
+<animNode x_extends="LoadFAL_HB.xml">
+	<m_Name>UnloadFAL</m_Name>
 	<m_AnimReverse>true</m_AnimReverse>
 	<m_Conditions />
 	<m_Conditions />

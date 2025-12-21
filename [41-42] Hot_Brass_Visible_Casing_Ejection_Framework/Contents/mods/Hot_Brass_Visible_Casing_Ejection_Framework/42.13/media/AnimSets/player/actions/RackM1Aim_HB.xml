@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="RackFAL.xml">
-	<m_Name>RackFAL</m_Name>
-	<m_AnimName>Bob_Reload_FAL_RackAim</m_AnimName>
+<animNode x_extends="RackM1_HB.xml">
+	<m_Name>RackM1Aim</m_Name>
+	<m_AnimName>Bob_AttackRifle_AimBoltRack</m_AnimName>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions />

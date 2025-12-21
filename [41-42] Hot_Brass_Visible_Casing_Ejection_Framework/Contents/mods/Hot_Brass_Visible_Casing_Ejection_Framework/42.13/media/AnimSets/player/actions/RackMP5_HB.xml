@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="LoadM1.xml">
-	<m_Name>RackM1</m_Name>
-	<m_AnimName>Bob_Reload_Bolt_Rack</m_AnimName>
-	<m_Looped>false</m_Looped>
+<animNode x_extends="LoadMP5_HB.xml">
+	<m_Name>RackMP5</m_Name>
+	<m_AnimName>MP5_Rack</m_AnimName>
+	<m_BlendTime>0.10</m_BlendTime>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>
@@ -22,14 +22,14 @@
 	</m_Events>
 	<m_Events>
 		<m_EventName>ejectCasing</m_EventName>
-		<m_TimePc>0.50</m_TimePc>
+		<m_TimePc>0.43</m_TimePc>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackStart</m_EventName>
-		<m_TimePc>0.49</m_TimePc>
+		<m_TimePc>0.41</m_TimePc>
 	</m_Events>
 	<m_Events>
 		<m_EventName>rackEnd</m_EventName>
-		<m_TimePc>0.68</m_TimePc>
+		<m_TimePc>0.79</m_TimePc>
 	</m_Events>
 </animNode>
