@@ -180,4 +180,72 @@ module Base
         StaticModel      = Spent_46_Round,
         WorldStaticModel = Spent_46_Round,
     }
+    
+    /** Firearms **/
+    item Bullets10mm_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 10mm_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_10mm_Round,
+        WorldStaticModel = Spent_10mm_Round,
+    }
+    item Bullets22_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 22_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_22_Round,
+        WorldStaticModel = Spent_22_Round,
+    }
+    item 762x51Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.015,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 308_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_308_Round,
+        WorldStaticModel = Spent_308_Round,
+    }
+    item Bullets3006_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.015,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 3006_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_3006_Round,
+        WorldStaticModel = Spent_3006_Round,
+    }
+    item Bullets4440_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.015,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 44_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_44_Round,
+        WorldStaticModel = Spent_44_Round,
+    }
+    item Bullets357_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.015,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 357_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_357_Round,
+        WorldStaticModel = Spent_357_Round,
+    }
 }
