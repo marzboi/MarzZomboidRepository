@@ -1,6 +1,8 @@
 [h1]Update for 42.13.1[/h1]
 [h1][b]NEW MAJOR VERSION HAS BUILT IN COMPATIBILITY WITH MODS EVEN WITHOUT PATCHES[/b][/h1]
 
+[h1][b]IF YOU RUN INTO ERRORS WHEN SWINGING MELEE WEAPONS, FIRST TRY TO FORCE AN UPDATE. EITHER BY RESUBSCRIBING TO THE MOD OR VERIFYING INTEGRITY OF GAMES FILES. THIS ISSUE DOESN'T EXIST ON MY TESTING AND YOU ARE MOST LIKELY RUNNING INTO AN ISSUE WITH AN OLDER VERSION OF THE MOD, FORCE AND UPDATE BEFORE LEAVING A COMMENT. THE MOD HAS CHECKS TO NOT PERFORM THE LOGIC ON WEAPONS OUTSIDE OF FIREARMS ITS IMPOSSIBLE TO TRIGGER THIS ON MELEE ITEMS.[/b][/h1]
+
 [b]Works in MP for 41 and 42, casings are tight to server tick rate hence why the slow FPS of casings.[/b]
 
 [h1]Legacy version for 42.12 is left for those not migrating to 42.13, no new features will be added to this version[/h1]
@@ -18,7 +20,13 @@ Unloading is now more practical and prevents you from accidentally dropping ammo
 
 Spent casings can be collected, and in a future update they’ll be used for ammo crafting.
 
-[h2] Native support for Guns of 93 [42] and other mods. Tables are now optional if you want more customized casing fly patterns.[/h2]
+[h2] Native support for mods included in version 42.13, facing out the need of patches outside of customized fly patters for casings. unpatch mods should work as well, but custom ammo will require casings models.[/h2]
+
+[list]
+[*] Guns of 93 Beta 
+[*] [42] VFE and Addons
+[*] Firearms and Firearms Beta
+[/list]
 
 [h2] Mod is still a Work in Progress! [/h2]
 
