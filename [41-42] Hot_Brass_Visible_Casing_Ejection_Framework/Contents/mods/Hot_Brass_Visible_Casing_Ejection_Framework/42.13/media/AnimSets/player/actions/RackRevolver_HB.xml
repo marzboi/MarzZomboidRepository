@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadRevolver.xml">
+<animNode x_extends="LoadRevolver_HB.xml">
 	<m_Name>RackRevolver</m_Name>
 	<m_AnimName>Bob_Reload_Revolver_Rack</m_AnimName>
 	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
 	<m_Looped>false</m_Looped>
+	<m_ConditionPriority>10</m_ConditionPriority>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>

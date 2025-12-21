@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadShotgun.xml">
-	<m_Name>UnloadShotgun</m_Name>
+<animNode x_extends="LoadRifle_HB.xml">
+	<m_Name>UnloadRifle</m_Name>
 	<m_AnimReverse>true</m_AnimReverse>
+	<m_ConditionPriority>10</m_ConditionPriority>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>

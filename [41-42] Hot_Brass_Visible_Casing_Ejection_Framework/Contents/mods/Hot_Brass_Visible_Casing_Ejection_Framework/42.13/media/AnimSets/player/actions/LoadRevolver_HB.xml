@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <animNode>
-	<m_Name>LoadRifle</m_Name>
-	<m_AnimName>Bob_Reload_Rifle_Load</m_AnimName>
+	<m_Name>LoadRevolver</m_Name>
+	<m_AnimName>Bob_Reload_Revolver_Load</m_AnimName>
 	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
-	<m_Looped>false</m_Looped>
 	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
-	<m_EarlyTransitionOut>true</m_EarlyTransitionOut>
 	<m_SpeedScale>ReloadSpeed</m_SpeedScale>
-	<m_BlendTime>0.20</m_BlendTime>
+	<m_BlendTime>0.30</m_BlendTime>
+	<m_ConditionPriority>10</m_ConditionPriority>
 	<m_Conditions>
 		<m_Name>PerformingAction</m_Name>
 		<m_Type>STRING</m_Type>
@@ -16,7 +15,7 @@
 	<m_Conditions>
 		<m_Name>WeaponReloadType</m_Name>
 		<m_Type>STRING</m_Type>
-		<m_StringValue>boltaction</m_StringValue>
+		<m_StringValue>revolver</m_StringValue>
 	</m_Conditions>
 	<m_Conditions>
 		<m_Name>isLoading</m_Name>

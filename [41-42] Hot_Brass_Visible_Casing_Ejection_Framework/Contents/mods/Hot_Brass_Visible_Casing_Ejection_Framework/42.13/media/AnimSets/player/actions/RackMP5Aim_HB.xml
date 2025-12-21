@@ -2,6 +2,7 @@
 <animNode x_extends="RackMP5_HB.xml">
 	<m_Name>RackMP5Aim</m_Name>
 	<m_AnimName>MP5_Aim_Rack</m_AnimName>
+	<m_ConditionPriority>10</m_ConditionPriority>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions />

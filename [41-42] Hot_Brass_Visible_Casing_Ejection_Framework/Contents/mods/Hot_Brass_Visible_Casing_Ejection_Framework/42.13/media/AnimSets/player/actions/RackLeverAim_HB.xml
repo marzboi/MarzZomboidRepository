@@ -2,6 +2,7 @@
 <animNode x_extends="RackLever_HB.xml">
 	<m_Name>RackShotgunAim</m_Name>
 	<m_AnimName>Lever_Aim_Rack</m_AnimName>
+	<m_ConditionPriority>10</m_ConditionPriority>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions />
