@@ -8,6 +8,8 @@ local VFE = getActivatedMods():contains('\\VFExpansionReduxb42')
 local VFES = getActivatedMods():contains('\\VFExpansion2Reduxb42')
 local VFE93 = getActivatedMods():contains('\\VFExpansion3Reduxb42')
 local G93 = getActivatedMods():contains('\\guns93')
+local FIREARMS = getActivatedMods():contains('\\2256623447/firearmmod')
+local FIREARMS_BETA = getActivatedMods():contains('\\2256623447/firearmmodbeta')
 
 if not G93 then
     Events.OnInitWorld.Add(function()
@@ -61,6 +63,24 @@ if not G93 then
 
             Adjust("Base.46Bullets", "icon", "46_Round")
             Adjust("Base.57Bullets", "icon", "57_Round")
+        end
+
+        if FIREARMS or FIREARMS_BETA then
+            Adjust("Base.Bullets10mm", "WorldStaticModel", "New_10mm_Round")
+            Adjust("Base.Bullets22", "WorldStaticModel", "New_22_Round")
+            Adjust("Base.762x51Bullets", "WorldStaticModel", "New_308_Round")
+            Adjust("Base.762x39Bullets", "WorldStaticModel", "New_762_Round")
+            Adjust("Base.Bullets3006", "WorldStaticModel", "New_3006_Round")
+            Adjust("Base.Bullets4440", "WorldStaticModel", "New_44_Round")
+            Adjust("Base.Bullets357", "WorldStaticModel", "New_357_Round")
+
+            Adjust("Base.Bullets10mm", "icon", "10mm_Round")
+            Adjust("Base.Bullets22", "icon", "22_Round")
+            Adjust("Base.762x51Bullets", "icon", "308_Round")
+            Adjust("Base.762x39Bullets", "icon", "762_Round")
+            Adjust("Base.Bullets3006", "icon", "3006_Round")
+            Adjust("Base.Bullets4440", "icon", "44_Round")
+            Adjust("Base.Bullets357", "icon", "357_Round")
         end
     end)
 end
