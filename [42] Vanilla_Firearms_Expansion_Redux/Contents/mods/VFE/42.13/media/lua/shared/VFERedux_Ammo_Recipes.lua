@@ -1,24 +1,25 @@
---- Gonna remove vanilla cartons and use my condense carton recipe
-local recipesToRemove = {
-    "PlaceBoxesOf556AmmoInCarton",
-    "PlaceBoxesOf223AmmoInCarton",
-    "PlaceBoxesOf308AmmoInCarton",
-    "PlaceBoxesOf9mmBulletsInCarton",
-    "PlaceBoxesOf45AutoBulletsInCarton",
-    "PlaceBoxesOf38SpecialBulletsInCarton",
-    "PlaceBoxesOf44MagnumBulletsInCarton",
-    "PlaceBoxesOfShotgunShellsInCarton",
-    "OpenBoxOfBullets20",
-    "OpenBoxOfShotgunShells"
-}
+Events.OnInitWorld.Add(function()
+    --- Gonna remove vanilla cartons and use my condense carton recipe
+    local recipesToRemove = {
+        "PlaceBoxesOf556AmmoInCarton",
+        "PlaceBoxesOf223AmmoInCarton",
+        "PlaceBoxesOf308AmmoInCarton",
+        "PlaceBoxesOf9mmBulletsInCarton",
+        "PlaceBoxesOf45AutoBulletsInCarton",
+        "PlaceBoxesOf38SpecialBulletsInCarton",
+        "PlaceBoxesOf44MagnumBulletsInCarton",
+        "PlaceBoxesOfShotgunShellsInCarton",
+        "OpenBoxOfBullets20",
+        "OpenBoxOfShotgunShells"
+    }
 
--- Remove Individual Carton CraftRecipes
-for i = 1, #recipesToRemove do
-    local recipe = getScriptManager():getCraftRecipe(recipesToRemove[i])
-    if recipe then
-        recipe:getInputs():clear()
-        recipe:getOutputs():clear()
-        recipe:Load(recipe:getName(), [[
+    -- Remove Individual Carton CraftRecipes
+    for i = 1, #recipesToRemove do
+        local recipe = getScriptManager():getCraftRecipe(recipesToRemove[i])
+        if recipe then
+            recipe:getInputs():clear()
+            recipe:getOutputs():clear()
+            recipe:Load(recipe:getName(), [[
         {
             inputs
             {
@@ -30,18 +31,23 @@ for i = 1, #recipesToRemove do
             }
         }
         ]])
+        end
     end
-end
 
--- Add new ammotypes to open box of 50 bullets
-local recipe = getScriptManager():getCraftRecipe("OpenBoxOfBullets50")
-if not recipe then return end
-recipe:getInputs():clear()
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to open box of 50 bullets
+    local recipe = getScriptManager():getCraftRecipe("OpenBoxOfBullets50")
+    if not recipe then return end
+    recipe:getInputs():clear()
+    recipe:getOutputs():clear()
+    recipe:Load(recipe:getName(), [[
     {
     inputs
         {
             item 1 tags[base:ammo] mappers[ammoTypes] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+    outputs
+        {
+            item 25 mapper:ammoTypes,
         }
     itemMapper ammoTypes
         {
@@ -53,13 +59,13 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to open cartons of boxes scripts
-local recipe = getScriptManager():getCraftRecipe("OpenCartonOfBullets")
-if not recipe then return end
-recipe:getInputs():clear()
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to open cartons of boxes scripts
+    local recipe = getScriptManager():getCraftRecipe("OpenCartonOfBullets")
+    if not recipe then return end
+    recipe:getInputs():clear()
+    recipe:Load(recipe:getName(), [[
     {
     inputs
         {
@@ -72,17 +78,17 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
 
--- Add new ammotypes to put bullets in boxes scripts
-local recipe = getScriptManager():getCraftRecipe("place_ammo_in_box")
-if not recipe then return end
-recipe:getInputs():clear()
-recipe:Load(recipe:getName(), [[
+    -- Add new ammotypes to put bullets in boxes scripts
+    local recipe = getScriptManager():getCraftRecipe("place_ammo_in_box")
+    if not recipe then return end
+    recipe:getInputs():clear()
+    recipe:Load(recipe:getName(), [[
     {
     inputs
         {
-            item 50 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 25 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
     itemMapper ammoType
         {
@@ -91,4 +97,5 @@ recipe:Load(recipe:getName(), [[
         }
     }
     ]]
-)
+    )
+end)

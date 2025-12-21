@@ -5,7 +5,6 @@ module Base
         CanStack         = true,
         Weight           = 0.01,
         ItemType         = base:normal,
-        DisplayName      = 9mm Casing,
         DisplayCategory  = Casings,
         Icon             = 9mm_Casing,
         MetalValue       = 1,
@@ -17,7 +16,6 @@ module Base
         CanStack         = true,
         Weight           = 0.015,
         ItemType         = base:normal,
-        DisplayName      = .45 Auto Casing,
         DisplayCategory  = Casings,
         Icon             = 45_Casing,
         MetalValue       = 1,
@@ -29,7 +27,6 @@ module Base
         CanStack         = true,
         Weight           = 0.015,
         ItemType         = base:normal,
-        DisplayName      = .44 Magnum Casing,
         DisplayCategory  = Casings,
         Icon             = 44_Casing,
         MetalValue       = 1,
@@ -41,7 +38,6 @@ module Base
         CanStack         = true,
         Weight           = 0.01,
         ItemType         = base:normal,
-        DisplayName      = .38 Special Casing,
         DisplayCategory  = Casings,
         Icon             = 38_Casing,
         MetalValue       = 1,
@@ -53,7 +49,6 @@ module Base
         CanStack         = true,
         Weight           = 0.015,
         ItemType         = base:normal,
-        DisplayName      = .308 Casing,
         DisplayCategory  = Casings,
         Icon             = 308_Casing,
         MetalValue       = 1,
@@ -65,7 +60,6 @@ module Base
         CanStack         = true,
         Weight           = 0.015,
         ItemType         = base:normal,
-        DisplayName      = .223 Casing,
         DisplayCategory  = Casings,
         Icon             = 223_Casing,
         MetalValue       = 1,
@@ -77,7 +71,6 @@ module Base
         CanStack         = true,
         Weight           = 0.02,
         ItemType         = base:normal,
-        DisplayName      = 5.56mm Casing,
         DisplayCategory  = Casings,
         Icon             = 556_Casing,
         MetalValue       = 1,
@@ -89,11 +82,102 @@ module Base
         CanStack         = true,
         Weight           = 0.05,
         ItemType         = base:normal,
-        DisplayName      = Empty Shotgun Shell,
         DisplayCategory  = Casings,
         Icon             = Shotgun_Casing,
         MetalValue       = 1,
         StaticModel      = Spent_Shotgun_Round,
         WorldStaticModel = Spent_Shotgun_Round,
+    }
+    
+    /** VFE and Addons **/
+    item 22Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.01,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 22_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_22_Round,
+        WorldStaticModel = Spent_22_Round,
+    }
+    item 308BulletsLinked_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.015,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 308_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_Linked308_Round,
+        WorldStaticModel = Spent_Linked308_Round,
+    }
+    item 762Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.02,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 762_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_762_Round,
+        WorldStaticModel = Spent_762_Round,
+    }
+    item 545Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.02,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 545_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_545_Round,
+        WorldStaticModel = Spent_545_Round,
+    }
+    
+    item 939Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.02,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 939_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_939_Round,
+        WorldStaticModel = Spent_939_Round,
+    }
+    
+    item 76254Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.02,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 76254_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_76254_Round,
+        WorldStaticModel = Spent_76254_Round,
+    }
+    item 57Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.02,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 57_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_57_Round,
+        WorldStaticModel = Spent_57_Round,
+    }
+    item 46Bullets_Casing
+    {
+        CanStack         = true,
+        Weight           = 0.02,
+        ItemType         = base:normal,
+        DisplayCategory  = Casings,
+        Icon             = 46_Casing,
+        MetalValue       = 1,
+        StaticModel      = Spent_46_Round,
+        WorldStaticModel = Spent_46_Round,
     }
 }

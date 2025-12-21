@@ -1,5 +1,7 @@
-[h1]Update for 42.13[/h1]
-[b]Version 42.13 has can be use in MP the duplication issue should not occur, The animations will not be as fluid as in SP, this is due to tickrate in which servers run. so casings will move at 10fps. I am currently working on address racking and reloading spent casings not coming out. as well as casings sounds when hitting the floor.[/b]
+[h1]Update for 42.13.1[/h1]
+[h1][b]NEW MAJOR VERSION HAS BUILT IN COMPATIBILITY WITH MODS EVEN WITHOUT PATCHES[/b][/h1]
+
+[b]Works in MP for 41 and 42, casings are tight to server tick rate hence why the slow FPS of casings.[/b]
 
 [h1]Legacy version for 42.12 is left for those not migrating to 42.13, no new features will be added to this version[/h1]
 
@@ -16,6 +18,8 @@ Unloading is now more practical and prevents you from accidentally dropping ammo
 
 Spent casings can be collected, and in a future update they’ll be used for ammo crafting.
 
+[h2] Native support for Guns of 93 [42] and other mods. Tables are now optional if you want more customized casing fly patterns.[/h2]
+
 [h2] Mod is still a Work in Progress! [/h2]
 
 Some of the things casings will do
@@ -26,13 +30,8 @@ Some of the things casings will do
 [*] be cool looking :D
 [/list]
 
-[h2]VERSION 41 MULTIPLAYER FIXED[/h2]
-[b]Mod is better experience in SP due to the way I had to achieve the visual effect.[/b] MP in 41 is supported, but I have not tested the extend to which it will impact performance on large servers.
-
 To Do:
 [list]
-[*]Keep covering popular mods; check the repo addon for them.
-[*]Improve MP performance.
 [*]Ammo crafting. It will come, I promise.
 [/list]
 
@@ -50,23 +49,13 @@ I have left a commented-out file that gives you an example of how you can easily
 
 I am working on making it so that if a gun is not registered, it will pick some random params based on the model, but only if this uses ammo or casings I have within the mod. Custom ammo will require registering.
 
-[b]Key parameters to know: [/b]
 
-[list]
-[*]Forward, side, and height offsets let you calibrate exactly where the casing appears relative to the player.
-[*]Shell force determines how far the casing is ejected. Negative values will launch it in the opposite direction, useful if you want something unusual.
-[*]Manual ejection controls whether a weapon requires racking to cycle the ammo.
-[*]verticalForce can apply more force to the shell or send it downwards, for those weapons where the spent casings go straight to the floor (MG42 comes to mind).
-[*]ejectionAngle lets you determine if the casing comes forward, left, right, or back, full control to make it authentic.
-[/list]
-
-[b]Currently the mod also supports B41, but I have not tested it extensively, so if you encounter a bug, report it.[/b]
-
-Mod Patches in the link below:
+for Mod Patches in the link below:
+patches will be deprecated in upcoming versions, will stay up for those playing in legacy 42 version.
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=3612830296
 
-Currently covered Mods:
+Currently covered Mods with patches:
 [list]
 [*] Firearms B41 and B42
 [*] VFE 41 and Unofficial 42
@@ -74,9 +63,6 @@ Currently covered Mods:
 [*] Rain's Firearms & Gun Parts [B42]
 [*] WIP Guns of 93
 [/list]
-
-I will not be covering Brita’s Gun anytime soon. While that mod already has casing ejection, 300+ guns, and tons of custom ammo, it fundamentally changes some of the functions I modify to achieve the racking and reloading effects.
-
 
 Workshop ID: 3610677934
 Mod ID: HBVCEF

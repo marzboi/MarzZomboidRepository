@@ -77,8 +77,8 @@ if SpentCasingPhysics then
         if not weapon then return end
         if weapon:isRackAfterShoot() or weapon:isManuallyRemoveSpentRounds() then return end
 
-        local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
-        if not params then return end
+        local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()] or
+            SpentCasingPhysics.DefaultEjectionPortParams[weapon:getWeaponReloadType()]
 
         if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
             if weapon:hasTag(VFETags.m60_link) then

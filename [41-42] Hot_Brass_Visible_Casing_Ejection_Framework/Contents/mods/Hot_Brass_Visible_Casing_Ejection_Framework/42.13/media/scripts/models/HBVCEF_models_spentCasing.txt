@@ -204,4 +204,112 @@ module Base
         texture = WorldItems/Ammo/308RoundLinked,
         scale = 0.55,
     }
+    model New_792_Round
+    {
+        mesh = Worlditems/Ammo/792Round,
+        texture = WorldItems/Ammo/792Round,
+        scale = 0.55,
+    }
+    model Spent_792_Round
+    {
+        mesh = Worlditems/Ammo/792Round_Spent,
+        texture = WorldItems/Ammo/792Round,
+        scale = 0.55,
+    }
+    model New_30_Round
+    {
+        mesh = Worlditems/Ammo/30Round,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model Spent_30_Round
+    {
+        mesh = Worlditems/Ammo/30Round_Spent,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model New_3030_Round
+    {
+        mesh = Worlditems/Ammo/3030Round,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model Spent_3030_Round
+    {
+        mesh = Worlditems/Ammo/3030Round_Spent,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model New_25_Round
+    {
+        mesh = Worlditems/Ammo/25Round,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model Spent_25_Round
+    {
+        mesh = Worlditems/Ammo/25Round_Spent,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model New_380_Round
+    {
+        mesh = Worlditems/Ammo/380Round,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model Spent_380_Round
+    {
+        mesh = Worlditems/Ammo/380Round_Spent,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model New_357_Round
+    {
+        mesh = Worlditems/Ammo/357Round,
+        texture = WorldItems/Ammo/44Round,
+        scale = 0.55,
+    }
+    model Spent_357_Round
+    {
+        mesh = Worlditems/Ammo/357Round_Spent,
+        texture = WorldItems/Ammo/44Round,
+        scale = 0.55,
+    }
+    model New_10mm_Round
+    {
+        mesh = Worlditems/Ammo/10mmRound,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model Spent_10mm_Round
+    {
+        mesh = Worlditems/Ammo/10mmRound_Spent,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model New_ShotgunSlug_Round
+    {
+        mesh = Worlditems/Ammo/12GRound,
+        texture = WorldItems/Ammo/12GSlugRound,
+        scale = 0.55,
+    }
+    model Spent_ShotgunSlug_Round
+    {
+        mesh = Worlditems/Ammo/12GRound_Spent,
+        texture = WorldItems/Ammo/12GSlugRound,
+        scale = 0.55,
+    }
+    model New_40_Round
+    {
+        mesh = Worlditems/Ammo/40Round,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
+    model Spent_40_Round
+    {
+        mesh = Worlditems/Ammo/40Round_Spent,
+        texture = WorldItems/Ammo/38-9Round,
+        scale = 0.55,
+    }
 }
