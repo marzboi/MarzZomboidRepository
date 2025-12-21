@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadRevolver.xml">
-	<m_Name>RackRevolver</m_Name>
-	<m_AnimName>Bob_Reload_Revolver_Rack</m_AnimName>
-	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
+<animNode x_extends="LoadBreechLoader.xml">
+	<m_Name>RackBreechLoader</m_Name>
+	<m_AnimName>Bob_Reload_DBShotgun_Rack</m_AnimName>
 	<m_Looped>false</m_Looped>
 	<m_Conditions />
 	<m_Conditions />
@@ -13,12 +12,20 @@
 		<m_EventName>rackingFinished</m_EventName>
 	</m_Events>
 	<m_Events>
-		<m_TimePc>0.18</m_TimePc>
+		<m_TimePc>0.15</m_TimePc>
 		<m_ParameterValue>rack</m_ParameterValue>
 	</m_Events>
 	<m_Events>
+		<m_Time>Start</m_Time>
+	</m_Events>
+	<m_Events>
+		<m_EventName>changeWeaponSprite</m_EventName>
+		<m_TimePc>0.4</m_TimePc>
+		<m_ParameterValue>original</m_ParameterValue>
+	</m_Events>
+	<m_Events>
 		<m_EventName>rackBullet</m_EventName>
-		<m_TimePc>0.25</m_TimePc>
+		<m_TimePc>0.3</m_TimePc>
 		<m_ParameterValue></m_ParameterValue>
 	</m_Events>
 </animNode>

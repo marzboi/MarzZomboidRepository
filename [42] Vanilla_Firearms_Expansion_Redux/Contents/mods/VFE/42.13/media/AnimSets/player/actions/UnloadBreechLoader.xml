@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadShotgun.xml">
-	<m_Name>UnloadShotgun</m_Name>
-	<m_AnimReverse>true</m_AnimReverse>
+<animNode x_extends="LoadBreechLoader.xml">
+	<m_Name>LoadBreechLoader</m_Name>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>
@@ -14,6 +13,7 @@
 		<m_TimePc>0.1</m_TimePc>
 		<m_ParameterValue>unload</m_ParameterValue>
 	</m_Events>
+	<m_Events />
 	<m_Events>
 		<m_ParameterValue>ejectAmmoStart</m_ParameterValue>
 	</m_Events>

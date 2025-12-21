@@ -20,16 +20,4 @@
 		<m_TimePc>0.3</m_TimePc>
 		<m_ParameterValue></m_ParameterValue>
 	</m_Events>
-	<m_Events>
-		<m_EventName>ejectCasing</m_EventName>
-		<m_TimePc>0.53</m_TimePc>
-	</m_Events>
-	<m_Events>
-		<m_EventName>rackStart</m_EventName>
-		<m_TimePc>0.46</m_TimePc>
-	</m_Events>
-	<m_Events>
-		<m_EventName>rackEnd</m_EventName>
-		<m_TimePc>0.59</m_TimePc>
-	</m_Events>
 </animNode>
