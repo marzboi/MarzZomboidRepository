@@ -171,6 +171,25 @@ SpentCasingPhysics.DefaultEjectionPortParams = {
         sideSpread    = 30,
         heightSpread  = 30,
     },
+
+    ["Levergun"] = {
+        forwardOffset = 0.30,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.45,
+        sideSpread    = 30,
+        heightSpread  = 30,
+    },
+
+    ["RollerDelay"] = {
+        forwardOffset = 0.27,
+        sideOffset    = 0.10,
+        heightOffset  = 0.45,
+        shellForce    = 0.25,
+        sideSpread    = 30,
+        heightSpread  = 30,
+        ejectAngle    = 75,
+    },
 }
 function SpentCasingPhysics.registerWeapon(
     weapon,
