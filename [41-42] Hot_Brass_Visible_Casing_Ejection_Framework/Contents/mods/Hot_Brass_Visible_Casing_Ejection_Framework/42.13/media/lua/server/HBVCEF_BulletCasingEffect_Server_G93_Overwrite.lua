@@ -3,14 +3,14 @@ local G93 = getActivatedMods():contains('\\guns93')
 
 if G93 then
     function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, optionalItem)
-        local forwardOffset = params.forwardOffset or 0.10
-        local sideOffset    = params.sideOffset or 0.10
-        local heightOffset  = params.heightOffset or 0.5
-        local shellForce    = params.shellForce or 0.20
-        local sideSpread    = params.sideSpread or 10
-        local heightSpread  = params.heightSpread or 10
-        local ejectAngle    = params.ejectAngle
-        local verticalForce = params.verticalForce or 0
+        local forwardOffset = params and params.forwardOffset or 0.10
+        local sideOffset    = params and params.sideOffset or 0.10
+        local heightOffset  = params and params.heightOffset or 0.5
+        local shellForce    = params and params.shellForce or 0.20
+        local sideSpread    = params and params.sideSpread or 10
+        local heightSpread  = params and params.heightSpread or 10
+        local ejectAngle    = params and params.ejectAngle
+        local verticalForce = params and params.verticalForce or 0
         local ammoType      = tostring(weapon:getAmmoType():getItemKey())
 
         local itemToEject   = ammoType .. "Brass"
