@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadRifle.xml">
+<animNode x_extends="loadRifle_HB.xml">
 	<m_Name>UnloadRifle</m_Name>
 	<m_AnimReverse>true</m_AnimReverse>
+	<m_Priority>10</m_Priority>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>

@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="loadRifle.xml">
+<animNode x_extends="loadRifle_HB.xml">
 	<m_Name>RackRifle</m_Name>
 	<m_AnimName>Bob_Reload_Bolt_Rack</m_AnimName>
 	<m_BlendTime>0.10</m_BlendTime>
+	<m_Priority>10</m_Priority>
 	<m_Conditions />
 	<m_Conditions />
 	<m_Conditions>

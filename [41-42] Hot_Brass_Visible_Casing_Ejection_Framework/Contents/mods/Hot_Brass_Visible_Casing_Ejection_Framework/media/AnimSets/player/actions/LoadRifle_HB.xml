@@ -8,6 +8,7 @@
 	<m_EarlyTransitionOut>true</m_EarlyTransitionOut>
 	<m_SpeedScale>ReloadSpeed</m_SpeedScale>
 	<m_BlendTime>0.20</m_BlendTime>
+	<m_Priority>10</m_Priority>
 	<m_Conditions>
 		<m_Name>PerformingAction</m_Name>
 		<m_Type>STRING</m_Type>

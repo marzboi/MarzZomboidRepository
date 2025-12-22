@@ -535,14 +535,14 @@ function SpentCasingPhysics.update()
 end
 
 function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, optionalItem)
-    local forwardOffset = params.forwardOffset or 0.0
-    local sideOffset    = params.sideOffset or 0.0
-    local heightOffset  = params.heightOffset or 0.5
-    local shellForce    = params.shellForce or 0.0
-    local sideSpread    = params.sideSpread or 10
-    local heightSpread  = params.heightSpread or 10
-    local ejectAngle    = params.ejectAngle
-    local verticalForce = params.verticalForce or 0
+    local forwardOffset = params and params.forwardOffset or 0.10
+    local sideOffset    = params and params.sideOffset or 0.10
+    local heightOffset  = params and params.heightOffset or 0.5
+    local shellForce    = params and params.shellForce or 0.20
+    local sideSpread    = params and params.sideSpread or 10
+    local heightSpread  = params and params.heightSpread or 10
+    local ejectAngle    = params and params.ejectAngle
+    local verticalForce = params and params.verticalForce or 0
     local ammoType      = tostring(weapon:getAmmoType())
 
     local itemToEject   = ammoType .. "_Casing"
@@ -628,7 +628,8 @@ function SpentCasingPhysics.spawnCasing(player, weapon)
     if not weapon then return end
     if weapon:isRackAfterShoot() or weapon:isManuallyRemoveSpentRounds() then return end
 
-    local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
+    local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()] or
+        SpentCasingPhysics.DefaultEjectionPortParams[weapon:getWeaponReloadType()]
 
     if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
         SpentCasingPhysics.doSpawnCasing(player, weapon, params)
@@ -639,7 +640,8 @@ function SpentCasingPhysics.rackCasing(player, weapon, racking)
     if not player or player:isDead() then return end
     if not weapon then return end
 
-    local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
+    local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()] or
+        SpentCasingPhysics.DefaultEjectionPortParams[weapon:getWeaponReloadType()]
 
     if racking then
         SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
