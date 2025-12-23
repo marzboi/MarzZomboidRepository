@@ -1,6 +1,8 @@
 require "TimedActions/ISReloadWeaponAction"
 require "TimedActions/ISRackFirearm"
 
+local _old = ISBaseTimedAction.setActionAnim
+
 ------- Racking ---------------
 local ISRackFirearm_removeBullets = ISRackFirearm.removeBullet
 function ISRackFirearm:removeBullet()

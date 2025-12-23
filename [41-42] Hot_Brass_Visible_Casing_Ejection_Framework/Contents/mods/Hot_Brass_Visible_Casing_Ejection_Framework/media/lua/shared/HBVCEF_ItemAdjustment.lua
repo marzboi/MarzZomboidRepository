@@ -8,6 +8,7 @@ local VFE = getActivatedMods():contains('VFExpansion1')
 local VFES = getActivatedMods():contains('VFExpansion2')
 local VFE93 = getActivatedMods():contains('VFExpansion3')
 local FIREARMS = getActivatedMods():contains('firearmmod')
+local FIREARMS_REVAMP = getActivatedMods():contains('firearmmodRevamp')
 
 Events.OnInitWorld.Add(function()
     -- --Shotgun Modifiers
@@ -58,7 +59,8 @@ Events.OnInitWorld.Add(function()
         Adjust("Base.57Bullets", "icon", "57_Round")
     end
 
-    if FIREARMS then
+    if FIREARMS or FIREARMS_REVAMP then
+        Adjust("Base.Bullets10mm", "WorldStaticModel", "New_10mm_Round")
         Adjust("Base.Bullets22", "WorldStaticModel", "New_22_Round")
         Adjust("Base.762x51Bullets", "WorldStaticModel", "New_308_Round")
         Adjust("Base.762x39Bullets", "WorldStaticModel", "New_762_Round")
@@ -66,6 +68,7 @@ Events.OnInitWorld.Add(function()
         Adjust("Base.Bullets4440", "WorldStaticModel", "New_44_Round")
         Adjust("Base.Bullets357", "WorldStaticModel", "New_357_Round")
 
+        Adjust("Base.Bullets10mm", "icon", "10mm_Round")
         Adjust("Base.Bullets22", "icon", "22_Round")
         Adjust("Base.762x51Bullets", "icon", "308_Round")
         Adjust("Base.762x39Bullets", "icon", "762_Round")
