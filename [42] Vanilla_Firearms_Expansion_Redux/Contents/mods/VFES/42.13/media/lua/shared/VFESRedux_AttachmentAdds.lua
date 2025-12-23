@@ -27,11 +27,11 @@ VFETweaks:addToMountOn("Base.x2Scope", "Base.UMP45");
 VFETweaks:addToMountOn("Base.Laser", "Base.Vityaz");
 VFETweaks:addToMountOn("Base.", "Base.Vityaz");
 
+VFETweaks:addToMountOn("Base.x2Scope", "Base.SVD");
 VFETweaks:addToMountOn("Base.x4Scope", "Base.SVD");
+VFETweaks:addToMountOn("Base.x8Scope", "Base.SVD");
 VFETweaks:addToMountOn("Base.FiberglassStock", "Base.SVD");
-
-
-
+VFETweaks:addToMountOn("Base.Bipod", "Base.SVD");
 
 
 VFETweaks:addToMountOn("Base.x4Scope", "Base.VSS");
