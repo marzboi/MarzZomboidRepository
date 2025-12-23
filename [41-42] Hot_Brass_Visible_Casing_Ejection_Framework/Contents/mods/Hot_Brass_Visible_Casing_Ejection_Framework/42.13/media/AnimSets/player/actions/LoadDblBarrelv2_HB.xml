@@ -4,6 +4,7 @@
 	<m_AnimName>Bob_Reload_DBShotgun_Load</m_AnimName>
 	<m_Looped>false</m_Looped>
 	<m_BlendTime>0.40</m_BlendTime>
+	<m_ConditionPriority>10</m_ConditionPriority>
 	<m_SpeedScale>ReloadSpeed</m_SpeedScale>
 	<m_SyncTrackingEnabled>false</m_SyncTrackingEnabled>
 	<m_Conditions x_name="91963c8c-a3b2-408b-92ae-de79fd24b9e6">

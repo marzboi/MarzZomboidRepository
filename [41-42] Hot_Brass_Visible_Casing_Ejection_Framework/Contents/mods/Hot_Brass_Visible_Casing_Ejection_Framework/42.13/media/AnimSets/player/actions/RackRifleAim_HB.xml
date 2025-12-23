@@ -3,13 +3,10 @@
 	<m_Name>RackRifleAim</m_Name>
 	<m_AnimName>Bob_AttackRifle_AimBoltRack</m_AnimName>
 	<m_ConditionPriority>10</m_ConditionPriority>
-	<m_Conditions />
-	<m_Conditions />
-	<m_Conditions />
-	<m_Conditions>
+	<m_Conditions x_name="31c1cf8f-53a5-4a06-b2c5-4737f450b26e">
 		<m_Name>RackAiming</m_Name>
 		<m_Type>BOOL</m_Type>
-		<m_BoolValue>true</m_BoolValue>
+		<m_Value>true</m_Value>
 	</m_Conditions>
 	<m_Transitions>
 		<m_Target>IdleRifle</m_Target>

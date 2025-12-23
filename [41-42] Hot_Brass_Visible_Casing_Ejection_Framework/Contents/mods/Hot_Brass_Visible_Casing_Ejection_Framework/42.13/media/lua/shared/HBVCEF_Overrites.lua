@@ -132,7 +132,6 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
     end
     if not weapon:isRackAfterShoot() then
         if not weapon:isManuallyRemoveSpentRounds() then
-            -- TODO: check for extraction jam
             weapon:setSpentRoundChambered(false)
         end
         if weapon:getCurrentAmmoCount() >= weapon:getAmmoPerShoot() then
