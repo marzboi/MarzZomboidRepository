@@ -1,26 +1,38 @@
 require 'HBVCEF_BulletCasingEffect_Server'
-require "GGS_ShellCasingEmitter"
-local GGS = getActivatedMods():contains('\\GaelGunStore_B42')
+local BRITAS = getActivatedMods():contains('Arsenal(26)GunFighter[MAIN MOD 2.0]')
 
-if GGS then
-    local CASING_BY_AMMO = {
-        ["Base.Bullets9mm"] = "Base.pistol_casing",
-        ["Base.9x39Bullets"] = "Base.rifle_casing",
-        ["Base.Bullets22LR"] = "Base.pistol_casing",
-        ["Base.Bullets32"] = "Base.revolver_casing",
-        ["Base.Bullets38"] = "Base.revolver_casing",
-        ["Base.Bullets44"] = "Base.revolver_casing",
-        ["Base.Bullets45"] = "Base.pistol_casing",
-        ["Base.Bullets50"] = "Base.rifle_casing",
-        ["Base.Bullets50Magnum"] = "Base.revolver_casing",
-        ["Base.308Bullets"] = "Base.rifle_casing",
-        ["Base.Bullets357"] = "Base.revolver_casing",
-        ["Base.545x39Bullets"] = "Base.rifle_casing",
-        ["Base.556Bullets"] = "Base.rifle_casing",
-        ["Base.762x39Bullets"] = "Base.rifle_casing",
-        ["Base.762x54rBullets"] = "Base.rifle_casing",
-        ["Base.792x57Bullets"] = "Base.rifle_casing",
-        ["Base.ShotgunShells"] = "Base.shells_casing",
+if BRITAS then
+    local CASING_MAPPER = {
+        -- Pistol/Handgun Calibers
+        ["Base.Bullets22"] = "Base.Brass22",
+        ["Base.Bullets57"] = "Base.Brass57",
+        ["Base.Bullets380"] = "Base.Brass380",
+        ["Base.Bullets9mm"] = "Base.Brass9",
+        ["Base.Bullets38"] = "Base.Brass38",
+        ["Base.Bullets357"] = "Base.Brass357",
+        ["Base.Bullets45"] = "Base.Brass45",
+        ["Base.Bullets45LC"] = "Base.Brass45LC",
+        ["Base.Bullets44"] = "Base.Brass44",
+        ["Base.Bullets4570"] = "Base.Brass4570",
+        ["Base.Bullets50MAG"] = "Base.Brass50MAG",
+
+        -- Shotgun Shells
+        ["Base.410gShotgunShells"] = "Base.Hull410g",
+        ["Base.20gShotgunShells"] = "Base.Hull20g",
+        ["Base.ShotgunShells"] = "Base.Hull12g",
+        ["Base.10gShotgunShells"] = "Base.Hull10g",
+        ["Base.4gShotgunShells"] = "Base.Hull4g",
+
+        -- Rifle Calibers
+        ["Base.223Bullets"] = "Base.Brass223",
+        ["Base.556Bullets"] = "Base.Brass556",
+        ["Base.545x39Bullets"] = "Base.Brass545x39",
+        ["Base.762x39Bullets"] = "Base.Brass762x39",
+        ["Base.308Bullets"] = "Base.Brass308",
+        ["Base.762x51Bullets"] = "Base.Brass762x51",
+        ["Base.762x54rBullets"] = "Base.Brass762x54r",
+        ["Base.3006Bullets"] = "Base.Brass3006",
+        ["Base.50BMGBullets"] = "Base.Brass50BMG",
     }
 
     function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, optionalItem)
@@ -32,9 +44,9 @@ if GGS then
         local heightSpread  = params and params.heightSpread or 10
         local ejectAngle    = params and params.ejectAngle
         local verticalForce = params and params.verticalForce or 0
-        local ammoType      = tostring(weapon:getAmmoType():getItemKey())
+        local ammoType      = tostring(weapon:getAmmoType())
 
-        local itemToEject   = CASING_BY_AMMO[ammoType]
+        local itemToEject   = CASING_MAPPER[ammoType]
         if racking then
             itemToEject = ammoType
         end
@@ -111,7 +123,4 @@ if GGS then
             velZ
         )
     end
-
-    Events.OnWeaponSwing.Remove(handleWeaponShot)
-    Events.OnPlayerUpdate.Remove(processCylinderCasingsOnReload)
 end
