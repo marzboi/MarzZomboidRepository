@@ -217,7 +217,7 @@ function SpentCasingPhysics.getCasingSoundFamily(casing)
 
     if weapon and weapon.getAmmoType then
         local ammoType = weapon:getAmmoType()
-        if ammoType and ammoType == "Base.ShotgunShells" then
+        if ammoType and ammoType == "Base.ShotgunShells" or ammoType == "Base.Slugs" then
             return "Shells"
         end
     end
