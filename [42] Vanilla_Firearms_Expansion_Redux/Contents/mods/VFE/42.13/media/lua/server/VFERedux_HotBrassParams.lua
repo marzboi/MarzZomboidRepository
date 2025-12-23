@@ -511,9 +511,10 @@ local vfeParams = {
         forwardOffset = 0.40,
         sideOffset    = 0.0,
         heightOffset  = 0.50,
-        shellForce    = 0.30,
+        shellForce    = 0.1,
         sideSpread    = 30,
-        heightSpread  = 60,
+        heightSpread  = { 70, 100 },
+        ejectAngle    = 0,
     },
 
     ["Base.MK23SOCOM"] = {
