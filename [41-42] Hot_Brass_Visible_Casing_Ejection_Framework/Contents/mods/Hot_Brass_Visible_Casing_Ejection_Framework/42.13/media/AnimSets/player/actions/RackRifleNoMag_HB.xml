@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<animNode x_extends="LoadRifleNoMag.xml">
+<animNode x_extends="LoadRifleNoMag_HB.xml">
 	<m_Name>RackRifleNoMag</m_Name>
 	<m_AnimName>Bob_Reload_Bolt_Rack</m_AnimName>
 	<m_ConditionPriority>10</m_ConditionPriority>
