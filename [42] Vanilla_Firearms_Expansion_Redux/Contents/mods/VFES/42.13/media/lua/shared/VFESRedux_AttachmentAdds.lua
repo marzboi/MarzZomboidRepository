@@ -5,18 +5,24 @@ VFETweaks:addToMountOn("Base.x2Scope", "Base.HK416");
 VFETweaks:addToMountOn("Base.Bipod", "Base.HK416");
 VFETweaks:addToMountOn("Base.Laser", "Base.HK416");
 VFETweaks:addToMountOn("Base.Coupled556", "Base.HK416");
+VFETweaks:addToMountOn("Base.IronSight", "Base.HK416");
 
 VFETweaks:addToMountOn("Base.Bipod", "Base.Galil");
 VFETweaks:addToMountOn("Base.RedDot", "Base.Galil");
+VFETweaks:addToMountOn("Base.IronSight", "Base.Galil");
 
 VFETweaks:addToMountOn("Base.Coupled762", "Base.AK104");
 VFETweaks:addToMountOn("Base.x4Scope", "Base.AK104");
+VFETweaks:addToMountOn("Base.IronSight", "Base.AK104");
 
 VFETweaks:addToMountOn("Base.x4Scope", "Base.AK74");
+VFETweaks:addToMountOn("Base.IronSight", "Base.AK74");
 
 VFETweaks:addToMountOn("Base.x4Scope", "Base.AKS74U");
+VFETweaks:addToMountOn("Base.IronSight", "Base.AKS74U");
 
 VFETweaks:addToMountOn("Base.x4Scope", "Base.AK105");
+VFETweaks:addToMountOn("Base.IronSight", "Base.AK105");
 
 VFETweaks:addToMountOn("Base.RedDot", "Base.Saiga12");
 
@@ -32,9 +38,13 @@ VFETweaks:addToMountOn("Base.x4Scope", "Base.SVD");
 VFETweaks:addToMountOn("Base.x8Scope", "Base.SVD");
 VFETweaks:addToMountOn("Base.FiberglassStock", "Base.SVD");
 VFETweaks:addToMountOn("Base.Bipod", "Base.SVD");
+VFETweaks:addToMountOn("Base.IronSight", "Base.SVD");
 
 
+VFETweaks:addToMountOn("Base.x2Scope", "Base.VSS");
 VFETweaks:addToMountOn("Base.x4Scope", "Base.VSS");
+VFETweaks:addToMountOn("Base.x8Scope", "Base.VSS");
+VFETweaks:addToMountOn("Base.IronSight", "Base.VSS");
 
 
 VFETweaks:addToMountOn("Base.Bipod", "Base.SV98");
