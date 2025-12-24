@@ -1,76 +1,68 @@
-[h1]Update for 42.13.1[/h1]
-[h1][b]NEW MAJOR VERSION HAS BUILT IN COMPATIBILITY WITH MODS EVEN WITHOUT PATCHES[/b][/h1]
+[h1][b]NEW MAJOR VERSION 1.1[/b][/h1]
 
-[h1][b]IF YOU RUN INTO ERRORS WHEN SWINGING MELEE WEAPONS, FIRST TRY TO FORCE AN UPDATE. EITHER BY RESUBSCRIBING TO THE MOD OR VERIFYING INTEGRITY OF GAMES FILES. THIS ISSUE DOESN'T EXIST ON MY TESTING AND YOU ARE MOST LIKELY RUNNING INTO AN ISSUE WITH AN OLDER VERSION OF THE MOD, FORCE AND UPDATE BEFORE LEAVING A COMMENT. THE MOD HAS CHECKS TO NOT PERFORM THE LOGIC ON WEAPONS OUTSIDE OF FIREARMS ITS IMPOSSIBLE TO TRIGGER THIS ON MELEE ITEMS.[/b][/h1]
+[h1][b]I have reworked a lot of the mod's internals, and it now has compatibility with popular mods in version 41 and 42.13 onward.[/b][/h1]
+[b]Version 42.12 has been faced out and its now hosted in where the repos are, since we no longer need patches. the ModID for version 42 will change in the near future back to the original ID[/b]
 
 [b]Works in MP for 41 and 42, casings are tight to server tick rate hence why the slow FPS of casings.[/b]
 
-[h1]Legacy version for 42.12 is left for those not migrating to 42.13, no new features will be added to this version[/h1]
+[h2] Hot Brass - Visible Casing Ejection Framework [/h2]
 
-[h1] Hot Brass - Visible Casing Ejection Framework [/h1]
-I personally love small details, and even on games with graphic styles that are meant to be retro, having those little details make it so cool. For a long time, I wondered how cool Project Zomboid would look if we could actually see spent casings flying out of our weapons. kinda inspired like the classic Resident Evil games. From that curiosity I dive into the PZ modding discord (amazing place btw).
+Is a passion project and my first official mod. I always love keeping an eye on small details, and that's why I started on a journey of making casings visible and now it has evolved into something more than I originally envisioned.
 
-This is both a mod and a framework that other weapon mods can use to add visible casing ejection.
+BIG thanks to the modding community from Zomboid and all the wonderful people in there.
 
 [h2] Changes to Gameplay [/h2]
 
-Racking has been reworked so that when you rack a round, it won’t magically appear in your pocket anymore; it will realistically fall to the ground. Don’t forget to pick them up!
+Racking now causes you to eject an unfired round, make sure you pick them up. Revolvers and manually-loaded shotguns behave the same as in vanilla for racking.
 
-Unloading is now more practical and prevents you from accidentally dropping ammo all over the floor.
-
-Spent casings can be collected, and in a future update they’ll be used for ammo crafting.
-
-[h2] Native support for mods included in version 42.13, facing out the need of patches outside of customized fly patters for casings. unpatch mods should work as well, but custom ammo will require casings models.[/h2]
+[h2] Native support for mods in version 42.13 and 42.13.1[/h2]
 
 [list]
-[*] Guns of 93 Beta 
+[*] Guns of 93 Beta
 [*] [42] VFE and Addons
 [*] Firearms and Firearms Beta
+[*] Gaels Gunshop
+[/list]
+
+[h2] Native support for mods in version 41[/h2]
+
+[list]
+[*] VFE and Addons
+[*] Guns of 93
+[*] Firearms
+[*] Firearms Revamp
+[*] Britas Weapons
 [/list]
 
 [h2] Mod is still a Work in Progress! [/h2]
+[b]Next step, ammo crafting![/b]
 
-Some of the things casings will do
+Some of the features regarding casings
 [list]
 [*] React to the world around, fall to different levels, react against walls, land on objects (tables, chairs, counters, etc...), open or close windows or doors
 [*] Bounce around
-[*] Play appropiate casing sounds to the tile they are landing open
+[*] Play appropriate casing sounds to the tile they are landing on
 [*] be cool looking :D
-[/list]
-
-To Do:
-[list]
-[*]Ammo crafting. It will come, I promise.
 [/list]
 
 [b]If you find a bug, please report it in the thread for it, not the comments.[/b]
 
-[h3] Huge Thanks! [/h3]
+[h3] Special recognition [/h3]
 
-Thank you to everyone in the PZ Modding Discord for the support on my first mod.
-Special thanks to Vilespring and Sven for allowing me to use VFE ammo icons.
+Thank you to everyone in the PZ Modding Discord and Special thanks to Vilespring for allowing me to use VFE ammo icons and Sven for the constant support and bughunting for version 41!
 
 [h2] For Modders [/h2]
 
 I have redone the structure of the mod, so if you wish to implement it or want to change the functionality of a function, you can patch it by calling the main object and the desired function.
-I have left a commented-out file that gives you an example of how you can easily register your params table with the mod.
+Look over at some of the integrated params table for examples on custom fly patterns for casings.
 
-I am working on making it so that if a gun is not registered, it will pick some random params based on the model, but only if this uses ammo or casings I have within the mod. Custom ammo will require registering.
+[h3] For Modders [/h3]
+If you are looking for version 42.12, I will be posting in a workshop item.
 
-
-for Mod Patches in the link below:
-patches will be deprecated in upcoming versions, will stay up for those playing in legacy 42 version.
-
-https://steamcommunity.com/sharedfiles/filedetails/?id=3612830296
-
-Currently covered Mods with patches:
-[list]
-[*] Firearms B41 and B42
-[*] VFE 41 and Unofficial 42
-[*] Filibuster Rhymes's Acceptable Guns
-[*] Rain's Firearms & Gun Parts [B42]
-[*] WIP Guns of 93
-[/list]
+If you wish to support my work!
+[url=https://ko-fi.com/marz500418]
+[img]https://raw.githubusercontent.com/marzboi/kofi-banners/5cca447351299424fa655497152c3086acb99ef3/kofi_logo.svg[/img]
+[/url]
 
 Workshop ID: 3610677934
 Mod ID: HBVCEF

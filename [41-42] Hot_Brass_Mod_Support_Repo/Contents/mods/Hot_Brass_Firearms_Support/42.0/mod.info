@@ -4,4 +4,4 @@ id=HBVCEFFirearms42
 description=Support for Firearms B42 Stable.
 icon=miniLogo.png
 author=Marz
-require=\HBVCEF,\2256623447/firearmmod
+require=\HBVCEFLegacy,\2256623447/firearmmod

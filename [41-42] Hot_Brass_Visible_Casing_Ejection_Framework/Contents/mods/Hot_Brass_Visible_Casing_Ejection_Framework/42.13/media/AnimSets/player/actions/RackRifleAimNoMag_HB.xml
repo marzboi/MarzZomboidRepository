@@ -2,15 +2,11 @@
 <animNode x_extends="RackRifleNoMag_HB.xml">
 	<m_Name>RackRifleAimNoMag</m_Name>
 	<m_AnimName>Bob_AttackRifle_AimBoltRack</m_AnimName>
-	<m_deferredBoneAxis>Y</m_deferredBoneAxis>
 	<m_ConditionPriority>10</m_ConditionPriority>
-	<m_Conditions />
-	<m_Conditions />
-	<m_Conditions />
-	<m_Conditions>
+	<m_Conditions x_name="d1cca229-7bee-4922-a162-5734579b16d5">
 		<m_Name>RackAiming</m_Name>
 		<m_Type>BOOL</m_Type>
-		<m_BoolValue>true</m_BoolValue>
+		<m_Value>true</m_Value>
 	</m_Conditions>
 	<m_Transitions>
 		<m_Target>IdleRifle</m_Target>

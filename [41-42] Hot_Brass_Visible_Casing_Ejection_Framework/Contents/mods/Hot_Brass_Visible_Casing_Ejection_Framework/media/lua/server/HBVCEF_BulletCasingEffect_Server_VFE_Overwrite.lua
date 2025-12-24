@@ -1,6 +1,7 @@
 require "HBVCEF_BulletCasingEffect_Server"
+local VFE = getActivatedMods():contains('VFExpansion1')
 
-if SpentCasingPhysics then
+if VFE then
     function SpentCasingPhysics.addCasing(
         player,
         weapon,
@@ -77,11 +78,11 @@ if SpentCasingPhysics then
         if not weapon then return end
         if weapon:isRackAfterShoot() or weapon:isManuallyRemoveSpentRounds() then return end
 
-        local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()] or
-            SpentCasingPhysics.DefaultEjectionPortParams[weapon:getWeaponReloadType()]
+        local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()]
+        if not params then return end
 
         if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-            if weapon:hasTag(VFETags.m60_link) then
+            if weapon:hasTag("M60_Link") then
                 local brassCatcher = weapon:getWeaponPart('RecoilPad')
                 if brassCatcher then
                     player:getInventory():AddItem("Base.308Bullets_Casing")

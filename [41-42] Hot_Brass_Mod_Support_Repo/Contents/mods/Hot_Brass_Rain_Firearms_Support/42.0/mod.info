@@ -4,4 +4,4 @@ id=HBVCEFRainFirearms
 description=Support for B42 Rain's Firearms & Gun Parts.
 icon=miniLogo.png
 author=Marz
-require=\HBVCEF,\B42RainsFirearmsAndGunParts
+require=\HBVCEFLegacy,\B42RainsFirearmsAndGunParts

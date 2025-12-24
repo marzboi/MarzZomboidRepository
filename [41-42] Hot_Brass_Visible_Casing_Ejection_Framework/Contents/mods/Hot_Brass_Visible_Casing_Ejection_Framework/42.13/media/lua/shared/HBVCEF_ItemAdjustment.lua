@@ -10,8 +10,9 @@ local VFE93 = getActivatedMods():contains('\\VFExpansion3Reduxb42')
 local G93 = getActivatedMods():contains('\\guns93')
 local FIREARMS = getActivatedMods():contains('\\2256623447/firearmmod')
 local FIREARMS_BETA = getActivatedMods():contains('\\2256623447/firearmmodbeta')
+local GGS = getActivatedMods():contains('\\GaelGunStore_B42')
 
-if not G93 then
+if not G93 or not GGS then
     Events.OnInitWorld.Add(function()
         -- --Shotgun Modifiers
         Adjust("Base.DoubleBarrelShotgun", "ManuallyRemoveSpentRounds", "true")

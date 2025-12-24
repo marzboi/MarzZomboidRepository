@@ -1,5 +1,6 @@
 require "TimedActions/ISReloadWeaponAction"
 require "TimedActions/ISRackFirearm"
+local client = isClient()
 
 ------- Racking ---------------
 local ISRackFirearm_removeBullets = ISRackFirearm.removeBullet
@@ -37,7 +38,7 @@ local ISRackFirearm_animEvent = ISRackFirearm.animEvent
 function ISRackFirearm:animEvent(event, parameter)
     if event == 'ejectCasing' then
         if self.ejectingSpentRound then
-            if isClient() then
+            if client then
                 sendClientCommand("HBVCEF", "rackCasing", {
                     weaponId = self.gun:getID(),
                     racking  = false,
@@ -47,7 +48,7 @@ function ISRackFirearm:animEvent(event, parameter)
             end
         end
         if self.racking and not self.emptyRack then
-            if isClient() then
+            if client then
                 sendClientCommand("HBVCEF", "rackCasing", {
                     weaponId = self.gun:getID(),
                     racking  = true,
@@ -73,7 +74,7 @@ end
 function ISReloadWeaponAction:ejectSpentRounds()
     if self.gun:getSpentRoundCount() > 0 then
         for i = 1, self.gun:getSpentRoundCount() do
-            if isClient() then
+            if client then
                 sendClientCommand("HBVCEF", "rackCasing", {
                     weaponId = self.gun:getID(),
                     racking  = false,
@@ -85,7 +86,7 @@ function ISReloadWeaponAction:ejectSpentRounds()
         self.gun:setSpentRoundCount(0)
     elseif self.gun:isSpentRoundChambered() then
         self.gun:setSpentRoundChambered(false)
-        if isClient() then
+        if client then
             sendClientCommand("HBVCEF", "rackCasing", {
                 weaponId = self.gun:getID(),
                 racking  = false,
