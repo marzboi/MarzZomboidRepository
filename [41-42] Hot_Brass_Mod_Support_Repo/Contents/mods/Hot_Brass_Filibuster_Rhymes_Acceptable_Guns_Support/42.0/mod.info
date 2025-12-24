@@ -4,4 +4,4 @@ id=HBVCEFFilibusterGuns
 description=Support for Filibuster Rhymes' Acceptable Guns.
 icon=miniLogo.png
 author=Marz
-require=\HBVCEF,\FRAcceptableGunsDEMO
+require=\HBVCEFLegacy,\FRAcceptableGunsDEMO

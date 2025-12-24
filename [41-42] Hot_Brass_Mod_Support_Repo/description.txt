@@ -1,10 +1,8 @@
-[h1]Mod Patch Repository - Hot Brass[/h1]
+[h1]HOT BRASS LEGACY - 42.12[/h1]
 
-[b]This mods collects all official compatibility patches for Hot Brass, created upon request for popular weapon and firearm mods.[/b]
+[b]This servers as the lagacy version 42.12[/b]
 
-More patches will be added over time.
-
-[h2]Currently Supported Mods[/h2]
+Legacy version and some of its patches.
 
 [list]
 [*] Firearms B41 and B42
@@ -17,10 +15,6 @@ More patches will be added over time.
 [*] [b](NEW)[/b] New Patch for AmmoMaker, makes my casing be visual effects only
 [*] For VFE and addons on B41 with custom casings check Sven upload it includes VFE93 and Gunrunner's
 [/list]
-
-[h2]More Coming Soon[/h2]
-Additional mod integrations are planned.
-If you have a request, feel free to leave a comment!
 
 Workshop ID: 3612830296
 Mod ID: HBVCEFAmmoMaker

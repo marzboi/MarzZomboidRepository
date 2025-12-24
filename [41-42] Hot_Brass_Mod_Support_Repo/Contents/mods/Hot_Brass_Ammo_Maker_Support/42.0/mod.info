@@ -4,4 +4,4 @@ id=HBVCEFAmmoMaker
 description=Casing Ejection will be visible when you shoot but will not leave casings on the ground for compatibility.
 icon=miniLogo.png
 author=Marz
-require=\HBVCEF,\2788256295/ammomaker
+require=\HBVCEFLegacy,\2788256295/ammomaker
