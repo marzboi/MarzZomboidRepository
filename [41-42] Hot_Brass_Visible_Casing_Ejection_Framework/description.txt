@@ -1,6 +1,7 @@
 [h1][b]NEW MAJOR VERSION 1.1[/b][/h1]
 
 [h1][b]I have reworked a lot of the mod's internals, and it now has compatibility with popular mods in version 41 and 42.13 onward.[/b][/h1]
+[b]Version 42.12 has been faced out and its now hosted in where the repos are, since we no longer need patches. the ModID for version 42 will change in the near future back to the original ID[/b]
 
 [b]Works in MP for 41 and 42, casings are tight to server tick rate hence why the slow FPS of casings.[/b]
 
