@@ -33,6 +33,7 @@ Racking now causes you to eject an unfired round, make sure you pick them up. Re
 [*] Firearms Revamp
 [*] Britas Weapons
 [/list]
+[b]If you are hosting this mod in MP for version 41, make sure it loaded last! [/b]
 
 [h2] Mod is still a Work in Progress! [/h2]
 [b]Next step, ammo crafting![/b]
