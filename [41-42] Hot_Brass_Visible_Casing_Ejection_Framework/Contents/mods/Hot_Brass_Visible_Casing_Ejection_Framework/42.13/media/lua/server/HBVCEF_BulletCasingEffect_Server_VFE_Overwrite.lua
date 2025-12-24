@@ -1,6 +1,6 @@
 require "HBVCEF_BulletCasingEffect_Server"
 local VFEREDUX = getActivatedMods():contains('\\VFExpansionReduxb42')
-local VFESREDUX = getActivatedMods():contains('\\VFExpansionRedux2b42')
+local VFESREDUX = getActivatedMods():contains('\\VFExpansion2Reduxb42')
 local VFE93REDUX = getActivatedMods():contains('\\VFExpansion3Reduxb42')
 
 if VFEREDUX then
