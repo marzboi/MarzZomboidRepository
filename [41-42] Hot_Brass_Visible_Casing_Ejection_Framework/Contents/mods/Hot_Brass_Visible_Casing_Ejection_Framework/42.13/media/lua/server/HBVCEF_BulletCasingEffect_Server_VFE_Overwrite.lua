@@ -99,6 +99,33 @@ if VFEREDUX then
         end
     end
 
+    function SpentCasingPhysics.rackCasing(player, weapon, racking)
+        if not player or player:isDead() then return end
+        if not weapon then return end
+
+        local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()] or
+            SpentCasingPhysics.DefaultEjectionPortParams[weapon:getWeaponReloadType()]
+
+        if racking then
+            if weapon:hasTag(VFETags.m60_link) then
+                local brassCatcher = weapon:getWeaponPart('RecoilPad')
+                if brassCatcher then
+                    player:getInventory():AddItem("Base.308Bullets")
+                    player:getInventory():AddItem("Base.M60_Link")
+                else
+                    SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, "Base.308Bullets")
+                    SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, "Base.M60_Link")
+                end
+            else
+                SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
+            end
+        end
+
+        if not racking then
+            SpentCasingPhysics.doSpawnCasing(player, weapon, params)
+        end
+    end
+
     local vfeParams = {
 
         --- Shotguns
