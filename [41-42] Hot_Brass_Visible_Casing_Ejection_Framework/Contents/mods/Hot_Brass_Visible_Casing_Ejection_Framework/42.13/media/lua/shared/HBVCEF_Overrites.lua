@@ -62,9 +62,9 @@ function ISRackFirearm:animEvent(event, parameter)
     return ISRackFirearm_animEvent(self, event, parameter)
 end
 
-local old_new = ISRackFirearm.new
+local ISRackFirearm_new = ISRackFirearm.new
 function ISRackFirearm:new(character, gun)
-    local o = old_new(self, character, gun)
+    local o = ISRackFirearm_new(self, character, gun)
     o.ejectingSpentRound = false
     o.racking = true
     o.emptyRack = true
