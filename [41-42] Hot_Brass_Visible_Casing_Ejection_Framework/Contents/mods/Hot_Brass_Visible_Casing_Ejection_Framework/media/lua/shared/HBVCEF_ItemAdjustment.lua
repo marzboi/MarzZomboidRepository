@@ -4,15 +4,7 @@ local function Adjust(Name, Property, Value)
     Item:DoParam(Property .. " = " .. Value)
 end
 
-local VFE = getActivatedMods():contains('VFExpansion1')
-local VFES = getActivatedMods():contains('VFExpansion2')
-local VFE93 = getActivatedMods():contains('VFExpansion3')
-local G93 = getActivatedMods():contains('Guns93')
-local FIREARMS = getActivatedMods():contains('firearmmod')
-local FIREARMS_REVAMP = getActivatedMods():contains('firearmmodRevamp')
-local BRITAS = getActivatedMods():contains('Arsenal(26)GunFighter[MAIN MOD 2.0]')
-
-if not BRITAS then
+if not SpentCasingPhysics.BRITAS then
     Events.OnInitWorld.Add(function()
         -- --Shotgun Modifiers
         Adjust("Base.DoubleBarrelShotgun", "ManuallyRemoveSpentRounds", "true")
@@ -38,7 +30,7 @@ if not BRITAS then
         Adjust("Base.ShotgunShells", "icon", "Shotgun_Round")
 
         -- VFE and Addons
-        if VFE then
+        if SpentCasingPhysics.VFE then
             Adjust("Base.22Bullets", "WorldStaticModel", "New_22_Round")
             Adjust("Base.308BulletsLinked", "WorldStaticModel", "New_Linked308_Round")
             Adjust("Base.762Bullets", "WorldStaticModel", "New_762_Round")
@@ -48,13 +40,13 @@ if not BRITAS then
             Adjust("Base.762Bullets", "icon", "762_Round")
         end
 
-        if VFES then
+        if SpentCasingPhysics.VFES then
             Adjust("Base.545Bullets", "WorldStaticModel", "New_545_Round")
 
             Adjust("Base.545Bullets", "icon", "545_Round")
         end
 
-        if VFE93 then
+        if SpentCasingPhysics.VFE93 then
             Adjust("Base.46Bullets", "WorldStaticModel", "New_46_Round")
             Adjust("Base.57Bullets", "WorldStaticModel", "New_57_Round")
 
@@ -62,7 +54,7 @@ if not BRITAS then
             Adjust("Base.57Bullets", "icon", "57_Round")
         end
 
-        if FIREARMS or FIREARMS_REVAMP then
+        if SpentCasingPhysics.FIREARMS or SpentCasingPhysics.FIREARMS_REVAMP then
             Adjust("Base.Bullets10mm", "WorldStaticModel", "New_10mm_Round")
             Adjust("Base.Bullets22", "WorldStaticModel", "New_22_Round")
             Adjust("Base.762x51Bullets", "WorldStaticModel", "New_308_Round")
@@ -80,7 +72,7 @@ if not BRITAS then
             Adjust("Base.Bullets357", "icon", "357_Round")
         end
 
-        if G93 then
+        if SpentCasingPhysics.G93 then
             Adjust("Base.Bullets3006", "WorldStaticModel", "New_3006_Round")
             Adjust("Base.792Bullets", "WorldStaticModel", "New_792_Round")
             Adjust("Base.30CarBullets", "WorldStaticModel", "New_30_Round")
