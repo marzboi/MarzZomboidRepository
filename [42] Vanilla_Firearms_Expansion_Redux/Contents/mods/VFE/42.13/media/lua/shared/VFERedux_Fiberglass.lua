@@ -20,8 +20,8 @@ end
 
 local function fiberglassInitCheck(player, weapon)
     if not weapon or not player then return end
-    local part = weapon:getWeaponPart('Stock')
     if weapon:getCategory() == "Weapon" and weapon:getSubCategory() == "Firearm" then
+        local part = weapon:getWeaponPart('Stock')
         if part and part:getFullType() == "Base.FiberglassStock" then
             VFESetWeaponModel(weapon, false)
             VFESetWeaponIcon(weapon)
