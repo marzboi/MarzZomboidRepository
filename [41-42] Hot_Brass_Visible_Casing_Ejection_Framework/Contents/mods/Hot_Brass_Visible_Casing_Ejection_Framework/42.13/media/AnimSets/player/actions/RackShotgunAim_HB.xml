@@ -3,7 +3,10 @@
 	<m_Name>RackShotgunAim</m_Name>
 	<m_AnimName>Bob_AttackShotgun_AimRack</m_AnimName>
 	<m_ConditionPriority>10</m_ConditionPriority>
-	<m_Conditions x_name="2f33f5e5-0df1-4174-8304-44673a99bde5">
+	<m_Conditions />
+	<m_Conditions />
+	<m_Conditions />
+	<m_Conditions>
 		<m_Name>RackAiming</m_Name>
 		<m_Type>BOOL</m_Type>
 		<m_Value>true</m_Value>
