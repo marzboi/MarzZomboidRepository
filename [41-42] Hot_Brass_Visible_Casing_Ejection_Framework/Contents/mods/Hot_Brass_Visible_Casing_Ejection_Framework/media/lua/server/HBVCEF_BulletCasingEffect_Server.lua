@@ -233,6 +233,13 @@ end
 function SpentCasingPhysics.playCasingImpactSound(casing, square)
     if not casing then return end
 
+    if SpentCasingPhysics.VFE then
+        if casing.casingType == "Base.M1Bloc" then
+            casing.player:getEmitter():playSound("M1PingDrop")
+            casing.repeatCasingSound = false
+        end
+    end
+
     local family = SpentCasingPhysics.getCasingSoundFamily(casing)
     local surfaceTypeName = SpentCasingPhysics.getSurfaceTypeFromSquare(square)
 
@@ -292,6 +299,7 @@ function SpentCasingPhysics.addCasing(
         currentWorldItem = nil,
         floorBounces = SpentCasingPhysics.RANDOM:random(1, 2),
         hasHitFloor = false,
+        repeatCasingSound = true,
     }
 
     casingData.currentWorldItem = square:AddWorldInventoryItem(casingType, startX, startY, startZ)
@@ -534,6 +542,14 @@ function SpentCasingPhysics.update()
     end
 end
 
+function SpentCasingPhysics.getItemToEject(ammoType)
+    if SpentCasingPhysics.BRITAS then
+        return SpentCasingPhysics.BRITAS_CASING_MAPPER[ammoType]
+    end
+
+    return ammoType .. "_Casing"
+end
+
 function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, optionalItem)
     local forwardOffset = params and params.forwardOffset or 0.10
     local sideOffset    = params and params.sideOffset or 0.10
@@ -543,9 +559,10 @@ function SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, optio
     local heightSpread  = params and params.heightSpread or 10
     local ejectAngle    = params and params.ejectAngle
     local verticalForce = params and params.verticalForce or 0
-    local ammoType      = tostring(weapon:getAmmoType())
+    local ammoType      = weapon:getAmmoType()
+    if not ammoType then return end
 
-    local itemToEject   = ammoType .. "_Casing"
+    local itemToEject = SpentCasingPhysics.getItemToEject(tostring(ammoType))
     if racking then
         itemToEject = ammoType
     end
@@ -625,26 +642,48 @@ end
 
 function SpentCasingPhysics.spawnCasing(player, weapon)
     if not player or player:isDead() then return end
-    if not weapon then return end
+    if not weapon or not weapon:isRanged() or weapon:isMelee() then return end
     if weapon:isRackAfterShoot() or weapon:isManuallyRemoveSpentRounds() then return end
 
     local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()] or
         SpentCasingPhysics.DefaultEjectionPortParams[weapon:getWeaponReloadType()]
 
     if weapon:isRoundChambered() and not weapon:isJammed() and weapon:haveChamber() then
-        SpentCasingPhysics.doSpawnCasing(player, weapon, params)
+        if SpentCasingPhysics.VFE and weapon:hasTag("M60_Link") then
+            local brassCatcher = weapon:getWeaponPart('RecoilPad')
+            if brassCatcher then
+                player:getInventory():AddItem("Base.308Bullets_Casing")
+                player:getInventory():AddItem("Base.M60_Link")
+            else
+                SpentCasingPhysics.doSpawnCasing(player, weapon, params, false, "Base.308Bullets_Casing")
+                SpentCasingPhysics.doSpawnCasing(player, weapon, params, false, "Base.M60_Link")
+            end
+        else
+            SpentCasingPhysics.doSpawnCasing(player, weapon, params)
+        end
     end
 end
 
 function SpentCasingPhysics.rackCasing(player, weapon, racking)
     if not player or player:isDead() then return end
-    if not weapon then return end
+    if not weapon or not weapon:isRanged() or weapon:isMelee() then return end
 
     local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()] or
         SpentCasingPhysics.DefaultEjectionPortParams[weapon:getWeaponReloadType()]
 
     if racking then
-        SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
+        if SpentCasingPhysics.VFE and weapon:hasTag("M60_Link") then
+            local brassCatcher = weapon:getWeaponPart('RecoilPad')
+            if brassCatcher then
+                player:getInventory():AddItem("Base.308Bullets")
+                player:getInventory():AddItem("Base.M60_Link")
+            else
+                SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, "Base.308Bullets")
+                SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking, "Base.M60_Link")
+            end
+        else
+            SpentCasingPhysics.doSpawnCasing(player, weapon, params, racking)
+        end
     end
 
     if not racking then

@@ -1,0 +1,7 @@
+VERSION = 1,
+option HB.CosmeticCasing {
+    type = boolean,
+    default = false,
+    page = Hot_Brass,
+    translation = HB_Cosmetic_Casing,
+}

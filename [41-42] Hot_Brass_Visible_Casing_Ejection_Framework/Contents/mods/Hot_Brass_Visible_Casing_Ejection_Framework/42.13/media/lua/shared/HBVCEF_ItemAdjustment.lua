@@ -1,18 +1,13 @@
+require "HBVCEF_ModelWeaponEjectCasings"
+require "HBVCEF_Compatibility_Mods"
+
 local function Adjust(Name, Property, Value)
     local Item = ScriptManager.instance:getItem(Name)
     if not Item then return end
     Item:DoParam(Property .. " = " .. Value)
 end
 
-local VFE = getActivatedMods():contains('\\VFExpansionReduxb42')
-local VFES = getActivatedMods():contains('\\VFExpansion2Reduxb42')
-local VFE93 = getActivatedMods():contains('\\VFExpansion3Reduxb42')
-local G93 = getActivatedMods():contains('\\guns93')
-local FIREARMS = getActivatedMods():contains('\\2256623447/firearmmod')
-local FIREARMS_BETA = getActivatedMods():contains('\\2256623447/firearmmodbeta')
-local GGS = getActivatedMods():contains('\\GaelGunStore_B42')
-
-if not G93 or not GGS then
+if not SpentCasingPhysics.G93 and not SpentCasingPhysics.GGS then
     Events.OnInitWorld.Add(function()
         -- --Shotgun Modifiers
         Adjust("Base.DoubleBarrelShotgun", "ManuallyRemoveSpentRounds", "true")
@@ -38,7 +33,7 @@ if not G93 or not GGS then
         Adjust("Base.ShotgunShells", "icon", "Shotgun_Round")
 
         -- VFE and Addons
-        if VFE then
+        if SpentCasingPhysics.VFE then
             Adjust("Base.22Bullets", "WorldStaticModel", "New_22_Round")
             Adjust("Base.308BulletsLinked", "WorldStaticModel", "New_Linked308_Round")
             Adjust("Base.762Bullets", "WorldStaticModel", "New_762_Round")
@@ -48,7 +43,7 @@ if not G93 or not GGS then
             Adjust("Base.762Bullets", "icon", "762_Round")
         end
 
-        if VFES then
+        if SpentCasingPhysics.VFES then
             Adjust("Base.545Bullets", "WorldStaticModel", "New_545_Round")
             Adjust("Base.76254Bullets", "WorldStaticModel", "New_76254_Round")
             Adjust("Base.939Bullets", "WorldStaticModel", "New_939_Round")
@@ -58,7 +53,7 @@ if not G93 or not GGS then
             Adjust("Base.939Bullets", "icon", "939_Round")
         end
 
-        if VFE93 then
+        if SpentCasingPhysics.VFE93 then
             Adjust("Base.46Bullets", "WorldStaticModel", "New_46_Round")
             Adjust("Base.57Bullets", "WorldStaticModel", "New_57_Round")
 
@@ -66,7 +61,7 @@ if not G93 or not GGS then
             Adjust("Base.57Bullets", "icon", "57_Round")
         end
 
-        if FIREARMS or FIREARMS_BETA then
+        if SpentCasingPhysics.FIREARMS or SpentCasingPhysics.FIREARMS_BETA then
             Adjust("Base.Bullets10mm", "WorldStaticModel", "New_10mm_Round")
             Adjust("Base.Bullets22", "WorldStaticModel", "New_22_Round")
             Adjust("Base.762x51Bullets", "WorldStaticModel", "New_308_Round")

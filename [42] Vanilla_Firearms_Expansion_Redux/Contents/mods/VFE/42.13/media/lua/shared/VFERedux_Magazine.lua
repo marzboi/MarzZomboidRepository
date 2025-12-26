@@ -28,11 +28,12 @@ local function manageMagazineAttachment(weapon)
 	end
 end
 
-local function magazineInitCheck()
-	local weapon = getPlayer():getPrimaryHandItem()
-	if not weapon then return end
-	if weapon:isContainsClip() then
-		weapon:attachWeaponPart(instanceItem("MagazineAttachment"), true)
+local function magazineInitCheck(player, weapon)
+	if not weapon or not player then return end
+	if weapon:getCategory() == "Weapon" and weapon:getSubCategory() == "Firearm" then
+		if weapon:isContainsClip() then
+			weapon:attachWeaponPart(instanceItem("MagazineAttachment"), true)
+		end
 	end
 end
 
@@ -48,4 +49,4 @@ function ISEjectMagazine:complete()
 	ISEjectMagazine_complete(self)
 end
 
-Events.OnEquipPrimary.Add(magazineInitCheck)
+Events.OnEquipPrimary.Add(function(player, weapon) magazineInitCheck(player, weapon) end)
