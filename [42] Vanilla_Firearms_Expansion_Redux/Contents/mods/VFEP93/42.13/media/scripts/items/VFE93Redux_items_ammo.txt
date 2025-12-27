@@ -10,7 +10,7 @@ module Base
         Icon              = 46Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 556Bullets,
-        Tags              = base:ammo,
+        Tags              = base:ammo;vfe:boxammo50,
     }
     
     item 46Box
@@ -90,7 +90,7 @@ module Base
         Icon              = 57Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 556Bullets,
-        Tags              = base:ammo,
+        Tags              = base:ammo;vfe:boxammo50,
     }
     
     item 57Box

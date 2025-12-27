@@ -8,7 +8,7 @@ module Base
         Icon              = 545Bullets,
         ItemType          = base:normal,
         MetalValue        = 1,
-        Tags              = base:ammo,
+        Tags              = base:ammo;vfe:boxammo50,
         Weight            = 0.02,
         WorldStaticModel  = 762Bullets,
     }
@@ -90,7 +90,7 @@ module Base
         Icon              = 939Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 762Bullets,
-        Tags              = base:ammo,
+        Tags              = base:ammo;vfe:boxammo50,
     }
     
     item 939Box
@@ -171,7 +171,7 @@ module Base
         Icon              = 76254Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 762Bullets,
-        Tags              = base:ammo,
+        Tags              = base:ammo;vfe:boxammo20,
     }
     
     item 76254Box
