@@ -1,0 +1,21 @@
+module Base
+{
+    craftRecipe Make556Bullets
+    {
+        timedAction = MakingElectrical,
+        time        = 100,
+        Tags        = AnySurfaceCraft,
+        category    = Ammo,
+        inputs
+        {
+            item 50 [Base.556Bullets_Casing],
+            item 50 [Base.556ProjectileBox],
+            item 50 [Base.PrimerBox],
+            item 50 [Base.GunPowder],
+        }
+        outputs
+        {
+            item 50 Base.556Bullets,
+        }
+    }
+}

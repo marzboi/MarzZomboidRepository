@@ -23,7 +23,7 @@ module Base
         MetalValue        = 40,
         WorldStaticModel  = 46Box,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        DoubleClickRecipe = OpenBoxOfBullets50,
+        DoubleClickRecipe = OpenBoxOf50Bullets,
     }
     
     item 46Pack
@@ -103,7 +103,7 @@ module Base
         MetalValue        = 40,
         WorldStaticModel  = 57Box,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        DoubleClickRecipe = OpenBoxOfBullets50,
+        DoubleClickRecipe = OpenBoxOf50Bullets,
     }
     
     item 57Pack

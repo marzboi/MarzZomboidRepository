@@ -8,7 +8,7 @@ module Base
         Icon              = 762Bullets,
         ItemType          = base:normal,
         MetalValue        = 1.0,
-        Tags              = base:ammo,
+        Tags              = base:ammo;vfe:boxammo50,
         Weight            = 0.025,
         WorldStaticModel  = 762Bullets,
     }
@@ -17,7 +17,7 @@ module Base
     {
         AlwaysWelcomeGift  = true,
         DisplayCategory    = Ammo,
-        DoubleClickRecipe  = OpenBoxOfBullets50,
+        DoubleClickRecipe  = OpenBoxOf50Bullets,
         Icon               = 762AmmoBox,
         ItemType           = base:normal,
         MetalValue         = 40,
@@ -91,7 +91,7 @@ module Base
         Icon              = 22bullets,
         ItemType          = base:normal,
         MetalValue        = 1,
-        Tags              = base:ammo,
+        Tags              = base:ammo;vfe:boxammo50,
         Weight            = 0.005,
         WorldStaticModel  = Bullets22lr,
     }
@@ -100,7 +100,7 @@ module Base
     {
         AlwaysWelcomeGift = true,
         DisplayCategory   = Ammo,
-        DoubleClickRecipe = OpenBoxOfBullets50,
+        DoubleClickRecipe = OpenBoxOf50Bullets,
         Icon              = 22AmmoBox,
         ItemType          = base:normal,
         MetalValue        = 40,
@@ -166,11 +166,12 @@ module Base
     item 308Bullets
     {
         Weight = 0.04,
+        Tags   = base:ammo;vfe:boxammo20,
     }
     
     item 308Box
     {
-        DoubleClickRecipe = OpenBoxOfBullets50,
+        DoubleClickRecipe = OpenBoxOf20Bullets,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         Weight            = 0.8,
     }
@@ -223,13 +224,15 @@ module Base
     
     item 556Box
     {
-        Tags   = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        Weight = 0.46,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 0.46,
+        DoubleClickRecipe = OpenBoxOf50Bullets,
     }
     
     item 556Bullets
     {
         Weight = 0.023,
+        Tags   = base:ammo;vfe:boxammo50,
     }
     
     item 556Pack
@@ -281,12 +284,14 @@ module Base
     item 223Bullets
     {
         Weight = 0.023,
+        Tags   = base:ammo;vfe:boxammo50,
     }
     
     item 223Box
     {
-        Tags   = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        Weight = 0.46,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 0.46,
+        DoubleClickRecipe = OpenBoxOf50Bullets,
     }
     
     item 223Pack
@@ -338,11 +343,12 @@ module Base
     item ShotgunShells
     {
         Weight = 0.06,
+        Tags   = base:ammo;vfe:boxammo25,
     }
     
     item ShotgunShellsBox
     {
-        DoubleClickRecipe = OpenBoxOfBullets50,
+        DoubleClickRecipe = OpenBoxOf25Bullets,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         Weight            = 1.20,
     }
@@ -396,12 +402,14 @@ module Base
     item Bullets9mm
     {
         Weight = 0.02,
+        Tags   = base:ammo;vfe:boxammo50,
     }
     
     item Bullets9mmBox
     {
-        Tags   = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        Weight = 0.4,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 0.4,
+        DoubleClickRecipe = OpenBoxOf50Bullets,
     }
     
     item 9mmPack
@@ -452,13 +460,15 @@ module Base
     
     item Bullets38Box
     {
-        Tags   = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        Weight = 0.3,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 0.3,
+        DoubleClickRecipe = OpenBoxOf50Bullets,
     }
     
     item Bullets38
     {
         Weight = 0.015,
+        Tags   = base:ammo;vfe:boxammo50,
     }
     
     item 38Pack
@@ -510,11 +520,12 @@ module Base
     item Bullets44
     {
         Weight = 0.03,
+        Tags   = base:ammo;vfe:boxammo20,
     }
     
     item Bullets44Box
     {
-        DoubleClickRecipe = OpenBoxOfBullets50,
+        DoubleClickRecipe = OpenBoxOf20Bullets,
         Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
         Weight            = 0.6,
     }
@@ -568,12 +579,14 @@ module Base
     item Bullets45
     {
         Weight = 0.025,
+        Tags   = base:ammo;vfe:boxammo50,
     }
     
     item Bullets45Box
     {
-        Tags   = base:hasmetal;base:ignorezombiedensity;base:ammo,
-        Weight = 0.5,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Weight            = 0.5,
+        DoubleClickRecipe = OpenBoxOf50Bullets,
     }
     
     item 45Pack

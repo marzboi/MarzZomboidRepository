@@ -148,3 +148,37 @@ ISReloadWeaponAction.onShoot = function(player, weapon)
 end
 
 Events.OnWeaponSwingHitPoint.Add(ISReloadWeaponAction.onShoot)
+
+Hook.Attack.Remove(ISReloadWeaponAction.attackHook);
+
+ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
+    ISTimedActionQueue.clear(character)
+    if character:isAttackStarted() then return; end
+    if instanceof(character, "IsoPlayer") and not character:isAuthorizeMeleeAction() then
+        return;
+    end
+    if weapon:isRanged() and not character:isDoShove() then
+        if ISReloadWeaponAction.canShoot(character, weapon) then
+            character:playSound(weapon:getSwingSound());
+            local radius = weapon:getSoundRadius() *
+                getSandboxOptions():getOptionByName("FirearmNoiseMultiplier"):getValue();
+            if not character:isOutside() then
+                radius = radius * 0.5
+            end
+            character:addWorldSoundUnlessInvisible(radius, weapon:getSoundVolume(), true);
+            character:DoAttack(0);
+        else
+            character:DoAttack(0);
+            character:setRangedWeaponEmpty(true);
+        end
+    elseif (not character:getVehicle() or character:isDoShove()) then
+        ISTimedActionQueue.clear(character)
+        if (chargeDelta == nil) then
+            character:DoAttack(0);
+        else
+            character:DoAttack(chargeDelta);
+        end
+    end
+end
+
+Hook.Attack.Add(ISReloadWeaponAction.attackHook);

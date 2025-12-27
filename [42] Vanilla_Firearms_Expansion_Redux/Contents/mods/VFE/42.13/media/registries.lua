@@ -1,4 +1,9 @@
 VFETags = {}
+
+VFETags.BoxAmmo50 = ItemTag.register("vfe:boxammo50")
+VFETags.BoxAmmo20 = ItemTag.register("vfe:boxammo20")
+VFETags.BoxAmmo25 = ItemTag.register("vfe:boxammo25")
+
 VFETags.m60_link = ItemTag.register("vfe:m60_link")
 VFETags.jamresistant = ItemTag.register("vfe:jamresistant")
 VFETags.blockbayonet = ItemTag.register("vfe:blockbayonet")
