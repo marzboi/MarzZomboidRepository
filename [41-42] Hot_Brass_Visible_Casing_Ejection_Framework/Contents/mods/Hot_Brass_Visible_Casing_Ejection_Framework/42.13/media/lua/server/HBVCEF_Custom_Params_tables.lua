@@ -950,14 +950,14 @@ if SpentCasingPhysics.VFE93 then
         },
 
         ["Base.P90"] = {
-            forwardOffset = 0.15,
+            forwardOffset = 0.35,
             sideOffset    = 0.10,
-            heightOffset  = 0.40,
-            shellForce    = 0.50,
+            heightOffset  = 0.50,
+            shellForce    = 0.10,
             sideSpread    = 10,
             heightSpreed  = { 0, 1 },
             ejectAngle    = 0,
-            verticalForce = -0.2,
+            verticalForce = -0.6,
         },
 
         ["Base.MP7"] = {
