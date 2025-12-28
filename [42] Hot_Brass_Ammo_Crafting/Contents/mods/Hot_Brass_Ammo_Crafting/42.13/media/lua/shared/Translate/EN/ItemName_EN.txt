@@ -14,11 +14,11 @@ ItemName_EN = {
     
     ItemName_Base.22ProjectileBox = "Box of .22 Projectiles",
     ItemName_Base.762ProjectileBox = "Box of 7.62mm Projectiles",
-    ItemName_Base.545ProjectileBox = "Box of 4.6mm Projectiles",
-    ItemName_Base.939ProjectileBox = "Box of 5.7mm Projectiles",
+    ItemName_Base.545ProjectileBox = "Box of 5.45mm Projectiles",
+    ItemName_Base.939ProjectileBox = "Box of 9.39mm Projectiles",
     ItemName_Base.76254ProjectileBox = "Box of 7.62x54mm Projectiles",
-    ItemName_Base.57ProjectileBox = "Box of 5.45mm Projectiles",
-    ItemName_Base.46ProjectileBox = "Box of 9x39mm Projectiles",
+    ItemName_Base.57ProjectileBox = "Box of 5.7mm Projectiles",
+    ItemName_Base.46ProjectileBox = "Box of 4.6mm Projectiles",
     
     -- Firearms
     

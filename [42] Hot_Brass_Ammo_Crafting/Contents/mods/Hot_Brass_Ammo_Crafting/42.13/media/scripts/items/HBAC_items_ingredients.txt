@@ -203,19 +203,6 @@ module Base
         Tags             = hbac:lightprojectile,
     }
     
-    item 10ProjectileBox
-    {
-        DisplayCategory  = Material,
-        ItemType         = base:drainable,
-        Weight           = 0.5,
-        Icon             = GunpowderJar,
-        UseDelta         = 0.01,
-        UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
-        Tags             = hbac:lightprojectile,
-    }
-    
     item PrimerBox
     {
         DisplayCategory  = Material,
