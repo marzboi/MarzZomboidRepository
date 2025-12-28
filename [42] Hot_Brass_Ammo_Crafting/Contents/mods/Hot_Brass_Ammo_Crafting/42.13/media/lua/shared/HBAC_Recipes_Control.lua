@@ -1,3 +1,5 @@
+require 'HBVCEF_Compatibility_Mods'
+
 Events.OnInitWorld.Add(function()
     local recipe = getScriptManager():getCraftRecipe("GatherGunpowder")
     if recipe then
