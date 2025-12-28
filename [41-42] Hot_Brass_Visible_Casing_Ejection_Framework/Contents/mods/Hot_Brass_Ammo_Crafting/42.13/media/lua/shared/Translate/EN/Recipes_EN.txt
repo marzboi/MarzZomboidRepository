@@ -1,0 +1,8 @@
+Recipes_EN = {
+    Recipe_GatherGunpowderFromLightRounds = "Gather Gunpowder from Light Rounds",
+    Recipe_GatherGunpowderFromMediumRounds = "Gather Gunpowder from Medium Rounds",
+    Recipe_GatherGunpowderFromHeavyRounds = "Gather Gunpowder from Heavy Rounds",
+    Recipe_MakeLightRound = "Assemble Light Round",
+    Recipe_MakeMediumRound = "Assemble Medium Round",
+    Recipe_MakeHeavyRound = "Assemble Heavy Round",
+}

@@ -1,21 +1,191 @@
 module Base
 {
-    craftRecipe Make556Bullets
+    craftRecipe GatherGunpowderFromLightRounds
     {
-        timedAction = MakingElectrical,
-        time        = 100,
+        timedAction = Making,
+        time        = 20,
+        category    = Packing,
+        Tags        = AnySurfaceCraft,
+        inputs
+        {
+            item 1 tags[base:pliers;base:visegrips] mode:keep,
+            item 1 tags[base:ammo] mode:destroy mappers[projectile;casing],
+        }
+        outputs
+        {
+            item 1 Base.GunPowder  flags[HasOneUse],
+            item 1 Base.PrimerBox flags[HasOneUse],
+            item 1 mapper:projectile flags[HasOneUse],
+            item 1 mapper:casing,
+        }
+        itemMapper projectile
+        {
+            Base.9mmProjectileBox = Base.Bullets9mm,
+            Base.45ProjectileBox  = Base.Bullets45,
+            Base.38ProjectileBox  = Base.Bullets38,
+            Base.22ProjectileBox  = Base.22Bullets,
+            Base.57ProjectileBox  = Base.57Bullets,
+            Base.46ProjectileBox  = Base.46Bullets,
+        }
+        itemMapper casing
+        {
+            Base.Bullets9mm_Casing = Base.Bullets9mm,
+            Base.Bullets45_Casing  = Base.Bullets45,
+            Base.Bullets38_Casing  = Base.Bullets38,
+            Base.22Bullets_Casing  = Base.22Bullets,
+            Base.57Bullets_Casing  = Base.57Bullets,
+            Base.46Bullets_Casing  = Base.46Bullets,
+        }
+    }
+    
+    craftRecipe GatherGunpowderFromMediumRounds
+    {
+        timedAction = Making,
+        time        = 20,
+        category    = Packing,
+        Tags        = AnySurfaceCraft,
+        inputs
+        {
+            item 1 tags[base:pliers;base:visegrips] mode:keep,
+            item 1 tags[base:ammo] mode:destroy mappers[projectile;casing],
+        }
+        outputs
+        {
+            item 2 Base.GunPowder  flags[HasOneUse],
+            item 1 Base.PrimerBox flags[HasOneUse],
+            item 1 mapper:projectile flags[HasOneUse],
+            item 1 mapper:casing,
+        }
+        itemMapper projectile
+        {
+            Base.44ProjectileBox  = Base.Bullets44,
+            Base.223ProjectileBox = Base.223Bullets,
+            Base.556ProjectileBox = Base.556Bullets,
+            Base.762ProjectileBox = Base.762Bullets,
+            Base.545ProjectileBox = Base.545Bullets,
+            Base.939ProjectileBox = Base.939Bullets,
+        }
+        itemMapper casing
+        {
+            Base.Bullets44_Casing  = Base.Bullets44,
+            Base.223Bullets_Casing = Base.223Bullets,
+            Base.556Bullets_Casing = Base.556Bullets,
+            Base.762Bullets_Casing = Base.762Bullets,
+            Base.545Bullets_Casing = Base.545Bullets,
+            Base.939Bullets_Casing = Base.939Bullets,
+        }
+    }
+    
+    craftRecipe GatherGunpowderFromHeavyRounds
+    {
+        timedAction = Making,
+        time        = 20,
+        category    = Packing,
+        Tags        = AnySurfaceCraft,
+        inputs
+        {
+            item 1 tags[base:pliers;base:visegrips] mode:keep,
+            item 1 tags[base:ammo] mode:destroy mappers[projectile;casing],
+        }
+        outputs
+        {
+            item 3 Base.GunPowder  flags[HasOneUse],
+            item 1 Base.PrimerBox flags[HasOneUse],
+            item 1 mapper:projectile flags[HasOneUse],
+            item 1 mapper:casing,
+        }
+        itemMapper projectile
+        {
+            Base.308ProjectileBox   = Base.308Bullets,
+            Base.76254ProjectileBox = Base.76254Bullets,
+        }
+        itemMapper casing
+        {
+            Base.308Bullets_Casing   = Base.308Bullets,
+            Base.76254Bullets_Casing = Base.76254Bullets,
+        }
+    }
+    
+    craftRecipe MakeLightRound
+    {
+        timedAction = Making,
+        time        = 30,
         Tags        = AnySurfaceCraft,
         category    = Ammo,
         inputs
         {
-            item 50 [Base.556Bullets_Casing],
-            item 50 [Base.556ProjectileBox],
-            item 50 [Base.PrimerBox],
-            item 50 [Base.GunPowder],
+            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
+            item 1 tags[hb:casing] mappers[ammoType],
+            item 1 tags[hbac:projectile] mappers[ammoType],
+            item 1 [Base.PrimerBox],
+            item 1 [Base.GunPowder],
         }
         outputs
         {
-            item 50 Base.556Bullets,
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            Base.Bullets9mm = Base.Bullets9mm_Casing;Base.9mmProjectileBox,
+            Base.Bullets45  = Base.Bullets45_Casing;Base.45ProjectileBox,
+            Base.Bullets38  = Base.Bullets38_Casing;Base.38ProjectileBox,
+            Base.22Bullets  = Base.22Bullets_Casing;Base.22ProjectileBox,
+            Base.57Bullets  = Base.57Bullets_Casing;Base.57ProjectileBox,
+            Base.46Bullets  = Base.46Bullets_Casing;Base.46ProjectileBox,
+        }
+    }
+    
+    craftRecipe MakeMediumRound
+    {
+        timedAction = Making,
+        time        = 40,
+        Tags        = AnySurfaceCraft,
+        category    = Ammo,
+        inputs
+        {
+            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
+            item 1 tags[hb:casing] mappers[ammoType],
+            item 1 tags[hbac:projectile] mappers[ammoType],
+            item 1 [Base.PrimerBox],
+            item 2 [Base.GunPowder],
+        }
+        outputs
+        {
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            Base.Bullets44  = Base.Bullets44_Casing;Base.44ProjectileBox,
+            Base.223Bullets = Base.223Bullets_Casing;Base.223ProjectileBox,
+            Base.556Bullets = Base.556Bullets_Casing;Base.556ProjectileBox,
+            Base.762Bullets = Base.762Bullets_Casing;Base.762ProjectileBox,
+            Base.545Bullets = Base.545Bullets_Casing;Base.545ProjectileBox,
+            Base.939Bullets = Base.939Bullets_Casing;Base.939ProjectileBox,
+        }
+    }
+    
+    craftRecipe MakeHeavyRound
+    {
+        timedAction = Making,
+        time        = 50,
+        Tags        = AnySurfaceCraft,
+        category    = Ammo,
+        inputs
+        {
+            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
+            item 1 tags[hb:casing] mappers[ammoType],
+            item 1 tags[hbac:projectile] mappers[ammoType],
+            item 1 [Base.PrimerBox],
+            item 3 [Base.GunPowder],
+        }
+        outputs
+        {
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            Base.308Bullets   = Base.308Bullets_Casing;Base.308ProjectileBox,
+            Base.76254Bullets = Base.76254Bullets_Casing;Base.76254ProjectileBox,
         }
     }
 }

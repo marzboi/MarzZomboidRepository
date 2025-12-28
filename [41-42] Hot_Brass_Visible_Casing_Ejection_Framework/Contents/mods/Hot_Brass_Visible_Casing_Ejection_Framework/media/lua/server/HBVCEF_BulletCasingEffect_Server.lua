@@ -642,7 +642,8 @@ end
 
 function SpentCasingPhysics.spawnCasing(player, weapon)
     if not player or player:isDead() then return end
-    if not weapon or not weapon:isRanged() or weapon:isMelee() then return end
+    if not weapon then return end
+    if not weapon:isRanged() or weapon:isMelee() then return end
     if weapon:isRackAfterShoot() or weapon:isManuallyRemoveSpentRounds() then return end
 
     local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()] or
@@ -666,7 +667,8 @@ end
 
 function SpentCasingPhysics.rackCasing(player, weapon, racking)
     if not player or player:isDead() then return end
-    if not weapon or not weapon:isRanged() or weapon:isMelee() then return end
+    if not weapon then return end
+    if not weapon:isRanged() or weapon:isMelee() then return end
 
     local params = SpentCasingPhysics.WeaponEjectionPortParams[weapon:getFullType()] or
         SpentCasingPhysics.DefaultEjectionPortParams[weapon:getWeaponReloadType()]
