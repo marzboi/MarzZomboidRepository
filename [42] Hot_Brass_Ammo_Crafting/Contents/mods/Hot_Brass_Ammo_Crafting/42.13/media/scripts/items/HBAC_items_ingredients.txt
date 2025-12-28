@@ -18,7 +18,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:lightprojectile,
     }
     
     item 45ProjectileBox
@@ -31,7 +31,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:lightprojectile,
     }
     
     item 44ProjectileBox
@@ -44,7 +44,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:mediumprojectile,
     }
     
     item 38ProjectileBox
@@ -57,7 +57,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:lightprojectile,
     }
     
     item 308ProjectileBox
@@ -70,7 +70,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:heavyprojectile,
     }
     
     item 223ProjectileBox
@@ -83,7 +83,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:mediumprojectile,
     }
     
     item 556ProjectileBox
@@ -96,7 +96,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:mediumprojectile,
     }
     
     item ShotgunPelletsBox
@@ -109,7 +109,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:mediumprojectile,
     }
     
     item 22ProjectileBox
@@ -122,7 +122,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:lightprojectile,
     }
     
     item 762ProjectileBox
@@ -135,7 +135,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:mediumprojectile,
     }
     
     item 545ProjectileBox
@@ -148,7 +148,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:mediumprojectile,
     }
     
     item 939ProjectileBox
@@ -161,7 +161,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:mediumprojectile,
     }
     
     item 76254ProjectileBox
@@ -174,7 +174,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:heavyprojectile,
     }
     
     item 57ProjectileBox
@@ -187,7 +187,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:lightprojectile,
     }
     
     item 46ProjectileBox
@@ -200,7 +200,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:lightprojectile,
     }
     
     item 10ProjectileBox
@@ -213,7 +213,7 @@ module Base
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
-        Tags             = hbac:projectile,
+        Tags             = hbac:lightprojectile,
     }
     
     item PrimerBox

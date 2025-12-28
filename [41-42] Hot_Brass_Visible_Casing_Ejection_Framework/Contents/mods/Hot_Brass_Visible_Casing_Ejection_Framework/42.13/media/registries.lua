@@ -1,3 +1,5 @@
 HBTags = {}
 
-HBTags.casing = ItemTag.register("hb:casing")
+HBTags.LightCasing = ItemTag.register("hb:lightcasing")
+HBTags.MediumCasing = ItemTag.register("hb:mediumcasing")
+HBTags.HeavyCasing = ItemTag.register("hb:heavycasing")

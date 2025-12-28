@@ -10,7 +10,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_9mm_Round,
         WorldStaticModel = Spent_9mm_Round,
-        Tags             = hb:casing,
+        Tags             = hb:lightcasing,
     }
     item Bullets45_Casing
     {
@@ -22,7 +22,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_45_Round,
         WorldStaticModel = Spent_45_Round,
-        Tags             = hb:casing,
+        Tags             = hb:lightcasing,
     }
     item Bullets44_Casing
     {
@@ -34,7 +34,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_44_Round,
         WorldStaticModel = Spent_44_Round,
-        Tags             = hb:casing,
+        Tags             = hb:mediumcasing,
     }
     item Bullets38_Casing
     {
@@ -46,7 +46,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_38_Round,
         WorldStaticModel = Spent_38_Round,
-        Tags             = hb:casing,
+        Tags             = hb:lightcasing,
     }
     item 308Bullets_Casing
     {
@@ -58,7 +58,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_308_Round,
         WorldStaticModel = Spent_308_Round,
-        Tags             = hb:casing,
+        Tags             = hb:heavycasing,
     }
     item 223Bullets_Casing
     {
@@ -70,7 +70,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_223_Round,
         WorldStaticModel = Spent_223_Round,
-        Tags             = hb:casing,
+        Tags             = hb:mediumcasing,
     }
     item 556Bullets_Casing
     {
@@ -82,7 +82,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_556_Round,
         WorldStaticModel = Spent_556_Round,
-        Tags             = hb:casing,
+        Tags             = hb:mediumcasing,
     }
     item ShotgunShells_Casing
     {
@@ -94,7 +94,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_Shotgun_Round,
         WorldStaticModel = Spent_Shotgun_Round,
-        Tags             = hb:casing,
+        Tags             = hb:mediumcasing,
     }
     
     /** VFE and Addons **/
@@ -108,7 +108,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_22_Round,
         WorldStaticModel = Spent_22_Round,
-        Tags             = hb:casing,
+        Tags             = hb:lightcasing,
     }
     item 308BulletsLinked_Casing
     {
@@ -120,7 +120,6 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_Linked308_Round,
         WorldStaticModel = Spent_Linked308_Round,
-        Tags             = hb:casing,
     }
     item 762Bullets_Casing
     {
@@ -132,7 +131,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_762_Round,
         WorldStaticModel = Spent_762_Round,
-        Tags             = hb:casing,
+        Tags             = hb:mediumcasing,
     }
     item 545Bullets_Casing
     {
@@ -144,7 +143,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_545_Round,
         WorldStaticModel = Spent_545_Round,
-        Tags             = hb:casing,
+        Tags             = hb:mediumcasing,
     }
     item 939Bullets_Casing
     {
@@ -156,7 +155,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_939_Round,
         WorldStaticModel = Spent_939_Round,
-        Tags             = hb:casing,
+        Tags             = hb:mediumcasing,
     }
     item 76254Bullets_Casing
     {
@@ -168,7 +167,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_76254_Round,
         WorldStaticModel = Spent_76254_Round,
-        Tags             = hb:casing,
+        Tags             = hb:heavycasing,
     }
     item 57Bullets_Casing
     {
@@ -180,7 +179,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_57_Round,
         WorldStaticModel = Spent_57_Round,
-        Tags             = hb:casing,
+        Tags             = hb:lightcasing,
     }
     item 46Bullets_Casing
     {
@@ -192,7 +191,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_46_Round,
         WorldStaticModel = Spent_46_Round,
-        Tags             = hb:casing,
+        Tags             = hb:lightcasing,
     }
     
     /** Firearms **/

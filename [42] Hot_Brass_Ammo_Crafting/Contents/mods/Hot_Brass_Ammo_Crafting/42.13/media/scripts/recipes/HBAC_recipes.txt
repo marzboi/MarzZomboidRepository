@@ -9,7 +9,7 @@ module Base
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep,
-            item 1 tags[base:ammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
+            item 1 tags[hbac:lightammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
         }
         outputs
         {
@@ -47,7 +47,7 @@ module Base
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep,
-            item 1 tags[base:ammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
+            item 1 tags[hbac:mediumammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
         }
         outputs
         {
@@ -85,7 +85,7 @@ module Base
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep,
-            item 1 tags[base:ammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
+            item 1 tags[hbac:heavyammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
         }
         outputs
         {
@@ -115,8 +115,8 @@ module Base
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
-            item 1 tags[hb:casing] mappers[ammoType] flags[IsExclusive],
-            item 1 tags[hbac:projectile] mappers[ammoType] flags[IsExclusive],
+            item 1 tags[hb:lightcasing] mappers[ammoType] flags[IsExclusive],
+            item 1 tags[hbac:lightprojectile] mappers[ammoType] flags[IsExclusive],
             item 1 [Base.PrimerBox],
             item 1 [Base.GunPowder],
         }
@@ -144,8 +144,8 @@ module Base
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
-            item 1 tags[hb:casing] mappers[ammoType] flags[IsExclusive],
-            item 1 tags[hbac:projectile] mappers[ammoType] flags[IsExclusive],
+            item 1 tags[hb:mediumcasing] mappers[ammoType] flags[IsExclusive],
+            item 1 tags[hbac:mediumprojectile] mappers[ammoType] flags[IsExclusive],
             item 1 [Base.PrimerBox],
             item 2 [Base.GunPowder],
         }
@@ -173,8 +173,8 @@ module Base
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
-            item 1 tags[hb:casing] mappers[ammoType] flags[IsExclusive],
-            item 1 tags[hbac:projectile] mappers[ammoType] flags[IsExclusive],
+            item 1 tags[hb:heavycasing] mappers[ammoType] flags[IsExclusive],
+            item 1 tags[hbac:heavyprojectile] mappers[ammoType] flags[IsExclusive],
             item 1 [Base.PrimerBox],
             item 3 [Base.GunPowder],
         }
