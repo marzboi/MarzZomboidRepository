@@ -23,18 +23,12 @@ module Base
             Base.9mmProjectileBox = Base.Bullets9mm,
             Base.45ProjectileBox  = Base.Bullets45,
             Base.38ProjectileBox  = Base.Bullets38,
-            Base.22ProjectileBox  = Base.22Bullets,
-            Base.57ProjectileBox  = Base.57Bullets,
-            Base.46ProjectileBox  = Base.46Bullets,
         }
         itemMapper casing
         {
             Base.Bullets9mm_Casing = Base.Bullets9mm,
             Base.Bullets45_Casing  = Base.Bullets45,
             Base.Bullets38_Casing  = Base.Bullets38,
-            Base.22Bullets_Casing  = Base.22Bullets,
-            Base.57Bullets_Casing  = Base.57Bullets,
-            Base.46Bullets_Casing  = Base.46Bullets,
         }
     }
     
@@ -61,18 +55,12 @@ module Base
             Base.44ProjectileBox  = Base.Bullets44,
             Base.223ProjectileBox = Base.223Bullets,
             Base.556ProjectileBox = Base.556Bullets,
-            Base.762ProjectileBox = Base.762Bullets,
-            Base.545ProjectileBox = Base.545Bullets,
-            Base.939ProjectileBox = Base.939Bullets,
         }
         itemMapper casing
         {
             Base.Bullets44_Casing  = Base.Bullets44,
             Base.223Bullets_Casing = Base.223Bullets,
             Base.556Bullets_Casing = Base.556Bullets,
-            Base.762Bullets_Casing = Base.762Bullets,
-            Base.545Bullets_Casing = Base.545Bullets,
-            Base.939Bullets_Casing = Base.939Bullets,
         }
     }
     
@@ -96,13 +84,11 @@ module Base
         }
         itemMapper projectile
         {
-            Base.308ProjectileBox   = Base.308Bullets,
-            Base.76254ProjectileBox = Base.76254Bullets,
+            Base.308ProjectileBox = Base.308Bullets,
         }
         itemMapper casing
         {
             Base.308Bullets_Casing   = Base.308Bullets,
-            Base.76254Bullets_Casing = Base.76254Bullets,
         }
     }
     
@@ -129,9 +115,6 @@ module Base
             Base.Bullets9mm = Base.Bullets9mm_Casing;Base.9mmProjectileBox,
             Base.Bullets45  = Base.Bullets45_Casing;Base.45ProjectileBox,
             Base.Bullets38  = Base.Bullets38_Casing;Base.38ProjectileBox,
-            Base.22Bullets  = Base.22Bullets_Casing;Base.22ProjectileBox,
-            Base.57Bullets  = Base.57Bullets_Casing;Base.57ProjectileBox,
-            Base.46Bullets  = Base.46Bullets_Casing;Base.46ProjectileBox,
         }
     }
     
@@ -158,9 +141,6 @@ module Base
             Base.Bullets44  = Base.Bullets44_Casing;Base.44ProjectileBox,
             Base.223Bullets = Base.223Bullets_Casing;Base.223ProjectileBox,
             Base.556Bullets = Base.556Bullets_Casing;Base.556ProjectileBox,
-            Base.762Bullets = Base.762Bullets_Casing;Base.762ProjectileBox,
-            Base.545Bullets = Base.545Bullets_Casing;Base.545ProjectileBox,
-            Base.939Bullets = Base.939Bullets_Casing;Base.939ProjectileBox,
         }
     }
     
@@ -184,8 +164,7 @@ module Base
         }
         itemMapper ammoType
         {
-            Base.308Bullets   = Base.308Bullets_Casing;Base.308ProjectileBox,
-            Base.76254Bullets = Base.76254Bullets_Casing;Base.76254ProjectileBox,
+            Base.308Bullets = Base.308Bullets_Casing;Base.308ProjectileBox,
         }
     }
 }
