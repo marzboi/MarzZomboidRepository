@@ -94,7 +94,7 @@ module Base
         MetalValue       = 1,
         StaticModel      = Spent_Shotgun_Round,
         WorldStaticModel = Spent_Shotgun_Round,
-        Tags             = hb:mediumcasing,
+        Tags             = hb:shotgunshell,
     }
     
     /** VFE and Addons **/
