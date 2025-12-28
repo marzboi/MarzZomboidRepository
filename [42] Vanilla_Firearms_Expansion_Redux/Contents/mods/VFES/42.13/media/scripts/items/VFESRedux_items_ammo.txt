@@ -90,7 +90,7 @@ module Base
         Icon              = 939Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 762Bullets,
-        Tags              = base:ammo;vfe:ammo50;vfe:ammobox50;vfe:ammobox,
+        Tags              = base:ammo;vfe:ammo50,
     }
     
     item 939Box
@@ -102,7 +102,7 @@ module Base
         Icon              = 939AmmoBox,
         MetalValue        = 40,
         WorldStaticModel  = 939Box,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox50;vfe:ammobox,
         DoubleClickRecipe = OpenBoxOf50Bullets,
     }
     
@@ -171,7 +171,7 @@ module Base
         Icon              = 76254Bullets,
         MetalValue        = 1,
         WorldStaticModel  = 762Bullets,
-        Tags              = base:ammo;vfe:ammo20;vfe:ammobox20;vfe:ammobox,
+        Tags              = base:ammo;vfe:ammo20,
     }
     
     item 76254Box
@@ -183,7 +183,7 @@ module Base
         Icon              = 76254AmmoBox,
         MetalValue        = 40,
         WorldStaticModel  = 76254Box,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox20;vfe:ammobox,
         DoubleClickRecipe = OpenBoxOf20Bullets,
     }
     

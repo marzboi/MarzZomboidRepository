@@ -1,4 +1,4 @@
-Events.OnInitWorld.Add(function()
+local function removeVanillaAmmoRecipes()
     --- I will be removing the vanilla recipes and using mine for more control
     local recipesToRemove = {
         "OpenBoxOfBullets50",
@@ -16,7 +16,7 @@ Events.OnInitWorld.Add(function()
         "PlaceBoxesOfShotgunShellsInCarton",
     }
 
-    -- Remove Individual Carton CraftRecipes
+    -- Remove Vanilla for ammo CraftRecipes
     for i = 1, #recipesToRemove do
         local recipe = getScriptManager():getCraftRecipe(recipesToRemove[i])
         if recipe then
@@ -36,4 +36,6 @@ Events.OnInitWorld.Add(function()
         ]])
         end
     end
-end)
+end
+
+Events.OnInitGlobalModData.Add(removeVanillaAmmoRecipes)
