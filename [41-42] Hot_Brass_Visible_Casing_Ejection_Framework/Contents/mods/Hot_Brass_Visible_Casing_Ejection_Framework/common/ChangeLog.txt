@@ -1,6 +1,5 @@
-[ 12/22/24 ]
-B42:
--adasd
--asdasd
--asdasd
+[ 29/December/2025 ]
+B42.13.1:
+- Remove issue with melee weapons causing errors when swinging weapons
+- Adjust items to use new tags system for ammo crafting
 [ ------ ]

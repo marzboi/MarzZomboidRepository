@@ -1,6 +1,6 @@
-[ 12/22/24 ]
-B42:
--adasd
--asdasd
--asdasd
+[ 29/December/2025 ]
+B42.13.1:
+- Fix all craftRecipes for Ammo Boxes
+- Change tags for various items to be used with recipes
+- Register attachment for more weapons for VFES
 [ ------ ]

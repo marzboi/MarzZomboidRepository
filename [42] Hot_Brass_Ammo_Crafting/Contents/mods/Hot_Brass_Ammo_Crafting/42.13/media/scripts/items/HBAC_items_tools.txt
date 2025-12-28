@@ -1,0 +1,11 @@
+module Base
+{
+    item ReloadingTool
+    {
+        DisplayCategory  = Tool,
+        Weight           = 1.5,
+        ItemType         = base:normal,
+        Icon             = HBReloadingTool,
+        WorldStaticModel = ReloadingTool,
+    }
+}

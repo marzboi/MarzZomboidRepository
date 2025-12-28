@@ -1,0 +1,9 @@
+module Base
+{
+    model ReloadingTool
+    {
+        mesh = WorldItems/HBReloadingTool,
+        texture = WorldItems/HBReloadingTool,
+        scale = 1.2,
+    }
+}
