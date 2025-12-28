@@ -1,0 +1,15 @@
+module Base
+{
+    item 545Bullets
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:mediumammo,
+    }
+    item 939Bullets
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:mediumammo,
+    }
+    item 76254Bullets
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:heavyammo,
+    }
+}

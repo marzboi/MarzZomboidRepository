@@ -99,19 +99,6 @@ module Base
         Tags             = hbac:mediumprojectile,
     }
     
-    item ShotgunPelletsBox
-    {
-        DisplayCategory  = Material,
-        ItemType         = base:drainable,
-        Weight           = 0.5,
-        Icon             = GunpowderJar,
-        UseDelta         = 0.01,
-        UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
-        Tags             = hbac:mediumprojectile,
-    }
-    
     item 22ProjectileBox
     {
         DisplayCategory  = Material,
@@ -201,6 +188,19 @@ module Base
         WeightEmpty      = 0.01,
         WorldStaticModel = GunpowderJar,
         Tags             = hbac:lightprojectile,
+    }
+    
+    item ShotgunPelletsBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 0.5,
+        Icon             = GunpowderJar,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.01,
+        WorldStaticModel = GunpowderJar,
+        Tags             = hbac:shotgunpellet,
     }
     
     item PrimerBox

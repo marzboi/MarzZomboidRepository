@@ -1,16 +1,8 @@
 module Base
 {
-    item 762Bullets
-    {
-        Tags = base:ammo;vfe:ammo50;hbac:mediumammo,
-    }
-    item 22Bullets
-    {
-        Tags = base:ammo;vfe:ammo50;hbac:lightammo,
-    }
     item 308Bullets
     {
-        Tags = base:ammo;vfe:ammo20;hbac:heavyammo,
+        Tags = base:ammo;vfe:ammo50;hbac:heavyammo,
     }
     item 556Bullets
     {
@@ -22,7 +14,7 @@ module Base
     }
     item ShotgunShells
     {
-        Tags = base:ammo;vfe:ammo25;hbac:mediumammo,
+        Tags = base:ammo;vfe:ammo50;hbac:shotgunammo,
     }
     item Bullets9mm
     {
@@ -34,29 +26,9 @@ module Base
     }
     item Bullets44
     {
-        Tags = base:ammo;vfe:ammo20;hbac:mediumammo,
+        Tags = base:ammo;vfe:ammo50;hbac:mediumammo,
     }
     item Bullets45
-    {
-        Tags = base:ammo;vfe:ammo50;hbac:lightammo,
-    }
-    item 545Bullets
-    {
-        Tags = base:ammo;vfe:ammo50;hbac:mediumammo,
-    }
-    item 939Bullets
-    {
-        Tags = base:ammo;vfe:ammo50;hbac:mediumammo,
-    }
-    item 76254Bullets
-    {
-        Tags = base:ammo;vfe:ammo20;hbac:heavyammo,
-    }
-    item 46Bullets
-    {
-        Tags = base:ammo;vfe:ammo50;hbac:lightammo,
-    }
-    item 57Bullets
     {
         Tags = base:ammo;vfe:ammo50;hbac:lightammo,
     }

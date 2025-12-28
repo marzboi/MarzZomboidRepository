@@ -1,0 +1,42 @@
+module Base
+{
+    craftRecipe GatherGunpowderFromLightRounds
+    {
+        itemMapper projectile
+        {
+            Base.22ProjectileBox = Base.22Bullets,
+        }
+        itemMapper casing
+        {
+            Base.22Bullets_Casing = Base.22Bullets,
+        }
+    }
+    
+    craftRecipe GatherGunpowderFromMediumRounds
+    {
+        itemMapper projectile
+        {
+            Base.762ProjectileBox = Base.762Bullets,
+        }
+        itemMapper casing
+        {
+            Base.762Bullets_Casing = Base.762Bullets,
+        }
+    }
+    
+    craftRecipe MakeLightRound
+    {
+        itemMapper ammoType
+        {
+            Base.22Bullets = Base.22Bullets_Casing;Base.22ProjectileBox,
+        }
+    }
+    
+    craftRecipe MakeMediumRound
+    {
+        itemMapper ammoType
+        {
+            Base.762Bullets = Base.762Bullets_Casing;Base.762ProjectileBox,
+        }
+    }
+}

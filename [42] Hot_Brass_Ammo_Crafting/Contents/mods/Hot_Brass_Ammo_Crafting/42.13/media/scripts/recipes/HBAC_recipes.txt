@@ -92,6 +92,34 @@ module Base
         }
     }
     
+    craftRecipe GatherGunpowderFromShotgunShells
+    {
+        timedAction = Making,
+        time        = 20,
+        category    = Packing,
+        Tags        = AnySurfaceCraft,
+        inputs
+        {
+            item 1 tags[base:pliers;base:visegrips] mode:keep,
+            item 1 tags[hbac:shotgunammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
+        }
+        outputs
+        {
+            item 5 Base.GunPowder  flags[HasOneUse],
+            item 1 Base.PrimerBox flags[HasOneUse],
+            item 8 mapper:projectile flags[HasOneUse],
+            item 1 mapper:casing,
+        }
+        itemMapper projectile
+        {
+            Base.ShotgunPelletsBox = Base.ShotgunShells,
+        }
+        itemMapper casing
+        {
+            Base.ShotgunShells_Casing   = Base.ShotgunShells,
+        }
+    }
+    
     craftRecipe MakeLightRound
     {
         timedAction = Making,
@@ -165,6 +193,30 @@ module Base
         itemMapper ammoType
         {
             Base.308Bullets = Base.308Bullets_Casing;Base.308ProjectileBox,
+        }
+    }
+    
+    craftRecipe MakeShotgunShell
+    {
+        timedAction = Making,
+        time        = 50,
+        Tags        = AnySurfaceCraft,
+        category    = Ammo,
+        inputs
+        {
+            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
+            item 1 tags[hb:shotgunshell] mappers[ammoType] flags[IsExclusive],
+            item 8 tags[hbac:shotgunpellet] mappers[ammoType] flags[IsExclusive],
+            item 1 [Base.PrimerBox],
+            item 5 [Base.GunPowder],
+        }
+        outputs
+        {
+            item 1 mapper:ammoType,
+        }
+        itemMapper ammoType
+        {
+            Base.ShotgunShells = Base.ShotgunShells_Casing;Base.ShotgunPelletsBox,
         }
     }
 }
