@@ -1,8 +1,18 @@
 VFETags = {}
 
-VFETags.BoxAmmo50 = ItemTag.register("vfe:boxammo50")
-VFETags.BoxAmmo20 = ItemTag.register("vfe:boxammo20")
-VFETags.BoxAmmo25 = ItemTag.register("vfe:boxammo25")
+VFETags.Ammo50 = ItemTag.register("vfe:ammo50")
+VFETags.Ammo20 = ItemTag.register("vfe:ammo20")
+VFETags.Ammo25 = ItemTag.register("vfe:ammo25")
+
+VFETags.AmmoBox50 = ItemTag.register("vfe:ammobox50")
+VFETags.AmmoBox20 = ItemTag.register("vfe:ammobox20")
+VFETags.AmmoBox25 = ItemTag.register("vfe:ammobox25")
+
+VFETags.AmmoBox = ItemTag.register("vfe:ammobox")
+VFETags.AmmoPack = ItemTag.register("vfe:ammopack")
+VFETags.AmmoCase = ItemTag.register("vfe:ammocase")
+VFETags.AmmoCrate = ItemTag.register("vfe:ammocrate")
+VFETags.AmmoCarton = ItemTag.register("vfe:ammocarton")
 
 VFETags.m60_link = ItemTag.register("vfe:m60_link")
 VFETags.jamresistant = ItemTag.register("vfe:jamresistant")

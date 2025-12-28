@@ -8,7 +8,7 @@ module Base
         Icon              = 762Bullets,
         ItemType          = base:normal,
         MetalValue        = 1.0,
-        Tags              = base:ammo;vfe:boxammo50,
+        Tags              = base:ammo;vfe:ammo50,
         Weight            = 0.025,
         WorldStaticModel  = 762Bullets,
     }
@@ -24,7 +24,7 @@ module Base
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
         StaticModel        = RifleAmmoBox,
-        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox50;vfe:ammobox,
         Weight             = 0.5,
         WorldStaticModel   = 762Box,
     }
@@ -37,7 +37,7 @@ module Base
         Icon              = 762AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 160,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 1.6,
         WorldStaticModel  = 762Pack,
     }
@@ -50,7 +50,7 @@ module Base
         Icon              = 762AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 640,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 5.12,
         WorldStaticModel  = 762Case,
     }
@@ -63,7 +63,7 @@ module Base
         Icon              = 762AmmoCrate,
         ItemType          = base:normal,
         MetalValue        = 2560,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 16.38,
         WorldStaticModel  = 762Crate,
     }
@@ -78,7 +78,7 @@ module Base
         MetalValue         = 400.0,
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
-        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight             = 4.5,
         WorldStaticModel   = Parcel_Military_Medium,
     }
@@ -91,7 +91,7 @@ module Base
         Icon              = 22bullets,
         ItemType          = base:normal,
         MetalValue        = 1,
-        Tags              = base:ammo;vfe:boxammo50,
+        Tags              = base:ammo;vfe:ammo50,
         Weight            = 0.005,
         WorldStaticModel  = Bullets22lr,
     }
@@ -104,7 +104,7 @@ module Base
         Icon              = 22AmmoBox,
         ItemType          = base:normal,
         MetalValue        = 40,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox50;vfe:ammobox,
         Weight            = 0.1,
         WorldStaticModel  = BoxOfRounds22LR,
     }
@@ -117,7 +117,7 @@ module Base
         Icon              = 22AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 160,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 0.32,
         WorldStaticModel  = 22Pack,
     }
@@ -130,7 +130,7 @@ module Base
         Icon              = 22AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 640,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 1.02,
         WorldStaticModel  = 22Case,
     }
@@ -143,7 +143,7 @@ module Base
         Icon              = 22AmmoCrate,
         ItemType          = base:normal,
         MetalValue        = 2560,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 3.27,
         WorldStaticModel  = 22Crate,
     }
@@ -158,7 +158,7 @@ module Base
         MetalValue         = 400.0,
         PlaceMultipleSound = BoxOfRoundsPlaceAll,
         PlaceOneSound      = BoxOfRoundsPlaceOne,
-        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags               = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight             = 0.9,
         WorldStaticModel   = Parcel_Ammo_Medium,
     }
@@ -166,13 +166,13 @@ module Base
     item 308Bullets
     {
         Weight = 0.04,
-        Tags   = base:ammo;vfe:boxammo20,
+        Tags   = base:ammo;vfe:ammo20,
     }
     
     item 308Box
     {
         DoubleClickRecipe = OpenBoxOf20Bullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox20;vfe:ammobox,
         Weight            = 0.8,
     }
     
@@ -184,7 +184,7 @@ module Base
         Icon              = 308AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 160,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 2.56,
         WorldStaticModel  = 308Pack,
     }
@@ -197,7 +197,7 @@ module Base
         Icon              = 308AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 640,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 8.19,
         WorldStaticModel  = 308Case,
     }
@@ -210,7 +210,7 @@ module Base
         Icon              = 308AmmoCrate,
         ItemType          = base:normal,
         MetalValue        = 2560,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 26.21,
         WorldStaticModel  = 308Crate,
     }
@@ -218,13 +218,13 @@ module Base
     item 308Carton
     {
         DoubleClickRecipe = OpenCartonOfBullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight            = 7.2,
     }
     
     item 556Box
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox50;vfe:ammobox,
         Weight            = 0.46,
         DoubleClickRecipe = OpenBoxOf50Bullets,
     }
@@ -232,7 +232,7 @@ module Base
     item 556Bullets
     {
         Weight = 0.023,
-        Tags   = base:ammo;vfe:boxammo50,
+        Tags   = base:ammo;vfe:ammo50,
     }
     
     item 556Pack
@@ -243,7 +243,7 @@ module Base
         Icon              = 556AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 160,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 1.47,
         WorldStaticModel  = 556Pack,
     }
@@ -256,7 +256,7 @@ module Base
         Icon              = 556AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 640,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 4.71,
         WorldStaticModel  = 556Case,
     }
@@ -269,7 +269,7 @@ module Base
         Icon              = 556AmmoCrate,
         ItemType          = base:normal,
         MetalValue        = 2560,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 15.07,
         WorldStaticModel  = 556Crate,
     }
@@ -277,19 +277,19 @@ module Base
     item 556Carton
     {
         DoubleClickRecipe = OpenCartonOfBullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight            = 4.14,
     }
     
     item 223Bullets
     {
         Weight = 0.023,
-        Tags   = base:ammo;vfe:boxammo50,
+        Tags   = base:ammo;vfe:ammo50,
     }
     
     item 223Box
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox50;vfe:ammobox,
         Weight            = 0.46,
         DoubleClickRecipe = OpenBoxOf50Bullets,
     }
@@ -302,7 +302,7 @@ module Base
         Icon              = 223AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 160,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 1.47,
         WorldStaticModel  = 223Pack,
     }
@@ -315,7 +315,7 @@ module Base
         Icon              = 223AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 640,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 4.71,
         WorldStaticModel  = 223Case,
     }
@@ -328,7 +328,7 @@ module Base
         Icon              = 223AmmoCrate,
         ItemType          = base:normal,
         MetalValue        = 2560,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 15.07,
         WorldStaticModel  = 223Crate,
     }
@@ -336,20 +336,20 @@ module Base
     item 223Carton
     {
         DoubleClickRecipe = OpenCartonOfBullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight            = 4.14,
     }
     
     item ShotgunShells
     {
         Weight = 0.06,
-        Tags   = base:ammo;vfe:boxammo25,
+        Tags   = base:ammo;vfe:ammo25,
     }
     
     item ShotgunShellsBox
     {
         DoubleClickRecipe = OpenBoxOf25Bullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox25;vfe:ammobox,
         Weight            = 1.20,
     }
     
@@ -361,7 +361,7 @@ module Base
         Icon              = ShotgunShellsPack,
         ItemType          = base:normal,
         MetalValue        = 96,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 3.84,
         WorldStaticModel  = ShotgunShellPack,
     }
@@ -374,7 +374,7 @@ module Base
         Icon              = ShotgunShellsCase,
         ItemType          = base:normal,
         MetalValue        = 384,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 12.28,
         WorldStaticModel  = ShotgunShellCase,
     }
@@ -387,7 +387,7 @@ module Base
         Icon              = ShotgunShellsCrate,
         ItemType          = base:normal,
         MetalValue        = 1536,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 39.32,
         WorldStaticModel  = ShotgunShellCrate,
     }
@@ -395,19 +395,19 @@ module Base
     item ShotgunShellsCarton
     {
         DoubleClickRecipe = OpenCartonOfBullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight            = 10.8,
     }
     
     item Bullets9mm
     {
         Weight = 0.02,
-        Tags   = base:ammo;vfe:boxammo50,
+        Tags   = base:ammo;vfe:ammo50,
     }
     
     item Bullets9mmBox
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox50;vfe:ammobox,
         Weight            = 0.4,
         DoubleClickRecipe = OpenBoxOf50Bullets,
     }
@@ -420,7 +420,7 @@ module Base
         Icon              = 9AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 120,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 1.28,
         WorldStaticModel  = 9mmPack,
     }
@@ -433,7 +433,7 @@ module Base
         Icon              = 9AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 480,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 4.09,
         WorldStaticModel  = 9mmCase,
     }
@@ -446,7 +446,7 @@ module Base
         Icon              = 9AmmoCrate,
         ItemType          = base:normal,
         MetalValue        = 1920,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 13.10,
         WorldStaticModel  = 9mmCrate,
     }
@@ -454,13 +454,13 @@ module Base
     item Bullets9mmCarton
     {
         DoubleClickRecipe = OpenCartonOfBullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight            = 3.6,
     }
     
     item Bullets38Box
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox50;vfe:ammobox,
         Weight            = 0.3,
         DoubleClickRecipe = OpenBoxOf50Bullets,
     }
@@ -468,7 +468,7 @@ module Base
     item Bullets38
     {
         Weight = 0.015,
-        Tags   = base:ammo;vfe:boxammo50,
+        Tags   = base:ammo;vfe:ammo50,
     }
     
     item 38Pack
@@ -479,7 +479,7 @@ module Base
         Icon              = 38AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 120,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 0.96,
         WorldStaticModel  = 38Pack,
     }
@@ -492,7 +492,7 @@ module Base
         Icon              = 38AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 480,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 3.07,
         WorldStaticModel  = 38Case,
     }
@@ -505,7 +505,7 @@ module Base
         Icon              = 38AmmoCrate,
         ItemType          = base:normal,
         MetalValue        = 1920,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 9.83,
         WorldStaticModel  = 38Crate,
     }
@@ -513,20 +513,20 @@ module Base
     item Bullets38Carton
     {
         DoubleClickRecipe = OpenCartonOfBullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight            = 2.7,
     }
     
     item Bullets44
     {
         Weight = 0.03,
-        Tags   = base:ammo;vfe:boxammo20,
+        Tags   = base:ammo;vfe:ammo20,
     }
     
     item Bullets44Box
     {
         DoubleClickRecipe = OpenBoxOf20Bullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox20;vfe:ammobox,
         Weight            = 0.6,
     }
     
@@ -538,7 +538,7 @@ module Base
         Icon              = 44AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 120,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 1.92,
         WorldStaticModel  = 44Pack,
     }
@@ -551,7 +551,7 @@ module Base
         Icon              = 44AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 480,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 6.14,
         WorldStaticModel  = 44Case,
     }
@@ -564,7 +564,7 @@ module Base
         Icon              = 44AmmoCrate,
         ItemType          = base:normal,
         MetalValue        = 1920,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 19.66,
         WorldStaticModel  = 44Crate,
     }
@@ -572,19 +572,19 @@ module Base
     item Bullets44Carton
     {
         DoubleClickRecipe = OpenCartonOfBullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight            = 5.4,
     }
     
     item Bullets45
     {
         Weight = 0.025,
-        Tags   = base:ammo;vfe:boxammo50,
+        Tags   = base:ammo;vfe:ammo50,
     }
     
     item Bullets45Box
     {
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammobox50;vfe:ammobox,
         Weight            = 0.5,
         DoubleClickRecipe = OpenBoxOf50Bullets,
     }
@@ -597,7 +597,7 @@ module Base
         Icon              = 45AmmoPack,
         ItemType          = base:normal,
         MetalValue        = 120,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammopack,
         Weight            = 1.6,
         WorldStaticModel  = 45Pack,
     }
@@ -610,7 +610,7 @@ module Base
         Icon              = 45AmmoCase,
         ItemType          = base:normal,
         MetalValue        = 480,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocase,
         Weight            = 5.12,
         WorldStaticModel  = 45Case,
     }
@@ -623,7 +623,7 @@ module Base
         Icon              = 45AmmoCrate,
         ItemType          = base:normal,
         MetalValue        = 1920,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocrate,
         Weight            = 16.38,
         WorldStaticModel  = 45Crate,
     }
@@ -631,7 +631,7 @@ module Base
     item Bullets45Carton
     {
         DoubleClickRecipe = OpenCartonOfBullets,
-        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo,
+        Tags              = base:hasmetal;base:ignorezombiedensity;base:ammo;vfe:ammocarton,
         Weight            = 4.5,
     }
     

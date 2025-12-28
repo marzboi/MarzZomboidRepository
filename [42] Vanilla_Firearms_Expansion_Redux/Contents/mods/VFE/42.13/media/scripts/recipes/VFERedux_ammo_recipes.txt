@@ -9,7 +9,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:ammo] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
+            item 1 tags[vfe:ammobox50] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
         }
         outputs
         {
@@ -36,7 +36,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:ammo] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
+            item 1 tags[vfe:ammobox20] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
         }
         outputs
         {
@@ -58,7 +58,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:ammo] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
+            item 1 tags[vfe:ammobox25] mappers[ammoType] flags[Prop2;AllowFavorite;InheritFavorite],
         }
         outputs
         {
@@ -78,7 +78,7 @@ module Base
         Tags        = InHandCraft,
         inputs
         {
-            item 50 tags[vfe:boxammo50] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 50 tags[vfe:ammo50] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
@@ -104,7 +104,7 @@ module Base
         Tags        = InHandCraft,
         inputs
         {
-            item 20 tags[vfe:boxammo20] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 20 tags[vfe:ammo20] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
@@ -125,7 +125,7 @@ module Base
         Tags        = InHandCraft,
         inputs
         {
-            item 25 tags[vfe:boxammo25] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 25 tags[vfe:ammo25] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
@@ -145,7 +145,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
+            item 1 tags[vfe:ammopack] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
         }
         outputs
         {
@@ -174,7 +174,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 4 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 4 tags[vfe:ammobox] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
@@ -203,7 +203,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
+            item 1 tags[vfe:ammocase] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
         }
         outputs
         {
@@ -232,7 +232,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 4 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 4 tags[vfe:ammopack] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
@@ -261,7 +261,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
+            item 1 tags[vfe:ammocrate] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
         }
         outputs
         {
@@ -290,7 +290,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 4 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 4 tags[vfe:ammocase] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
@@ -319,7 +319,7 @@ module Base
         Tags        = InHandCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
+            item 1 tags[vfe:ammocarton] mappers[ammoType] flags[AllowFavorite;InheritFavorite],
         }
         outputs
         {
@@ -348,7 +348,7 @@ module Base
         Tags        = InHandCraft,
         inputs
         {
-            item 12 tags[base:ammo] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 12 tags[vfe:ammobox] mappers[ammoType] flags[AllowFavorite;InheritFavorite;IsExclusive],
         }
         outputs
         {
