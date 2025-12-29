@@ -245,3 +245,20 @@ ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
 end
 
 Hook.Attack.Add(ISReloadWeaponAction.attackHook);
+
+-- Monkey Patch version
+
+-- local old_attackHook = ISReloadWeaponAction.attackHook
+-- Hook.Attack.Remove(ISReloadWeaponAction.attackHook)
+
+-- ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
+--     if weapon:isRanged() and not character:isDoShove() then
+--         if not VFERateOfFire.canFire(character, weapon) then
+--             return
+--         end
+--     end
+
+--     return old_attackHook(character, chargeDelta, weapon)
+-- end
+
+-- Hook.Attack.Add(ISReloadWeaponAction.attackHook)
