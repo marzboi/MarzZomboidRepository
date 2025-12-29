@@ -149,6 +149,63 @@ end
 
 Events.OnWeaponSwingHitPoint.Add(ISReloadWeaponAction.onShoot)
 
+-------------------------------------------------
+-- Rate of Fire Control System
+-------------------------------------------------
+VFERateOfFire = {}
+
+VFERateOfFire.lastFireTime = {}
+VFERateOfFire.DEFAULT_RPM = 600
+VFERateOfFire.RPMTags = {
+    [VFETags.RPM1000] = 1000,
+    [VFETags.RPM950]  = 950,
+    [VFETags.RPM900]  = 900,
+    [VFETags.RPM850]  = 850,
+    [VFETags.RPM800]  = 800,
+    [VFETags.RPM750]  = 750,
+    [VFETags.RPM700]  = 700,
+    [VFETags.RPM650]  = 650,
+    [VFETags.RPM600]  = 600,
+    [VFETags.RPM550]  = 550,
+    [VFETags.RPM500]  = 500,
+    [VFETags.RPM450]  = 450,
+    [VFETags.RPM400]  = 400,
+    [VFETags.RPM350]  = 350,
+    [VFETags.RPM300]  = 300,
+}
+
+function VFERateOfFire.getWeaponRPM(weapon)
+    if not weapon then return VFERateOfFire.DEFAULT_RPM end
+
+    for tag, rpm in pairs(VFERateOfFire.RPMTags) do
+        if weapon:hasTag(tag) then
+            return rpm
+        end
+    end
+
+    return VFERateOfFire.DEFAULT_RPM
+end
+
+function VFERateOfFire.canFire(player, weapon)
+    if not player then return false end
+
+    local playerId = player:getPlayerNum()
+    local currentTime = getTimestampMs() / 1000.0
+
+    local lastTime = VFERateOfFire.lastFireTime[playerId] or 0
+    local elapsed = currentTime - lastTime
+
+    local weaponRPM = VFERateOfFire.getWeaponRPM(weapon)
+    local interval = 60 / weaponRPM
+
+    if elapsed >= interval or lastTime == 0 then
+        VFERateOfFire.lastFireTime[playerId] = currentTime
+        return true
+    end
+
+    return false
+end
+
 Hook.Attack.Remove(ISReloadWeaponAction.attackHook);
 
 ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
@@ -158,6 +215,10 @@ ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
         return;
     end
     if weapon:isRanged() and not character:isDoShove() then
+        if not VFERateOfFire.canFire(character, weapon) then
+            return;
+        end
+
         if ISReloadWeaponAction.canShoot(character, weapon) then
             character:playSound(weapon:getSwingSound());
             local radius = weapon:getSoundRadius() *
