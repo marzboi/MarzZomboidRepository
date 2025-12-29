@@ -8,8 +8,8 @@ module Base
         Tags        = AnySurfaceCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:pliers;base:visegrips] mode:keep,
-            item 1 tags[hbac:lightammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
+            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
+            item 1 tags[hbac:lightammo] mode:destroy mappers[projectile;casing] flags[IsExclusive;Prop1],
         }
         outputs
         {
@@ -40,8 +40,8 @@ module Base
         Tags        = AnySurfaceCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:pliers;base:visegrips] mode:keep,
-            item 1 tags[hbac:mediumammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
+            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
+            item 1 tags[hbac:mediumammo] mode:destroy mappers[projectile;casing] flags[IsExclusive;Prop1],
         }
         outputs
         {
@@ -72,8 +72,8 @@ module Base
         Tags        = AnySurfaceCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:pliers;base:visegrips] mode:keep,
-            item 1 tags[hbac:heavyammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
+            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
+            item 1 tags[hbac:heavyammo] mode:destroy mappers[projectile;casing] flags[IsExclusive;Prop1],
         }
         outputs
         {
@@ -100,8 +100,8 @@ module Base
         Tags        = AnySurfaceCraft;CanBeDoneInDark,
         inputs
         {
-            item 1 tags[base:pliers;base:visegrips] mode:keep,
-            item 1 tags[hbac:shotgunammo] mode:destroy mappers[projectile;casing] flags[IsExclusive],
+            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
+            item 1 tags[hbac:shotgunammo] mode:destroy mappers[projectile;casing] flags[IsExclusive;Prop1],
         }
         outputs
         {
