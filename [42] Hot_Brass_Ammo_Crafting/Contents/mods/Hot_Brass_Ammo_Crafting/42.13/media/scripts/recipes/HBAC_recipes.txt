@@ -3,9 +3,9 @@ module Base
     craftRecipe GatherGunpowderFromLightRounds
     {
         timedAction = Making,
-        time        = 20,
+        time        = 30,
         category    = Packing,
-        Tags        = AnySurfaceCraft,
+        Tags        = AnySurfaceCraft;CanBeDoneInDark,
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep,
@@ -35,9 +35,9 @@ module Base
     craftRecipe GatherGunpowderFromMediumRounds
     {
         timedAction = Making,
-        time        = 20,
+        time        = 30,
         category    = Packing,
-        Tags        = AnySurfaceCraft,
+        Tags        = AnySurfaceCraft;CanBeDoneInDark,
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep,
@@ -67,9 +67,9 @@ module Base
     craftRecipe GatherGunpowderFromHeavyRounds
     {
         timedAction = Making,
-        time        = 20,
+        time        = 30,
         category    = Packing,
-        Tags        = AnySurfaceCraft,
+        Tags        = AnySurfaceCraft;CanBeDoneInDark,
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep,
@@ -95,9 +95,9 @@ module Base
     craftRecipe GatherGunpowderFromShotgunShells
     {
         timedAction = Making,
-        time        = 20,
+        time        = 30,
         category    = Packing,
-        Tags        = AnySurfaceCraft,
+        Tags        = AnySurfaceCraft;CanBeDoneInDark,
         inputs
         {
             item 1 tags[base:pliers;base:visegrips] mode:keep,
@@ -123,13 +123,13 @@ module Base
     craftRecipe MakeLightRound
     {
         timedAction = Making,
-        time        = 30,
-        Tags        = AnySurfaceCraft,
+        time        = 50,
+        Tags        = AnySurfaceCraft;CanBeDoneInDark,
         category    = Ammo,
         inputs
         {
-            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
-            item 1 tags[hb:lightcasing] mappers[ammoType] flags[IsExclusive],
+            item 1 [Base.ReloadingTool] mode:keep,
+            item 1 tags[hb:lightcasing] mappers[ammoType] flags[Prop2;IsExclusive],
             item 1 tags[hbac:lightprojectile] mappers[ammoType] flags[IsExclusive],
             item 1 [Base.PrimerBox],
             item 1 [Base.GunPowder],
@@ -149,13 +149,13 @@ module Base
     craftRecipe MakeMediumRound
     {
         timedAction = Making,
-        time        = 40,
-        Tags        = AnySurfaceCraft,
+        time        = 50,
+        Tags        = AnySurfaceCraft;CanBeDoneInDark,
         category    = Ammo,
         inputs
         {
-            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
-            item 1 tags[hb:mediumcasing] mappers[ammoType] flags[IsExclusive],
+            item 1 [Base.ReloadingTool] mode:keep,
+            item 1 tags[hb:mediumcasing] mappers[ammoType] flags[Prop2;IsExclusive],
             item 1 tags[hbac:mediumprojectile] mappers[ammoType] flags[IsExclusive],
             item 1 [Base.PrimerBox],
             item 2 [Base.GunPowder],
@@ -176,12 +176,12 @@ module Base
     {
         timedAction = Making,
         time        = 50,
-        Tags        = AnySurfaceCraft,
+        Tags        = AnySurfaceCraft;CanBeDoneInDark,
         category    = Ammo,
         inputs
         {
-            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
-            item 1 tags[hb:heavycasing] mappers[ammoType] flags[IsExclusive],
+            item 1 [Base.ReloadingTool] mode:keep,
+            item 1 tags[hb:heavycasing] mappers[ammoType] flags[Prop2;IsExclusive],
             item 1 tags[hbac:heavyprojectile] mappers[ammoType] flags[IsExclusive],
             item 1 [Base.PrimerBox],
             item 3 [Base.GunPowder],
@@ -200,12 +200,12 @@ module Base
     {
         timedAction = Making,
         time        = 50,
-        Tags        = AnySurfaceCraft,
+        Tags        = AnySurfaceCraft;CanBeDoneInDark,
         category    = Ammo,
         inputs
         {
-            item 1 tags[base:pliers;base:visegrips] mode:keep flags[Prop2],
-            item 1 tags[hb:shotgunshell] mappers[ammoType] flags[IsExclusive],
+            item 1 [Base.ReloadingTool] mode:keep,
+            item 1 tags[hb:shotgunshell] mappers[ammoType] flags[Prop2;IsExclusive],,
             item 8 tags[hbac:shotgunpellet] mappers[ammoType] flags[IsExclusive],
             item 1 [Base.PrimerBox],
             item 5 [Base.GunPowder],

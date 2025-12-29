@@ -1,6 +1,8 @@
 ItemName_EN = {
     ItemName_Base.PrimerBox = "Box of Primers",
     
+    ItemName_Base.ReloadingTool = "Reloading Tool",
+    
     ItemName_Base.9mmProjectileBox = "Box of 9mm Projectiles",
     ItemName_Base.45ProjectileBox = "Box of .45 Projectiles",
     ItemName_Base.44ProjectileBox = "Box of .44 Magnum Projectiles",

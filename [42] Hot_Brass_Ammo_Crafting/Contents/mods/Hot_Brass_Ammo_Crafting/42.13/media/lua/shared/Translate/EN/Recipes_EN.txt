@@ -1,8 +1,10 @@
 Recipes_EN = {
-    Recipe_GatherGunpowderFromLightRounds = "Gather Gunpowder from Light Rounds",
-    Recipe_GatherGunpowderFromMediumRounds = "Gather Gunpowder from Medium Rounds",
-    Recipe_GatherGunpowderFromHeavyRounds = "Gather Gunpowder from Heavy Rounds",
+    Recipe_GatherGunpowderFromLightRounds = "Gather Parts from Light Rounds",
+    Recipe_GatherGunpowderFromMediumRounds = "Gather Parts from Medium Rounds",
+    Recipe_GatherGunpowderFromHeavyRounds = "Gather Parts from Heavy Rounds",
+    Recipe_GatherGunpowderFromShotgunShells = "Gather Parts from Shotgun Shells",
     Recipe_MakeLightRound = "Assemble Light Round",
     Recipe_MakeMediumRound = "Assemble Medium Round",
     Recipe_MakeHeavyRound = "Assemble Heavy Round",
+    Recipe_MakeShotgunShell = "Assemble Shotgun Shell",
 }

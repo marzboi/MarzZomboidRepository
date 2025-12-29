@@ -16,6 +16,10 @@ Patches listed below
 [*] For VFE and addons on B41 with custom casings check Sven upload it includes VFE93 and Gunrunner's
 [/list]
 
+[b]Permission & Redistribution Notice
+This mod is not permitted to be copied, reuploaded, redistributed, mirrored, included in collections/modpacks, or stored on any third-party site in whole or in part without my explicit written permission.
+You may link to the original Workshop page, but do not upload this mod anywhere else.[/b]
+
 Workshop ID: 3612830296
 Mod ID: HBVCEFAmmoMaker
 Mod ID: HBVCEFFilibusterGuns

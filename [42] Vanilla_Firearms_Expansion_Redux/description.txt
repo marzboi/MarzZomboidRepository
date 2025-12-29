@@ -59,6 +59,10 @@ This mod will remain available until the official VFE update is released. Once t
 
 [b]Enjoy![/b]
 
+[b]Permission & Redistribution Notice
+This mod is not permitted to be copied, reuploaded, redistributed, mirrored, included in collections/modpacks, or stored on any third-party site in whole or in part without my explicit written permission.
+You may link to the original Workshop page, but do not upload this mod anywhere else.[/b]
+
 Workshop ID: 3611718925
 Mod ID: VFExpansionRedux
 Mod ID: VFExpansion3Redux

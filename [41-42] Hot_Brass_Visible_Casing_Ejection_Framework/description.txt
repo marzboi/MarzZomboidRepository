@@ -65,5 +65,9 @@ If you wish to support my work!
 [img]https://raw.githubusercontent.com/marzboi/kofi-banners/5cca447351299424fa655497152c3086acb99ef3/kofi_logo.svg[/img]
 [/url]
 
+[b]Permission & Redistribution Notice
+This mod is not permitted to be copied, reuploaded, redistributed, mirrored, included in collections/modpacks, or stored on any third-party site in whole or in part without my explicit written permission.
+You may link to the original Workshop page, but do not upload this mod anywhere else.[/b]
+
 Workshop ID: 3610677934
 Mod ID: HBVCEF

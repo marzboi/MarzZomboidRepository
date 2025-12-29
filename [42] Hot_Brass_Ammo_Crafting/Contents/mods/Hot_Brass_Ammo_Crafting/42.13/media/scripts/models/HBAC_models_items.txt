@@ -4,6 +4,6 @@ module Base
     {
         mesh = WorldItems/HBReloadingTool,
         texture = WorldItems/HBReloadingTool,
-        scale = 1.2,
+        scale = 1.5,
     }
 }
