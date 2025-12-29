@@ -215,9 +215,7 @@ ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
         return;
     end
     if weapon:isRanged() and not character:isDoShove() then
-        if not VFERateOfFire.canFire(character, weapon) then
-            return;
-        end
+        if not VFERateOfFire.canFire(character, weapon) then return end
 
         if ISReloadWeaponAction.canShoot(character, weapon) then
             character:playSound(weapon:getSwingSound());
