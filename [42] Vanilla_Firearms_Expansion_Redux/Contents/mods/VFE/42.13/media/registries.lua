@@ -21,6 +21,7 @@ VFETags.shellreloadboost = ItemTag.register("vfe:shellreloadboost")
 VFETags.bulletreloadboost = ItemTag.register("vfe:bulletreloadboost")
 VFETags.catchbrass = ItemTag.register("vfe:catchbrass")
 
+VFETags.RPM1200 = ItemTag.register("rpm:1200")
 VFETags.RPM1000 = ItemTag.register("rpm:1000")
 VFETags.RPM950 = ItemTag.register("rpm:950")
 VFETags.RPM900 = ItemTag.register("rpm:900")
