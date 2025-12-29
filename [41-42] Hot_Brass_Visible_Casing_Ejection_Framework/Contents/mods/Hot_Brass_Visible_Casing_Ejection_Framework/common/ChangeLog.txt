@@ -2,4 +2,6 @@
 B42.13.1:
 - Remove issue with melee weapons causing errors when swinging weapons
 - Adjust items to use new tags system for ammo crafting
+B41:
+- Remove function causing issue to be from version 42
 [ ------ ]
