@@ -406,36 +406,36 @@ if SpentCasingPhysics.VFE then
         --- Smgs
 
         ["Base.MP5"] = {
-            forwardOffset = 0.30,
-            sideOffset    = 0.0,
-            heightOffset  = 0.50,
+            forwardOffset = 0.32,
+            sideOffset    = 0.10,
+            heightOffset  = 0.45,
             shellForce    = 0.60,
             sideSpread    = 60,
             heightSpread  = 60,
         },
 
         ["Base.MP5SD"] = {
-            forwardOffset = 0.30,
-            sideOffset    = 0.0,
-            heightOffset  = 0.50,
+            forwardOffset = 0.32,
+            sideOffset    = 0.10,
+            heightOffset  = 0.45,
             shellForce    = 0.60,
             sideSpread    = 60,
             heightSpread  = 60,
         },
 
         ["Base.MP5Unfolded"] = {
-            forwardOffset = 0.30,
-            sideOffset    = 0.0,
-            heightOffset  = 0.50,
+            forwardOffset = 0.32,
+            sideOffset    = 0.10,
+            heightOffset  = 0.45,
             shellForce    = 0.60,
             sideSpread    = 60,
             heightSpread  = 60,
         },
 
         ["Base.MP5Folded"] = {
-            forwardOffset = 0.30,
-            sideOffset    = 0.0,
-            heightOffset  = 0.50,
+            forwardOffset = 0.32,
+            sideOffset    = 0.10,
+            heightOffset  = 0.45,
             shellForce    = 0.60,
             sideSpread    = 60,
             heightSpread  = 60,
