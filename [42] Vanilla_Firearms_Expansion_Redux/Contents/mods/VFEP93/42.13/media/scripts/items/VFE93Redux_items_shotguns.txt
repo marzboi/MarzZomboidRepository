@@ -18,7 +18,7 @@ module Base
         ConditionMax                 = 10,
         CritDmgMultiplier            = 2,
         CriticalChance               = 60,
-        CyclicRateMultiplier         = 3.0,
+        CyclicRateMultiplier         = 1.0,
         DisplayCategory              = Weapon,
         DoorDamage                   = 20,
         DropSound                    = M14Drop,
