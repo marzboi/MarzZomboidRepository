@@ -1,0 +1,5 @@
+[ 30/December/2025 ]
+B42.13.1:
+- Initial Release of RAF.
+- Include function to automatically patch weapon to a higher cyclicrate
+[ ------ ]

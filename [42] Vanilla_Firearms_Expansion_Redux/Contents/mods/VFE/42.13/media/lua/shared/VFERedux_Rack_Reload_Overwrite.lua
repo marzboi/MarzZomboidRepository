@@ -149,67 +149,6 @@ end
 
 Events.OnWeaponSwingHitPoint.Add(ISReloadWeaponAction.onShoot)
 
--------------------------------------------------
--- Rate of Fire Control System
--------------------------------------------------
-VFERateOfFire = {}
-
-VFERateOfFire.lastFireTime = {}
-VFERateOfFire.DEFAULT_RPM = 600
-VFERateOfFire.RPMTagList = {
-    { VFETags.RPM1200, 1200 },
-    { VFETags.RPM1000, 1000 },
-    { VFETags.RPM950,  950 },
-    { VFETags.RPM900,  900 },
-    { VFETags.RPM850,  850 },
-    { VFETags.RPM800,  800 },
-    { VFETags.RPM750,  750 },
-    { VFETags.RPM700,  700 },
-    { VFETags.RPM650,  650 },
-    { VFETags.RPM600,  600 },
-    { VFETags.RPM550,  550 },
-    { VFETags.RPM500,  500 },
-    { VFETags.RPM450,  450 },
-    { VFETags.RPM400,  400 },
-    { VFETags.RPM350,  350 },
-    { VFETags.RPM300,  300 },
-}
-
-function VFERateOfFire.getWeaponRPM(weapon)
-    if not weapon then return VFERateOfFire.DEFAULT_RPM end
-    for _, entry in ipairs(VFERateOfFire.RPMTagList) do
-        local tag, rpm = entry[1], entry[2]
-        if weapon:hasTag(tag) then return rpm end
-    end
-    return VFERateOfFire.DEFAULT_RPM
-end
-
-function VFERateOfFire.canFire(player, weapon)
-    if not player then return false end
-
-    local playerId = player:getPlayerNum()
-    local now = getTimestampMs()
-
-    local rpm = VFERateOfFire.getWeaponRPM(weapon)
-    if not rpm or rpm <= 0 then rpm = VFERateOfFire.DEFAULT_RPM end
-
-    local intervalMs = math.floor((60000 / rpm) + 0.5)
-
-    local nextAllowed = VFERateOfFire.lastFireTime[playerId] or 0
-
-    if now >= nextAllowed then
-        local newNext = nextAllowed + intervalMs
-        if newNext < now then
-            newNext = now + intervalMs
-        end
-
-        VFERateOfFire.lastFireTime[playerId] = newNext
-        return true
-    end
-
-    return false
-end
-
 Hook.Attack.Remove(ISReloadWeaponAction.attackHook);
 
 ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
@@ -219,8 +158,6 @@ ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
         return;
     end
     if weapon:isRanged() and not character:isDoShove() then
-        if not VFERateOfFire.canFire(character, weapon) then return end
-
         if ISReloadWeaponAction.canShoot(character, weapon) then
             character:playSound(weapon:getSwingSound());
             local radius = weapon:getSoundRadius() *
@@ -245,20 +182,3 @@ ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
 end
 
 Hook.Attack.Add(ISReloadWeaponAction.attackHook);
-
--- Monkey Patch version
-
--- local old_attackHook = ISReloadWeaponAction.attackHook
--- Hook.Attack.Remove(ISReloadWeaponAction.attackHook)
-
--- ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
---     if weapon:isRanged() and not character:isDoShove() then
---         if not VFERateOfFire.canFire(character, weapon) then
---             return
---         end
---     end
-
---     return old_attackHook(character, chargeDelta, weapon)
--- end
-
--- Hook.Attack.Add(ISReloadWeaponAction.attackHook)

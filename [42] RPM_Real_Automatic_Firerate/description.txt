@@ -1,0 +1,32 @@
+[h1]RAF - Real Automatic Firerate[/h1]
+
+[b]This mod manages to simulate automatic firerate as close as Zomboid permits to simulate IRL weapons' Rounds Per Minute[/b]
+
+As I keep experimenting and learning with the game, I was surprised to see automatic fire be kinda slow, plus it was affected by the game refresh rate if it was high enough. And I realised much of the current approaches in the Workshop required an animset with not much room for customization.
+
+Having made Hot Brass and enjoying putting this little attention to detail into the game, I got distracted while finishing the Ammo Crafting module for Hot Brass and came up with this.
+
+[b]I present you RAF![/b]
+
+What does the mod do?
+
+I use a script in the Attack Hook event of the game and with a timer and some functions limit the automatic fire based on the RPM of that weapon.
+
+As a modder, do you want to implement this?
+
+All you have to do is add a Tag to your weapon script with the desired RPM.
+
+Right now RPMs covered by the mod are 300 to 1200 with 50 step increases each, which I feel is plenty enough to play around with.
+
+This mod is now a hard dependency for my port of VFE.
+
+Hope you enjoy it as much as I enjoyed making this :D
+
+[h3]Incompatibilities[/h3]
+
+- Mod still in WIP, so report any bug with proper description
+- I still need to find a way to support 24 and 30 refresh rates.
+- I will assume that there are none. I monkey patch the Attack Hook, so if a mod has custom logic for it, no issues should arise from using this. If a weapon has no tags, it will default to 600 RPM.
+
+Workshop ID: 3634727573
+Mod ID: RAF

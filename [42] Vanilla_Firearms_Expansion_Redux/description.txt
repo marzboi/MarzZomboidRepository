@@ -40,6 +40,8 @@ I have taken the time to faithfully port all the core functionalities from the o
 [*] Allowed ammo packing of new ammunitions as well. 
 [/list]
 
+[h2]RAF IS A REQUIREMENT NOW[/h2]
+
 [h2]Additional Integration[/h2]
 
 Support for my mod Hot Brass has been added if you wish to see visible shell casings ejecting from firearms. [b]While is marked as required, its not.[/b]
