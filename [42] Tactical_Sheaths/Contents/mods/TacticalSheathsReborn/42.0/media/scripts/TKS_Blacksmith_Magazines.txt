@@ -9,7 +9,7 @@ module TKS
     {
         DisplayName      = Forging For Dummies (Katana),
         DisplayCategory  = SkillBook,
-        Type             = Literature,
+        ItemType         = base:literature,
         Weight           = 0.5,
         Icon             = Forge4Dum,
         BoredomChange    = -20,
@@ -17,7 +17,7 @@ module TKS
         TeachedRecipes   = TKS.Forge_Katana_Blade,
         StaticModel      = Magazine,
         WorldStaticModel = Forge4Dum_Ground,
-        Tags             = Magazine,
+        Tags             = base:magazine,
     }
     
 }

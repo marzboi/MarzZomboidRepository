@@ -1,8 +1,8 @@
 require "BodyLocations"
 
 local group = BodyLocations.getGroup("Human")
-group:getOrCreateLocation(TKSRegistries.BodyLocations.KnifeSheathLeg)
-group:getOrCreateLocation(TKSRegistries.BodyLocations.KnifeSheathBack)
-group:getOrCreateLocation(TKSRegistries.BodyLocations.KnifeSheathLeftLeg)
-group:getOrCreateLocation(TKSRegistries.BodyLocations.KatanaSheath)
-group:getOrCreateLocation(TKSRegistries.BodyLocations.KatanaSheathHip)
+group:getOrCreateLocation(TKSRegistries.ItemBodyLocation.KnifeSheathLeg)
+group:getOrCreateLocation(TKSRegistries.ItemBodyLocation.KnifeSheathBack)
+group:getOrCreateLocation(TKSRegistries.ItemBodyLocation.KnifeSheathLeftLeg)
+group:getOrCreateLocation(TKSRegistries.ItemBodyLocation.KatanaSheath)
+group:getOrCreateLocation(TKSRegistries.ItemBodyLocation.KatanaSheathHip)

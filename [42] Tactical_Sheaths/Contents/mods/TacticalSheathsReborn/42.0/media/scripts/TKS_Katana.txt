@@ -2,6 +2,6 @@ module Base
 {
     item Katana
     {
-        Tags = IgnoreZombieDensity;HasMetal;FullBlade;CutPlant;KillAnimal;ButcherAnimal;Sharpenable,
+        Tags = Base:ignorezombiedensity;base:hasmetal;base:fullblade;bsase:cutplant;base:killanimal;base:butcheranimal;base:sharpenable,
     }
 }

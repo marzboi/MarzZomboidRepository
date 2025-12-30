@@ -53,7 +53,7 @@ module TKS
         HitSound                  = HuntingKnifeHit,
         SwingSound                = HuntingKnifeSwing,
         AttachmentType            = Knife,
-        Tags                      = CutPlant;SharpKnife;ButcherAnimal;KillAnimal;ButcherAnimal;Sharpenable,
+        Tags                      = base:cutplant;base:sharpknife;base:butcheranimal;base:killanimal;base:butcheranimal;base:sharpenable,
         Sharpness                 = 1.0,
         OnBreak                   = OnBreak.TacticalKnife,
     }
