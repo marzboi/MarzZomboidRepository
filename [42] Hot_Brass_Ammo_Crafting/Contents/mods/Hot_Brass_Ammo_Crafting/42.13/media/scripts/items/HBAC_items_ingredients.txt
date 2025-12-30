@@ -13,11 +13,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 9mmProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 9mmProjectileBox,
         Tags             = hbac:lightprojectile,
     }
     
