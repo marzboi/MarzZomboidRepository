@@ -4,7 +4,7 @@ local function cyclicRatePatcher(player, weapon)
         if not weapon:isRanged() then
             return
         end
-        weapon:setCyclicRateMultiplier(2.0)
+        weapon:setCyclicRateMultiplier(4.0)
     end
 end
 
