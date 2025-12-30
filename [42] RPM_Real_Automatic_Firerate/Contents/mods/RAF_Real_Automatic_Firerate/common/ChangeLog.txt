@@ -2,4 +2,5 @@
 B42.13.1:
 - Initial Release of RAF.
 - Include function to automatically patch weapon to a higher cyclicrate
+- Up values of cyclic rate to allow weapons with high RPM to cycle faster
 [ ------ ]
