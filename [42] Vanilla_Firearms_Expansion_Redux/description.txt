@@ -37,15 +37,12 @@ I have taken the time to faithfully port all the core functionalities from the o
 [b]VFE94[/b]
 [list]
 [*] Added Suppressors as an item that can be found. allowing you to alternate between the SD and NON SD variant of certain guns.
-[*] Allowed ammo packing of new ammunitions as well. 
+[*] Allowed ammo packing of new ammunitions as well.
 [/list]
-
-[h2]RAF IS A REQUIREMENT NOW[/h2]
 
 [h2]Additional Integration[/h2]
 
-Support for my mod Hot Brass has been added if you wish to see visible shell casings ejecting from firearms. [b]While is marked as required, its not.[/b]
-All VFE weapon addons support my framework, all ammo and casings have custom models.
+Both RAF and Hot Brass are marked as dependencies [b]BUT THEY ARE NOT[/b]. they are both optional to enhance the experience in the game.
 
 [h2]Development Intent[/h2]
 
