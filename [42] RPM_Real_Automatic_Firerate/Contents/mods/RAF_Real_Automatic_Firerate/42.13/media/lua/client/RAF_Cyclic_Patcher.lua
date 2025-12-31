@@ -1,11 +1,21 @@
-local function cyclicRatePatcher(player, weapon)
-    if not weapon or not player then return end
-    if weapon:getCategory() == "Weapon" and weapon:getSubCategory() == "Firearm" then
-        if not weapon:isRanged() then
-            return
-        end
+local function cyclicRatePatcher(character, weapon)
+    if not weapon or not character then return end
+    if not weapon:isRanged() then return end
+    if character:isAiming() then
         weapon:setCyclicRateMultiplier(4.0)
+    elseif not character:isAiming() then
+        weapon:setCyclicRateMultiplier(1.0)
     end
 end
+local function weaponUpdater()
+    local character = getSpecificPlayer(0)
+    if not character then return end
 
-Events.OnEquipPrimary.Add(function(player, weapon) cyclicRatePatcher(player, weapon) end)
+    local weapon = character:getPrimaryHandItem()
+    if not weapon or not instanceof(weapon, "HandWeapon") then return end
+    if weapon:getSubCategory() ~= "Firearm" then return end
+
+    cyclicRatePatcher(character, weapon)
+end
+
+Events.OnPlayerUpdate.Add(weaponUpdater)
