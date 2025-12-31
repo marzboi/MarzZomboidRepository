@@ -7,6 +7,7 @@ local function cyclicRatePatcher(character, weapon)
         weapon:setCyclicRateMultiplier(1.0)
     end
 end
+
 local function weaponUpdater()
     local character = getSpecificPlayer(0)
     if not character then return end
