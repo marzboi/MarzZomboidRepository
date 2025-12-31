@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Static\clothes\Bob_KatanaSheathHip</m_MaleModel>
+	<m_FemaleModel>Static\clothes\Kate_KatanaSheathHip</m_FemaleModel>
+	<m_GUID>a7d2e9c5-6b3f-4d1c-8a75-5f4e9b2d3c8a</m_GUID>
+	<m_Static>true</m_Static>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone>Bip01_Pelvis</m_AttachBone>
+	<textureChoices>Clothes\Equipment\KatanaSheathGreen</textureChoices>
+</clothingItem>
