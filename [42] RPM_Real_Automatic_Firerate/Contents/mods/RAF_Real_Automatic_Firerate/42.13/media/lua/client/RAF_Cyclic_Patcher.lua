@@ -2,7 +2,7 @@ local function cyclicRatePatcher(character, weapon)
     if not weapon or not character then return end
     if not weapon:isRanged() then return end
     if character:isAiming() then
-        weapon:setCyclicRateMultiplier(4.0)
+        weapon:setCyclicRateMultiplier(3.0)
     elseif not character:isAiming() then
         weapon:setCyclicRateMultiplier(1.0)
     end

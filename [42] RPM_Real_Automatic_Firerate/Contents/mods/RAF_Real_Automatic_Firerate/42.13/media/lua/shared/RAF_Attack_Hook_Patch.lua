@@ -61,6 +61,11 @@ Events.OnGameStart.Add(function()
             return true
         end
 
+        -- if now >= nextAllowed then
+        --     RAFRateOfFire.lastFireTime[playerId] = now + intervalMs
+        --     return true
+        -- end
+
         return false
     end
 
@@ -69,9 +74,7 @@ Events.OnGameStart.Add(function()
 
     ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
         if weapon:isRanged() and not character:isDoShove() then
-            if not RAFRateOfFire.canFire(character, weapon) then
-                return
-            end
+            if not RAFRateOfFire.canFire(character, weapon) then return end
         end
         return old_attackHook(character, chargeDelta, weapon)
     end
