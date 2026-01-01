@@ -2,4 +2,5 @@
 B42.13.1:
 - Fix issue with bullets not spawning in automatic fire with high RPM.
 - Mod should work with all Framerates settings.
+- Burst Fire out!
 [ ------ ]
