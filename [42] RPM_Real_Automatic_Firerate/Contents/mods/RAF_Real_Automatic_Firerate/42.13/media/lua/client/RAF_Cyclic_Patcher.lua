@@ -12,7 +12,6 @@ function RAFFunctions.recoilDelaySaver()
     local weaponName = weapon:getFullType()
     if not RAFFunctions.recoilDelayTable[weaponName] then
         local recoilDelay = weapon:getRecoilDelay()
-        print('Saving Recoil for ', weaponName, " ", recoilDelay)
         RAFFunctions.recoilDelayTable[weaponName] = recoilDelay
     end
 end
@@ -24,21 +23,17 @@ function RAFFunctions.recoilDelayAdjuster(character, weapon)
     if character:isAiming() and ("Auto" == weapon:getFireMode()) then
         weapon:setFireMode("RealAuto")
         weapon:setRecoilDelay(1)
-        print(weapon:getRecoilDelay(), ' ', weapon:getFireMode())
     elseif not character:isAiming() and ("RealAuto" == weapon:getFireMode()) then
         weapon:setFireMode("Auto")
         weapon:setRecoilDelay(RAFFunctions.recoilDelayTable[weapon:getFullType()] or weapon:getRecoilDelay())
-        print(weapon:getRecoilDelay(), ' ', weapon:getFireMode())
     end
 
     if character:isAiming() and ("Burst" == weapon:getFireMode()) then
         weapon:setFireMode("RealBurst")
         weapon:setRecoilDelay(1)
-        print(weapon:getRecoilDelay(), ' ', weapon:getFireMode())
     elseif not character:isAiming() and ("RealBurst" == weapon:getFireMode()) then
         weapon:setFireMode("Burst")
         weapon:setRecoilDelay(RAFFunctions.recoilDelayTable[weapon:getFullType()] or weapon:getRecoilDelay())
-        print(weapon:getRecoilDelay(), ' ', weapon:getFireMode())
     end
 end
 
