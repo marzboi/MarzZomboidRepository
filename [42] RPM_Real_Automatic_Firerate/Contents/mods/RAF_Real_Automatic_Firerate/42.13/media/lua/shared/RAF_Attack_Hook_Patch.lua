@@ -61,11 +61,6 @@ Events.OnGameStart.Add(function()
             return true
         end
 
-        -- if now >= nextAllowed then
-        --     RAFRateOfFire.lastFireTime[playerId] = now + intervalMs
-        --     return true
-        -- end
-
         return false
     end
 

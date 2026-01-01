@@ -1,10 +1,12 @@
 local function cyclicRatePatcher(character, weapon)
     if not weapon or not character then return end
     if not weapon:isRanged() then return end
-    if character:isAiming() then
-        weapon:setCyclicRateMultiplier(3.0)
+    if ("Auto" == weapon:getFireMode()) and character:isAiming() then
+        weapon:setFireMode("RealAuto")
+        weapon:setRecoilDelay(1)
     elseif not character:isAiming() then
-        weapon:setCyclicRateMultiplier(1.0)
+        weapon:setFireMode("Auto")
+        weapon:setRecoilDelay(15)
     end
 end
 

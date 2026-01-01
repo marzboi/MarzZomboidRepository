@@ -1,6 +1,5 @@
-[ 30/December/2025 ]
+[ 1/January/2026 ]
 B42.13.1:
-- Initial Release of RAF.
-- Include function to automatically patch weapon to a higher cyclicrate
-- Up values of cyclic rate to allow weapons with high RPM to cycle faster
+- Fix issue with bullets not spawning in automatic fire with high RPM.
+- Mod should work with all Framerates settings.
 [ ------ ]
