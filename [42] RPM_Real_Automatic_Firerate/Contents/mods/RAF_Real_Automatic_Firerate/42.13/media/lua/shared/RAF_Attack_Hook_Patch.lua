@@ -29,9 +29,14 @@ Events.OnGameStart.Add(function()
         { RAFTags.RPM300,  300 },
     }
     RAFRateOfFire.burstState = {}
-    RAFRateOfFire.BURST_COUNT = 3
+    RAFRateOfFire.BURST_DEFAULT_COUNT = 3
     RAFRateOfFire.BURST_DELAY_MS = 500
     RAFRateOfFire.burstCooldown = {}
+    RAFRateOfFire.BURSTTagList = {
+        { RAFTags.BURST4, 4 },
+        { RAFTags.BURST3, 3 },
+        { RAFTags.BURST2, 2 },
+    }
 
     function RAFRateOfFire.getWeaponRPM(weapon)
         if not weapon then return RAFRateOfFire.DEFAULT_RPM end
@@ -75,6 +80,15 @@ Events.OnGameStart.Add(function()
         return now >= cooldownEnd
     end
 
+    function RAFRateOfFire.getWeaponBurstCount(weapon)
+        if not weapon then return RAFRateOfFire.BURST_DEFAULT_COUNT end
+        for _, entry in ipairs(RAFRateOfFire.BURSTTagList) do
+            local tag, rpm = entry[1], entry[2]
+            if weapon:hasTag(tag) then return rpm end
+        end
+        return RAFRateOfFire.BURST_DEFAULT_COUNT
+    end
+
     function RAFRateOfFire.startBurst(player, weapon, intervalMs, Original_Attack_Hook, chargeDelta)
         local playerId = player:getPlayerNum()
 
@@ -82,7 +96,7 @@ Events.OnGameStart.Add(function()
         if not RAFRateOfFire.canStartBurst(player) then return false end
 
         RAFRateOfFire.burstState[playerId] = {
-            shotsRemaining = RAFRateOfFire.BURST_COUNT - 1,
+            shotsRemaining = RAFRateOfFire.getWeaponBurstCount(weapon) - 1,
             intervalMs = intervalMs,
             weapon = weapon,
             attackHook = Original_Attack_Hook,

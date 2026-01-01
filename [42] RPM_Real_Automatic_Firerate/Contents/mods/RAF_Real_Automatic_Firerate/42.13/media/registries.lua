@@ -18,3 +18,7 @@ RAFTags.RPM450 = ItemTag.register("rpm:450")
 RAFTags.RPM400 = ItemTag.register("rpm:400")
 RAFTags.RPM350 = ItemTag.register("rpm:350")
 RAFTags.RPM300 = ItemTag.register("rpm:300")
+
+RAFTags.BURST4 = ItemTag.register("burst:4")
+RAFTags.BURST3 = ItemTag.register("burst:3")
+RAFTags.BURST2 = ItemTag.register("burst:2")
