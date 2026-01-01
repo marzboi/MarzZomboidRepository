@@ -1,26 +1,7 @@
-local function cyclicRatePatcher(character, weapon)
-    if not weapon or not character then return end
-    if not weapon:isRanged() then return end
-    if ("Auto" == weapon:getFireMode()) or ("RealAuto" == weapon:getFireMode()) then
-        if character:isAiming() then
-            weapon:setFireMode("RealAuto")
-            weapon:setRecoilDelay(1)
-        elseif not character:isAiming() then
-            weapon:setFireMode("Auto")
-            weapon:setRecoilDelay(15)
-        end
-    end
+RAFFunctions = {}
+RAFFunctions.recoilDelayTable = {}
 
-    if ("RealBurst" == weapon:getFireMode()) then
-        if character:isAiming() then
-            weapon:setRecoilDelay(1)
-        elseif not character:isAiming() then
-            weapon:setRecoilDelay(15)
-        end
-    end
-end
-
-local function weaponUpdater()
+function RAFFunctions.recoilDelaySaver()
     local character = getSpecificPlayer(0)
     if not character then return end
 
@@ -28,7 +9,49 @@ local function weaponUpdater()
     if not weapon or not instanceof(weapon, "HandWeapon") then return end
     if weapon:getSubCategory() ~= "Firearm" then return end
 
-    cyclicRatePatcher(character, weapon)
+    local weaponName = weapon:getFullType()
+    if not RAFFunctions.recoilDelayTable[weaponName] then
+        local recoilDelay = weapon:getRecoilDelay()
+        print('Saving Recoil for ', weaponName, " ", recoilDelay)
+        RAFFunctions.recoilDelayTable[weaponName] = recoilDelay
+    end
 end
 
-Events.OnPlayerUpdate.Add(weaponUpdater)
+function RAFFunctions.recoilDelayAdjuster(character, weapon)
+    if not weapon or not character then return end
+    if not weapon:isRanged() then return end
+
+    if character:isAiming() and ("Auto" == weapon:getFireMode()) then
+        weapon:setFireMode("RealAuto")
+        weapon:setRecoilDelay(1)
+        print(weapon:getRecoilDelay(), ' ', weapon:getFireMode())
+    elseif not character:isAiming() and ("RealAuto" == weapon:getFireMode()) then
+        weapon:setFireMode("Auto")
+        weapon:setRecoilDelay(RAFFunctions.recoilDelayTable[weapon:getFullType()] or weapon:getRecoilDelay())
+        print(weapon:getRecoilDelay(), ' ', weapon:getFireMode())
+    end
+
+    if character:isAiming() and ("Burst" == weapon:getFireMode()) then
+        weapon:setFireMode("RealBurst")
+        weapon:setRecoilDelay(1)
+        print(weapon:getRecoilDelay(), ' ', weapon:getFireMode())
+    elseif not character:isAiming() and ("RealBurst" == weapon:getFireMode()) then
+        weapon:setFireMode("Burst")
+        weapon:setRecoilDelay(RAFFunctions.recoilDelayTable[weapon:getFullType()] or weapon:getRecoilDelay())
+        print(weapon:getRecoilDelay(), ' ', weapon:getFireMode())
+    end
+end
+
+function RAFFunctions.weaponUpdater()
+    local character = getSpecificPlayer(0)
+    if not character then return end
+
+    local weapon = character:getPrimaryHandItem()
+    if not weapon or not instanceof(weapon, "HandWeapon") then return end
+    if weapon:getSubCategory() ~= "Firearm" then return end
+
+    RAFFunctions.recoilDelayAdjuster(character, weapon)
+end
+
+Events.OnEquipPrimary.Add(RAFFunctions.recoilDelaySaver)
+Events.OnPlayerUpdate.Add(RAFFunctions.weaponUpdater)

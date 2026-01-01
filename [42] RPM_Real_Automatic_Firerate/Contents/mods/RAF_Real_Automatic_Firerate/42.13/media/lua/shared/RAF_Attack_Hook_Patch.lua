@@ -111,7 +111,6 @@ Events.OnGameStart.Add(function()
                 state.nextShotTime = now + state.intervalMs
 
                 if state.shotsRemaining <= 0 then
-                    -- Set cooldown before next burst can start
                     RAFRateOfFire.burstCooldown[playerId] = now + RAFRateOfFire.BURST_DELAY_MS
                     RAFRateOfFire.burstState[playerId] = nil
                 end
