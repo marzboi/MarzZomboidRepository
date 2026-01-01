@@ -10,6 +10,14 @@ local function cyclicRatePatcher(character, weapon)
             weapon:setRecoilDelay(15)
         end
     end
+
+    if ("RealBurst" == weapon:getFireMode()) then
+        if character:isAiming() then
+            weapon:setRecoilDelay(1)
+        elseif not character:isAiming() then
+            weapon:setRecoilDelay(15)
+        end
+    end
 end
 
 local function weaponUpdater()

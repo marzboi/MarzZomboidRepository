@@ -28,6 +28,10 @@ Events.OnGameStart.Add(function()
         { RAFTags.RPM350,  350 },
         { RAFTags.RPM300,  300 },
     }
+    RAFRateOfFire.burstState = {}
+    RAFRateOfFire.BURST_COUNT = 3
+    RAFRateOfFire.BURST_DELAY_MS = 500
+    RAFRateOfFire.burstCooldown = {}
 
     function RAFRateOfFire.getWeaponRPM(weapon)
         if not weapon then return RAFRateOfFire.DEFAULT_RPM end
@@ -58,21 +62,82 @@ Events.OnGameStart.Add(function()
             end
 
             RAFRateOfFire.lastFireTime[playerId] = newNext
-            return true
+            return true, intervalMs
         end
 
         return false
     end
 
-    local old_attackHook = ISReloadWeaponAction.attackHook
+    function RAFRateOfFire.canStartBurst(player)
+        local playerId = player:getPlayerNum()
+        local now = getTimestampMs()
+        local cooldownEnd = RAFRateOfFire.burstCooldown[playerId] or 0
+        return now >= cooldownEnd
+    end
+
+    function RAFRateOfFire.startBurst(player, weapon, intervalMs, Original_Attack_Hook, chargeDelta)
+        local playerId = player:getPlayerNum()
+
+        if RAFRateOfFire.burstState[playerId] then return false end
+        if not RAFRateOfFire.canStartBurst(player) then return false end
+
+        RAFRateOfFire.burstState[playerId] = {
+            shotsRemaining = RAFRateOfFire.BURST_COUNT - 1,
+            intervalMs = intervalMs,
+            weapon = weapon,
+            attackHook = Original_Attack_Hook,
+            chargeDelta = chargeDelta,
+            nextShotTime = getTimestampMs() + intervalMs
+        }
+    end
+
+    function RAFRateOfFire.burstTickHandler()
+        local now = getTimestampMs()
+
+        for playerId, state in pairs(RAFRateOfFire.burstState) do
+            if state.shotsRemaining <= 0 then
+                RAFRateOfFire.burstState[playerId] = nil
+            elseif now >= state.nextShotTime then
+                local player = getSpecificPlayer(playerId)
+
+                if player and not player:isDead() and player:isAiming() then
+                    local weapon = state.weapon
+                    if weapon and ISReloadWeaponAction.canShoot(player, weapon) then
+                        state.attackHook(player, state.chargeDelta, weapon)
+                    end
+                end
+
+                state.shotsRemaining = state.shotsRemaining - 1
+                state.nextShotTime = now + state.intervalMs
+
+                if state.shotsRemaining <= 0 then
+                    -- Set cooldown before next burst can start
+                    RAFRateOfFire.burstCooldown[playerId] = now + RAFRateOfFire.BURST_DELAY_MS
+                    RAFRateOfFire.burstState[playerId] = nil
+                end
+            end
+        end
+    end
+
+    local Original_Attack_Hook = ISReloadWeaponAction.attackHook
     Hook.Attack.Remove(ISReloadWeaponAction.attackHook)
 
     ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
         if weapon:isRanged() and not character:isDoShove() then
-            if not RAFRateOfFire.canFire(character, weapon) then return end
+            local canFire, intervalMs = RAFRateOfFire.canFire(character, weapon)
+            if not canFire then return end
+
+            if weapon:getFireMode() == "RealBurst" then
+                if not RAFRateOfFire.canStartBurst(character) then return end
+
+                local result = Original_Attack_Hook(character, chargeDelta, weapon)
+                RAFRateOfFire.startBurst(character, weapon, intervalMs, Original_Attack_Hook, chargeDelta)
+                return result
+            end
         end
-        return old_attackHook(character, chargeDelta, weapon)
+        return Original_Attack_Hook(character, chargeDelta, weapon)
     end
 
     Hook.Attack.Add(ISReloadWeaponAction.attackHook)
+    Events.OnTick.Add(RAFRateOfFire.burstTickHandler)
 end)
