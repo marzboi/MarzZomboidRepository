@@ -1,25 +1,34 @@
-[h1]Ammo craft[/h1]
+[h1] Updated for version 42.13[/h1]
+[h2] Please report if you find any bug! [/h2]
 
-[h2]Now you'll want to pick up those casings![/h2]
-
-Welcome to Ammo Crafting for Hot Brass. There's not much to explain here.
-
-Casings now have recipes that let you craft ammo again. You will find a reloading tool in different places.
-
-Ammo crafting is a rather simple process: find a box of primers, gunpowder, and the projectile type for the round you want to craft.
-
-Currently, it supports vanilla and VFE ammo types. More in the future.
-
-This is still a work in progress. I'm slowly trying to get distribution right, and I may add boxes of empty casings so you can craft bullets from scratch.
-
-Any feedback is appreciated!
-
-[b]Requirements[/b]
+[h2] Changes to Gameplay [/h2]
+[b]Katana Update: [/b]
 [list]
-[*] Hot Brass
+[*] The Katana will no longer be able to be equiped in the back without a sheath. This is a compromise needed to be done for them to fit in the Sheath. (compatible with Legendary Katana.)
+[*] Katana can be equiped on the hip thanks to the sheath.
+[*] Katanas can be crafted.
+[*] Includes support for Rains Katanas.
 [/list]
 
-Special thanks to Cosmic for allowing me to use his Reloading Tool model from Gunshop Kendo!
+[h2] Katana Crafting [/h2]
+[list]
+[*]Recipes can be learned from a magazine.
+[*]Handles can be crafted in the Crafting Menu.
+[*]Katana blade can be forged in the Advance Forge.
+[/list]
+
+[h2]Thanks to Bananaut for porting this mod to version 42, and to York for the original idea. [/h2]
+
+I will be adding new features to this mod. It will not be only Sheaths and Knife holders.
+
+[b]Future plans [/b]
+[list]
+[*]Slings and holsters.
+[*]More colors and variations for existing sheaths.
+[*]Other things in mind, will update if I proceed with them!
+[/list]
+
+[b]This mod is not compatible with Simple Slings, Simple Slings currently has an issue which modifies all Katanas, making them unable to be equiped in back sheaths. Plus knives can be put in them causing infinite error logs. It's recommended you avoid it for now. [/b]
 
 [b]My Other mods![/b]
 [table]
@@ -51,8 +60,5 @@ Special thanks to Cosmic for allowing me to use his Reloading Tool model from Gu
 [/tr]
 [/table]
 
-Workshop ID: 3637364024
-Mod ID: HBAC
-Mod ID: HBACVFE
-Mod ID: HBACVFE93
-Mod ID: HBACVFES
+Workshop ID: 3569158406
+Mod ID: TacticalSheathsReborn

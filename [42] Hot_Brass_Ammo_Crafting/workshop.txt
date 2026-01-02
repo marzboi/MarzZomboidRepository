@@ -1,0 +1,6 @@
+version=1
+id=3637364024
+title=[42] Hot Brass - Ammo Craft
+description=Finally!
+tags=Build 42;Framework;Items;Military;Misc;Models;Multiplayer;Weapons
+visibility=unlisted
