@@ -1,1 +1,20 @@
 [h1]Ammo craft[/h1]
+
+[h2]Now you'll want to pick up those casings![/h2]
+
+Welcome to Ammo Crafting for Hot Brass. There's not much to explain here.
+
+Casings now have recipes that let you craft ammo again. You will find a reloading tool in different places.
+
+Ammo crafting is a rather simple process: find a box of primers, gunpowder, and the projectile type for the round you want to craft.
+
+Currently, it supports vanilla and VFE ammo types. More in the future.
+
+This is still a work in progress. I'm slowly trying to get distribution right, and I may add boxes of empty casings so you can craft bullets from scratch.
+
+Any feedback is appreciated!
+
+[b]Requirements[/b]
+[list]
+[*] Hot Brass
+[/list]
