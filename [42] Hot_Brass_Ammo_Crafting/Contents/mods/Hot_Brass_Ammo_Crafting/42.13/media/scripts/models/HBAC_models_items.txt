@@ -12,4 +12,82 @@ module Base
         texture = WorldItems/9mmProjectileBox,
         scale = 1.0,
     }
+    model 45ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/45ProjectileBox,
+        scale = 1.0,
+    }
+    model 44ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/44ProjectileBox,
+        scale = 1.0,
+    }
+    model 38ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/38ProjectileBox,
+        scale = 1.0,
+    }
+    model 308ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/308ProjectileBox,
+        scale = 1.0,
+    }
+    model 223ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/223rojectileBox,
+        scale = 1.0,
+    }
+    model 556ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/556rojectileBox,
+        scale = 1.0,
+    }
+    model 22ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/22rojectileBox,
+        scale = 1.0,
+    }
+    model 762ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/762ProjectileBox,
+        scale = 1.0,
+    }
+    model 545ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/545ProjectileBox,
+        scale = 1.0,
+    }
+    model 939ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/939ProjectileBox,
+        scale = 1.0,
+    }
+    model 76254ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/76254ProjectileBox,
+        scale = 1.0,
+    }
+    model 57ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/57ProjectileBox,
+        scale = 1.0,
+    }
+    model 46ProjectileBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/46ProjectileBox,
+        scale = 1.0,
+    }
 }

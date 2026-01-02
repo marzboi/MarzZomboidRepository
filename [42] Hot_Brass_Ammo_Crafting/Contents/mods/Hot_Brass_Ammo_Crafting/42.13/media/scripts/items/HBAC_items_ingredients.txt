@@ -26,11 +26,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 45ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 45ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
     
@@ -39,11 +39,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 44ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 44ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
     
@@ -52,11 +52,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 38ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 38ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
     
@@ -65,11 +65,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 308ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 308ProjectileBox,
         Tags             = hbac:heavyprojectile,
     }
     
@@ -78,11 +78,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 223ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 223ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
     
@@ -91,11 +91,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 556ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 556ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
     
@@ -104,11 +104,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 22ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 22ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
     
@@ -117,11 +117,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 762ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 762ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
     
@@ -130,11 +130,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 545ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 545ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
     
@@ -143,11 +143,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 939ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 939ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
     
@@ -156,11 +156,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 76254ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 76254ProjectileBox,
         Tags             = hbac:heavyprojectile,
     }
     
@@ -169,11 +169,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 57ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 57ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
     
@@ -182,11 +182,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = 46ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = 46ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
     
@@ -195,11 +195,11 @@ module Base
         DisplayCategory  = Material,
         ItemType         = base:drainable,
         Weight           = 0.5,
-        Icon             = GunpowderJar,
+        Icon             = ShotgunPelletsBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
         WeightEmpty      = 0.01,
-        WorldStaticModel = GunpowderJar,
+        WorldStaticModel = ShotgunPelletsBox,
         Tags             = hbac:shotgunpellet,
     }
     
