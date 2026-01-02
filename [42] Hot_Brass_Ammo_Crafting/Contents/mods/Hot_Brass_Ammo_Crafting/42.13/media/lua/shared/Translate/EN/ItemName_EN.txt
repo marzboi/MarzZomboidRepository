@@ -1,0 +1,34 @@
+ItemName_EN = {
+    ItemName_Base.PrimerBox = "Box of Primers",
+    
+    ItemName_Base.ReloadingTool = "Reloading Tool",
+    
+    ItemName_Base.9mmProjectileBox = "Box of 9mm Projectiles",
+    ItemName_Base.45ProjectileBox = "Box of .45 Projectiles",
+    ItemName_Base.44ProjectileBox = "Box of .44 Magnum Projectiles",
+    ItemName_Base.38ProjectileBox = "Box of .38 Special Projectiles",
+    ItemName_Base.308ProjectileBox = "Box of .308 Projectiles",
+    ItemName_Base.223ProjectileBox = "Box of .223 Projectiles",
+    ItemName_Base.556ProjectileBox = "Box of 5.56mm Projectiles",
+    ItemName_Base.ShotgunPelletsBox = "Box of Shotgun Pellets",
+    
+    -- VFE
+    
+    ItemName_Base.22ProjectileBox = "Box of .22 Projectiles",
+    ItemName_Base.762ProjectileBox = "Box of 7.62mm Projectiles",
+    ItemName_Base.545ProjectileBox = "Box of 5.45mm Projectiles",
+    ItemName_Base.939ProjectileBox = "Box of 9.39mm Projectiles",
+    ItemName_Base.76254ProjectileBox = "Box of 7.62x54mm Projectiles",
+    ItemName_Base.57ProjectileBox = "Box of 5.7mm Projectiles",
+    ItemName_Base.46ProjectileBox = "Box of 4.6mm Projectiles",
+    
+    -- Firearms
+    
+    ItemName_Base.10ProjectileBox = "Box of 10mm Auto Projectiles",
+    ItemName_Base.Bullets10mm_Casing= "10mm Auto Projectiles",
+    ItemName_Base.762x51Bullets_Casing = "7.62x51mm Projectiles",
+    ItemName_Base.762x39Bullets_Casing = "7.62x39mm Projectiles",
+    ItemName_Base.Bullets4440_Casing = ".44-40 WCF Projectiles",
+    ItemName_Base.Bullets357_Casing = ".357 Projectiles",
+    ItemName_Base.Bullets3006_Casing = ".30-06 Projectiles",
+}

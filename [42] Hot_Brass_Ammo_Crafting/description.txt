@@ -1,0 +1,58 @@
+[h1]Ammo craft[/h1]
+
+[h2]Now you'll want to pick up those casings![/h2]
+
+Welcome to Ammo Crafting for Hot Brass. There's not much to explain here.
+
+Casings now have recipes that let you craft ammo again. You will find a reloading tool in different places.
+
+Ammo crafting is a rather simple process: find a box of primers, gunpowder, and the projectile type for the round you want to craft.
+
+Currently, it supports vanilla and VFE ammo types. More in the future.
+
+This is still a work in progress. I'm slowly trying to get distribution right, and I may add boxes of empty casings so you can craft bullets from scratch.
+
+Any feedback is appreciated!
+
+[b]Requirements[/b]
+[list]
+[*] Hot Brass
+[/list]
+
+Special thanks to Cosmic for allowing me to use his Reloading Tool model from Gunshop Kendo!
+
+[b]My Other mods![/b]
+[table]
+[tr]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3610677934]
+[img]https://images.steamusercontent.com/ugc/11935090584844802852/47F2DCDC148BAD4465DE91CF06455D7C77D7EB21/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3634727573]
+[img]https://images.steamusercontent.com/ugc/16469987530845276986/8F162281585B6B012936A5F99E9B7A6178B6E475/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3637364024]
+[img]https://images.steamusercontent.com/ugc/15360020966411912880/33C7C2BE9222918C6E42CE8DB601CC6AFE82FC32/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+[/tr]
+
+[tr]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3611718925]
+[img]https://images.steamusercontent.com/ugc/11776990660090596558/5298B64AFF746BFFD64655DECB0D25C1CCE15FEA/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3569158406]
+[img]https://images.steamusercontent.com/ugc/16784753552002537810/0AD894198E16D83508A57F0488A8557B7FDA6058/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[/tr]
+[/table]
+
+Workshop ID: 3637364024
+Mod ID: HBAC
+Mod ID: HBACVFE
+Mod ID: HBACVFE93
+Mod ID: HBACVFES

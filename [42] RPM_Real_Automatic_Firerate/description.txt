@@ -1,0 +1,68 @@
+[h1]RAF - Real Automatic Firerate[/h1]
+
+[b]This mod simulates automatic firerate as close as Zomboid permits to real-life weapons' Rounds Per Minute.[/b]
+
+[h2][b]New Burst fire mode is out! I have patched the Assault Rifle to use the new mode.[/b][/h2]
+
+As I kept experimenting and learning with the game, I was surprised to see automatic fire being kind of slow, plus it was affected by the game's refresh rate if it was high enough. I also realized that many of the current approaches in the Workshop required an animset with not much room for customization.
+
+Having made Hot Brass and enjoying putting this little attention to detail into the game, I got distracted while finishing the Ammo Crafting module for Hot Brass and came up with this.
+
+[b]I present to you RAF![/b]
+
+What does the mod do?
+
+I use a script in the Attack Hook event of the game, and with a timer and some functions, I limit the automatic fire based on the RPM of that weapon.
+
+As a modder, do you want to implement this?
+
+All you have to do is add a tag to your weapon script with the desired RPM.
+
+Right now, RPMs covered by the mod range from 300 to 1200 with 50-step increases each, which I feel is plenty enough to play around with.
+
+If you also want to use the Burst mode from the mod, all you have to do is enable Burst as a fire mode for your weapon. Optionally, you can add a tag to specify how many bullets to shoot in each burst volley. Currently covered: 2 to 4 rounds.
+
+I can add more RPM options or rounds per burst if modders request it—just DM me on Discord if you want to chat.
+
+This mod is now a hard dependency for my port of VFE.
+
+Hope you enjoy it as much as I enjoyed making this! :D
+
+[h3]Incompatibilities[/h3]
+
+- Mod is still a WIP, so report any bugs with a proper description.
+- I still need to find a way to support 24 and 30 refresh rates.
+- I will assume that there are none. I monkey-patch the Attack Hook, so if a mod has custom logic for it, no issues should arise from using this. If a weapon has no tags, it will default to 600 RPM.
+
+[b]My Other mods![/b]
+[table]
+[tr]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3610677934]
+[img]https://images.steamusercontent.com/ugc/11935090584844802852/47F2DCDC148BAD4465DE91CF06455D7C77D7EB21/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3634727573]
+[img]https://images.steamusercontent.com/ugc/16469987530845276986/8F162281585B6B012936A5F99E9B7A6178B6E475/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3637364024]
+[img]https://images.steamusercontent.com/ugc/15360020966411912880/33C7C2BE9222918C6E42CE8DB601CC6AFE82FC32/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+[/tr]
+
+[tr]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3611718925]
+[img]https://images.steamusercontent.com/ugc/11776990660090596558/5298B64AFF746BFFD64655DECB0D25C1CCE15FEA/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3569158406]
+[img]https://images.steamusercontent.com/ugc/16784753552002537810/0AD894198E16D83508A57F0488A8557B7FDA6058/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[/tr]
+[/table]
+
+Workshop ID: 3634727573
+Mod ID: RAF

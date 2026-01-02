@@ -1,0 +1,7 @@
+name=Hot Brass - Ammo Crafting - VFE93 Ammo [B42.13]
+poster=HotBrassAmmoCraft.png
+id=HBACVFE93
+description=Pick those casings up and make them back into bullets!
+icon=miniLogo.png
+author=Marz
+require=\HBVCEFb42,\HBAC,\VFExpansion3Reduxb42

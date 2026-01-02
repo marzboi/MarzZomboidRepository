@@ -1,0 +1,11 @@
+module Base
+{
+    item 46Bullets
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:lightammo,
+    }
+    item 57Bullets
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:lightammo,
+    }
+}

@@ -37,13 +37,12 @@ I have taken the time to faithfully port all the core functionalities from the o
 [b]VFE94[/b]
 [list]
 [*] Added Suppressors as an item that can be found. allowing you to alternate between the SD and NON SD variant of certain guns.
-[*] Allowed ammo packing of new ammunitions as well. 
+[*] Allowed ammo packing of new ammunitions as well.
 [/list]
 
 [h2]Additional Integration[/h2]
 
-Support for my mod Hot Brass has been added if you wish to see visible shell casings ejecting from firearms. [b]While is marked as required, its not.[/b]
-All VFE weapon addons support my framework, all ammo and casings have custom models.
+RAF, Hot Brass and Hot Brass Ammo Craft are marked as dependencies [b]BUT THEY ARE NOT[/b]. they are all optional plugins to enhance the experience in the game.
 
 [h2]Development Intent[/h2]
 
@@ -59,7 +58,41 @@ This mod will remain available until the official VFE update is released. Once t
 
 [b]Enjoy![/b]
 
+[b]Permission & Redistribution Notice
+This mod is not permitted to be copied, reuploaded, redistributed, mirrored, included in collections/modpacks, or stored on any third-party site in whole or in part without my explicit written permission.
+You may link to the original Workshop page, but do not upload this mod anywhere else.[/b]
+
+[b]My Other mods![/b]
+[table]
+[tr]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3610677934]
+[img]https://images.steamusercontent.com/ugc/11935090584844802852/47F2DCDC148BAD4465DE91CF06455D7C77D7EB21/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3634727573]
+[img]https://images.steamusercontent.com/ugc/16469987530845276986/8F162281585B6B012936A5F99E9B7A6178B6E475/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3637364024]
+[img]https://images.steamusercontent.com/ugc/15360020966411912880/33C7C2BE9222918C6E42CE8DB601CC6AFE82FC32/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+[/tr]
+
+[tr]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3611718925]
+[img]https://images.steamusercontent.com/ugc/11776990660090596558/5298B64AFF746BFFD64655DECB0D25C1CCE15FEA/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3569158406]
+[img]https://images.steamusercontent.com/ugc/16784753552002537810/0AD894198E16D83508A57F0488A8557B7FDA6058/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[/url]
+
+[/tr]
+[/table]
+
 Workshop ID: 3611718925
-Mod ID: VFExpansionRedux
-Mod ID: VFExpansion3Redux
-Mod ID: VFExpansion2Redux
+Mod ID: VFExpansionReduxb42
+Mod ID: VFExpansion3Reduxb42
+Mod ID: VFExpansion2Reduxb42

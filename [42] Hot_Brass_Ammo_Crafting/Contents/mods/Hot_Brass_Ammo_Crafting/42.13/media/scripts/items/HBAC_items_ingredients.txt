@@ -1,0 +1,217 @@
+module Base
+{
+    item FakeGenericItem
+    {
+        DisplayCategory = Junk,
+        Icon            = IntentionallyInvalid,
+        ItemType        = base:normal,
+        Weight          = 20,
+    }
+    
+    item 9mmProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.1,
+        Icon             = 9mmProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 9mmProjectileBox,
+        Tags             = hbac:lightprojectile,
+    }
+    
+    item 45ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.35,
+        Icon             = 45ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 45ProjectileBox,
+        Tags             = hbac:lightprojectile,
+    }
+    
+    item 44ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.6,
+        Icon             = 44ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 44ProjectileBox,
+        Tags             = hbac:mediumprojectile,
+    }
+    
+    item 38ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 0.85,
+        Icon             = 38ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 38ProjectileBox,
+        Tags             = hbac:lightprojectile,
+    }
+    
+    item 308ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 2.1,
+        Icon             = 308ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 308ProjectileBox,
+        Tags             = hbac:heavyprojectile,
+    }
+    
+    item 223ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.25,
+        Icon             = 223ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 223ProjectileBox,
+        Tags             = hbac:mediumprojectile,
+    }
+    
+    item 556ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.25,
+        Icon             = 556ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 556ProjectileBox,
+        Tags             = hbac:mediumprojectile,
+    }
+    
+    item 22ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 0.35,
+        Icon             = 22ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 22ProjectileBox,
+        Tags             = hbac:lightprojectile,
+    }
+    
+    item 762ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.35,
+        Icon             = 762ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 762ProjectileBox,
+        Tags             = hbac:mediumprojectile,
+    }
+    
+    item 545ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.1,
+        Icon             = 545ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 545ProjectileBox,
+        Tags             = hbac:mediumprojectile,
+    }
+    
+    item 939ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.35,
+        Icon             = 939ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 939ProjectileBox,
+        Tags             = hbac:mediumprojectile,
+    }
+    
+    item 76254ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 2.1,
+        Icon             = 76254ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 76254ProjectileBox,
+        Tags             = hbac:heavyprojectile,
+    }
+    
+    item 57ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.2,
+        Icon             = 57ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 57ProjectileBox,
+        Tags             = hbac:lightprojectile,
+    }
+    
+    item 46ProjectileBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 1.1,
+        Icon             = 46ProjectileBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = 46ProjectileBox,
+        Tags             = hbac:lightprojectile,
+    }
+    
+    item ShotgunPelletsBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 3.1,
+        Icon             = ShotgunPelletsBox,
+        UseDelta         = 0.01,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = ShotgunPelletsBox,
+        Tags             = hbac:shotgunpellet,
+    }
+    
+    item PrimerBox
+    {
+        DisplayCategory  = Material,
+        ItemType         = base:drainable,
+        Weight           = 0.8,
+        Icon             = PrimerBox,
+        UseDelta         = 0.005,
+        UseWhileEquipped = false,
+        WeightEmpty      = 0.1,
+        WorldStaticModel = PrimerBox,
+    }
+}

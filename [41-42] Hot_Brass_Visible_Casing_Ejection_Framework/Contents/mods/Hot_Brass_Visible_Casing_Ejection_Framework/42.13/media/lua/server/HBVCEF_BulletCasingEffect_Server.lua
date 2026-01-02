@@ -507,12 +507,14 @@ function SpentCasingPhysics.update()
                         )
                         SpentCasingPhysics.playCasingImpactSound(casing, targetSquare)
                     else
-                        targetSquare:AddWorldInventoryItem(
-                            casing.casingType,
-                            localX2,
-                            localY2,
-                            surfaceZ
-                        )
+                        if SandboxVars.HB.PermanentCasings then
+                            targetSquare:AddWorldInventoryItem(
+                                casing.casingType,
+                                localX2,
+                                localY2,
+                                surfaceZ
+                            )
+                        end
                         SpentCasingPhysics.playCasingImpactSound(casing, targetSquare)
                         casing.active = false
                         table.remove(SpentCasingPhysics.activeCasings, i)

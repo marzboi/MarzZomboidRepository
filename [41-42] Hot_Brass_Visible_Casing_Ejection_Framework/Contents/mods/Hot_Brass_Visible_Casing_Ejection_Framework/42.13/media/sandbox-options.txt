@@ -1,7 +1,7 @@
 VERSION = 1,
-option HB.CosmeticCasing {
+option HB.PermanentCasings {
     type = boolean,
-    default = false,
-    page = Hot_Brass,
-    translation = HB_Cosmetic_Casing,
+    default = true,
+    page = HB,
+    translation = HB_PermanentCasings,
 }

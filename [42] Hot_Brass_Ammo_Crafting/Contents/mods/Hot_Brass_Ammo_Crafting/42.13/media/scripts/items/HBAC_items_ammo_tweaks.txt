@@ -1,0 +1,35 @@
+module Base
+{
+    item 308Bullets
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:heavyammo,
+    }
+    item 556Bullets
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:mediumammo,
+    }
+    item 223Bullets
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:mediumammo,
+    }
+    item ShotgunShells
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:shotgunammo,
+    }
+    item Bullets9mm
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:lightammo,
+    }
+    item Bullets38
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:lightammo,
+    }
+    item Bullets44
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:mediumammo,
+    }
+    item Bullets45
+    {
+        Tags = base:ammo;vfe:ammo50;hbac:lightammo,
+    }
+}
