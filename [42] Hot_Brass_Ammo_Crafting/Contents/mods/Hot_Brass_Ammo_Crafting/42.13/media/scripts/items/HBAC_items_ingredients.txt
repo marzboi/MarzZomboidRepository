@@ -12,11 +12,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.1,
         Icon             = 9mmProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 9mmProjectileBox,
         Tags             = hbac:lightprojectile,
     }
@@ -25,11 +25,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.35,
         Icon             = 45ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 45ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
@@ -38,11 +38,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.6,
         Icon             = 44ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 44ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
@@ -51,11 +51,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 0.85,
         Icon             = 38ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 38ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
@@ -64,11 +64,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 2.1,
         Icon             = 308ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 308ProjectileBox,
         Tags             = hbac:heavyprojectile,
     }
@@ -77,11 +77,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.25,
         Icon             = 223ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 223ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
@@ -90,11 +90,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.25,
         Icon             = 556ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 556ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
@@ -103,11 +103,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 0.35,
         Icon             = 22ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 22ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
@@ -116,11 +116,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.35,
         Icon             = 762ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 762ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
@@ -129,11 +129,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.1,
         Icon             = 545ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 545ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
@@ -142,11 +142,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.35,
         Icon             = 939ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 939ProjectileBox,
         Tags             = hbac:mediumprojectile,
     }
@@ -155,11 +155,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 2.1,
         Icon             = 76254ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 76254ProjectileBox,
         Tags             = hbac:heavyprojectile,
     }
@@ -168,11 +168,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.2,
         Icon             = 57ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 57ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
@@ -181,11 +181,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 1.1,
         Icon             = 46ProjectileBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = 46ProjectileBox,
         Tags             = hbac:lightprojectile,
     }
@@ -194,11 +194,11 @@ module Base
     {
         DisplayCategory  = Material,
         ItemType         = base:drainable,
-        Weight           = 0.5,
+        Weight           = 3.1,
         Icon             = ShotgunPelletsBox,
         UseDelta         = 0.01,
         UseWhileEquipped = false,
-        WeightEmpty      = 0.01,
+        WeightEmpty      = 0.1,
         WorldStaticModel = ShotgunPelletsBox,
         Tags             = hbac:shotgunpellet,
     }
