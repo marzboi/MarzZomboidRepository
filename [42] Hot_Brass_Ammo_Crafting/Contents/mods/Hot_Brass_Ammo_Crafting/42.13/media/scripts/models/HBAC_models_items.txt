@@ -96,4 +96,10 @@ module Base
         texture = WorldItems/ShotgunPelletsBox,
         scale = 1.0,
     }
+    model PrimerBox
+    {
+        mesh = WorldItems/projectileBox,
+        texture = WorldItems/PrimerBox,
+        scale = 1.0,
+    }
 }
