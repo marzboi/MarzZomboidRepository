@@ -3,24 +3,24 @@ RAFFunctions = {}
 function RAFFunctions.cyclicRatePatcher(character, weapon)
     if not weapon or not character then return end
     if not weapon:isRanged() then return end
-
-    local aiming = character:isAiming()
-    local mode = weapon:getFireMode()
-
-    if aiming and mode == "Auto" then
-        weapon:setFireMode("RealAuto")
-        weapon:setRecoilDelay(1)
-    elseif (not aiming) and mode == "RealAuto" then
-        weapon:setFireMode("Auto")
-        weapon:setRecoilDelay(15)
+    if ("Auto" == weapon:getFireMode()) or ("RealAuto" == weapon:getFireMode()) then
+        if character:isAiming() then
+            weapon:setFireMode("RealAuto")
+            weapon:setRecoilDelay(1)
+        elseif not character:isAiming() then
+            weapon:setFireMode("Auto")
+            weapon:setRecoilDelay(15)
+        end
     end
 
-    if aiming and mode == "Burst" then
-        weapon:setFireMode("RealBurst")
-        weapon:setRecoilDelay(1)
-    elseif (not aiming) and mode == "RealBurst" then
-        weapon:setFireMode("Burst")
-        weapon:setRecoilDelay(15)
+    if ("Burst" == weapon:getFireMode()) or ("RealBurst" == weapon:getFireMode()) then
+        if character:isAiming() then
+            weapon:setFireMode("RealBurst")
+            weapon:setRecoilDelay(1)
+        elseif not character:isAiming() then
+            weapon:setFireMode("Burst")
+            weapon:setRecoilDelay(15)
+        end
     end
 end
 
