@@ -26,7 +26,7 @@ local function toggleLaserState(weapon, character)
 end
 
 local function WeaponLightBeam()
-	local character = getSpecificPlayer(0)
+	local character = getPlayer()
 	if not character then return end
 
 	local weapon = character:getPrimaryHandItem()
