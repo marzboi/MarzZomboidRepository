@@ -1,5 +1,5 @@
 ContextMenu_EN = {
-    ContextMenu_FireMode_Single = "Single",
-    ContextMenu_FireMode_Burst = "Burst",
-    ContextMenu_FireMode_Auto = "Full Auto",
+    ContextMenu_FireMode_RealSingle = "Single",
+    ContextMenu_FireMode_RealBurst = "Burst",
+    ContextMenu_FireMode_RealAuto = "Full Auto",
 }

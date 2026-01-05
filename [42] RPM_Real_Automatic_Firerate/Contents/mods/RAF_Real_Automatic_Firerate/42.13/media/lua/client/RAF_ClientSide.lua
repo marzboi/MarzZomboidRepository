@@ -1,6 +1,12 @@
 require 'ISUI/ISInventoryPaneContextMenu'
 require 'RAF_SharedSide'
 
+function RAFFunctions.getFiremodeMenuKey(firemode)
+    if firemode == "RealAuto" then return "Auto" end
+    if firemode == "RealBurst" then return "Burst" end
+    return firemode
+end
+
 function RAFFunctions.OnPlayerUpdateFiremode(playerObj, weapon, newfiremode)
     if not isClient() then
         if RAFFunctions.recoilDelayAdjuster then
@@ -43,9 +49,12 @@ ISInventoryPaneContextMenu.doChangeFireModeMenu = function(playerObj, weapon, co
     local subMenuFiremode = context:getNew(context)
     context:addSubMenu(firemodeOption, subMenuFiremode)
 
+    local currentFiremodeKey = RAFFunctions.getFiremodeMenuKey(weapon:getFireMode())
+
     for i = 0, weapon:getFireModePossibilities():size() - 1 do
         local firemode = weapon:getFireModePossibilities():get(i)
-        if firemode ~= weapon:getFireMode() then
+        local firemodeKey = RAFFunctions.getFiremodeMenuKey(firemode)
+        if firemodeKey ~= currentFiremodeKey then
             subMenuFiremode:addOption(getText("ContextMenu_FireMode_" .. firemode),
                 playerObj, ISInventoryPaneContextMenu.onChangefiremode, weapon, firemode)
         end
