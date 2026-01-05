@@ -2,7 +2,7 @@ require "TimedActions/ISReloadWeaponAction"
 -------------------------------------------------
 -- Rate of Fire Control System
 -------------------------------------------------
-
+RAFEnabledMods = {}
 RAFFunctions = {}
 RAFRateOfFire = {}
 
@@ -134,10 +134,14 @@ function RAFRateOfFire.burstTickHandler()
 end
 
 Events.OnGameStart.Add(function()
+    local Firearms_Attack_hook
     local Original_Attack_Hook = ISReloadWeaponAction.attackHook
-    Hook.Attack.Remove(ISReloadWeaponAction.attackHook)
+    if RAFEnabledMods.FIREARMS_BETA or RAFEnabledMods.FIREARMS then
+        Firearms_Attack_hook = ISReloadWeaponAction.attackHookFirearms
+        Hook.Attack.Remove(ISReloadWeaponAction.attackHookFirearms)
+    end
 
-    ISReloadWeaponAction.attackHook = function(character, chargeDelta, weapon)
+    ISReloadWeaponAction.RAFattackHook = function(character, chargeDelta, weapon)
         if weapon:isRanged() and not character:isDoShove() then
             local canFire, intervalMs = RAFRateOfFire.canFire(character, weapon)
             if not canFire then return end
@@ -145,14 +149,26 @@ Events.OnGameStart.Add(function()
             if weapon:getFireMode() == "RealBurst" then
                 if not RAFRateOfFire.canStartBurst(character) then return end
 
-                local result = Original_Attack_Hook(character, chargeDelta, weapon)
-                RAFRateOfFire.startBurst(character, weapon, intervalMs, Original_Attack_Hook, chargeDelta)
-                return result
+                if RAFEnabledMods.FIREARMS_BETA or RAFEnabledMods.FIREARMS then
+                    local result = Firearms_Attack_hook(character, chargeDelta, weapon)
+                    RAFRateOfFire.startBurst(character, weapon, intervalMs, Firearms_Attack_hook, chargeDelta)
+                    return result
+                else
+                    local result = Original_Attack_Hook(character, chargeDelta, weapon)
+                    RAFRateOfFire.startBurst(character, weapon, intervalMs, Original_Attack_Hook, chargeDelta)
+                    return result
+                end
             end
         end
-        return Original_Attack_Hook(character, chargeDelta, weapon)
+
+        if RAFEnabledMods.FIREARMS_BETA or RAFEnabledMods.FIREARMS then
+            return Firearms_Attack_hook(character, chargeDelta, weapon)
+        else
+            return Original_Attack_Hook(character, chargeDelta, weapon)
+        end
     end
 
-    Hook.Attack.Add(ISReloadWeaponAction.attackHook)
+    Hook.Attack.Remove(ISReloadWeaponAction.attackHook)
+    Hook.Attack.Add(ISReloadWeaponAction.RAFattackHook)
     Events.OnTick.Add(RAFRateOfFire.burstTickHandler)
 end)
