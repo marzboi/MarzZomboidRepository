@@ -63,8 +63,6 @@ if not RAFEnabledMods.G93 then
     end
 end
 
-Events.OnServerCommand.Add(RAFFunctions.RAF_OnServerCommand)
-
 if RAFEnabledMods.G93 then
     function RAFFunctions.cyclicRatePatcher(character, weapon)
         if not weapon or not character then return end
@@ -107,3 +105,5 @@ if RAFEnabledMods.G93 then
 
     Events.OnPlayerUpdate.Add(RAFFunctions.weaponUpdater)
 end
+
+Events.OnServerCommand.Add(RAFFunctions.RAF_OnServerCommand)
