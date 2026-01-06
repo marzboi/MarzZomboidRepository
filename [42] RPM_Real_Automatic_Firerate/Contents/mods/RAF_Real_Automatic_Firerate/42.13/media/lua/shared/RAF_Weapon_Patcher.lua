@@ -10,8 +10,7 @@ local function AddTagsToItem(weapon, tags)
     local weaponScript = ScriptManager.instance:getItem(weapon);
 
     if weaponScript then
-        local weaponItem = instanceItem(weapon);
-        local currentTags = weaponItem:getTags();
+        local currentTags = weaponScript:getTags();
         local newList = {};
 
         for i, addValue in ipairs(type(tags) ~= "table" and { tags } or tags) do
