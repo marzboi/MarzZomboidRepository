@@ -23,7 +23,7 @@ function RAFFunctions.OnPlayerUpdateFiremode(playerObj, weapon, newfiremode)
     })
 end
 
-function RAFFunctions.RAF_OnServerCommand(module, command, args)
+function RAFFunctions.OnServerCommand(module, command, args)
     if module ~= "RAF" or command ~= "applyWeapon" or not args then return end
 
     local playerObj = getSpecificPlayer(0)
@@ -106,4 +106,4 @@ if RAFEnabledMods.G93 then
     Events.OnPlayerUpdate.Add(RAFFunctions.weaponUpdater)
 end
 
-Events.OnServerCommand.Add(RAFFunctions.RAF_OnServerCommand)
+Events.OnServerCommand.Add(RAFFunctions.OnServerCommand)

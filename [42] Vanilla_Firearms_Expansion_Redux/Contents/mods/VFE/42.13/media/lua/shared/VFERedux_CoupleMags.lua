@@ -1,3 +1,6 @@
+require "TimedActions/ISRemoveWeaponUpgrade"
+require "TimedActions/ISUpgradeWeapon"
+
 local ISRemoveWeaponUpgrade_completeHook = ISRemoveWeaponUpgrade.complete
 function ISRemoveWeaponUpgrade:complete()
     local part = self.weapon:getWeaponPart(self.partType)
