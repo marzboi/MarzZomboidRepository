@@ -28,6 +28,14 @@ This mod is now a hard dependency for my port of VFE.
 
 Hope you enjoy it as much as I enjoyed making this! :D
 
+[h3]Supported Mods[/h3]
+[list]
+[*] VFE and Addons [42]
+[*] Hyzo Firearms
+[*] Guns of 93
+[*] **Coming Soon** Gaels Gunshop
+[/list]
+
 [h3]Incompatibilities[/h3]
 
 - Mod is still a WIP, so report any bugs with a proper description.
@@ -49,9 +57,6 @@ Hope you enjoy it as much as I enjoyed making this! :D
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3637364024]
 [img]https://images.steamusercontent.com/ugc/15360020966411912880/33C7C2BE9222918C6E42CE8DB601CC6AFE82FC32/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
 [/url]
-[/tr]
-
-[tr]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3611718925]
 [img]https://images.steamusercontent.com/ugc/11776990660090596558/5298B64AFF746BFFD64655DECB0D25C1CCE15FEA/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]

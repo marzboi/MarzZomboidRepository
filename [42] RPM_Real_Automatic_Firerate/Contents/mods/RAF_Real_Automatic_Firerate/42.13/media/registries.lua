@@ -1,4 +1,5 @@
 RAFTags = {}
+
 RAFTags.RPM1200 = ItemTag.register("rpm:1200")
 RAFTags.RPM1150 = ItemTag.register("rpm:1150")
 RAFTags.RPM1100 = ItemTag.register("rpm:1100")
