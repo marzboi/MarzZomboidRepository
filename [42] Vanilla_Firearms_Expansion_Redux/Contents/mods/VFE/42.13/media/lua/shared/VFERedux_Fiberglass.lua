@@ -29,4 +29,4 @@ local function fiberglassInitCheck(player, weapon)
     end
 end
 
-Events.OnEquipPrimary.Add(function(player, weapon) fiberglassInitCheck(player, weapon) end)
+Events.OnEquipPrimary.Add(fiberglassInitCheck)

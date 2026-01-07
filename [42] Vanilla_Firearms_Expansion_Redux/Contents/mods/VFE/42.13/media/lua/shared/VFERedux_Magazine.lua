@@ -31,15 +31,6 @@ local function manageMagazineAttachment(weapon)
 	end
 end
 
-local function magazineInitCheck(player, weapon)
-	if not weapon or not player then return end
-	if weapon:getCategory() == "Weapon" and weapon:getSubCategory() == "Firearm" then
-		if weapon:isContainsClip() then
-			weapon:attachWeaponPart(instanceItem("MagazineAttachment"), true)
-		end
-	end
-end
-
 local ISInsertMagazine_complete = ISInsertMagazine.complete
 function ISInsertMagazine:complete()
 	manageMagazineAttachment(self.gun)
@@ -52,4 +43,13 @@ function ISEjectMagazine:complete()
 	return ISEjectMagazine_complete(self)
 end
 
-Events.OnEquipPrimary.Add(function(player, weapon) magazineInitCheck(player, weapon) end)
+local function magazineInitCheck(player, weapon)
+	if not weapon or not player then return end
+	if weapon:getCategory() == "Weapon" and weapon:getSubCategory() == "Firearm" then
+		if weapon:isContainsClip() then
+			weapon:attachWeaponPart(instanceItem("MagazineAttachment"), true)
+		end
+	end
+end
+
+Events.OnEquipPrimary.Add(magazineInitCheck)
