@@ -2,9 +2,18 @@ require 'ISUI/ISInventoryPaneContextMenu'
 require 'RAF_SharedSide'
 
 function RAFFunctions.getFiremodeMenuKey(firemode)
-    if firemode == "RealAuto" then return "Auto" end
-    if firemode == "RealBurst" then return "Burst" end
+    if firemode:sub(1, 4) == "Real" then
+        return firemode:sub(5)
+    end
     return firemode
+end
+
+function RAFFunctions.isFiremodeStandard(firemode)
+    if firemode == "Auto" or firemode == "Burst" or firemode == "Single" then
+        return true
+    else
+        return false
+    end
 end
 
 function RAFFunctions.OnPlayerUpdateFiremode(playerObj, weapon, newfiremode)
@@ -23,6 +32,17 @@ function RAFFunctions.OnPlayerUpdateFiremode(playerObj, weapon, newfiremode)
     })
 end
 
+function RAFFunctions.FiremodeSwitchCheck(playerObj, weapon)
+    if not playerObj or not weapon or not instanceof(weapon, "HandWeapon") or not weapon:isRanged() then return end
+    local newfiremode = weapon:getFireMode()
+    if RAFFunctions.isFiremodeStandard(newfiremode) then
+        newfiremode = "Real" .. newfiremode
+        weapon:setFireMode(newfiremode)
+        playerObj:setFireMode(newfiremode)
+        RAFFunctions.OnPlayerUpdateFiremode(playerObj, weapon, newfiremode)
+    end
+end
+
 function RAFFunctions.OnServerCommand(module, command, args)
     if module ~= "RAF" or command ~= "applyWeapon" or not args then return end
 
@@ -38,8 +58,9 @@ end
 
 if not RAFEnabledMods.G93 then
     ISInventoryPaneContextMenu.onChangefiremode = function(playerObj, weapon, newfiremode)
-        if newfiremode == "Auto" then newfiremode = "RealAuto" end
-        if newfiremode == "Burst" then newfiremode = "RealBurst" end
+        if RAFFunctions.isFiremodeStandard(newfiremode) then
+            newfiremode = "Real" .. newfiremode
+        end
         weapon:setFireMode(newfiremode)
         playerObj:setFireMode(newfiremode)
         RAFFunctions.OnPlayerUpdateFiremode(playerObj, weapon, newfiremode)
@@ -64,8 +85,10 @@ if not RAFEnabledMods.G93 then
 end
 
 if RAFEnabledMods.G93 then
-    function RAFFunctions.cyclicRatePatcher(character, weapon)
-        if not weapon or not character then return end
+    function RAFFunctions.cyclicRatePatcher(character)
+        if not character then return end
+        local weapon = character:getPrimaryHandItem()
+        if not weapon or not instanceof(weapon, "HandWeapon") then return end
         if not weapon:isRanged() then return end
 
         local aiming = character:isAiming()
@@ -92,18 +115,8 @@ if RAFEnabledMods.G93 then
         end
     end
 
-    function RAFFunctions.weaponUpdater()
-        local character = getPlayer()
-        if not character then return end
-
-        local weapon = character:getPrimaryHandItem()
-        if not weapon or not instanceof(weapon, "HandWeapon") then return end
-        if weapon:getSubCategory() ~= "Firearm" then return end
-
-        RAFFunctions.cyclicRatePatcher(character, weapon)
-    end
-
-    Events.OnPlayerUpdate.Add(RAFFunctions.weaponUpdater)
+    Events.OnPlayerUpdate.Add(RAFFunctions.cyclicRatePatcher)
 end
 
 Events.OnServerCommand.Add(RAFFunctions.OnServerCommand)
+Events.OnWeaponSwing.Add(RAFFunctions.FiremodeSwitchCheck)
