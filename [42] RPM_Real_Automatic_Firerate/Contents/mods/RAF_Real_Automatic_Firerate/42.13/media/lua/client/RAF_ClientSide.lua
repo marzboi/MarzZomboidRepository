@@ -2,10 +2,7 @@ require 'ISUI/ISInventoryPaneContextMenu'
 require 'RAF_SharedSide'
 
 function RAFFunctions.getFiremodeMenuKey(firemode)
-    if firemode:sub(1, 4) == "Real" then
-        return firemode:sub(5)
-    end
-    return firemode
+    return firemode:match("^Real(.+)") or firemode
 end
 
 function RAFFunctions.isFiremodeStandard(firemode)
