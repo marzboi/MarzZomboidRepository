@@ -647,4 +647,16 @@ module Base
         Weight            = 0.04,
         WorldStaticModel  = 308BulletsLinked,
     }
+    
+    item 556BattlePack
+    {
+        AlwaysWelcomeGift = TRUE,
+        DisplayCategory   = Ammo,
+        Icon              = 556BattlePack,
+        ItemType          = base:normal,
+        MetalValue        = 130,
+        Weight            = 2.0,
+        WorldStaticModel  = 556BattlePack,
+        DoubleClickRecipe = Open 556 Battle Pack,
+    }
 }
