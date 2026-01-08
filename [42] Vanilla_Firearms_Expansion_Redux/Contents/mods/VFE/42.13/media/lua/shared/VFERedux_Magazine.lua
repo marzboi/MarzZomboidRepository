@@ -1,3 +1,6 @@
+require "TimedActions/ISInsertMagazine"
+require "TimedActions/ISEjectMagazine"
+
 local function manageMagazineAttachment(weapon)
 	if not weapon then return end
 	local Magazine = weapon:isContainsClip()
@@ -28,6 +31,18 @@ local function manageMagazineAttachment(weapon)
 	end
 end
 
+local ISInsertMagazine_complete = ISInsertMagazine.complete
+function ISInsertMagazine:complete()
+	manageMagazineAttachment(self.gun)
+	return ISInsertMagazine_complete(self)
+end
+
+local ISEjectMagazine_complete = ISEjectMagazine.complete
+function ISEjectMagazine:complete()
+	manageMagazineAttachment(self.gun)
+	return ISEjectMagazine_complete(self)
+end
+
 local function magazineInitCheck(player, weapon)
 	if not weapon or not player then return end
 	if weapon:getCategory() == "Weapon" and weapon:getSubCategory() == "Firearm" then
@@ -37,16 +52,4 @@ local function magazineInitCheck(player, weapon)
 	end
 end
 
-local ISInsertMagazine_complete = ISInsertMagazine.complete
-function ISInsertMagazine:complete()
-	manageMagazineAttachment(self.gun)
-	ISInsertMagazine_complete(self)
-end
-
-local ISEjectMagazine_complete = ISEjectMagazine.complete
-function ISEjectMagazine:complete()
-	manageMagazineAttachment(self.gun)
-	ISEjectMagazine_complete(self)
-end
-
-Events.OnEquipPrimary.Add(function(player, weapon) magazineInitCheck(player, weapon) end)
+Events.OnEquipPrimary.Add(magazineInitCheck)

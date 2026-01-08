@@ -4,7 +4,7 @@ module Base
     {
         mesh = WorldItems/HBReloadingTool,
         texture = WorldItems/HBReloadingTool,
-        scale = 1.5,
+        scale = 1.0,
     }
     model 9mmProjectileBox
     {

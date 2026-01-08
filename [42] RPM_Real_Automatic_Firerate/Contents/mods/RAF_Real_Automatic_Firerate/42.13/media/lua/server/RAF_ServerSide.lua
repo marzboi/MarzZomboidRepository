@@ -28,7 +28,7 @@ function RAFFunctions.recoilDelayAdjuster(player, weapon)
 
     if mode == "RealAuto" or mode == "RealBurst" then
         weapon:setRecoilDelay(1)
-    else
+    elseif mode == "RealSingle" then
         weapon:setRecoilDelay(RAFFunctions.calcRecoilDelayShadow(weapon))
     end
 end

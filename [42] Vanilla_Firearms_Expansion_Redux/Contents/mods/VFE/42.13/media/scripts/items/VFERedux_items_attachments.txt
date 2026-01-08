@@ -388,4 +388,28 @@ module Base
         WorldStaticModel   = Coupled762_Ground,
         Tags               = vfe:bulletreloadboost,
     }
+    
+    item FakeItemSling
+    {
+        DisplayCategory = Junk,
+        Icon            = IntentionallyInvalid,
+        ItemType        = base:normal,
+        Weight          = 20,
+    }
+    
+    item FakeItemSights
+    {
+        DisplayCategory = Junk,
+        Icon            = IntentionallyInvalid,
+        ItemType        = base:normal,
+        Weight          = 20,
+    }
+    
+    item FakeItem
+    {
+        DisplayCategory = Junk,
+        Icon            = IntentionallyInvalid,
+        ItemType        = base:normal,
+        Weight          = 20,
+    }
 }
