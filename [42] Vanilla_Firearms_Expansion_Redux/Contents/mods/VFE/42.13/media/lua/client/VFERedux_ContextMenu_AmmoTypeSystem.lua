@@ -18,7 +18,8 @@ ISInventoryPaneContextMenu.onMagazineSwitchAmmoTypes = function(playerObj, magaz
     if magazine:getCurrentAmmoCount() > 0 then
         ISInventoryPaneContextMenu.transferIfNeeded(playerObj, magazine)
         ISTimedActionQueue.add(ISUnloadBulletsFromMagazine:new(playerObj, magazine))
+        return ISReloadWeaponAction.SwitchAmmoType(magazine, ammoTypeFullType)
+    else
+        return ISReloadWeaponAction.SwitchAmmoType(magazine, ammoTypeFullType)
     end
-
-    return ISReloadWeaponAction.SwitchAmmoType(magazine, ammoTypeFullType)
 end
