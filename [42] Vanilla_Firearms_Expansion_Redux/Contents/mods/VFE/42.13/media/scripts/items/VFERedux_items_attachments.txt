@@ -324,7 +324,7 @@ module Base
         DisplayCategory = WeaponPart,
         Weight          = 0.1,
         WeightModifier  = 0.1,
-        MountOn         = FakeItemClip,
+        MountOn         = FakeItem,
         PartType        = Clip,
         MetalValue      = 22,
     }
