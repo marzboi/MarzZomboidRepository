@@ -6,8 +6,8 @@ VFEAmmoMap = VFEAmmoMap or {}
 VFEAmmoMap.MD_KEY = "VFEAmmoFullType"
 
 VFEAmmoMap.AltAmmoTypes = VFEAmmoMap.AltAmmoTypes or {
-    ["Base.556Bullets"] = "Base.223Bullets",
-    ["Base.223Bullets"] = "Base.556Bullets",
+    ["Base.556Bullets"] = { "Base.223Bullets" },
+    ["Base.223Bullets"] = { "Base.556Bullets" },
 }
 
 VFEAmmoMap.ItemFullTypeToAmmoType = VFEAmmoMap.ItemFullTypeToAmmoType or {

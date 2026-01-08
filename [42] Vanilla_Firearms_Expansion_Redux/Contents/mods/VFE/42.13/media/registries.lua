@@ -1,4 +1,5 @@
 VFETags = {}
+VFEAmmoTypes = {}
 
 VFETags.Ammo50 = ItemTag.register("vfe:ammo50")
 VFETags.Ammo20 = ItemTag.register("vfe:ammo20")
@@ -21,6 +22,6 @@ VFETags.shellreloadboost = ItemTag.register("vfe:shellreloadboost")
 VFETags.bulletreloadboost = ItemTag.register("vfe:bulletreloadboost")
 VFETags.catchbrass = ItemTag.register("vfe:catchbrass")
 
-AmmoType.register("vfe:bullets_762", "Base.762Bullets")
-AmmoType.register("vfe:bullets_22", "Base.22Bullets")
-AmmoType.register("vfe:bullets_308_linked", "Base.308BulletsLinked")
+VFEAmmoTypes.VFE_bullets_762 = AmmoType.register("vfe:bullets_762", "Base.762Bullets")
+VFEAmmoTypes.VFE_bullets_22 = AmmoType.register("vfe:bullets_22", "Base.22Bullets")
+VFEAmmoTypes.VFE_bullets_308_linked = AmmoType.register("vfe:bullets_308_linked", "Base.308BulletsLinked")
