@@ -5,8 +5,13 @@ local original_ISInventoryPaneContextMenu_doMagazineMenu = ISInventoryPaneContex
 ISInventoryPaneContextMenu.doMagazineMenu = function(playerObj, magazine, context)
     local altAmmoTypes = VFEAmmoMap.GetAltAmmoTypes(magazine:getAmmoType():getItemKey())
     if altAmmoTypes then
+        local altAmmoOption = context:addOption(getText("IGUI_ContextMenu_SwitchAmmoType"))
+        local subMenuAltAmmoOption = context:getNew(context)
+        context:addSubMenu(altAmmoOption, subMenuAltAmmoOption)
         for _, ammoTypeToSet in ipairs(altAmmoTypes) do
-            context:addOption(getText("IGUI_ContextMenu_SwitchAmmoType", ammoTypeToSet), playerObj,
+            local ammoToSet = instanceItem(ammoTypeToSet)
+            subMenuAltAmmoOption:addOption(getText("IGUI_ContextMenu_SubSwitchAmmoType", ammoToSet:getDisplayName()),
+                playerObj,
                 ISInventoryPaneContextMenu.onMagazineSwitchAmmoTypes, magazine, ammoTypeToSet);
         end
     end
