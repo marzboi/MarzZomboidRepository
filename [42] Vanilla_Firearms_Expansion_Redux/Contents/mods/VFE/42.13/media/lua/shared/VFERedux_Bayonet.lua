@@ -179,6 +179,8 @@ function VFEBayonet(item, index, player, bayonet)
 
 		modData.rifle.FireMode = item:getFireMode()
 
+		modData.rifle.ammoType = item:getAmmoType()
+
 		-- This doesn't work with a for loop for some reason
 		local clip = item:getWeaponPart("Clip")
 		local scope = item:getWeaponPart("Scope")
@@ -368,6 +370,9 @@ function VFEBayonet(item, index, player, bayonet)
 		end
 		if modData.rifle.FireMode then
 			result:setFireMode(modData.rifle.FireMode)
+		end
+		if modData.rifle.ammoType then
+			result:setAmmoType(modData.rifle.ammoType)
 		end
 
 		if (modData.rifle.modifier) then

@@ -264,6 +264,8 @@ function VFESuppressor(item, index, player, suppressor)
 		hotBar:update()
 	end
 
+	result:setAmmoType(item:getAmmoType())
+	VFEAmmoMap.SaveAmmoFullType(result, result:getAmmoType():getItemKey())
 	VFESetWeaponModel(result, false)
 	VFESetWeaponIcon(result)
 
