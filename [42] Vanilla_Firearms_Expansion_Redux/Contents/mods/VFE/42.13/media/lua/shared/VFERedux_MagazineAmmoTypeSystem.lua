@@ -3,7 +3,7 @@ require "TimedActions/ISEjectMagazine"
 require "TimedActions/ISReloadWeaponAction"
 
 VFEAmmoMap = VFEAmmoMap or {}
-VFEAmmoMap.MD_KEY = "VFEAmmoFullType"
+VFEAmmoMap.MOD_DATA_KEY = "VFEAmmoFullType"
 
 VFEAmmoMap.AmmoGroups = VFEAmmoMap.AmmoGroups or {
     { "Base.556Bullets", "Base.223Bullets" },
@@ -34,16 +34,16 @@ VFEAmmoMap.ItemFullTypeToAmmoType = VFEAmmoMap.ItemFullTypeToAmmoType or {
 
 function VFEAmmoMap.SaveAmmoFullType(item, ammoFullType)
     if not item or not ammoFullType then return end
-    local md = item:getModData()
-    md[VFEAmmoMap.MD_KEY] = ammoFullType
+    local itemModData = item:getModData()
+    itemModData[VFEAmmoMap.MOD_DATA_KEY] = ammoFullType
 end
 
 function VFEAmmoMap.RestoreAmmoType(item)
     if not item then return end
-    local md = item:getModData()
-    if not md then return end
+    local itemModData = item:getModData()
+    if not itemModData then return end
 
-    local ammoFullType = md[VFEAmmoMap.MD_KEY]
+    local ammoFullType = itemModData[VFEAmmoMap.MOD_DATA_KEY]
     if not ammoFullType then return end
 
     local ammoEnum = VFEAmmoMap.ItemFullTypeToAmmoType[ammoFullType]
@@ -107,11 +107,11 @@ local function restoreContainer(container)
     if not container then return end
     local items = container:getItems()
     for i = 0, items:size() - 1 do
-        local it = items:get(i)
-        VFEAmmoMap.RestoreAmmoType(it)
+        local item = items:get(i)
+        VFEAmmoMap.RestoreAmmoType(item)
 
-        if it.getInventory and it:getInventory() then
-            restoreContainer(it:getInventory())
+        if item.getInventory and item:getInventory() then
+            restoreContainer(item:getInventory())
         end
     end
 end
