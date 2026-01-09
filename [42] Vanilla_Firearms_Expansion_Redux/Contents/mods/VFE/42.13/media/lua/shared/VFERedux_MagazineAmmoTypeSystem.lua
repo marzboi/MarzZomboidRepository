@@ -62,36 +62,6 @@ ISReloadWeaponAction.SwitchAmmoType = function(item, ammoFullType)
     VFEAmmoMap.SaveAmmoFullType(item, ammoFullType)
 end
 
-local function restoreContainer(container)
-    if not container then return end
-    local items = container:getItems()
-    for i = 0, items:size() - 1 do
-        local it = items:get(i)
-        VFEAmmoMap.RestoreAmmoType(it)
-
-        if it.getInventory and it:getInventory() then
-            restoreContainer(it:getInventory())
-        end
-    end
-end
-
-local function restorePlayer(playerObj)
-    if not playerObj then return end
-    restoreContainer(playerObj:getInventory())
-    VFEAmmoMap.RestoreAmmoType(playerObj:getPrimaryHandItem())
-    VFEAmmoMap.RestoreAmmoType(playerObj:getSecondaryHandItem())
-end
-
-Events.OnGameStart.Add(function()
-    for i = 0, getNumActivePlayers() - 1 do
-        restorePlayer(getSpecificPlayer(i))
-    end
-end)
-
-Events.OnCreatePlayer.Add(function(_, playerObj)
-    restorePlayer(playerObj)
-end)
-
 function ISInsertMagazine:loadAmmo()
     self.gun:setAmmoType(self.magazine:getAmmoType())
 
@@ -132,3 +102,33 @@ function ISEjectMagazine:unloadAmmo()
         syncHandWeaponFields(self.character, self.gun)
     end
 end
+
+local function restoreContainer(container)
+    if not container then return end
+    local items = container:getItems()
+    for i = 0, items:size() - 1 do
+        local it = items:get(i)
+        VFEAmmoMap.RestoreAmmoType(it)
+
+        if it.getInventory and it:getInventory() then
+            restoreContainer(it:getInventory())
+        end
+    end
+end
+
+local function restorePlayer(playerObj)
+    if not playerObj then return end
+    restoreContainer(playerObj:getInventory())
+    VFEAmmoMap.RestoreAmmoType(playerObj:getPrimaryHandItem())
+    VFEAmmoMap.RestoreAmmoType(playerObj:getSecondaryHandItem())
+end
+
+Events.OnGameStart.Add(function()
+    for i = 0, getNumActivePlayers() - 1 do
+        restorePlayer(getSpecificPlayer(i))
+    end
+end)
+
+Events.OnCreatePlayer.Add(function(_, playerObj)
+    restorePlayer(playerObj)
+end)

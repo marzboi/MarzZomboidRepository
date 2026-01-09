@@ -177,6 +177,8 @@ function VFEFoldingStock(item, newWeapIndex, player)
 			hotBar:update()
 		end
 
+		result:setAmmoType(item:getAmmoType())
+		VFEAmmoMap.SaveAmmoFullType(result, result:getAmmoType():getItemKey())
 		VFESetWeaponModel(result, false) -- Sets the model corretly incase of attachments that change weapon model
 		VFESetWeaponIcon(result)
 
