@@ -3,7 +3,7 @@ require "TimedActions/ISInventoryTransferUtil"
 
 local original_ISInventoryPaneContextMenu_doMagazineMenu = ISInventoryPaneContextMenu.doMagazineMenu
 ISInventoryPaneContextMenu.doMagazineMenu = function(playerObj, magazine, context)
-    local altAmmoTypes = VFEAmmoMap.AltAmmoTypes[magazine:getAmmoType():getItemKey()]
+    local altAmmoTypes = VFEAmmoMap.GetAltAmmoTypes(magazine:getAmmoType():getItemKey())
     if altAmmoTypes then
         for _, ammoTypeToSet in ipairs(altAmmoTypes) do
             context:addOption(getText("IGUI_ContextMenu_SwitchAmmoType", ammoTypeToSet), playerObj,

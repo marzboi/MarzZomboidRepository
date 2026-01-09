@@ -5,14 +5,31 @@ require "TimedActions/ISReloadWeaponAction"
 VFEAmmoMap = VFEAmmoMap or {}
 VFEAmmoMap.MD_KEY = "VFEAmmoFullType"
 
-VFEAmmoMap.AltAmmoTypes = VFEAmmoMap.AltAmmoTypes or {
-    ["Base.556Bullets"] = { "Base.223Bullets" },
-    ["Base.223Bullets"] = { "Base.556Bullets" },
+VFEAmmoMap.AmmoGroups = VFEAmmoMap.AmmoGroups or {
+    { "Base.556Bullets", "Base.223Bullets" },
 }
+
+VFEAmmoMap.GetAltAmmoTypes = function(ammoKey)
+    for _, group in ipairs(VFEAmmoMap.AmmoGroups) do
+        for _, ammo in ipairs(group) do
+            if ammo == ammoKey then
+                local alts = {}
+                for _, alt in ipairs(group) do
+                    if alt ~= ammoKey then
+                        table.insert(alts, alt)
+                    end
+                end
+                return alts
+            end
+        end
+    end
+    return nil
+end
 
 VFEAmmoMap.ItemFullTypeToAmmoType = VFEAmmoMap.ItemFullTypeToAmmoType or {
     ["Base.556Bullets"] = AmmoType.BULLETS_556,
     ["Base.223Bullets"] = AmmoType.BULLETS_223,
+    ["Base.308Bullets"] = AmmoType.BULLETS_308,
 }
 
 function VFEAmmoMap.SaveAmmoFullType(item, ammoFullType)
