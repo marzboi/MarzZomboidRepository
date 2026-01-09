@@ -1,6 +1,11 @@
 require "TimedActions/ISInsertMagazine"
 require "TimedActions/ISEjectMagazine"
 require "TimedActions/ISReloadWeaponAction"
+require "TimedActions/ISBaseTimedAction"
+require "TimedActions/ISUnloadBulletsFromMagazine"
+require "TimedActions/ISReloadWeaponAction"
+
+ISSwitchMagazineAmmoType = ISBaseTimedAction:derive("ISSwitchMagazineAmmoType")
 
 VFEAmmoMap = VFEAmmoMap or {}
 VFEAmmoMap.MOD_DATA_KEY = "VFEAmmoFullType"
@@ -63,26 +68,48 @@ ISReloadWeaponAction.SwitchAmmoType = function(item, ammoFullType)
 end
 
 function ISInsertMagazine:loadAmmo()
-    self.gun:setAmmoType(self.magazine:getAmmoType())
+    local gun = self.gun
+    local mag = self.magazine
+    local char = self.character
 
-    local gunAmmoFullType = self.magazine:getAmmoType():getItemKey()
-    VFEAmmoMap.SaveAmmoFullType(self.gun, gunAmmoFullType)
+    local ammoChanged = (mag:getAmmoType() ~= gun:getAmmoType())
 
-    self.character:getInventory():Remove(self.magazine)
-    self.character:removeFromHands(self.magazine)
+    if ammoChanged and gun:isRoundChambered() then
+        local oldAmmoFullType = gun:getAmmoType() and gun:getAmmoType():getItemKey()
+        if oldAmmoFullType then
+            local roundItem = char:getInventory():AddItem(oldAmmoFullType)
+            if isClient() and roundItem then
+                sendAddItemToContainer(char:getInventory(), roundItem)
+            end
+        end
 
-    self.gun:setCurrentAmmoCount(self.magazine:getCurrentAmmoCount())
-    self.gun:setContainsClip(true)
-    self.character:clearVariable("isLoading")
-
-    if not isServer() and not isClient()
-        and not self.gun:isRoundChambered()
-        and self.gun:getCurrentAmmoCount() >= self.gun:getAmmoPerShoot() then
-        ISTimedActionQueue.addAfter(self, ISRackFirearm:new(self.character, self.gun))
+        if gun.setSpentRoundChambered then gun:setSpentRoundChambered(false) end
+        if gun.setRoundChambered then gun:setRoundChambered(false) end
     end
 
-    sendRemoveItemFromContainer(self.character:getInventory(), self.magazine)
-    syncHandWeaponFields(self.character, self.gun)
+    gun:setAmmoType(mag:getAmmoType())
+
+    local gunAmmoFullType = mag:getAmmoType():getItemKey()
+    VFEAmmoMap.SaveAmmoFullType(gun, gunAmmoFullType)
+
+    char:getInventory():Remove(mag)
+    char:removeFromHands(mag)
+
+    gun:setCurrentAmmoCount(mag:getCurrentAmmoCount())
+    gun:setContainsClip(true)
+    char:clearVariable("isLoading")
+
+    local canChamber = (not gun:isRoundChambered())
+        and (gun:getCurrentAmmoCount() >= gun:getAmmoPerShoot())
+
+    if ammoChanged and canChamber then
+        ISTimedActionQueue.addAfter(self, ISRackFirearm:new(char, gun))
+    elseif (not isServer() and not isClient()) and canChamber then
+        ISTimedActionQueue.addAfter(self, ISRackFirearm:new(char, gun))
+    end
+
+    sendRemoveItemFromContainer(char:getInventory(), mag)
+    syncHandWeaponFields(char, gun)
 end
 
 function ISEjectMagazine:unloadAmmo()
@@ -132,3 +159,21 @@ end)
 Events.OnCreatePlayer.Add(function(_, playerObj)
     restorePlayer(playerObj)
 end)
+
+function ISSwitchMagazineAmmoType:isValid()
+    return self.magazine and self.magazine:getContainer() == self.character:getInventory()
+end
+
+function ISSwitchMagazineAmmoType:perform()
+    ISReloadWeaponAction.SwitchAmmoType(self.magazine, self.ammoTypeFullType)
+    ISBaseTimedAction.perform(self)
+end
+
+function ISSwitchMagazineAmmoType:new(character, magazine, ammoTypeFullType)
+    local o = ISBaseTimedAction.new(self, character)
+    o.character = character
+    o.magazine = magazine
+    o.ammoTypeFullType = ammoTypeFullType
+    o.maxTime = 0
+    return o
+end
