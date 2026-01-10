@@ -7,7 +7,7 @@ local function manageMagazineAttachment(weapon)
     local Magazine = weapon:getMagazineType()
 
     if isMagazineIn then
-        weapon:attachWeaponPart(instanceItem("BF2.556Magazine"), true)
+        weapon:attachWeaponPart(instanceItem(Magazine), true)
     end
 
     if not isMagazineIn then

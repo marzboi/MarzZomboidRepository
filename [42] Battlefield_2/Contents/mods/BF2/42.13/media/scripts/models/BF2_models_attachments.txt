@@ -1,0 +1,14 @@
+module BF2
+{
+    imports
+    {
+        Base
+    }
+    
+    model 8xScope
+    {
+        mesh = weapons/parts/8xscope,
+        texture = weapons/firearms/m82a1,
+    }
+    
+}

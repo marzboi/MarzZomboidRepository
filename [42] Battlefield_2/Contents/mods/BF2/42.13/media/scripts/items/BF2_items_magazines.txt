@@ -22,4 +22,22 @@ module BF2
         WeightModifier   = 0.2,
         WorldStaticModel = gun_magazine_new,
     }
+    
+    item 308Magazine20
+    {
+        AmmoType         = base:bullets_308,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        GunType          = BF2.G3,
+        Icon             = m14clip,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 20,
+        MountOn          = BF2.G3,
+        PartType         = Clip,
+        StaticModel      = GunMagazine,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        WorldStaticModel = gun_magazine_M14,
+    }
 }

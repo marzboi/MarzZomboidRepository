@@ -1,0 +1,23 @@
+module BF2
+{
+    imports
+    {
+        Base
+    }
+    
+    item 8xScope
+    {
+        DisplayCategory  = WeaponPart,
+        Icon             = 8xScope,
+        ItemType         = base:weaponpart,
+        MaxRangeModifier = 20,
+        MetalValue       = 22,
+        MinRangeModifier = 10,
+        MountOn          = BF2.M16A2;BF2.G3,
+        PartType         = Scope,
+        Tooltip          = Tooltip_Scope,
+        Weight           = 0.8,
+        WeightModifier   = 0.8,
+        WorldStaticModel = BF2.8xScope,
+    }
+}
