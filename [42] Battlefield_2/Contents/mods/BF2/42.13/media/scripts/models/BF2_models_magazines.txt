@@ -16,4 +16,10 @@ module BF2
         mesh = weapons/magazines/g3a3_magazine,
         texture = weapons/firearms/g3a3,
     }
+    
+    model XM177_Magazine
+    {
+        mesh = weapons/magazines/xm177_magazine,
+        texture = weapons/firearms/xm177,
+    }
 }

@@ -1,49 +1,90 @@
 module BF2
 {
-	imports
+    imports
     {
         Base
     }
-	model M16A2
+    model M16A2
     {
         mesh = weapons/firearms/m16a2,
         texture = weapons/firearms/m16a2,
-
+        
         attachment muzzle
         {
             offset = 0.0000 0.5037 0.0258,
             rotate = -90.0000 0.0000 -180.0000,
         }
-
+        
         attachment scope
+        {
+            offset = 0.0000 0.0817 0.0730,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope2
         {
             offset = 0.0000 0.1146 0.0763,
             rotate = 0.0000 0.0000 0.0000,
         }
-
+        
         attachment world
         {
             offset = -0.0250 -0.0000 -0.0000,
             rotate = -180.0000 0.0000 0.0000,
         }
     }
-	model G3
+    model G3
     {
         mesh = weapons/firearms/g3a3,
         texture = weapons/firearms/g3a3,
-
+        
         attachment muzzle
         {
             offset = 0.0000 0.5218 0.0268,
             rotate = -90.0000 0.0000 -180.0000,
         }
-
+        
         attachment scope
+        {
+            offset = 0.0000 0.1146 0.0763,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope2
         {
             offset = 0.0000 0.0809 0.0738,
             rotate = 0.0000 0.0000 0.0000,
         }
-
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+    model XM177
+    {
+        mesh = weapons/firearms/xm177,
+        texture = weapons/firearms/xm177s,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4166 0.0217,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0817 0.0730,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope2
+        {
+            offset = 0.0000 0.1146 0.0763,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
         attachment world
         {
             offset = -0.0250 -0.0000 -0.0000,
