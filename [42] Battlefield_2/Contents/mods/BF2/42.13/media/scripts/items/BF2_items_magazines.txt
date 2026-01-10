@@ -1,0 +1,25 @@
+module BF2
+{
+    imports
+    {
+        Base
+    }
+    
+    item 556Magazine
+    {
+        AmmoType         = base:bullets_556,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        GunType          = BF2.M16A2,
+        Icon             = m16clip,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 30,
+        MountOn          = BF2.M16A2,
+        PartType         = Clip,
+        StaticModel      = GunMagazine,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        WorldStaticModel = gun_magazine_new,
+    }
+}

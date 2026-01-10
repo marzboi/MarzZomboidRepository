@@ -1,0 +1,13 @@
+module BF2
+{
+    imports
+    {
+        Base
+    }
+    
+    model M16A2_Magazine
+    {
+        mesh = weapons/magazine/m16a2_magazine,
+        texture = weapons/firearm/m16a2,
+    }
+}

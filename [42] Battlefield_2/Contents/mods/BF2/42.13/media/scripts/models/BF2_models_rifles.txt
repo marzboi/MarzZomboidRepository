@@ -1,0 +1,25 @@
+module BF2
+{
+    imports
+    {
+        Base
+    }
+    
+    model M16A2
+    {
+        mesh = weapons/firearm/m16a2,
+        texture = weapons/firearm/m16a2,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.5037 0.0258,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+}
