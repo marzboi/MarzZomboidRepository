@@ -8,7 +8,13 @@ module BF2
     model 2xScope
     {
         mesh = weapons/parts/2xscope,
-        texture = weapons/firearms/famass,
+        texture = weapons/firearms/famas,
+    }
+    
+    model 4xScope
+    {
+        mesh = weapons/parts/4xscope,
+        texture = weapons/firearms/m4,
     }
     
     model 8xScope

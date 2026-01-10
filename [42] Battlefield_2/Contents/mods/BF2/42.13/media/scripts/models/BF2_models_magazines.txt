@@ -11,6 +11,12 @@ module BF2
         texture = weapons/firearms/m16a2,
     }
     
+    model M4_Magazine
+    {
+        mesh = weapons/magazines/m4_magazine,
+        texture = weapons/firearms/m4,
+    }
+    
     model G3_Magazine
     {
         mesh = weapons/magazines/g3a3_magazine,

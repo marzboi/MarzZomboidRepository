@@ -7,15 +7,15 @@ require "TimedActions/ISReloadWeaponAction"
 
 ISSwitchMagazineAmmoType = ISBaseTimedAction:derive("ISSwitchMagazineAmmoType")
 
-VFEAmmoMap = VFEAmmoMap or {}
-VFEAmmoMap.MOD_DATA_KEY = "VFEAmmoFullType"
+BF2AmmoMap = BF2AmmoMap or {}
+BF2AmmoMap.MOD_DATA_KEY = "BF2AmmoFullType"
 
-VFEAmmoMap.AmmoGroups = VFEAmmoMap.AmmoGroups or {
+BF2AmmoMap.AmmoGroups = BF2AmmoMap.AmmoGroups or {
     { "Base.556Bullets", "Base.223Bullets" },
 }
 
-VFEAmmoMap.GetAltAmmoTypes = function(ammoKey)
-    for _, group in ipairs(VFEAmmoMap.AmmoGroups) do
+BF2AmmoMap.GetAltAmmoTypes = function(ammoKey)
+    for _, group in ipairs(BF2AmmoMap.AmmoGroups) do
         for _, ammo in ipairs(group) do
             if ammo == ammoKey then
                 local alts = {}
@@ -31,27 +31,27 @@ VFEAmmoMap.GetAltAmmoTypes = function(ammoKey)
     return nil
 end
 
-VFEAmmoMap.ItemFullTypeToAmmoType = VFEAmmoMap.ItemFullTypeToAmmoType or {
+BF2AmmoMap.ItemFullTypeToAmmoType = BF2AmmoMap.ItemFullTypeToAmmoType or {
     ["Base.556Bullets"] = AmmoType.BULLETS_556,
     ["Base.223Bullets"] = AmmoType.BULLETS_223,
     ["Base.308Bullets"] = AmmoType.BULLETS_308,
 }
 
-function VFEAmmoMap.SaveAmmoFullType(item, ammoFullType)
+function BF2AmmoMap.SaveAmmoFullType(item, ammoFullType)
     if not item or not ammoFullType then return end
     local itemModData = item:getModData()
-    itemModData[VFEAmmoMap.MOD_DATA_KEY] = ammoFullType
+    itemModData[BF2AmmoMap.MOD_DATA_KEY] = ammoFullType
 end
 
-function VFEAmmoMap.RestoreAmmoType(item)
+function BF2AmmoMap.RestoreAmmoType(item)
     if not item then return end
     local itemModData = item:getModData()
     if not itemModData then return end
 
-    local ammoFullType = itemModData[VFEAmmoMap.MOD_DATA_KEY]
+    local ammoFullType = itemModData[BF2AmmoMap.MOD_DATA_KEY]
     if not ammoFullType then return end
 
-    local ammoEnum = VFEAmmoMap.ItemFullTypeToAmmoType[ammoFullType]
+    local ammoEnum = BF2AmmoMap.ItemFullTypeToAmmoType[ammoFullType]
     if not ammoEnum then return end
 
     if item.getAmmoType and item:getAmmoType() ~= ammoEnum then
@@ -60,11 +60,11 @@ function VFEAmmoMap.RestoreAmmoType(item)
 end
 
 ISReloadWeaponAction.SwitchAmmoType = function(item, ammoFullType)
-    local ammoEnum = VFEAmmoMap.ItemFullTypeToAmmoType[ammoFullType]
+    local ammoEnum = BF2AmmoMap.ItemFullTypeToAmmoType[ammoFullType]
     if not ammoEnum then return end
 
     item:setAmmoType(ammoEnum)
-    VFEAmmoMap.SaveAmmoFullType(item, ammoFullType)
+    BF2AmmoMap.SaveAmmoFullType(item, ammoFullType)
 end
 
 function ISInsertMagazine:loadAmmo()
@@ -90,7 +90,7 @@ function ISInsertMagazine:loadAmmo()
     gun:setAmmoType(mag:getAmmoType())
 
     local gunAmmoFullType = mag:getAmmoType():getItemKey()
-    VFEAmmoMap.SaveAmmoFullType(gun, gunAmmoFullType)
+    BF2AmmoMap.SaveAmmoFullType(gun, gunAmmoFullType)
 
     char:getInventory():Remove(mag)
     char:removeFromHands(mag)
@@ -119,7 +119,7 @@ function ISEjectMagazine:unloadAmmo()
         newMag:setAmmoType(self.gun:getAmmoType())
 
         local magAmmoFullType = self.gun:getAmmoType():getItemKey()
-        VFEAmmoMap.SaveAmmoFullType(newMag, magAmmoFullType)
+        BF2AmmoMap.SaveAmmoFullType(newMag, magAmmoFullType)
 
         self.character:getInventory():AddItem(newMag)
         self.gun:setContainsClip(false)
@@ -135,7 +135,7 @@ local function restoreContainer(container)
     local items = container:getItems()
     for i = 0, items:size() - 1 do
         local item = items:get(i)
-        VFEAmmoMap.RestoreAmmoType(item)
+        BF2AmmoMap.RestoreAmmoType(item)
 
         if item.getInventory and item:getInventory() then
             restoreContainer(item:getInventory())
@@ -146,8 +146,8 @@ end
 local function restorePlayer(playerObj)
     if not playerObj then return end
     restoreContainer(playerObj:getInventory())
-    VFEAmmoMap.RestoreAmmoType(playerObj:getPrimaryHandItem())
-    VFEAmmoMap.RestoreAmmoType(playerObj:getSecondaryHandItem())
+    BF2AmmoMap.RestoreAmmoType(playerObj:getPrimaryHandItem())
+    BF2AmmoMap.RestoreAmmoType(playerObj:getSecondaryHandItem())
 end
 
 Events.OnGameStart.Add(function()

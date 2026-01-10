@@ -3,7 +3,7 @@ require "TimedActions/ISInventoryTransferUtil"
 
 local original_ISInventoryPaneContextMenu_doMagazineMenu = ISInventoryPaneContextMenu.doMagazineMenu
 ISInventoryPaneContextMenu.doMagazineMenu = function(playerObj, magazine, context)
-    local altAmmoTypes = VFEAmmoMap.GetAltAmmoTypes(magazine:getAmmoType():getItemKey())
+    local altAmmoTypes = BF2AmmoMap.GetAltAmmoTypes(magazine:getAmmoType():getItemKey())
     if altAmmoTypes then
         local altAmmoOption = context:addOption(getText("IGUI_ContextMenu_SwitchAmmoType"))
         local subMenuAltAmmoOption = context:getNew(context)
@@ -26,7 +26,6 @@ ISInventoryPaneContextMenu.onMagazineSwitchAmmoTypes = function(playerObj, magaz
         ISTimedActionQueue.add(ISUnloadBulletsFromMagazine:new(playerObj, magazine))
         ISTimedActionQueue.add(ISSwitchMagazineAmmoType:new(playerObj, magazine, ammoTypeFullType))
     else
-        -- can switch immediately if already empty
         ISReloadWeaponAction.SwitchAmmoType(magazine, ammoTypeFullType)
     end
 end

@@ -1,10 +1,10 @@
 module BF2
 {
-    imports
+	imports
     {
         Base
     }
-    model M16A2
+	model M16A2
     {
         mesh = weapons/firearms/m16a2,
         texture = weapons/firearms/m16a2,
@@ -33,7 +33,36 @@ module BF2
             rotate = -180.0000 0.0000 0.0000,
         }
     }
-    model G3
+	model M4
+    {
+        mesh = weapons/firearms/m4,
+        texture = weapons/firearms/m4,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.4112 0.0226,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+
+        attachment scope
+        {
+            offset = 0.0000 0.0817 0.0631,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment scope2
+        {
+            offset = 0.0000 0.1146 0.0763,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+	model G3
     {
         mesh = weapons/firearms/g3a3,
         texture = weapons/firearms/g3a3,
@@ -62,10 +91,10 @@ module BF2
             rotate = -180.0000 0.0000 0.0000,
         }
     }
-    model XM177
+	model XM177
     {
         mesh = weapons/firearms/xm177,
-        texture = weapons/firearms/xm177s,
+        texture = weapons/firearms/xm177,
         
         attachment muzzle
         {
