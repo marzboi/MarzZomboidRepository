@@ -1,5 +1,4 @@
-[ 29/December/2025 ]
+[ 01/January/2026 ]
 B42.13.1:
-- Fix all craftRecipes for Ammo Boxes
-- Change tags for various items to be used with recipes
+- Initial release
 [ ------ ]

@@ -37,25 +37,25 @@ module BF2
     {
         mesh = weapons/firearms/m4,
         texture = weapons/firearms/m4,
-
+        
         attachment muzzle
         {
             offset = 0.0000 0.4112 0.0226,
             rotate = -90.0000 0.0000 -180.0000,
         }
-
+        
         attachment scope
         {
             offset = 0.0000 0.0817 0.0631,
             rotate = 0.0000 0.0000 0.0000,
         }
-
+        
         attachment scope2
         {
             offset = 0.0000 0.1146 0.0763,
             rotate = 0.0000 0.0000 0.0000,
         }
-
+        
         attachment world
         {
             offset = -0.0250 -0.0000 -0.0000,
@@ -114,6 +114,64 @@ module BF2
             rotate = 0.0000 0.0000 0.0000,
         }
         
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+	model AK47
+    {
+        mesh = weapons/firearms/ak47,
+        texture = weapons/firearms/ak47,
+        
+        attachment muzzle
+        {
+            offset = 0.0000 0.4519 0.0207,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+        
+        attachment scope
+        {
+            offset = 0.0000 0.0817 0.0730,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment scope2
+        {
+            offset = 0.0000 0.1146 0.0763,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+        
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+	model M40
+    {
+        mesh = weapons/firearms/m40,
+        texture = weapons/firearms/m40,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.4519 0.0207,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+
+        attachment scope
+        {
+            offset = 0.0000 0.0817 0.0730,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment scope2
+        {
+            offset = 0.0000 0.1737 0.0607,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
         attachment world
         {
             offset = -0.0250 -0.0000 -0.0000,

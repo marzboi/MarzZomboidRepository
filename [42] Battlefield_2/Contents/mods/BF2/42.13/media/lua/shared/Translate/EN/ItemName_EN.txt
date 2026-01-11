@@ -1,0 +1,25 @@
+ItemName_EN = {
+// Rifles
+    
+    ItemName_BF2.M16A2 = "M16A2 Assault Rifle",
+    ItemName_BF2.M4 = "M4 Carbine",
+    ItemName_BF2.G3 = "G3 Battle Rifle",
+    ItemName_BF2.XM177 = "XM177 Carbine",
+    ItemName_BF2.AK47 = "AK-47 Assault Rifle",
+    ItemName_BF2.M40 = "M40 Rifle",
+    
+// Shotguns
+    ItemName_BF2.M4_BENELLI = "Benelli M4 Semi-Shotgun",
+    ItemName_BF2.REMINGTON_1187 = "Remington 11-87 Semi-Shotgun",
+    
+// Magazines
+    ItemName_BF2.556Magazine30 = "Stanag 30 Rounds Magazine",
+    ItemName_BF2.556Magazine30 = ".308 20 Rounds Magazine",
+    ItemName_BF2.556Magazine30 = "7.62x39 30 Rounds Magazine",
+    
+// Attachments
+    ItemName_BF2.2xScope = "2x Scope",
+    ItemName_BF2.4xScope = "4x Scope",
+    ItemName_BF2.6xScope = "6x Scope",
+    ItemName_BF2.8xScope = "8x Scope",
+}

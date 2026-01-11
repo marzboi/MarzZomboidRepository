@@ -5,7 +5,7 @@ module BF2
         Base
     }
     
-    item 556Magazine
+    item 556Magazine30
     {
         AmmoType         = base:bullets_556,
         CanStack         = false,
@@ -33,6 +33,24 @@ module BF2
         ItemType         = base:weaponpart,
         MaxAmmo          = 20,
         MountOn          = BF2.G3,
+        PartType         = Clip,
+        StaticModel      = GunMagazine,
+        Tags             = base:hasmetal;base:riflemagazine,
+        Weight           = 0.2,
+        WeightModifier   = 0.2,
+        WorldStaticModel = gun_magazine_M14,
+    }
+    
+    item 762Magazine30
+    {
+        AmmoType         = vfe:bullets_762,
+        CanStack         = false,
+        DisplayCategory  = WeaponPart,
+        GunType          = BF2.AK47,
+        Icon             = m14clip,
+        ItemType         = base:weaponpart,
+        MaxAmmo          = 30,
+        MountOn          = BF2.AK47,
         PartType         = Clip,
         StaticModel      = GunMagazine,
         Tags             = base:hasmetal;base:riflemagazine,

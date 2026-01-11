@@ -17,6 +17,12 @@ module BF2
         texture = weapons/firearms/m4,
     }
     
+    model 6xScope
+    {
+        mesh = weapons/parts/6xscope,
+        texture = weapons/firearms/m40,
+    }
+    
     model 8xScope
     {
         mesh = weapons/parts/8xscope,

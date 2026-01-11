@@ -28,4 +28,10 @@ module BF2
         mesh = weapons/magazines/xm177_magazine,
         texture = weapons/firearms/xm177,
     }
+    
+    model AK47_Magazine
+    {
+        mesh = weapons/magazines/ak47_magazine,
+        texture = weapons/firearms/ak47,
+    }
 }
