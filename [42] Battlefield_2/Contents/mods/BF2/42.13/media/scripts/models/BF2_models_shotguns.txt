@@ -1,0 +1,36 @@
+module BF2
+{
+	imports
+    {
+        Base
+    }
+	model M4_BENELLI
+    {
+        mesh = weapons/firearms/m4benelli,
+        texture = weapons/firearms/m4benelli,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.5160 0.0356,
+            rotate = -90.0000 0.0000 -180.0000,
+        }
+
+        attachment scope
+        {
+            offset = 0.0000 0.0817 0.0730,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment scope2
+        {
+            offset = 0.0000 0.1146 0.0763,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+
+        attachment world
+        {
+            offset = -0.0250 -0.0000 -0.0000,
+            rotate = -180.0000 0.0000 0.0000,
+        }
+    }
+}
